@@ -49,3 +49,4 @@ CLAUDE.md
 
 # generated from src/data/entries/*/entry.json — see scripts/generate-projects-data.ts
 /src/data/projects.json
+.env*.local

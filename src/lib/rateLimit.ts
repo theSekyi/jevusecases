@@ -1,3 +1,15 @@
+import type { NextRequest } from "next/server";
+
+/**
+ * The first entry in x-forwarded-for is whatever the client claimed and is trivially spoofable.
+ * The last entry is the one Vercel's own edge appends for the actual connecting peer, so that's
+ * the one worth rate-limiting on.
+ */
+export function clientIp(request: NextRequest): string {
+  const chain = request.headers.get("x-forwarded-for")?.split(",");
+  return chain?.[chain.length - 1]?.trim() ?? "unknown";
+}
+
 /** Caps how many distinct keys this limiter tracks at once, so a flood of one-off keys can't grow the map forever. */
 const MAX_TRACKED_KEYS = 10_000;
 

@@ -2,19 +2,9 @@ import { NextResponse, type NextRequest } from "next/server";
 import { validateSubmission } from "@/lib/submission";
 import { buildSubmissionEntry } from "@/lib/submissionEntry";
 import { createSubmissionPr } from "@/lib/github";
-import { createRateLimiter } from "@/lib/rateLimit";
+import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 
 const checkRateLimit = createRateLimiter(5, 60 * 60 * 1000);
-
-/**
- * The first entry in x-forwarded-for is whatever the client claimed and is trivially spoofable.
- * The last entry is the one Vercel's own edge appends for the actual connecting peer, so that's
- * the one worth rate-limiting on.
- */
-function clientIp(request: NextRequest): string {
-  const chain = request.headers.get("x-forwarded-for")?.split(",");
-  return chain?.[chain.length - 1]?.trim() ?? "unknown";
-}
 
 export async function POST(request: NextRequest) {
   if (!checkRateLimit(clientIp(request))) {
