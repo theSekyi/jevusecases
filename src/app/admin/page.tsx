@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ChangePasswordForm } from "@/components/admin/ChangePasswordForm";
 import { requireAdmin } from "@/lib/auth";
+import { TRAFFIC_PATH } from "@/lib/authConstants";
 import { logout } from "./actions";
 
 export const metadata: Metadata = {
@@ -18,6 +20,12 @@ export default async function AdminPage() {
           <h1 className="text-3xl font-bold">Signed in</h1>
           <p className="font-bp-mono text-[13px] text-bp-secondary">{admin.email}</p>
         </div>
+
+        <nav aria-label="Admin sections" className="flex flex-col gap-2">
+          <Link href={TRAFFIC_PATH} className="text-sm font-semibold text-bp-ink hover:text-bp-accent">
+            Traffic →
+          </Link>
+        </nav>
 
         <section className="flex flex-col gap-4">
           <h2 className="font-bp-mono text-[11px] tracking-widest text-bp-secondary">PASSWORD</h2>
