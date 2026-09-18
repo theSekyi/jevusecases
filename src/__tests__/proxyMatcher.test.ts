@@ -32,9 +32,20 @@ describe("proxy matcher", () => {
     expect(matches("/robots.txt")).toBe(false);
   });
 
+  test("excludes anything that isn't a page: files with an extension and well-known paths", () => {
+    expect(matches("/apple-touch-icon.png")).toBe(false);
+    expect(matches("/apple-touch-icon-precomposed.png")).toBe(false);
+    expect(matches("/manifest.webmanifest")).toBe(false);
+    expect(matches("/images/logo.svg")).toBe(false);
+    expect(matches("/.well-known/security.txt")).toBe(false);
+    expect(matches("/.well-known")).toBe(false);
+  });
+
   test("doesn't over-exclude a real route that merely starts with an excluded word", () => {
     expect(matches("/administration-guide")).toBe(true);
     expect(matches("/apiary")).toBe(true);
     expect(matches("/icons-explainer")).toBe(true);
+    expect(matches("/well-known-projects")).toBe(true);
+    expect(matches("/projects/v1.2/overview")).toBe(true);
   });
 });

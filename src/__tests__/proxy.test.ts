@@ -1,5 +1,6 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import { NextRequest } from "next/server";
+import { SESSION_COOKIE } from "@/lib/authConstants";
 
 const recordVisitorEvent = vi.fn();
 vi.mock("@/lib/visitorEvents", async () => {
@@ -112,20 +113,43 @@ describe("proxy", () => {
     expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/");
   });
 
-  test("collapses a rapid-fire duplicate from the same visitor into one recorded event", async () => {
+  test("passes every request on to the database call; repeats are dropped there, not in memory", async () => {
     const { proxy } = await import("../proxy");
     const ip = "203.0.113.12";
-    const makeRequest = () => new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip } });
 
-    const first = fakeEvent();
-    proxy(makeRequest(), first.event as never);
-    await Promise.all(first.waited);
+    for (let i = 0; i < 2; i++) {
+      const { event, waited } = fakeEvent();
+      proxy(new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip } }), event as never);
+      await Promise.all(waited);
+    }
 
-    const second = fakeEvent();
-    proxy(makeRequest(), second.event as never);
-    await Promise.all(second.waited);
+    expect(recordVisitorEvent).toHaveBeenCalledTimes(2);
+  });
 
-    expect(recordVisitorEvent).toHaveBeenCalledTimes(1);
+  test("records nothing while the admin session cookie is present", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/", {
+      headers: { "x-forwarded-for": "203.0.113.13", cookie: `${SESSION_COOKIE}=anything` },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
+  });
+
+  test("other cookies don't stop a visit from being recorded", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/", {
+      headers: { "x-forwarded-for": "203.0.113.14", cookie: "theme=dark" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/");
   });
 
   test("a throwing geolocation call is caught too, not just the database write", async () => {
