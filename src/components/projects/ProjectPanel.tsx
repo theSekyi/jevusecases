@@ -4,20 +4,26 @@ import { useEffect, useRef } from "react";
 import { installCommand, projectFacts } from "@/lib/projectFacts";
 import { sourceLink, type Project } from "@/lib/projects";
 import { CopyButton } from "./CopyButton";
+import { FactList } from "./FactList";
 import { VerdictBadge } from "./VerdictBadge";
 
 function authorLink(author: string | null): string | null {
   return author && /^@\w{1,15}$/.test(author) ? `https://x.com/${author.slice(1)}` : null;
 }
 
-function addedOn(date: string): string {
-  return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+/** "17 September 2026", or null for a date that can't be read, so one bad entry can't break the page. */
+function addedOn(date: string): string | null {
+  const parsed = new Date(`${date}T00:00:00Z`);
+  if (Number.isNaN(parsed.getTime())) return null;
+  return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "UTC" }).format(parsed);
 }
 
 const linkClass = "text-bp-ink underline decoration-bp-muted underline-offset-4 transition-colors hover:text-bp-accent";
 
 export function ProjectPanel({ project, onClose }: { project: Project; onClose: () => void }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
+  // A drag that starts inside the panel (selecting the install command) and ends on the backdrop is not a click on it.
+  const pressStartedOnBackdrop = useRef(false);
 
   useEffect(() => {
     const dialog = dialogRef.current;
@@ -34,18 +40,22 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
   const source = sourceLink(project);
   const author = authorLink(project.author);
   const verdict = project.replaces?.verdict;
+  const added = addedOn(project.date_found);
 
   return (
     <dialog
       ref={dialogRef}
       aria-labelledby="panel-title"
       onClose={onClose}
+      onMouseDown={(event) => {
+        pressStartedOnBackdrop.current = event.target === event.currentTarget;
+      }}
       onClick={(event) => {
-        if (event.target === event.currentTarget) onClose();
+        if (event.target === event.currentTarget && pressStartedOnBackdrop.current) onClose();
       }}
       className="bp-panel m-0 ml-auto h-dvh max-h-none w-full max-w-xl overflow-y-auto border-l border-bp-hairline bg-bp-surface p-0 text-bp-ink backdrop:bg-black/70"
     >
-      <div className="flex flex-col gap-8 p-6 sm:p-8">
+      <div className="flex min-h-full flex-col gap-8 p-6 sm:p-8">
         <div className="flex items-start justify-between gap-4">
           <div className="flex flex-wrap items-center gap-3">
             <span className="font-bp-mono text-xs text-bp-secondary">{project.category}</span>
@@ -73,7 +83,8 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
             ) : (
               project.author
             )}
-            {project.author ? " · " : ""}added {addedOn(project.date_found)}
+            {project.author && added ? " · " : ""}
+            {added && `added ${added}`}
           </p>
         </div>
 
@@ -82,15 +93,7 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
             <h3 id="panel-evidence" className="text-sm font-semibold">
               The evidence
             </h3>
-            <dl className="flex flex-col divide-y divide-bp-hairline rounded-xl border border-bp-hairline bg-bp-bg">
-              {facts.map((fact) => (
-                <div key={`${fact.kind}-${fact.value}`} className="flex flex-col gap-1 p-4">
-                  <dt className="text-xs text-bp-secondary">{fact.label}</dt>
-                  <dd className="font-bp-mono text-base leading-snug [overflow-wrap:anywhere]">{fact.value}</dd>
-                  {fact.detail && <dd className="text-sm text-bp-secondary">{fact.detail}</dd>}
-                </div>
-              ))}
-            </dl>
+            <FactList facts={facts} showDetail />
           </section>
         )}
 

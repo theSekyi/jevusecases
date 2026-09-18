@@ -1,5 +1,5 @@
 import { LENSES, matchesLens, type LensKey } from "@/lib/lenses";
-import { categoryGroup, evidenceScore, projectFacts } from "@/lib/projectFacts";
+import { categoryGroup, evidenceScore, installCommand, projectFacts } from "@/lib/projectFacts";
 import type { Project } from "@/lib/projects";
 
 export type SortKey = "evidence" | "newest" | "az";
@@ -29,6 +29,9 @@ function searchableText(project: Project): string {
     project.how_used_jev,
     project.replaces?.tool,
     project.replaces?.verdict,
+    project.recipe?.type,
+    installCommand(project),
+    ...projectFacts(project).flatMap((fact) => [fact.value, fact.detail]),
   ]
     .filter(Boolean)
     .join(" ")
@@ -80,22 +83,24 @@ export interface CategoryOption {
   count: number;
 }
 
-/** Categories present in the data, most projects first. */
+/** Categories present in the data, most projects first. Labels keep the case they were written in. */
 export function categoryOptions(projects: Project[]): CategoryOption[] {
-  const counts = new Map<string, number>();
+  const found = new Map<string, { label: string; count: number }>();
   for (const project of projects) {
-    const group = categoryGroup(project);
-    counts.set(group, (counts.get(group) ?? 0) + 1);
+    const value = categoryGroup(project);
+    const written = project.category.split("/")[0].trim();
+    const entry = found.get(value) ?? { label: written.charAt(0).toUpperCase() + written.slice(1), count: 0 };
+    entry.count += 1;
+    found.set(value, entry);
   }
-  return [...counts]
-    .map(([value, count]) => ({ value, label: value.charAt(0).toUpperCase() + value.slice(1), count }))
+  return [...found]
+    .map(([value, { label, count }]) => ({ value, label, count }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 
-/** The project with the most proof, if it has any real evidence to show. Never a project that has only a recipe. */
+/** The project with the most proof that has real evidence to show. Never one that has only a recipe. */
 export function featuredProject(projects: Project[]): Project | null {
-  const [top] = sortProjects(projects, "evidence");
-  return top && projectFacts(top).length > 0 ? top : null;
+  return sortProjects(projects, "evidence").find((project) => projectFacts(project).length > 0) ?? null;
 }
 
 export function isDefaultView(filters: Filters, sort: SortKey): boolean {

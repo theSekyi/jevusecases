@@ -12,15 +12,6 @@ export interface Fact {
 
 const VERDICT_WEIGHT = { YES: 3, KINDA: 2, "NOT REALLY": 1 } as const;
 
-/** How much proof a project carries. Used to rank the default order and pick the featured project. */
-export function evidenceScore(project: Project): number {
-  let score = project.replaces?.verdict ? VERDICT_WEIGHT[project.replaces.verdict] : 0;
-  if (project.benchmark) score += 2;
-  if (typeof project.cost_signal?.basis === "string") score += 1;
-  if (project.recipe) score += 1;
-  return score;
-}
-
 function text(value: unknown): string | undefined {
   return typeof value === "string" && value.trim() ? value : undefined;
 }
@@ -58,6 +49,23 @@ export function projectFacts(project: Project): Fact[] {
   if (basis) facts.push({ kind: "cost", label: "Cost signal", value: basis });
 
   return facts;
+}
+
+/** How much proof a project carries, counted from the facts it can actually show. Ranks the default order. */
+export function evidenceScore(project: Project): number {
+  const facts = projectFacts(project);
+  let score = project.replaces?.verdict ? VERDICT_WEIGHT[project.replaces.verdict] : 0;
+  if (facts.some((fact) => fact.kind === "speed" || fact.kind === "comparison")) score += 2;
+  if (facts.some((fact) => fact.kind === "cost")) score += 1;
+  if (project.recipe) score += 1;
+  return score;
+}
+
+/** True when the project reports a measured figure: a latency, a comparison or a cost per run. */
+export function hasNumbers(project: Project): boolean {
+  return projectFacts(project).some(
+    (fact) => fact.kind === "speed" || fact.kind === "comparison" || (fact.kind === "cost" && fact.label === "Cost per run"),
+  );
 }
 
 export function primaryFact(project: Project): Fact | null {

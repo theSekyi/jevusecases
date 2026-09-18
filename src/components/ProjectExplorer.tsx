@@ -19,7 +19,7 @@ import {
   type SortKey,
 } from "@/lib/projectSearch";
 import type { Project } from "@/lib/projects";
-import { clearProjectHash, useProjectHash } from "@/lib/useProjectHash";
+import { closeProject, useProjectHash } from "@/lib/useProjectHash";
 
 /** Pressing "/" anywhere on the page jumps to search, unless you are already typing somewhere. */
 function useSearchShortcut(input: React.RefObject<HTMLInputElement | null>) {
@@ -46,21 +46,24 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
   const visible = useMemo(() => sortProjects(filterProjects(projects, filters), sort), [projects, filters, sort]);
   const counts = useMemo(() => lensCounts(projects, filters), [projects, filters]);
   const categories = useMemo(() => categoryOptions(projects), [projects]);
-  const featured = useMemo(
-    () => (isDefaultView(filters, sort) ? featuredProject(projects) : null),
-    [projects, filters, sort],
-  );
+  const strongest = useMemo(() => featuredProject(projects), [projects]);
+  const featured = isDefaultView(filters, sort) ? strongest : null;
   const rest = featured ? visible.filter((project) => project.id !== featured.id) : visible;
   const openProject = projects.find((project) => project.id === openId) ?? null;
 
-  function closePanel() {
-    const id = openProject?.id;
-    clearProjectHash();
-    // Hand focus back to the card that opened it, so keyboard users don't lose their place.
-    if (id) requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${id}"]`)?.focus());
-  }
+  // Whichever way the panel closes (Esc, Close, the backdrop, the browser's Back button), the card that
+  // opened it gets focus back so keyboard users don't lose their place.
+  const lastOpenId = useRef<string | null>(null);
+  useEffect(() => {
+    const id = openProject?.id ?? null;
+    if (!id && lastOpenId.current) {
+      const previous = lastOpenId.current;
+      requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${previous}"]`)?.focus());
+    }
+    lastOpenId.current = id;
+  }, [openProject]);
 
-  const filtered = !isDefaultView(filters, sort) || visible.length !== projects.length;
+  const filtered = !isDefaultView(filters, sort);
 
   return (
     <>
@@ -107,7 +110,7 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
             </div>
           ) : (
             <div className="flex flex-col items-start gap-4 rounded-xl border border-dashed border-bp-muted p-8 sm:p-12">
-              <p className="text-lg font-semibold">
+              <p className="text-lg font-semibold [overflow-wrap:anywhere]">
                 {filters.query.trim() ? `No projects match “${filters.query.trim()}”.` : "No projects match these filters."}
               </p>
               <p className="max-w-[52ch] text-sm text-bp-secondary">
@@ -133,7 +136,7 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
         </div>
       </section>
 
-      {openProject && <ProjectPanel key={openProject.id} project={openProject} onClose={closePanel} />}
+      {openProject && <ProjectPanel key={openProject.id} project={openProject} onClose={closeProject} />}
     </>
   );
 }

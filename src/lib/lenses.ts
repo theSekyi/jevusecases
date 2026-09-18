@@ -1,3 +1,4 @@
+import { hasNumbers } from "@/lib/projectFacts";
 import type { Project } from "@/lib/projects";
 
 export type LensKey = "all" | "replace" | "benchmark" | "cookbook";
@@ -21,7 +22,7 @@ export function matchesLens(project: Project, lens: LensKey): boolean {
     case "replace":
       return project.replaces?.verdict != null;
     case "benchmark":
-      return project.benchmark != null;
+      return hasNumbers(project);
     case "cookbook":
       return project.recipe != null;
   }

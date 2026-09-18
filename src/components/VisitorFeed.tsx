@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 import { countryName, relativeTime, VISIBLE_EVENT_COUNT } from "@/lib/visitorEvents";
 
 interface FeedEvent {
@@ -17,8 +18,11 @@ export function VisitorFeed() {
   const [events, setEvents] = useState<FeedEvent[]>([]);
   const [now, setNow] = useState(() => Date.now());
   const latestRequestId = useRef(0);
+  // The hero only shows this from the lg breakpoint up, so below it there is nothing to poll for or tick.
+  const shown = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
+    if (!shown) return;
     let cancelled = false;
 
     async function poll() {
@@ -41,14 +45,15 @@ export function VisitorFeed() {
       cancelled = true;
       clearInterval(pollId);
     };
-  }, []);
+  }, [shown]);
 
   useEffect(() => {
+    if (!shown) return;
     const tickId = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(tickId);
-  }, []);
+  }, [shown]);
 
-  if (events.length === 0) return null;
+  if (!shown || events.length === 0) return null;
 
   return (
     <section aria-label="Live visitor activity" className="flex flex-col gap-3">

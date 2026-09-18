@@ -1,5 +1,6 @@
 import { primaryFact } from "@/lib/projectFacts";
 import type { Project } from "@/lib/projects";
+import { openProjectOnClick } from "@/lib/useProjectHash";
 import { VerdictBadge } from "./VerdictBadge";
 
 export function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -9,6 +10,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
   return (
     <a
       href={`#${project.id}`}
+      onClick={(event) => openProjectOnClick(event, project.id)}
       aria-haspopup="dialog"
       style={{ animationDelay: `${Math.min(index, 8) * 45}ms` }}
       className="group flex min-w-0 animate-[bp-card-in_420ms_var(--ease-out-expo)_backwards] flex-col gap-4 rounded-xl border border-bp-hairline bg-bp-surface p-5 transition-colors duration-200 hover:border-bp-muted hover:bg-bp-raised"
@@ -30,7 +32,7 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       <p className="line-clamp-3 text-sm leading-relaxed text-bp-secondary">{project.description}</p>
 
       <div className="mt-auto flex items-center justify-between gap-3 pt-1 font-bp-mono text-xs">
-        <span className="truncate text-bp-muted">{project.author}</span>
+        <span className="truncate text-bp-muted group-hover:text-bp-secondary">{project.author}</span>
         <span className="shrink-0 text-bp-secondary transition-colors group-hover:text-bp-accent">
           How it was built <span aria-hidden="true">→</span>
         </span>

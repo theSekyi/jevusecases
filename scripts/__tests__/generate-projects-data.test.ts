@@ -9,7 +9,7 @@ let dir: string;
 function writeEntry(id: string, fields: Record<string, unknown> = {}) {
   const entryDir = join(dir, id);
   mkdirSync(entryDir, { recursive: true });
-  writeFileSync(join(entryDir, "entry.json"), JSON.stringify({ id, ...fields }));
+  writeFileSync(join(entryDir, "entry.json"), JSON.stringify({ id, date_found: "2026-09-17", ...fields }));
 }
 
 beforeEach(() => {
@@ -23,7 +23,16 @@ afterEach(() => {
 describe("readEntry", () => {
   test("reads a valid entry.json", () => {
     writeEntry("acme-widget", { project: "Widget" });
-    expect(readEntry(dir, "acme-widget")).toEqual({ id: "acme-widget", project: "Widget" });
+    expect(readEntry(dir, "acme-widget")).toEqual({ id: "acme-widget", date_found: "2026-09-17", project: "Widget" });
+  });
+
+  test("rejects a date_found that isn't a real YYYY-MM-DD date, so a bad entry can't reach the site", () => {
+    for (const bad of ["2026-9-7", "2026-02-30", "17/09/2026", "", "yesterday"]) {
+      writeEntry("bad-date", { date_found: bad });
+      expect(() => readEntry(dir, "bad-date"), bad).toThrow(/date_found/);
+    }
+    writeEntry("no-date", { date_found: undefined });
+    expect(() => readEntry(dir, "no-date")).toThrow(/date_found/);
   });
 
   test("throws with the folder name when entry.json is missing", () => {

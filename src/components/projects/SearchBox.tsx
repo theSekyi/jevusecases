@@ -1,4 +1,4 @@
-import type { Ref } from "react";
+import type { RefObject } from "react";
 
 export function SearchBox({
   value,
@@ -9,7 +9,7 @@ export function SearchBox({
   value: string;
   onChange: (value: string) => void;
   count: number;
-  inputRef: Ref<HTMLInputElement>;
+  inputRef: RefObject<HTMLInputElement | null>;
 }) {
   return (
     <div className="relative max-w-2xl">
@@ -50,7 +50,7 @@ export function SearchBox({
           type="button"
           onClick={() => {
             onChange("");
-            (document.getElementById("project-search") as HTMLInputElement | null)?.focus();
+            inputRef.current?.focus();
           }}
           className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md px-2 py-1 text-sm text-bp-secondary transition-colors hover:text-bp-ink"
         >

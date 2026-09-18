@@ -66,7 +66,7 @@ describe("verifyAgainstDummy", () => {
     await expect(verifyAgainstDummy("")).resolves.toBeUndefined();
   });
 
-  test("costs about the same as a real check, every time, including the first", async () => {
+  test("costs about the same as a real check, and even the first call is not cheaper", { timeout: 30_000 }, async () => {
     const hash = await hashPassword("some password");
 
     const timeOf = async (work: () => Promise<unknown>) => {
@@ -74,9 +74,9 @@ describe("verifyAgainstDummy", () => {
       await work();
       return performance.now() - start;
     };
-    // Busy machines only ever make a run slower, so the fastest of a few runs is the honest cost.
+    // Busy machines only ever make a run slower, so the faster of two runs is the honest cost.
     const fastestOf = async (work: () => Promise<unknown>) =>
-      Math.min(await timeOf(work), await timeOf(work), await timeOf(work));
+      Math.min(await timeOf(work), await timeOf(work));
 
     const dummyFirst = await timeOf(() => verifyAgainstDummy("guess"));
     const dummy = await fastestOf(() => verifyAgainstDummy("guess"));

@@ -73,8 +73,10 @@
 
   // Free-form: latency/cost/whatever real number you have. Common shapes
   // seen in existing entries: { "latency_ms": 81, ... },
-  // { "latency_s": 7.1, "cost_usd": 0.0039, ... }. Leave null if you don't
-  // have a real, measured number.
+  // { "latency_s": 7.1, "cost_usd": 0.0039, ... }. The site shows these keys:
+  // latency_ms, latency_s, cost_usd, comparison (a sentence such as
+  // "3.4x faster vs X"), task (what was measured) and notes. Leave null if you
+  // don't have a real, measured number.
   "benchmark": null,
 
   // Leave as an empty array unless you're reporting a specific failure

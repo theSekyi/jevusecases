@@ -1,5 +1,7 @@
 import { projectFacts } from "@/lib/projectFacts";
+import { openProjectOnClick } from "@/lib/useProjectHash";
 import type { Project } from "@/lib/projects";
+import { FactList } from "./FactList";
 import { VerdictBadge } from "./VerdictBadge";
 
 export function FeaturedProject({ project }: { project: Project }) {
@@ -9,6 +11,7 @@ export function FeaturedProject({ project }: { project: Project }) {
   return (
     <a
       href={`#${project.id}`}
+      onClick={(event) => openProjectOnClick(event, project.id)}
       aria-haspopup="dialog"
       className="group grid min-w-0 animate-[bp-card-in_500ms_var(--ease-out-expo)_backwards] gap-8 rounded-2xl border border-bp-muted bg-bp-surface p-6 transition-colors duration-200 hover:border-bp-accent sm:p-8 lg:grid-cols-[1.15fr_1fr] lg:gap-12"
     >
@@ -28,14 +31,7 @@ export function FeaturedProject({ project }: { project: Project }) {
         </span>
       </div>
 
-      <dl className="flex flex-col divide-y divide-bp-hairline rounded-xl border border-bp-hairline bg-bp-bg">
-        {facts.map((fact) => (
-          <div key={`${fact.kind}-${fact.value}`} className="flex flex-col gap-1 p-4">
-            <dt className="text-xs text-bp-secondary">{fact.label}</dt>
-            <dd className="font-bp-mono text-base leading-snug text-bp-ink [overflow-wrap:anywhere]">{fact.value}</dd>
-          </div>
-        ))}
-      </dl>
+      <FactList facts={facts} />
     </a>
   );
 }
