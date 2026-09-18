@@ -41,7 +41,8 @@ describe("privacy page", () => {
       expect(screen.getByRole("heading", { name: heading })).toBeInTheDocument();
     }
     expect(screen.getByText(/cannot be fully erased/)).toBeInTheDocument();
-    expect(screen.getByText(/based in the United States/)).toBeInTheDocument();
+    expect(screen.getByText(/are based in the United States/)).toBeInTheDocument();
+    expect(screen.getByText(/pass through the domain registrar/)).toBeInTheDocument();
     expect(screen.getByText(/Information Commissioner/)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "privacy@jevusecases.com" })).toHaveAttribute(
       "href",
@@ -52,7 +53,7 @@ describe("privacy page", () => {
   test("explains that finding visit records needs the visitor's own IP address, sent by email", () => {
     render(<PrivacyPage />);
 
-    expect(screen.getByText(/the owner needs your IP address, so include it in the email/)).toBeInTheDocument();
+    expect(screen.getByText(/the owner needs the IP address you used when you visited/)).toBeInTheDocument();
   });
 
   test("is honest that nothing is deleted automatically yet", () => {

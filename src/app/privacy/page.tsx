@@ -87,7 +87,7 @@ export default function PrivacyPage() {
         <Section title="WHO HANDLES THE DATA">
           <p>
             Vercel hosts the site and works out your country. Neon stores the visit records. GitHub holds submissions.
-            These companies are based in the United States. Visit records are kept until they are deleted. There is no
+            Emails to the address below pass through the domain registrar&apos;s forwarding and the owner&apos;s email provider. Vercel, Neon and GitHub are based in the United States. Visit records are kept until they are deleted. There is no
             automatic deletion yet.
           </p>
         </Section>
@@ -102,7 +102,7 @@ export default function PrivacyPage() {
             <a href={`mailto:${CONTACT_EMAIL}`} className="underline hover:text-bp-accent">
               {CONTACT_EMAIL}
             </a>
-            . To find your visit records, the owner needs your IP address, so include it in the email.
+            . To find your visit records, the owner needs the IP address you used when you visited, so include it in the email.
           </p>
         </Section>
       </div>
