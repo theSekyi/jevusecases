@@ -1,17 +1,11 @@
 import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
 import { geolocation } from "@vercel/functions";
 import { isValidCountryCode, recordVisitorEvent } from "@/lib/visitorEvents";
+import { SESSION_COOKIE } from "@/lib/authConstants";
 import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 
 // A generous per-IP cap, just to blunt a scripted flood rather than to limit real traffic.
 const checkRateLimit = createRateLimiter(60, 60 * 1000);
-
-// The App Router issues its own internal RSC re-fetches of the current route right after the
-// initial load (Next.js strips the headers that would otherwise identify these to Proxy, so
-// header-based filtering alone can't catch them) — this collapses that burst into one event per
-// visit instead of enumerating every internal request shape, which would be fragile across
-// framework versions. A real second page view from the same visitor a second apart still counts.
-const checkNotDuplicate = createRateLimiter(1, 1500);
 
 async function recordVisit(request: NextRequest) {
   try {
@@ -21,9 +15,11 @@ async function recordVisit(request: NextRequest) {
     if (request.method !== "GET") return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
+    // The admin's own browsing would otherwise dominate the feed. Presence of the cookie is
+    // enough here; nothing is being authorized.
+    if (request.cookies.has(SESSION_COOKIE)) return;
     const ip = clientIp(request);
     if (!checkRateLimit(ip)) return;
-    if (!checkNotDuplicate(ip)) return;
 
     const { country } = geolocation(request);
     await recordVisitorEvent(isValidCountryCode(country) ? country : null, request.nextUrl.pathname);
@@ -37,8 +33,10 @@ export function proxy(request: NextRequest, event: NextFetchEvent) {
   return NextResponse.next();
 }
 
+// Files (anything whose last segment has an extension) and /.well-known/ aren't pages. If a route
+// with a dot in its last segment is ever added, this rule has to be narrowed or it goes unrecorded.
 export const config = {
   matcher: [
-    "/((?!api(?:/|$)|admin(?:/|$)|_next/static|_next/image|favicon\\.ico$|apple-icon$|icon$|sitemap\\.xml$|robots\\.txt$).*)",
+    "/((?!api(?:/|$)|admin(?:/|$)|_next/static|_next/image|\\.well-known/|.*\\.[^/]+$|apple-icon$|icon$).*)",
   ],
 };

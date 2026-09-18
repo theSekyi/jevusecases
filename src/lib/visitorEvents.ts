@@ -49,9 +49,34 @@ export function relativeTime(iso: string, now: number): string {
   return `${Math.floor(seconds / 60)}m ago`;
 }
 
+/**
+ * One page load can reach the server as several requests, and production runs several instances, so
+ * repeats are dropped here, where every instance shares one view, instead of in each instance's memory.
+ */
+export const DUPLICATE_WINDOW_MS = 3000;
+
+// An arbitrary constant that only has to be the same on every instance.
+const RECORD_LOCK_KEY = 41_001;
+
+/** Records a page view unless the same country was recorded within DUPLICATE_WINDOW_MS. */
 export async function recordVisitorEvent(country: string | null, path: string): Promise<void> {
   const sql = db();
-  await sql`INSERT INTO visitor_events (country, path) VALUES (${country}, ${path})`;
+  // The lock makes check-then-insert atomic: a concurrent call waits for this transaction to commit
+  // before running its own check, so it sees the row instead of racing past it. The timeout keeps a
+  // burst of requests from queuing on the lock for long; a timed-out call is just not recorded.
+  await sql.transaction([
+    sql`SET LOCAL lock_timeout = '2s'`,
+    sql`SELECT pg_advisory_xact_lock(${RECORD_LOCK_KEY})`,
+    sql`
+      INSERT INTO visitor_events (country, path)
+      SELECT ${country}::text, ${path}::text
+      WHERE NOT EXISTS (
+        SELECT 1 FROM visitor_events
+        WHERE country IS NOT DISTINCT FROM ${country}::text
+          AND created_at > now() - (${DUPLICATE_WINDOW_MS}::text || ' milliseconds')::interval
+      )
+    `,
+  ]);
 }
 
 export async function getRecentVisitorEvents(limit = VISIBLE_EVENT_COUNT): Promise<VisitorEvent[]> {
