@@ -27,7 +27,7 @@ describe("traffic page", () => {
 
   test("renders the summary for a signed-in admin", async () => {
     requireAdmin.mockResolvedValueOnce({ id: "7" });
-    getTrafficSummary.mockResolvedValueOnce({ total: 5, rows: [{ kind: "country", country: "GB", visits: 5 }] });
+    getTrafficSummary.mockResolvedValueOnce({ views: 5, visitors: 2, returning: 1, rows: [{ kind: "country", country: "GB", views: 5, visitors: 2 }] });
 
     render(await TrafficPage());
 

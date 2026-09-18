@@ -2,152 +2,126 @@ import { afterEach, describe, expect, test, vi } from "vitest";
 import {
   formatShare,
   getTrafficSummary,
-  MIN_COUNTRY_VISITS,
-  summarizeTraffic,
+  MIN_COUNTRY_VIEWS,
+  summarizeCountries,
   TRAFFIC_WINDOW_DAYS,
+  type CountryCounts,
   type TrafficRow,
 } from "../trafficStats";
 
 const sqlMock = vi.fn();
 vi.mock("@/lib/db", () => ({ db: () => sqlMock }));
 
-const named = (rows: TrafficRow[]) => rows.map((row) => (row.kind === "country" ? row.country : row.kind));
+const counts = (country: string | null, views: number, visitors = 1): CountryCounts => ({ country, views, visitors });
+const label = (rows: TrafficRow[]) => rows.map((row) => (row.kind === "country" ? row.country : row.kind));
 
-describe("summarizeTraffic", () => {
-  test("ranks countries by visits, most first, with the total across all rows", () => {
-    const summary = summarizeTraffic([
-      { country: "US", visits: 10 },
-      { country: "GB", visits: 30 },
-      { country: "CA", visits: 5 },
-    ]);
+describe("summarizeCountries", () => {
+  test("ranks countries by page views, most first, with the total across all rows", () => {
+    const summary = summarizeCountries([counts("US", 10, 4), counts("GB", 30, 9), counts("CA", 5, 2)]);
 
     expect(summary.rows).toEqual([
-      { kind: "country", country: "GB", visits: 30 },
-      { kind: "country", country: "US", visits: 10 },
-      { kind: "country", country: "CA", visits: 5 },
+      { kind: "country", country: "GB", views: 30, visitors: 9 },
+      { kind: "country", country: "US", views: 10, visitors: 4 },
+      { kind: "country", country: "CA", views: 5, visitors: 2 },
     ]);
-    expect(summary.total).toBe(45);
+    expect(summary.views).toBe(45);
   });
 
   test("breaks ties by country code so the order is stable", () => {
-    const summary = summarizeTraffic([
-      { country: "FR", visits: 4 },
-      { country: "NL", visits: 4 },
-      { country: "DE", visits: 4 },
+    expect(label(summarizeCountries([counts("FR", 4), counts("NL", 4), counts("DE", 4)]).rows)).toEqual([
+      "DE",
+      "FR",
+      "NL",
     ]);
-
-    expect(named(summary.rows)).toEqual(["DE", "FR", "NL"]);
   });
 
-  test("folds countries below the minimum into one 'other' row, never naming them", () => {
-    const summary = summarizeTraffic([
-      { country: "US", visits: 20 },
-      { country: "KZ", visits: 1 },
-      { country: "HU", visits: MIN_COUNTRY_VISITS - 1 },
-      { country: "SG", visits: MIN_COUNTRY_VISITS },
+  test("folds countries below the minimum into one 'other' row, never naming them, and adds up their visitors", () => {
+    const summary = summarizeCountries([
+      counts("US", 20, 8),
+      counts("KZ", 1, 1),
+      counts("HU", MIN_COUNTRY_VIEWS - 1, 2),
+      counts("SG", MIN_COUNTRY_VIEWS, 3),
     ]);
 
     expect(summary.rows).toEqual([
-      { kind: "country", country: "US", visits: 20 },
-      { kind: "country", country: "SG", visits: MIN_COUNTRY_VISITS },
-      { kind: "other", visits: MIN_COUNTRY_VISITS },
+      { kind: "country", country: "US", views: 20, visitors: 8 },
+      { kind: "country", country: "SG", views: MIN_COUNTRY_VIEWS, visitors: 3 },
+      { kind: "other", views: MIN_COUNTRY_VIEWS, visitors: 3 },
     ]);
     expect(JSON.stringify(summary)).not.toContain("KZ");
     expect(JSON.stringify(summary)).not.toContain("HU");
   });
 
   test("a lone tiny country can't show up as an 'other' row of one: the smallest named country joins it", () => {
-    const summary = summarizeTraffic([
-      { country: "US", visits: 20 },
-      { country: "GB", visits: 5 },
-      { country: "KZ", visits: 1 },
-    ]);
+    const summary = summarizeCountries([counts("US", 20, 7), counts("GB", 5, 3), counts("KZ", 1, 1)]);
 
     expect(summary.rows).toEqual([
-      { kind: "country", country: "US", visits: 20 },
-      { kind: "other", visits: 6 },
+      { kind: "country", country: "US", views: 20, visitors: 7 },
+      { kind: "other", views: 6, visitors: 4 },
     ]);
-    expect(summary.total).toBe(26);
+    expect(summary.views).toBe(26);
   });
 
   test("no 'other' row is ever smaller than the minimum while a named country could absorb it", () => {
     for (const small of [1, 2]) {
-      const { rows } = summarizeTraffic([
-        { country: "US", visits: 9 },
-        { country: "GB", visits: 3 },
-        { country: "KZ", visits: small },
-      ]);
+      const { rows } = summarizeCountries([counts("US", 9), counts("GB", 3), counts("KZ", small)]);
       const other = rows.find((row) => row.kind === "other");
-      expect(other?.visits ?? MIN_COUNTRY_VISITS).toBeGreaterThanOrEqual(MIN_COUNTRY_VISITS);
+      expect(other?.views ?? MIN_COUNTRY_VIEWS).toBeGreaterThanOrEqual(MIN_COUNTRY_VIEWS);
     }
   });
 
   test("when every country is below the minimum, everything is one 'other' row equal to the total", () => {
-    const summary = summarizeTraffic([
-      { country: "KZ", visits: 1 },
-      { country: "HU", visits: 2 },
-    ]);
+    const summary = summarizeCountries([counts("KZ", 1), counts("HU", 2)]);
 
-    expect(summary.rows).toEqual([{ kind: "other", visits: 3 }]);
-    expect(summary.total).toBe(3);
+    expect(summary.rows).toEqual([{ kind: "other", views: 3, visitors: 2 }]);
+    expect(summary.views).toBe(3);
   });
 
   test("groups missing or malformed locations as unknown, before 'other'", () => {
-    const summary = summarizeTraffic([
-      { country: "US", visits: 9 },
-      { country: null, visits: 2 },
-      { country: "<script>", visits: 2 },
-      { country: "KZ", visits: 3 },
+    const summary = summarizeCountries([
+      counts("US", 9),
+      counts(null, 2),
+      counts("<script>", 2),
+      counts("KZ", 3),
     ]);
 
     expect(summary.rows).toEqual([
-      { kind: "country", country: "US", visits: 9 },
-      { kind: "country", country: "KZ", visits: 3 },
-      { kind: "unknown", visits: 4 },
+      { kind: "country", country: "US", views: 9, visitors: 1 },
+      { kind: "country", country: "KZ", views: 3, visitors: 1 },
+      { kind: "unknown", views: 4, visitors: 2 },
     ]);
-    expect(summary.total).toBe(16);
+    expect(summary.views).toBe(16);
   });
 
   test("unknown locations below the minimum fold into 'other' instead of standing alone", () => {
-    const summary = summarizeTraffic([
-      { country: "US", visits: 9 },
-      { country: null, visits: 1 },
-      { country: "KZ", visits: 2 },
-    ]);
+    const summary = summarizeCountries([counts("US", 9), counts(null, 1), counts("KZ", 2)]);
 
-    expect(named(summary.rows)).toEqual(["US", "other"]);
-    expect(summary.rows[1]).toEqual({ kind: "other", visits: 3 });
+    expect(label(summary.rows)).toEqual(["US", "other"]);
+    expect(summary.rows[1]).toMatchObject({ kind: "other", views: 3 });
   });
 
   test("only unknown locations, above the minimum, is a single unknown row", () => {
-    expect(summarizeTraffic([{ country: null, visits: 5 }])).toEqual({
-      total: 5,
-      rows: [{ kind: "unknown", visits: 5 }],
+    expect(summarizeCountries([counts(null, 5, 2)])).toEqual({
+      views: 5,
+      rows: [{ kind: "unknown", views: 5, visitors: 2 }],
     });
   });
 
   test("an empty window is an empty summary, not an invented one", () => {
-    expect(summarizeTraffic([])).toEqual({ total: 0, rows: [] });
+    expect(summarizeCountries([])).toEqual({ views: 0, rows: [] });
   });
 
   test("merges spellings of one country before applying the minimum", () => {
-    expect(
-      summarizeTraffic([
-        { country: "gb", visits: 2 },
-        { country: "GB", visits: 2 },
-      ]).rows,
-    ).toEqual([{ kind: "country", country: "GB", visits: 4 }]);
-
-    expect(
-      summarizeTraffic([
-        { country: "us", visits: 5 },
-        { country: "US", visits: 5 },
-      ]).rows,
-    ).toEqual([{ kind: "country", country: "US", visits: 10 }]);
+    expect(summarizeCountries([counts("gb", 2, 1), counts("GB", 2, 1)]).rows).toEqual([
+      { kind: "country", country: "GB", views: 4, visitors: 2 },
+    ]);
+    expect(summarizeCountries([counts("us", 5), counts("US", 5)]).rows).toEqual([
+      { kind: "country", country: "US", views: 10, visitors: 2 },
+    ]);
   });
 
   test("omits the 'other' and 'unknown' rows when they have nothing in them", () => {
-    expect(named(summarizeTraffic([{ country: "US", visits: 5 }]).rows)).toEqual(["US"]);
+    expect(label(summarizeCountries([counts("US", 5)]).rows)).toEqual(["US"]);
   });
 });
 
@@ -176,14 +150,47 @@ describe("getTrafficSummary", () => {
     sqlMock.mockReset();
   });
 
-  test("groups by country over the fixed window and returns the summary", async () => {
-    sqlMock.mockResolvedValueOnce([{ country: "US", visits: 12 }]);
+  test("combines per-country counts with overall unique and returning visitors for the fixed window", async () => {
+    sqlMock
+      .mockResolvedValueOnce([{ country: "US", views: 12, visitors: 5 }])
+      .mockResolvedValueOnce([{ visitors: 9, returning: 3 }]);
 
     const summary = await getTrafficSummary();
 
-    const [strings, ...values] = sqlMock.mock.calls[0];
-    expect(strings.join("?")).toContain("GROUP BY country");
-    expect(values).toEqual([TRAFFIC_WINDOW_DAYS]);
-    expect(summary).toEqual({ total: 12, rows: [{ kind: "country", country: "US", visits: 12 }] });
+    expect(summary).toEqual({
+      views: 12,
+      visitors: 9,
+      returning: 3,
+      rows: [{ kind: "country", country: "US", views: 12, visitors: 5 }],
+    });
+    for (const [strings, ...values] of sqlMock.mock.calls) {
+      expect(strings.join("?")).toContain("visitor_events");
+      expect(values).toEqual([TRAFFIC_WINDOW_DAYS]);
+    }
+  });
+
+  test("overall visitors are counted across countries, not summed from country rows", async () => {
+    sqlMock
+      .mockResolvedValueOnce([
+        { country: "US", views: 5, visitors: 1 },
+        { country: "GB", views: 5, visitors: 1 },
+      ])
+      .mockResolvedValueOnce([{ visitors: 1, returning: 1 }]);
+
+    const summary = await getTrafficSummary();
+
+    expect(summary.visitors).toBe(1);
+    expect(summary.returning).toBe(1);
+  });
+
+  test("returning visitors are those seen on more than one day, and only hashed visits count", async () => {
+    sqlMock.mockResolvedValueOnce([]).mockResolvedValueOnce([{ visitors: 0, returning: 0 }]);
+
+    await getTrafficSummary();
+
+    const totals = sqlMock.mock.calls[1][0].join("?");
+    expect(totals).toContain("visitor_hash IS NOT NULL");
+    expect(totals).toContain("count(DISTINCT created_at::date)");
+    expect(totals).toContain("days > 1");
   });
 });

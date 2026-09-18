@@ -3,6 +3,7 @@ import { geolocation } from "@vercel/functions";
 import { isValidCountryCode, recordVisitorEvent } from "@/lib/visitorEvents";
 import { SESSION_COOKIE } from "@/lib/authConstants";
 import { clientIp, createRateLimiter } from "@/lib/rateLimit";
+import { hashVisitor } from "@/lib/visitorHash";
 
 // A generous per-IP cap, just to blunt a scripted flood rather than to limit real traffic.
 const checkRateLimit = createRateLimiter(60, 60 * 1000);
@@ -22,7 +23,11 @@ async function recordVisit(request: NextRequest) {
     if (!checkRateLimit(ip)) return;
 
     const { country } = geolocation(request);
-    await recordVisitorEvent(isValidCountryCode(country) ? country : null, request.nextUrl.pathname);
+    await recordVisitorEvent(
+      isValidCountryCode(country) ? country : null,
+      request.nextUrl.pathname,
+      hashVisitor(ip),
+    );
   } catch (error) {
     console.error("Failed to record visitor event:", error);
   }
