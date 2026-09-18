@@ -33,6 +33,6 @@ describe("traffic page", () => {
 
     expect(screen.getByRole("heading", { name: "Traffic" })).toBeInTheDocument();
     expect(screen.getByText("United Kingdom")).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /ADMIN/ })).toHaveAttribute("href", "/admin");
+    expect(screen.getByRole("link", { name: "Back to ADMIN" })).toHaveAttribute("href", "/admin");
   });
 });

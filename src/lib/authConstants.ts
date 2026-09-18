@@ -2,6 +2,7 @@ export const SESSION_COOKIE = "jevusecases_session";
 export const ADMIN_PATH = "/admin";
 export const LOGIN_PATH = "/admin/login";
 export const TRAFFIC_PATH = "/admin/traffic";
+export const ACCOUNT_PATH = "/admin/account";
 
 /** The login page shows its "password changed" notice for `?changed=1`; both sides share these. */
 export const PASSWORD_CHANGED_PARAM = "changed";
