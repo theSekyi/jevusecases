@@ -1,5 +1,8 @@
-/** An IPv6 subscriber owns a whole /64, so limiting per address would hand them a fresh bucket per request. */
-function limitingKey(ip: string): string {
+/**
+ * The form of an address that limits and visitor hashes are keyed on. An IPv6 subscriber owns a whole
+ * /64, so per-address keys would hand them a fresh bucket per request; those collapse to the /64.
+ */
+export function normalizeIp(ip: string): string {
   const address = ip.split("%")[0];
   if (!address.includes(":")) return address;
 
@@ -25,7 +28,7 @@ function limitingKey(ip: string): string {
 export function clientIp(source: { headers: { get(name: string): string | null } }): string {
   const chain = source.headers.get("x-forwarded-for")?.split(",");
   const ip = chain?.[chain.length - 1]?.trim();
-  return ip ? limitingKey(ip) : "unknown";
+  return ip ? normalizeIp(ip) : "unknown";
 }
 
 /** Caps how many distinct keys this limiter tracks at once, so a flood of one-off keys can't grow the map forever. */

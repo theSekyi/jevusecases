@@ -15,6 +15,7 @@
     "lint": "eslint",
     "db:setup": "node --env-file=.env.local scripts/setup-db.ts",
     "admin:invite": "node --env-file=.env.local scripts/invite.ts",
+    "visitor:records": "node --env-file=.env.local scripts/visitor-records.ts",
     "pretest": "node scripts/generate-projects-data.ts",
     "test": "vitest run"
   },
