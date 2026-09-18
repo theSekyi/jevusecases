@@ -11,12 +11,30 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "trading / on-chain agents",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
-    "cost_signal": { "baseline_model": null, "est_savings_pct": null, "basis": null },
-    "benchmark": { "latency_ms": 81, "task": "buy/sell decision per 300ms block", "notes": "author reports ~81ms model latency; hot loop makes exactly two RPC round trips to fit the block budget" },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
+    "cost_signal": {
+      "baseline_model": null,
+      "est_savings_pct": null,
+      "basis": null
+    },
+    "benchmark": {
+      "latency_ms": 81,
+      "task": "buy/sell decision per 300ms block",
+      "notes": "author reports ~81ms model latency; hot loop makes exactly two RPC round trips to fit the block budget"
+    },
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "executes real trades with real funds - high blast radius if Jev misjudges; good Watchdog-lens candidate once it's run longer" },
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/jarrodwatts/jev-trader" }
+    "security_status": {
+      "red_teamed": false,
+      "notes": "executes real trades with real funds - high blast radius if Jev misjudges; good Watchdog-lens candidate once it's run longer"
+    },
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/jarrodwatts/jev-trader"
+    }
   },
   {
     "id": "gregpr07-jev-ultrafast",
@@ -30,12 +48,27 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "browser agents / automation",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
-    "cost_signal": { "baseline_model": null, "est_savings_pct": null, "basis": null },
-    "benchmark": { "latency_s": 7.1, "cost_usd": 0.0039, "task": "Zurich -> London flight search on real Google Flights" },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
+    "cost_signal": {
+      "baseline_model": null,
+      "est_savings_pct": null,
+      "basis": null
+    },
+    "benchmark": {
+      "latency_s": 7.1,
+      "cost_usd": 0.0039,
+      "task": "Zurich -> London flight search on real Google Flights"
+    },
     "jaggedness_reports": [],
     "security_status": null,
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/browser-use/jev-ultrafast" }
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/browser-use/jev-ultrafast"
+    }
   },
   {
     "id": "jpschroeder-fsd-rebuild",
@@ -49,11 +82,22 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "robotics / simulation",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
-    "cost_signal": { "baseline_model": null, "est_savings_pct": null, "basis": null },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
+    "cost_signal": {
+      "baseline_model": null,
+      "est_savings_pct": null,
+      "basis": null
+    },
     "benchmark": null,
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "safety-critical decision domain (driving) - no repo link yet to inspect failure handling" },
+    "security_status": {
+      "red_teamed": false,
+      "notes": "safety-critical decision domain (driving) - no repo link yet to inspect failure handling"
+    },
     "recipe": null
   },
   {
@@ -68,8 +112,16 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "exploration / benchmarking",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
-    "cost_signal": { "baseline_model": null, "est_savings_pct": null, "basis": "~5,000 requests for ~$2 total (~$0.0004/request) across classification, routing, intent, steering" },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
+    "cost_signal": {
+      "baseline_model": null,
+      "est_savings_pct": null,
+      "basis": "~5,000 requests for ~$2 total (~$0.0004/request) across classification, routing, intent, steering"
+    },
     "benchmark": null,
     "jaggedness_reports": [],
     "security_status": null,
@@ -106,12 +158,25 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "dev tooling / IDE",
-    "replaces": { "tool": null, "verdict": null, "notes": "positions itself against paid AI IDEs (Cursor-style) but author hasn't made a direct replacement claim yet - needs follow-up before scoring" },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": "positions itself against paid AI IDEs (Cursor-style) but author hasn't made a direct replacement claim yet - needs follow-up before scoring"
+    },
     "cost_signal": null,
-    "benchmark": { "latency_ms": 318, "task": "wakeup triage - mixed noise/signal batch classification" },
+    "benchmark": {
+      "latency_ms": 318,
+      "task": "wakeup triage - mixed noise/signal batch classification"
+    },
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "explicitly fails open (lets routing through) if Jev fails - worth a Watchdog-lens note on what 'fails open' means for a routing decision" },
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/LazyGod75/The-LazyIDE" }
+    "security_status": {
+      "red_teamed": false,
+      "notes": "explicitly fails open (lets routing through) if Jev fails - worth a Watchdog-lens note on what 'fails open' means for a routing decision"
+    },
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/LazyGod75/The-LazyIDE"
+    }
   },
   {
     "id": "omegaedge-grokskill-jev",
@@ -125,12 +190,19 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "agent tooling / skills",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
     "cost_signal": null,
     "benchmark": null,
     "jaggedness_reports": [],
     "security_status": null,
-    "recipe": { "type": "Grok skill snapshot", "link": "https://github.com/AE-AlphaEdge/grokskill-jev" }
+    "recipe": {
+      "type": "Grok skill snapshot",
+      "link": "https://github.com/AE-AlphaEdge/grokskill-jev"
+    }
   },
   {
     "id": "leepokai-jev-guard",
@@ -144,12 +216,29 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "security / guardrails",
-    "replaces": { "tool": "Claude Haiku 4.5 (as a tool-call classifier)", "verdict": "YES", "notes": "author's own claim, not independently verified: same classification job, 3.4x faster and 28x cheaper" },
-    "cost_signal": { "baseline_model": "Claude Haiku 4.5", "est_savings_pct": null, "basis": "author reports 28x cheaper for the same tool-call classification task (unverified)" },
-    "benchmark": { "comparison": "3.4x faster, 28x cheaper vs Haiku 4.5", "task": "tool-call safety classification" },
+    "replaces": {
+      "tool": "Claude Haiku 4.5 (as a tool-call classifier)",
+      "verdict": "YES",
+      "notes": "author's own claim, not independently verified: same classification job, 3.4x faster and 28x cheaper"
+    },
+    "cost_signal": {
+      "baseline_model": "Claude Haiku 4.5",
+      "est_savings_pct": null,
+      "basis": "author reports 28x cheaper for the same tool-call classification task (unverified)"
+    },
+    "benchmark": {
+      "comparison": "3.4x faster, 28x cheaper vs Haiku 4.5",
+      "task": "tool-call safety classification"
+    },
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "this tool IS a security guardrail - prime Watchdog-lens candidate: has anyone tried to get a malicious tool call past jev-guard's injection detection?" },
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/leepokai/jev-guard" }
+    "security_status": {
+      "red_teamed": false,
+      "notes": "this tool IS a security guardrail - prime Watchdog-lens candidate: has anyone tried to get a malicious tool call past jev-guard's injection detection?"
+    },
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/leepokai/jev-guard"
+    }
   },
   {
     "id": "wobsoriano-is-jeven",
@@ -163,12 +252,19 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "novelty / joke",
-    "replaces": { "tool": "the % operator", "verdict": "NOT REALLY", "notes": "intentional joke entry" },
+    "replaces": {
+      "tool": "the % operator",
+      "verdict": "NOT REALLY",
+      "notes": "intentional joke entry"
+    },
     "cost_signal": null,
     "benchmark": null,
     "jaggedness_reports": [],
     "security_status": null,
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/wobsoriano/is-jeven" }
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/wobsoriano/is-jeven"
+    }
   },
   {
     "id": "gpkmasa-jrx",
@@ -182,12 +278,22 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "security / guardrails",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
     "cost_signal": null,
     "benchmark": null,
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "gates raw bash execution for coding agents - a false negative here means arbitrary code execution; strongest Watchdog-lens candidate in this batch" },
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/Madhumasa84/jrx" }
+    "security_status": {
+      "red_teamed": false,
+      "notes": "gates raw bash execution for coding agents - a false negative here means arbitrary code execution; strongest Watchdog-lens candidate in this batch"
+    },
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/Madhumasa84/jrx"
+    }
   },
   {
     "id": "ekzhang-openjev-sglang",
@@ -201,12 +307,23 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "infra / open reimplementation",
-    "replaces": { "tool": "TypeSafe's hosted Jev API", "verdict": "KINDA", "notes": "self-hosted approximation on an open model, not a drop-in - own accuracy/calibration unverified against Jev" },
+    "replaces": {
+      "tool": "TypeSafe's hosted Jev API",
+      "verdict": "KINDA",
+      "notes": "self-hosted approximation on an open model, not a drop-in - own accuracy/calibration unverified against Jev"
+    },
     "cost_signal": null,
-    "benchmark": { "task": "64 parallel tasks", "latency_s": "<1", "notes": "uses SGLang radix cache for prefill reuse" },
+    "benchmark": {
+      "task": "64 parallel tasks",
+      "latency_s": "<1",
+      "notes": "uses SGLang radix cache for prefill reuse"
+    },
     "jaggedness_reports": [],
     "security_status": null,
-    "recipe": { "type": "open-source implementation", "link": "https://github.com/ekzhang/openjev-sglang" }
+    "recipe": {
+      "type": "open-source implementation",
+      "link": "https://github.com/ekzhang/openjev-sglang"
+    }
   },
   {
     "id": "ctatedev-ai-cli",
@@ -220,12 +337,19 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "dev tooling / CLI",
-    "replaces": { "tool": null, "verdict": null, "notes": null },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": null
+    },
     "cost_signal": null,
     "benchmark": null,
     "jaggedness_reports": [],
     "security_status": null,
-    "recipe": { "type": "npm package", "install": "npm install -g ai-cli" }
+    "recipe": {
+      "type": "npm package",
+      "install": "npm install -g ai-cli"
+    }
   },
   {
     "id": "gnumanth-pkg-gate",
@@ -239,11 +363,43 @@
     "date_found": "2026-09-17",
     "is_build": true,
     "category": "security / supply chain",
-    "replaces": { "tool": null, "verdict": null, "notes": "candidate to compare against paid supply-chain scanners (e.g. Socket) - not yet researched" },
+    "replaces": {
+      "tool": null,
+      "verdict": null,
+      "notes": "candidate to compare against paid supply-chain scanners (e.g. Socket) - not yet researched"
+    },
     "cost_signal": null,
-    "benchmark": { "latency_ms": 100, "task": "pre-install npm package screening" },
+    "benchmark": {
+      "latency_ms": 100,
+      "task": "pre-install npm package screening"
+    },
     "jaggedness_reports": [],
-    "security_status": { "red_teamed": false, "notes": "exists specifically to catch malicious install scripts - a false negative here is exactly what the Watchdog lens should track" },
-    "recipe": { "type": "npm package", "install": "npx pkg-gate <pkg>" }
+    "security_status": {
+      "red_teamed": false,
+      "notes": "exists specifically to catch malicious install scripts - a false negative here is exactly what the Watchdog lens should track"
+    },
+    "recipe": {
+      "type": "npm package",
+      "install": "npx pkg-gate <pkg>"
+    }
+  },
+  {
+    "id": "zz-test-submission-delete-me-0fb67f2e",
+    "project": "ZZ-test-submission-delete-me",
+    "description": "End-to-end verification that the GITHUB_SUBMIT_TOKEN wiring actually opens a PR. Safe to close without merging.",
+    "github": "https://github.com/theSekyi/jevusecases",
+    "website": null,
+    "how_used_jev": null,
+    "source_tweet": null,
+    "author": null,
+    "date_found": "2026-09-18",
+    "is_build": false,
+    "category": "explainer / curation",
+    "replaces": null,
+    "cost_signal": null,
+    "benchmark": null,
+    "jaggedness_reports": [],
+    "security_status": null,
+    "recipe": null
   }
 ]
