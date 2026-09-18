@@ -9,9 +9,9 @@ import {
 } from "@/lib/adminSessions";
 import type { AdminUser } from "@/lib/adminUsers";
 
-export const SESSION_COOKIE = "jevusecases_session";
-export const ADMIN_PATH = "/admin";
-export const LOGIN_PATH = "/admin/login";
+import { LOGIN_PATH, SESSION_COOKIE } from "@/lib/authConstants";
+
+export { ADMIN_PATH, LOGIN_PATH, SESSION_COOKIE } from "@/lib/authConstants";
 
 /**
  * Signs the user in: a random session token goes in the cookie, only its hash goes in the database.

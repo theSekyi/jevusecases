@@ -102,14 +102,12 @@ export async function authenticate(email: string, password: string): Promise<Aut
   };
 }
 
-export type ChangePasswordResult =
-  | { status: "ok"; credentialVersion: string }
-  | { status: "wrong_password" | "not_found" | "conflict" };
+export type ChangePasswordResult = "ok" | "wrong_password" | "not_found" | "conflict";
 
 /**
- * Replaces the password (temporary or not) and signs the account out everywhere; the caller starts a
- * fresh session with the returned version. "conflict" means the credentials changed while this was
- * being checked — a reset or another change won, and this one is discarded rather than overwriting it.
+ * Replaces the password (temporary or not) and signs the account out everywhere, this session
+ * included. "conflict" means the credentials changed while this was being checked: a reset or
+ * another change won, and this one is discarded rather than overwriting it.
  */
 export async function changePassword(
   userId: string,
@@ -122,8 +120,8 @@ export async function changePassword(
     credential_version: string;
   }[];
   const current = rows[0];
-  if (!current) return { status: "not_found" };
-  if (!(await verifyPassword(currentPassword, current.password_hash))) return { status: "wrong_password" };
+  if (!current) return "not_found";
+  if (!(await verifyPassword(currentPassword, current.password_hash))) return "wrong_password";
 
   const passwordHash = await hashPassword(newPassword);
   const updated = (await sql`
@@ -131,13 +129,11 @@ export async function changePassword(
       UPDATE admin_users
       SET password_hash = ${passwordHash}, using_temp_password = false, credential_version = credential_version + 1
       WHERE id = ${userId} AND credential_version = ${current.credential_version}
-      RETURNING credential_version
+      RETURNING id
     ),
     revoked AS (DELETE FROM admin_sessions WHERE user_id = ${userId} AND EXISTS (SELECT 1 FROM updated))
-    SELECT credential_version FROM updated
-  `) as { credential_version: string }[];
+    SELECT id FROM updated
+  `) as { id: string }[];
 
-  return updated.length > 0
-    ? { status: "ok", credentialVersion: updated[0].credential_version }
-    : { status: "conflict" };
+  return updated.length > 0 ? "ok" : "conflict";
 }

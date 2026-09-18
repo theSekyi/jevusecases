@@ -36,7 +36,6 @@ export interface AuthFormState {
   error?: string;
   fieldErrors?: PasswordFieldErrors;
   email?: string;
-  ok?: boolean;
 }
 
 /** First error message per field, in the shape the password form displays. */

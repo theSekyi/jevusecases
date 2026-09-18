@@ -131,25 +131,23 @@ describe("adminUsers", () => {
       const password_hash = await hashPassword("current-password-1");
       sqlMock.mockResolvedValueOnce([{ password_hash, credential_version: "2" }]);
 
-      expect(await changePassword("7", "not-the-current-one", "brand-new-password")).toEqual({
-        status: "wrong_password",
-      });
+      expect(await changePassword("7", "not-the-current-one", "brand-new-password")).toBe("wrong_password");
       expect(sqlMock).toHaveBeenCalledTimes(1);
     });
 
     test("reports a missing account", async () => {
       sqlMock.mockResolvedValueOnce([]);
-      expect(await changePassword("999", "x", "brand-new-password")).toEqual({ status: "not_found" });
+      expect(await changePassword("999", "x", "brand-new-password")).toBe("not_found");
     });
 
     test("stores only a hash, clears the temporary flag, bumps the version, and revokes sessions in one statement", async () => {
       const password_hash = await hashPassword("current-password-1");
       sqlMock.mockResolvedValueOnce([{ password_hash, credential_version: "2" }]);
-      sqlMock.mockResolvedValueOnce([{ credential_version: "3" }]);
+      sqlMock.mockResolvedValueOnce([{ id: "7" }]);
 
       const result = await changePassword("7", "current-password-1", "brand-new-password");
 
-      expect(result).toEqual({ status: "ok", credentialVersion: "3" });
+      expect(result).toBe("ok");
       expect(allQueryValues()).not.toContain("brand-new-password");
       expect(allQueryValues()).not.toContain("current-password-1");
       const update = statements()[1];
@@ -161,7 +159,7 @@ describe("adminUsers", () => {
     test("only updates while the account still has the version that was read", async () => {
       const password_hash = await hashPassword("current-password-1");
       sqlMock.mockResolvedValueOnce([{ password_hash, credential_version: "2" }]);
-      sqlMock.mockResolvedValueOnce([{ credential_version: "3" }]);
+      sqlMock.mockResolvedValueOnce([{ id: "7" }]);
 
       await changePassword("7", "current-password-1", "brand-new-password");
 
@@ -174,9 +172,7 @@ describe("adminUsers", () => {
       sqlMock.mockResolvedValueOnce([{ password_hash, credential_version: "2" }]);
       sqlMock.mockResolvedValueOnce([]);
 
-      expect(await changePassword("7", "current-password-1", "brand-new-password")).toEqual({
-        status: "conflict",
-      });
+      expect(await changePassword("7", "current-password-1", "brand-new-password")).toBe("conflict");
     });
   });
 });
