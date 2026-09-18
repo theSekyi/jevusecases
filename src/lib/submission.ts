@@ -45,7 +45,7 @@ export type SubmissionInput = z.infer<typeof submissionSchema>;
 export type SubmissionFieldErrors = Partial<Record<keyof SubmissionInput, string>>;
 
 export function validateSubmission(
-  values: Record<keyof SubmissionInput, string>,
+  values: unknown,
 ): { success: true; data: SubmissionInput } | { success: false; errors: SubmissionFieldErrors } {
   const result = submissionSchema.safeParse(values);
   if (result.success) {

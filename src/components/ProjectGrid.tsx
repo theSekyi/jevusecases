@@ -85,7 +85,7 @@ function ProjectCard({ project }: { project: Project }) {
             {link.label}
           </a>
         )}
-        <span>{project.author}</span>
+        {project.author && <span>{project.author}</span>}
       </div>
     </div>
   );

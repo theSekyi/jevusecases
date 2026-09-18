@@ -23,9 +23,9 @@ export interface Project {
   description: string;
   github: string | null;
   website: string | null;
-  how_used_jev: string;
+  how_used_jev: string | null;
   source_tweet: string | null;
-  author: string;
+  author: string | null;
   date_found: string;
   is_build: boolean;
   category: string;
