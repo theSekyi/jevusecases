@@ -58,12 +58,14 @@ export const DUPLICATE_WINDOW_MS = 3000;
 // An arbitrary constant that only has to be the same on every instance.
 const RECORD_LOCK_KEY = 41_001;
 
-/** Records a page view unless the same country was recorded within DUPLICATE_WINDOW_MS. Returns whether it inserted. */
-export async function recordVisitorEvent(country: string | null, path: string): Promise<boolean> {
+/** Records a page view unless the same country was recorded within DUPLICATE_WINDOW_MS. */
+export async function recordVisitorEvent(country: string | null, path: string): Promise<void> {
   const sql = db();
   // The lock makes check-then-insert atomic: a concurrent call waits for this transaction to commit
-  // before running its own check, so it sees the row instead of racing past it.
-  const [, inserted] = (await sql.transaction([
+  // before running its own check, so it sees the row instead of racing past it. The timeout keeps a
+  // burst of requests from queuing on the lock for long; a timed-out call is just not recorded.
+  await sql.transaction([
+    sql`SET LOCAL lock_timeout = '2s'`,
     sql`SELECT pg_advisory_xact_lock(${RECORD_LOCK_KEY})`,
     sql`
       INSERT INTO visitor_events (country, path)
@@ -73,10 +75,8 @@ export async function recordVisitorEvent(country: string | null, path: string): 
         WHERE country IS NOT DISTINCT FROM ${country}::text
           AND created_at > now() - (${DUPLICATE_WINDOW_MS}::text || ' milliseconds')::interval
       )
-      RETURNING id
     `,
-  ])) as [unknown, { id: number }[]];
-  return inserted.length > 0;
+  ]);
 }
 
 export async function getRecentVisitorEvents(limit = VISIBLE_EVENT_COUNT): Promise<VisitorEvent[]> {

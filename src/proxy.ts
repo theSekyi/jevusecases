@@ -15,8 +15,8 @@ async function recordVisit(request: NextRequest) {
     if (request.method !== "GET") return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
-    // Your own browsing while signed in would otherwise dominate the feed. Presence of the cookie is
-    // enough here; nothing is being authorised.
+    // The admin's own browsing would otherwise dominate the feed. Presence of the cookie is
+    // enough here; nothing is being authorized.
     if (request.cookies.has(SESSION_COOKIE)) return;
     const ip = clientIp(request);
     if (!checkRateLimit(ip)) return;
@@ -33,8 +33,10 @@ export function proxy(request: NextRequest, event: NextFetchEvent) {
   return NextResponse.next();
 }
 
+// Files (anything whose last segment has an extension) and /.well-known/ aren't pages. If a route
+// with a dot in its last segment is ever added, this rule has to be narrowed or it goes unrecorded.
 export const config = {
   matcher: [
-    "/((?!api(?:/|$)|admin(?:/|$)|_next/static|_next/image|\\.well-known(?:/|$)|.*\\.[^/]+$|apple-icon$|icon$).*)",
+    "/((?!api(?:/|$)|admin(?:/|$)|_next/static|_next/image|\\.well-known/|.*\\.[^/]+$|apple-icon$|icon$).*)",
   ],
 };

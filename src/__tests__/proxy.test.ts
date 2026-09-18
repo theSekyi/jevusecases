@@ -113,7 +113,7 @@ describe("proxy", () => {
     expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/");
   });
 
-  test("passes every request on to the database call; repeats are dropped there, not in memory", async () => {
+  test("hands every request to the recorder; dropping repeats is its job, not the proxy's", async () => {
     const { proxy } = await import("../proxy");
     const ip = "203.0.113.12";
 
@@ -137,6 +137,26 @@ describe("proxy", () => {
     await Promise.all(waited);
 
     expect(recordVisitorEvent).not.toHaveBeenCalled();
+  });
+
+  test("admin requests don't use up the visitor's rate-limit budget", async () => {
+    vi.resetModules();
+    const { proxy } = await import("../proxy");
+    const ip = "203.0.113.15";
+
+    for (let i = 0; i < 70; i++) {
+      const { event, waited } = fakeEvent();
+      const request = new NextRequest("https://jevusecases.com/", {
+        headers: { "x-forwarded-for": ip, cookie: `${SESSION_COOKIE}=anything` },
+      });
+      proxy(request, event as never);
+      await Promise.all(waited);
+    }
+    const { event, waited } = fakeEvent();
+    proxy(new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip } }), event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).toHaveBeenCalledTimes(1);
   });
 
   test("other cookies don't stop a visit from being recorded", async () => {

@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
 import {
   countryCodeToFlag,
-  DUPLICATE_WINDOW_MS,
   countryName,
+  DUPLICATE_WINDOW_MS,
   getRecentVisitorEvents,
   isValidCountryCode,
   recordVisitorEvent,
@@ -74,27 +74,31 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     transaction.mockReset();
   });
 
-  test("recordVisitorEvent takes the lock and inserts in one transaction, with the values as parameters", async () => {
+  test("recordVisitorEvent sets a lock timeout, takes the lock and inserts in one transaction, with the values as parameters", async () => {
     sqlMock.mockReturnValue("query");
-    transaction.mockResolvedValueOnce([[], [{ id: 1 }]]);
+    transaction.mockResolvedValueOnce([]);
 
-    const inserted = await recordVisitorEvent("US", "/submit");
+    await recordVisitorEvent("US", "/submit");
 
-    expect(inserted).toBe(true);
     expect(transaction).toHaveBeenCalledTimes(1);
-    expect(transaction).toHaveBeenCalledWith(["query", "query"]);
-    const [lock, insert] = sqlMock.mock.calls;
+    expect(transaction).toHaveBeenCalledWith(["query", "query", "query"]);
+    const [timeout, lock, insert] = sqlMock.mock.calls;
+    expect(timeout[0].join("?")).toContain("SET LOCAL lock_timeout");
     expect(lock[0].join("?")).toContain("pg_advisory_xact_lock");
     expect(insert[0].join("?")).toContain("INSERT INTO visitor_events");
     expect(insert[0].join("?")).toContain("WHERE NOT EXISTS");
     expect(insert.slice(1)).toEqual(["US", "/submit", "US", DUPLICATE_WINDOW_MS]);
   });
 
-  test("recordVisitorEvent reports false when the same country was just recorded", async () => {
+  test("recordVisitorEvent compares a missing country as null-safe, so unknown locations dedupe too", async () => {
     sqlMock.mockReturnValue("query");
-    transaction.mockResolvedValueOnce([[], []]);
+    transaction.mockResolvedValueOnce([]);
 
-    expect(await recordVisitorEvent("US", "/")).toBe(false);
+    await recordVisitorEvent(null, "/");
+
+    const insert = sqlMock.mock.calls[2];
+    expect(insert[0].join("?")).toContain("country IS NOT DISTINCT FROM");
+    expect(insert.slice(1)).toEqual([null, "/", null, DUPLICATE_WINDOW_MS]);
   });
 
   test("getRecentVisitorEvents maps snake_case rows into the VisitorEvent shape", async () => {
