@@ -1,0 +1,29 @@
+{
+  "id": "gpkmasa-jrx",
+  "project": "jrx (JEV Reflex)",
+  "description": "Safety gate that stops autonomous coding agents from running dangerous raw bash commands.",
+  "github": "https://github.com/Madhumasa84/jrx",
+  "website": null,
+  "how_used_jev": "Combines hard-coded local rules with Jev semantic checks (intent, severity, exfiltration/curl-to-bash detection) to gate what Claude Code and Codex are allowed to execute.",
+  "source_tweet": "https://x.com/gpkmasa/status/2100655682458640738",
+  "author": "@gpkmasa",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "gates raw bash execution for coding agents - a false negative here means arbitrary code execution; strongest Watchdog-lens candidate in this batch"
+  },
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Madhumasa84/jrx"
+  }
+}

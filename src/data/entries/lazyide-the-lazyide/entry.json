@@ -1,0 +1,32 @@
+{
+  "id": "lazyide-the-lazyide",
+  "project": "The LazyIDE",
+  "description": "Desktop AI IDE that uses Jev to route work to the right coding bot instead of guessing, and to triage incoming noise on wakeup.",
+  "github": "https://github.com/LazyGod75/The-LazyIDE",
+  "website": null,
+  "how_used_jev": "Jev picks the correct bot or declines rather than guessing; in wakeup triage it drops noise batches and keeps mixed batches in ~318ms, with critical items always surviving and the system failing open if Jev fails.",
+  "source_tweet": null,
+  "author": "@LazyIDE",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": "positions itself against paid AI IDEs (Cursor-style) but author hasn't made a direct replacement claim yet - needs follow-up before scoring"
+  },
+  "cost_signal": null,
+  "benchmark": {
+    "latency_ms": 318,
+    "task": "wakeup triage - mixed noise/signal batch classification"
+  },
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "explicitly fails open (lets routing through) if Jev fails - worth a Watchdog-lens note on what 'fails open' means for a routing decision"
+  },
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LazyGod75/The-LazyIDE"
+  }
+}

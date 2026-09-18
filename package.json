@@ -3,11 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=23.6.0"
+  },
   "scripts": {
+    "predev": "node scripts/generate-projects-data.ts",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-projects-data.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "pretest": "node scripts/generate-projects-data.ts",
     "test": "vitest run"
   },
   "dependencies": {

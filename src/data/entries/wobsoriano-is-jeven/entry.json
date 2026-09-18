@@ -1,0 +1,26 @@
+{
+  "id": "wobsoriano-is-jeven",
+  "project": "is-jeven",
+  "description": "Novelty npm library that checks whether a number is even by asking Jev.",
+  "github": "https://github.com/wobsoriano/is-jeven",
+  "website": null,
+  "how_used_jev": "Sends the number to Jev as a typed yes/no question and returns its answer; a joke/demo package rather than production tooling.",
+  "source_tweet": null,
+  "author": "@wobsoriano",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": {
+    "tool": "the % operator",
+    "verdict": "NOT REALLY",
+    "notes": "intentional joke entry"
+  },
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wobsoriano/is-jeven"
+  }
+}

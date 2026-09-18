@@ -1,0 +1,32 @@
+{
+  "id": "gnumanth-pkg-gate",
+  "project": "pkg-gate",
+  "description": "Pre-install security gate for npm packages that screens for malicious lifecycle scripts.",
+  "github": null,
+  "website": "npx pkg-gate <pkg>",
+  "how_used_jev": "Runs a ~100ms Jev check before an npm install using three typed primitives: Choice (intent), Score (severity), and Noul (exfiltration / curl-to-bash detection).",
+  "source_tweet": "https://x.com/GNUmanth/status/2100405456187564201",
+  "author": "@GNUmanth",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "security / supply chain",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": "candidate to compare against paid supply-chain scanners (e.g. Socket) - not yet researched"
+  },
+  "cost_signal": null,
+  "benchmark": {
+    "latency_ms": 100,
+    "task": "pre-install npm package screening"
+  },
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "exists specifically to catch malicious install scripts - a false negative here is exactly what the Watchdog lens should track"
+  },
+  "recipe": {
+    "type": "npm package",
+    "install": "npx pkg-gate <pkg>"
+  }
+}

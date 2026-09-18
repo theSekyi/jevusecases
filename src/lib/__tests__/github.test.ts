@@ -54,21 +54,18 @@ describe("createSubmissionPr", () => {
     expect(fetch).not.toHaveBeenCalled();
   });
 
-  test("creates a branch, updates the data file, and opens a PR on the happy path", async () => {
-    const existingContent = Buffer.from(JSON.stringify([{ id: "existing" }], null, 2)).toString("base64");
-
+  test("creates a branch, creates a new entry file, and opens a PR on the happy path", async () => {
     vi.mocked(fetch)
       .mockResolvedValueOnce(jsonResponse({ object: { sha: "base-sha" } }))
       .mockResolvedValueOnce(jsonResponse({ ref: "refs/heads/submission/jev-guard-ab12cd" }))
-      .mockResolvedValueOnce(jsonResponse({ content: existingContent, sha: "file-sha" }))
       .mockResolvedValueOnce(jsonResponse({ content: { sha: "new-file-sha" } }))
       .mockResolvedValueOnce(jsonResponse({ html_url: "https://github.com/theSekyi/jevusecases/pull/42" }));
 
     const result = await createSubmissionPr(entry, submission);
 
     expect(result).toEqual({ success: true, prUrl: "https://github.com/theSekyi/jevusecases/pull/42" });
-    const [refCall, createRefCall, contentCall, updateCall, prCall] = vi.mocked(fetch).mock.calls;
-    expect(vi.mocked(fetch)).toHaveBeenCalledTimes(5);
+    const [refCall, createRefCall, createEntryCall, prCall] = vi.mocked(fetch).mock.calls;
+    expect(vi.mocked(fetch)).toHaveBeenCalledTimes(4);
 
     expect(refCall[0]).toContain("/git/ref/heads/main");
 
@@ -76,15 +73,14 @@ describe("createSubmissionPr", () => {
     const createRefBody = JSON.parse(createRefCall[1]!.body as string);
     expect(createRefBody).toEqual({ ref: "refs/heads/submission/jev-guard-ab12cd", sha: "base-sha" });
 
-    // Pinned to the exact commit the branch was created from, not to a second, independent read of main.
-    expect(contentCall[0]).toContain("ref=base-sha");
-    expect(contentCall[0]).not.toContain("ref=main");
-
-    const updateBody = JSON.parse(updateCall[1]!.body as string);
-    const updatedProjects = JSON.parse(Buffer.from(updateBody.content, "base64").toString("utf-8"));
-    expect(updatedProjects).toEqual([{ id: "existing" }, entry]);
-    expect(updateBody.sha).toBe("file-sha");
-    expect(updateBody.branch).toBe("submission/jev-guard-ab12cd");
+    // A brand-new file, on its own path — no other entry's file is read or touched.
+    expect(createEntryCall[0]).toContain("/contents/src/data/entries/jev-guard-ab12cd/entry.json");
+    expect(createEntryCall[1]?.method).toBe("PUT");
+    const createEntryBody = JSON.parse(createEntryCall[1]!.body as string);
+    expect(createEntryBody.sha).toBeUndefined();
+    expect(createEntryBody.branch).toBe("submission/jev-guard-ab12cd");
+    const writtenEntry = JSON.parse(Buffer.from(createEntryBody.content, "base64").toString("utf-8"));
+    expect(writtenEntry).toEqual(entry);
 
     const prRequestBody = JSON.parse(prCall[1]!.body as string);
     expect(prRequestBody.head).toBe("submission/jev-guard-ab12cd");
@@ -94,17 +90,15 @@ describe("createSubmissionPr", () => {
   });
 
   test("wraps a submitted x handle in backticks in the PR body, instead of a live @mention", async () => {
-    const existingContent = Buffer.from(JSON.stringify([], null, 2)).toString("base64");
     vi.mocked(fetch)
       .mockResolvedValueOnce(jsonResponse({ object: { sha: "base-sha" } }))
       .mockResolvedValueOnce(jsonResponse({}))
-      .mockResolvedValueOnce(jsonResponse({ content: existingContent, sha: "file-sha" }))
       .mockResolvedValueOnce(jsonResponse({}))
       .mockResolvedValueOnce(jsonResponse({ html_url: "https://github.com/theSekyi/jevusecases/pull/1" }));
 
     await createSubmissionPr(entry, { ...submission, xHandle: "torvalds" });
 
-    const [, , , , prCall] = vi.mocked(fetch).mock.calls;
+    const [, , , prCall] = vi.mocked(fetch).mock.calls;
     const prRequestBody = JSON.parse(prCall[1]!.body as string);
     expect(prRequestBody.body).toContain("`@torvalds`");
     expect(prRequestBody.body).not.toMatch(/[^`]@torvalds/);
@@ -119,43 +113,36 @@ describe("createSubmissionPr", () => {
     expect(fetch).toHaveBeenCalledTimes(1);
   });
 
-  test("stops and reports a reason when the data file isn't valid JSON", async () => {
+  test("stops and reports a reason when branch creation fails, without touching any file", async () => {
     vi.mocked(fetch)
       .mockResolvedValueOnce(jsonResponse({ object: { sha: "base-sha" } }))
-      .mockResolvedValueOnce(jsonResponse({}))
-      .mockResolvedValueOnce(
-        jsonResponse({ content: Buffer.from("not json").toString("base64"), sha: "file-sha" }),
-      );
+      .mockResolvedValueOnce(jsonResponse({}, false, 422));
 
     const result = await createSubmissionPr(entry, submission);
 
-    expect(result).toEqual({ success: false, reason: "data_file_unparseable" });
-    expect(fetch).toHaveBeenCalledTimes(3);
+    expect(result).toEqual({ success: false, reason: "branch_create_failed" });
+    expect(fetch).toHaveBeenCalledTimes(2);
   });
 
-  test("cleans up the just-created branch when the data file update fails", async () => {
-    const existingContent = Buffer.from(JSON.stringify([], null, 2)).toString("base64");
+  test("cleans up the just-created branch when creating the entry file fails", async () => {
     vi.mocked(fetch)
       .mockResolvedValueOnce(jsonResponse({ object: { sha: "base-sha" } }))
       .mockResolvedValueOnce(jsonResponse({}))
-      .mockResolvedValueOnce(jsonResponse({ content: existingContent, sha: "file-sha" }))
       .mockResolvedValueOnce(jsonResponse({}, false, 409))
       .mockResolvedValueOnce(jsonResponse({}));
 
     const result = await createSubmissionPr(entry, submission);
 
-    expect(result).toEqual({ success: false, reason: "data_file_update_failed" });
-    const cleanupCall = vi.mocked(fetch).mock.calls[4];
+    expect(result).toEqual({ success: false, reason: "entry_file_create_failed" });
+    const cleanupCall = vi.mocked(fetch).mock.calls[3];
     expect(cleanupCall[0]).toContain("/git/refs/heads/submission/jev-guard-ab12cd");
     expect(cleanupCall[1]?.method).toBe("DELETE");
   });
 
   test("cleans up the branch when opening the PR fails, but still reports the PR failure", async () => {
-    const existingContent = Buffer.from(JSON.stringify([], null, 2)).toString("base64");
     vi.mocked(fetch)
       .mockResolvedValueOnce(jsonResponse({ object: { sha: "base-sha" } }))
       .mockResolvedValueOnce(jsonResponse({}))
-      .mockResolvedValueOnce(jsonResponse({ content: existingContent, sha: "file-sha" }))
       .mockResolvedValueOnce(jsonResponse({ content: { sha: "new-file-sha" } }))
       .mockResolvedValueOnce(jsonResponse({}, false, 422))
       .mockResolvedValueOnce(jsonResponse({}));
@@ -163,7 +150,7 @@ describe("createSubmissionPr", () => {
     const result = await createSubmissionPr(entry, submission);
 
     expect(result).toEqual({ success: false, reason: "pr_create_failed" });
-    const cleanupCall = vi.mocked(fetch).mock.calls[5];
+    const cleanupCall = vi.mocked(fetch).mock.calls[4];
     expect(cleanupCall[1]?.method).toBe("DELETE");
   });
 });

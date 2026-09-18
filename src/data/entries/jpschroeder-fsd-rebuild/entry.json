@@ -1,0 +1,30 @@
+{
+  "id": "jpschroeder-fsd-rebuild",
+  "project": "Tesla FSD-style decision loop",
+  "description": "Rebuilt a Tesla Full Self-Driving-style decision loop with Jev in under an hour.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Used Jev as the real-time decision primitive driving the control loop instead of an autoregressive LLM.",
+  "source_tweet": "https://x.com/jpschroeder/status/2100347770867458384",
+  "author": "@jpschroeder",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": {
+    "baseline_model": null,
+    "est_savings_pct": null,
+    "basis": null
+  },
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "safety-critical decision domain (driving) - no repo link yet to inspect failure handling"
+  },
+  "recipe": null
+}

@@ -1,0 +1,19 @@
+{
+  "id": "moritzkremb-explainer-thread",
+  "project": "Jev explainer roundup thread",
+  "description": "Curated thread collecting the best Jev explanations and examples found on X. Not a build, but a useful index of other projects.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "N/A - curation, not a build.",
+  "source_tweet": "https://x.com/moritzkremb/status/2100520536464105556",
+  "author": "@moritzkremb",
+  "date_found": "2026-09-17",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

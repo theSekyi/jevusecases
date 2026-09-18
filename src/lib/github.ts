@@ -4,16 +4,13 @@ import type { SubmissionInput } from "@/lib/submission";
 const OWNER = "theSekyi";
 const REPO = "jevusecases";
 const BASE_BRANCH = "main";
-const DATA_PATH = "src/data/projects.json";
 const API_ROOT = "https://api.github.com";
 
 export type CreateSubmissionPrFailureReason =
   | "missing_token"
   | "base_ref_lookup_failed"
   | "branch_create_failed"
-  | "data_file_lookup_failed"
-  | "data_file_unparseable"
-  | "data_file_update_failed"
+  | "entry_file_create_failed"
   | "pr_create_failed";
 
 export type CreateSubmissionPrResult =
@@ -67,7 +64,11 @@ async function deleteBranch(branch: string, headers: HeadersInit): Promise<void>
   }
 }
 
-/** Opens a PR adding one entry to the data file: a new branch, one file update, then a pull request. Never merges — that's always a human's call. */
+/**
+ * Opens a PR adding one entry as its own file at src/data/entries/<id>/entry.json — never touches
+ * any other entry's file, so two submissions landing at the same time can never conflict with each
+ * other. Never merges — that's always a human's call.
+ */
 export async function createSubmissionPr(
   entry: Project,
   submission: SubmissionInput,
@@ -78,6 +79,7 @@ export async function createSubmissionPr(
   }
   const headers = githubHeaders(token);
   const branch = `submission/${entry.id}`;
+  const entryPath = `src/data/entries/${entry.id}/entry.json`;
 
   const ref = await githubRequest<{ object: { sha: string } }>(
     `${API_ROOT}/repos/${OWNER}/${REPO}/git/ref/heads/${BASE_BRANCH}`,
@@ -87,50 +89,30 @@ export async function createSubmissionPr(
   if (!ref.ok) return { success: false, reason: ref.reason };
   const baseSha = ref.data.object.sha;
 
-  const [createRef, content] = await Promise.all([
-    githubRequest(
-      `${API_ROOT}/repos/${OWNER}/${REPO}/git/refs`,
-      { method: "POST", headers, body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: baseSha }) },
-      "branch_create_failed",
-    ),
-    githubRequest<{ content: string; sha: string }>(
-      `${API_ROOT}/repos/${OWNER}/${REPO}/contents/${DATA_PATH}?ref=${baseSha}`,
-      { headers },
-      "data_file_lookup_failed",
-    ),
-  ]);
+  const createRef = await githubRequest(
+    `${API_ROOT}/repos/${OWNER}/${REPO}/git/refs`,
+    { method: "POST", headers, body: JSON.stringify({ ref: `refs/heads/${branch}`, sha: baseSha }) },
+    "branch_create_failed",
+  );
   if (!createRef.ok) return { success: false, reason: createRef.reason };
-  if (!content.ok) return { success: false, reason: content.reason };
 
-  let projects: unknown;
-  try {
-    projects = JSON.parse(Buffer.from(content.data.content, "base64").toString("utf-8"));
-  } catch {
-    return { success: false, reason: "data_file_unparseable" };
-  }
-  if (!Array.isArray(projects)) {
-    return { success: false, reason: "data_file_unparseable" };
-  }
-
-  const updatedContent = `${JSON.stringify([...projects, entry], null, 2)}\n`;
-
-  const update = await githubRequest(
-    `${API_ROOT}/repos/${OWNER}/${REPO}/contents/${DATA_PATH}`,
+  const entryContent = `${JSON.stringify(entry, null, 2)}\n`;
+  const createEntryFile = await githubRequest(
+    `${API_ROOT}/repos/${OWNER}/${REPO}/contents/${entryPath}`,
     {
       method: "PUT",
       headers,
       body: JSON.stringify({
         message: `Add submitted project: ${entry.project}`,
-        content: Buffer.from(updatedContent, "utf-8").toString("base64"),
-        sha: content.data.sha,
+        content: Buffer.from(entryContent, "utf-8").toString("base64"),
         branch,
       }),
     },
-    "data_file_update_failed",
+    "entry_file_create_failed",
   );
-  if (!update.ok) {
+  if (!createEntryFile.ok) {
     await deleteBranch(branch, headers);
-    return { success: false, reason: update.reason };
+    return { success: false, reason: createEntryFile.reason };
   }
 
   const pr = await githubRequest<{ html_url: string }>(

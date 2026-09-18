@@ -1,0 +1,36 @@
+{
+  "id": "leepokai-jev-guard",
+  "project": "jev-guard",
+  "description": "Security classifier for coding-agent tool calls, rebuilt on Jev instead of a chat model.",
+  "github": "https://github.com/leepokai/jev-guard",
+  "website": null,
+  "how_used_jev": "Jev scores every tool call an agent (Claude Code, Codex, Cursor, Gemini) makes, flagging prompt injection and scanning skills; author reports 3.4x faster and 28x cheaper than Haiku 4.5 for the same classifier.",
+  "source_tweet": null,
+  "author": "@lbki34064963",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": {
+    "tool": "Claude Haiku 4.5 (as a tool-call classifier)",
+    "verdict": "YES",
+    "notes": "author's own claim, not independently verified: same classification job, 3.4x faster and 28x cheaper"
+  },
+  "cost_signal": {
+    "baseline_model": "Claude Haiku 4.5",
+    "est_savings_pct": null,
+    "basis": "author reports 28x cheaper for the same tool-call classification task (unverified)"
+  },
+  "benchmark": {
+    "comparison": "3.4x faster, 28x cheaper vs Haiku 4.5",
+    "task": "tool-call safety classification"
+  },
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "this tool IS a security guardrail - prime Watchdog-lens candidate: has anyone tried to get a malicious tool call past jev-guard's injection detection?"
+  },
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/leepokai/jev-guard"
+  }
+}
