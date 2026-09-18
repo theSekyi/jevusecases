@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { TrafficTable } from "@/components/admin/TrafficTable";
+import { TrafficBreakdown } from "@/components/admin/TrafficBreakdown";
 import { requireAdmin } from "@/lib/auth";
 import { ADMIN_PATH } from "@/lib/authConstants";
 import { getTrafficSummary } from "@/lib/trafficStats";
@@ -18,11 +18,11 @@ export default async function TrafficPage() {
       <div className="flex w-full max-w-xl flex-col gap-10">
         <div className="flex flex-col gap-2">
           <Link href={ADMIN_PATH} className="font-bp-mono text-[11px] tracking-widest text-bp-accent hover:underline">
-            ← ADMIN
+            <span aria-hidden="true">←</span> ADMIN
           </Link>
           <h1 className="text-3xl font-bold">Traffic</h1>
         </div>
-        <TrafficTable summary={summary} />
+        <TrafficBreakdown summary={summary} />
       </div>
     </main>
   );
