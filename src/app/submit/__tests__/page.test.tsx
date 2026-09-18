@@ -83,4 +83,18 @@ describe("SubmitPage", () => {
       expect(screen.getByText(/something went wrong submitting/i)).toBeInTheDocument(),
     );
   });
+
+  test("clears a stale submit-level error once the user resubmits, even if the new attempt fails validation first", async () => {
+    vi.mocked(fetch).mockResolvedValueOnce(new Response(null, { status: 429 }));
+    render(<SubmitPage />);
+    fillValidForm();
+    fireEvent.click(screen.getByRole("button", { name: "Submit" }));
+    expect(await screen.findByText(/hit the submission limit/i)).toBeInTheDocument();
+
+    fireEvent.change(screen.getByLabelText("PROJECT NAME"), { target: { value: "" } });
+    fireEvent.click(screen.getByRole("button", { name: "Submit" }));
+
+    expect(await screen.findByText("Project name is required")).toBeInTheDocument();
+    expect(screen.queryByText(/hit the submission limit/i)).not.toBeInTheDocument();
+  });
 });

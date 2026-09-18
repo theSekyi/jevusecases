@@ -15,17 +15,14 @@ export const CATEGORIES = [
 ] as const;
 
 const ALLOWED_SOURCE_HOSTS = ["github.com", "npmjs.com"];
+const ALLOWED_SOURCE_HOST_PATTERN = /^([a-z0-9-]+\.)*(github|npmjs)\.com$/i;
 
 function hasAllowedSourceHost(value: string): boolean {
-  let hostname: string;
   try {
-    hostname = new URL(value).hostname;
+    return ALLOWED_SOURCE_HOST_PATTERN.test(new URL(value).hostname);
   } catch {
     return false;
   }
-  return ALLOWED_SOURCE_HOSTS.some(
-    (host) => hostname === host || hostname.endsWith(`.${host}`),
-  );
 }
 
 export const submissionSchema = z.object({
@@ -54,12 +51,10 @@ export function validateSubmission(
   if (result.success) {
     return { success: true, data: result.data };
   }
+  const { fieldErrors } = result.error.flatten();
   const errors: SubmissionFieldErrors = {};
-  for (const issue of result.error.issues) {
-    const field = issue.path[0] as keyof SubmissionInput | undefined;
-    if (field && !errors[field]) {
-      errors[field] = issue.message;
-    }
+  for (const [field, messages] of Object.entries(fieldErrors)) {
+    errors[field as keyof SubmissionInput] = messages?.[0];
   }
   return { success: false, errors };
 }

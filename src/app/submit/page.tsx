@@ -1,6 +1,6 @@
 "use client";
 
-import { cloneElement, useState, type FormEvent, type ReactElement, type ReactNode } from "react";
+import { useState, type FormEvent, type ReactNode } from "react";
 import {
   CATEGORIES,
   validateSubmission,
@@ -18,10 +18,18 @@ const EMPTY_VALUES: FieldValues = {
   xHandle: "",
 };
 
-type Status = "idle" | "submitting" | "success" | "error";
+type Status = "idle" | "submitting" | "success";
 
 const inputClass =
   "w-full border border-bp-hairline bg-bp-surface px-3 py-2 text-sm text-bp-ink outline-none transition-colors placeholder:text-bp-secondary/60 focus:border-bp-ink";
+
+function fieldProps(id: string, error?: string) {
+  return {
+    id,
+    "aria-invalid": Boolean(error),
+    "aria-describedby": error ? `${id}-error` : undefined,
+  };
+}
 
 export default function SubmitPage() {
   const [values, setValues] = useState<FieldValues>(EMPTY_VALUES);
@@ -36,14 +44,15 @@ export default function SubmitPage() {
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
+    setFieldErrors({});
+    setFormError(null);
+
     const result = validateSubmission(values);
     if (!result.success) {
       setFieldErrors(result.errors);
       return;
     }
 
-    setFieldErrors({});
-    setFormError(null);
     setStatus("submitting");
 
     try {
@@ -64,10 +73,11 @@ export default function SubmitPage() {
           ? "You've hit the submission limit. Try again in a bit."
           : "Something went wrong submitting your project. Try again.",
       );
-      setStatus("error");
-    } catch {
+      setStatus("idle");
+    } catch (error) {
+      console.error("Failed to submit project:", error);
       setFormError("Something went wrong submitting your project. Try again.");
-      setStatus("error");
+      setStatus("idle");
     }
   }
 
@@ -98,6 +108,7 @@ export default function SubmitPage() {
 
         <Field label="PROJECT NAME" htmlFor="name" error={fieldErrors.name}>
           <input
+            {...fieldProps("name", fieldErrors.name)}
             type="text"
             value={values.name}
             onChange={(e) => setField("name", e.target.value)}
@@ -108,6 +119,7 @@ export default function SubmitPage() {
 
         <Field label="DESCRIPTION" htmlFor="description" error={fieldErrors.description}>
           <textarea
+            {...fieldProps("description", fieldErrors.description)}
             rows={3}
             value={values.description}
             onChange={(e) => setField("description", e.target.value)}
@@ -118,6 +130,7 @@ export default function SubmitPage() {
 
         <Field label="CATEGORY" htmlFor="category" error={fieldErrors.category}>
           <select
+            {...fieldProps("category", fieldErrors.category)}
             value={values.category}
             onChange={(e) => setField("category", e.target.value)}
             className={inputClass}
@@ -138,6 +151,7 @@ export default function SubmitPage() {
           hint="github.com or npmjs.com links only"
         >
           <input
+            {...fieldProps("sourceLink", fieldErrors.sourceLink)}
             type="text"
             value={values.sourceLink}
             onChange={(e) => setField("sourceLink", e.target.value)}
@@ -148,6 +162,7 @@ export default function SubmitPage() {
 
         <Field label="X HANDLE (OPTIONAL)" htmlFor="xHandle" error={fieldErrors.xHandle}>
           <input
+            {...fieldProps("xHandle", fieldErrors.xHandle)}
             type="text"
             value={values.xHandle}
             onChange={(e) => setField("xHandle", e.target.value)}
@@ -187,24 +202,15 @@ function Field({
   hint?: string;
   children: ReactNode;
 }) {
-  const errorId = error ? `${htmlFor}-error` : undefined;
-
   return (
     <div className="flex flex-col gap-1.5">
       <label htmlFor={htmlFor} className="font-bp-mono text-[10px] tracking-widest text-bp-secondary">
         {label}
       </label>
-      {cloneElement(
-        children as ReactElement<{
-          id?: string;
-          "aria-invalid"?: boolean;
-          "aria-describedby"?: string;
-        }>,
-        { id: htmlFor, "aria-invalid": Boolean(error), "aria-describedby": errorId },
-      )}
+      {children}
       {hint && !error && <span className="text-xs text-bp-secondary">{hint}</span>}
       {error && (
-        <span id={errorId} role="alert" className="text-xs text-bp-accent">
+        <span id={`${htmlFor}-error`} role="alert" className="text-xs text-bp-accent">
           {error}
         </span>
       )}
