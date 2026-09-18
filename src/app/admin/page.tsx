@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireAdmin } from "@/lib/auth";
 import { ACCOUNT_PATH, TRAFFIC_PATH } from "@/lib/authConstants";
+import { TRAFFIC_WINDOW_DAYS } from "@/lib/trafficStats";
 import { logout } from "./actions";
 
 export const metadata: Metadata = {
@@ -9,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const SECTIONS = [
-  { href: TRAFFIC_PATH, title: "Traffic", description: "Page views by country, last 7 days" },
+  { href: TRAFFIC_PATH, title: "Traffic", description: `Page views by country, last ${TRAFFIC_WINDOW_DAYS} days` },
   { href: ACCOUNT_PATH, title: "Account", description: "Change your password" },
 ];
 

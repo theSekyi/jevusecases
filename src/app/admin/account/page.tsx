@@ -18,10 +18,11 @@ export default async function AccountPage() {
 
         <section className="flex flex-col gap-4">
           <h2 className="font-bp-mono text-[11px] tracking-widest text-bp-secondary">CHANGE PASSWORD</h2>
+          {admin.usingTempPassword && (
+            <p className="text-sm text-bp-secondary">You&apos;re using a temporary password. Changing it is optional.</p>
+          )}
           <p className="text-sm text-bp-secondary">
-            {admin.usingTempPassword
-              ? "You're using a temporary password. Changing it is optional."
-              : "You'll be signed out everywhere and asked to sign in with the new password."}
+            Changing your password signs you out everywhere. You then sign in again with the new one.
           </p>
           <ChangePasswordForm />
         </section>

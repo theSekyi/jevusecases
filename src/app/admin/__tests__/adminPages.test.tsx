@@ -29,8 +29,8 @@ describe("admin dashboard", () => {
     expect(screen.getByRole("link", { name: /Traffic/ })).toHaveAttribute("href", "/admin/traffic");
     expect(screen.getByRole("link", { name: /Account/ })).toHaveAttribute("href", "/admin/account");
     expect(screen.getByText("a@b.co")).toBeInTheDocument();
-    expect(screen.queryByLabelText("CURRENT PASSWORD")).not.toBeInTheDocument();
     expect(screen.queryByRole("form", { name: "change password" })).not.toBeInTheDocument();
+    expect(screen.getByRole("navigation", { name: "Admin sections" })).toBeInTheDocument();
     expect(screen.getByRole("button", { name: "Sign out" })).toBeInTheDocument();
   });
 
@@ -62,13 +62,18 @@ describe("account page", () => {
 
     expect(screen.getByRole("heading", { name: "Account" })).toBeInTheDocument();
     expect(screen.getByRole("form", { name: "change password" })).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /ADMIN/ })).toHaveAttribute("href", "/admin");
+    expect(screen.getByRole("link", { name: "Back to ADMIN" })).toHaveAttribute("href", "/admin");
   });
 
-  test("tells a temporary-password account the change is optional", async () => {
+  test("warns that changing the password signs you out, whatever kind of password the account has", async () => {
+    const { unmount } = render(await AccountPage());
+    expect(screen.getByText(/signs you out everywhere/)).toBeInTheDocument();
+    expect(screen.queryByText(/temporary password/)).not.toBeInTheDocument();
+    unmount();
+
     requireAdmin.mockResolvedValue({ ...admin, usingTempPassword: true });
     render(await AccountPage());
-
-    expect(screen.getByText(/temporary password. Changing it is optional/)).toBeInTheDocument();
+    expect(screen.getByText(/signs you out everywhere/)).toBeInTheDocument();
+    expect(screen.getByText(/temporary password\. Changing it is optional/)).toBeInTheDocument();
   });
 });
