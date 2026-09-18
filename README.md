@@ -25,4 +25,6 @@ npx tsc --noEmit    # typecheck
 
 ## Contributing
 
+Want to add a project to the site? See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 `main` is protected. Every PR runs CI (typecheck, lint, test) and has to pass before it can merge.

@@ -1,0 +1,97 @@
+// Template for one entry in src/data/projects.json.
+//
+// Copy the object below, fill in your own values, and add it to the array
+// in src/data/projects.json (keep the file valid JSON — this .jsonc file's
+// comments are only here to explain each field; strip them when you copy).
+//
+// Only fields you can honestly fill in should have a real value. Leave
+// anything you haven't researched as null — that's the normal state for a
+// freshly-added entry, not a mistake to fix before opening your PR.
+{
+  // A short, unique, url-safe id. Convention so far: "<author>-<project-slug>".
+  "id": "yourhandle-your-project",
+
+  // The project's name, as you'd want it to show up on a card.
+  "project": "Your Project Name",
+
+  // One or two sentences: what it does, in plain terms.
+  "description": "What it does, in plain terms.",
+
+  // A github.com link, or null if there isn't one.
+  "github": "https://github.com/yourhandle/your-project",
+
+  // A non-github link (docs site, npm page, etc.), or null.
+  // Only one of github/website needs to be set.
+  "website": null,
+
+  // How the project actually calls Jev: what it asks it, and why Jev
+  // instead of a bigger model. This is the "why this is interesting" field.
+  // Leave null if you haven't written this up yet.
+  "how_used_jev": "What it asks Jev, and why Jev instead of a bigger model.",
+
+  // A link to the tweet/post where you found or announced this, or null.
+  "source_tweet": null,
+
+  // Your handle, e.g. "@yourhandle". Null if you'd rather stay unattributed.
+  "author": "@yourhandle",
+
+  // The date you're adding this entry, as YYYY-MM-DD.
+  "date_found": "2026-01-01",
+
+  // true for something someone actually built and shipped. false for a
+  // curation/explainer link that isn't itself a build (rare — most entries
+  // are true).
+  "is_build": true,
+
+  // A short category string. Existing categories (pick one that fits, or
+  // add a new one if none do): "trading / on-chain agents",
+  // "security / guardrails", "dev tooling / CLI",
+  // "browser agents / automation", "robotics / simulation",
+  // "exploration / benchmarking", "novelty / joke",
+  // "agent tooling / skills", "infra / open reimplementation",
+  // "security / supply chain", "explainer / curation".
+  "category": "dev tooling / CLI",
+
+  // Set this only if the project explicitly replaces a paid tool.
+  // verdict is one of "YES", "KINDA", "NOT REALLY", or null.
+  // Leave the whole field null if this doesn't apply.
+  "replaces": {
+    "tool": "the paid tool or model it replaces",
+    "verdict": "YES",
+    "notes": "why, in one line — what changed, what's still unverified"
+  },
+
+  // Free-form: fill in whatever cost comparison you actually have, or
+  // leave the whole field null. There's no fixed shape here beyond
+  // "whatever numbers you can back up."
+  "cost_signal": {
+    "baseline_model": "what it's being compared against",
+    "est_savings_pct": null,
+    "basis": "how you got this number, and what's still unverified"
+  },
+
+  // Free-form: latency/cost/whatever real number you have. Common shapes
+  // seen in existing entries: { "latency_ms": 81, ... },
+  // { "latency_s": 7.1, "cost_usd": 0.0039, ... }. Leave null if you don't
+  // have a real, measured number.
+  "benchmark": null,
+
+  // Leave as an empty array unless you're reporting a specific failure
+  // case you observed.
+  "jaggedness_reports": [],
+
+  // Set this if the project has been red-teamed / adversarially tested.
+  // Leave the whole field null otherwise.
+  "security_status": {
+    "red_teamed": false,
+    "notes": "what's untested, or what a red-team should look at"
+  },
+
+  // How someone else could run this themselves, or null if there isn't
+  // a ready-to-copy path yet.
+  "recipe": {
+    "type": "e.g. \"open-source implementation\" or \"npm package\"",
+    "link": "https://github.com/yourhandle/your-project",
+    "install": "e.g. \"npm install -g your-package\" (omit if not applicable)"
+  }
+}
