@@ -1,7 +1,8 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, test } from "vitest";
-import { cardStat, sourceLink, type Project } from "../projects";
+import { projectFacts } from "../projectFacts";
+import { sourceLink, type Project } from "../projects";
 import { matchesLens } from "../lenses";
 
 /** TEMPLATE.jsonc is documentation with comments; strip whole-line `//` comments to get real JSON. */
@@ -48,7 +49,7 @@ describe("TEMPLATE.jsonc", () => {
     const template = parseTemplate() as Project;
 
     expect(() => sourceLink(template)).not.toThrow();
-    expect(() => cardStat(template)).not.toThrow();
+    expect(() => projectFacts(template)).not.toThrow();
     expect(() => matchesLens(template, "all")).not.toThrow();
     expect(() => matchesLens(template, "replace")).not.toThrow();
     expect(() => matchesLens(template, "benchmark")).not.toThrow();

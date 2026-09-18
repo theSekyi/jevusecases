@@ -1,37 +1,31 @@
 import { describe, expect, test } from "vitest";
-import { getProjects } from "../projects";
 import { matchesLens } from "../lenses";
+import { FIXTURE_PROJECTS, cli, fsd, gate, guard, jeven, makeProject, trader } from "./fixtures";
+
+const ids = (lens: Parameters<typeof matchesLens>[1]) =>
+  FIXTURE_PROJECTS.filter((project) => matchesLens(project, lens)).map((project) => project.id);
 
 describe("matchesLens", () => {
-  const projects = getProjects();
-
   test("all matches every project", () => {
-    expect(projects.every((p) => matchesLens(p, "all"))).toBe(true);
+    expect(ids("all")).toHaveLength(FIXTURE_PROJECTS.length);
   });
 
   test("replace matches only projects with a verdict", () => {
-    const matched = projects.filter((p) => matchesLens(p, "replace"));
-    expect(matched.map((p) => p.id).sort()).toEqual(
-      ["leepokai-jev-guard", "wobsoriano-is-jeven", "ekzhang-openjev-sglang"].sort(),
-    );
+    expect(ids("replace").sort()).toEqual(["guard", "jeven", "sglang"]);
   });
 
-  test("benchmark matches only projects with a benchmark object", () => {
-    const matched = projects.filter((p) => matchesLens(p, "benchmark"));
-    expect(matched.map((p) => p.id).sort()).toEqual(
-      [
-        "jarrodwatts-jev-trader",
-        "gregpr07-jev-ultrafast",
-        "lazyide-the-lazyide",
-        "leepokai-jev-guard",
-        "ekzhang-openjev-sglang",
-        "gnumanth-pkg-gate",
-      ].sort(),
-    );
+  test("benchmark matches only projects with a measured figure", () => {
+    expect(ids("benchmark").sort()).toEqual(["gate", "guard", "sglang", "trader", "ultrafast"]);
+    expect(matchesLens(makeProject({ benchmark: { task: "no figures" } }), "benchmark")).toBe(false);
   });
 
   test("cookbook matches only projects with a recipe", () => {
-    const matched = projects.filter((p) => matchesLens(p, "cookbook"));
-    expect(matched.length).toBe(10);
+    expect(ids("cookbook").sort()).toEqual(["cli", "gate", "guard", "jeven", "sglang", "trader", "ultrafast"]);
+    expect(matchesLens(fsd, "cookbook")).toBe(false);
+  });
+
+  test("a project can sit in several lenses", () => {
+    expect([guard, trader, gate, cli, jeven].map((project) => matchesLens(project, "cookbook"))).toEqual([true, true, true, true, true]);
+    expect(matchesLens(guard, "replace") && matchesLens(guard, "benchmark")).toBe(true);
   });
 });

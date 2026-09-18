@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "@/lib/useMediaQuery";
 import { countryName, relativeTime, VISIBLE_EVENT_COUNT } from "@/lib/visitorEvents";
 
 interface FeedEvent {
@@ -17,8 +18,11 @@ export function VisitorFeed() {
   const [events, setEvents] = useState<FeedEvent[]>([]);
   const [now, setNow] = useState(() => Date.now());
   const latestRequestId = useRef(0);
+  // The hero only shows this from the lg breakpoint up, so below it there is nothing to poll for or tick.
+  const shown = useMediaQuery("(min-width: 1024px)");
 
   useEffect(() => {
+    if (!shown) return;
     let cancelled = false;
 
     async function poll() {
@@ -41,32 +45,39 @@ export function VisitorFeed() {
       cancelled = true;
       clearInterval(pollId);
     };
-  }, []);
+  }, [shown]);
 
   useEffect(() => {
+    if (!shown) return;
     const tickId = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(tickId);
-  }, []);
+  }, [shown]);
 
-  if (events.length === 0) return null;
+  if (!shown || events.length === 0) return null;
 
   return (
-    <section className="border-b border-bp-hairline bg-bp-bg px-6 py-4 font-bp-mono text-[12px]">
-      <div className="mx-auto flex max-w-5xl flex-col gap-1.5">
-        {events.slice(0, VISIBLE_EVENT_COUNT).map((event) => (
-          <div
+    <section aria-label="Live visitor activity" className="flex flex-col gap-3">
+      <div className="flex items-center gap-2 font-bp-mono text-xs text-bp-secondary">
+        <span aria-hidden="true" className="size-2 animate-[bp-pulse_2s_ease-in-out_infinite] rounded-full bg-bp-accent" />
+        <span className="font-semibold text-bp-ink">Live</span>
+        <span>on this site right now</span>
+      </div>
+      <ul className="flex flex-col gap-2 border-l border-bp-hairline pl-4 text-sm">
+        {events.slice(0, VISIBLE_EVENT_COUNT).map((event, index) => (
+          <li
             key={event.id}
-            className="flex animate-[bp-card-in_220ms_ease-out] items-baseline gap-2 text-bp-secondary"
+            style={{ opacity: Math.max(0.45, 1 - index * 0.14) }}
+            className="flex animate-[bp-row-in_320ms_var(--ease-out-quart)] items-baseline gap-2 text-bp-secondary"
           >
             <span aria-hidden="true">{event.flag ?? "🌐"}</span>
-            <span>
+            <span className="min-w-0">
               Someone in <span className="text-bp-ink">{countryName(event.country)}</span> is reading{" "}
-              <span className="text-bp-ink">{event.path}</span>
+              <span className="font-bp-mono text-[13px] text-bp-ink">{event.path}</span>{" "}
+              <span className="whitespace-nowrap font-bp-mono text-xs text-bp-muted">{relativeTime(event.createdAt, now)}</span>
             </span>
-            <span className="text-bp-secondary/70">{relativeTime(event.createdAt, now)}</span>
-          </div>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

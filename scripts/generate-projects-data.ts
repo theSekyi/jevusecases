@@ -37,7 +37,19 @@ export function readEntry(entriesDir: string, dirName: string): RawEntry {
       `src/data/entries/${dirName}/entry.json has id "${entry.id}", which doesn't match its folder name`,
     );
   }
+  if (typeof entry.date_found !== "string" || !isRealDate(entry.date_found)) {
+    throw new Error(
+      `src/data/entries/${dirName}/entry.json has date_found "${String(entry.date_found)}", which must be a real date like 2026-09-17`,
+    );
+  }
   return entry;
+}
+
+/** A YYYY-MM-DD date that exists on the calendar (2026-02-30 doesn't). */
+function isRealDate(value: string): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const parsed = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().startsWith(value);
 }
 
 /** Lists entry folder names, rejecting any stray file sitting directly in the entries directory. */

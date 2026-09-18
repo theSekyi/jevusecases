@@ -58,20 +58,3 @@ export function sourceLink(project: Project): { href: string; label: string } | 
   return null;
 }
 
-/** The one headline stat for a card, in priority order: a replace verdict, then any benchmark figure. */
-export function cardStat(project: Project): string | null {
-  if (project.replaces?.verdict) {
-    const tool = project.replaces.tool ?? "a paid tool";
-    return `replaces ${tool} — ${project.replaces.verdict}`;
-  }
-
-  const b = project.benchmark;
-  if (!b) return null;
-  if (typeof b.latency_ms === "number") return `${b.latency_ms}ms`;
-  if (typeof b.latency_s === "number" || typeof b.latency_s === "string") {
-    const cost = typeof b.cost_usd === "number" ? ` · $${b.cost_usd}` : "";
-    return `${b.latency_s}s${cost}`;
-  }
-  if (typeof b.comparison === "string") return b.comparison;
-  return null;
-}
