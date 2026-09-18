@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: "What jevusecases records about visitors, and what it does not.",
 };
 
-const ISSUES_URL = "https://github.com/theSekyi/jevusecases/issues";
+const CONTACT_EMAIL = "privacy@jevusecases.com";
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -95,11 +95,14 @@ export default function PrivacyPage() {
         <Section title="YOUR RIGHTS AND QUESTIONS">
           <p>
             You can ask to see, correct or delete data about you, and you can object to it being used. If you are in the
-            UK, you can also complain to the Information Commissioner&apos;s Office. To ask a question,{" "}
-            <a href={ISSUES_URL} target="_blank" rel="noopener noreferrer" className="underline hover:text-bp-accent">
-              open an issue on GitHub (opens in a new tab)
+            UK, you can also complain to the Information Commissioner&apos;s Office.
+          </p>
+          <p>
+            To ask a question or make a request, email{" "}
+            <a href={`mailto:${CONTACT_EMAIL}`} className="underline hover:text-bp-accent">
+              {CONTACT_EMAIL}
             </a>
-            . Do not post your IP address there. Ask for a private way to contact the owner instead.
+            . To find your visit records, the owner needs your IP address, so include it in the email.
           </p>
         </Section>
       </div>
