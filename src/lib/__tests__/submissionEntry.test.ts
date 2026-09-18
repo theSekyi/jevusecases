@@ -52,6 +52,14 @@ describe("buildSubmissionEntry", () => {
     expect(entry.author).toBeNull();
   });
 
+  test("is_build is false for an explainer/curation submission, true for everything else", () => {
+    const explainer = buildSubmissionEntry({ ...baseSubmission, category: "explainer / curation" });
+    const build = buildSubmissionEntry({ ...baseSubmission, category: "security / guardrails" });
+
+    expect(explainer.is_build).toBe(false);
+    expect(build.is_build).toBe(true);
+  });
+
   test("generates a unique, url-safe id even for a name with odd characters", () => {
     const entry = buildSubmissionEntry({ ...baseSubmission, name: "Jev/Guard!! 2.0" });
     expect(entry.id).toMatch(/^[a-z0-9-]+$/);

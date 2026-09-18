@@ -16,10 +16,20 @@ export const CATEGORIES = [
 
 const ALLOWED_SOURCE_HOSTS = ["github.com", "npmjs.com"];
 const ALLOWED_SOURCE_HOST_PATTERN = /^([a-z0-9-]+\.)*(github|npmjs)\.com$/i;
+const GITHUB_HOST_PATTERN = /^([a-z0-9-]+\.)*github\.com$/i;
 
 function hasAllowedSourceHost(value: string): boolean {
   try {
     return ALLOWED_SOURCE_HOST_PATTERN.test(new URL(value).hostname);
+  } catch {
+    return false;
+  }
+}
+
+/** True when a URL already known to pass the source-link allowlist is a github.com link rather than npmjs.com. */
+export function isGithubSourceLink(value: string): boolean {
+  try {
+    return GITHUB_HOST_PATTERN.test(new URL(value).hostname);
   } catch {
     return false;
   }
@@ -38,7 +48,12 @@ export const submissionSchema = z.object({
       hasAllowedSourceHost,
       `Only ${ALLOWED_SOURCE_HOSTS.join(" and ")} links are accepted`,
     ),
-  xHandle: z.string().trim().optional(),
+  xHandle: z
+    .string()
+    .trim()
+    .max(15, "X handles are at most 15 characters")
+    .regex(/^@?[A-Za-z0-9_]*$/, "Use only letters, numbers, and underscores")
+    .optional(),
 });
 
 export type SubmissionInput = z.infer<typeof submissionSchema>;

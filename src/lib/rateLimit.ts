@@ -1,3 +1,6 @@
+/** Caps how many distinct keys this limiter tracks at once, so a flood of one-off keys can't grow the map forever. */
+const MAX_TRACKED_KEYS = 10_000;
+
 /** A per-key sliding-window limiter. In-memory, so it resets on cold start and isn't shared across instances — fine at this site's traffic today; revisit with a shared store (e.g. Upstash Redis) if that stops being true. */
 export function createRateLimiter(limit: number, windowMs: number) {
   const hits = new Map<string, number[]>();
@@ -13,6 +16,10 @@ export function createRateLimiter(limit: number, windowMs: number) {
     }
 
     recent.push(now);
+    if (!hits.has(key) && hits.size >= MAX_TRACKED_KEYS) {
+      const oldestKey = hits.keys().next().value;
+      if (oldestKey !== undefined) hits.delete(oldestKey);
+    }
     hits.set(key, recent);
     return true;
   };

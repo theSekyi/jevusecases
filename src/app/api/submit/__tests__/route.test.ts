@@ -37,6 +37,7 @@ describe("POST /api/submit", () => {
     expect(response.status).toBe(400);
     const data = await response.json();
     expect(data.error).toBe("validation_failed");
+    expect(data.fieldErrors.name).toBeTruthy();
     expect(createSubmissionPr).not.toHaveBeenCalled();
   });
 
@@ -99,6 +100,20 @@ describe("POST /api/submit", () => {
     const otherIp = await POST(postRequest(validBody, "10.0.0.7"));
 
     expect(otherIp.status).toBe(201);
+  });
+
+  test("keys the rate limit on the trusted last hop of x-forwarded-for, not the client-suppliable first entry", async () => {
+    createSubmissionPr.mockResolvedValue({ success: true, prUrl: "https://example.com/pr/1" });
+    const { POST } = await import("../route");
+
+    for (let i = 0; i < 5; i++) {
+      const spoofedRequest = postRequest(validBody, `spoofed-${i}, 10.0.0.9`);
+      const response = await POST(spoofedRequest);
+      expect(response.status).toBe(201);
+    }
+
+    const sixth = await POST(postRequest(validBody, "spoofed-new, 10.0.0.9"));
+    expect(sixth.status).toBe(429);
   });
 
   test("rejects a body that isn't valid JSON", async () => {
