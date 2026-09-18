@@ -68,11 +68,22 @@ export default function SubmitPage() {
         return;
       }
 
-      setFormError(
-        response.status === 429
-          ? "You've hit the submission limit. Try again in a bit."
-          : "Something went wrong submitting your project. Try again.",
-      );
+      if (response.status === 429) {
+        setFormError("You've hit the submission limit. Try again in a bit.");
+        setStatus("idle");
+        return;
+      }
+
+      if (response.status === 400) {
+        const data = (await response.json()) as { fieldErrors?: SubmissionFieldErrors };
+        if (data.fieldErrors) {
+          setFieldErrors(data.fieldErrors);
+          setStatus("idle");
+          return;
+        }
+      }
+
+      setFormError("Something went wrong submitting your project. Try again.");
       setStatus("idle");
     } catch (error) {
       console.error("Failed to submit project:", error);
