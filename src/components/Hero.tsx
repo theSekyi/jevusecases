@@ -7,9 +7,6 @@ export function Hero({ projects }: { projects: Project[] }) {
     <section className="flex border-b border-bp-hairline bg-bp-bg px-6 py-16 font-bp-sans text-bp-ink">
       <div className="mx-auto flex w-full max-w-5xl flex-col md:flex-row">
         <div className="flex w-full shrink-0 flex-col justify-center gap-4 pb-9 md:w-80 md:pb-0 md:pr-9">
-          <span className="font-bp-mono text-[10px] tracking-widest text-bp-secondary">
-            SINCE 2026-09-15
-          </span>
           <h1 className="text-4xl font-bold leading-tight tracking-tight">Jev, tracked.</h1>
           <p className="text-sm text-bp-secondary">
             The log on the right updates every time a new build gets verified.

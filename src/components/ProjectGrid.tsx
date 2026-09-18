@@ -42,8 +42,8 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
         </div>
 
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {visible.map((project, index) => (
-            <ProjectCard key={project.id} project={project} number={index + 1} />
+          {visible.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </div>
       </div>
@@ -51,7 +51,7 @@ export function ProjectGrid({ projects }: { projects: Project[] }) {
   );
 }
 
-function ProjectCard({ project, number }: { project: Project; number: number }) {
+function ProjectCard({ project }: { project: Project }) {
   const stat = cardStat(project);
   const link = sourceLink(project);
 
@@ -64,15 +64,10 @@ function ProjectCard({ project, number }: { project: Project; number: number }) 
       <Corner className="bottom-[-1px] left-[-1px] border-b-2 border-l-2" />
       <Corner className="bottom-[-1px] right-[-1px] border-b-2 border-r-2" />
 
-      <div className="flex items-start justify-between gap-3">
-        <div>
-          <div className="text-lg font-bold">{project.project}</div>
-          <span className="font-bp-mono text-[9px] tracking-widest text-bp-secondary">
-            {project.category.toUpperCase()}
-          </span>
-        </div>
-        <span className="flex h-[22px] w-[22px] shrink-0 items-center justify-center border border-bp-hairline font-bp-mono text-[10px] text-bp-secondary">
-          {String(number).padStart(2, "0")}
+      <div>
+        <div className="text-lg font-bold">{project.project}</div>
+        <span className="font-bp-mono text-[9px] tracking-widest text-bp-secondary">
+          {project.category.toUpperCase()}
         </span>
       </div>
 
