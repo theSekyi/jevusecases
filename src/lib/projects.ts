@@ -47,8 +47,13 @@ export function sourceLink(project: Project): { href: string; label: string } | 
   if (project.github) {
     return { href: project.github, label: project.github.replace(/^https?:\/\//, "") };
   }
-  if (project.website && /^https?:\/\//.test(project.website)) {
-    return { href: project.website, label: project.website.replace(/^https?:\/\//, "") };
+  if (project.website) {
+    try {
+      new URL(project.website);
+      return { href: project.website, label: project.website.replace(/^https?:\/\//, "") };
+    } catch {
+      return null;
+    }
   }
   return null;
 }
@@ -63,7 +68,7 @@ export function cardStat(project: Project): string | null {
   const b = project.benchmark;
   if (!b) return null;
   if (typeof b.latency_ms === "number") return `${b.latency_ms}ms`;
-  if (typeof b.latency_s === "number") {
+  if (typeof b.latency_s === "number" || typeof b.latency_s === "string") {
     const cost = typeof b.cost_usd === "number" ? ` · $${b.cost_usd}` : "";
     return `${b.latency_s}s${cost}`;
   }

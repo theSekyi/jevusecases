@@ -81,7 +81,12 @@ function ProjectCard({ project, number }: { project: Project; number: number }) 
       <div className="flex flex-col gap-1 font-bp-mono text-[11px] text-bp-secondary">
         {stat && <span>{stat}</span>}
         {link && (
-          <a href={link.href} className="text-bp-ink underline hover:text-bp-accent">
+          <a
+            href={link.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-bp-ink underline hover:text-bp-accent"
+          >
             {link.label}
           </a>
         )}

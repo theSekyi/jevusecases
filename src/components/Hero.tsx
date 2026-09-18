@@ -5,8 +5,8 @@ export function Hero({ projects }: { projects: Project[] }) {
 
   return (
     <section className="flex border-b border-bp-hairline bg-bp-bg px-6 py-16 font-bp-sans text-bp-ink">
-      <div className="mx-auto flex w-full max-w-5xl">
-        <div className="flex w-80 shrink-0 flex-col justify-center gap-4 pr-9">
+      <div className="mx-auto flex w-full max-w-5xl flex-col md:flex-row">
+        <div className="flex w-full shrink-0 flex-col justify-center gap-4 pb-9 md:w-80 md:pb-0 md:pr-9">
           <span className="font-bp-mono text-[10px] tracking-widest text-bp-secondary">
             SINCE 2026-09-15
           </span>
@@ -22,9 +22,9 @@ export function Hero({ projects }: { projects: Project[] }) {
           </a>
         </div>
 
-        <div className="w-px bg-bp-hairline" />
+        <div className="h-px w-full bg-bp-hairline md:h-auto md:w-px" />
 
-        <div className="flex flex-1 flex-col justify-center gap-3 pl-9 font-bp-mono text-[13px]">
+        <div className="flex flex-1 flex-col justify-center gap-3 pt-9 font-bp-mono text-[13px] md:pl-9 md:pt-0">
           {logEntries.map((project) => {
             const stat = cardStat(project);
             return (

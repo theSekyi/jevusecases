@@ -6,9 +6,9 @@ export default function Home() {
   const projects = getProjects();
 
   return (
-    <div className="flex flex-1 flex-col">
+    <main className="flex flex-1 flex-col">
       <Hero projects={projects} />
       <ProjectGrid projects={projects} />
-    </div>
+    </main>
   );
 }
