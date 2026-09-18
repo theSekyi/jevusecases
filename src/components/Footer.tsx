@@ -11,6 +11,9 @@ export function Footer() {
           <Link href="/submit" className="text-bp-secondary hover:text-bp-accent">
             SUBMIT A PROJECT
           </Link>
+          <Link href="/privacy" className="text-bp-secondary hover:text-bp-accent">
+            PRIVACY
+          </Link>
           <a
             href="https://github.com/theSekyi/jevusecases"
             target="_blank"
