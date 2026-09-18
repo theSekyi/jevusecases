@@ -15,7 +15,7 @@ Use this path if you'd rather fill in more of the researched fields yourself (a 
 1. Fork this repo.
 2. Copy [`TEMPLATE.jsonc`](TEMPLATE.jsonc). It's one fully-annotated example entry — every field explained inline, with the `//` comments stripped before it goes into real JSON.
 3. Fill in your own values. Only fill in what you can honestly say is true — leave everything else `null`. An entry with most fields `null` is normal; that's what a freshly-added, not-yet-researched entry looks like, not something to apologize for.
-4. Save it as `src/data/entries/<your-id>/entry.json`, where `<your-id>` matches the `id` field you filled in (e.g. `src/data/entries/yourhandle-your-project/entry.json`). Every entry gets its own folder — this is a new file, not an edit to an existing one, so your PR can't conflict with anyone else's.
+4. Save it as `src/data/entries/<your-id>/entry.json`, where `<your-id>` matches the `id` field you filled in (e.g. `src/data/entries/yourhandle-your-project/entry.json`). Every entry gets its own folder — this is a new file, not an edit to an existing one, so your PR won't conflict with someone else's unless you both happen to pick the exact same id. Using your handle as the prefix (as the template does) makes that collision unlikely.
 5. Open a pull request against `main`.
 
 ## What happens after you open a PR
