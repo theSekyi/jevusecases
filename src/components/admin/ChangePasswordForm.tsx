@@ -74,11 +74,6 @@ export function ChangePasswordForm() {
           {state.error}
         </p>
       )}
-      {state?.ok && (
-        <p role="status" className="text-sm text-bp-ink">
-          Password changed. Any other signed-in devices were signed out.
-        </p>
-      )}
 
       <button type="submit" disabled={pending} className={primaryButtonClass}>
         {pending ? "Saving…" : "Change password"}

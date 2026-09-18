@@ -80,16 +80,6 @@ describe("ChangePasswordForm", () => {
     expect(screen.getByLabelText("NEW PASSWORD")).toHaveAttribute("aria-invalid", "false");
   });
 
-  test("confirms success", async () => {
-    changePassword.mockResolvedValueOnce({ ok: true });
-    const { container } = render(<ChangePasswordForm />);
-    fill(CURRENT_PASSWORD, NEW_PASSWORD, NEW_PASSWORD);
-
-    await submit(container);
-
-    expect(await screen.findByRole("status")).toHaveTextContent(/Password changed/);
-  });
-
   test("catches a typo in the browser: no action call, and the fields keep what was typed", async () => {
     const { container } = render(<ChangePasswordForm />);
     fill(CURRENT_PASSWORD, NEW_PASSWORD, NEW_PASSWORD.slice(0, -1) + "x");

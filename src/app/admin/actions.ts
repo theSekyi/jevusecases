@@ -1,10 +1,9 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { authenticate, changePassword as changeAdminPassword } from "@/lib/adminUsers";
-import { ADMIN_PATH, endSession, LOGIN_PATH, requireAdmin, startSession } from "@/lib/auth";
+import { ADMIN_PATH, endSession, LOGIN_PATH, PASSWORD_CHANGED_PARAM, requireAdmin, startSession } from "@/lib/auth";
 import { allowLoginAttempt, allowPasswordChangeAttempt } from "@/lib/authRateLimit";
 import { changePasswordSchema, firstFieldErrors, loginSchema, type AuthFormState } from "@/lib/authSchema";
 import { clientIp } from "@/lib/rateLimit";
@@ -66,25 +65,15 @@ export async function changePassword(
     return { error: GENERIC_FAILURE };
   }
 
-  if (result.status === "wrong_password") {
+  if (result === "wrong_password") {
     return { fieldErrors: { currentPassword: "That isn't your current password" } };
   }
-  if (result.status === "conflict") {
+  if (result === "conflict") {
     return { error: "Your password was changed somewhere else while you were doing this. Sign in again." };
   }
-  if (result.status !== "ok") return { error: GENERIC_FAILURE };
+  if (result !== "ok") return { error: GENERIC_FAILURE };
 
-  // Every session for this account was just revoked, including this one — start a fresh one.
-  let restarted = false;
-  try {
-    restarted = await startSession(admin.id, result.credentialVersion);
-  } catch (error) {
-    console.error("Admin session restart failed after a password change:", error);
-  }
-  if (!restarted) {
-    return { error: "Your password was changed, but signing you back in failed. Sign in again with the new password." };
-  }
-
-  revalidatePath(ADMIN_PATH);
-  return { ok: true };
+  // The change revoked every session for this account, this one included, so the cookie is stale.
+  await endSession();
+  redirect(`${LOGIN_PATH}?${PASSWORD_CHANGED_PARAM}=1`);
 }

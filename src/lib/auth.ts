@@ -12,6 +12,7 @@ import type { AdminUser } from "@/lib/adminUsers";
 export const SESSION_COOKIE = "jevusecases_session";
 export const ADMIN_PATH = "/admin";
 export const LOGIN_PATH = "/admin/login";
+export const PASSWORD_CHANGED_PARAM = "changed";
 
 /**
  * Signs the user in: a random session token goes in the cookie, only its hash goes in the database.

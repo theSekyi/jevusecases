@@ -13,6 +13,7 @@ const requireAdmin = vi.fn();
 vi.mock("@/lib/auth", () => ({
   ADMIN_PATH: "/admin",
   LOGIN_PATH: "/admin/login",
+  PASSWORD_CHANGED_PARAM: "changed",
   startSession: (...a: unknown[]) => startSession(...a),
   endSession: (...a: unknown[]) => endSession(...a),
   requireAdmin: (...a: unknown[]) => requireAdmin(...a),
@@ -27,8 +28,6 @@ vi.mock("next/navigation", () => ({
     throw new Error(`NEXT_REDIRECT:${path}`);
   },
 }));
-const revalidatePath = vi.fn();
-vi.mock("next/cache", () => ({ revalidatePath: (...a: unknown[]) => revalidatePath(...a) }));
 
 // Repeated characters keep secret scanners from mistaking fixtures for real passwords.
 const CURRENT_PASSWORD = "c".repeat(16);
@@ -202,7 +201,7 @@ describe("admin actions", () => {
     });
 
     test("reports a wrong current password on that field", async () => {
-      changeAdminPassword.mockResolvedValueOnce({ status: "wrong_password" });
+      changeAdminPassword.mockResolvedValueOnce("wrong_password");
       const { changePassword } = await loadActions();
 
       const state = await changePassword(undefined, form(valid));
@@ -211,38 +210,25 @@ describe("admin actions", () => {
       expect(startSession).not.toHaveBeenCalled();
     });
 
-    test("on success, changes the password for the signed-in admin only, then starts a fresh session", async () => {
-      changeAdminPassword.mockResolvedValueOnce({ status: "ok", credentialVersion: "5" });
-      startSession.mockResolvedValueOnce(true);
+    test("on success, changes the password for the signed-in admin only, then signs out and goes to the login page", async () => {
+      changeAdminPassword.mockResolvedValueOnce("ok");
       const { changePassword } = await loadActions();
 
-      const state = await changePassword(undefined, form(valid));
+      await expect(changePassword(undefined, form(valid))).rejects.toThrow("NEXT_REDIRECT:/admin/login?changed=1");
 
-      expect(state).toEqual({ ok: true });
       expect(changeAdminPassword).toHaveBeenCalledWith("7", CURRENT_PASSWORD, NEW_PASSWORD);
-      expect(startSession).toHaveBeenCalledWith("7", "5");
-      expect(revalidatePath).toHaveBeenCalledWith("/admin");
+      expect(endSession).toHaveBeenCalledTimes(1);
+      expect(startSession).not.toHaveBeenCalled();
     });
 
     test("tells the admin to sign in again when a reset landed first, and starts no session", async () => {
-      changeAdminPassword.mockResolvedValueOnce({ status: "conflict" });
+      changeAdminPassword.mockResolvedValueOnce("conflict");
       const { changePassword } = await loadActions();
 
       const state = await changePassword(undefined, form(valid));
 
       expect(state.error).toMatch(/Sign in again/);
-      expect(startSession).not.toHaveBeenCalled();
-    });
-
-    test("says so when the password changed but the fresh session couldn't be started", async () => {
-      changeAdminPassword.mockResolvedValueOnce({ status: "ok", credentialVersion: "5" });
-      startSession.mockRejectedValueOnce(new Error("db down"));
-      const { changePassword } = await loadActions();
-
-      const state = await changePassword(undefined, form(valid));
-
-      expect(state.ok).toBeUndefined();
-      expect(state.error).toMatch(/password was changed/);
+      expect(endSession).not.toHaveBeenCalled();
     });
 
     test("a database failure returns a generic error and leaves the session alone", async () => {
@@ -252,11 +238,11 @@ describe("admin actions", () => {
       const state = await changePassword(undefined, form(valid));
 
       expect(state.error).toBe("Something went wrong. Try again.");
-      expect(startSession).not.toHaveBeenCalled();
+      expect(endSession).not.toHaveBeenCalled();
     });
 
     test("rate-limits repeated attempts to guess the current password", async () => {
-      changeAdminPassword.mockResolvedValue({ status: "wrong_password" });
+      changeAdminPassword.mockResolvedValue("wrong_password");
       const { changePassword } = await loadActions();
 
       for (let i = 0; i < 5; i++) await changePassword(undefined, form(valid));
