@@ -1,11 +1,7 @@
-import { neon } from "@neondatabase/serverless";
+import { db } from "../src/lib/db.ts";
 
 async function main() {
-  const url = process.env.DATABASE_URL;
-  if (!url) {
-    throw new Error("DATABASE_URL is not set");
-  }
-  const sql = neon(url);
+  const sql = db();
 
   await sql`
     CREATE TABLE IF NOT EXISTS visitor_events (

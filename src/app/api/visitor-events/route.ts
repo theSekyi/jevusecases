@@ -1,7 +1,15 @@
-import { NextResponse } from "next/server";
+import { NextResponse, type NextRequest } from "next/server";
 import { countryCodeToFlag, getRecentVisitorEvents } from "@/lib/visitorEvents";
+import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 
-export async function GET() {
+// Well above the strip's own 7s poll cadence — this only needs to blunt a scripted flood.
+const checkRateLimit = createRateLimiter(30, 60 * 1000);
+
+export async function GET(request: NextRequest) {
+  if (!checkRateLimit(clientIp(request))) {
+    return NextResponse.json({ events: [] }, { status: 429 });
+  }
+
   try {
     const events = await getRecentVisitorEvents();
     return NextResponse.json({

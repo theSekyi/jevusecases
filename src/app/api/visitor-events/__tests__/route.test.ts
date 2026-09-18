@@ -1,4 +1,5 @@
 import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
+import { NextRequest } from "next/server";
 
 const getRecentVisitorEvents = vi.fn();
 vi.mock("@/lib/visitorEvents", async () => {
@@ -6,8 +7,15 @@ vi.mock("@/lib/visitorEvents", async () => {
   return { ...actual, getRecentVisitorEvents: (...args: unknown[]) => getRecentVisitorEvents(...args) };
 });
 
+function getRequest(ip = "1.2.3.4") {
+  return new NextRequest("http://localhost/api/visitor-events", {
+    headers: { "x-forwarded-for": ip },
+  });
+}
+
 describe("GET /api/visitor-events", () => {
   beforeEach(() => {
+    vi.resetModules();
     getRecentVisitorEvents.mockReset();
   });
 
@@ -22,7 +30,7 @@ describe("GET /api/visitor-events", () => {
     ]);
     const { GET } = await import("../route");
 
-    const response = await GET();
+    const response = await GET(getRequest("10.0.0.1"));
 
     expect(response.status).toBe(200);
     const data = await response.json();
@@ -36,10 +44,24 @@ describe("GET /api/visitor-events", () => {
     getRecentVisitorEvents.mockRejectedValueOnce(new Error("connection reset"));
     const { GET } = await import("../route");
 
-    const response = await GET();
+    const response = await GET(getRequest("10.0.0.2"));
 
     expect(response.status).toBe(502);
     const data = await response.json();
     expect(data.events).toEqual([]);
+  });
+
+  test("rate-limits repeated polling from the same IP", async () => {
+    getRecentVisitorEvents.mockResolvedValue([]);
+    const { GET } = await import("../route");
+    const ip = "10.0.0.3";
+
+    for (let i = 0; i < 30; i++) {
+      const response = await GET(getRequest(ip));
+      expect(response.status).toBe(200);
+    }
+
+    const response = await GET(getRequest(ip));
+    expect(response.status).toBe(429);
   });
 });

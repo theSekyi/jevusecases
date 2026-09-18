@@ -1,8 +1,54 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
-import { countryCodeToFlag, getRecentVisitorEvents, recordVisitorEvent } from "../visitorEvents";
+import {
+  countryCodeToFlag,
+  countryName,
+  getRecentVisitorEvents,
+  isValidCountryCode,
+  recordVisitorEvent,
+  relativeTime,
+  VISIBLE_EVENT_COUNT,
+} from "../visitorEvents";
 
 const sqlMock = vi.fn();
 vi.mock("@/lib/db", () => ({ db: () => sqlMock }));
+
+describe("isValidCountryCode", () => {
+  test("accepts a plausible two-letter code, rejects everything else", () => {
+    expect(isValidCountryCode("US")).toBe(true);
+    expect(isValidCountryCode("gb")).toBe(true);
+    expect(isValidCountryCode(null)).toBe(false);
+    expect(isValidCountryCode(undefined)).toBe(false);
+    expect(isValidCountryCode("")).toBe(false);
+    expect(isValidCountryCode("USA")).toBe(false);
+    expect(isValidCountryCode("<script>alert(1)</script>")).toBe(false);
+  });
+});
+
+describe("countryName", () => {
+  test("resolves a real country code to its display name", () => {
+    expect(countryName("US")).toBe("United States");
+    expect(countryName("GB")).toBe("United Kingdom");
+  });
+
+  test("falls back to a generic label for missing/invalid input, e.g. local dev with no geolocation", () => {
+    expect(countryName(null)).toBe("Somewhere");
+    expect(countryName("not-a-code")).toBe("Somewhere");
+  });
+});
+
+describe("relativeTime", () => {
+  test("formats seconds and minutes", () => {
+    const base = new Date("2026-01-01T00:00:00.000Z").getTime();
+    expect(relativeTime("2026-01-01T00:00:00.000Z", base)).toBe("0s ago");
+    expect(relativeTime("2026-01-01T00:00:00.000Z", base + 45_000)).toBe("45s ago");
+    expect(relativeTime("2026-01-01T00:00:00.000Z", base + 90_000)).toBe("1m ago");
+  });
+
+  test("never goes negative for clock skew between client and server", () => {
+    const base = new Date("2026-01-01T00:00:00.000Z").getTime();
+    expect(relativeTime("2026-01-01T00:00:05.000Z", base)).toBe("0s ago");
+  });
+});
 
 describe("countryCodeToFlag", () => {
   test("turns a country code into its flag emoji", () => {
@@ -48,5 +94,14 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
       { id: 2, country: "US", path: "/", createdAt: "2026-01-01T00:00:01.000Z" },
       { id: 1, country: null, path: "/submit", createdAt: "2026-01-01T00:00:00.000Z" },
     ]);
+  });
+
+  test("defaults the query limit to exactly what the live strip displays, not more", async () => {
+    sqlMock.mockResolvedValueOnce([]);
+
+    await getRecentVisitorEvents();
+
+    const values = sqlMock.mock.calls[0].slice(1);
+    expect(values).toContain(VISIBLE_EVENT_COUNT);
   });
 });
