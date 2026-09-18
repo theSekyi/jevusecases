@@ -1,13 +1,31 @@
-import type { NextRequest } from "next/server";
+/** An IPv6 subscriber owns a whole /64, so limiting per address would hand them a fresh bucket per request. */
+function limitingKey(ip: string): string {
+  const address = ip.split("%")[0];
+  if (!address.includes(":")) return address;
+
+  const mapped = address.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/i);
+  if (mapped) return mapped[1];
+
+  const [head, tail] = address.split("::");
+  const front = head ? head.split(":") : [];
+  const back = tail ? tail.split(":") : [];
+  const groups =
+    tail === undefined ? front : [...front, ...Array(Math.max(0, 8 - front.length - back.length)).fill("0"), ...back];
+  return groups
+    .slice(0, 4)
+    .map((group) => group.padStart(4, "0").toLowerCase())
+    .join(":");
+}
 
 /**
  * The first entry in x-forwarded-for is whatever the client claimed and is trivially spoofable.
  * The last entry is the one Vercel's own edge appends for the actual connecting peer, so that's
- * the one worth rate-limiting on.
+ * the one worth rate-limiting on. IPv6 addresses collapse to their /64.
  */
-export function clientIp(request: NextRequest): string {
-  const chain = request.headers.get("x-forwarded-for")?.split(",");
-  return chain?.[chain.length - 1]?.trim() ?? "unknown";
+export function clientIp(source: { headers: { get(name: string): string | null } }): string {
+  const chain = source.headers.get("x-forwarded-for")?.split(",");
+  const ip = chain?.[chain.length - 1]?.trim();
+  return ip ? limitingKey(ip) : "unknown";
 }
 
 /** Caps how many distinct keys this limiter tracks at once, so a flood of one-off keys can't grow the map forever. */
