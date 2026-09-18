@@ -78,27 +78,37 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     sqlMock.mockReturnValue("query");
     transaction.mockResolvedValueOnce([]);
 
-    await recordVisitorEvent("US", "/submit");
+    await recordVisitorEvent("US", "/submit", "abc123");
 
     expect(transaction).toHaveBeenCalledTimes(1);
     expect(transaction).toHaveBeenCalledWith(["query", "query", "query"]);
     const [timeout, lock, insert] = sqlMock.mock.calls;
     expect(timeout[0].join("?")).toContain("SET LOCAL lock_timeout");
     expect(lock[0].join("?")).toContain("pg_advisory_xact_lock");
-    expect(insert[0].join("?")).toContain("INSERT INTO visitor_events");
+    expect(insert[0].join("?")).toContain("INSERT INTO visitor_events (country, path, visitor_hash)");
     expect(insert[0].join("?")).toContain("WHERE NOT EXISTS");
-    expect(insert.slice(1)).toEqual(["US", "/submit", "US", DUPLICATE_WINDOW_MS]);
+    expect(insert.slice(1)).toEqual(["US", "/submit", "abc123", DUPLICATE_WINDOW_MS, "abc123", "abc123", "abc123", "US"]);
   });
 
-  test("recordVisitorEvent compares a missing country as null-safe, so unknown locations dedupe too", async () => {
+  test("with a visitor hash, repeats are matched on the hash, so two visitors from one country both count", async () => {
+    sqlMock.mockReturnValue("query");
+    transaction.mockResolvedValueOnce([]);
+
+    await recordVisitorEvent("US", "/", "abc123");
+
+    const statement = sqlMock.mock.calls[2][0].join("?");
+    expect(statement).toContain("visitor_hash = ");
+  });
+
+  test("without a visitor hash it falls back to matching unidentified rows from the same country, null-safe", async () => {
     sqlMock.mockReturnValue("query");
     transaction.mockResolvedValueOnce([]);
 
     await recordVisitorEvent(null, "/");
 
     const insert = sqlMock.mock.calls[2];
-    expect(insert[0].join("?")).toContain("country IS NOT DISTINCT FROM");
-    expect(insert.slice(1)).toEqual([null, "/", null, DUPLICATE_WINDOW_MS]);
+    expect(insert[0].join("?")).toContain("visitor_hash IS NULL AND country IS NOT DISTINCT FROM");
+    expect(insert.slice(1)).toEqual([null, "/", null, DUPLICATE_WINDOW_MS, null, null, null, null]);
   });
 
   test("getRecentVisitorEvents maps snake_case rows into the VisitorEvent shape", async () => {

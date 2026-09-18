@@ -11,6 +11,7 @@ async function main() {
       created_at TIMESTAMPTZ NOT NULL DEFAULT now()
     )
   `;
+  await sql`ALTER TABLE visitor_events ADD COLUMN IF NOT EXISTS visitor_hash TEXT`;
   await sql`
     CREATE INDEX IF NOT EXISTS visitor_events_created_at_idx ON visitor_events (created_at DESC)
   `;

@@ -18,12 +18,14 @@ function fakeEvent() {
 
 describe("proxy", () => {
   beforeEach(() => {
+    vi.stubEnv("VISITOR_HASH_SECRET", "");
     recordVisitorEvent.mockReset();
     geolocation.mockReset();
     geolocation.mockReturnValue({ country: "US" });
   });
 
   afterEach(() => {
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
   });
 
@@ -38,7 +40,7 @@ describe("proxy", () => {
     await Promise.all(waited);
 
     expect(response.headers.get("x-middleware-next")).toBe("1");
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit");
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null);
   });
 
   test("a submitted path can't be anything other than the real request path — there is no client input here", async () => {
@@ -51,7 +53,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route");
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route", null);
   });
 
   test("rate-limits repeated requests from the same IP", async () => {
@@ -110,7 +112,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/");
+    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/", null);
   });
 
   test("hands every request to the recorder; dropping repeats is its job, not the proxy's", async () => {
@@ -124,6 +126,26 @@ describe("proxy", () => {
     }
 
     expect(recordVisitorEvent).toHaveBeenCalledTimes(2);
+  });
+
+  test("passes a stable hash of the client IP, not the IP", async () => {
+    vi.stubEnv("VISITOR_HASH_SECRET", "k".repeat(32));
+    const { proxy } = await import("../proxy");
+    const visit = async (ip: string) => {
+      const { event, waited } = fakeEvent();
+      proxy(new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip } }), event as never);
+      await Promise.all(waited);
+    };
+
+    await visit("198.51.100.20");
+    await visit("198.51.100.20");
+    await visit("198.51.100.21");
+
+    const hashes = recordVisitorEvent.mock.calls.map((call) => call[2]);
+    expect(hashes[0]).toMatch(/^[0-9a-f]{32}$/);
+    expect(hashes[0]).toBe(hashes[1]);
+    expect(hashes[0]).not.toBe(hashes[2]);
+    expect(JSON.stringify(recordVisitorEvent.mock.calls)).not.toContain("198.51.100");
   });
 
   test("records nothing while the admin session cookie is present", async () => {
@@ -169,7 +191,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/");
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/", null);
   });
 
   test("a throwing geolocation call is caught too, not just the database write", async () => {

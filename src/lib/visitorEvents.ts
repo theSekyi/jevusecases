@@ -58,8 +58,15 @@ export const DUPLICATE_WINDOW_MS = 3000;
 // An arbitrary constant that only has to be the same on every instance.
 const RECORD_LOCK_KEY = 41_001;
 
-/** Records a page view unless the same country was recorded within DUPLICATE_WINDOW_MS. */
-export async function recordVisitorEvent(country: string | null, path: string): Promise<void> {
+/**
+ * Records a page view unless the same visitor was recorded within DUPLICATE_WINDOW_MS. Without a
+ * visitor hash the only thing to go on is the country, so repeats from one country are dropped instead.
+ */
+export async function recordVisitorEvent(
+  country: string | null,
+  path: string,
+  visitorHash: string | null = null,
+): Promise<void> {
   const sql = db();
   // The lock makes check-then-insert atomic: a concurrent call waits for this transaction to commit
   // before running its own check, so it sees the row instead of racing past it. The timeout keeps a
@@ -68,12 +75,15 @@ export async function recordVisitorEvent(country: string | null, path: string): 
     sql`SET LOCAL lock_timeout = '2s'`,
     sql`SELECT pg_advisory_xact_lock(${RECORD_LOCK_KEY})`,
     sql`
-      INSERT INTO visitor_events (country, path)
-      SELECT ${country}::text, ${path}::text
+      INSERT INTO visitor_events (country, path, visitor_hash)
+      SELECT ${country}::text, ${path}::text, ${visitorHash}::text
       WHERE NOT EXISTS (
         SELECT 1 FROM visitor_events
-        WHERE country IS NOT DISTINCT FROM ${country}::text
-          AND created_at > now() - (${DUPLICATE_WINDOW_MS}::text || ' milliseconds')::interval
+        WHERE created_at > now() - (${DUPLICATE_WINDOW_MS}::text || ' milliseconds')::interval
+          AND (
+            (${visitorHash}::text IS NOT NULL AND visitor_hash = ${visitorHash}::text)
+            OR (${visitorHash}::text IS NULL AND visitor_hash IS NULL AND country IS NOT DISTINCT FROM ${country}::text)
+          )
       )
     `,
   ]);
