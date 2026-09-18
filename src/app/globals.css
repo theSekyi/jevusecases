@@ -10,6 +10,16 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Blueprint design tokens: ink-blue palette, accent reserved for interaction states only */
+  --color-bp-bg: #fafbfc;
+  --color-bp-surface: #ffffff;
+  --color-bp-ink: #1b3a5c;
+  --color-bp-secondary: #3e5062;
+  --color-bp-hairline: #c7d2dc;
+  --color-bp-accent: #c0392b;
+  --font-bp-sans: var(--font-ibm-plex-sans-condensed);
+  --font-bp-mono: var(--font-ibm-plex-mono);
 }
 
 @media (prefers-color-scheme: dark) {
