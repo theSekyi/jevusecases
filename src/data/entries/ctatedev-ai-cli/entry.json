@@ -1,0 +1,26 @@
+{
+  "id": "ctatedev-ai-cli",
+  "project": "ai-cli",
+  "description": "CLI tool that gives any agent harness access to Jev-backed yes/no questions, multiple-choice selection, and criteria scoring.",
+  "github": null,
+  "website": "npm install -g ai-cli",
+  "how_used_jev": "Wraps Jev's typed-decision API behind simple CLI commands (yes/no, choose between options, score against criteria) so any agent harness can call it.",
+  "source_tweet": "https://x.com/ctatedev/status/2100584917092409479",
+  "author": "@ctatedev",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "install": "npm install -g ai-cli"
+  }
+}

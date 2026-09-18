@@ -46,3 +46,6 @@ CLAUDE.md
 /docs/
 /.design/
 /.claude/
+
+# generated from src/data/entries/*/entry.json — see scripts/generate-projects-data.ts
+/src/data/projects.json

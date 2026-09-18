@@ -17,6 +17,8 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+The data the site renders (`src/data/projects.json`) is generated from `src/data/entries/*/entry.json` automatically before `dev`/`build`/`test` — it's gitignored, so there's nothing to keep in sync by hand. See [CONTRIBUTING.md](CONTRIBUTING.md) to add an entry.
+
 ```bash
 npm test           # run tests
 npm run lint        # lint

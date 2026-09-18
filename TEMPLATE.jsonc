@@ -1,8 +1,9 @@
-// Template for one entry in src/data/projects.json.
+// Template for one entry in src/data/entries/<your-id>/entry.json.
 //
-// Copy the object below, fill in your own values, and add it to the array
-// in src/data/projects.json (keep the file valid JSON — this .jsonc file's
-// comments are only here to explain each field; strip them when you copy).
+// Copy the object below, fill in your own values, and save it as
+// src/data/entries/<your-id>/entry.json, where <your-id> matches the "id"
+// field below (keep the file valid JSON — this .jsonc file's comments are
+// only here to explain each field; strip them when you copy).
 //
 // Only fields you can honestly fill in should have a real value. Leave
 // anything you haven't researched as null — that's the normal state for a

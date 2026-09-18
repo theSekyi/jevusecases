@@ -1,0 +1,27 @@
+{
+  "id": "michaellee04-5k-requests",
+  "project": "Jev exploration (classification/routing/intent/steering)",
+  "description": "Ran ~5,000 Jev requests for about $2 total across classification, model routing, intent detection, and steering tasks.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Used Jev as a general-purpose typed-decision layer across several distinct task types to test cost and behavior at volume.",
+  "source_tweet": "https://x.com/MichaelLee04/status/2100003037150683593",
+  "author": "@MichaelLee04",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": {
+    "baseline_model": null,
+    "est_savings_pct": null,
+    "basis": "~5,000 requests for ~$2 total (~$0.0004/request) across classification, routing, intent, steering"
+  },
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

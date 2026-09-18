@@ -1,0 +1,30 @@
+{
+  "id": "ekzhang-openjev-sglang",
+  "project": "openjev-sglang",
+  "description": "Open-source, Jev-compatible API that mimics Jev's fast parallel typed-decision behavior on an open model.",
+  "github": "https://github.com/ekzhang/openjev-sglang",
+  "website": null,
+  "how_used_jev": "Not Jev itself: runs Qwen3.6-35B-A3B behind an SGLang radix cache to approximate Jev's prefill reuse and parallel System One-style generation, benchmarked at 64 tasks in under 1 second.",
+  "source_tweet": null,
+  "author": "@ekzhang1",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "infra / open reimplementation",
+  "replaces": {
+    "tool": "TypeSafe's hosted Jev API",
+    "verdict": "KINDA",
+    "notes": "self-hosted approximation on an open model, not a drop-in - own accuracy/calibration unverified against Jev"
+  },
+  "cost_signal": null,
+  "benchmark": {
+    "task": "64 parallel tasks",
+    "latency_s": "<1",
+    "notes": "uses SGLang radix cache for prefill reuse"
+  },
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ekzhang/openjev-sglang"
+  }
+}

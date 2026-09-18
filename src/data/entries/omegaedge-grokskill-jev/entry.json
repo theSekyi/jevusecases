@@ -1,0 +1,26 @@
+{
+  "id": "omegaedge-grokskill-jev",
+  "project": "grokskill-jev",
+  "description": "Public Grok skill that pairs Grok with Browser Use's Jev Ultrafast agent for fast, cheap automated website checks.",
+  "github": "https://github.com/AE-AlphaEdge/grokskill-jev",
+  "website": null,
+  "how_used_jev": "Wraps Browser Use's Jev-driven browser agent as a Grok skill so Grok can delegate page navigation/checks to Jev's fast typed-decision loop instead of a full LLM browsing pass.",
+  "source_tweet": null,
+  "author": "@OmegaEdge",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "Grok skill snapshot",
+    "link": "https://github.com/AE-AlphaEdge/grokskill-jev"
+  }
+}

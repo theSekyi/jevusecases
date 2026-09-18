@@ -4,10 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generate-projects-data.ts",
     "dev": "next dev",
+    "prebuild": "node scripts/generate-projects-data.ts",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "pretest": "node scripts/generate-projects-data.ts",
     "test": "vitest run"
   },
   "dependencies": {

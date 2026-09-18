@@ -1,0 +1,37 @@
+{
+  "id": "jarrodwatts-jev-trader",
+  "project": "Jev Trader",
+  "description": "Trading bot that decides buy/sell on a live price feed and executes real on-chain trades on Monad via Kuru's order book, one decision every ~300ms block.",
+  "github": "https://github.com/jarrodwatts/jev-trader",
+  "website": null,
+  "how_used_jev": "Jev answers a typed buy/sell question against the live price feed each block; the bot posts a real post-only limit order one tick inside the touch based on the answer.",
+  "source_tweet": "https://x.com/jarrodwatts/status/2100356151468585346",
+  "author": "@jarrodwatts",
+  "date_found": "2026-09-17",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": {
+    "tool": null,
+    "verdict": null,
+    "notes": null
+  },
+  "cost_signal": {
+    "baseline_model": null,
+    "est_savings_pct": null,
+    "basis": null
+  },
+  "benchmark": {
+    "latency_ms": 81,
+    "task": "buy/sell decision per 300ms block",
+    "notes": "author reports ~81ms model latency; hot loop makes exactly two RPC round trips to fit the block budget"
+  },
+  "jaggedness_reports": [],
+  "security_status": {
+    "red_teamed": false,
+    "notes": "executes real trades with real funds - high blast radius if Jev misjudges; good Watchdog-lens candidate once it's run longer"
+  },
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jarrodwatts/jev-trader"
+  }
+}

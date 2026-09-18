@@ -18,6 +18,6 @@ describe("Hero", () => {
 
   test("shows the first few real projects in the log", () => {
     render(<Hero projects={projects} />);
-    expect(screen.getByText(/Jev Trader/)).toBeInTheDocument();
+    expect(screen.getByText((text) => text.includes(projects[0].project))).toBeInTheDocument();
   });
 });
