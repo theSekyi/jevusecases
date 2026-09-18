@@ -1,46 +1,95 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /*
+   * Dark technical palette, defined in OKLCH. One signal-orange accent, reserved for what matters:
+   * verdicts, live activity and the primary action. Hairlines are decorative; borders on controls
+   * use --color-bp-muted so they clear 3:1 against the surface.
+   */
+  --color-bp-bg: oklch(0.155 0.012 255);
+  --color-bp-surface: oklch(0.205 0.014 255);
+  --color-bp-raised: oklch(0.25 0.016 255);
+  --color-bp-hairline: oklch(0.34 0.014 255);
+  --color-bp-ink: oklch(0.96 0.005 255);
+  --color-bp-secondary: oklch(0.76 0.012 255);
+  --color-bp-muted: oklch(0.62 0.012 255);
+  --color-bp-accent: oklch(0.74 0.17 48);
+  --color-bp-accent-strong: oklch(0.68 0.19 45);
 
-  /* Blueprint design tokens: ink-blue palette, accent reserved for interaction states only */
-  --color-bp-bg: #fafbfc;
-  --color-bp-surface: #ffffff;
-  --color-bp-ink: #1b3a5c;
-  --color-bp-secondary: #3e5062;
-  --color-bp-hairline: #c7d2dc;
-  --color-bp-accent: #c0392b;
-  --font-bp-sans: var(--font-ibm-plex-sans-condensed);
-  --font-bp-mono: var(--font-ibm-plex-mono);
+  --font-bp-sans: var(--font-onest);
+  --font-bp-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  color-scheme: dark;
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bp-bg);
+  color: var(--color-bp-ink);
+  font-family: var(--font-bp-sans), system-ui, sans-serif;
 }
 
-@keyframes bp-cursor {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
+/* Keyboard focus is always visible, and never shown for mouse clicks. */
+:focus-visible {
+  outline: 2px solid var(--color-bp-accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-bp-accent);
+  color: var(--color-bp-bg);
 }
 
 @keyframes bp-card-in {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bp-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.8); }
+}
+
+@keyframes bp-panel-in {
+  from { opacity: 0; transform: translateX(28px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bp-backdrop-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bp-row-in {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* A fine dot grid for the hero, faded out toward the edges. No glow, no gradient fills. */
+.bp-dot-grid {
+  background-image: radial-gradient(circle, var(--color-bp-hairline) 1px, transparent 1.5px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse 70% 90% at 30% 20%, black 30%, transparent 75%);
+}
+
+dialog.bp-panel[open] {
+  animation: bp-panel-in 320ms var(--ease-out-expo);
+}
+
+dialog.bp-panel[open]::backdrop {
+  animation: bp-backdrop-in 240ms var(--ease-out-quart);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

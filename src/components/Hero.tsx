@@ -1,48 +1,29 @@
-import { cardStat, type Project } from "@/lib/projects";
+import type { ReactNode } from "react";
 
-export function Hero({ projects }: { projects: Project[] }) {
-  const logEntries = projects.slice(0, 3);
-
+export function Hero({ search, live }: { search: ReactNode; live?: ReactNode }) {
   return (
-    <section className="flex border-b border-bp-hairline bg-bp-bg px-6 py-16 font-bp-sans text-bp-ink">
-      <div className="mx-auto flex w-full max-w-5xl flex-col md:flex-row">
-        <div className="flex w-full shrink-0 flex-col justify-center gap-4 pb-9 md:w-80 md:pb-0 md:pr-9">
-          <h1 className="text-4xl font-bold leading-tight tracking-tight">Jev, tracked.</h1>
-          <p className="text-sm text-bp-secondary">
-            The log on the right updates every time a new build gets verified.
+    <section className="relative overflow-hidden border-b border-bp-hairline">
+      <div aria-hidden="true" className="bp-dot-grid absolute inset-0" />
+      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 pb-14 pt-14 sm:pt-20 lg:grid-cols-[minmax(0,1fr)_21rem] lg:gap-16 lg:pb-20 lg:pt-24">
+        <div className="flex flex-col gap-7">
+          <h1 className="max-w-3xl text-balance text-[clamp(2rem,4.6vw+0.5rem,3.75rem)] font-semibold leading-[1.04] tracking-[-0.03em]">
+            What people replaced with Jev, and everything they&apos;re shipping with it.
+          </h1>
+          <p className="max-w-[52ch] text-base leading-relaxed text-bp-secondary sm:text-lg">
+            Real projects, with the numbers to prove it. Open one to see how it was built.
           </p>
-          <a
-            href="/submit"
-            className="mt-1 self-start border border-bp-ink bg-bp-ink px-5 py-2.5 text-sm font-semibold text-bp-surface transition-colors hover:bg-[#142c46]"
-          >
-            Submit a project
-          </a>
+          {search}
+          <p className="text-sm text-bp-secondary">
+            Built something with Jev?{" "}
+            <a
+              href="/submit"
+              className="font-semibold text-bp-accent underline decoration-bp-accent/40 underline-offset-4 transition-colors hover:decoration-bp-accent"
+            >
+              Submit your project
+            </a>
+          </p>
         </div>
-
-        <div className="h-px w-full bg-bp-hairline md:h-auto md:w-px" />
-
-        <div className="flex flex-1 flex-col justify-center gap-3 pt-9 font-bp-mono text-[13px] md:pl-9 md:pt-0">
-          {logEntries.map((project) => {
-            const stat = cardStat(project);
-            return (
-              <div key={project.id} className="text-bp-secondary">
-                {"> "}
-                {project.project}
-                {stat ? (
-                  <>
-                    {" — "}
-                    <span className="text-bp-ink">{stat}</span>
-                  </>
-                ) : null}
-              </div>
-            );
-          })}
-          <div className="text-bp-ink">
-            {"> "}
-            {projects.length} builds tracked total
-            <span className="ml-0.5 inline-block h-3.5 w-2 animate-[bp-cursor_1s_step-end_infinite] bg-bp-accent align-middle" />
-          </div>
-        </div>
+        {live && <div className="hidden self-end lg:block">{live}</div>}
       </div>
     </section>
   );

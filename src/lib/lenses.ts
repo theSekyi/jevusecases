@@ -5,14 +5,13 @@ export type LensKey = "all" | "replace" | "benchmark" | "cookbook";
 export interface Lens {
   key: LensKey;
   label: string;
-  sub: string;
 }
 
 export const LENSES: Lens[] = [
-  { key: "all", label: "ALL", sub: "everything" },
-  { key: "replace", label: "REPLACE", sub: "replaces a paid tool" },
-  { key: "benchmark", label: "BENCHMARK", sub: "has real numbers" },
-  { key: "cookbook", label: "COOKBOOK", sub: "ready to copy" },
+  { key: "all", label: "All" },
+  { key: "replace", label: "Replaces a paid tool" },
+  { key: "benchmark", label: "Has numbers" },
+  { key: "cookbook", label: "Copyable recipe" },
 ];
 
 export function matchesLens(project: Project, lens: LensKey): boolean {
