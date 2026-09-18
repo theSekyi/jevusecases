@@ -18,12 +18,14 @@ function fakeEvent() {
 
 describe("proxy", () => {
   beforeEach(() => {
+    vi.stubEnv("VISITOR_HASH_SECRET", "");
     recordVisitorEvent.mockReset();
     geolocation.mockReset();
     geolocation.mockReturnValue({ country: "US" });
   });
 
   afterEach(() => {
+    vi.unstubAllEnvs();
     vi.restoreAllMocks();
   });
 
@@ -127,7 +129,7 @@ describe("proxy", () => {
   });
 
   test("passes a stable hash of the client IP, not the IP", async () => {
-    vi.stubEnv("VISITOR_HASH_SECRET", "test-secret");
+    vi.stubEnv("VISITOR_HASH_SECRET", "k".repeat(32));
     const { proxy } = await import("../proxy");
     const visit = async (ip: string) => {
       const { event, waited } = fakeEvent();
@@ -144,7 +146,6 @@ describe("proxy", () => {
     expect(hashes[0]).toBe(hashes[1]);
     expect(hashes[0]).not.toBe(hashes[2]);
     expect(JSON.stringify(recordVisitorEvent.mock.calls)).not.toContain("198.51.100");
-    vi.unstubAllEnvs();
   });
 
   test("records nothing while the admin session cookie is present", async () => {

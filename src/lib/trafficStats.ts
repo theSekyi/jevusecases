@@ -7,6 +7,9 @@ export const TRAFFIC_WINDOW_DAYS = 7;
 /** Fewer page views than this is too few to show on its own row. */
 export const MIN_COUNTRY_VIEWS = 3;
 
+/** A row with identified visitors needs at least this many, so no row can be one person reloading. */
+export const MIN_COUNTRY_VISITORS = 2;
+
 /** One country's page views, and how many distinct visitors made them (visitors with no recorded identity aren't counted). */
 export interface CountryCounts {
   country: string | null;
@@ -31,11 +34,17 @@ export interface TrafficSummary {
 
 type CountryRow = Extract<TrafficRow, { kind: "country" }>;
 
+/** Zero visitors means the views carry no identity (older rows, or no address), so only views can be judged. */
+function tooSmall({ views, visitors }: { views: number; visitors: number }): boolean {
+  return views < MIN_COUNTRY_VIEWS || (visitors > 0 && visitors < MIN_COUNTRY_VISITORS);
+}
+
 /**
  * Ranks countries by page views. Small counts are never shown on their own: a country under the
  * minimum is folded into "other", and if "other" is still under the minimum it absorbs the smallest
  * named countries until it isn't, so no row is small enough to point at one person. Locations that
- * are missing or malformed get an "unknown" row on the same terms.
+ * are missing or malformed get an "unknown" row on the same terms. A row's visitors are counted per
+ * country, so someone seen under two countries appears in both; the overall figure counts them once.
  */
 export function summarizeCountries(counts: CountryCounts[]): { views: number; rows: TrafficRow[] } {
   const byCountry = new Map<string, { views: number; visitors: number }>();
@@ -60,17 +69,17 @@ export function summarizeCountries(counts: CountryCounts[]): { views: number; ro
   };
 
   for (const [country, counted] of byCountry) {
-    if (counted.views < MIN_COUNTRY_VIEWS) foldIntoOther(counted);
+    if (tooSmall(counted)) foldIntoOther(counted);
     else named.push({ kind: "country", country, ...counted });
   }
   named.sort((a, b) => b.views - a.views || a.country.localeCompare(b.country));
 
-  if (unknown.views > 0 && unknown.views < MIN_COUNTRY_VIEWS) {
+  if (unknown.views > 0 && tooSmall(unknown)) {
     foldIntoOther(unknown);
     unknown.views = 0;
     unknown.visitors = 0;
   }
-  while (other.views > 0 && other.views < MIN_COUNTRY_VIEWS && named.length > 0) {
+  while (other.views > 0 && tooSmall(other) && named.length > 0) {
     const { views, visitors } = named.pop()!;
     foldIntoOther({ views, visitors });
   }
@@ -103,7 +112,7 @@ export async function getTrafficSummary(): Promise<TrafficSummary> {
     sql`
       SELECT count(*)::int AS visitors, (count(*) FILTER (WHERE days > 1))::int AS returning
       FROM (
-        SELECT count(DISTINCT created_at::date) AS days
+        SELECT count(DISTINCT (created_at AT TIME ZONE 'UTC')::date) AS days
         FROM visitor_events
         WHERE created_at > now() - (${TRAFFIC_WINDOW_DAYS}::text || ' days')::interval
           AND visitor_hash IS NOT NULL

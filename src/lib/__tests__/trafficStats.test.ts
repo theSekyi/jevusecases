@@ -3,6 +3,7 @@ import {
   formatShare,
   getTrafficSummary,
   MIN_COUNTRY_VIEWS,
+  MIN_COUNTRY_VISITORS,
   summarizeCountries,
   TRAFFIC_WINDOW_DAYS,
   type CountryCounts,
@@ -12,7 +13,7 @@ import {
 const sqlMock = vi.fn();
 vi.mock("@/lib/db", () => ({ db: () => sqlMock }));
 
-const counts = (country: string | null, views: number, visitors = 1): CountryCounts => ({ country, views, visitors });
+const counts = (country: string | null, views: number, visitors = 5): CountryCounts => ({ country, views, visitors });
 const label = (rows: TrafficRow[]) => rows.map((row) => (row.kind === "country" ? row.country : row.kind));
 
 describe("summarizeCountries", () => {
@@ -71,10 +72,28 @@ describe("summarizeCountries", () => {
   });
 
   test("when every country is below the minimum, everything is one 'other' row equal to the total", () => {
-    const summary = summarizeCountries([counts("KZ", 1), counts("HU", 2)]);
+    const summary = summarizeCountries([counts("KZ", 1, 1), counts("HU", 2, 1)]);
 
     expect(summary.rows).toEqual([{ kind: "other", views: 3, visitors: 2 }]);
     expect(summary.views).toBe(3);
+  });
+
+  test("a country whose views come from a single visitor is folded, however many views that is", () => {
+    const summary = summarizeCountries([counts("US", 20, 6), counts("DE", 30, MIN_COUNTRY_VISITORS - 1), counts("FR", 10, 3)]);
+
+    expect(label(summary.rows)).toEqual(["US", "other"]);
+    expect(summary.rows[1]).toMatchObject({ kind: "other", views: 40, visitors: 4 });
+  });
+
+  test("an 'other' row that is one visitor absorbs the smallest named country so it isn't one person", () => {
+    const summary = summarizeCountries([counts("US", 20, 6), counts("GB", 9, 3), counts("DE", 4, 1)]);
+
+    expect(label(summary.rows)).toEqual(["US", "other"]);
+    expect(summary.rows[1]).toMatchObject({ views: 13, visitors: 4 });
+  });
+
+  test("views without identities (visitors 0) are judged on views alone", () => {
+    expect(label(summarizeCountries([counts("US", 20, 0), counts("DE", 5, 0)]).rows)).toEqual(["US", "DE"]);
   });
 
   test("groups missing or malformed locations as unknown, before 'other'", () => {
@@ -86,9 +105,9 @@ describe("summarizeCountries", () => {
     ]);
 
     expect(summary.rows).toEqual([
-      { kind: "country", country: "US", views: 9, visitors: 1 },
-      { kind: "country", country: "KZ", views: 3, visitors: 1 },
-      { kind: "unknown", views: 4, visitors: 2 },
+      { kind: "country", country: "US", views: 9, visitors: 5 },
+      { kind: "country", country: "KZ", views: 3, visitors: 5 },
+      { kind: "unknown", views: 4, visitors: 10 },
     ]);
     expect(summary.views).toBe(16);
   });
@@ -116,7 +135,7 @@ describe("summarizeCountries", () => {
       { kind: "country", country: "GB", views: 4, visitors: 2 },
     ]);
     expect(summarizeCountries([counts("us", 5), counts("US", 5)]).rows).toEqual([
-      { kind: "country", country: "US", views: 10, visitors: 2 },
+      { kind: "country", country: "US", views: 10, visitors: 10 },
     ]);
   });
 
@@ -190,7 +209,7 @@ describe("getTrafficSummary", () => {
 
     const totals = sqlMock.mock.calls[1][0].join("?");
     expect(totals).toContain("visitor_hash IS NOT NULL");
-    expect(totals).toContain("count(DISTINCT created_at::date)");
+    expect(totals).toContain("AT TIME ZONE 'UTC'");
     expect(totals).toContain("days > 1");
   });
 });
