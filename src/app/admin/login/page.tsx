@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { LoginForm } from "@/components/admin/LoginForm";
-import { ADMIN_PATH, getCurrentAdmin, PASSWORD_CHANGED_PARAM } from "@/lib/auth";
+import { getCurrentAdmin } from "@/lib/auth";
+import { ADMIN_PATH, PASSWORD_CHANGED_PARAM, PASSWORD_CHANGED_VALUE } from "@/lib/authConstants";
 
 export const metadata: Metadata = {
   title: "Sign in — jevusecases",
 };
 
-export default async function LoginPage({ searchParams }: { searchParams: Promise<Record<string, string | undefined>> }) {
+export default async function LoginPage({ searchParams }: { searchParams: Promise<Record<string, string | string[] | undefined>> }) {
   if (await getCurrentAdmin()) redirect(ADMIN_PATH);
-  const passwordChanged = (await searchParams)[PASSWORD_CHANGED_PARAM] === "1";
+  const passwordChanged = (await searchParams)[PASSWORD_CHANGED_PARAM] === PASSWORD_CHANGED_VALUE;
 
   return (
     <main className="flex flex-1 justify-center bg-bp-bg px-6 py-16 font-bp-sans text-bp-ink">

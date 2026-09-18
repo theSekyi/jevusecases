@@ -13,7 +13,6 @@ const requireAdmin = vi.fn();
 vi.mock("@/lib/auth", () => ({
   ADMIN_PATH: "/admin",
   LOGIN_PATH: "/admin/login",
-  PASSWORD_CHANGED_PARAM: "changed",
   startSession: (...a: unknown[]) => startSession(...a),
   endSession: (...a: unknown[]) => endSession(...a),
   requireAdmin: (...a: unknown[]) => requireAdmin(...a),
@@ -207,7 +206,7 @@ describe("admin actions", () => {
       const state = await changePassword(undefined, form(valid));
 
       expect(state.fieldErrors?.currentPassword).toBeTruthy();
-      expect(startSession).not.toHaveBeenCalled();
+      expect(endSession).not.toHaveBeenCalled();
     });
 
     test("on success, changes the password for the signed-in admin only, then signs out and goes to the login page", async () => {
@@ -221,7 +220,7 @@ describe("admin actions", () => {
       expect(startSession).not.toHaveBeenCalled();
     });
 
-    test("tells the admin to sign in again when a reset landed first, and starts no session", async () => {
+    test("tells the admin to sign in again when a reset landed first, without ending anything", async () => {
       changeAdminPassword.mockResolvedValueOnce("conflict");
       const { changePassword } = await loadActions();
 

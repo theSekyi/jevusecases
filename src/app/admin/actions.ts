@@ -3,7 +3,8 @@
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { authenticate, changePassword as changeAdminPassword } from "@/lib/adminUsers";
-import { ADMIN_PATH, endSession, LOGIN_PATH, PASSWORD_CHANGED_PARAM, requireAdmin, startSession } from "@/lib/auth";
+import { endSession, requireAdmin, startSession } from "@/lib/auth";
+import { ADMIN_PATH, LOGIN_PATH, PASSWORD_CHANGED_PARAM, PASSWORD_CHANGED_VALUE } from "@/lib/authConstants";
 import { allowLoginAttempt, allowPasswordChangeAttempt } from "@/lib/authRateLimit";
 import { changePasswordSchema, firstFieldErrors, loginSchema, type AuthFormState } from "@/lib/authSchema";
 import { clientIp } from "@/lib/rateLimit";
@@ -75,5 +76,5 @@ export async function changePassword(
 
   // The change revoked every session for this account, this one included, so the cookie is stale.
   await endSession();
-  redirect(`${LOGIN_PATH}?${PASSWORD_CHANGED_PARAM}=1`);
+  redirect(`${LOGIN_PATH}?${PASSWORD_CHANGED_PARAM}=${PASSWORD_CHANGED_VALUE}`);
 }

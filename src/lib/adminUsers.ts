@@ -106,8 +106,8 @@ export type ChangePasswordResult = "ok" | "wrong_password" | "not_found" | "conf
 
 /**
  * Replaces the password (temporary or not) and signs the account out everywhere, this session
- * included. "conflict" means the credentials changed while this was
- * being checked — a reset or another change won, and this one is discarded rather than overwriting it.
+ * included. "conflict" means the credentials changed while this was being checked: a reset or
+ * another change won, and this one is discarded rather than overwriting it.
  */
 export async function changePassword(
   userId: string,

@@ -2,11 +2,7 @@ import { beforeEach, describe, expect, test, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 
 const getCurrentAdmin = vi.fn();
-vi.mock("@/lib/auth", () => ({
-  ADMIN_PATH: "/admin",
-  PASSWORD_CHANGED_PARAM: "changed",
-  getCurrentAdmin: () => getCurrentAdmin(),
-}));
+vi.mock("@/lib/auth", () => ({ getCurrentAdmin: () => getCurrentAdmin() }));
 vi.mock("@/components/admin/LoginForm", () => ({ LoginForm: () => <form aria-label="login" /> }));
 vi.mock("next/navigation", () => ({
   redirect: (path: string) => {
@@ -16,7 +12,7 @@ vi.mock("next/navigation", () => ({
 
 const { default: LoginPage } = await import("../login/page");
 
-const renderPage = async (params: Record<string, string | undefined>) =>
+const renderPage = async (params: Record<string, string | string[] | undefined>) =>
   render(await LoginPage({ searchParams: Promise.resolve(params) }));
 
 describe("login page", () => {
@@ -40,6 +36,12 @@ describe("login page", () => {
 
   test("ignores any other value for the notice parameter", async () => {
     await renderPage({ changed: "yes" });
+
+    expect(screen.queryByRole("status")).not.toBeInTheDocument();
+  });
+
+  test("shows no notice when the parameter is repeated", async () => {
+    await renderPage({ changed: ["1", "1"] });
 
     expect(screen.queryByRole("status")).not.toBeInTheDocument();
   });
