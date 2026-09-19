@@ -33,8 +33,7 @@ export const submissionSchema = z.object({
   xHandle: z
     .string()
     .trim()
-    .max(15, "X handles are at most 15 characters")
-    .regex(/^(@?[A-Za-z0-9_]{1,15})?$/, "Use only letters, numbers, and underscores")
+    .regex(/^(@?[A-Za-z0-9_]{1,15})?$/, "Use up to 15 letters, numbers, or underscores")
     .optional(),
 });
 

@@ -20,7 +20,7 @@ describe("buildSubmissionEntry", () => {
       "https://www.npmjs.com/package/pkg-gate",
     ];
     for (const sourceLink of links) {
-      for (const xHandle of ["", "@leepokai", "lbki34064963"]) {
+      for (const xHandle of ["", "@leepokai", "lbki34064963", "@abcdefghijklmno"]) {
         const input = validateSubmission({ ...baseSubmission, sourceLink, xHandle });
         if (!input.success) throw new Error(`form rejected ${sourceLink}`);
         expect(projectSchema.safeParse(buildSubmissionEntry(input.data)).success, `${sourceLink} ${xHandle}`).toBe(true);
