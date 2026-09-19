@@ -35,6 +35,10 @@ export default function PrivacyPage() {
             <li>the page you opened, as typed in the address, including pages that do not exist</li>
             <li>your country, when the hosting platform can work it out from your IP address</li>
             <li>the time</li>
+            <li>
+              the website that linked you here, by its hostname only (for example x.com), and a short tag such as
+              ?ref=newsletter if the link had one
+            </li>
             <li>a one-way hash of your IP address, when one can be made</li>
           </ul>
           <p>

@@ -40,7 +40,7 @@ describe("proxy", () => {
     await Promise.all(waited);
 
     expect(response.headers.get("x-middleware-next")).toBe("1");
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null, { ref: null, referrerHost: null });
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null, { ref: null, referrerHost: "(direct)" });
   });
 
   test("records the ref tag and the referring host with the view", async () => {
@@ -54,6 +54,66 @@ describe("proxy", () => {
     await Promise.all(waited);
 
     expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/p/jev-guard", null, { ref: "x-post", referrerHost: "t.co" });
+  });
+
+  test("a click from inside the site is recorded as internal, not as an arrival", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/submit", {
+      headers: { "x-forwarded-for": "203.0.113.30", referer: "https://www.jevusecases.com/" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null, { ref: null, referrerHost: "(internal)" });
+  });
+
+  test("doesn't count a search-engine or SEO crawler as a view", async () => {
+    const { proxy } = await import("../proxy");
+    for (const [index, agent] of [
+      "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      "Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)",
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.1; +https://openai.com/gptbot)",
+    ].entries()) {
+      const request = new NextRequest("https://jevusecases.com/", {
+        headers: { "x-forwarded-for": `203.0.113.${40 + index}`, "user-agent": agent },
+      });
+      const { event, waited } = fakeEvent();
+      proxy(request, event as never);
+      await Promise.all(waited);
+    }
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
+  });
+
+  test("bots don't use up a visitor's rate-limit budget, since they are dropped before it", async () => {
+    vi.resetModules();
+    const { proxy } = await import("../proxy");
+    const ip = "203.0.113.90";
+    const visit = async (userAgent: string) => {
+      const { event, waited } = fakeEvent();
+      proxy(new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip, "user-agent": userAgent } }), event as never);
+      await Promise.all(waited);
+    };
+
+    for (let i = 0; i < 80; i++) await visit("Mozilla/5.0 (compatible; Googlebot/2.1)");
+    await visit("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36");
+
+    expect(recordVisitorEvent).toHaveBeenCalledTimes(1);
+  });
+
+  test("doesn't count a browser prefetch that says so with the newer Sec-Purpose header", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/submit", {
+      headers: { "x-forwarded-for": "203.0.113.91", "sec-purpose": "prefetch;anonymous-client-ip" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
   });
 
   test("doesn't count a link-preview crawler building a card as a view", async () => {
@@ -79,7 +139,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route", null, { ref: null, referrerHost: null });
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route", null, { ref: null, referrerHost: "(direct)" });
   });
 
   test("rate-limits repeated requests from the same IP", async () => {
@@ -138,7 +198,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/", null, { ref: null, referrerHost: null });
+    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/", null, { ref: null, referrerHost: "(direct)" });
   });
 
   test("hands every request to the recorder; dropping repeats is its job, not the proxy's", async () => {
@@ -217,7 +277,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/", null, { ref: null, referrerHost: null });
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/", null, { ref: null, referrerHost: "(direct)" });
   });
 
   test("a throwing geolocation call is caught too, not just the database write", async () => {

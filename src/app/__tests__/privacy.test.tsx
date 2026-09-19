@@ -20,6 +20,13 @@ describe("privacy page", () => {
     expect(screen.getByText(/Vercel, receives it with every request/)).toBeInTheDocument();
   });
 
+  test("says the referring site is recorded by hostname only, and that a ref tag is kept", () => {
+    render(<PrivacyPage />);
+
+    expect(screen.getByText(/the website that linked you here, by its hostname only/)).toBeInTheDocument();
+    expect(screen.getByText(/\?ref=newsletter/)).toBeInTheDocument();
+  });
+
   test("doesn't claim the hash is anonymous: it is reversible with the key and is still personal data", () => {
     render(<PrivacyPage />);
 
