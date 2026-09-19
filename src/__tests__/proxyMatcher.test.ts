@@ -10,6 +10,7 @@ describe("proxy matcher", () => {
   test("matches real pages", () => {
     expect(matches("/")).toBe(true);
     expect(matches("/submit")).toBe(true);
+    expect(matches("/p/jev-guard")).toBe(true);
   });
 
   test("excludes API routes, including the strip's own polling endpoint — no self-recording loop", () => {
@@ -28,6 +29,8 @@ describe("proxy matcher", () => {
     expect(matches("/favicon.ico")).toBe(false);
     expect(matches("/apple-icon")).toBe(false);
     expect(matches("/icon")).toBe(false);
+    expect(matches("/opengraph-image")).toBe(false);
+    expect(matches("/p/jev-guard/opengraph-image")).toBe(false);
     expect(matches("/sitemap.xml")).toBe(false);
     expect(matches("/robots.txt")).toBe(false);
   });

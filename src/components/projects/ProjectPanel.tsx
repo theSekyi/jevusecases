@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { installCommand, projectFacts } from "@/lib/projectFacts";
 import { sourceLink, type Project } from "@/lib/projects";
+import { projectUrl } from "@/lib/site";
 import { CopyButton } from "./CopyButton";
 import { FactList } from "./FactList";
 import { VerdictBadge } from "./VerdictBadge";
@@ -10,6 +11,13 @@ import { VerdictBadge } from "./VerdictBadge";
 /** "17 September 2026". */
 function addedOn(date: string): string {
   return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
+}
+
+/** An X compose link with the project's page attached, so the post shows its preview card. */
+function postOnXHref(project: Project): string {
+  const text = project.author ? `${project.project} by ${project.author}, built with Jev` : `${project.project}, built with Jev`;
+  const params = new URLSearchParams({ text, url: projectUrl(project.id, "x-share") });
+  return `https://x.com/intent/post?${params}`;
 }
 
 const linkClass = "text-bp-ink underline decoration-bp-muted underline-offset-4 transition-colors hover:text-bp-accent";
@@ -136,6 +144,23 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
             </ul>
           </section>
         )}
+
+        <section aria-labelledby="panel-share" className="flex flex-col gap-3">
+          <h3 id="panel-share" className="text-sm font-semibold">
+            Share
+          </h3>
+          <div className="flex flex-wrap items-center gap-3">
+            <a
+              href={postOnXHref(project)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md border border-bp-accent px-3 py-1.5 font-bp-mono text-xs text-bp-accent transition-colors hover:bg-bp-accent hover:text-bp-bg"
+            >
+              Post on X
+            </a>
+            <CopyButton text={projectUrl(project.id)} label="link" />
+          </div>
+        </section>
       </div>
     </dialog>
   );

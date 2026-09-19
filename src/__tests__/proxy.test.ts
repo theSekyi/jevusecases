@@ -40,7 +40,33 @@ describe("proxy", () => {
     await Promise.all(waited);
 
     expect(response.headers.get("x-middleware-next")).toBe("1");
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null);
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null, { ref: null, referrerHost: null });
+  });
+
+  test("records the ref tag and the referring host with the view", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/p/jev-guard?ref=x-post", {
+      headers: { "x-forwarded-for": "203.0.113.7", referer: "https://t.co/xyz" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/p/jev-guard", null, { ref: "x-post", referrerHost: "t.co" });
+  });
+
+  test("doesn't count a link-preview crawler building a card as a view", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/p/jev-guard", {
+      headers: { "x-forwarded-for": "203.0.113.8", "user-agent": "Twitterbot/1.0" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
   });
 
   test("a submitted path can't be anything other than the real request path — there is no client input here", async () => {
@@ -53,7 +79,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route", null);
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/some/real/route", null, { ref: null, referrerHost: null });
   });
 
   test("rate-limits repeated requests from the same IP", async () => {
@@ -112,7 +138,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/", null);
+    expect(recordVisitorEvent).toHaveBeenCalledWith(null, "/", null, { ref: null, referrerHost: null });
   });
 
   test("hands every request to the recorder; dropping repeats is its job, not the proxy's", async () => {
@@ -191,7 +217,7 @@ describe("proxy", () => {
     proxy(request, event as never);
     await Promise.all(waited);
 
-    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/", null);
+    expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/", null, { ref: null, referrerHost: null });
   });
 
   test("a throwing geolocation call is caught too, not just the database write", async () => {
