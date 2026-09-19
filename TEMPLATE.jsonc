@@ -44,13 +44,9 @@
   // are true).
   "is_build": true,
 
-  // A short category string. Existing categories (pick one that fits, or
-  // add a new one if none do): "trading / on-chain agents",
-  // "security / guardrails", "dev tooling / CLI",
-  // "browser agents / automation", "robotics / simulation",
-  // "exploration / benchmarking", "novelty / joke",
-  // "agent tooling / skills", "infra / open reimplementation",
-  // "security / supply chain", "explainer / curation".
+  // One of the categories in CATEGORIES in src/lib/projectSchema.ts, for
+  // example "dev tooling / CLI" or "browser agents / automation". An entry
+  // with any other category fails the build.
   "category": "dev tooling / CLI",
 
   // Set this only if the project explicitly replaces a paid tool.

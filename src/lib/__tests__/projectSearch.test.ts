@@ -130,10 +130,13 @@ describe("categoryOptions", () => {
     expect(new Set(options.map((option) => option.value)).size).toBe(options.length);
   });
 
-  test("keeps the case an author wrote, so 'AI' isn't shown as 'Ai'", () => {
-    const options = categoryOptions([makeProject({ category: "AI / agents" })]);
+  test("puts categories that share the part before the slash into one option", () => {
+    const options = categoryOptions([
+      makeProject({ category: "dev tooling / CLI" }),
+      makeProject({ category: "dev tooling / IDE" }),
+    ]);
 
-    expect(options).toEqual([{ value: "ai", label: "AI", count: 1 }]);
+    expect(options).toEqual([{ value: "dev tooling", label: "Dev tooling", count: 2 }]);
   });
 });
 

@@ -1,18 +1,5 @@
 import { z } from "zod";
-
-export const CATEGORIES = [
-  "trading / on-chain agents",
-  "security / guardrails",
-  "dev tooling / CLI",
-  "browser agents / automation",
-  "robotics / simulation",
-  "exploration / benchmarking",
-  "novelty / joke",
-  "agent tooling / skills",
-  "infra / open reimplementation",
-  "security / supply chain",
-  "explainer / curation",
-] as const;
+import { CATEGORIES } from "@/lib/projectSchema";
 
 const ALLOWED_SOURCE_HOSTS = ["github.com", "npmjs.com"];
 const ALLOWED_SOURCE_HOST_PATTERN = /^([a-z0-9-]+\.)*(github|npmjs)\.com$/i;

@@ -1,17 +1,13 @@
 import { readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { z } from "zod";
+import { projectSchema, type Project } from "../src/lib/projectSchema.ts";
 
 export const ENTRIES_DIR = join(import.meta.dirname, "../src/data/entries");
 export const OUTPUT_PATH = join(import.meta.dirname, "../src/data/projects.json");
 
-export interface RawEntry {
-  id: string;
-  date_found: string;
-  [key: string]: unknown;
-}
-
-/** Reads and validates one entry file's structure (valid JSON, a single object, id matches its folder). */
-export function readEntry(entriesDir: string, dirName: string): RawEntry {
+/** Reads one entry file and checks it against projectSchema, and that its id matches its folder. */
+export function readEntry(entriesDir: string, dirName: string): Project {
   const entryPath = join(entriesDir, dirName, "entry.json");
 
   let raw: string;
@@ -31,25 +27,17 @@ export function readEntry(entriesDir: string, dirName: string): RawEntry {
   if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
     throw new Error(`src/data/entries/${dirName}/entry.json must contain a single JSON object`);
   }
-  const entry = parsed as RawEntry;
+  const result = projectSchema.safeParse(parsed);
+  if (!result.success) {
+    throw new Error(`src/data/entries/${dirName}/entry.json is not a valid entry:\n${z.prettifyError(result.error)}`);
+  }
+  const entry = result.data;
   if (entry.id !== dirName) {
     throw new Error(
       `src/data/entries/${dirName}/entry.json has id "${entry.id}", which doesn't match its folder name`,
     );
   }
-  if (typeof entry.date_found !== "string" || !isRealDate(entry.date_found)) {
-    throw new Error(
-      `src/data/entries/${dirName}/entry.json has date_found "${String(entry.date_found)}", which must be a real date like 2026-09-17`,
-    );
-  }
   return entry;
-}
-
-/** A YYYY-MM-DD date that exists on the calendar (2026-02-30 doesn't). */
-function isRealDate(value: string): boolean {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
-  const parsed = new Date(`${value}T00:00:00Z`);
-  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().startsWith(value);
 }
 
 /** Lists entry folder names, rejecting any stray file sitting directly in the entries directory. */
@@ -66,7 +54,7 @@ export function listEntryDirs(entriesDir: string): string[] {
 }
 
 /** Newest date_found first; same-day entries fall back to id order since date_found has no finer resolution. */
-export function sortEntries(entries: RawEntry[]): RawEntry[] {
+export function sortEntries(entries: Project[]): Project[] {
   return [...entries].sort((a, b) => {
     if (a.date_found !== b.date_found) {
       return a.date_found < b.date_found ? 1 : -1;

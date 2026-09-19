@@ -1,12 +1,8 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
-import {
-  CATEGORIES,
-  validateSubmission,
-  type SubmissionFieldErrors,
-  type SubmissionInput,
-} from "@/lib/submission";
+import { CATEGORIES } from "@/lib/projectSchema";
+import { validateSubmission, type SubmissionFieldErrors, type SubmissionInput } from "@/lib/submission";
 import { Field, fieldProps, inputClass, primaryButtonClass } from "@/components/FormField";
 
 type FieldValues = Record<keyof SubmissionInput, string>;
