@@ -1,0 +1,19 @@
+{
+  "id": "real-time-discord-chat-moderator-290c67dc",
+  "project": "Real-time Discord Chat Moderator",
+  "description": "A real-time chat moderator for Discord servers powered by a System One AI model, featuring automated progressive discipline, spam defense, and member profiling.",
+  "github": "https://github.com/brainstormity/Jev-Moderation-Bot",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": "@brainstormity",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
