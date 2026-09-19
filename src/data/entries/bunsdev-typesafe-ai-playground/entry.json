@@ -2,7 +2,7 @@
   "id": "bunsdev-typesafe-ai-playground",
   "project": "TypeSafe AI Playground",
   "description": "A community web playground with 110 Jev use cases, games, and dilemmas, with editable prompts and A/B comparisons.",
-  "github": "https://github.com/BunsDev/typesafe-ai-playground",
+  "github": "https://github.com/TypeSafeAI/typesafe-playground",
   "website": "https://jev.works",
   "how_used_jev": "Sends the edited inputs to Jev for classification, routing, field extraction, and code policy decisions, and shows the typed answers.",
   "source_tweet": null,
@@ -17,6 +17,6 @@
   "security_status": null,
   "recipe": {
     "type": "open-source implementation",
-    "link": "https://github.com/BunsDev/typesafe-ai-playground"
+    "link": "https://github.com/TypeSafeAI/typesafe-playground"
   }
 }

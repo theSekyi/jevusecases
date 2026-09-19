@@ -2,7 +2,7 @@
   "id": "bunsdev-clarity-judge",
   "project": "Clarity Judge",
   "description": "Checks writing against separate named checks: hedging, em dash overuse, clarity, filler, tone, passive voice, and actionability.",
-  "github": "https://github.com/BunsDev/clarity-judge",
+  "github": "https://github.com/TypeSafeAI/clarity-judge",
   "website": "https://judge.jev.works",
   "how_used_jev": "Jev gives each check its own verdict and confidence. The app shows each verdict with its supporting sentence instead of one overall score.",
   "source_tweet": null,
@@ -17,6 +17,6 @@
   "security_status": null,
   "recipe": {
     "type": "open-source implementation",
-    "link": "https://github.com/BunsDev/clarity-judge"
+    "link": "https://github.com/TypeSafeAI/clarity-judge"
   }
 }
