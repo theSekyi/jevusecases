@@ -4,7 +4,7 @@
   "description": "Plays Doom through ViZDoom with an autonomous agent. The game loop and the model calls run separately, with a terminal HUD.",
   "github": "https://github.com/AmoghCreator/doom-jev",
   "website": null,
-  "how_used_jev": "The agent sends a YAML situation report to Jev SystemOne. Jev answers structured questions on goal, target, movement, rotation, jump, and fire.",
+  "how_used_jev": "The agent sends a YAML situation report to Jev. Jev answers structured questions on goal, target, movement, rotation, jump, and fire.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

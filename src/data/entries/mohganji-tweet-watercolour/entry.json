@@ -1,7 +1,7 @@
 {
   "id": "mohganji-tweet-watercolour",
   "project": "tweet-watercolour",
-  "description": "Paints each tweet on X with a watercolour wash based on the mood of its words, through a Chrome extension.",
+  "description": "Paints each tweet on X with a watercolor wash based on the mood of its words, through a Chrome extension.",
   "github": "https://github.com/MohGanji/tweet-watercolour",
   "website": null,
   "how_used_jev": "Jev answers a choice question over thirteen palette colors, with a probability for each. The author reports nine tweets in one 622ms call for $0.000153.",

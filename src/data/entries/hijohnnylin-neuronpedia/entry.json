@@ -4,7 +4,7 @@
   "description": "Adds Jev score types to Neuronpedia, an open source interpretability platform.",
   "github": "https://github.com/hijohnnylin/neuronpedia",
   "website": "https://neuronpedia.org",
-  "how_used_jev": "Its Jev score types send requests to the TypeSafe System One API. Each request has a 30-second timeout and up to three attempts.",
+  "how_used_jev": "Its Jev score types send requests to the TypeSafe API. Each request has a 30-second timeout and up to three attempts.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",
