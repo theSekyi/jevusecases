@@ -1,0 +1,19 @@
+{
+  "id": "jevnql-0c3246ad",
+  "project": "JevNQL",
+  "description": "JevNQL makes it possible to query data using Natural language, which was previously done using LLMs and would use huge amount of tokens. But now due to Jev and NLP it's done much cheaply. This really has the power of becoming a bigger enterprise software. As more companies are now moving their data to AI tools for ease of access.",
+  "github": "https://github.com/Adityakhalkar/JevNQL",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": "@adityakhalkar_",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
