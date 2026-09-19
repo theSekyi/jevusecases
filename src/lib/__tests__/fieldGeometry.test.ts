@@ -1,5 +1,20 @@
 import { describe, expect, test } from "vitest";
-import { buildLattice, drift, marginFade, proximity, scrollShift, spacingFor, sweepIntensity } from "../fieldGeometry";
+import {
+  ACCENT_THRESHOLD,
+  DRIFT_FRACTION,
+  POINTER_RADIUS,
+  PUSH_PIXELS,
+  buildLattice,
+  createFrameState,
+  drift,
+  marginFade,
+  proximity,
+  scrollShift,
+  spacingFor,
+  sweepIntensity,
+  updateFrame,
+  type FrameInput,
+} from "../fieldGeometry";
 
 describe("buildLattice", () => {
   const lattice = buildLattice(640, 480, 64);
@@ -44,6 +59,38 @@ describe("buildLattice", () => {
       const key = [lattice.edges[e], lattice.edges[e + 1]].sort((a, b) => a - b).join("-");
       expect(seen.has(key)).toBe(false);
       seen.add(key);
+    }
+  });
+
+  test("still covers the bottom of the viewport when scrolled by the furthest shift", () => {
+    for (const [width, height] of [
+      [1280, 720],
+      [1440, 900],
+      [1440, 1000],
+      [375, 812],
+      [2560, 1440],
+    ]) {
+      const spacing = spacingFor(width);
+      const grid = buildLattice(width, height, spacing);
+      const bottom = grid.points[(grid.rows * grid.columns - 1) * 2 + 1];
+      const worstShift = -grid.rowHeight * 2;
+      const worstDrift = spacing * DRIFT_FRACTION;
+
+      expect(bottom + worstShift - worstDrift, `${width}x${height}`).toBeGreaterThanOrEqual(height);
+    }
+  });
+
+  test("survives a zero-size viewport, a tiny one and a spacing bigger than the screen", () => {
+    for (const [width, height, spacing] of [
+      [0, 0, 64],
+      [1, 1, 64],
+      [100, 100, 400],
+      [640, 480, 0],
+    ]) {
+      const grid = buildLattice(width, height, spacing);
+      expect(grid.points.length).toBeGreaterThan(0);
+      expect(grid.edges.length).toBeGreaterThan(0);
+      expect(grid.spacing).toBeGreaterThanOrEqual(8);
     }
   });
 
@@ -123,7 +170,17 @@ describe("spacingFor / scrollShift", () => {
       expect(shift).toBeLessThanOrEqual(0);
       expect(shift).toBeGreaterThan(-rowHeight * 2);
     }
-    expect(scrollShift(0, rowHeight)).toBe(-0);
+    expect(scrollShift(0, rowHeight)).toBe(0);
+    expect(Object.is(scrollShift(0, rowHeight), 0)).toBe(true);
+  });
+
+  test("treats an overscrolled (negative) scroll position as the top", () => {
+    expect(scrollShift(-100, 55)).toBe(0);
+  });
+
+  test("switches to the tighter spacing below 640px", () => {
+    expect(spacingFor(639)).toBe(44);
+    expect(spacingFor(640)).toBe(64);
   });
 });
 
@@ -148,5 +205,135 @@ describe("sweepIntensity", () => {
     expect(Math.max(...times.map(at))).toBeGreaterThan(0.25);
     expect(times.filter((t) => at(t) === 0).length).toBeGreaterThan(10);
     expect(at(1.25)).toBeCloseTo(at(1.25 + 14));
+  });
+});
+
+describe("updateFrame", () => {
+  const width = 1200;
+  const height = 800;
+  const lattice = buildLattice(width, height, 64);
+  const still = { x: -9999, y: -9999, strength: 0 };
+
+  const input = (overrides: Partial<FrameInput> = {}): FrameInput => ({
+    seconds: 3,
+    scrollY: 0,
+    width,
+    height,
+    animate: true,
+    pointer: still,
+    ...overrides,
+  });
+  const run = (overrides: Partial<FrameInput> = {}) => {
+    const frame = createFrameState(lattice, width, 1152);
+    updateFrame(frame, lattice, input(overrides));
+    return frame;
+  };
+  const vertexNear = (x: number, y: number) => {
+    let best = 0;
+    for (let i = 1; i < lattice.points.length / 2; i++) {
+      const a = Math.hypot(lattice.points[i * 2] - x, lattice.points[i * 2 + 1] - y);
+      const b = Math.hypot(lattice.points[best * 2] - x, lattice.points[best * 2 + 1] - y);
+      if (a < b) best = i;
+    }
+    return best;
+  };
+
+  test("with animation off, every vertex rests where the lattice put it and nothing is lit", () => {
+    const frame = run({ animate: false, scrollY: 900, pointer: { x: 600, y: 400, strength: 1 } });
+
+    for (let i = 0; i < lattice.points.length / 2; i++) {
+      expect(frame.xs[i]).toBeCloseTo(lattice.points[i * 2], 4);
+      expect(frame.ys[i]).toBeCloseTo(lattice.points[i * 2 + 1], 4);
+      expect(frame.lit[i]).toBe(0);
+    }
+  });
+
+  test("drift and scroll move the vertices, but only by a little and a whole number of periods apart", () => {
+    const frame = run({ scrollY: 300 });
+    const shift = scrollShift(300, lattice.rowHeight);
+
+    for (let i = 0; i < lattice.points.length / 2; i += 17) {
+      expect(Math.abs(frame.xs[i] - lattice.points[i * 2])).toBeLessThanOrEqual(lattice.spacing * DRIFT_FRACTION + 1e-3);
+      expect(Math.abs(frame.ys[i] - (lattice.points[i * 2 + 1] + shift))).toBeLessThanOrEqual(lattice.spacing * DRIFT_FRACTION + 1e-3);
+    }
+  });
+
+  test("the pointer lights the vertices around it and leaves the rest as they were", () => {
+    const target = vertexNear(600, 400);
+    const without = run();
+    const withPointer = run({ pointer: { x: lattice.points[target * 2], y: lattice.points[target * 2 + 1], strength: 1 } });
+
+    expect(withPointer.lit[target]).toBeGreaterThan(0.9);
+    let changed = 0;
+    for (let i = 0; i < lattice.points.length / 2; i++) {
+      const distance = Math.hypot(without.xs[i] - lattice.points[target * 2], without.ys[i] - lattice.points[target * 2 + 1]);
+      if (distance > POINTER_RADIUS + PUSH_PIXELS + 30) {
+        expect(withPointer.lit[i]).toBe(without.lit[i]);
+        expect(withPointer.xs[i]).toBe(without.xs[i]);
+      } else if (withPointer.lit[i] !== without.lit[i]) {
+        changed++;
+      }
+    }
+    expect(changed).toBeGreaterThan(5);
+  });
+
+  test("vertices lean away from the pointer, by no more than the push", () => {
+    const target = vertexNear(600, 400);
+    const px = lattice.points[target * 2] - 20;
+    const py = lattice.points[target * 2 + 1];
+    const without = run();
+    const withPointer = run({ pointer: { x: px, y: py, strength: 1 } });
+
+    const before = Math.hypot(without.xs[target] - px, without.ys[target] - py);
+    const after = Math.hypot(withPointer.xs[target] - px, withPointer.ys[target] - py);
+    expect(after).toBeGreaterThan(before);
+    expect(after - before).toBeLessThanOrEqual(PUSH_PIXELS + 1e-3);
+  });
+
+  test("a pointer with no strength (idle) is ignored, however close it is", () => {
+    const target = vertexNear(600, 400);
+    const idle = run({ pointer: { x: lattice.points[target * 2], y: lattice.points[target * 2 + 1], strength: 0 } });
+    const without = run();
+
+    expect(Array.from(idle.lit)).toEqual(Array.from(without.lit));
+    expect(Array.from(idle.xs)).toEqual(Array.from(without.xs));
+  });
+
+  test("the sweep lights part of the lattice as time passes, and never above its peak", () => {
+    let brightest = 0;
+    let anyDark = false;
+    for (let seconds = 0; seconds < 14; seconds += 1) {
+      const frame = run({ seconds });
+      brightest = Math.max(brightest, ...frame.lit);
+      if (frame.lit.some((value) => value < ACCENT_THRESHOLD)) anyDark = true;
+    }
+
+    expect(brightest).toBeGreaterThan(0.25);
+    expect(brightest).toBeLessThanOrEqual(0.33);
+    expect(anyDark).toBe(true);
+  });
+
+  test("reuses the arrays it is given instead of allocating new ones", () => {
+    const frame = createFrameState(lattice, width, 1152);
+    const { xs, ys, lit } = frame;
+
+    updateFrame(frame, lattice, input());
+    updateFrame(frame, lattice, input({ seconds: 4 }));
+
+    expect(frame.xs).toBe(xs);
+    expect(frame.ys).toBe(ys);
+    expect(frame.lit).toBe(lit);
+  });
+});
+
+describe("createFrameState", () => {
+  test("gives every vertex a fade, faint under the content column and full at the edges", () => {
+    const grid = buildLattice(1440, 900, 64);
+    const frame = createFrameState(grid, 1440, 1152);
+    const fades = Array.from(frame.fade);
+
+    expect(fades).toHaveLength(grid.points.length / 2);
+    expect(Math.min(...fades)).toBeCloseTo(0.32);
+    expect(Math.max(...fades)).toBeCloseTo(1, 1);
   });
 });
