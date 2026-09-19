@@ -1,0 +1,22 @@
+{
+  "id": "rustfuture-reflex-control",
+  "project": "Reflex Control",
+  "description": "A Rust policy engine for AI agent runtimes. It decides to continue, retry, accept, verify, or escalate to a stronger model.",
+  "github": "https://github.com/rustfuture/reflex-control",
+  "website": null,
+  "how_used_jev": "Jev judges narrow statements, such as whether a failure is transient. Deterministic safety rules always take precedence over its confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rustfuture/reflex-control"
+  }
+}

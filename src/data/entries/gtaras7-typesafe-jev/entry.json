@@ -1,0 +1,22 @@
+{
+  "id": "gtaras7-typesafe-jev",
+  "project": "typesafe-jev (cv-screen)",
+  "description": "Local workbench that screens a folder of CVs and shows a sortable shortlist with one verdict per candidate.",
+  "github": "https://github.com/gtaras7/typesafe-jev",
+  "website": null,
+  "how_used_jev": "Jev answers a small fixed set of typed questions about each CV. Plain arithmetic under a policy you edit turns the answers into scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gtaras7/typesafe-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pekth-draftpulse",
+  "project": "DraftPulse",
+  "description": "Experimental tool that scores X post drafts live while you type.",
+  "github": "https://github.com/pekth/draftpulse",
+  "website": null,
+  "how_used_jev": "Jev answers narrow questions in one call, such as category, hook, share, and slop risk. Code combines the answers with weights into one score.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pekth/draftpulse"
+  }
+}

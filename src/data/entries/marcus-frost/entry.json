@@ -1,0 +1,22 @@
+{
+  "id": "marcus-frost",
+  "project": "Frost",
+  "description": "Recommends a model, a harness or API, and an effort level for a prompt, from a Go CLI.",
+  "github": "https://github.com/marcus/frost",
+  "website": "https://haplab.com",
+  "how_used_jev": "Jev assesses the task in one analysis request. Frost then makes the routing decision locally, with an explanation and alternatives.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcus/frost"
+  }
+}

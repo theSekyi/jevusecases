@@ -1,0 +1,22 @@
+{
+  "id": "mpiv-ai-bb-plugin-typesafe-router",
+  "project": "TypeSafe Router",
+  "description": "Picks the harness, model, and reasoning effort for the first message of a BB thread. It asks you to confirm first.",
+  "github": "https://github.com/mpiv-ai/bb-plugin-typesafe-router",
+  "website": null,
+  "how_used_jev": "Jev chooses the harness, model, and reasoning effort from the first message. The plugin then shows the pick for your confirmation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mpiv-ai/bb-plugin-typesafe-router"
+  }
+}

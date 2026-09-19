@@ -1,0 +1,22 @@
+{
+  "id": "completedottech-paper-package",
+  "project": "paper-package",
+  "description": "Holds a draft research paper and reproducible evidence on how to improve Jev decisions.",
+  "github": "https://github.com/CompleteDotTech/paper-package",
+  "website": null,
+  "how_used_jev": "It tests Jev on entity matching and relation checks. The author reports macro-F1 rising from 0.9605 to 0.9859 on 413 held-out DBLP-ACM pairs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CompleteDotTech/paper-package"
+  }
+}

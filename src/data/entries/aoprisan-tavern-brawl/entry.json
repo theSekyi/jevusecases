@@ -1,0 +1,22 @@
+{
+  "id": "aoprisan-tavern-brawl",
+  "project": "Tavern Brawl",
+  "description": "A text-action arena game where players type free-form moves from their phones. Deterministic Rust code applies the game rules.",
+  "github": "https://github.com/aoprisan/tavern-brawl",
+  "website": null,
+  "how_used_jev": "A referee makes one Jev call per move. Jev returns the move kind, target, force, and whether it breaks the rules, each with a confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aoprisan/tavern-brawl"
+  }
+}

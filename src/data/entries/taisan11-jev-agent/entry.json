@@ -1,0 +1,22 @@
+{
+  "id": "taisan11-jev-agent",
+  "project": "jev-agent",
+  "description": "Runs a coding agent in a terminal UI. Codex writes the reasoning, commands, and file contents.",
+  "github": "https://github.com/taisan11/jev-agent",
+  "website": null,
+  "how_used_jev": "Jev picks the next action from inspect, think, run_command, write_file, and finish. The loop continues until Jev picks finish.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/taisan11/jev-agent"
+  }
+}

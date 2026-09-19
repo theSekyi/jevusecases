@@ -1,0 +1,22 @@
+{
+  "id": "nitinnat-jev-gateway",
+  "project": "jev-gateway",
+  "description": "A small local HTTP service that gives other projects access to Jev through Vercel AI Gateway.",
+  "github": "https://github.com/nitinnat/jev-gateway",
+  "website": null,
+  "how_used_jev": "Each HTTP request sends a state and typed questions to Jev in one call. The service returns Jev's answers and provider metadata.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "infra / open reimplementation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nitinnat/jev-gateway"
+  }
+}

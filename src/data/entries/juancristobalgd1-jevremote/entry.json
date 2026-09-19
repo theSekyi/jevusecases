@@ -1,0 +1,22 @@
+{
+  "id": "juancristobalgd1-jevremote",
+  "project": "jevRemote",
+  "description": "A reproducible web automation experiment with Jev and Playwright.",
+  "github": "https://github.com/juancristobalgd1/jevRemote",
+  "website": "https://juancristobalgd1.github.io/jevRemote/",
+  "how_used_jev": "Each step sends the visible labeled links and buttons to Jev as one choice question. The program clicks the chosen label and repeats.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/juancristobalgd1/jevRemote"
+  }
+}

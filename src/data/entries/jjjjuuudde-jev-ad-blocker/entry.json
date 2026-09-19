@@ -1,0 +1,22 @@
+{
+  "id": "jjjjuuudde-jev-ad-blocker",
+  "project": "jev ad blocker",
+  "description": "A personal Chrome extension that removes ads from web pages.",
+  "github": "https://github.com/jjjjuuudde/jev-ad-blocker",
+  "website": null,
+  "how_used_jev": "It describes each rendered element, such as tag, size, and link targets, and sends batches to Jev. It removes the elements that Jev is confident are ads.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jjjjuuudde/jev-ad-blocker"
+  }
+}

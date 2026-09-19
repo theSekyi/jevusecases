@@ -1,0 +1,22 @@
+{
+  "id": "armsteadj1-vibe-smart-router",
+  "project": "Vibe Smart Router",
+  "description": "Scores candidate payment paths for one transaction in a demo with synthetic data. Policy, pricing, and the final decision stay in code.",
+  "github": "https://github.com/armsteadj1/vibe-smart-router",
+  "website": null,
+  "how_used_jev": "Jev runs a feature discovery pass on history with held-out validation. It then adds context for each transaction.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/armsteadj1/vibe-smart-router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "colinmcdermott-emoji-jev",
+  "project": "Emoji Jev",
+  "description": "Suggests emojis as you type, on a keyboard of up to 254 emojis.",
+  "github": "https://github.com/colinmcdermott/emoji-jev",
+  "website": null,
+  "how_used_jev": "Each pause in typing sends one Jev call with eight questions. Jev picks emojis and an emotion, scores mood, urgency, and energy, and checks for sarcasm and jokes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/colinmcdermott/emoji-jev"
+  }
+}

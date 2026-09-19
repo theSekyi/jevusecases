@@ -1,0 +1,22 @@
+{
+  "id": "ant4g0nist-joxide",
+  "project": "joxide",
+  "description": "Jumps to project folders by description in zsh, on top of zoxide.",
+  "github": "https://github.com/ant4g0nist/joxide",
+  "website": null,
+  "how_used_jev": "Zoxide keeps the directory index. When a name match is not enough, Jev ranks the known directories.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ant4g0nist/joxide"
+  }
+}

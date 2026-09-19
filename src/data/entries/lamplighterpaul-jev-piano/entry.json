@@ -1,0 +1,22 @@
+{
+  "id": "lamplighterpaul-jev-piano",
+  "project": "Jev at the piano",
+  "description": "An experimental web app that plays piano continuously from a mood you describe, such as a slow, sad waltz.",
+  "github": "https://github.com/LamplighterPaul/jev-piano",
+  "website": null,
+  "how_used_jev": "Jev cannot make notes, so the app asks it typed music questions. It plays the answers as it goes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LamplighterPaul/jev-piano"
+  }
+}

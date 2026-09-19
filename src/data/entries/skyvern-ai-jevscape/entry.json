@@ -1,0 +1,22 @@
+{
+  "id": "skyvern-ai-jevscape",
+  "project": "JevScape",
+  "description": "Lets Jev play RuneScape in a fork of the RuneBench agent benchmark, with a live dashboard.",
+  "github": "https://github.com/skyvern-ai/jevscape",
+  "website": null,
+  "how_used_jev": "Jev picks from about 50 bounded actions, such as fishing, mining, and fighting. Code runs the action, and the dashboard shows the probability of each option.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/skyvern-ai/jevscape"
+  }
+}

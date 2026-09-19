@@ -1,0 +1,22 @@
+{
+  "id": "fstandhartinger-auto-router-demo",
+  "project": "auto-router-demo",
+  "description": "Shows a public playground for auto-model-router. It classifies a prompt, prices every model, picks one, and streams the answer.",
+  "github": "https://github.com/fstandhartinger/auto-router-demo",
+  "website": null,
+  "how_used_jev": "After a cheap route answers, Jev judges if the answer is adequate and names the failure type. A low result re-runs on a stronger route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fstandhartinger/auto-router-demo"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "npm-oxlint-plugin-jev",
+  "project": "oxlint-plugin-jev",
+  "description": "An Oxlint JS plugin that lints code with rules written in plain English.",
+  "github": null,
+  "website": "https://www.npmjs.com/package/oxlint-plugin-jev",
+  "how_used_jev": "Jev answers the plain-English rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/oxlint-plugin-jev",
+    "install": "npm install oxlint-plugin-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mahmoudadelbghany-jev-browser",
+  "project": "jev-browser",
+  "description": "Gives LLM agents a browser MCP server where Jev picks each action. The driving agent steps in only on escalations.",
+  "github": "https://github.com/MahmoudAdelbghany/jev-browser",
+  "website": null,
+  "how_used_jev": "One Jev call per step picks the action, element, and text, and checks the last step. The author reports 97% success for this loop.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MahmoudAdelbghany/jev-browser"
+  }
+}

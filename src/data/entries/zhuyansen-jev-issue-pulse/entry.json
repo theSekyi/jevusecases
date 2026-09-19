@@ -1,0 +1,22 @@
+{
+  "id": "zhuyansen-jev-issue-pulse",
+  "project": "jev-issue-pulse",
+  "description": "Tests whether a Jev-labeled stream of GitHub issues can catch a broken release before the fix. The answer at a daily cadence is no.",
+  "github": "https://github.com/zhuyansen/jev-issue-pulse",
+  "website": null,
+  "how_used_jev": "Jev labels 25,052 issues by kind, frustration, and blocking. The author reports AUC 0.898 against claude-code regression labels, versus 0.765 for keywords.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zhuyansen/jev-issue-pulse"
+  }
+}

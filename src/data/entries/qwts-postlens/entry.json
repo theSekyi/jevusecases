@@ -1,0 +1,22 @@
+{
+  "id": "qwts-postlens",
+  "project": "PostLens",
+  "description": "Adds a JEV Analyze button to X posts through a Chrome or Brave extension.",
+  "github": "https://github.com/qwts/postlens",
+  "website": null,
+  "how_used_jev": "On each click, the extension sends the post text and metadata to Jev. It shows the answers to eight analysis questions inline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/qwts/postlens"
+  }
+}

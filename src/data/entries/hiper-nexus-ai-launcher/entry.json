@@ -1,0 +1,22 @@
+{
+  "id": "hiper-nexus-ai-launcher",
+  "project": "AI CLI Launcher",
+  "description": "Launches AI coding CLIs such as Claude, Codex, and Gemini with preset flags from one menu.",
+  "github": "https://github.com/Hiper-nexus/ai-launcher",
+  "website": null,
+  "how_used_jev": "The ai ask command sends a phrase to Jev as a choice among 24 CLIs. It launches the pick only above a minimum confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Hiper-nexus/ai-launcher"
+  }
+}

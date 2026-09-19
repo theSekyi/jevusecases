@@ -1,0 +1,22 @@
+{
+  "id": "bharathy89-interviewer-prepper",
+  "project": "Interviewer Prepper",
+  "description": "A local tool to practice Python coding and system design interviews with an AI interviewer.",
+  "github": "https://github.com/bharathy89/interviewer-prepper",
+  "website": null,
+  "how_used_jev": "Jev checks each candidate message in parallel with the reply. If the message tries to redirect the interview, the reply is swapped.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bharathy89/interviewer-prepper"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bottlebrushes-jev-orb",
+  "project": "JevOrb",
+  "description": "Controls your web browser by voice from a floating push-to-talk orb on macOS. Local Metal Whisper turns speech into text.",
+  "github": "https://github.com/bottlebrushes/jev-orb",
+  "website": null,
+  "how_used_jev": "The app sends your spoken goal to jev-ultrafast, which uses typesafe/jev-1.13 with gpt-oss-120b through OpenRouter to drive the browser.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bottlebrushes/jev-orb"
+  }
+}

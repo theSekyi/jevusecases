@@ -1,0 +1,22 @@
+{
+  "id": "affirmitv-ghosthands",
+  "project": "ghosthands",
+  "description": "Drives a real screen with a USB-HID microcontroller as mouse and keyboard, a vision grounding model, and an LLM.",
+  "github": "https://github.com/affirmitv/ghosthands",
+  "website": null,
+  "how_used_jev": "In the fast lane, Jev reads a table of on-screen controls and picks the operation and element. The author reports about $0.0001 and 0.4 s per click step.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/affirmitv/ghosthands"
+  }
+}

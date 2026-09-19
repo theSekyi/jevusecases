@@ -1,0 +1,22 @@
+{
+  "id": "danvega-hello-jev-spring",
+  "project": "Hello Jev",
+  "description": "Shows how to call the TypeSafe API from a small Spring Boot 4 app with RestClient.",
+  "github": "https://github.com/danvega/hello-jev-spring",
+  "website": null,
+  "how_used_jev": "The app sends state and a map of noul, choice, and score questions. Jev returns probabilities, choices, and scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/danvega/hello-jev-spring"
+  }
+}

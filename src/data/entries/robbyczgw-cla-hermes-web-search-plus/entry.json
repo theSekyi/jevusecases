@@ -1,0 +1,22 @@
+{
+  "id": "robbyczgw-cla-hermes-web-search-plus",
+  "project": "Web Search Plus",
+  "description": "Adds optional Jev checks to a Hermes agent plugin for multi-provider web search and page extraction.",
+  "github": "https://github.com/robbyczgw-cla/hermes-web-search-plus",
+  "website": "https://websearchplus.xyz",
+  "how_used_jev": "Jev confirms a news search type at 0.95 confidence or above and scores extracted pages. It also fills in language when none was found.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/robbyczgw-cla/hermes-web-search-plus"
+  }
+}

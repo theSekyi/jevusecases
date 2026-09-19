@@ -1,0 +1,22 @@
+{
+  "id": "max1874-jev-computer-use",
+  "project": "jev-computer-use",
+  "description": "Runs a macOS computer-use agent from the accessibility tree, with no screenshots or coordinates. It ports browser-use/jev-ultrafast.",
+  "github": "https://github.com/max1874/jev-computer-use",
+  "website": null,
+  "how_used_jev": "Jev chooses an operation and a target from a numbered table of actions. Both decisions come in one round trip.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/max1874/jev-computer-use"
+  }
+}

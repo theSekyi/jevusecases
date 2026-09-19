@@ -1,0 +1,22 @@
+{
+  "id": "rafalwilinski-vibecheck",
+  "project": "Vibe Check for X",
+  "description": "A Chrome extension that checks your draft X post before you post it. It shows a scorecard under the composer.",
+  "github": "https://github.com/RafalWilinski/vibecheck",
+  "website": null,
+  "how_used_jev": "Jev scores the draft for virality, clarity, insult level, ragebait, regret risk, and more. It also gives an overall verdict such as Send it or Sleep on it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RafalWilinski/vibecheck"
+  }
+}

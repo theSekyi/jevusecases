@@ -1,0 +1,22 @@
+{
+  "id": "bmccarn-tracecheck",
+  "project": "Tracecheck",
+  "description": "Checks a coding agent's suspected defects against source evidence. It runs as a local MCP server or a CLI.",
+  "github": "https://github.com/bmccarn/tracecheck",
+  "website": null,
+  "how_used_jev": "Tracecheck validates references and asks Jev for typed support, impact, and missing-evidence judgments. Optional assessments cover 19 quality dimensions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bmccarn/tracecheck"
+  }
+}

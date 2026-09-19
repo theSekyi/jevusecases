@@ -1,0 +1,22 @@
+{
+  "id": "joehl1103-counter-strike-facsimile",
+  "project": "counter-strike-facsimile",
+  "description": "Holds the pull request check and merge workflow for a local Counter-Strike 1.6 style game project.",
+  "github": "https://github.com/Joehl1103/counter-strike-facsimile",
+  "website": null,
+  "how_used_jev": "A triage step sends a CI snapshot to Jev and gets a route, such as retry_ci.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Joehl1103/counter-strike-facsimile"
+  }
+}

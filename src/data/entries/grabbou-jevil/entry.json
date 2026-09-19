@@ -1,0 +1,22 @@
+{
+  "id": "grabbou-jevil",
+  "project": "jevil",
+  "description": "Runs a QA agent on iOS or Android apps through agent-device. It saves a report, decision trace, snapshots, and a recording when supported.",
+  "github": "https://github.com/grabbou/jevil",
+  "website": null,
+  "how_used_jev": "The agent reads an app snapshot and asks Jev to choose the next action. It performs the action and repeats with a fresh snapshot.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/grabbou/jevil"
+  }
+}

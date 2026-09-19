@@ -1,0 +1,22 @@
+{
+  "id": "gorock007-jev-atlas",
+  "project": "Jev Atlas",
+  "description": "Gives an independent field guide to Jev for people and coding agents. Each claim has an evidence status, and an MCP server gives read-only access.",
+  "github": "https://github.com/gorock007/jev-atlas",
+  "website": "https://jev-atlas.vercel.app",
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gorock007/jev-atlas"
+  }
+}

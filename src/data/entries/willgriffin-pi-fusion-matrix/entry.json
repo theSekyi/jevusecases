@@ -1,0 +1,22 @@
+{
+  "id": "willgriffin-pi-fusion-matrix",
+  "project": "pi-fusion-matrix",
+  "description": "Plans a Pi extension for named model fusions, with a fallback chain for each slot. Its status is planned.",
+  "github": "https://github.com/willgriffin/pi-fusion-matrix",
+  "website": null,
+  "how_used_jev": "A decide element for closed questions uses TypeSafe by default, with calibrated confidence. It verifies results and selects a whole fusion as a route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/willgriffin/pi-fusion-matrix"
+  }
+}

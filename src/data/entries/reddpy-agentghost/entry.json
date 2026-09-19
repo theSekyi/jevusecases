@@ -1,0 +1,22 @@
+{
+  "id": "reddpy-agentghost",
+  "project": "AgentGhost",
+  "description": "Intent-aware authorization for AI agent tools. It wraps tool execution, so each consequential action passes a check before it runs.",
+  "github": "https://github.com/reddpy/AgentGhost",
+  "website": null,
+  "how_used_jev": "Deterministic rules run first. Then Jev decides ALLOW, ASK, or DENY for the action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/reddpy/AgentGhost"
+  }
+}

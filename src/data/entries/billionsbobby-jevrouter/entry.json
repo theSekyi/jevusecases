@@ -1,0 +1,22 @@
+{
+  "id": "billionsbobby-jevrouter",
+  "project": "JevRouter",
+  "description": "Routes agent requests across models, subagents, skills, MCP tools, and CLIs as one candidate set. It runs locally and returns routing decisions.",
+  "github": "https://github.com/BillionsBobby/JevRouter",
+  "website": null,
+  "how_used_jev": "Jev answers one typed Choice question over the candidates, with a Top-K first stage for large sets. JevRouter then applies availability, permission, and risk checks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BillionsBobby/JevRouter"
+  }
+}

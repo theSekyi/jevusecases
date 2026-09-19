@@ -1,0 +1,22 @@
+{
+  "id": "matthewdonsemail-lab-open-typesafe-camoufox",
+  "project": "open-typesafe-camoufox",
+  "description": "A CLI that drives a headed Camoufox browser toward a goal you type in plain English. It sends no screenshots to a large model.",
+  "github": "https://github.com/matthewdonsemail-lab/open-typesafe-camoufox",
+  "website": null,
+  "how_used_jev": "The tool reads the page and asks Jev which action comes next. A writing model runs only when a text field needs free text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/matthewdonsemail-lab/open-typesafe-camoufox"
+  }
+}

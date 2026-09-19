@@ -1,0 +1,22 @@
+{
+  "id": "shantanugoel-ask-jev-skill",
+  "project": "askjev",
+  "description": "Adds a skill for Hermes and other agents to call Jev as a typed tiebreaker.",
+  "github": "https://github.com/shantanugoel/ask-jev-skill",
+  "website": null,
+  "how_used_jev": "The agent sends a state and a question to Jev and gets Choice, Score, or Noul answers with probabilities. It then acts or escalates.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shantanugoel/ask-jev-skill"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ximhear-jev-kr-name-age",
+  "project": "jev-kr-name-age",
+  "description": "Guesses the age band and gender from a name for Korea, the US, Japan, or China. It is a React web app.",
+  "github": "https://github.com/ximhear/jev-kr-name-age",
+  "website": null,
+  "how_used_jev": "The server sends two choice questions to Jev, one for age band and one for gender. The app shows the probabilities as bars.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ximhear/jev-kr-name-age"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "matiassemelman-conviction",
+  "project": "Conviction",
+  "description": "Shows a small venture diligence workspace for a fictional startup. You inspect three assumptions, read the sources, and see conflicts.",
+  "github": "https://github.com/matiassemelman/conviction",
+  "website": "https://conviction-kappa.vercel.app",
+  "how_used_jev": "A server-side adapter asks Jev for typed judgments on each source. The demo compares these judgments with GPT-5.6 Luna and Terra on the same case.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/matiassemelman/conviction"
+  }
+}

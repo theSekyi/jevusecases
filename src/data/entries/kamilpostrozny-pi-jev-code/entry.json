@@ -1,0 +1,22 @@
+{
+  "id": "kamilpostrozny-pi-jev-code",
+  "project": "pi-jev-code",
+  "description": "Adds a Jev coprocessor to Pi coding sessions, with semantic gates, diff review, and telemetry. The normal Pi model stays the only coding agent.",
+  "github": "https://github.com/KamilPostrozny/pi-jev-code",
+  "website": null,
+  "how_used_jev": "Jev judges each edit before it runs and can block it when evidence is weak. The agent can run jev_evidence to support a premise and then retry.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KamilPostrozny/pi-jev-code"
+  }
+}

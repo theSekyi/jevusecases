@@ -1,0 +1,22 @@
+{
+  "id": "gacktomo-quiz-jev",
+  "project": "quiz-jev",
+  "description": "CLI where Jev plays a speed buzzer quiz. The question text appears one character at a time, and a human mode lets you play too.",
+  "github": "https://github.com/gacktomo/quiz-jev",
+  "website": null,
+  "how_used_jev": "Jev decides when to buzz in. It then picks each answer character from four options.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gacktomo/quiz-jev"
+  }
+}

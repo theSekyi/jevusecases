@@ -1,0 +1,22 @@
+{
+  "id": "mzainzulifqar-jev-php-sdk",
+  "project": "jev-php-sdk",
+  "description": "Provides a PHP 8.1+ client for Jev that works with any PSR-18 HTTP client and with Laravel.",
+  "github": "https://github.com/mzainzulifqar/jev-php-sdk",
+  "website": "https://packagist.org/packages/mzainzulifqar/jev-php-sdk",
+  "how_used_jev": "Code sends state and typed questions to Jev. It gets back a chosen option, a score, or the probability that a statement is true.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mzainzulifqar/jev-php-sdk"
+  }
+}

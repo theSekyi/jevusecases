@@ -1,0 +1,22 @@
+{
+  "id": "keltokhy-jlink",
+  "project": "jlink",
+  "description": "Links records for economists with a match rule written in plain English. It works from Python, the command line, Stata, and R.",
+  "github": "https://github.com/keltokhy/jlink",
+  "website": null,
+  "how_used_jev": "Jev gets two records and the rule and returns the probability that they are the same firm. The author reports 146,119 candidate pairs cost $2.49.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/keltokhy/jlink"
+  }
+}

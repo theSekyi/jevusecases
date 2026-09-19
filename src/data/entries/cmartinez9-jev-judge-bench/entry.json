@@ -1,0 +1,22 @@
+{
+  "id": "cmartinez9-jev-judge-bench",
+  "project": "jev-judge-bench",
+  "description": "Compares binary LLM judges on speed, cost, and agreement with human labels. The author says the scaffolding is in progress.",
+  "github": "https://github.com/cmartinez9/jev-judge-bench",
+  "website": null,
+  "how_used_jev": "Jev grades pass/fail rubrics with its Noul yes/no question. A frontier model grades the same rubrics for comparison.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cmartinez9/jev-judge-bench"
+  }
+}

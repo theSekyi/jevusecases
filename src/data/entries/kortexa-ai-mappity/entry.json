@@ -1,0 +1,22 @@
+{
+  "id": "kortexa-ai-mappity",
+  "project": "mappity",
+  "description": "A map you can ask anything in plain words. Places that match light up, with data from OpenStreetMap and Mapillary.",
+  "github": "https://github.com/kortexa-ai/mappity",
+  "website": "https://kortexa-ai.github.io/mappity/",
+  "how_used_jev": "Jev gives each place a probability for your question, and the map glows where the answer is yes. Cactus Needle pulls arguments from the sentence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kortexa-ai/mappity"
+  }
+}

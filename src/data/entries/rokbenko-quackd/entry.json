@@ -1,0 +1,22 @@
+{
+  "id": "rokbenko-quackd",
+  "project": "quackd",
+  "description": "Adds an optional Jev stepper to quackd, a CLI that connects and commands robots. An LLM is the pilot of each robot.",
+  "github": "https://github.com/rokbenko/quackd",
+  "website": "https://www.quackd.org",
+  "how_used_jev": "Jev scores the calls a robot already has against the state. In shadow mode it only records its choice, and in on mode it takes the turns it is confident about.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rokbenko/quackd"
+  }
+}

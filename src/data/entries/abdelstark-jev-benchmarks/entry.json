@@ -1,0 +1,22 @@
+{
+  "id": "abdelstark-jev-benchmarks",
+  "project": "jev-benchmarks",
+  "description": "Evaluates typed decision models on calibration, selective risk, resource use, and latency.",
+  "github": "https://github.com/AbdelStark/jev-benchmarks",
+  "website": null,
+  "how_used_jev": "The first study compares Jev with gliner2.5-multi-v1 on zero-shot, single-label text classification with per-label probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AbdelStark/jev-benchmarks"
+  }
+}

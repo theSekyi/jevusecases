@@ -1,0 +1,19 @@
+{
+  "id": "manofsteel3129-askjev",
+  "project": "askjev",
+  "description": "Runs your real browser on any site from plain-English requests to Claude.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev decides each next click, for example opening pages, switching tabs, scrolling, and filling forms.",
+  "source_tweet": "https://x.com/manofsteel3129/status/2101090226856931776",
+  "author": "@manofsteel3129",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

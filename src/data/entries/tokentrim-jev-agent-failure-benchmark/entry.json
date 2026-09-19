@@ -1,0 +1,22 @@
+{
+  "id": "tokentrim-jev-agent-failure-benchmark",
+  "project": "jev-agent-failure-benchmark",
+  "description": "Benchmark of Jev on the text subset of Who&When Pro, which asks what broke a failed multi-agent run.",
+  "github": "https://github.com/TokenTrim/jev-agent-failure-benchmark",
+  "website": null,
+  "how_used_jev": "Jev predicts the responsible agent, the decisive step, and the error type. The author reports an error-type F1 of 23.7, against a next best of 22.2.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TokenTrim/jev-agent-failure-benchmark"
+  }
+}

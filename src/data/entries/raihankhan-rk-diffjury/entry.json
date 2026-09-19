@@ -1,0 +1,22 @@
+{
+  "id": "raihankhan-rk-diffjury",
+  "project": "DiffJury",
+  "description": "Rates the risk of a public GitHub pull request from its URL and gives a review verdict.",
+  "github": "https://github.com/raihankhan-rk/diffjury",
+  "website": null,
+  "how_used_jev": "One Jev call scores merge risk and blast radius, picks a review depth, and flags design or security needs. It also picks a verdict such as request_changes or block.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/raihankhan-rk/diffjury"
+  }
+}

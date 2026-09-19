@@ -1,0 +1,22 @@
+{
+  "id": "dwamianm-prism",
+  "project": "PRME",
+  "description": "Adds Jev gates to a local-first memory engine that gives AI agents long-term memory.",
+  "github": "https://github.com/dwamianm/prism",
+  "website": null,
+  "how_used_jev": "Jev gates guidance for time questions and advises on product pairs. The author reports held-out accuracy rose from 50/104 to 60/104.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dwamianm/prism"
+  }
+}

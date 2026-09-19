@@ -1,0 +1,22 @@
+{
+  "id": "zenotme-openasking",
+  "project": "openasking",
+  "description": "Gives a Rust SDK for Jev, through the TypeSafe API or the Vercel AI Gateway.",
+  "github": "https://github.com/ZENOTME/openasking",
+  "website": null,
+  "how_used_jev": "You send context and questions to Jev. The SDK returns yes or no probabilities, choices, and rubric scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ZENOTME/openasking"
+  }
+}

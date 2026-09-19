@@ -1,0 +1,22 @@
+{
+  "id": "jawauntb-mapvest",
+  "project": "Mapvest",
+  "description": "Identifies brands from a camera or map and returns the public ticker. For a private brand, it gives the closest public company and an ETF.",
+  "github": "https://github.com/jawauntb/mapvest",
+  "website": null,
+  "how_used_jev": "A thin fetch wrapper sends requests to Jev. The code describes Jev as a classifier for calibrated yes/no questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jawauntb/mapvest"
+  }
+}

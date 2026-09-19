@@ -1,0 +1,19 @@
+{
+  "id": "jev-room-moe136231-chatgpt-site-jev-room",
+  "project": "Jev room",
+  "description": "Turns one sentence into six room settings and renders the room.",
+  "github": null,
+  "website": "https://jev-room.moe136231.chatgpt.site",
+  "how_used_jev": "Jev chooses the six settings from the sentence. The app renders the result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

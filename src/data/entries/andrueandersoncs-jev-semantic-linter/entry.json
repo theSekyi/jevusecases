@@ -1,0 +1,22 @@
+{
+  "id": "andrueandersoncs-jev-semantic-linter",
+  "project": "jev-semantic-linter",
+  "description": "A CLI that checks natural-language engineering rules against the current Git change. It mixes deterministic checks with model judgments.",
+  "github": "https://github.com/andrueandersoncs/jev-semantic-linter",
+  "website": null,
+  "how_used_jev": "TypeSafe calls route each rule to the relevant diff hunks and judge relevance and violation. The CLI reports findings above a probability threshold, and jev-latest is a model option.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/andrueandersoncs/jev-semantic-linter"
+  }
+}

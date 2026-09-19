@@ -1,0 +1,19 @@
+{
+  "id": "dmx-to-dmx-to",
+  "project": "dmx.to",
+  "description": "Gives an X client with smart rules that filter the timeline.",
+  "github": null,
+  "website": "https://dmx.to",
+  "how_used_jev": "Jev rules filter the timeline by usefulness, type, and topic.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

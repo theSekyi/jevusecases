@@ -1,0 +1,22 @@
+{
+  "id": "kieranklaassen-ruby-llm-typesafe",
+  "project": "ruby_llm-typesafe",
+  "description": "Adds a TypeSafe provider to RubyLLM 2, so Ruby apps can ask Jev typed questions.",
+  "github": "https://github.com/kieranklaassen/ruby_llm-typesafe",
+  "website": null,
+  "how_used_jev": "Sends state and a batch of Noul, Choice, and Score questions to Jev and returns typed responses to Ruby code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kieranklaassen/ruby_llm-typesafe"
+  }
+}

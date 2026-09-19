@@ -1,0 +1,22 @@
+{
+  "id": "kevinpita-pi-jev-context",
+  "project": "Jev Context for Pi",
+  "description": "Prunes old context in Pi without deleting session history. It is an opt-in extension.",
+  "github": "https://github.com/kevinpita/pi-jev-context",
+  "website": null,
+  "how_used_jev": "Jev judges which older messages are still useful. Content with a low score is hidden from future model requests.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kevinpita/pi-jev-context"
+  }
+}

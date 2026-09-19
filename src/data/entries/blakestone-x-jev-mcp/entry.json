@@ -1,0 +1,22 @@
+{
+  "id": "blakestone-x-jev-mcp",
+  "project": "jev-mcp",
+  "description": "An MCP server that gives any agent classify, score, check, match, and screen tools.",
+  "github": "https://github.com/blakestone-x/jev-mcp",
+  "website": null,
+  "how_used_jev": "Each tool sends a typed question to Jev and returns the answer with a confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/blakestone-x/jev-mcp"
+  }
+}

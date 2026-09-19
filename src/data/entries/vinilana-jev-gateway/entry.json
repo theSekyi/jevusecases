@@ -1,0 +1,22 @@
+{
+  "id": "vinilana-jev-gateway",
+  "project": "jev-gateway",
+  "description": "Runs a local LLM gateway for coding agents such as Codex and Claude Code.",
+  "github": "https://github.com/vinilana/jev-gateway",
+  "website": null,
+  "how_used_jev": "When the agent must pick a tool, the gateway asks Jev instead of the reasoning model. All other requests go to your usual LLM.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vinilana/jev-gateway"
+  }
+}

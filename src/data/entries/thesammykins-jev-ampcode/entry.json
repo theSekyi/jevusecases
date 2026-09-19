@@ -1,0 +1,22 @@
+{
+  "id": "thesammykins-jev-ampcode",
+  "project": "Jev for Amp",
+  "description": "Gives Amp an advisory tool that compares supplied options against supplied evidence.",
+  "github": "https://github.com/thesammykins/jev_ampcode",
+  "website": null,
+  "how_used_jev": "Jev returns typed choices and probabilities for options such as implementation approaches. The README says it is not a correctness gate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thesammykins/jev_ampcode"
+  }
+}

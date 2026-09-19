@@ -1,0 +1,22 @@
+{
+  "id": "rogeriochaves-jev-experiments",
+  "project": "jev-experiments",
+  "description": "Benchmarks and toys in Go built on Jev. It measures latency, throughput, limits, and judge accuracy.",
+  "github": "https://github.com/rogeriochaves/jev-experiments",
+  "website": null,
+  "how_used_jev": "Jev labels test conversations for annoyance to measure accuracy. Other tools make Jev generate text or JavaScript through repeated Choice questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rogeriochaves/jev-experiments"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "nafisazizir-x-jev",
+  "project": "x-jev",
+  "description": "Badges posts on X with a slop score as a Chrome extension.",
+  "github": "https://github.com/nafisazizir/x-jev",
+  "website": null,
+  "how_used_jev": "Jev scores each post with one question through the Vercel AI SDK. The confidence sets how the badge is filled.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nafisazizir/x-jev"
+  }
+}

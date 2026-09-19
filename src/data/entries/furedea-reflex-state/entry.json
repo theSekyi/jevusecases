@@ -1,0 +1,22 @@
+{
+  "id": "furedea-reflex-state",
+  "project": "ReflexState",
+  "description": "Keeps execution state for Pi coding agents outside the main LLM. It tracks changes, current checks, and blockers.",
+  "github": "https://github.com/furedea/reflex-state",
+  "website": null,
+  "how_used_jev": "Jev makes typed semantic decisions about the agent's work. Code extracts the facts and applies the state updates.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/furedea/reflex-state"
+  }
+}

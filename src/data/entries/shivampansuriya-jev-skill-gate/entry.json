@@ -1,0 +1,22 @@
+{
+  "id": "shivampansuriya-jev-skill-gate",
+  "project": "jev-skill-gate",
+  "description": "Hides Claude Code skills that do not fit the current project. The author reports 12,750 to 3,185 manifest tokens on a 217-skill install.",
+  "github": "https://github.com/ShivamPansuriya/jev-skill-gate",
+  "website": null,
+  "how_used_jev": "Jev scores every installed skill for relevance in one parallel pass. The tool then writes skillOverrides so only relevant skills reach the model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ShivamPansuriya/jev-skill-gate"
+  }
+}

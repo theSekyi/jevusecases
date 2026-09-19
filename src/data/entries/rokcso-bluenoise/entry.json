@@ -1,0 +1,22 @@
+{
+  "id": "rokcso-bluenoise",
+  "project": "BlueNoise",
+  "description": "A browser extension that blurs or hides noisy replies, posts, and ads on X with local keyword and account rules.",
+  "github": "https://github.com/rokcso/bluenoise",
+  "website": "https://chrome.google.com/webstore/detail/ponbeiihcconklnlphjcnbfkghnimpid",
+  "how_used_jev": "An experimental, opt-in second pass sends replies that no rule matched to Jev for classification. It uses the user's own API key.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rokcso/bluenoise"
+  }
+}

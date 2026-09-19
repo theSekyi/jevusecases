@@ -1,0 +1,22 @@
+{
+  "id": "pavy23-jev-typesafeai-test",
+  "project": "jev_typesafeai_test",
+  "description": "Gives a local web setup to try the TypeSafe API. It includes an example that routes shipowner comments to technical reply, VO, or human review tracks.",
+  "github": "https://github.com/pavy23/jev_typesafeai_test",
+  "website": null,
+  "how_used_jev": "The triage example sends one request with five questions per comment to Jev. Code thresholds then pick the track.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pavy23/jev_typesafeai_test"
+  }
+}

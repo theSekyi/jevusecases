@@ -1,0 +1,22 @@
+{
+  "id": "devagrawal09-jev-review",
+  "project": "Jev Review",
+  "description": "Reviews a Git diff or a full codebase in stages and shows the results in a local dashboard.",
+  "github": "https://github.com/devagrawal09/jev-review",
+  "website": null,
+  "how_used_jev": "Jev makes bounded judgments on correctness, security, reliability, compatibility, and test gaps. Code applies the thresholds and workflow policy.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/devagrawal09/jev-review"
+  }
+}

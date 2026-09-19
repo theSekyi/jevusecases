@@ -1,0 +1,22 @@
+{
+  "id": "dani1005-book-aurora",
+  "project": "Book Aurora",
+  "description": "Turns a whole novel into a strip of color, one row per passage. You can save the strip as a poster.",
+  "github": "https://github.com/dani1005/book-aurora",
+  "website": null,
+  "how_used_jev": "Jev scores each passage on nine emotions and overall intensity. Each score sets the width and brightness of one color curtain.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dani1005/book-aurora"
+  }
+}

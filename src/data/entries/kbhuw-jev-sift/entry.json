@@ -1,0 +1,22 @@
+{
+  "id": "kbhuw-jev-sift",
+  "project": "Jev Sift",
+  "description": "Gives agents an MCP tool that sorts files, web pages, or text by relevance before the agent reads them.",
+  "github": "https://github.com/kbhuw/jev-sift",
+  "website": null,
+  "how_used_jev": "Jev gets the query and each item and returns a relevance probability. The agent opens only the items worth a closer look.",
+  "source_tweet": "https://x.com/kushbhuwalka/status/2101064922813895154",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kbhuw/jev-sift"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "24601-augustus",
+  "project": "Augustus",
+  "description": "Gives agents a skill for designing systems that use typed probabilistic judgment. It maps Choice, Score, and Noul onto decision theory and routing.",
+  "github": "https://github.com/24601/Augustus",
+  "website": null,
+  "how_used_jev": "The skill tells the agent where Jev owns a narrow judgment and where code or policy does the exact work.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/24601/Augustus"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "juanlentino-jev-connector",
+  "project": "Connector for TypeSafe Jev",
+  "description": "A WordPress connector for the TypeSafe API. Themes and plugins use it to ask typed questions about content.",
+  "github": "https://github.com/juanlentino/jev-connector",
+  "website": null,
+  "how_used_jev": "It asks Jev questions and returns a probability, a named choice, or a score, each with a confidence value.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/juanlentino/jev-connector"
+  }
+}

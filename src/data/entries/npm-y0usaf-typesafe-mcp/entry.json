@@ -1,0 +1,23 @@
+{
+  "id": "npm-y0usaf-typesafe-mcp",
+  "project": "@y0usaf/typesafe-mcp",
+  "description": "An MCP server that gives coding agents access to Jev.",
+  "github": null,
+  "website": "https://www.npmjs.com/package/@y0usaf/typesafe-mcp",
+  "how_used_jev": "Exposes Jev decisions to any coding agent that supports MCP.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/@y0usaf/typesafe-mcp",
+    "install": "npm install @y0usaf/typesafe-mcp"
+  }
+}

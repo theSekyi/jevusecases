@@ -1,0 +1,22 @@
+{
+  "id": "thodoh1-financialpredictionjev",
+  "project": "FinancialPredictionJev",
+  "description": "Tests how well Jev predicts financial markets.",
+  "github": "https://github.com/thodoh1/FinancialPredictionJev",
+  "website": null,
+  "how_used_jev": "Asks Jev to predict market moves. The author says it does not do well.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thodoh1/FinancialPredictionJev"
+  }
+}

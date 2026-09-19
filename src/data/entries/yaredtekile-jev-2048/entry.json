@@ -1,0 +1,22 @@
+{
+  "id": "yaredtekile-jev-2048",
+  "project": "Jev 2048",
+  "description": "Plays the live classic 2048 game in a Chromium window. Playwright reads the board state and presses the arrow keys.",
+  "github": "https://github.com/yaredtekile/jev-2048",
+  "website": null,
+  "how_used_jev": "Jev gets the board state and picks one legal swipe with probabilities. It does not see pixels or write text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yaredtekile/jev-2048"
+  }
+}

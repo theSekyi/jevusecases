@@ -1,0 +1,22 @@
+{
+  "id": "mandubian-quiet-space",
+  "project": "Quiet Space",
+  "description": "Replaces likely text advertisements with reversible neutral placeholders in a Chrome extension. It does not block network requests.",
+  "github": "https://github.com/mandubian/quiet-space",
+  "website": null,
+  "how_used_jev": "Jev judges small page blocks for advertisements. The extension swaps the likely ads for placeholders.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mandubian/quiet-space"
+  }
+}

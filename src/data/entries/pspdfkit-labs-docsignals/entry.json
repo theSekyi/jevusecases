@@ -1,0 +1,22 @@
+{
+  "id": "pspdfkit-labs-docsignals",
+  "project": "docsignals",
+  "description": "Answers typed questions about documents such as contracts and invoices. Each answer cites the page block it came from.",
+  "github": "https://github.com/PSPDFKit-labs/docsignals",
+  "website": null,
+  "how_used_jev": "Nutrient DWS reads each document, and Jev answers every YAML question on every page. Output is one row per document with answer, confidence, and citation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/PSPDFKit-labs/docsignals"
+  }
+}

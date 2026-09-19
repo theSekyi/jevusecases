@@ -1,0 +1,22 @@
+{
+  "id": "tumf-jev-cli",
+  "project": "jev-cli",
+  "description": "Sends text or JSON state to Jev from the command line and returns JSON answers. It also ships a stdio MCP server.",
+  "github": "https://github.com/tumf/jev-cli",
+  "website": null,
+  "how_used_jev": "The jev command asks noul, choice, and score questions, one or many per request. The jev-mcp command gives MCP hosts the same judgments.",
+  "source_tweet": "https://x.com/DevTumf/status/2101071184855261563",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tumf/jev-cli"
+  }
+}

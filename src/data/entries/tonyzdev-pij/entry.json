@@ -1,0 +1,22 @@
+{
+  "id": "tonyzdev-pij",
+  "project": "PiJ",
+  "description": "A terminal coding agent built on Pi. The coding model does reasoning and edits, and Jev handles small typed decisions.",
+  "github": "https://github.com/tonyzdev/PiJ",
+  "website": null,
+  "how_used_jev": "Jev shortlists skills, ranks code excerpts, and triages tool failures. Its suggestions stay advisory and never replace compilation or tests.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tonyzdev/PiJ"
+  }
+}

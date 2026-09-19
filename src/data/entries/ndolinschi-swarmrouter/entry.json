@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-swarmrouter",
+  "project": "SwarmRouter",
+  "description": "Picks which agent handles a task: research, code, browser, support, or writer. A visual swarm map shows the result.",
+  "github": "https://github.com/ndolinschi/swarmrouter",
+  "website": "https://swarmrouter.vercel.app",
+  "how_used_jev": "Jev picks the agent for each task and gives a confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/swarmrouter"
+  }
+}

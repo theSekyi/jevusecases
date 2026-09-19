@@ -1,0 +1,22 @@
+{
+  "id": "ducstii-pi-advisor",
+  "project": "pi-jev-advisor",
+  "description": "An extension for the pi coding agent that sends agent decisions to Jev.",
+  "github": "https://github.com/Ducstii/pi-advisor",
+  "website": null,
+  "how_used_jev": "The agent sends context and a batch of choice, score, and other questions to Jev. It gets back probabilities for each answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ducstii/pi-advisor"
+  }
+}

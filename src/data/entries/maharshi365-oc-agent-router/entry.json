@@ -1,0 +1,22 @@
+{
+  "id": "maharshi365-oc-agent-router",
+  "project": "oc-agent-router",
+  "description": "Routes each new task subagent in OpenCode to one of your configured models.",
+  "github": "https://github.com/maharshi365/oc-agent-router",
+  "website": null,
+  "how_used_jev": "Just before OpenCode creates the child session, the plugin asks Jev for a structured choice of model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maharshi365/oc-agent-router"
+  }
+}

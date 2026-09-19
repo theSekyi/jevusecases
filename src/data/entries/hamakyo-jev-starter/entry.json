@@ -1,0 +1,22 @@
+{
+  "id": "hamakyo-jev-starter",
+  "project": "jev-starter",
+  "description": "Gives TypeScript apps patterns for decision workflows: decision contracts, policy thresholds, fallbacks, evaluation, and RAG.",
+  "github": "https://github.com/hamakyo/jev-starter",
+  "website": null,
+  "how_used_jev": "Apps ask Jev for structured answers. The patterns route on confidence and apply fallbacks and policy thresholds in code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hamakyo/jev-starter"
+  }
+}

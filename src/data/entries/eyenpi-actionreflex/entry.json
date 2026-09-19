@@ -1,0 +1,22 @@
+{
+  "id": "eyenpi-actionreflex",
+  "project": "actionreflex",
+  "description": "Checks each AI agent action before it runs. It is a Python gate that you put in front of tool execution.",
+  "github": "https://github.com/eyenpi/actionreflex",
+  "website": null,
+  "how_used_jev": "A set of policies goes to Jev in one request. The gate turns the answers into an allow, block, or escalate decision with the probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/eyenpi/actionreflex"
+  }
+}

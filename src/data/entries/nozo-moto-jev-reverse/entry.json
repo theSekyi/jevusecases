@@ -1,0 +1,22 @@
+{
+  "id": "nozo-moto-jev-reverse",
+  "project": "jev-reverse",
+  "description": "A Reversi game where you play against Jev, a simple CPU, or watch Jev play itself.",
+  "github": "https://github.com/nozo-moto/jev-reverse",
+  "website": null,
+  "how_used_jev": "Each turn, Jev picks one legal move from a Choice question. Code checks legal moves, flips pieces, and computes features such as corners.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nozo-moto/jev-reverse"
+  }
+}

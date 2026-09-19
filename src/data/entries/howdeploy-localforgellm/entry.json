@@ -1,0 +1,22 @@
+{
+  "id": "howdeploy-localforgellm",
+  "project": "LocalForgeLLM",
+  "description": "Lets a coding agent build and tune a local AI stack, matching model, runtime, quantization, and settings to the hardware.",
+  "github": "https://github.com/howdeploy/LocalForgeLLM",
+  "website": null,
+  "how_used_jev": "Optional Jev calls make typed decisions while text generation stays local. These decisions cover routing, choosing browser actions, and checking results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/howdeploy/LocalForgeLLM"
+  }
+}

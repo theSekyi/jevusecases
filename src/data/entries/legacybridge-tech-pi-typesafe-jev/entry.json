@@ -1,0 +1,22 @@
+{
+  "id": "legacybridge-tech-pi-typesafe-jev",
+  "project": "pi-typesafe-jev",
+  "description": "Gives pi five tools for narrow semantic judgments.",
+  "github": "https://github.com/legacybridge-tech/pi-typesafe-jev",
+  "website": null,
+  "how_used_jev": "The model asks Jev yes/no, choice, score, batched, or pinned questions. Your code and users keep control of thresholds, weights, and actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/legacybridge-tech/pi-typesafe-jev"
+  }
+}

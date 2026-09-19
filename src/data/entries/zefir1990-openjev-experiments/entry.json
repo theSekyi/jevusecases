@@ -1,0 +1,22 @@
+{
+  "id": "zefir1990-openjev-experiments",
+  "project": "openjev-experiments",
+  "description": "Classifies premise and hypothesis pairs as contradiction, entailment, or neutral with openjev, a local Qwen3.5-4B cross-encoder.",
+  "github": "https://github.com/zefir1990/openjev-experiments",
+  "website": null,
+  "how_used_jev": "Uses openjev, an open Jev-style option-logit runner, on local models.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "infra / open reimplementation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zefir1990/openjev-experiments"
+  }
+}

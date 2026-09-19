@@ -1,0 +1,22 @@
+{
+  "id": "phareim-sfl",
+  "project": "SFL",
+  "description": "Captures web pages, quotes, images, notes, and other items as linked ideas in a single-user tool on Cloudflare.",
+  "github": "https://github.com/phareim/sfl",
+  "website": null,
+  "how_used_jev": "Jev gets one Noul question per tag in a set vocabulary for each saved item. Tags that score 0.6 or higher are applied, with a limit of five.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phareim/sfl"
+  }
+}

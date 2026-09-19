@@ -1,0 +1,22 @@
+{
+  "id": "kedi-lang-kedi-typesafe",
+  "project": "kedi-typesafe",
+  "description": "Integrates Jev with the Pydantic AI and LangChain agent frameworks in one Python package.",
+  "github": "https://github.com/kedi-lang/kedi-typesafe",
+  "website": null,
+  "how_used_jev": "It translates Pydantic schemas with booleans, Literal or Enum values, and constrained text into Jev questions. The agent gets back a typed model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kedi-lang/kedi-typesafe"
+  }
+}

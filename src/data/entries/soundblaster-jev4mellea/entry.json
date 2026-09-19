@@ -1,0 +1,22 @@
+{
+  "id": "soundblaster-jev4mellea",
+  "project": "Jev4Mellea",
+  "description": "Unofficial Python prototype adapter that adds Jev semantic checks to Mellea. Mellea controls generation and retries.",
+  "github": "https://github.com/SoundBlaster/Jev4Mellea",
+  "website": null,
+  "how_used_jev": "Jev checks the generated result, and Mellea accepts the text or repairs it. The author states that no live Jev call has run yet.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SoundBlaster/Jev4Mellea"
+  }
+}

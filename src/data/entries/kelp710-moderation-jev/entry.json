@@ -1,0 +1,22 @@
+{
+  "id": "kelp710-moderation-jev",
+  "project": "moderation-jev",
+  "description": "Checks a chat message while you type and decides if it is safe to send. It is a demo app.",
+  "github": "https://github.com/Kelp710/moderation-jev",
+  "website": null,
+  "how_used_jev": "Jev answers four questions in one call: rude wording, confidential data, anger level, and writing style. Code thresholds decide send, review, or stop.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Kelp710/moderation-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ceamkrier-semantic-firewall",
+  "project": "Semantic Firewall",
+  "description": "A proof of concept that gates the tool calls of LLM agents. It includes a test corpus, a stability eval, and a baseline.",
+  "github": "https://github.com/CeamKrier/semantic-firewall",
+  "website": null,
+  "how_used_jev": "Jev answers five yes/no questions about each proposed action. Code turns the probabilities into allow, ask user, revise, or block.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CeamKrier/semantic-firewall"
+  }
+}

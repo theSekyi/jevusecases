@@ -1,0 +1,22 @@
+{
+  "id": "coldteadotai-abide",
+  "project": "Abide",
+  "description": "Makes Claude Code, Codex, and opencode agents follow the rules in AGENTS.md and CLAUDE.md. It tells the agent which rule it broke so it fixes it.",
+  "github": "https://github.com/coldteadotai/abide",
+  "website": null,
+  "how_used_jev": "On every edit or turn, Abide asks Jev one question per rule about the diff. The author reports 39 flagged edits in 93 replayed sessions, 10 confirmed by a reviewer.",
+  "source_tweet": "https://x.com/OhansEmmanuel/status/2101034822760288452",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/coldteadotai/abide"
+  }
+}

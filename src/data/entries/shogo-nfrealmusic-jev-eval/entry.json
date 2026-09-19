@@ -1,0 +1,22 @@
+{
+  "id": "shogo-nfrealmusic-jev-eval",
+  "project": "jev-eval",
+  "description": "Compares Jev with gpt-4o-mini and Claude Sonnet 4.5 on routing 60 synthetic booking inquiries in 4 languages.",
+  "github": "https://github.com/shogo-nfrealmusic/jev-eval",
+  "website": null,
+  "how_used_jev": "Jev routes each inquiry for a photo-shoot service for tourists in Japan, under the same conditions as the LLMs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shogo-nfrealmusic/jev-eval"
+  }
+}

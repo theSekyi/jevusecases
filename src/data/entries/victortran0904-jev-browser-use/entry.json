@@ -1,0 +1,22 @@
+{
+  "id": "victortran0904-jev-browser-use",
+  "project": "Jev Browser Agent",
+  "description": "A local browser-agent console that uses OpenCode Browser Control. Screenshots are shown to the user but not sent to a model.",
+  "github": "https://github.com/victortran0904/Jev-Browser-Use",
+  "website": null,
+  "how_used_jev": "Jev selects one bounded action from the DOM and accessibility snapshot. Code validates and runs it, and Gemini writes URLs or free text only after Jev selects open_site or type_text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/victortran0904/Jev-Browser-Use"
+  }
+}

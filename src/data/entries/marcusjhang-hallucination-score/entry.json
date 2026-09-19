@@ -1,0 +1,22 @@
+{
+  "id": "marcusjhang-hallucination-score",
+  "project": "hallucination-score",
+  "description": "A Claude Code skill that scores how much a coding agent hallucinated in a session, from its transcript.",
+  "github": "https://github.com/marcusjhang/hallucination-score",
+  "website": null,
+  "how_used_jev": "An optional second judge asks Jev if each claim is supported, contradicted, or unsupported. The skill then reports agreement with the main grader.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcusjhang/hallucination-score"
+  }
+}

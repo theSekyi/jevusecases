@@ -1,0 +1,22 @@
+{
+  "id": "itiscuthnotcup-brilliant-iyse6644-app",
+  "project": "Brilliant-IYSE6644-app",
+  "description": "An iOS study app with short interactive lessons for the Georgia Tech ISYE 6644 Simulation course.",
+  "github": "https://github.com/ItIsCuthNotCup/Brilliant-IYSE6644-app",
+  "website": null,
+  "how_used_jev": "An optional coach uses Jev for wrong-answer coaching and checks on answers in your own words. Jev also routes questions to lessons.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ItIsCuthNotCup/Brilliant-IYSE6644-app"
+  }
+}

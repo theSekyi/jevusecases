@@ -1,0 +1,22 @@
+{
+  "id": "tinyhumansai-tinyjevclient",
+  "project": "tinyjevclient",
+  "description": "Typed Rust client for TypeSafe AI's System One API and the Jev model.",
+  "github": "https://github.com/tinyhumansai/tinyjevclient",
+  "website": null,
+  "how_used_jev": "Sends shared state with Choice, Score, and Noul questions to Jev and validates the answers against the request. Callers keep thresholds, escalation, and side effects.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tinyhumansai/tinyjevclient"
+  }
+}

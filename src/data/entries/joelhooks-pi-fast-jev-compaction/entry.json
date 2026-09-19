@@ -1,0 +1,22 @@
+{
+  "id": "joelhooks-pi-fast-jev-compaction",
+  "project": "pi-fast-jev-compaction",
+  "description": "Prunes old tool history in Pi and keeps conversation text verbatim.",
+  "github": "https://github.com/joelhooks/pi-fast-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev answers two noul questions per tool call: keep the call, and keep its result. The extension then keeps, trims, or drops the pair.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/joelhooks/pi-fast-jev-compaction"
+  }
+}

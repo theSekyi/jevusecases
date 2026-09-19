@@ -1,0 +1,22 @@
+{
+  "id": "bugkiwi-turing-jail",
+  "project": "Turing Jail",
+  "description": "A three-level interrogation game. You write a statement and try to earn release from an AI warden.",
+  "github": "https://github.com/bugkiwi/turing-jail",
+  "website": "https://turing-jail.vercel.app",
+  "how_used_jev": "Jev analyzes each statement for plea, logic, and paradox. The results decide the warden's verdict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bugkiwi/turing-jail"
+  }
+}

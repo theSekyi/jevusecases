@@ -1,0 +1,22 @@
+{
+  "id": "icohen007-jev-play-ping-pong",
+  "project": "jev-play-ping-pong",
+  "description": "Plays the RALLY browser table tennis game in real time through ordinary Chrome input. The docs show how to adapt the pattern to other games.",
+  "github": "https://github.com/Icohen007/jev-play-ping-pong",
+  "website": "https://indispensable-lingonberry-hot.julius.site/",
+  "how_used_jev": "Jev reads structured table-tennis telemetry and chooses every serve and return. The author reports one Club-difficulty run where Jev won 11-0.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Icohen007/jev-play-ping-pong"
+  }
+}

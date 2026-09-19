@@ -1,0 +1,22 @@
+{
+  "id": "akashpriyadarshii-jev-curate",
+  "project": "jev-curate",
+  "description": "Streams, filters, and scores Parquet and JSONL datasets for synthetic and pretraining data.",
+  "github": "https://github.com/AkashPriyadarshii/jev-curate",
+  "website": "https://crates.io/crates/jev-curate",
+  "how_used_jev": "Jev judges the dataset rows with typed Choice, Score, and Noul decisions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AkashPriyadarshii/jev-curate"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lakeday-org-perch",
+  "project": "perch",
+  "description": "Lints code for meaning with a CLI that lists issues worst first and supports custom rules in perch.yaml.",
+  "github": "https://github.com/lakeday-org/perch",
+  "website": "https://perchscan.com",
+  "how_used_jev": "Asks Jev configurable questions about each code unit and reports the answers as issues with a severity.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lakeday-org/perch"
+  }
+}

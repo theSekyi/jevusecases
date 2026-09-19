@@ -1,0 +1,22 @@
+{
+  "id": "tokentrim-jev-routing-experiment",
+  "project": "jev-routing-experiment",
+  "description": "Benchmark of Jev as an LLM router on RouterArena and LLMRouterBench.",
+  "github": "https://github.com/TokenTrim/jev-routing-experiment",
+  "website": null,
+  "how_used_jev": "Jev judges each query, for example its difficulty, to pick a model from a pool. The author reports 62.4% vs 60.3% for a Jev plus retrieval router, and a no-Jev ablation that matches it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TokenTrim/jev-routing-experiment"
+  }
+}

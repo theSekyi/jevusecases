@@ -1,0 +1,22 @@
+{
+  "id": "maito1201-jev-harness",
+  "project": "jev-harness",
+  "description": "Makes Claude Code and Codex agents fix plan gaps, out-of-scope edits, and false completion claims before a human sees them. It uses hooks and a check CLI.",
+  "github": "https://github.com/maito1201/jev-harness",
+  "website": null,
+  "how_used_jev": "Code collects the facts, and Jev checks meaning: whether a file is in scope, whether a command verified the work. At Stop, Jev answers 14 questions to send work back.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maito1201/jev-harness"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "anessbelbati-jev-rerank-bench",
+  "project": "jev-rerank-bench",
+  "description": "Compares Jev with Cohere Rerank 4, ZeroEntropy zerank-2, and a chat model as search result rerankers.",
+  "github": "https://github.com/anessbelbati/jev-rerank-bench",
+  "website": null,
+  "how_used_jev": "Jev rates thirty search results per query on a four-level rubric. The author reports nDCG@10 of 0.692 for Jev and 0.691 for Cohere Pro.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/anessbelbati/jev-rerank-bench"
+  }
+}

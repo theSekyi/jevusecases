@@ -1,0 +1,22 @@
+{
+  "id": "serejaris-voice-browser",
+  "project": "Voice Browser",
+  "description": "Controls Chrome by voice or text through an MV3 extension and a local bridge. It runs a limited set of actions on visible page elements.",
+  "github": "https://github.com/serejaris/voice-browser",
+  "website": null,
+  "how_used_jev": "A local server sends commands to Jev through Vercel AI Gateway. If Jev fails, the error shows, and the user can switch to local rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/serejaris/voice-browser"
+  }
+}

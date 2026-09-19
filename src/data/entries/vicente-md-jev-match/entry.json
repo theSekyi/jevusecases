@@ -1,0 +1,22 @@
+{
+  "id": "vicente-md-jev-match",
+  "project": "JevMatch",
+  "description": "Scores how well your resume fits a LinkedIn job posting, from a Chrome extension with no backend.",
+  "github": "https://github.com/Vicente-MD/jev-match",
+  "website": null,
+  "how_used_jev": "Jev answers small Choice, Score, and Noul questions. TypeScript code computes the final score, missing skills, and blockers from the answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Vicente-MD/jev-match"
+  }
+}

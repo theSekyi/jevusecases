@@ -1,0 +1,22 @@
+{
+  "id": "steventsao-jevzen",
+  "project": "jevzen",
+  "description": "Replaces unwanted X posts with zen scenes or cat photos as you scroll, in a Chrome extension demo. You describe what you want less of.",
+  "github": "https://github.com/steventsao/jevzen",
+  "website": null,
+  "how_used_jev": "Jev checks each text post when it enters the viewport against your description. Matching posts fade into images that you can reveal.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/steventsao/jevzen"
+  }
+}

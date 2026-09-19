@@ -1,0 +1,22 @@
+{
+  "id": "rinnecoder-jev-behavior-study",
+  "project": "jev-behavior-study",
+  "description": "An independent study of how Jev 1.13.0 behaves, with reports, prompt experiments, raw results, and a 3D city driving lab.",
+  "github": "https://github.com/RINNECODER/jev-behavior-study",
+  "website": null,
+  "how_used_jev": "Sends controlled prompts, Snake games, and city driving tasks to Jev. The author reports that results depend on exact task and framing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RINNECODER/jev-behavior-study"
+  }
+}

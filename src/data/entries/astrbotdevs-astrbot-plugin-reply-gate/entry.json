@@ -1,0 +1,22 @@
+{
+  "id": "astrbotdevs-astrbot-plugin-reply-gate",
+  "project": "astrbot_plugin_reply_gate",
+  "description": "Decides whether a chat message reaches the LLM at all in AstrBot. A rejected message uses no queue slot, tokens, or context.",
+  "github": "https://github.com/AstrBotDevs/astrbot_plugin_reply_gate",
+  "website": null,
+  "how_used_jev": "One Jev request asks whether to respond or ignore and which message to answer. Messages above a threshold pass, and the chosen reply target goes to the model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AstrBotDevs/astrbot_plugin_reply_gate"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "moritzkremb-jev-voice-browser",
+  "project": "voice-browser",
+  "description": "Controls a real Chromium browser by voice through Playwright. It can act before you finish the sentence.",
+  "github": "https://github.com/moritzkremb/jev-voice-browser",
+  "website": null,
+  "how_used_jev": "On each partial transcript, Jev answers about a dozen typed questions, such as intent and target. Code then acts, waits, or asks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/moritzkremb/jev-voice-browser"
+  }
+}

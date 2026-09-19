@@ -1,0 +1,22 @@
+{
+  "id": "niexi-agent-guard",
+  "project": "agent-guard",
+  "description": "Checks Claude Code tool calls, such as Bash commands and file edits, before they run.",
+  "github": "https://github.com/NieXi/agent-guard",
+  "website": null,
+  "how_used_jev": "Jev scores destructive risk, checks policy violations, and picks allow, ask, or deny. The hook returns that decision to Claude Code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NieXi/agent-guard"
+  }
+}

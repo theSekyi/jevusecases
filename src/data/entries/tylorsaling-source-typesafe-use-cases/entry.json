@@ -1,0 +1,22 @@
+{
+  "id": "tylorsaling-source-typesafe-use-cases",
+  "project": "typesafe_use_cases",
+  "description": "Records live Jev answers to a file and replays them for identical inputs.",
+  "github": "https://github.com/tylorsaling-source/typesafe_use_cases",
+  "website": null,
+  "how_used_jev": "Jev answers Choice questions, and the code checks that the options and probabilities are valid. Each live call is saved with its request, response, and latency.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tylorsaling-source/typesafe_use_cases"
+  }
+}

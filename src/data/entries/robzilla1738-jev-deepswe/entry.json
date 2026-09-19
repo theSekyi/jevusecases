@@ -1,0 +1,22 @@
+{
+  "id": "robzilla1738-jev-deepswe",
+  "project": "Jev x DeepSWE",
+  "description": "Tests if Jev can pick the correct patch from 8 candidates for DeepSWE tasks before the verifier runs.",
+  "github": "https://github.com/robzilla1738/Jev-DeepSWE",
+  "website": null,
+  "how_used_jev": "Jev scores or chooses among candidate patches. The author reports its top-1 picks passed on 5 of 10 tasks, below the random baseline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/robzilla1738/Jev-DeepSWE"
+  }
+}

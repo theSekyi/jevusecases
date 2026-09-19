@@ -1,0 +1,22 @@
+{
+  "id": "yusukebe-hono-jev-router",
+  "project": "hono-jev-router",
+  "description": "Routes HTTP requests in Hono by meaning instead of by method and path. It is an experiment.",
+  "github": "https://github.com/yusukebe/hono-jev-router",
+  "website": null,
+  "how_used_jev": "You describe each route in plain words. Jev decides which description fits the incoming request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yusukebe/hono-jev-router"
+  }
+}

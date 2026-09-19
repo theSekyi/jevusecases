@@ -1,0 +1,22 @@
+{
+  "id": "standardagents-jevpilot",
+  "project": "JevPilot",
+  "description": "A playable Three.js driving simulator with an autopilot mode.",
+  "github": "https://github.com/standardagents/jevpilot",
+  "website": null,
+  "how_used_jev": "Jev receives tables of eligible paths, road boundaries, traffic, and signals. It chooses among candidate paths and speeds, and local code handles vehicle dynamics.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/standardagents/jevpilot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "feliperfpereira-jevbrowser",
+  "project": "jevBrowser",
+  "description": "A small browser task runner. Playwright controls the browser, and the agent repeats one action at a time until done.",
+  "github": "https://github.com/feliperfpereira/jevBrowser",
+  "website": null,
+  "how_used_jev": "Each step sends compact page state to Jev for Choice and Noul decisions, such as which element to use. Playwright then runs one deterministic action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/feliperfpereira/jevBrowser"
+  }
+}

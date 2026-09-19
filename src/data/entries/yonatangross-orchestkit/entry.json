@@ -1,0 +1,22 @@
+{
+  "id": "yonatangross-orchestkit",
+  "project": "OrchestKit",
+  "description": "Adds an optional Jev classifier for session work categories to a toolkit of skills, agents, and hooks for Claude Code.",
+  "github": "https://github.com/yonatangross/orchestkit",
+  "website": "https://orchestkit.yonyon.ai",
+  "how_used_jev": "Jev picks one of eight categories. The author reports 93.5% correct on 150 held-out sessions at confidence 0.8 or above.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yonatangross/orchestkit"
+  }
+}

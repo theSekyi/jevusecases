@@ -1,0 +1,22 @@
+{
+  "id": "heybmtn-domainminer",
+  "project": "Domain miner",
+  "description": "Filters the UK Nominet droplist for brandable domains to resell, and keeps a queue of SEO domains.",
+  "github": "https://github.com/heybmtn/domainminer",
+  "website": null,
+  "how_used_jev": "The Jev shortlist scores every loaded name for brandability in one batched pass. Paid SEO checks then run only on names Jev rates highly.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/heybmtn/domainminer"
+  }
+}

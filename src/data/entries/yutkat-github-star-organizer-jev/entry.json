@@ -1,0 +1,22 @@
+{
+  "id": "yutkat-github-star-organizer-jev",
+  "project": "GitHub Star Organizer: Jev",
+  "description": "Sorts your GitHub stars into your existing GitHub Lists. It writes a JSON report and can apply the assignments.",
+  "github": "https://github.com/yutkat/github-star-organizer-jev",
+  "website": null,
+  "how_used_jev": "Jev classifies each starred repository against your Lists. The program then assigns repositories to Lists on GitHub if you choose.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yutkat/github-star-organizer-jev"
+  }
+}

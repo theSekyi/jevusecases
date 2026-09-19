@@ -1,0 +1,22 @@
+{
+  "id": "felpsdev-jev-classifier",
+  "project": "jev-classifier",
+  "description": "Connects coding agents to a local gateway and MCP tools that suggest the next tool to call.",
+  "github": "https://github.com/felpsdev/jev-classifier",
+  "website": null,
+  "how_used_jev": "Jev predicts which tool the agent should call next. Where supported, the gateway forces that tool, and every decision goes into a log.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/felpsdev/jev-classifier"
+  }
+}

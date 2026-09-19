@@ -1,0 +1,22 @@
+{
+  "id": "svmanth-jmarket",
+  "project": "Second Opinion",
+  "description": "Adds a second probability under each Polymarket market card in Chrome. You can see where the model and the crowd disagree.",
+  "github": "https://github.com/svmanth/jmarket",
+  "website": null,
+  "how_used_jev": "The extension asks Jev each market as a Noul or a Choice and shows its answer with a probability. It never sends the Polymarket price to Jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/svmanth/jmarket"
+  }
+}

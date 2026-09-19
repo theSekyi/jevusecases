@@ -1,0 +1,22 @@
+{
+  "id": "mgaitan-sqlite-jev",
+  "project": "sqlite-jev",
+  "description": "Adds natural-language filters, classification, and scoring to SQLite as a loadable extension.",
+  "github": "https://github.com/mgaitan/sqlite-jev",
+  "website": null,
+  "how_used_jev": "Scalar functions and a jev_rows virtual table send rows to Jev as Noul, Choice, and Score questions. Up to 40 rows share one request.",
+  "source_tweet": "https://x.com/tin_nqn_/status/2101030999945580598",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mgaitan/sqlite-jev"
+  }
+}

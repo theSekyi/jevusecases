@@ -1,0 +1,22 @@
+{
+  "id": "obie-ruby-decision-model",
+  "project": "ruby_decision_model",
+  "description": "Gives Ruby a client for decision models such as Jev, with no runtime dependencies beyond the standard library.",
+  "github": "https://github.com/obie/ruby_decision_model",
+  "website": null,
+  "how_used_jev": "It sends a state and typed questions to Jev through OpenRouter or the TypeSafe native API. It returns the answers with calibrated probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/obie/ruby_decision_model"
+  }
+}

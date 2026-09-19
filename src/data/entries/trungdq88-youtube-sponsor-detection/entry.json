@@ -1,0 +1,22 @@
+{
+  "id": "trungdq88-youtube-sponsor-detection",
+  "project": "Sponsor Skip",
+  "description": "Skips sponsor reads on YouTube as a Chrome extension. A small web app does the same for a pasted link.",
+  "github": "https://github.com/trungdq88/youtube-sponsor-detection",
+  "website": null,
+  "how_used_jev": "Jev names the transcript line where a sponsor read starts or answers yes/no about the audio it heard. Code owns every timestamp and skip.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/trungdq88/youtube-sponsor-detection"
+  }
+}

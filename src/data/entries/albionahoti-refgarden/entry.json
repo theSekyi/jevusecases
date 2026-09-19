@@ -1,0 +1,22 @@
+{
+  "id": "albionahoti-refgarden",
+  "project": "RefGarden",
+  "description": "Lets creators explore visual references from The Met, NASA, and Cosmos in a 3D gallery. You keep images with links to their sources.",
+  "github": "https://github.com/AlbionaHoti/refgarden",
+  "website": null,
+  "how_used_jev": "In Local Explore, Jev chooses search phrases and highlights references from their titles and descriptions. It does not see image pixels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AlbionaHoti/refgarden"
+  }
+}

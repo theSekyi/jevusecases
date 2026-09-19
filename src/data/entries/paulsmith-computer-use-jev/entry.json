@@ -1,0 +1,22 @@
+{
+  "id": "paulsmith-computer-use-jev",
+  "project": "computer-use-jev",
+  "description": "Drives native macOS applications from Go through the Accessibility API, toward a natural-language goal.",
+  "github": "https://github.com/paulsmith/computer-use-jev",
+  "website": null,
+  "how_used_jev": "At each step, Jev gets the current app and window state. It answers typed questions: which action next, which target, and if the goal is complete.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/paulsmith/computer-use-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ffattiger-new-api-plugin-typesafe",
+  "project": "new-api-plugin-typesafe",
+  "description": "Adds a Jev task plugin to QuantumNous/new-api, with TypeSafe or Vercel AI Gateway upstreams.",
+  "github": "https://github.com/FFatTiger/new-api-plugin-typesafe",
+  "website": null,
+  "how_used_jev": "The plugin forwards native System One requests to Jev. NewAPI handles auth, routing, billing, and logs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "infra / open reimplementation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/FFatTiger/new-api-plugin-typesafe"
+  }
+}

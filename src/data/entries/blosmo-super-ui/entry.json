@@ -1,0 +1,22 @@
+{
+  "id": "blosmo-super-ui",
+  "project": "Super UI",
+  "description": "Lets you search 685 React components from 10 libraries by the problem you want to solve.",
+  "github": "https://github.com/blosmo/super-UI",
+  "website": "https://super-ui-neon.vercel.app",
+  "how_used_jev": "Local semantic matching finds candidates. With a TypeSafe key, Jev ranks how well each candidate fits the problem.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/blosmo/super-UI"
+  }
+}

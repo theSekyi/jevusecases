@@ -1,0 +1,22 @@
+{
+  "id": "themaximebatandeoexperience-jev-computer-use",
+  "project": "jev-computer-use",
+  "description": "Compares Playwright with Gemini and Playwright with Jev on a synthetic French hospital coding screen. It uses no patient data.",
+  "github": "https://github.com/TheMaximeBatandeoExperience/jev-computer-use",
+  "website": "https://jev-computer-use.vercel.app",
+  "how_used_jev": "In Jev mode, Jev decides the next screen action in place of Gemini. Each report says which model produced it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TheMaximeBatandeoExperience/jev-computer-use"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lhotwll217-jev-cli",
+  "project": "jev-cli",
+  "description": "Sends JSON state and questions to the TypeSafe API from the command line. It is for experiments, eval loops, and agent harnesses.",
+  "github": "https://github.com/lhotwll217/jev-cli",
+  "website": null,
+  "how_used_jev": "Jev answers the typed questions in a questions file about a given state. The CLI prints the typed answers as JSON.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lhotwll217/jev-cli"
+  }
+}

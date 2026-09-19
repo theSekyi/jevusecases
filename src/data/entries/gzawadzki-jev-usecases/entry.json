@@ -1,0 +1,22 @@
+{
+  "id": "gzawadzki-jev-usecases",
+  "project": "jev-usecases",
+  "description": "Shows seven demos of typed decisions on Polish text. They include a Play review inbox, a content guard, and an agent router.",
+  "github": "https://github.com/gzawadzki/jev-usecases",
+  "website": null,
+  "how_used_jev": "Jev decides review topics, harm labels, which specialist card to load, and how to triage RL logs. Code owns thresholds and actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gzawadzki/jev-usecases"
+  }
+}

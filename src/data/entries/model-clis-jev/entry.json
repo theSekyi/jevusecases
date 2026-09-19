@@ -1,0 +1,22 @@
+{
+  "id": "model-clis-jev",
+  "project": "Jev CLI",
+  "description": "Gives a stateless CLI and an Agent Skill for typed judgments in scripts, CI, and agent workflows.",
+  "github": "https://github.com/model-clis/jev",
+  "website": null,
+  "how_used_jev": "You send state and typed questions to Jev. The CLI returns JSON on stdout and exit codes that scripts can branch on.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/model-clis/jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "antiyro-jevdroid",
+  "project": "JevDroid",
+  "description": "Controls Android over ADB from a Python framework. It opens apps, taps, swipes, and navigates back.",
+  "github": "https://github.com/antiyro/jevdroid",
+  "website": null,
+  "how_used_jev": "Jev reads the accessibility tree and chooses the next action toward a goal. The author reports a 390 ms median decision latency.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/antiyro/jevdroid"
+  }
+}

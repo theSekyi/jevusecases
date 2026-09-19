@@ -1,0 +1,22 @@
+{
+  "id": "phureewat29-got-jev",
+  "project": "got-jev",
+  "description": "Runs a Game of Thrones roleplay where you play Jon Snow and a story model writes each scene.",
+  "github": "https://github.com/phureewat29/jev-got",
+  "website": "https://jev.phureewat.com",
+  "how_used_jev": "Jev reads each scene and answers five questions, such as location, danger, and music. The answers set the header, soundtrack, artwork, and next prompt.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phureewat29/jev-got"
+  }
+}

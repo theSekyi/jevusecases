@@ -1,0 +1,22 @@
+{
+  "id": "zhuyansen-jev-cold-start-prior",
+  "project": "jev-cold-start-prior",
+  "description": "Tests whether Jev can predict from a day-one README which new agent-skill repos gain stars. It compares Jev with models trained on labels.",
+  "github": "https://github.com/zhuyansen/jev-cold-start-prior",
+  "website": null,
+  "how_used_jev": "One call per repo asks Jev eight typed questions. The author reports a zero-shot Spearman ρ of 0.435 for Jev's will_gain answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zhuyansen/jev-cold-start-prior"
+  }
+}

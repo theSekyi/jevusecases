@@ -1,0 +1,22 @@
+{
+  "id": "matrixy-monkey-d-loopy",
+  "project": "monkey.d.loopy",
+  "description": "Compiles a declarative LoopSpec into crash-resumable agent loops with required termination signals and budget caps.",
+  "github": "https://github.com/MaTriXy/Monkey.D.Loopy",
+  "website": null,
+  "how_used_jev": "The loopc recommend command can use Jev as its provider to compare catalog workflows for a goal. Its output feeds the design command that creates a scaffold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MaTriXy/Monkey.D.Loopy"
+  }
+}

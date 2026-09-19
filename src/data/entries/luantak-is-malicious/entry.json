@@ -1,0 +1,22 @@
+{
+  "id": "luantak-is-malicious",
+  "project": "is-malicious",
+  "description": "Scans a codebase for hidden, deceptive, or data-stealing behavior before you run unfamiliar code.",
+  "github": "https://github.com/luantak/is-malicious",
+  "website": null,
+  "how_used_jev": "The CLI sends source, configuration, build, and CI files to Jev for review. It reports suspicious files and lines with a probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / supply chain",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/luantak/is-malicious"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "romaluev-jev-ego",
+  "project": "jev-ego",
+  "description": "TypeScript browser agent for ego lite that uses Jev Ultrafast's indexed action space, without Chrome or Playwright.",
+  "github": "https://github.com/romaluev/jev-ego",
+  "website": null,
+  "how_used_jev": "A coding agent or Jev picks CLICK, TYPE_TEXT, or SELECT on a numbered element table. Each step uses one TypeSafe request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/romaluev/jev-ego"
+  }
+}

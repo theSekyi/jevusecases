@@ -1,0 +1,22 @@
+{
+  "id": "keltokhy-jgrep",
+  "project": "jgrep",
+  "description": "Filters text lines by a plain-language description instead of a pattern. It works on files and on streams such as tail -f.",
+  "github": "https://github.com/keltokhy/jgrep",
+  "website": null,
+  "how_used_jev": "Each line becomes one yes/no question to Jev. The author reports 4.6 seconds and $0.012 for 994 Hacker News titles.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/keltokhy/jgrep"
+  }
+}

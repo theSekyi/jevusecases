@@ -1,0 +1,22 @@
+{
+  "id": "jiiiin-codex-jev-compaction",
+  "project": "codex-jev-compaction",
+  "description": "Adds evidence checkpoints around native Codex context compaction. A separate CLI exports a trimmed copy of a session transcript.",
+  "github": "https://github.com/Jiiiin/codex-jev-compaction",
+  "website": null,
+  "how_used_jev": "Before compaction, Jev selects the important tool records. After compaction, the plugin adds back excerpts of those records.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Jiiiin/codex-jev-compaction"
+  }
+}

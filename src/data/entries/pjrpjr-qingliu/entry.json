@@ -1,0 +1,22 @@
+{
+  "id": "pjrpjr-qingliu",
+  "project": "Qingliu",
+  "description": "Marks spam accounts on the X timeline and blocks them with one click. It continues the MIT code of FeedSieve.",
+  "github": "https://github.com/pjrpjr/qingliu",
+  "website": null,
+  "how_used_jev": "An AI layer asks Jev to judge each account. The author reports a 0.7% false-positive rate, against 7.8% for the keyword list.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pjrpjr/qingliu"
+  }
+}

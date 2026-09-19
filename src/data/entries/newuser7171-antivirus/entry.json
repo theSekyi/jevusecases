@@ -1,0 +1,22 @@
+{
+  "id": "newuser7171-antivirus",
+  "project": "Jev-AV",
+  "description": "A desktop antivirus and URL threat scanner. It extracts features such as entropy, strings, and PE imports from files and links.",
+  "github": "https://github.com/newuser7171/antivirus",
+  "website": null,
+  "how_used_jev": "Jev uses Choice, Score, and Noul questions on the extracted features to give threat verdicts and severity scores. These drive quarantine actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/newuser7171/antivirus"
+  }
+}

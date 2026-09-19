@@ -1,0 +1,22 @@
+{
+  "id": "wondertwins-jev-benchmark",
+  "project": "Jev Benchmark & Playground",
+  "description": "Benchmarks Jev on chess and on which game character a player speaks to, with a playground.",
+  "github": "https://github.com/wondertwins/jev-benchmark",
+  "website": null,
+  "how_used_jev": "Jev picks a chess move from the legal options. It also decides, per game character, if an utterance speaks to it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wondertwins/jev-benchmark"
+  }
+}

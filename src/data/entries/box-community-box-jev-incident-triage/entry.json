@@ -1,0 +1,22 @@
+{
+  "id": "box-community-box-jev-incident-triage",
+  "project": "box-jev-incident-triage",
+  "description": "Demo that triages incident reports stored as PDFs in Box. It writes the resulting signals back to the file as Box metadata.",
+  "github": "https://github.com/box-community/box-jev-incident-triage",
+  "website": null,
+  "how_used_jev": "Jev answers three narrow questions about the report's Markdown version. Python policy code then chooses to monitor, review, or escalate the incident.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/box-community/box-jev-incident-triage"
+  }
+}

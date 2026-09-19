@@ -1,0 +1,22 @@
+{
+  "id": "sambhav-jev-explained",
+  "project": "Jev Explained",
+  "description": "An interactive guide to Jev for product managers and builders who know LLM basics. It covers routing, output types, agent cases, benchmarks, and cost.",
+  "github": "https://github.com/sambhav/jev-explained",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sambhav/jev-explained"
+  }
+}

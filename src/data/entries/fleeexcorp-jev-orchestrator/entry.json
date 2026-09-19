@@ -1,0 +1,22 @@
+{
+  "id": "fleeexcorp-jev-orchestrator",
+  "project": "jev-orchestrator",
+  "description": "Adds a Claude Code skill and CLI that split big tasks between Claude and Codex workers in separate git worktrees.",
+  "github": "https://github.com/FleeexCorp/jev-orchestrator",
+  "website": null,
+  "how_used_jev": "Claude sends small orchestration questions to Jev, such as delegate, run in parallel, retry, review, or stop. Codex workers do the coding.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/FleeexCorp/jev-orchestrator"
+  }
+}

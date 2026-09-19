@@ -1,0 +1,22 @@
+{
+  "id": "ellipsis-dev-blink",
+  "project": "blink",
+  "description": "Searches a codebase for a file from a natural-language query, with a group of walkers that move through folders.",
+  "github": "https://github.com/ellipsis-dev/blink",
+  "website": null,
+  "how_used_jev": "Jev scores file and folder names. More walkers go down the paths with higher scores until they reach a file.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ellipsis-dev/blink"
+  }
+}

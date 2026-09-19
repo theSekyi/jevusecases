@@ -1,0 +1,22 @@
+{
+  "id": "smartitect-retail-review-knowledge-mining",
+  "project": "retail-review-knowledge-mining",
+  "description": "Shows ways to mine insights from semi-structured data. The demo classifies reviews for a fictional barbecue retailer.",
+  "github": "https://github.com/Smartitect/retail-review-knowledge-mining",
+  "website": null,
+  "how_used_jev": "Jev reads every review sentence with the whole review as context. It gives a frustration score, a problem category, the products mentioned, and the language.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Smartitect/retail-review-knowledge-mining"
+  }
+}

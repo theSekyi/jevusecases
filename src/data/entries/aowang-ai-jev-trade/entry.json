@@ -1,0 +1,22 @@
+{
+  "id": "aowang-ai-jev-trade",
+  "project": "jev-trade",
+  "description": "A live trading bot on Hyperliquid with five separate sleeves for BTC, ETH, SOL, DOGE, and BNB.",
+  "github": "https://github.com/aowang-ai/jev-trade",
+  "website": "https://jev-trade.com",
+  "how_used_jev": "Each tick, Jev picks long or short, then open, close, or hold for each sleeve. The bot places orders from that choice.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aowang-ai/jev-trade"
+  }
+}

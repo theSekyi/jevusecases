@@ -1,0 +1,22 @@
+{
+  "id": "beapps-tech-triaz-pozadavku",
+  "project": "Triáž zákaznických požadavků",
+  "description": "Triages a customer's app change request in a demo for BeApps. It decides between an AI agent, a follow-up question, a split, or a developer.",
+  "github": "https://github.com/beapps-tech/triaz-pozadavku",
+  "website": null,
+  "how_used_jev": "Jev answers 22 typed questions about the request. Code rules weigh the answers to decide the route, and the page shows each answer and its weight.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/beapps-tech/triaz-pozadavku"
+  }
+}

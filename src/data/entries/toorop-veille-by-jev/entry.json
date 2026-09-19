@@ -1,0 +1,22 @@
+{
+  "id": "toorop-veille-by-jev",
+  "project": "veille-by-jev",
+  "description": "Makes a nightly French digest of Hacker News stories. It keeps a small set of stories and lists the rest with scores.",
+  "github": "https://github.com/toorop/veille-by-jev",
+  "website": null,
+  "how_used_jev": "In the triage stage, Jev scores each article against a grid of typed questions. An LLM then writes the digest text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/toorop/veille-by-jev"
+  }
+}

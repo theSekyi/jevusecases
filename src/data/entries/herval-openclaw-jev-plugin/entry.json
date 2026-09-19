@@ -1,0 +1,22 @@
+{
+  "id": "herval-openclaw-jev-plugin",
+  "project": "openclaw-jev-plugin",
+  "description": "Adds a reply gate and an optional model router to OpenClaw bots. The bot reads every group message and answers only the ones meant for it.",
+  "github": "https://github.com/herval/openclaw-jev-plugin",
+  "website": null,
+  "how_used_jev": "Jev decides if the bot should answer each message. The optional router asks Jev how much work a request takes, then picks one of three configured models.",
+  "source_tweet": "https://x.com/herval/status/2101063356828323955",
+  "author": "@herval",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/herval/openclaw-jev-plugin"
+  }
+}

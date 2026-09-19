@@ -1,0 +1,22 @@
+{
+  "id": "noelzappy-tripwire",
+  "project": "tripwire",
+  "description": "Checks every LLM response before the user sees it. It works as AI SDK middleware or an OpenAI-compatible proxy.",
+  "github": "https://github.com/noelzappy/tripwire",
+  "website": "https://www.npmjs.com/package/@noelzappy/tripwire",
+  "how_used_jev": "Jev runs seven checks in one call. A YAML policy sets the confidence needed to block or flag.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/noelzappy/tripwire"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "cjtsolutions-richup-benchmark",
+  "project": "richup-bench",
+  "description": "An agent harness and MCP server for richup.io, a Monopoly-style browser game. It evaluates agents on long-horizon tasks such as trading.",
+  "github": "https://github.com/cjtsolutions/richup-benchmark",
+  "website": null,
+  "how_used_jev": "An example agent calls typesafe/jev-1.13 through OpenRouter's decisions API. Each step asks one Choice question over the legal actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cjtsolutions/richup-benchmark"
+  }
+}

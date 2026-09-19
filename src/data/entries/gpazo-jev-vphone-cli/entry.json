@@ -1,0 +1,22 @@
+{
+  "id": "gpazo-jev-vphone-cli",
+  "project": "jev-vphone-cli",
+  "description": "Boots a virtual iPhone on Apple Silicon and lets Jev control it from a plain-language goal.",
+  "github": "https://github.com/gpazo/jev-vphone-cli",
+  "website": null,
+  "how_used_jev": "Jev decides each next action on the phone until it reaches the goal, for example \"turn on airplane mode\".",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gpazo/jev-vphone-cli"
+  }
+}

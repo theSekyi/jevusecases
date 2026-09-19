@@ -1,0 +1,22 @@
+{
+  "id": "qkal-canny",
+  "project": "Canny",
+  "description": "Hooks into Claude Code and Codex CLI and stops the agent from claiming work is done without evidence.",
+  "github": "https://github.com/qkal/canny",
+  "website": null,
+  "how_used_jev": "Jev checks if an edit breaks a rule and if the final message claims the work is done. A ledger of passed checks gives the base verdict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/qkal/canny"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "baekenough-jev-study",
+  "project": "jev-study",
+  "description": "Tests how well Jev routes questions to documents in Open Knowledge Format bundles. It is a personal study that compares Jev with embedding rerankers, also for Korean.",
+  "github": "https://github.com/baekenough/jev-study",
+  "website": null,
+  "how_used_jev": "Jev gets the OKF index as choice options and picks the document that answers the question. The study checks accuracy and abstention.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/baekenough/jev-study"
+  }
+}

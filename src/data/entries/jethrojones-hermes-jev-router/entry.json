@@ -1,0 +1,22 @@
+{
+  "id": "jethrojones-hermes-jev-router",
+  "project": "Hermes Jev Router",
+  "description": "A plugin that adds automatic model routing to Hermes Agent, in a terminal or through Telegram.",
+  "github": "https://github.com/jethrojones/hermes-jev-router",
+  "website": null,
+  "how_used_jev": "Jev judges the size and difficulty of each request. Hermes then sends it to a suitable model from those available on that machine.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jethrojones/hermes-jev-router"
+  }
+}

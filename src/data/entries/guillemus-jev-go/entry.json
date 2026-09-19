@@ -1,0 +1,22 @@
+{
+  "id": "guillemus-jev-go",
+  "project": "jev-go",
+  "description": "Gives an unofficial Go SDK for the TypeSafe API.",
+  "github": "https://github.com/guillemus/jev-go",
+  "website": null,
+  "how_used_jev": "Go code sends a state and Noul, Choice, or Score questions to Jev and reads the typed answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/guillemus/jev-go"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ericmartinezr-are-you-smarter-than-jev",
+  "project": "Do You Know as Much as Jev?",
+  "description": "A Streamlit trivia game in which you compete with Jev. The sidebar tracks both scores.",
+  "github": "https://github.com/ericmartinezr/are-you-smarter-than-jev",
+  "website": null,
+  "how_used_jev": "Each trivia question goes to Jev as a Choice question. The app compares your pick with Jev's and shows its confidence breakdown.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ericmartinezr/are-you-smarter-than-jev"
+  }
+}

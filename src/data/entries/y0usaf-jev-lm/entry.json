@@ -1,0 +1,22 @@
+{
+  "id": "y0usaf-jev-lm",
+  "project": "Jev-LM",
+  "description": "A word-level language model that uses Jev as its output layer, with a CLI to probe, generate, and evaluate.",
+  "github": "https://github.com/y0usaf/jev-lm",
+  "website": null,
+  "how_used_jev": "Jev picks the next word from a vocabulary, and Noul questions verify drafted chunks of text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/y0usaf/jev-lm"
+  }
+}

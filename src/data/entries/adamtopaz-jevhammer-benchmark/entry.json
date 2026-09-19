@@ -1,0 +1,22 @@
+{
+  "id": "adamtopaz-jevhammer-benchmark",
+  "project": "jevhammer_benchmark",
+  "description": "Benchmarks JevHammer premise selectors, tactic sets, and search settings at intermediate Lean goals. The kernel checks each saved proof.",
+  "github": "https://github.com/adamtopaz/jevhammer_benchmark",
+  "website": null,
+  "how_used_jev": "Live comparison arms use Jev for proof-state guidance. Offline mock ranking is available for infrastructure tests.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adamtopaz/jevhammer_benchmark"
+  }
+}

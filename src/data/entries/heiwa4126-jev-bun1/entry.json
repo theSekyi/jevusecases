@@ -1,0 +1,22 @@
+{
+  "id": "heiwa4126-jev-bun1",
+  "project": "jev-bun1",
+  "description": "First-step samples for the Jev TypeScript SDK, run with Bun.",
+  "github": "https://github.com/heiwa4126/jev-bun1",
+  "website": null,
+  "how_used_jev": "The samples send Noul questions to Jev, such as if a banana counts as a snack. One sample runs queries in parallel.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/heiwa4126/jev-bun1"
+  }
+}

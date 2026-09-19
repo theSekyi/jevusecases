@@ -1,0 +1,22 @@
+{
+  "id": "thenoahhein-jev-temporal-demo",
+  "project": "jev-temporal-demo",
+  "description": "A demo incident-response agent that runs its decision loop as a Temporal workflow.",
+  "github": "https://github.com/thenoahhein/jev-temporal-demo",
+  "website": null,
+  "how_used_jev": "Each iteration, Jev picks the next action from structured state. A code safety policy checks it, and Temporal runs it as an activity.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thenoahhein/jev-temporal-demo"
+  }
+}

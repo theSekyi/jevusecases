@@ -1,0 +1,22 @@
+{
+  "id": "trungdq88-jev-tetris",
+  "project": "jev-tetris",
+  "description": "Runs a real-time Tetris match between Jev and Claude Haiku 4.5 on the same piece sequence.",
+  "github": "https://github.com/trungdq88/jev-tetris",
+  "website": "https://jev-tetris.vercel.app",
+  "how_used_jev": "Code lists every legal placement and describes its result. Jev picks one placement with a Choice question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/trungdq88/jev-tetris"
+  }
+}

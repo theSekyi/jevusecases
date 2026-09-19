@@ -1,0 +1,22 @@
+{
+  "id": "sunfloweratnight-discord-bot-with-llm",
+  "project": "discord-bot-with-llm",
+  "description": "Runs a Discord bot for one server that chats through Gemini, manages member roles, and curates messages.",
+  "github": "https://github.com/sunfloweratnight/discord-bot-with-llm",
+  "website": null,
+  "how_used_jev": "The fortune command sends a member's message history to Jev with fortune questions. The bot parses the answers and replies with an embed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sunfloweratnight/discord-bot-with-llm"
+  }
+}

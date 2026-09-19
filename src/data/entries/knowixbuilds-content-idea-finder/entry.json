@@ -1,0 +1,19 @@
+{
+  "id": "knowixbuilds-content-idea-finder",
+  "project": "Content idea finder",
+  "description": "Finds content ideas for the author. Treg finds what people talk about.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev ranks the topics that Treg finds by how much they are worth the author's attention.",
+  "source_tweet": "https://x.com/knowixbuilds/status/2101067255983591438",
+  "author": "@knowixbuilds",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jflam-jev1",
+  "project": "jev1",
+  "description": "Holds experiments with Jev, starting with a recreation of TypeSafe's smart-home assistant demo.",
+  "github": "https://github.com/jflam/jev1",
+  "website": null,
+  "how_used_jev": "One request sends every question the app can need. Code acts on the relevant answers and asks for confirmation when confidence is low.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jflam/jev1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jon-devlapaz-jevvy-chase",
+  "project": "Jevvy-chase",
+  "description": "Asks what you want to do and ends with a written plan. It is an agent skill for Cursor.",
+  "github": "https://github.com/jon-devlapaz/Jevvy-chase",
+  "website": null,
+  "how_used_jev": "Jev picks the best next question from a list of candidate questions that you supply.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jon-devlapaz/Jevvy-chase"
+  }
+}

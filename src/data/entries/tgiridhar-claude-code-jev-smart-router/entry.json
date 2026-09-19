@@ -1,0 +1,22 @@
+{
+  "id": "tgiridhar-claude-code-jev-smart-router",
+  "project": "claude-code-jev-smart-router",
+  "description": "Picks the Claude model for each Claude Code request through an HTTP proxy. The author reports 72% lower cost than pinned Opus over 63 runs.",
+  "github": "https://github.com/tgiridhar/claude-code-jev-smart-router",
+  "website": null,
+  "how_used_jev": "Jev classifies each request with typed questions on the session facts. The proxy sets the model tier from the answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tgiridhar/claude-code-jev-smart-router"
+  }
+}

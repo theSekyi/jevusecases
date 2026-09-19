@@ -1,0 +1,22 @@
+{
+  "id": "eyalm321-hearthsmith",
+  "project": "hearthsmith",
+  "description": "A pixel-art blacksmith desktop pet that nags you about tasks, watches terminal panes, and hands work to coding agents.",
+  "github": "https://github.com/Eyalm321/hearthsmith",
+  "website": null,
+  "how_used_jev": "On each heartbeat, Jev decides whether to nag, which task, how urgent, and on which channel. A local Ollama model then writes the line.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Eyalm321/hearthsmith"
+  }
+}

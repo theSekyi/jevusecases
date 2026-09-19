@@ -1,0 +1,22 @@
+{
+  "id": "phin-tech-pi-jev-approver",
+  "project": "pi-jev-approver",
+  "description": "A shell command safety gate for the Pi coding agent. It replaces the chat-model classifier for approvals.",
+  "github": "https://github.com/phin-tech/pi-jev-approver",
+  "website": null,
+  "how_used_jev": "Each bash tool call becomes one Jev request with facts about the command. The extension uses Jev's confidence to decide alone or ask a human.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phin-tech/pi-jev-approver"
+  }
+}

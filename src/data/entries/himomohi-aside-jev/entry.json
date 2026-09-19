@@ -1,0 +1,22 @@
+{
+  "id": "himomohi-aside-jev",
+  "project": "aside-jev",
+  "description": "Connects Aside browser agents to Jev as an MCP server and skill. Aside observes and executes the browser.",
+  "github": "https://github.com/himomohi/aside-jev",
+  "website": null,
+  "how_used_jev": "The agent sends the page state and typed questions to Jev, which returns one candidate id. The agent executes only that answer via Aside.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/himomohi/aside-jev"
+  }
+}

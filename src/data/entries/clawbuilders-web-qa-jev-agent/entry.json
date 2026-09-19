@@ -1,0 +1,22 @@
+{
+  "id": "clawbuilders-web-qa-jev-agent",
+  "project": "web-qa-jev-agent",
+  "description": "Crawls a web app with a Cloudflare Worker and files deduplicated GitHub Issues for the bugs it finds.",
+  "github": "https://github.com/Clawbuilders/web-qa-jev-agent",
+  "website": null,
+  "how_used_jev": "Jev triages each page for real bug, severity, and kind. Flagged pages go to a vision model, and another Jev call checks for duplicate issues.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Clawbuilders/web-qa-jev-agent"
+  }
+}

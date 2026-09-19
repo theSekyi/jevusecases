@@ -1,0 +1,22 @@
+{
+  "id": "whiletrueee-router",
+  "project": "router",
+  "description": "Sends each OpenAI-style chat request to the cheapest model that can answer it. The author reports 26% cost savings on an 8-prompt test.",
+  "github": "https://github.com/whiletrueee/router",
+  "website": null,
+  "how_used_jev": "Jev scores each request on 8 dimensions. A plain-code policy then picks the model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/whiletrueee/router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rolki-png-jevarena",
+  "project": "JevArena",
+  "description": "Shows two independent Jev agents playing Snake against each other in a Next.js spectator arena.",
+  "github": "https://github.com/rolki-png/JevArena",
+  "website": "https://jev-arena-ochre.vercel.app",
+  "how_used_jev": "Each agent asks Jev two choice questions through Vercel AI Gateway to pick its moves. If Jev fails, that agent is blocked.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rolki-png/JevArena"
+  }
+}

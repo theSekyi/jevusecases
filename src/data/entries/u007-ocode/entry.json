@@ -1,0 +1,22 @@
+{
+  "id": "u007-ocode",
+  "project": "ocode",
+  "description": "Adds TypeSafe as a provider to a Go AI coding agent for the terminal and desktop.",
+  "github": "https://github.com/u007/ocode",
+  "website": null,
+  "how_used_jev": "Jev acts as a decision-only permission judge.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/u007/ocode"
+  }
+}

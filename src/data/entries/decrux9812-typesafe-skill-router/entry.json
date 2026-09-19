@@ -1,0 +1,22 @@
+{
+  "id": "decrux9812-typesafe-skill-router",
+  "project": "typesafe-skill-router",
+  "description": "A Hermes Agent plugin that names the one installed skill that fits a request, before the model call.",
+  "github": "https://github.com/DECRUX9812/typesafe-skill-router",
+  "website": null,
+  "how_used_jev": "Jev reads the request and picks a matching skill. When one fits, the plugin adds one line to the user message.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/DECRUX9812/typesafe-skill-router"
+  }
+}

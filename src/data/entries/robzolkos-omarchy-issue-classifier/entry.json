@@ -1,0 +1,22 @@
+{
+  "id": "robzolkos-omarchy-issue-classifier",
+  "project": "Omarchy issue classifier",
+  "description": "Classifies the Omarchy GitHub issue backlog and writes the results to a CSV file.",
+  "github": "https://github.com/robzolkos/omarchy-issue-classifier",
+  "website": null,
+  "how_used_jev": "Jev answers ten typed questions per issue in one request. The questions cover Omarchy components, bug kinds, and severity.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/robzolkos/omarchy-issue-classifier"
+  }
+}

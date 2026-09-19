@@ -1,0 +1,22 @@
+{
+  "id": "masa-med-ai-typesafe-screening-mcp",
+  "project": "typesafe-screening-mcp",
+  "description": "Screens PubMed articles against a query or clinical question as an MCP server. It runs the search and fetches the abstracts.",
+  "github": "https://github.com/masa-med-ai/typesafe-screening-mcp",
+  "website": null,
+  "how_used_jev": "Jev judges each title and abstract. The server returns include, maybe, or exclude with the probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/masa-med-ai/typesafe-screening-mcp"
+  }
+}

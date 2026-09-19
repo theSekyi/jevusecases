@@ -1,0 +1,22 @@
+{
+  "id": "jzone3-nice-chat",
+  "project": "Nice Chat",
+  "description": "One public chat room that lets only nice messages through. A blocked message makes the Send button wiggle.",
+  "github": "https://github.com/jzone3/nice-chat",
+  "website": "https://nice-chat-theta.vercel.app",
+  "how_used_jev": "Jev scores each draft while you type and again on the server when you send. The meanness score sets how hard the button shakes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jzone3/nice-chat"
+  }
+}

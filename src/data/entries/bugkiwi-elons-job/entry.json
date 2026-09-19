@@ -1,0 +1,22 @@
+{
+  "id": "bugkiwi-elons-job",
+  "project": "Elon's Job",
+  "description": "Hides pornographic and sexual spam replies on X post pages in a Chrome extension. Hidden replies can be shown again.",
+  "github": "https://github.com/bugkiwi/elons-job",
+  "website": null,
+  "how_used_jev": "Jev judges each reply against rules that you can edit. Replies with high-confidence matches get a hidden placeholder.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bugkiwi/elons-job"
+  }
+}

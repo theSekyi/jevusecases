@@ -1,0 +1,22 @@
+{
+  "id": "rubenvroman-hearth",
+  "project": "Hearth",
+  "description": "A house agent runtime with voice control over Home Assistant devices and media services.",
+  "github": "https://github.com/RubenVroman/Hearth",
+  "website": null,
+  "how_used_jev": "An optional Jev gate makes one System One call before the agent tool loop. By default it only logs Jev answers in shadow mode.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RubenVroman/Hearth"
+  }
+}

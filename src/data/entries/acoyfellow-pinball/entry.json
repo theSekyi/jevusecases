@@ -1,0 +1,22 @@
+{
+  "id": "acoyfellow-pinball",
+  "project": "Pinball",
+  "description": "An experiment that tested whether Jev could pick a work mode for the Pi agent before a request. It did not meet its preregistered bar.",
+  "github": "https://github.com/acoyfellow/pinball",
+  "website": null,
+  "how_used_jev": "Jev chose one of six work modes from the user request, and confident choices went to Pi as advice. The author reports Jev alone selected 28 of 36 expected routes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/acoyfellow/pinball"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "charleeagni-jevpiano",
+  "project": "Jev Piano",
+  "description": "Plays River Flows in You on a web piano in real time with two hands.",
+  "github": "https://github.com/charleeagni/JevPiano",
+  "website": null,
+  "how_used_jev": "For each 100 ms slice, Jev chooses where each hand sits and which key each finger rests on. It answers with option IDs from a list the page gives.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/charleeagni/JevPiano"
+  }
+}

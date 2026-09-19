@@ -1,0 +1,22 @@
+{
+  "id": "marcelormendes-diffninja",
+  "project": "diffninja",
+  "description": "Gives focused local PR reviews as a ranked HTML report. Risky hunks come first with reasons, and trivial ones pass in one line.",
+  "github": "https://github.com/marcelormendes/diffninja",
+  "website": null,
+  "how_used_jev": "One Jev call per hunk asks for a risk score, bug likelihood, and change category. Code settles simple hunks without a model call.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcelormendes/diffninja"
+  }
+}

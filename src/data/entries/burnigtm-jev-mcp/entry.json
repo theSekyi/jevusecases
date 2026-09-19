@@ -1,0 +1,22 @@
+{
+  "id": "burnigtm-jev-mcp",
+  "project": "jev-mcp",
+  "description": "Local stdio MCP server that gives Cursor, Codex, and other MCP clients typed Jev judgments.",
+  "github": "https://github.com/burnigtm/jev-mcp",
+  "website": null,
+  "how_used_jev": "Tools ask Jev to route the next step, select a tool call, review a patch, or verify claims. Each result has an action of auto, review, or escalate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/burnigtm/jev-mcp"
+  }
+}

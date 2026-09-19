@@ -1,0 +1,22 @@
+{
+  "id": "aoi-yoneda-haikyubattlejev",
+  "project": "haikyuBattleJev",
+  "description": "Runs a baseball pitching battle simulation with nine innings, as an HTML page or a Streamlit app.",
+  "github": "https://github.com/aoi-yoneda/haikyuBattleJev",
+  "website": null,
+  "how_used_jev": "Jev answers a Choice question on how the batter reacts to each pitch. The game uses the choice and probabilities to decide the hit.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aoi-yoneda/haikyuBattleJev"
+  }
+}

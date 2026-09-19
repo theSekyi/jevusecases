@@ -1,0 +1,22 @@
+{
+  "id": "alexhawat-jev-catalog-gate",
+  "project": "jev-catalog-gate",
+  "description": "An early scaffold for a gate that trims the list of tools and skills before a model call.",
+  "github": "https://github.com/alexhawat/jev-catalog-gate",
+  "website": null,
+  "how_used_jev": "Jev scores each tool and skill, and only high-probability items stay in the list.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/alexhawat/jev-catalog-gate"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "chapel-hermes-jev-skills",
+  "project": "hermes-jev-skills",
+  "description": "Adds semantic skill search and optional turn-start skill suggestions to the Hermes agent as an opt-in plugin.",
+  "github": "https://github.com/chapel/hermes-jev-skills",
+  "website": null,
+  "how_used_jev": "Jev classifies which skills match a query or user turn. The plugin shows the candidates, and the main agent decides which skills to load.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/chapel/hermes-jev-skills"
+  }
+}

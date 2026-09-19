@@ -1,0 +1,22 @@
+{
+  "id": "dhava-gautama-noulgate",
+  "project": "noulgate",
+  "description": "Gates the expensive steps of an AI agent, such as web search, shell commands, and skill loads.",
+  "github": "https://github.com/dhava-gautama/noulgate",
+  "website": null,
+  "how_used_jev": "Jev answers choice, noul, and score questions about the planned step. The gate turns the probabilities into one advice word with its reasons.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dhava-gautama/noulgate"
+  }
+}

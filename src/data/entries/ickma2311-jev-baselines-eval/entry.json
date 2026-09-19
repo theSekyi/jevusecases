@@ -1,0 +1,22 @@
+{
+  "id": "ickma2311-jev-baselines-eval",
+  "project": "jev-baselines-eval",
+  "description": "Evaluates Jev against a nano LLM, a frontier LLM, and a supervised encoder on Banking77 and CLINC150. The experiments are pre-registered.",
+  "github": "https://github.com/ickma2311/jev-baselines-eval",
+  "website": null,
+  "how_used_jev": "Jev does intent classification and confidence-gated cascades. The author reports that both experiments returned AMBIGUOUS.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ickma2311/jev-baselines-eval"
+  }
+}

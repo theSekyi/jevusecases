@@ -1,0 +1,22 @@
+{
+  "id": "0xnatoshi-jev-codex-router",
+  "project": "jev-codex-router",
+  "description": "Routes each Codex turn to a model, thinking depth, and speed mode through an existing Codex Router install.",
+  "github": "https://github.com/0xNatoshi/jev-codex-router",
+  "website": null,
+  "how_used_jev": "Jev classifies each turn, and a routing policy picks the model and reasoning level. The author reports about 60% savings on a replay of 237 turns.",
+  "source_tweet": "https://x.com/dkhan/status/2101082551096131639",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xNatoshi/jev-codex-router"
+  }
+}

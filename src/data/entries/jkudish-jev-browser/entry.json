@@ -1,0 +1,22 @@
+{
+  "id": "jkudish-jev-browser",
+  "project": "Jev Browser",
+  "description": "Drives a real headless browser from a task and a start URL, through an MCP server, CLI, or library.",
+  "github": "https://github.com/jkudish/jev-browser",
+  "website": null,
+  "how_used_jev": "At each step, Jev picks one action from the page's clickable, typeable, and selectable elements. Jev also scores whether the goal is met or the run is stuck.",
+  "source_tweet": "https://x.com/sunils34/status/2101044959260328023",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jkudish/jev-browser"
+  }
+}

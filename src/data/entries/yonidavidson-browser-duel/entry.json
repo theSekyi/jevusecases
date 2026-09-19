@@ -1,0 +1,22 @@
+{
+  "id": "yonidavidson-browser-duel",
+  "project": "browser-duel",
+  "description": "Compares an LLM, Jev, and a hybrid on picking links in a wiki race with the same browser and links.",
+  "github": "https://github.com/yonidavidson/browser-duel",
+  "website": null,
+  "how_used_jev": "Jev picks the next link from the page links with one Choice request per step. The hybrid calls an LLM only when Jev confidence is low.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yonidavidson/browser-duel"
+  }
+}

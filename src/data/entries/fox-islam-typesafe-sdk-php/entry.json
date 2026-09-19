@@ -1,0 +1,22 @@
+{
+  "id": "fox-islam-typesafe-sdk-php",
+  "project": "typesafe-sdk-php",
+  "description": "Gives an unofficial PHP SDK for the TypeSafe API.",
+  "github": "https://github.com/Fox-Islam/typesafe-sdk-php",
+  "website": null,
+  "how_used_jev": "Code asks Jev named questions about text or JSON and gets probabilities, labels, or rubric levels. It calls Jev from TypeSafe directly or through OpenRouter.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Fox-Islam/typesafe-sdk-php"
+  }
+}

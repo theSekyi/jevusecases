@@ -1,0 +1,22 @@
+{
+  "id": "komikat-jev-bfs",
+  "project": "jev-bfs",
+  "description": "Finds a path between two English Wikipedia articles and shows the search live in the terminal.",
+  "github": "https://github.com/komikat/jev-bfs",
+  "website": null,
+  "how_used_jev": "Chromium reads each article, and Jev ranks its outgoing links. Python controls the search from those scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/komikat/jev-bfs"
+  }
+}

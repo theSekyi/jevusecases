@@ -1,0 +1,22 @@
+{
+  "id": "underactive-jev-shim",
+  "project": "@underactive/jev-shim",
+  "description": "Gives Node.js apps typed Jev classifiers and an OpenAI-compatible chat-completions facade.",
+  "github": "https://github.com/underactive/jev-shim",
+  "website": null,
+  "how_used_jev": "It shapes state, sends named Choice, Score, or Noul questions to Jev, and returns typed answers. Any OpenAI-compatible client can call it over HTTP.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/underactive/jev-shim"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "zenotme-ssfile",
+  "project": "ssfile",
+  "description": "CLI that finds files and directories by the meaning of their names. It does not read file contents.",
+  "github": "https://github.com/ZENOTME/ssfile",
+  "website": null,
+  "how_used_jev": "Sends batches of paths to Jev through Vercel AI Gateway. For each directory, Jev chooses an action such as include or explore.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ZENOTME/ssfile"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "yogi-miraje-jev-lab",
+  "project": "jev-lab",
+  "description": "Holds two Python experiments with the Jev SDK: a model router and a financial semantic layer.",
+  "github": "https://github.com/yogi-miraje/jev-lab",
+  "website": null,
+  "how_used_jev": "The router asks Jev to recommend Luna, Terra, Sol, Haiku, Sonnet, or Opus for a task. A benchmark compares its picks with 12 hand-labeled tasks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yogi-miraje/jev-lab"
+  }
+}

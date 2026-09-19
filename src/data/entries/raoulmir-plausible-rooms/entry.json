@@ -1,0 +1,22 @@
+{
+  "id": "raoulmir-plausible-rooms",
+  "project": "Plausible Rooms",
+  "description": "Generates one-room fantasy-industrial locations and shows the results in two local review galleries.",
+  "github": "https://github.com/raoulmir/plausible-rooms",
+  "website": null,
+  "how_used_jev": "Jev answers fixed questions about one room at a time, such as whether it works as a place. Fixed rules then group rooms as approved, rejected, or undecided.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/raoulmir/plausible-rooms"
+  }
+}

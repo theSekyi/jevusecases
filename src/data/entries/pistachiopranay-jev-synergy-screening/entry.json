@@ -1,0 +1,22 @@
+{
+  "id": "pistachiopranay-jev-synergy-screening",
+  "project": "jev-synergy-screening",
+  "description": "A work-in-progress demo that screens abstracts from the ASReview SYNERGY data.",
+  "github": "https://github.com/pistachiopranay/jev-synergy-screening",
+  "website": null,
+  "how_used_jev": "Uses Jev Choice and Noul questions to screen abstracts and compares the answers with gold labels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pistachiopranay/jev-synergy-screening"
+  }
+}

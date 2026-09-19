@@ -1,0 +1,19 @@
+{
+  "id": "ephraimduncan-model-router-built-with-jev",
+  "project": "Model router built with Jev",
+  "description": "Shows a demo that picks the model to serve each request.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev decides which model should serve each request.",
+  "source_tweet": "https://x.com/ephraimduncan/status/2100454070536351824",
+  "author": "@ephraimduncan",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

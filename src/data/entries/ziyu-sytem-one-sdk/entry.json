@@ -1,0 +1,22 @@
+{
+  "id": "ziyu-sytem-one-sdk",
+  "project": "System One SDK",
+  "description": "Gives TypeScript developers one evaluate interface for decision models. It supports typed choices, scores, and yes or no questions.",
+  "github": "https://github.com/ziyu/sytem-one-sdk",
+  "website": null,
+  "how_used_jev": "The default client calls Jev through its native protocol. It can also call Jev through OpenRouter or Cloudflare Workers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ziyu/sytem-one-sdk"
+  }
+}

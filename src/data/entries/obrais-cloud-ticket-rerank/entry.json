@@ -1,0 +1,22 @@
+{
+  "id": "obrais-cloud-ticket-rerank",
+  "project": "Ticket Urgency Reranker",
+  "description": "Reranks support tickets by urgency as a FastAPI service. It returns the batch sorted by score.",
+  "github": "https://github.com/Obrais-cloud/ticket-rerank",
+  "website": null,
+  "how_used_jev": "Jev gives each ticket one probability-weighted urgency Score from 0 to 4. You can combine the normalized value with other signals in your code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Obrais-cloud/ticket-rerank"
+  }
+}

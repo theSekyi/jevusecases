@@ -1,0 +1,22 @@
+{
+  "id": "gemanor-jev-code-review-benchmark",
+  "project": "jev-code-review-benchmark",
+  "description": "Compares Jev, Gemini Flash, and Claude Fable on checking Python code against four review rules.",
+  "github": "https://github.com/gemanor/jev-code-review-benchmark",
+  "website": null,
+  "how_used_jev": "Jev judges whether code follows each rule. The author reports Jev cost 45× less than Flash, but made more mistakes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gemanor/jev-code-review-benchmark"
+  }
+}

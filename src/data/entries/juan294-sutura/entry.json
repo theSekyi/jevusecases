@@ -1,0 +1,22 @@
+{
+  "id": "juan294-sutura",
+  "project": "Sutura",
+  "description": "Checks AI fixes for failing CI, filters flaky failures, rejects unsafe shortcuts, and opens a pull request for human review.",
+  "github": "https://github.com/juan294/sutura",
+  "website": "https://sutura-case-lab.vercel.app",
+  "how_used_jev": "An optional Jev audit answers an adversarial question as a typed choice. It can only reject a Nemotron approval, never approve one.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/juan294/sutura"
+  }
+}

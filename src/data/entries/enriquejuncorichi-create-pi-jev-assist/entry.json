@@ -1,0 +1,22 @@
+{
+  "id": "enriquejuncorichi-create-pi-jev-assist",
+  "project": "pi-jev-assist",
+  "description": "Checks the work of an agent in Pi against what it observes, not against what the agent says. It runs by itself during a session.",
+  "github": "https://github.com/enriquejuncorichi-create/pi-jev-assist",
+  "website": null,
+  "how_used_jev": "Jev scores skills against your prompt and checks the final claims of the agent against the diff. It also ranks callers of changed code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/enriquejuncorichi-create/pi-jev-assist"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "felipeduartea-agent-guard",
+  "project": "Agent Guard",
+  "description": "Checks actions before tools run in Codex, Claude Code, or Devin CLI. You set the rules in plain language.",
+  "github": "https://github.com/felipeduartea/agent-guard",
+  "website": null,
+  "how_used_jev": "After fixed emergency checks, Jev reviews the command, tool arguments, and script context against the policy. The guard can then block the action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/felipeduartea/agent-guard"
+  }
+}

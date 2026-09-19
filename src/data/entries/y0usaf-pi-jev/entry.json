@@ -1,0 +1,22 @@
+{
+  "id": "y0usaf-pi-jev",
+  "project": "pi-jev",
+  "description": "Adds a decision layer to the Pi coding agent that checks tool calls and reads their output.",
+  "github": "https://github.com/y0usaf/pi-jev",
+  "website": null,
+  "how_used_jev": "Jev judges bash, write, and edit calls before they run and reads bash output. It also answers the model through jev_ask.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/y0usaf/pi-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "derinworks-penr-oz-jev-syslog-analyzer",
+  "project": "penr-oz-jev-syslog-analyzer",
+  "description": "Tails journald or syslog as an asyncio daemon and sorts each event.",
+  "github": "https://github.com/derinworks/penr-oz-jev-syslog-analyzer",
+  "website": null,
+  "how_used_jev": "Jev tells the subsystem, severity, and whether the event is noise. Code then ignores, alerts, or escalates to a human when confidence is low.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/derinworks/penr-oz-jev-syslog-analyzer"
+  }
+}

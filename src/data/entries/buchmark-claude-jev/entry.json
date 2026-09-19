@@ -1,0 +1,22 @@
+{
+  "id": "buchmark-claude-jev",
+  "project": "claude-jev",
+  "description": "Scores code review findings, debug hypotheses, and design options in Claude Code. It gives probabilities as a second opinion next to Claude.",
+  "github": "https://github.com/buchmark/claude-jev",
+  "website": null,
+  "how_used_jev": "The plugin turns a question about the code into a typed Jev query. Jev returns probabilities, and findings below the threshold are dropped.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/buchmark/claude-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "miptgirl-miptgirl-medium",
+  "project": "miptgirl_medium",
+  "description": "Compares Jev and an OpenAI model on 1,000 test rows of the banking77 set with 77 banking support intents.",
+  "github": "https://github.com/miptgirl/miptgirl_medium",
+  "website": null,
+  "how_used_jev": "Jev gets each message with a Choice question over the 77 intent labels. Both models get the same instruction and the same bare label list, zero-shot.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/miptgirl/miptgirl_medium"
+  }
+}

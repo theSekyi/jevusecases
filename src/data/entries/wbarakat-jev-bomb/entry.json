@@ -1,0 +1,22 @@
+{
+  "id": "wbarakat-jev-bomb",
+  "project": "jev-bomb",
+  "description": "A bomb defusing game with four modules and written rulebooks. Code makes each puzzle and its correct answer.",
+  "github": "https://github.com/wbarakat/jev-bomb",
+  "website": null,
+  "how_used_jev": "Jev reads the rulebook and the observed state and picks one action per decision. A wrong action is a strike.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wbarakat/jev-bomb"
+  }
+}

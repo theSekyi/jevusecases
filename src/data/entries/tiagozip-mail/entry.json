@@ -1,0 +1,22 @@
+{
+  "id": "tiagozip-mail",
+  "project": "mail",
+  "description": "A self-contained webmail client and server on Cloudflare Workers, built mostly to test Cloudflare Email Routing and Email Sending.",
+  "github": "https://github.com/tiagozip/mail",
+  "website": null,
+  "how_used_jev": "With an API key set, the code sends each message's sender, subject, and body to Jev. Jev returns a spam classification.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tiagozip/mail"
+  }
+}

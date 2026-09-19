@@ -1,0 +1,22 @@
+{
+  "id": "ferxalbs-aether-hold",
+  "project": "HOLD by AETHER",
+  "description": "Judges a draft social post, email, or support reply before you send it. It does not write or rewrite text.",
+  "github": "https://github.com/ferxalbs/aether-hold",
+  "website": null,
+  "how_used_jev": "One Jev request answers choice, score, and yes or no questions about the draft. A fixed policy turns the answers into SEND, REWRITE, HOLD, or BLOCK.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ferxalbs/aether-hold"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "zhuyansen-jev-search-rerank-eval",
+  "project": "jev-search-rerank-eval",
+  "description": "Tests whether a Jev rerank beats embedding search over the Agent Skills Hub catalog. It uses 164 Chinese and English queries and measures judge bias.",
+  "github": "https://github.com/zhuyansen/jev-search-rerank-eval",
+  "website": null,
+  "how_used_jev": "Jev scores the top 30 results of each base ranker. The author reports that fusing bge-m3 with the Jev rerank gives +0.090 NDCG@10 over bge-m3 alone.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zhuyansen/jev-search-rerank-eval"
+  }
+}

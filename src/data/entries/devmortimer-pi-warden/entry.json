@@ -1,0 +1,22 @@
+{
+  "id": "devmortimer-pi-warden",
+  "project": "pi-warden",
+  "description": "Guardrails for Pi. They send a short note to the agent instead of a dialog to the user.",
+  "github": "https://github.com/DevMortimer/pi-warden",
+  "website": null,
+  "how_used_jev": "Jev judges each write against the rules in pi-warden.md. It also flags risky calls, stuck loops, and untested done claims.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/DevMortimer/pi-warden"
+  }
+}

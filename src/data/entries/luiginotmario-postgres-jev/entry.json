@@ -1,0 +1,22 @@
+{
+  "id": "luiginotmario-postgres-jev",
+  "project": "postgres-jev",
+  "description": "Adds natural-language predicates to PostgreSQL, with a dashboard playground that uses randomly generated databases.",
+  "github": "https://github.com/luiginotmario/postgres-Jev",
+  "website": "https://postgres-jev.vercel.app",
+  "how_used_jev": "Jev judges candidate rows through OpenRouter. The WHERE jev(...) query then runs over those judgments.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/luiginotmario/postgres-Jev"
+  }
+}

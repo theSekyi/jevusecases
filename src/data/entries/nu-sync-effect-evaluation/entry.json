@@ -1,0 +1,22 @@
+{
+  "id": "nu-sync-effect-evaluation",
+  "project": "@nu-sync/effect-evaluation",
+  "description": "An Effect-native TypeScript client for TypeSafe System One models. It has typed failures and test layers.",
+  "github": "https://github.com/nu-sync/effect-evaluation",
+  "website": null,
+  "how_used_jev": "It sends typed questions to Jev and returns a probability distribution per question, with the confidence kept.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nu-sync/effect-evaluation"
+  }
+}

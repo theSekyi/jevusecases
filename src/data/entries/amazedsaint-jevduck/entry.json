@@ -1,0 +1,22 @@
+{
+  "id": "amazedsaint-jevduck",
+  "project": "Jevduck",
+  "description": "Simulates Microduck robots with MuJoCo physics in the browser, as a research tool.",
+  "github": "https://github.com/amazedsaint/jevduck",
+  "website": "https://jevduck.vercel.app/",
+  "how_used_jev": "Jev chooses the next actions from measured robot state. A separate controller and the original ONNX policies carry out the motion.",
+  "source_tweet": "https://x.com/amazedsaint/status/2101030005060853800",
+  "author": "@amazedsaint",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/amazedsaint/jevduck"
+  }
+}

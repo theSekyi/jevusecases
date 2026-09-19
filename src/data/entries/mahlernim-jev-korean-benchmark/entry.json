@@ -1,0 +1,22 @@
+{
+  "id": "mahlernim-jev-korean-benchmark",
+  "project": "jev-korean-benchmark",
+  "description": "Checks Jev on Korean and English text with 100 questions per cell from four public test sets, including medical text.",
+  "github": "https://github.com/mahlernim/jev-korean-benchmark",
+  "website": "https://ahn-lab.org/jev-korean-benchmark/",
+  "how_used_jev": "Jev answers the test questions in both languages. The author reports 96 of 100 correct in Korean and 97 in English on reading comprehension.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mahlernim/jev-korean-benchmark"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "parth-hariyani3001-jev-bench",
+  "project": "Jev Bench",
+  "description": "Judges LLM responses in a dashboard with metrics, history, and batch test suites. Results are stored in SQLite.",
+  "github": "https://github.com/Parth-Hariyani3001/Jev-Bench",
+  "website": null,
+  "how_used_jev": "Each evaluation sends typed Choice and Noul questions to Jev in one call. The backend maps the answers to correctness, relevance, and other labels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Parth-Hariyani3001/Jev-Bench"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "thebous-jev-flash-review",
+  "project": "jev-flash-review",
+  "description": "Gives AI coding agents three code review skills backed by a local MCP review engine. The agent supplies the diff and task context.",
+  "github": "https://github.com/TheBous/jev-flash-review",
+  "website": null,
+  "how_used_jev": "The engine checks each rule in its rule set against the diff with Jev. It returns structured verdicts to the calling agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TheBous/jev-flash-review"
+  }
+}

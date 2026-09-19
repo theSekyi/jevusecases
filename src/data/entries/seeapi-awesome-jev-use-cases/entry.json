@@ -1,0 +1,22 @@
+{
+  "id": "seeapi-awesome-jev-use-cases",
+  "project": "awesome-jev-use-cases",
+  "description": "Lists projects that use Jev, sorted by use case, such as moderation, automation, and model routing.",
+  "github": "https://github.com/SeeAPI/awesome-jev-use-cases",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SeeAPI/awesome-jev-use-cases"
+  }
+}

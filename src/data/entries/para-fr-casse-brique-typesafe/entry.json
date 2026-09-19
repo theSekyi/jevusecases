@@ -1,0 +1,22 @@
+{
+  "id": "para-fr-casse-brique-typesafe",
+  "project": "casse-brique-typesafe",
+  "description": "A Next.js brick breaker game in the browser. The player can give the paddle to an AI pilot.",
+  "github": "https://github.com/Para-FR/casse-brique-typesafe",
+  "website": null,
+  "how_used_jev": "The server computes the ball path and asks Jev a Choice question. Jev picks one of 16 zones, and code moves the paddle there.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Para-FR/casse-brique-typesafe"
+  }
+}

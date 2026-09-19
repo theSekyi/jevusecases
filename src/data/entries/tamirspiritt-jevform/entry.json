@@ -1,0 +1,19 @@
+{
+  "id": "tamirspiritt-jevform",
+  "project": "JevForm",
+  "description": "Shows a form that branches and chooses what to ask next. It uses Vercel json-render.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev chooses the next question of the form, in place of hand-written if/then logic.",
+  "source_tweet": "https://x.com/TamirSPIRITT/status/2101079101997982037",
+  "author": "@TamirSPIRITT",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

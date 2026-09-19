@@ -1,0 +1,22 @@
+{
+  "id": "pelazas-jev-cmdtab",
+  "project": "jev-cmdtab",
+  "description": "Replaces the macOS Cmd+Tab switcher with the same kind of panel and a different app order. It requires macOS 26.",
+  "github": "https://github.com/pelazas/jev-cmdtab",
+  "website": null,
+  "how_used_jev": "Jev reads the clipboard to guess the app you want to go to. That app then gets a place in the strip.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pelazas/jev-cmdtab"
+  }
+}

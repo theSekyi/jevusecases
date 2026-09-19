@@ -1,0 +1,22 @@
+{
+  "id": "etiennelescot-jev-router",
+  "project": "Jev Router Demo",
+  "description": "Routes a support ticket to an agent and picks that agent's model tier and reasoning depth, in a demo page.",
+  "github": "https://github.com/EtienneLescot/jev-router",
+  "website": "https://etiennelescot.github.io/jev-router/",
+  "how_used_jev": "A first Jev call rates department, urgency, and frustration. A second call rates complexity and stakes, and code sets the tier and depth.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/EtienneLescot/jev-router"
+  }
+}

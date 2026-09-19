@@ -1,0 +1,22 @@
+{
+  "id": "w3cj-jev-chat",
+  "project": "Jev Chat",
+  "description": "A chat-style command bar that calls real tools, such as web search, weather, and Todoist. No LLM writes the replies.",
+  "github": "https://github.com/w3cj/jev-chat",
+  "website": null,
+  "how_used_jev": "Each turn, Jev picks the tool, each argument value, whether to confirm first, and the reply type. Code calls the MCP servers and builds the reply.",
+  "source_tweet": "https://x.com/CodingGarden/status/2101056822971166968",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/w3cj/jev-chat"
+  }
+}

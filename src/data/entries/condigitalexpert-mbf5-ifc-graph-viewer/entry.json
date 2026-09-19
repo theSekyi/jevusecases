@@ -1,0 +1,22 @@
+{
+  "id": "condigitalexpert-mbf5-ifc-graph-viewer",
+  "project": "MBF5 OpenUSD BIM Scene Viewer",
+  "description": "Shows an original IFC model and a revised version side by side, linked to an IFC knowledge graph.",
+  "github": "https://github.com/ConDigitalExpert/mbf5-ifc-graph-viewer",
+  "website": null,
+  "how_used_jev": "Adds a bounded Jev decision layer that runs in fail-closed shadow mode. Its decisions go to a telemetry log.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ConDigitalExpert/mbf5-ifc-graph-viewer"
+  }
+}

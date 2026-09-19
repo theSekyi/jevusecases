@@ -1,0 +1,22 @@
+{
+  "id": "carlaiau-jev-reranking",
+  "project": "JEV Reranking Comparisons",
+  "description": "Compares Jev with specialist rerankers on MS MARCO and TREC benchmarks for quality, time, and cost.",
+  "github": "https://github.com/carlaiau/jev-reranking",
+  "website": null,
+  "how_used_jev": "Jev reranks fixed query and passage candidates. The author reports higher MAP but lower nDCG@10 than a local monoBERT.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/carlaiau/jev-reranking"
+  }
+}

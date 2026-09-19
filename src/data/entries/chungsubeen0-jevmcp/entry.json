@@ -1,0 +1,22 @@
+{
+  "id": "chungsubeen0-jevmcp",
+  "project": "Jev MCP",
+  "description": "A local MCP server that lets coding agents such as Codex Desktop and Claude Code hand routine judgment to Jev.",
+  "github": "https://github.com/chungsubeen0/jevmcp",
+  "website": null,
+  "how_used_jev": "Agents ask Jev classification questions, for example whether a failure is related to the current diff. The frontier model then decides what to do.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/chungsubeen0/jevmcp"
+  }
+}

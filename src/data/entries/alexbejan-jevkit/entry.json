@@ -1,0 +1,22 @@
+{
+  "id": "alexbejan-jevkit",
+  "project": "jevkit",
+  "description": "A bounded judgment layer for computer use on desktops through Cua Driver and on phones through phone-harness.",
+  "github": "https://github.com/alexbejan/jevkit",
+  "website": null,
+  "how_used_jev": "Code observes the screen and builds the candidate list. Jev verifies that an action landed, picks an element, or classifies the screen, and code decides.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/alexbejan/jevkit"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "reisenbug-terrablind",
+  "project": "TerraBlind",
+  "description": "Plays Terraria with code through a tModLoader mod, from a fresh world to killing the Wall of Flesh.",
+  "github": "https://github.com/Reisenbug/TerraBlind",
+  "website": null,
+  "how_used_jev": "Every 200 ms, Jev picks an intent, a danger level, and dash and jump actions for boss fights. Code turns them into key presses.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Reisenbug/TerraBlind"
+  }
+}

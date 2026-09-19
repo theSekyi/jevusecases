@@ -1,0 +1,22 @@
+{
+  "id": "bradmyrick-jev-rug-checker",
+  "project": "rugcheck",
+  "description": "A one-file token screener for EVM chains. It pulls free public data and prints PASS, CAUTION, or AVOID.",
+  "github": "https://github.com/BradMyrick/Jev-Rug-Checker",
+  "website": null,
+  "how_used_jev": "Jev answers one question set about the token data. The tool prints the verdict with the reasons and shows split judgments.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BradMyrick/Jev-Rug-Checker"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tylergibbs1-sift",
+  "project": "Sift",
+  "description": "A Chrome extension that re-ranks Google results. It moves results that answer the query to the top and folds away sales pages and SEO filler.",
+  "github": "https://github.com/tylergibbs1/sift",
+  "website": null,
+  "how_used_jev": "Jev answers five questions per result, such as 'is it promotional' and a depth score. Code combines the answers into a weighted score and sorts.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tylergibbs1/sift"
+  }
+}

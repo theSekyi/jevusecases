@@ -1,0 +1,22 @@
+{
+  "id": "janostrowka-typesafe-assist",
+  "project": "TypeSafe Conversation (Jev)",
+  "description": "A conversation agent for Home Assistant Assist that interprets commands.",
+  "github": "https://github.com/JanOstrowka/typesafe-assist",
+  "website": null,
+  "how_used_jev": "Jev answers intent, device, room, and value questions per command. The answers map to Home Assistant intents that control devices.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JanOstrowka/typesafe-assist"
+  }
+}

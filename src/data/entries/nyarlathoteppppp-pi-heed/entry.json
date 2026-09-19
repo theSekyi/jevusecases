@@ -1,0 +1,22 @@
+{
+  "id": "nyarlathoteppppp-pi-heed",
+  "project": "pi-heed",
+  "description": "Adds runtime constraints to the pi coding agent. It checks each side-effecting tool call against what you said.",
+  "github": "https://github.com/Nyarlathoteppppp/pi-heed",
+  "website": null,
+  "how_used_jev": "For each message, Jev classifies how each policy changed and whether you gave a go-ahead. pi-heed applies only confident answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Nyarlathoteppppp/pi-heed"
+  }
+}

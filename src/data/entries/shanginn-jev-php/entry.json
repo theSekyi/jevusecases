@@ -1,0 +1,22 @@
+{
+  "id": "shanginn-jev-php",
+  "project": "JEV PHP",
+  "description": "Gives PHP 8.5 developers a strictly typed SDK for Jev through OpenRouter. Questions are plain PHP objects, and results can map to readonly classes.",
+  "github": "https://github.com/shanginn/jev-php",
+  "website": null,
+  "how_used_jev": "Code sends context and a question to Jev. It gets back a chosen option, a score, or the probability of yes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shanginn/jev-php"
+  }
+}

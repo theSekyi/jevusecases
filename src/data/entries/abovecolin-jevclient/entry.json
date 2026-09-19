@@ -1,0 +1,22 @@
+{
+  "id": "abovecolin-jevclient",
+  "project": "jevclient",
+  "description": "Gives an async Python client for Jev.",
+  "github": "https://github.com/AboveColin/jevclient",
+  "website": "https://pypi.org/project/jevclient/",
+  "how_used_jev": "Code sends a state and Noul, Choice, or Score questions to Jev. It gets probabilities, choices, and scores back, with no text to parse.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AboveColin/jevclient"
+  }
+}

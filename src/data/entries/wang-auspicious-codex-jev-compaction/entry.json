@@ -1,0 +1,22 @@
+{
+  "id": "wang-auspicious-codex-jev-compaction",
+  "project": "codex-jev-compaction",
+  "description": "Builds compact, traceable handoff context for the next Codex task or session. It ships as a skill, an MCP tool, and a CLI.",
+  "github": "https://github.com/Wang-auspicious/codex-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev decides whether each old, verified read-only tool pair should stay in the handoff. Code validates the answers and builds the packet.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Wang-auspicious/codex-jev-compaction"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "unownone-jevsume",
+  "project": "jevsume",
+  "description": "Reviews resumes for ATS readiness, in general or against one job description. It runs on a Cloudflare Worker.",
+  "github": "https://github.com/unownone/jevsume",
+  "website": null,
+  "how_used_jev": "The Worker asks Jev typed questions about the resume text and composes a JevScore. Jev returns scores, verdicts, and probabilities, and the Worker writes the UI text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/unownone/jevsume"
+  }
+}

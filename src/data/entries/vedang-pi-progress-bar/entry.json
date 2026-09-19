@@ -1,0 +1,22 @@
+{
+  "id": "vedang-pi-progress-bar",
+  "project": "pi-progress-bar",
+  "description": "Shows a passive progress and task health widget in the Pi coding agent. Code owns task IDs, state changes, and counting.",
+  "github": "https://github.com/vedang/pi-progress-bar",
+  "website": null,
+  "how_used_jev": "Jev makes the semantic judgments, such as which task is the current work. The widget uses these judgments to show progress and task health.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vedang/pi-progress-bar"
+  }
+}

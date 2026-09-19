@@ -1,0 +1,22 @@
+{
+  "id": "jevbook-jevscan",
+  "project": "jevscan",
+  "description": "Gives ape, watch, or avoid verdicts for EVM tokens, as a CLI, a library, and an MCP server. Robinhood Chain comes first.",
+  "github": "https://github.com/jevbook/jevscan",
+  "website": null,
+  "how_used_jev": "By default a local feature-based engine decides. With a key, it can call the real Jev endpoint for the verdict and risk scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jevbook/jevscan"
+  }
+}

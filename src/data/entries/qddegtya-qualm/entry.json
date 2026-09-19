@@ -1,0 +1,22 @@
+{
+  "id": "qddegtya-qualm",
+  "project": "qualm",
+  "description": "Gives a library for typed Jev decisions in which an uncertain answer has its own branch.",
+  "github": "https://github.com/qddegtya/qualm",
+  "website": null,
+  "how_used_jev": "Jev returns the decision, and the library forces code to handle the unsure case. That branch can call an LLM.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/qddegtya/qualm"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ghrezakh74-jevticktrouter",
+  "project": "JevTicketRouter",
+  "description": "Support-ticket triage app built with .NET 10 and React 19, for tickets in Persian or English.",
+  "github": "https://github.com/GhrezaKh74/JevTicktRouter",
+  "website": null,
+  "how_used_jev": "The backend asks Jev five scoped questions in one batched call. Deterministic .NET rules then make the final call on the ticket.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/GhrezaKh74/JevTicktRouter"
+  }
+}

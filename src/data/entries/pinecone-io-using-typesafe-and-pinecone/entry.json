@@ -1,0 +1,22 @@
+{
+  "id": "pinecone-io-using-typesafe-and-pinecone",
+  "project": "using-typesafe-and-pinecone",
+  "description": "Collects examples that use Jev with Pinecone. Each example has its own package and deploy.",
+  "github": "https://github.com/pinecone-io/using-typesafe-and-pinecone",
+  "website": "https://using-typesafe-and-pinecone.vercel.app",
+  "how_used_jev": "In the reranking example, Pinecone full-text search gets 200 candidates. Jev then filters and reranks them to 10 by natural-language criteria.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pinecone-io/using-typesafe-and-pinecone"
+  }
+}

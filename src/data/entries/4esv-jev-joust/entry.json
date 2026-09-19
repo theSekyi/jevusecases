@@ -1,0 +1,22 @@
+{
+  "id": "4esv-jev-joust",
+  "project": "jev-joust",
+  "description": "Runs two Jev players against each other in NES Joust. It is a work in progress, and you supply the ROM.",
+  "github": "https://github.com/4esv/jev-joust",
+  "website": null,
+  "how_used_jev": "Jev controls both players, one per controller.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/4esv/jev-joust"
+  }
+}

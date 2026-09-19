@@ -1,0 +1,22 @@
+{
+  "id": "up1-demo-jev-bug-serverity-assignment",
+  "project": "Demo Bug Assignment",
+  "description": "Assigns a severity level to bug reports in a small demo.",
+  "github": "https://github.com/up1/demo-jev-bug-serverity-assignment",
+  "website": null,
+  "how_used_jev": "It reads bug reports from a bugs folder. It asks Jev a Choice question that lists severity criteria.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/up1/demo-jev-bug-serverity-assignment"
+  }
+}

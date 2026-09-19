@@ -1,0 +1,22 @@
+{
+  "id": "abdurrobbadhon-gridwise",
+  "project": "GridWise LLM",
+  "description": "Plans a 24-hour energy schedule for a campus micro-grid from demand, solar, tariff, battery, and operator notes.",
+  "github": "https://github.com/abdurrobbadhon/gridwise",
+  "website": null,
+  "how_used_jev": "Jev checks each operator note for relevance and directive type, with a confidence. If it confidently disagrees with the LLM, the service asks the LLM once more.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/abdurrobbadhon/gridwise"
+  }
+}

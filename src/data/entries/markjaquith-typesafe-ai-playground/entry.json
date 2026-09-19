@@ -1,0 +1,22 @@
+{
+  "id": "markjaquith-typesafe-ai-playground",
+  "project": "TypeSafe AI Playground",
+  "description": "Collects Jev experiments in a Rust CLI: PHI detection, code-comment review, tone analysis, and business and occupation classification.",
+  "github": "https://github.com/markjaquith/typesafe-ai-playground",
+  "website": null,
+  "how_used_jev": "Each experiment sends text to Jev and returns typed judgments.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/markjaquith/typesafe-ai-playground"
+  }
+}

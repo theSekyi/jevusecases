@@ -1,0 +1,22 @@
+{
+  "id": "ai-suifeng-twitter-laji-fliter-chrome",
+  "project": "twitter-laji-fliter-chrome",
+  "description": "Hides porn-spam and malicious replies on X post pages in real time, as a Chrome extension. You can click to show a hidden reply.",
+  "github": "https://github.com/ai-suifeng/twitter-laji-fliter-chrome",
+  "website": null,
+  "how_used_jev": "Jev gives two probabilities per reply, for porn spam and for malicious content, from the nickname and text. Replies go in batches of up to 8.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ai-suifeng/twitter-laji-fliter-chrome"
+  }
+}

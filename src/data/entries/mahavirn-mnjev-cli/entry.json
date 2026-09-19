@@ -1,0 +1,22 @@
+{
+  "id": "mahavirn-mnjev-cli",
+  "project": "mnjev-cli",
+  "description": "Lets you ask Jev a typed question from the terminal. It is an unofficial CLI.",
+  "github": "https://github.com/mahavirn/mnjev-cli",
+  "website": null,
+  "how_used_jev": "You give a state and a question with fixed answers. Jev returns a decision with the probability of every option.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mahavirn/mnjev-cli"
+  }
+}

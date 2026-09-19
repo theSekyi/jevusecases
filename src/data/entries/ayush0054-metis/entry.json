@@ -1,0 +1,22 @@
+{
+  "id": "ayush0054-metis",
+  "project": "Metis",
+  "description": "Triages GitHub issues with a Python library, a CLI, and a reusable GitHub Action that applies labels and posts replies.",
+  "github": "https://github.com/ayush0054/metis",
+  "website": null,
+  "how_used_jev": "The classify_issue function sends the issue title and body to Jev. It returns a triage result that the Action uses for labels and replies.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ayush0054/metis"
+  }
+}

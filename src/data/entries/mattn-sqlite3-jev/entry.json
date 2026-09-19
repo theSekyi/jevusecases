@@ -1,0 +1,22 @@
+{
+  "id": "mattn-sqlite3-jev",
+  "project": "sqlite3-jev",
+  "description": "Adds SQL functions to SQLite that call Jev. It is written in C and depends only on libcurl.",
+  "github": "https://github.com/mattn/sqlite3-jev",
+  "website": null,
+  "how_used_jev": "SQL queries ask Jev yes or no, choice, and score questions about a text value. The functions return a probability, a chosen option, or a score.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mattn/sqlite3-jev"
+  }
+}

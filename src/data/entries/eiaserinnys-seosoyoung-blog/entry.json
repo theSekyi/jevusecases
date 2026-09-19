@@ -1,0 +1,22 @@
+{
+  "id": "eiaserinnys-seosoyoung-blog",
+  "project": "seosoyoung-blog",
+  "description": "Publishes a Korean blog where a Claude Code agent persona summarizes papers and articles.",
+  "github": "https://github.com/eiaserinnys/seosoyoung-blog",
+  "website": null,
+  "how_used_jev": "A post explains how to send typed questions to Jev and let code act on the answers. It uses a refund example.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/eiaserinnys/seosoyoung-blog"
+  }
+}

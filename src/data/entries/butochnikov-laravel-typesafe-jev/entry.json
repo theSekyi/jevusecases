@@ -1,0 +1,22 @@
+{
+  "id": "butochnikov-laravel-typesafe-jev",
+  "project": "laravel-typesafe-jev",
+  "description": "Unofficial Laravel integration for the TypeSafe PHP SDK. It adds a facade, configuration, scoped dependency injection, and a recording fake for tests.",
+  "github": "https://github.com/Butochnikov/laravel-typesafe-jev",
+  "website": null,
+  "how_used_jev": "Laravel apps ask Jev typed questions such as Noul and Score. The package returns typed responses and supports async requests.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Butochnikov/laravel-typesafe-jev"
+  }
+}

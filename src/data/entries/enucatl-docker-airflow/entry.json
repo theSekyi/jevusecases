@@ -1,0 +1,22 @@
+{
+  "id": "enucatl-docker-airflow",
+  "project": "docker-airflow",
+  "description": "Runs scheduled Python automation jobs in short-lived containers, including an operations analyst and a cyber analyst.",
+  "github": "https://github.com/Enucatl/docker-airflow",
+  "website": null,
+  "how_used_jev": "The operations analyst uses Jev for episode and fingerprint routing. The cyber analyst uses Jev for triage routing before a separate model reasons about alerts.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Enucatl/docker-airflow"
+  }
+}

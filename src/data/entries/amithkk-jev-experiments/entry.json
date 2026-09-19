@@ -1,0 +1,22 @@
+{
+  "id": "amithkk-jev-experiments",
+  "project": "jev-experiments",
+  "description": "Two demos. One filters noisy logs for an incident, and one scores knowledge bases and agents against a task.",
+  "github": "https://github.com/amithkk/jev-experiments",
+  "website": null,
+  "how_used_jev": "The log analyzer uses Jev to find log entries relevant to an incident. The routing lab uses Jev to score knowledge bases and agents.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/amithkk/jev-experiments"
+  }
+}

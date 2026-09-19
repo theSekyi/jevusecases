@@ -1,0 +1,22 @@
+{
+  "id": "ghalebdweikat-winnow",
+  "project": "winnow",
+  "description": "Filters large Read, Bash, and Grep results before they enter Claude Code context. Hidden text stays available on request.",
+  "github": "https://github.com/GhalebDweikat/winnow",
+  "website": null,
+  "how_used_jev": "Jev answers one yes/no question per block: is it needed for the current task. Blocks it is confident are not needed become short stubs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/GhalebDweikat/winnow"
+  }
+}

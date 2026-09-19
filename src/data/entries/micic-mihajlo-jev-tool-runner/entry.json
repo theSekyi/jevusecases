@@ -1,0 +1,22 @@
+{
+  "id": "micic-mihajlo-jev-tool-runner",
+  "project": "jev-tool-runner",
+  "description": "Selects a Codex tool call before the coding model runs. Codex then handles the code, edits, and final answer.",
+  "github": "https://github.com/micic-mihajlo/jev-tool-runner",
+  "website": null,
+  "how_used_jev": "Jev chooses a read of a source file that the user names, or hands control to the coding model. Codex runs the selected call in its own sandbox.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/micic-mihajlo/jev-tool-runner"
+  }
+}

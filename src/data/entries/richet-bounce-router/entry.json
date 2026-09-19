@@ -1,0 +1,22 @@
+{
+  "id": "richet-bounce-router",
+  "project": "bounce-router",
+  "description": "A terminal UI for Claude Code, Codex, and Muse that switches provider when usage limits are hit. It can also orchestrate worker agents.",
+  "github": "https://github.com/richet/bounce-router",
+  "website": null,
+  "how_used_jev": "With /jev on, the orchestrator uses Jev to pick a model from the available profiles. It reads each profile's cost tier and capabilities.",
+  "source_tweet": "https://x.com/richchetwynd/status/2101060882432491678",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/richet/bounce-router"
+  }
+}

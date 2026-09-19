@@ -1,0 +1,22 @@
+{
+  "id": "mrdesjardins-jev-send-guard",
+  "project": "Jev Send Guard",
+  "description": "Watches text fields in apps that you allow and checks your draft after you stop typing. It shows a colored popup next to the field and never blocks sending.",
+  "github": "https://github.com/MrDesjardins/jev-send-guard",
+  "website": null,
+  "how_used_jev": "Jev answers yes or no questions on the draft, for example whether it is curt or impolite. You can edit the questions or add your own.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MrDesjardins/jev-send-guard"
+  }
+}

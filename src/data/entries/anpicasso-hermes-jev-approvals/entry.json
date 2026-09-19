@@ -1,0 +1,22 @@
+{
+  "id": "anpicasso-hermes-jev-approvals",
+  "project": "hermes-jev-approvals",
+  "description": "A proof of concept that uses Jev as the reviewer for Hermes Agent smart command approvals. It handles approvals only.",
+  "github": "https://github.com/anpicasso/hermes-jev-approvals",
+  "website": null,
+  "how_used_jev": "Jev answers one typed Choice per command: APPROVE, DENY, or ESCALATE. The author reports 405 ms average latency against 3968 ms for a small chat LLM.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/anpicasso/hermes-jev-approvals"
+  }
+}

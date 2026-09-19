@@ -1,0 +1,22 @@
+{
+  "id": "godsboy-jev-agent-skill-router",
+  "project": "Jev Agent Skill Router",
+  "description": "A library that routes an agent request to one skill, no skill, or a review.",
+  "github": "https://github.com/GodsBoy/jev-agent-skill-router",
+  "website": null,
+  "how_used_jev": "Jev picks candidate skills in batches and answers need, ambiguity, and fit questions. The author reports 68 of 72 synthetic requests routed correctly.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/GodsBoy/jev-agent-skill-router"
+  }
+}

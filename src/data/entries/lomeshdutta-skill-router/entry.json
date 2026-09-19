@@ -1,0 +1,22 @@
+{
+  "id": "lomeshdutta-skill-router",
+  "project": "skill-router",
+  "description": "Tells Claude Code which installed skills a session needs, from the session goal. It uses skills.sh to find skills that are not installed.",
+  "github": "https://github.com/lomeshdutta/skill-router",
+  "website": null,
+  "how_used_jev": "Jev ranks all installed skills against your goal and gives a probability for each. Claude then loads the relevant skills.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lomeshdutta/skill-router"
+  }
+}

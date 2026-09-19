@@ -1,0 +1,22 @@
+{
+  "id": "tmigone-slopometer",
+  "project": "Slopometer",
+  "description": "Checks if pasted text is AI slop and shows a 0 to 100 verdict with signal bars.",
+  "github": "https://github.com/tmigone/slopometer",
+  "website": "https://slop.tmigone.com",
+  "how_used_jev": "Jev answers a 5-level score question for the verdict. In the same call, four noul questions rate hedging, filler, cliches, and specifics.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tmigone/slopometer"
+  }
+}

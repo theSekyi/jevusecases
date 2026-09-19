@@ -1,0 +1,22 @@
+{
+  "id": "erickwong-call-scope",
+  "project": "CallScope",
+  "description": "Shows one short flash card during a conversation, based on your goals and talking points. It is a Windows desktop app.",
+  "github": "https://github.com/EricKwong/call-scope",
+  "website": null,
+  "how_used_jev": "Jev handles paraphrases of your prepared questions and judges the answers from the other person. This updates the cards.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/EricKwong/call-scope"
+  }
+}

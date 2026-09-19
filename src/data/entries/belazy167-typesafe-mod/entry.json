@@ -1,0 +1,22 @@
+{
+  "id": "belazy167-typesafe-mod",
+  "project": "typesafe-mod",
+  "description": "Adds a function hook to Claude Code that ranks installed skills for each prompt and handles the agent's own questions.",
+  "github": "https://github.com/BeLazy167/typesafe-mod",
+  "website": null,
+  "how_used_jev": "Jev gives a probability for each option when the agent asks a this-or-that question. With auto-answer on, Jev answers instead.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BeLazy167/typesafe-mod"
+  }
+}

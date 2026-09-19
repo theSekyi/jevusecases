@@ -1,0 +1,22 @@
+{
+  "id": "supercorp-ai-supercov",
+  "project": "Supercov",
+  "description": "Tells a coding agent what code to fix and what to test, from a code quality score and test coverage.",
+  "github": "https://github.com/supercorp-ai/supercov",
+  "website": "https://supercov.com",
+  "how_used_jev": "Supercov asks Jev a set of yes/no questions about each source file. It then calculates the quality score from those answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/supercorp-ai/supercov"
+  }
+}

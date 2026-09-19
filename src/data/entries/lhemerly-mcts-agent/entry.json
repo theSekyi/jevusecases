@@ -1,0 +1,22 @@
+{
+  "id": "lhemerly-mcts-agent",
+  "project": "mcts-agent",
+  "description": "Runs Monte Carlo Tree Search where Gemini 3.8 Flash suggests actions, with a D3.js viewer to replay each search.",
+  "github": "https://github.com/lhemerly/mcts-agent",
+  "website": null,
+  "how_used_jev": "Jev prunes candidate actions with Noul, sets priors, and scores states. A Noul question also asks if the goal is complete.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lhemerly/mcts-agent"
+  }
+}

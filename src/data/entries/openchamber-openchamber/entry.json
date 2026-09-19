@@ -1,0 +1,22 @@
+{
+  "id": "openchamber-openchamber",
+  "project": "OpenChamber",
+  "description": "Adds an auto model and an action safety check to OpenChamber, a workspace for running and reviewing AI coding work.",
+  "github": "https://github.com/openchamber/openchamber",
+  "website": "https://openchamber.dev/",
+  "how_used_jev": "Jev picks a task category, such as trivial or research, for each coding request to route it. Jev also judges if the agent should ask before an action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/openchamber/openchamber"
+  }
+}

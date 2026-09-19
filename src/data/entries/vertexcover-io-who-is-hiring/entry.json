@@ -1,0 +1,22 @@
+{
+  "id": "vertexcover-io-who-is-hiring",
+  "project": "Who is hiring?",
+  "description": "Gives a filterable board for the monthly Hacker News 'Who is hiring?' threads. A GitHub Action updates it every 6 hours.",
+  "github": "https://github.com/vertexcover-io/who-is-hiring",
+  "website": "https://blog.vertexcover.io/who-is-hiring/",
+  "how_used_jev": "Jev answers 16 multiple-choice questions per post, such as work mode, region, salary bucket, and company stage. The board filters on these labels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vertexcover-io/who-is-hiring"
+  }
+}

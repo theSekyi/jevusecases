@@ -1,0 +1,22 @@
+{
+  "id": "ezbaze-jevies",
+  "project": "Jevies",
+  "description": "Helps you design and review your own Jev setups with Python helpers. It checks inputs and test cases against preset rules.",
+  "github": "https://github.com/Ezbaze/jevies",
+  "website": null,
+  "how_used_jev": "Jev suggests the question type, reviews instruction wording and answer options, and checks whether a question tests the intended property.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ezbaze/jevies"
+  }
+}

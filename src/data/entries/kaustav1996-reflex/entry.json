@@ -1,0 +1,22 @@
+{
+  "id": "kaustav1996-reflex",
+  "project": "Reflex",
+  "description": "Adds a reflex layer to a coding agent and personal assistant built on the Pi coding agent.",
+  "github": "https://github.com/kaustav1996/reflex",
+  "website": null,
+  "how_used_jev": "Jev judges each action, turn, utterance, and request. For example, the action gate asks if a command is destructive or touches secrets, and code applies thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kaustav1996/reflex"
+  }
+}

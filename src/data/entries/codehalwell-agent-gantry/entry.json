@@ -1,0 +1,22 @@
+{
+  "id": "codehalwell-agent-gantry",
+  "project": "Agent-Gantry",
+  "description": "Adds a JevSelector to a Python library that finds and runs the right tools for LLM agents.",
+  "github": "https://github.com/CodeHalwell/Agent-Gantry",
+  "website": "https://codehalwell.github.io/Agent-Gantry/",
+  "how_used_jev": "Jev picks the tools that fit a request with no embedder or vector store. It can return no tool when nothing fits.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CodeHalwell/Agent-Gantry"
+  }
+}

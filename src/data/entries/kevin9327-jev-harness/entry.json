@@ -1,0 +1,22 @@
+{
+  "id": "kevin9327-jev-harness",
+  "project": "JevHarness",
+  "description": "Checks a proposed agent tool call before it runs and returns execute, confirm, or reject.",
+  "github": "https://github.com/kevin9327/jev-harness",
+  "website": null,
+  "how_used_jev": "Jev returns a Choice verdict, an irreversibility Score, and an on-task Noul. Python code turns these answers into the decision.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kevin9327/jev-harness"
+  }
+}

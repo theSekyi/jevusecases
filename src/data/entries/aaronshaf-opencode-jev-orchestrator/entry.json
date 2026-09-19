@@ -1,0 +1,22 @@
+{
+  "id": "aaronshaf-opencode-jev-orchestrator",
+  "project": "opencode-jev-orchestrator",
+  "description": "An OpenCode plugin that keeps the session on a cheap sticky model so the cache stays warm.",
+  "github": "https://github.com/aaronshaf/opencode-jev-orchestrator",
+  "website": null,
+  "how_used_jev": "Jev flags hard turns. The plugin then sends those turns to stronger models in temporary child subagents.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aaronshaf/opencode-jev-orchestrator"
+  }
+}

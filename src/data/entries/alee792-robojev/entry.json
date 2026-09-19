@@ -1,0 +1,22 @@
+{
+  "id": "alee792-robojev",
+  "project": "robojev",
+  "description": "Controls a Trossen WidowX AI arm from natural language. The author calls it a one-day experiment that works on real hardware with one paper cup.",
+  "github": "https://github.com/alee792/robojev",
+  "website": null,
+  "how_used_jev": "Code renders a text situation report and asks Jev small typed judgments about 10 times a second. Code turns the answers into arm commands and enforces limits.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/alee792/robojev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "bramtechs-focus",
+  "project": "Focus",
+  "description": "Blocks distracting websites in the browser. Allowlist and blocklist overrides come first.",
+  "github": "https://github.com/bramtechs/Focus",
+  "website": null,
+  "how_used_jev": "Jev classifies each new domain through OpenRouter. If Jev says distracting above a threshold, the tab goes to a block page.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bramtechs/Focus"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "the-data-sherpa-project-blackout",
+  "project": "PROJECT: BLACKOUT",
+  "description": "A local cybersecurity lab that runs a simulated attack on a synthetic company. It shows what Jev detects and misses.",
+  "github": "https://github.com/the-data-sherpa/project_blackout",
+  "website": null,
+  "how_used_jev": "Jev assesses attack risk from synthetic telemetry as evidence arrives. Users can pause or rewind to inspect its responses.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/the-data-sherpa/project_blackout"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "pierrunoyt-jevflow",
+  "project": "JevFlow",
+  "description": "Runs a Bitcoin to Swiss franc spot bot on Kraken with market recording and offline paper replay. Dry-run is the default.",
+  "github": "https://github.com/PierrunoYT/JevFlow",
+  "website": null,
+  "how_used_jev": "The bot can use Jev decisions as an option, also in offline replay. The author says Jev compatibility still needs validation with credentials.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/PierrunoYT/JevFlow"
+  }
+}

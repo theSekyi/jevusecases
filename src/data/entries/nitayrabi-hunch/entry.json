@@ -1,0 +1,22 @@
+{
+  "id": "nitayrabi-hunch",
+  "project": "Hunch",
+  "description": "Gathers repository context for a coding agent from a codebase and a task prompt. It runs as a CLI or a coding plugin.",
+  "github": "https://github.com/NitayRabi/hunch",
+  "website": null,
+  "how_used_jev": "Jev classifies directories and file chunks for relevance. It also judges if the gathered context is enough to do the task.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NitayRabi/hunch"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "willprout-magic-8-ball",
+  "project": "Magic-8-Jev",
+  "description": "Answers your question like an 8 Ball toy on a minimal web page. It shows the measured time from click to answer.",
+  "github": "https://github.com/willprout/magic-8-ball",
+  "website": null,
+  "how_used_jev": "A Cloudflare Worker sends Jev one choice question with all twenty ball faces. The page shows the face that Jev picks, with no random fallback.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/willprout/magic-8-ball"
+  }
+}

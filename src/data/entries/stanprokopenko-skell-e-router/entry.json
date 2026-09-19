@@ -1,0 +1,22 @@
+{
+  "id": "stanprokopenko-skell-e-router",
+  "project": "skell-e-router",
+  "description": "Adds experimental Jev classification to a Python AI router built on LiteLLM.",
+  "github": "https://github.com/stanprokopenko/skell-e-router",
+  "website": null,
+  "how_used_jev": "A classify() call sends a message and typed questions to Jev and returns choices with probabilities. An example picks the team for a support message.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stanprokopenko/skell-e-router"
+  }
+}

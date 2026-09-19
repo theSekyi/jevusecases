@@ -1,0 +1,22 @@
+{
+  "id": "0xtrou-yggdrasight",
+  "project": "Yggdrasight",
+  "description": "Runs a crypto research terminal where AI agents analyze why a market moves and who moves it.",
+  "github": "https://github.com/0xtrou/yggdrasight",
+  "website": null,
+  "how_used_jev": "All judgment layers run on Jev. Six named analysts each give one long, short, or neutral Choice judgment.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xtrou/yggdrasight"
+  }
+}

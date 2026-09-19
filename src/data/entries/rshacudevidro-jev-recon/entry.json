@@ -1,0 +1,22 @@
+{
+  "id": "rshacudevidro-jev-recon",
+  "project": "jev-recon",
+  "description": "Ranks subdomains for security research triage from the command line. Plain Python computes the final priority.",
+  "github": "https://github.com/RshaCuDeVidro/jev-recon",
+  "website": null,
+  "how_used_jev": "Jev answers small yes/no questions about each asset as probabilities. Python turns them into a weighted sum and sorts the assets.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RshaCuDeVidro/jev-recon"
+  }
+}

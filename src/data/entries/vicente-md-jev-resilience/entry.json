@@ -1,0 +1,22 @@
+{
+  "id": "vicente-md-jev-resilience",
+  "project": "jev-resilience",
+  "description": "A Spring Boot starter for Spring WebFlux that detects silent failures: HTTP 200 responses whose body holds an error.",
+  "github": "https://github.com/Vicente-MD/jev-resilience",
+  "website": null,
+  "how_used_jev": "Jev evaluates each response payload, and suspected silent failures become exceptions for the circuit breaker. Any Jev error counts as no failure.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Vicente-MD/jev-resilience"
+  }
+}

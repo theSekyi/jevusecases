@@ -1,0 +1,22 @@
+{
+  "id": "jon-devlapaz-jev-me",
+  "project": "jev-me",
+  "description": "Adds a /jev-me agent skill that runs a grill-me style interrogation of your idea.",
+  "github": "https://github.com/jon-devlapaz/jev-me",
+  "website": null,
+  "how_used_jev": "Jev does the grilling on each turn.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jon-devlapaz/jev-me"
+  }
+}

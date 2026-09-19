@@ -1,0 +1,22 @@
+{
+  "id": "blackopsrepl-jev-team-calendar",
+  "project": "Jev Team Calendar",
+  "description": "Turns a folder of resumes into a qualified project team and a weekly schedule. It runs as a local web app.",
+  "github": "https://github.com/blackopsrepl/jev-team-calendar",
+  "website": null,
+  "how_used_jev": "Jev reads each resume once and credits each person with skills for the selected project. SolverForge, not Jev, assigns the work and picks the times.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/blackopsrepl/jev-team-calendar"
+  }
+}

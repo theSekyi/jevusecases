@@ -1,0 +1,22 @@
+{
+  "id": "mentioum-judgement",
+  "project": "judgement",
+  "description": "Gives agents and scripts a Go library and JSON-first CLI for the TypeSafe API. It is an unofficial client.",
+  "github": "https://github.com/Mentioum/judgement",
+  "website": null,
+  "how_used_jev": "Scripts use Jev to classify records, evaluate yes/no questions, and score content against rubrics. The agent controls the workflow.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Mentioum/judgement"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "yousudip-lizard-agent",
+  "project": "Lizard",
+  "description": "Drives a browser with deterministic code and no LLM calls. A HUD marks each chosen element in the recorded video.",
+  "github": "https://github.com/yousudip/lizard-agent",
+  "website": null,
+  "how_used_jev": "Jev picks each action and target element as an integer or enum, with a confidence. Code then performs the action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yousudip/lizard-agent"
+  }
+}

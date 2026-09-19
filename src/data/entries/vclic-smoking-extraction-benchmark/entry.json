@@ -1,0 +1,22 @@
+{
+  "id": "vclic-smoking-extraction-benchmark",
+  "project": "smoking-extraction-benchmark",
+  "description": "Compares Jev and OpenAI structured outputs on smoking history extraction from 1,000 synthetic outpatient notes.",
+  "github": "https://github.com/vclic/smoking-extraction-benchmark",
+  "website": null,
+  "how_used_jev": "Jev answers ten typed questions per note. The author reports 99.0% smoking status accuracy for Jev and 100.0% for OpenAI.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vclic/smoking-extraction-benchmark"
+  }
+}

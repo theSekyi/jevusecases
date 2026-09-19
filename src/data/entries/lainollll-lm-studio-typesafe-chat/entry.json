@@ -1,0 +1,22 @@
+{
+  "id": "lainollll-lm-studio-typesafe-chat",
+  "project": "LM Studio + TypeSafe chat",
+  "description": "A Tkinter chat app with local LM Studio replies, live visual narration, and Chatterbox TTS.",
+  "github": "https://github.com/lainollll/lm-studio-typesafe-chat",
+  "website": null,
+  "how_used_jev": "Jev classifies the tone of each message and checks drafts for stiff wording or repetition. For narration, Jev filters out frame descriptions that add no new information.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lainollll/lm-studio-typesafe-chat"
+  }
+}

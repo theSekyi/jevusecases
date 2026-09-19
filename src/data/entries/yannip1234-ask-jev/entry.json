@@ -1,0 +1,22 @@
+{
+  "id": "yannip1234-ask-jev",
+  "project": "Ask Jev",
+  "description": "Gives Astra two skills and an MCP server that check its work with Jev during a task. The checks cover plans, choices, edits, and completion claims.",
+  "github": "https://github.com/yannip1234/ask-jev",
+  "website": null,
+  "how_used_jev": "The AskJev CLI sends Noul, Choice, and Score questions to Jev. Astra reads the judgments and investigates concerns before it continues.",
+  "source_tweet": "https://x.com/yannip1234/status/2101023367277040094",
+  "author": "@yannip1234",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yannip1234/ask-jev"
+  }
+}

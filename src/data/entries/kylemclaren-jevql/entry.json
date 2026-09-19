@@ -1,0 +1,22 @@
+{
+  "id": "kylemclaren-jevql",
+  "project": "jevQL",
+  "description": "Adds semantic jev() functions to SQL on plain PostgreSQL. It works from a CLI, an HTTP and MCP node, and Go, TypeScript, and Python SDKs.",
+  "github": "https://github.com/kylemclaren/jevql",
+  "website": "https://jevql.fly.dev/",
+  "how_used_jev": "After plain SQL runs on the server, Jev makes Noul, Choice, and Score judgments about rows. The client applies the filter, sort, or group.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kylemclaren/jevql"
+  }
+}

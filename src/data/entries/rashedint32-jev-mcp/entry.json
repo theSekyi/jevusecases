@@ -1,0 +1,22 @@
+{
+  "id": "rashedint32-jev-mcp",
+  "project": "jev-mcp",
+  "description": "Gives an MCP server that exposes Jev as typed judgment tools. It ships as a Claude Code plugin.",
+  "github": "https://github.com/rashedInt32/jev-mcp",
+  "website": "https://www.npmjs.com/package/jev-mcp",
+  "how_used_jev": "Agents call tools to classify, score, check, or ask batched questions. Jev returns a typed answer and a probability distribution.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rashedInt32/jev-mcp"
+  }
+}

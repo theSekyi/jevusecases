@@ -1,0 +1,22 @@
+{
+  "id": "nyarlathoteppppp-pi-jev-context",
+  "project": "pi-jev-context",
+  "description": "Trims long tool output for the pi coding agent before it enters the context. Omitted lines can be recalled.",
+  "github": "https://github.com/Nyarlathoteppppp/pi-jev-context",
+  "website": null,
+  "how_used_jev": "Jev selects the key lines of a long tool output. The tool keeps them verbatim when the output arrives, before it is cached.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Nyarlathoteppppp/pi-jev-context"
+  }
+}

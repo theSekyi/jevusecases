@@ -1,0 +1,22 @@
+{
+  "id": "brunoomoniz-polymarket-btc-5m-agent",
+  "project": "Jev BTC 5m Engine",
+  "description": "Trades Polymarket's 5-minute Bitcoin Up or Down market. Code prices each window, and paper mode is the default.",
+  "github": "https://github.com/BrunooMoniz/polymarket-btc-5m-agent",
+  "website": null,
+  "how_used_jev": "Jev scores the market regime to adjust volatility and can veto anomalous windows. It also vetoes a trade when its direction disagrees with the model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BrunooMoniz/polymarket-btc-5m-agent"
+  }
+}

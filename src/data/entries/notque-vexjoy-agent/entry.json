@@ -1,0 +1,22 @@
+{
+  "id": "notque-vexjoy-agent",
+  "project": "VexJoy Agent",
+  "description": "Adds a /d router to a toolkit that sends plain-English requests to specialist agents.",
+  "github": "https://github.com/notque/vexjoy-agent",
+  "website": "https://vexjoy.com",
+  "how_used_jev": "One Jev call picks the agent, skill, and pipeline for a request. No routing manifest goes into the context.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/notque/vexjoy-agent"
+  }
+}

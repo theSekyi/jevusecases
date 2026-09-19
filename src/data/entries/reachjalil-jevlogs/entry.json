@@ -1,0 +1,22 @@
+{
+  "id": "reachjalil-jevlogs",
+  "project": "jevlogs",
+  "description": "Scores OpenTelemetry logs before they go to a more expensive LLM analysis. It wraps an existing exporter.",
+  "github": "https://github.com/reachjalil/jevlogs",
+  "website": null,
+  "how_used_jev": "Jev scores each log for diagnostic value, priority, and routing. The result decides if the log goes to deeper analysis.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/reachjalil/jevlogs"
+  }
+}

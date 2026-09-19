@@ -1,0 +1,22 @@
+{
+  "id": "shakulmittal22-jev-resume",
+  "project": "Folio",
+  "description": "Ranks resumes against a job-specific rubric that a recruiter approves. People make the Shortlist, Maybe, or Pass decision.",
+  "github": "https://github.com/SHAKULMITTAL22/jev-resume",
+  "website": null,
+  "how_used_jev": "Jev evaluates each full resume against the approved rubric and returns decisions. Code then computes the final score from those decisions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SHAKULMITTAL22/jev-resume"
+  }
+}

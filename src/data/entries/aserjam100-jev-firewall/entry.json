@@ -1,0 +1,22 @@
+{
+  "id": "aserjam100-jev-firewall",
+  "project": "Jev Firewall",
+  "description": "Runs a small JavaScript coding agent that tests whether Jev routing can reduce calls to frontier models. OpenAI writes the code edits.",
+  "github": "https://github.com/aserjam100/jev-firewall",
+  "website": null,
+  "how_used_jev": "At each step, Jev picks the next action and says whether a frontier model or more context is needed. It also says when to stop.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aserjam100/jev-firewall"
+  }
+}

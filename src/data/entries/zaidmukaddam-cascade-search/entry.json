@@ -1,0 +1,22 @@
+{
+  "id": "zaidmukaddam-cascade-search",
+  "project": "cascade-search",
+  "description": "Parses search queries in the browser with a small model that gives each word a role and a confidence. It also handles chart queries.",
+  "github": "https://github.com/zaidmukaddam/cascade-search",
+  "website": "https://cascade.scira.ai",
+  "how_used_jev": "Only the words the small model is unsure about go to Jev for a typed decision. Both tiers feed one compiler that returns the same filter type.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zaidmukaddam/cascade-search"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "stbenjam-jev-drums",
+  "project": "Jev Drums",
+  "description": "Makes drum patterns from a mood prompt in a small browser drum machine. It has six drum voices and an editable 16-step sequencer.",
+  "github": "https://github.com/stbenjam/jev-drums",
+  "website": null,
+  "how_used_jev": "Jev answers one choice question per step and track: off, hit, or accent. The app samples the returned probabilities to build the pattern.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stbenjam/jev-drums"
+  }
+}

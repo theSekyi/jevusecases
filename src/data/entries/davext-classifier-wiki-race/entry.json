@@ -1,0 +1,22 @@
+{
+  "id": "davext-classifier-wiki-race",
+  "project": "Classifier Wiki Race",
+  "description": "Races from one Wikipedia article to another in the browser with no LLM in the loop. Each step shows the state, questions, and probabilities.",
+  "github": "https://github.com/davext/classifier-wiki-race",
+  "website": null,
+  "how_used_jev": "On each hop, Jev answers two Choice questions: which operation to do and which link to follow.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/davext/classifier-wiki-race"
+  }
+}

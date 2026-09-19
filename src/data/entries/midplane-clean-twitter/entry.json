@@ -1,0 +1,22 @@
+{
+  "id": "midplane-clean-twitter",
+  "project": "Clean Twitter",
+  "description": "Filters AI slop, rage bait, and ads out of your X timeline. It is a browser extension.",
+  "github": "https://github.com/midplane/clean-twitter",
+  "website": null,
+  "how_used_jev": "Each post goes to Jev with a few yes/no questions. The extension hides a post when a probability is above its threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/midplane/clean-twitter"
+  }
+}

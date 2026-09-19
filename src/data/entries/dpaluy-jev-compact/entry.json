@@ -1,0 +1,22 @@
+{
+  "id": "dpaluy-jev-compact",
+  "project": "Jev Compact",
+  "description": "Prunes agent context by keeping or dropping tool traces, without summaries. Pi support works now, and Codex and Cursor are planned.",
+  "github": "https://github.com/dpaluy/jev-compact",
+  "website": null,
+  "how_used_jev": "Jev scores each tool trace. A retention policy uses the scores to keep or drop the trace, and an audit log records the result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dpaluy/jev-compact"
+  }
+}

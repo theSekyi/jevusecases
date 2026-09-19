@@ -1,0 +1,22 @@
+{
+  "id": "kevin9327-jev-master",
+  "project": "jev-master",
+  "description": "Collects small Python apps that keep control flow in code and call Jev for typed decisions.",
+  "github": "https://github.com/kevin9327/jev-master",
+  "website": null,
+  "how_used_jev": "Each app asks Jev Choice, Score, and Noul questions in one call, for example about a support ticket. Python code then picks the route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kevin9327/jev-master"
+  }
+}

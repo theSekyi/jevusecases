@@ -1,0 +1,22 @@
+{
+  "id": "yefoi-litigmeter",
+  "project": "Litigmeter",
+  "description": "Tracks the quarterly litigation rate for each Spanish autonomous community from CGPJ press releases. A Next.js site shows trends and maps.",
+  "github": "https://github.com/yefoi/Litigmeter",
+  "website": "https://litigmeter.vercel.app",
+  "how_used_jev": "Jev classifies trend, severity, and newsworthiness for each community and quarter through the AI SDK. The site builds an editorial summary from them.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yefoi/Litigmeter"
+  }
+}

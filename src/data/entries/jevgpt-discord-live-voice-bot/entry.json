@@ -1,0 +1,22 @@
+{
+  "id": "jevgpt-discord-live-voice-bot",
+  "project": "Discord Live Voice Bot",
+  "description": "A Discord bot that talks in real time in a voice channel. It runs server tools behind a voice-based owner gate.",
+  "github": "https://github.com/jevgpt/discord-live-voice-bot",
+  "website": null,
+  "how_used_jev": "Jev judges each line: was it said to the bot, and is it a request, question, or banter. The owner gate also asks Jev when keywords do not match.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jevgpt/discord-live-voice-bot"
+  }
+}

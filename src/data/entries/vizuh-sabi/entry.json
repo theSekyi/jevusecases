@@ -1,0 +1,22 @@
+{
+  "id": "vizuh-sabi",
+  "project": "Sabi",
+  "description": "Picks the model, reasoning effort, and provider for each inference round of a coding agent. It runs as a Command Code mod or a local proxy.",
+  "github": "https://github.com/vizuh/sabi",
+  "website": "https://www.npmjs.com/package/@vizuh/sabi",
+  "how_used_jev": "The local proxy can call Jev as an optional judge when it infers failures from text. It caches Jev verdicts for each context generation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vizuh/sabi"
+  }
+}

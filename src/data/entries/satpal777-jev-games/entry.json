@@ -1,0 +1,22 @@
+{
+  "id": "satpal777-jev-games",
+  "project": "jev-games",
+  "description": "Lets you play Tic-Tac-Toe against an AI in the browser, built with Bun and TypeScript.",
+  "github": "https://github.com/Satpal777/jev-games",
+  "website": null,
+  "how_used_jev": "The default AI asks TypeSafe's Jev for its move through a Bun API route. Local move logic or a random fallback can replace it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Satpal777/jev-games"
+  }
+}

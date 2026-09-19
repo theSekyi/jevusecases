@@ -1,0 +1,22 @@
+{
+  "id": "thalysguimaraes-tg-router",
+  "project": "tg-router",
+  "description": "Routes each Oh My Pi turn to the cheapest qualified model across your subscriptions and paid endpoints.",
+  "github": "https://github.com/thalysguimaraes/tg-router",
+  "website": null,
+  "how_used_jev": "Rules set a capability floor for each task. When a key is present, Jev clarifies the phase and can raise the floor, never lower it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thalysguimaraes/tg-router"
+  }
+}

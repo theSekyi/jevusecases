@@ -1,0 +1,22 @@
+{
+  "id": "trophee-bot-typesafe-oracles",
+  "project": "typesafe-oracles",
+  "description": "A measurement rig that tests where Jev's Choice, Score, and Noul answers do better than an LLM call.",
+  "github": "https://github.com/trophee-bot/typesafe-oracles",
+  "website": null,
+  "how_used_jev": "Probes ask Jev real questions on real data and record verdicts, confidences, and latencies. Some arms compare Jev with Claude Haiku.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/trophee-bot/typesafe-oracles"
+  }
+}

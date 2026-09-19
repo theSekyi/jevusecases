@@ -1,0 +1,22 @@
+{
+  "id": "truevis-classifier",
+  "project": "classifier",
+  "description": "Recommends which Texas statute databases to search for a legal research prompt. It is a bare-bones Python demo.",
+  "github": "https://github.com/truevis/classifier",
+  "website": null,
+  "how_used_jev": "It sends the prompt to Jev through the OpenRouter Decisions API. Jev answers a yes/no question for each database.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/truevis/classifier"
+  }
+}

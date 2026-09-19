@@ -1,0 +1,19 @@
+{
+  "id": "jev-arcade-vercel-app-jev-arcade",
+  "project": "jev arcade",
+  "description": "A 1v1 first-person shooter game in the style of Krunker, with Jev as a player.",
+  "github": null,
+  "website": "https://jev-arcade.vercel.app/duel",
+  "how_used_jev": "Jev decides when to move, aim, aim down sights, fire, and jump.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

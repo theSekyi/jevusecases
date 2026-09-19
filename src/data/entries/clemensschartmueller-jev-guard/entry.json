@@ -1,0 +1,22 @@
+{
+  "id": "clemensschartmueller-jev-guard",
+  "project": "jev-guard",
+  "description": "Checks tool calls in Claude Code, Codex CLI, and Antigravity before they run, to block or escalate risky ones.",
+  "github": "https://github.com/ClemensSchartmueller/jev-guard",
+  "website": null,
+  "how_used_jev": "After local boundary and sensitive-file checks, Jev evaluates each tool call for blast radius, reversibility, and destructive potential.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ClemensSchartmueller/jev-guard"
+  }
+}

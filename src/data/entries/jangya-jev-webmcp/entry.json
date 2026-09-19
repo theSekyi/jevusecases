@@ -1,0 +1,22 @@
+{
+  "id": "jangya-jev-webmcp",
+  "project": "Jev WebMCP",
+  "description": "A Chrome side-panel agent for websites that expose WebMCP tools. It is a prototype.",
+  "github": "https://github.com/jangya/jev-webmcp",
+  "website": null,
+  "how_used_jev": "Jev chooses which WebMCP tools to run and when the goal is done or blocked. An optional helper fills argument values.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jangya/jev-webmcp"
+  }
+}

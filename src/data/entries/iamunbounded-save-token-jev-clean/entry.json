@@ -1,0 +1,22 @@
+{
+  "id": "iamunbounded-save-token-jev-clean",
+  "project": "save-token-jev",
+  "description": "Compacts the context of coding agents such as Codex CLI and OpenCode. User and assistant text stays verbatim.",
+  "github": "https://github.com/IAmUnbounded/save-token-jev-clean",
+  "website": null,
+  "how_used_jev": "For each tool call, Jev decides to keep its full result, keep a shortened result, or remove it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/IAmUnbounded/save-token-jev-clean"
+  }
+}

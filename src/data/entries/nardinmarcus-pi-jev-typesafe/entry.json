@@ -1,0 +1,22 @@
+{
+  "id": "nardinmarcus-pi-jev-typesafe",
+  "project": "pi-jev-typesafe",
+  "description": "Adds a jev_ask tool and a /jev command to Pi, with budget caps.",
+  "github": "https://github.com/nardinmarcus/pi-jev-typesafe",
+  "website": null,
+  "how_used_jev": "The tool sends batched Choice, Score, and Noul questions to Jev. It checks the questions for known errors before it sends them.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nardinmarcus/pi-jev-typesafe"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ryankamiri-fast-weight-memory",
+  "project": "Fast-Weight Memory",
+  "description": "Adds fast-weight memory to dense Qwen3 models in PyTorch, with training and LongMemEval evaluation.",
+  "github": "https://github.com/ryankamiri/fast-weight-memory",
+  "website": null,
+  "how_used_jev": "Jev can act as an experimental judge for evaluation. Its judgments go to a separate file, so the same predictions can be graded by both judges.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ryankamiri/fast-weight-memory"
+  }
+}

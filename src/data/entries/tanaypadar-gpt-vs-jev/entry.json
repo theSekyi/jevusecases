@@ -1,0 +1,22 @@
+{
+  "id": "tanaypadar-gpt-vs-jev",
+  "project": "gpt-vs-jev",
+  "description": "A web demo that sends the same input to GPT and to Jev and shows the outputs side by side.",
+  "github": "https://github.com/TanayPadar/gpt-vs-jev",
+  "website": null,
+  "how_used_jev": "Jev answers yes/no Noul questions about the input, such as if a human should review it. It returns the probability of yes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TanayPadar/gpt-vs-jev"
+  }
+}

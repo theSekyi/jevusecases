@@ -1,0 +1,22 @@
+{
+  "id": "avshalomd-longjev",
+  "project": "longjev",
+  "description": "Lets Jev take inputs longer than its 32K-token limit through the same system_one call.",
+  "github": "https://github.com/avshalomd/longjev",
+  "website": null,
+  "how_used_jev": "Jev scores every piece of the input, and the best pieces are kept. Jev then answers the questions over what is left.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/avshalomd/longjev"
+  }
+}

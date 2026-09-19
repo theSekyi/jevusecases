@@ -1,0 +1,22 @@
+{
+  "id": "opaielsheikh-typesafe-migration-guard",
+  "project": "Typesafe Migration Guard",
+  "description": "Reviews database migrations in CI/CD pipelines before they reach a Supabase PostgreSQL database.",
+  "github": "https://github.com/opaielsheikh/typesafe-migration-guard",
+  "website": null,
+  "how_used_jev": "Jev evaluates each DDL statement. The guard blocks destructive operations, such as DROP TABLE, with an HTTP 403 response.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/opaielsheikh/typesafe-migration-guard"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "harukishimo-ewo-order",
+  "project": "Atelier",
+  "description": "Takes painting orders in Japanese, from a customer chat to explicit approval and production management.",
+  "github": "https://github.com/harukishimo/ewo_order",
+  "website": "https://ewo-order.vercel.app",
+  "how_used_jev": "Jev judges size and style from the customer chat and rates urgency. The app uses urgency to set production priority.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/harukishimo/ewo_order"
+  }
+}

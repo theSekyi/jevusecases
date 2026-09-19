@@ -1,0 +1,22 @@
+{
+  "id": "jagenaujagenau-ground-truth",
+  "project": "Ground Truth",
+  "description": "A browser extension that rates the political lean of the article in your current tab.",
+  "github": "https://github.com/jagenaujagenau/ground-truth",
+  "website": "https://groundtruth.click/",
+  "how_used_jev": "One Jev call gives five judgments, including bias, piece type, topic, and loaded language. Jev sees only the title and text, not the source.",
+  "source_tweet": "https://x.com/jagenaujagenau/status/2100622352333574460",
+  "author": "@jagenaujagenau",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jagenaujagenau/ground-truth"
+  }
+}

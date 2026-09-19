@@ -1,0 +1,22 @@
+{
+  "id": "dryob-hermes-jev-context-engine",
+  "project": "hermes-jev-context-engine",
+  "description": "Compacts Hermes Agent context without summaries by removing or truncating stale tool calls. It is a Python port of fast-jev-compaction.",
+  "github": "https://github.com/dryob/hermes-jev-context-engine",
+  "website": null,
+  "how_used_jev": "Jev scores each tool call and its full output. The engine keeps them, truncates the result, or drops both.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dryob/hermes-jev-context-engine"
+  }
+}

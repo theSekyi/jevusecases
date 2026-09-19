@@ -1,0 +1,22 @@
+{
+  "id": "tripathiarpan20-openarm-jev-lab",
+  "project": "openarm-jev-lab",
+  "description": "Runs a local robot workcell demo in which an arm follows a natural-language mission.",
+  "github": "https://github.com/tripathiarpan20/openarm-jev-lab",
+  "website": null,
+  "how_used_jev": "Jev on Cloudflare picks each pick-and-place action from the structured scene. Inverse kinematics moves the arm, with no rule-based fallback.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tripathiarpan20/openarm-jev-lab"
+  }
+}

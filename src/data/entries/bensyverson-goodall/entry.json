@@ -1,0 +1,22 @@
+{
+  "id": "bensyverson-goodall",
+  "project": "goodall",
+  "description": "Adds a Jev client to goodall, a Go agent loop library. The client works beside the model providers as a tool or a hook.",
+  "github": "https://github.com/bensyverson/goodall",
+  "website": null,
+  "how_used_jev": "The triage example asks Jev about each email. It asks for its department, if it waits on a reply, and if it waits today.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bensyverson/goodall"
+  }
+}

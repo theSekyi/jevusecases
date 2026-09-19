@@ -1,0 +1,22 @@
+{
+  "id": "oxwen11-awesome-jev",
+  "project": "Awesome Jev (oxwen11)",
+  "description": "Curated list of projects built with Jev, with a line on what Jev does inside each one.",
+  "github": "https://github.com/oxwen11/awesome-jev",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/oxwen11/awesome-jev"
+  }
+}

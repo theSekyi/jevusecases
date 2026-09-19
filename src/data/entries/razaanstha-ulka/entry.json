@@ -1,0 +1,22 @@
+{
+  "id": "razaanstha-ulka",
+  "project": "Ulka",
+  "description": "An experimental browser-agent extension that runs locally with your own AI Gateway key.",
+  "github": "https://github.com/razaanstha/ulka",
+  "website": null,
+  "how_used_jev": "Jev selects constrained actions from observed page elements. FX plans subgoals, and Ulka validates and runs the actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/razaanstha/ulka"
+  }
+}

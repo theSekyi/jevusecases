@@ -1,0 +1,22 @@
+{
+  "id": "tontoko-jev-browser",
+  "project": "Jev Browser",
+  "description": "Automates browsers through one Playwright core with a persistent CLI, an MCP server, and a typed SDK.",
+  "github": "https://github.com/tontoko/jev-browser",
+  "website": null,
+  "how_used_jev": "For natural-language operations, Jev chooses from supplied page element candidates. It does not generate JavaScript or selectors.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tontoko/jev-browser"
+  }
+}

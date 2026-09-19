@@ -1,0 +1,22 @@
+{
+  "id": "sujay399-typesafe-oncall-plugin",
+  "project": "typesafe-oncall",
+  "description": "A TypeSafe System One plugin with decision packs for on-call, support, moderation, guardrails, model routing, and ranking.",
+  "github": "https://github.com/sujay399/typesafe-oncall-plugin",
+  "website": null,
+  "how_used_jev": "Each pack asks Jev narrow typed questions, and code owns the control flow. A generic pack accepts your own question JSON.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sujay399/typesafe-oncall-plugin"
+  }
+}

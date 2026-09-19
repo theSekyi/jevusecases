@@ -1,0 +1,22 @@
+{
+  "id": "rajdhakad9826-routekit",
+  "project": "RouteKit",
+  "description": "Selects a model for each task of an AI agent from the LLMs you already use.",
+  "github": "https://github.com/rajdhakad9826/routeKit",
+  "website": null,
+  "how_used_jev": "Jev estimates the requirements of the task. A deterministic policy engine then uses these requirements to select the final model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rajdhakad9826/routeKit"
+  }
+}

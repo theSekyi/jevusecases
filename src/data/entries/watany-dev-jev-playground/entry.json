@@ -1,0 +1,22 @@
+{
+  "id": "watany-dev-jev-playground",
+  "project": "Jev Playground (Codex hooks)",
+  "description": "Connects Jev to Codex hooks for an Auto Mode, with setup, logs, and a design document. The repo also has small sample apps.",
+  "github": "https://github.com/watany-dev/jev-playground",
+  "website": null,
+  "how_used_jev": "Codex hooks send decisions to Jev in Auto Mode. Samples show Jev's probability distribution for the 47 prefectures and ask it for RGB values as scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/watany-dev/jev-playground"
+  }
+}

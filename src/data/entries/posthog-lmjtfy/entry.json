@@ -1,0 +1,22 @@
+{
+  "id": "posthog-lmjtfy",
+  "project": "lmjtfy",
+  "description": "Lets anyone ask Jev a yes/no question on a public page and get a probability.",
+  "github": "https://github.com/PostHog/lmjtfy",
+  "website": null,
+  "how_used_jev": "Parallel Jev judgments first check if the question is allowed. Then Jev answers the question as a probability shown on a scale.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/PostHog/lmjtfy"
+  }
+}

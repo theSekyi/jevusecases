@@ -1,0 +1,22 @@
+{
+  "id": "kyotofin-tax-doc-classifier",
+  "project": "tax-doc-classifier",
+  "description": "Classifies tax document pages into 261 IRS forms and 7 page kinds. The classifier is a JSON file of form descriptions.",
+  "github": "https://github.com/kyotofin/tax-doc-classifier",
+  "website": null,
+  "how_used_jev": "Jev reads each page's text and returns a probability over the forms and page kinds. The authors report $0.001 per page, 34× cheaper than their earlier LLM pipeline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kyotofin/tax-doc-classifier"
+  }
+}

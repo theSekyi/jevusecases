@@ -1,0 +1,22 @@
+{
+  "id": "019ec6e2-pi-jev-compact",
+  "project": "pi-jev-compact",
+  "description": "Replaces the LLM-written compaction summary in the pi coding agent with pruning. Kept text stays word for word.",
+  "github": "https://github.com/019ec6e2/pi-jev-compact",
+  "website": null,
+  "how_used_jev": "One Jev request scores every past tool call. The extension drops stale calls and truncates results that are no longer needed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/019ec6e2/pi-jev-compact"
+  }
+}

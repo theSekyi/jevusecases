@@ -1,0 +1,22 @@
+{
+  "id": "4esv-jev-eval",
+  "project": "jev-eval",
+  "description": "Compares Jev with GPT-5.6 Terra on three labeled classification tasks, with 300 items each.",
+  "github": "https://github.com/4esv/jev-eval",
+  "website": null,
+  "how_used_jev": "The author reports median latency of 0.20 s for Jev versus 1.04 s for Terra on intent. Accuracy there is 0.78 versus 0.85.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/4esv/jev-eval"
+  }
+}
