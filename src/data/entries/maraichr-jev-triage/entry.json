@@ -1,0 +1,22 @@
+{
+  "id": "maraichr-jev-triage",
+  "project": "jev-triage",
+  "description": "A case board prototype for cross-border B2B trade cases, such as customs holds, short payments, and sanctions hits.",
+  "github": "https://github.com/maraichr/jev-triage",
+  "website": null,
+  "how_used_jev": "Jev, called through OpenRouter, classifies, prioritizes, routes, and flags each new case. Deterministic rules and humans then take over.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maraichr/jev-triage"
+  }
+}

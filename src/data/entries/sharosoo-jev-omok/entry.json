@@ -1,0 +1,22 @@
+{
+  "id": "sharosoo-jev-omok",
+  "project": "jev-omok",
+  "description": "Plays 3D Gomoku in the browser against an AI opponent on a WebGL board.",
+  "github": "https://github.com/sharosoo/jev-omok",
+  "website": null,
+  "how_used_jev": "A deterministic engine decides tactics. Jev picks the non-forced moves and writes the AI's commentary.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sharosoo/jev-omok"
+  }
+}

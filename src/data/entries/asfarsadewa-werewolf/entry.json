@@ -1,0 +1,22 @@
+{
+  "id": "asfarsadewa-werewolf",
+  "project": "werewolf",
+  "description": "A Werewolf game against seven villagers whose suspicions are visible numbers. The villagers speak from authored lines.",
+  "github": "https://github.com/asfarsadewa/werewolf",
+  "website": null,
+  "how_used_jev": "Jev answers about twenty typed questions on each player message in one request. Code uses the probabilities to update each villager's suspicion.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/asfarsadewa/werewolf"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hide-g-magi-system-on-jev",
+  "project": "MAGI SYSTEM on Jev",
+  "description": "Recreates the MAGI system from Neon Genesis Evangelion. Three sages judge your question and reach a conclusion.",
+  "github": "https://github.com/hide-G/magi-system-on-jev",
+  "website": null,
+  "how_used_jev": "Each sage asks Jev to judge the question independently. The site then takes a majority vote over the calibrated probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hide-G/magi-system-on-jev"
+  }
+}

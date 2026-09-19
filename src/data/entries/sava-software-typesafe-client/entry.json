@@ -1,0 +1,22 @@
+{
+  "id": "sava-software-typesafe-client",
+  "project": "TypeSafe Client",
+  "description": "A Java client for the TypeSafe System One API, with a recording and replay decorator.",
+  "github": "https://github.com/sava-software/typesafe-client",
+  "website": null,
+  "how_used_jev": "It sends state and typed Choice, Score, or Noul questions to Jev and returns calibrated probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sava-software/typesafe-client"
+  }
+}

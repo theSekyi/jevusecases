@@ -1,0 +1,22 @@
+{
+  "id": "tylerjharden-ailerix",
+  "project": "Ailerix",
+  "description": "Routes each model request to a provider through one public slug, ailerix/auto, as an OpenRouter alternative.",
+  "github": "https://github.com/tylerjharden/ailerix",
+  "website": "https://ailerix.vercel.app",
+  "how_used_jev": "Jev classifies the task family of each request. A cost-per-task Pareto walker then picks the provider route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tylerjharden/ailerix"
+  }
+}

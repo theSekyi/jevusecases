@@ -1,0 +1,22 @@
+{
+  "id": "zaferayan-jev-example",
+  "project": "jev-example",
+  "description": "A small type-safe example that classifies a customer support message. A second script does the same task with Claude Opus 5.",
+  "github": "https://github.com/zaferayan/jev-example",
+  "website": null,
+  "how_used_jev": "It asks Jev three typed questions about the message in one request. The code branches on the answers, such as which team gets the message.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zaferayan/jev-example"
+  }
+}

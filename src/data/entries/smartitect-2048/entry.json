@@ -1,0 +1,22 @@
+{
+  "id": "smartitect-2048",
+  "project": "2048",
+  "description": "Runs the 2048 game in Python with a browser UI where you can watch an AI player choose moves.",
+  "github": "https://github.com/Smartitect/2048",
+  "website": null,
+  "how_used_jev": "Jev gets the board as JSON with what each move would do and picks a direction. On API errors or low certainty, the game falls back to corner rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Smartitect/2048"
+  }
+}

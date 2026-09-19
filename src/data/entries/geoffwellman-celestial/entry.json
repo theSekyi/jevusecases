@@ -1,0 +1,22 @@
+{
+  "id": "geoffwellman-celestial",
+  "project": "Celestial",
+  "description": "Coordinates coding agents in workspaces and shows their work as orders on an isometric factory floor dashboard.",
+  "github": "https://github.com/geoffwellman/celestial",
+  "website": null,
+  "how_used_jev": "Its optional router can use Jev to classify each chat sentence. Below 0.6 confidence, the top three routes become options.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/geoffwellman/celestial"
+  }
+}

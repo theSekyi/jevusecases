@@ -1,0 +1,22 @@
+{
+  "id": "thehumanworks-jevgrep",
+  "project": "jevgrep",
+  "description": "Searches a codebase with a plain-language question and returns matching files and line numbers. It is a single Rust binary.",
+  "github": "https://github.com/thehumanworks/jevgrep",
+  "website": null,
+  "how_used_jev": "Each file chunk goes to Jev with one question per line, and Jev returns a probability for each line. The author reports about 2 seconds and 1 cent for 9,000 lines.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thehumanworks/jevgrep"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "conraddavisjr-ai-evals-cafe",
+  "project": "Stardust Cafe",
+  "description": "An evaluation harness for multi-agent pipelines, shown as a Stardew-style cafe. Each staff member is a sub-agent with its own model and MCP tools.",
+  "github": "https://github.com/conraddavisjr/ai-evals-cafe",
+  "website": null,
+  "how_used_jev": "Jev, through Vercel AI Gateway, is one model you can assign to a role. The blinded judge asks Jev or any LLM the same questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/conraddavisjr/ai-evals-cafe"
+  }
+}

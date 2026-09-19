@@ -1,0 +1,22 @@
+{
+  "id": "rhighs-jev-code",
+  "project": "jev-code",
+  "description": "A coding agent and decision CLI driven by Jev. A trace command lists recent decisions with their alternatives.",
+  "github": "https://github.com/rhighs/jev-code",
+  "website": null,
+  "how_used_jev": "Jev selects options, gives probabilities, or gives scores, and jev-code builds code from those selections. A decide command exposes Jev directly.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rhighs/jev-code"
+  }
+}

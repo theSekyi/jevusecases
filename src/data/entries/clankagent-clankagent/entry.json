@@ -1,0 +1,22 @@
+{
+  "id": "clankagent-clankagent",
+  "project": "pi-jev",
+  "description": "An extension that lets a Pi agent watch process output for conditions it supplies. A second extension suggests an applicable skill.",
+  "github": "https://github.com/clankagent/clankagent",
+  "website": null,
+  "how_used_jev": "Jev checks process output against the agent's conditions, such as a server that is ready or a port collision. Jev also picks an applicable skill, or none.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/clankagent/clankagent"
+  }
+}

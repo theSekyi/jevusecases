@@ -1,0 +1,22 @@
+{
+  "id": "ashaazami-river-run-typesafe",
+  "project": "River Run (TypeSafe)",
+  "description": "A vertical-scrolling river shooter in Python and pygame-ce, inspired by River Raid.",
+  "github": "https://github.com/ashaazami/river-run-typesafe",
+  "website": null,
+  "how_used_jev": "An AI pilot module lets Jev fly the plane in real time.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ashaazami/river-run-typesafe"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "kxzk-typesafe-jev-drone-demo",
+  "project": "Jev Flight Lab",
+  "description": "Simulates a drone in Three.js with a Python backend and shows each navigation decision live.",
+  "github": "https://github.com/kxzk/typesafe-jev-drone-demo",
+  "website": null,
+  "how_used_jev": "Jev chooses each move from short candidates such as advance, detour, climb, or hover. It also estimates obstruction with a Noul question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kxzk/typesafe-jev-drone-demo"
+  }
+}

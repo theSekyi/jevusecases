@@ -1,0 +1,22 @@
+{
+  "id": "cheshiai-cheshi",
+  "project": "Cheshi",
+  "description": "A macOS workspace for OpenAI Codex with CodeGraph code exploration, Git, Ghostty terminals, and Apple Notes.",
+  "github": "https://github.com/CheshiAI/Cheshi",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CheshiAI/Cheshi"
+  }
+}

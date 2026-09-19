@@ -1,0 +1,22 @@
+{
+  "id": "daraskme-darask-harness",
+  "project": "darask-harness",
+  "description": "A DeepSeek Harness plugin that combines AI accounts, model routing, Grok search, remote PC access, and Jev evaluation.",
+  "github": "https://github.com/daraskme/darask-harness",
+  "website": null,
+  "how_used_jev": "DeepSeek V4 Pro leads and sends typed classification, routing, scoring, and checks to Jev through Vercel AI Gateway.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/daraskme/darask-harness"
+  }
+}

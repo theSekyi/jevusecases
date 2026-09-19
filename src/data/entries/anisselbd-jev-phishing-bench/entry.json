@@ -1,0 +1,22 @@
+{
+  "id": "anisselbd-jev-phishing-bench",
+  "project": "jev-phishing-bench",
+  "description": "Compares Jev with Claude Haiku 4.5 on 2 000 phishing emails for accuracy, calibration, latency, and cost.",
+  "github": "https://github.com/anisselbd/jev-phishing-bench",
+  "website": null,
+  "how_used_jev": "Jev decides if an email agent should click the link in each email. The author reports 62.6% accuracy for Jev and 81.3% for Claude Haiku 4.5.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/anisselbd/jev-phishing-bench"
+  }
+}

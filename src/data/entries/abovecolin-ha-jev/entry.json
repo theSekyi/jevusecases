@@ -1,0 +1,22 @@
+{
+  "id": "abovecolin-ha-jev",
+  "project": "Jev for Home Assistant",
+  "description": "Connects Jev to Home Assistant, so you can ask questions about your house and automate on the answers.",
+  "github": "https://github.com/AboveColin/HA-Jev",
+  "website": null,
+  "how_used_jev": "Jev answers typed questions about entities, devices, or areas. The answers become sensors, automation actions, and an Assist conversation agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AboveColin/HA-Jev"
+  }
+}

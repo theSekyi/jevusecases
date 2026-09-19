@@ -1,0 +1,22 @@
+{
+  "id": "smammadov1994-signal98",
+  "project": "signal98",
+  "description": "An error tracking library with a Windows 98 style monitor that shows raw events, verdicts, and pages.",
+  "github": "https://github.com/smammadov1994/Signal98",
+  "website": null,
+  "how_used_jev": "With a key, Jev judges each error event as urgent, user-facing, or novel. The monitor then pages or suppresses it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/smammadov1994/Signal98"
+  }
+}

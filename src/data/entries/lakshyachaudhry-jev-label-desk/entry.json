@@ -1,0 +1,22 @@
+{
+  "id": "lakshyachaudhry-jev-label-desk",
+  "project": "Jev Label Desk",
+  "description": "Labels every row of an uploaded CSV or JSONL file against a rubric you define. It exports a labeled CSV and can compare to gold labels.",
+  "github": "https://github.com/LakshyaChaudhry/jev-label-desk",
+  "website": null,
+  "how_used_jev": "Jev labels each row through the OpenRouter Decisions API with a yes/no, choice, or score question. The label and confidence go into the export.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LakshyaChaudhry/jev-label-desk"
+  }
+}

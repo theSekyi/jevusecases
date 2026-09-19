@@ -1,0 +1,22 @@
+{
+  "id": "rthomas24-jev-realtime-trading",
+  "project": "Jev Realtime",
+  "description": "Runs paper-trading agents on a live stock or crypto market in a desktop app. It never uses real money.",
+  "github": "https://github.com/rthomas24/jev-realtime-trading",
+  "website": null,
+  "how_used_jev": "Every second, Jev reads the market and calls up, down, or flat. The app enforces stops and targets and books each trade.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rthomas24/jev-realtime-trading"
+  }
+}

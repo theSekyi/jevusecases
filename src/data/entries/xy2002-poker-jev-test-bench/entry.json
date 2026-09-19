@@ -1,0 +1,22 @@
+{
+  "id": "xy2002-poker-jev-test-bench",
+  "project": "Jev Test Bench",
+  "description": "Tests Jev in a four-player Texas Hold'em game built with React.",
+  "github": "https://github.com/Xy2002/poker-jev-test-bench",
+  "website": null,
+  "how_used_jev": "Each betting decision goes to Jev in real time. Its answer shows next to a rule-based poker coach for comparison.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Xy2002/poker-jev-test-bench"
+  }
+}

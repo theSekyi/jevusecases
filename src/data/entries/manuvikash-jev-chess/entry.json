@@ -1,0 +1,22 @@
+{
+  "id": "manuvikash-jev-chess",
+  "project": "jev-chess",
+  "description": "Plays chess between Jev and an OpenAI model and streams each move to the browser. Side meters show latency and position score.",
+  "github": "https://github.com/manuvikash/jev-chess",
+  "website": null,
+  "how_used_jev": "Jev picks each move with a single Choice over all legal moves. The OpenAI model replies in SAN text that the app parses and validates.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/manuvikash/jev-chess"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "devagrawal09-jev-code",
+  "project": "jev-code",
+  "description": "Gives coding agents a CLI to delegate checks of a diff, triage of failures or review comments, and code search.",
+  "github": "https://github.com/devagrawal09/jev-code",
+  "website": null,
+  "how_used_jev": "Jev routes each natural-language request to one of four fixed workflows or 'cannot_tell'. Each workflow asks a fixed set of bounded questions and returns a report.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/devagrawal09/jev-code"
+  }
+}

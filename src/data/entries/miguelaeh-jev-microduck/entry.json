@@ -1,0 +1,22 @@
+{
+  "id": "miguelaeh-jev-microduck",
+  "project": "Jev drives a MicroDuck",
+  "description": "Drives a simulated MicroDuck biped robot autonomously. The pretrained walking policy stays unchanged.",
+  "github": "https://github.com/miguelaeh/jev-microduck",
+  "website": null,
+  "how_used_jev": "Jev sees the head camera rendered as characters and chooses the next move. It replaces the gamepad.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/miguelaeh/jev-microduck"
+  }
+}

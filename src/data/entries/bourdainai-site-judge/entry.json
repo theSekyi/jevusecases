@@ -1,0 +1,22 @@
+{
+  "id": "bourdainai-site-judge",
+  "project": "site-judge",
+  "description": "A CI check that flags claims on your marketing site that come without evidence. It prints each one on the pull request.",
+  "github": "https://github.com/bourdainai/site-judge",
+  "website": null,
+  "how_used_jev": "Jev answers narrow yes/no questions about each sentence, such as whether it claims proof without evidence. Findings from Jev never fail the build.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bourdainai/site-judge"
+  }
+}

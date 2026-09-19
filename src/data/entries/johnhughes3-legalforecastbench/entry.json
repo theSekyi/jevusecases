@@ -1,0 +1,22 @@
+{
+  "id": "johnhughes3-legalforecastbench",
+  "project": "LegalForecast-MTD",
+  "description": "Tests whether AI models can forecast federal motion-to-dismiss rulings from the judge's written record.",
+  "github": "https://github.com/johnhughes3/LegalForecastBench",
+  "website": null,
+  "how_used_jev": "A Jev adapter asks probability questions for each claim and defendant group in one call. It uses the probability with no threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/johnhughes3/LegalForecastBench"
+  }
+}

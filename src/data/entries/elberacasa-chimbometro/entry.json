@@ -1,0 +1,22 @@
+{
+  "id": "elberacasa-chimbometro",
+  "project": "Chamba (Chimbómetro)",
+  "description": "Lists remote tech jobs that accept people who live in Venezuela, and rates how absurd a job offer is.",
+  "github": "https://github.com/elberacasa/chimbometro",
+  "website": "https://chimbometro.vercel.app",
+  "how_used_jev": "For each new listing, Jev answers nine questions, such as where the hire can live. The author reports a median of 268 ms per radar call over 873 calls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/elberacasa/chimbometro"
+  }
+}

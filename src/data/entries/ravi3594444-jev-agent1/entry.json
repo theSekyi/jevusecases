@@ -1,0 +1,22 @@
+{
+  "id": "ravi3594444-jev-agent1",
+  "project": "Firehose",
+  "description": "Reads tender boards and news feeds and builds a digest, with a chat agent over the results.",
+  "github": "https://github.com/ravi3594444/jev-agent1",
+  "website": null,
+  "how_used_jev": "Jev scores every incoming item as keep, review, or drop. The Atria model then reasons and writes about the items that remain.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ravi3594444/jev-agent1"
+  }
+}

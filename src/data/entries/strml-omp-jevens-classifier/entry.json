@@ -1,0 +1,22 @@
+{
+  "id": "strml-omp-jevens-classifier",
+  "project": "omp-jevens-classifier",
+  "description": "Adds permission checks for bash commands and process-spawning eval payloads in OMP, including in yolo mode.",
+  "github": "https://github.com/STRML/omp-jevens-classifier",
+  "website": null,
+  "how_used_jev": "The plugin sends commands that would otherwise run unseen to Jev. It uses Jev's typed answers to decide if the user must approve the command.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/STRML/omp-jevens-classifier"
+  }
+}

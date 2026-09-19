@@ -1,0 +1,22 @@
+{
+  "id": "javiergradiche-ruby-llm-providers-typesafe",
+  "project": "ruby_llm-providers-typesafe",
+  "description": "Adds TypeSafe's Jev to RubyLLM for typed judgments, evaluations, and reranking.",
+  "github": "https://github.com/javiergradiche/ruby_llm-providers-typesafe",
+  "website": "https://rubygems.org/gems/ruby_llm-providers-typesafe",
+  "how_used_jev": "Ruby code asks noul, choice, and score questions about a state. Jev returns one typed answer per question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/javiergradiche/ruby_llm-providers-typesafe"
+  }
+}

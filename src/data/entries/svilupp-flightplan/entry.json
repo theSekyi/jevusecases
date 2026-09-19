@@ -1,0 +1,22 @@
+{
+  "id": "svilupp-flightplan",
+  "project": "flightplan",
+  "description": "Runs browser workflows defined in TOML, with deterministic assertions, retry policy, selector locks, and a layered element resolver.",
+  "github": "https://github.com/svilupp/flightplan",
+  "website": null,
+  "how_used_jev": "At the L2 step, Jev can choose which candidate element matches an intent. The default chain tries Jev, then an LLM, then a heuristic.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/svilupp/flightplan"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tea1013-jev-guard",
+  "project": "jev-guard",
+  "description": "Checks a shell command before it runs and asks you to confirm when it looks risky. It is a prototype CLI.",
+  "github": "https://github.com/tea1013/jev-guard",
+  "website": null,
+  "how_used_jev": "One Jev call asks two choice questions: can the command lose data, and can it leak secrets. A flagged risk prints a warning and asks for confirmation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tea1013/jev-guard"
+  }
+}

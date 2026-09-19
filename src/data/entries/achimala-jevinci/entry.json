@@ -1,0 +1,22 @@
+{
+  "id": "achimala-jevinci",
+  "project": "Jevinci",
+  "description": "A local app that turns a text prompt into a painting. No image-generation model is used.",
+  "github": "https://github.com/achimala/jevinci",
+  "website": null,
+  "how_used_jev": "Jev predicts the color of every pixel in parallel. The browser paints the result, and a more confident prediction gets a wider brush.",
+  "source_tweet": "https://x.com/anshuc/status/2101040309522121072",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/achimala/jevinci"
+  }
+}

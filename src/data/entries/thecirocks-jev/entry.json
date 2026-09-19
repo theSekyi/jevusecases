@@ -1,0 +1,22 @@
+{
+  "id": "thecirocks-jev",
+  "project": "Jev vs LLM Router",
+  "description": "Benchmarks a LangGraph anti-churn agent with Jev in place of its Claude Sonnet router, in a Jupyter notebook.",
+  "github": "https://github.com/thecirocks/jev",
+  "website": null,
+  "how_used_jev": "Jev picks one of 8 specialist areas for each customer message. The author reports 53% lower routing latency, 97% lower cost, and 46 of 48 routes matching Claude.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thecirocks/jev"
+  }
+}

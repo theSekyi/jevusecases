@@ -1,0 +1,22 @@
+{
+  "id": "marcusgreenwood-jev-scraper-chrome-extension",
+  "project": "Jev Scraper",
+  "description": "A Chrome extension that extracts data from a web page as JSON that matches a JSON Schema or Zod schema. The author calls it ultimately a failure.",
+  "github": "https://github.com/marcusgreenwood/jev-scraper-chrome-extension",
+  "website": null,
+  "how_used_jev": "Jev, through Vercel AI Gateway, is the only model. It returns each value with a confidence score, and the page highlights where each value came from.",
+  "source_tweet": "https://x.com/inventur_es/status/2101059512048169306",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcusgreenwood/jev-scraper-chrome-extension"
+  }
+}

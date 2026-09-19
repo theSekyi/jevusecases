@@ -1,0 +1,22 @@
+{
+  "id": "greenyamao-antigravity-mcp-semantic-search-with-typesafeai",
+  "project": "TypeSafe Code Guard",
+  "description": "An MCP server for AI coding assistants that finds code by meaning and checks git diffs before commit.",
+  "github": "https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi",
+  "website": null,
+  "how_used_jev": "Jev picks the most relevant file and ranks line blocks in it. It also checks a diff against the task intent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/greenyamao/Antigravity-mcp-semantic-search-with-TypeSafeAi"
+  }
+}

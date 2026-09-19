@@ -1,0 +1,22 @@
+{
+  "id": "dg-coreylweathers-jev-voice-agent",
+  "project": "jev-voice-agent",
+  "description": "Runs a realtime voice agent that speaks only lines a human wrote in advance. Deepgram Flux handles turn detection and speech.",
+  "github": "https://github.com/dg-coreylweathers/jev-voice-agent",
+  "website": null,
+  "how_used_jev": "Jev takes what the caller said and picks one reply label from a fixed set, with a probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dg-coreylweathers/jev-voice-agent"
+  }
+}

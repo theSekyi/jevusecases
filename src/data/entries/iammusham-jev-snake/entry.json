@@ -1,0 +1,22 @@
+{
+  "id": "iammusham-jev-snake",
+  "project": "Jev Snake",
+  "description": "An experimental Snake game. The Python engine owns the rules, with a browser client for human play.",
+  "github": "https://github.com/iammusham/jev-snake",
+  "website": null,
+  "how_used_jev": "Jev picks the movement direction from structured game state on every tick. The engine does not override its choice.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/iammusham/jev-snake"
+  }
+}

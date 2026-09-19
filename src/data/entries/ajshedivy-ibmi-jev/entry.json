@@ -1,0 +1,22 @@
+{
+  "id": "ajshedivy-ibmi-jev",
+  "project": "ibmi-jev",
+  "description": "Adds SQL functions on IBM i so that Db2 for i can classify, score, and filter rows by meaning.",
+  "github": "https://github.com/ajshedivy/ibmi-jev",
+  "website": null,
+  "how_used_jev": "Functions such as JEV.NOUL send row text and a question to Jev and return a probability as a column. Results are batched, cached, and also available to agents through MCP.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ajshedivy/ibmi-jev"
+  }
+}

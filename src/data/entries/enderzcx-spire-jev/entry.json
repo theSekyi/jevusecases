@@ -1,0 +1,22 @@
+{
+  "id": "enderzcx-spire-jev",
+  "project": "Spire Jev",
+  "description": "Plays Slay the Spire 2 as an experimental AI player through a local mod. A main model plans and code plays the cards.",
+  "github": "https://github.com/enderzcx/spire-jev",
+  "website": null,
+  "how_used_jev": "Jev picks single moves and short plans in normal combat. When Jev has low confidence, control goes back to the main model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/enderzcx/spire-jev"
+  }
+}

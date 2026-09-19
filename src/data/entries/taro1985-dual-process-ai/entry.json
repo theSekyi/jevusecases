@@ -1,0 +1,22 @@
+{
+  "id": "taro1985-dual-process-ai",
+  "project": "Dual-Process AI",
+  "description": "A design pattern that sends easy decisions to a classifier and only hard ones to an LLM. It includes a safety gate and a Discord bot.",
+  "github": "https://github.com/taro1985/dual-process-ai",
+  "website": null,
+  "how_used_jev": "Jev is System 1: it routes and classifies each request with a calibrated confidence. Gemini 3.8 Flash handles only the requests that need reasoning.",
+  "source_tweet": "https://x.com/taro_president/status/2101056916806054246",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/taro1985/dual-process-ai"
+  }
+}

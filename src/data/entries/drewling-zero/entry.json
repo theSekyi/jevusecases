@@ -1,0 +1,22 @@
+{
+  "id": "drewling-zero",
+  "project": "zero",
+  "description": "A macOS menu-bar app that shows only the Gmail threads that still need your action. It archives the rest and deletes nothing.",
+  "github": "https://github.com/drewling/zero",
+  "website": null,
+  "how_used_jev": "Jev reads each thread against a plain-English keep policy. It returns a typed keep-or-archive decision with a probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/drewling/zero"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "joevidev-ui-generator-instinct-jev",
+  "project": "Instinct",
+  "description": "Builds a UI from a free-text description by picking real shadcn/ui components and page blocks.",
+  "github": "https://github.com/joevidev/ui-generator-instinct-jev",
+  "website": "https://ui-generator-instinct-jev.vercel.app",
+  "how_used_jev": "Jev answers Choice, Noul, and Score questions over a fixed catalog. The app renders the component it picked, set up the way Jev decided.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/joevidev/ui-generator-instinct-jev"
+  }
+}

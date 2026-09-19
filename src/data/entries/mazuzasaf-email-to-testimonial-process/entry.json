@@ -1,0 +1,19 @@
+{
+  "id": "mazuzasaf-email-to-testimonial-process",
+  "project": "Email-to-testimonial process",
+  "description": "Reviews a year of email from two addresses to find testimonials. It saves the results to a local database and shows them in a review dashboard.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev classifies each email. The results go to a local database and a web UI for review before use on websites.",
+  "source_tweet": "https://x.com/MazuzAsaf/status/2101063408200077794",
+  "author": "@MazuzAsaf",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

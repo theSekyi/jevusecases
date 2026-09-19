@@ -1,0 +1,22 @@
+{
+  "id": "phd-peter-ego-jev",
+  "project": "ego-jev",
+  "description": "Joins ego-lite browser control with Jev decisions in a small, bounded browser loop.",
+  "github": "https://github.com/phd-peter/ego-jev",
+  "website": null,
+  "how_used_jev": "Jev picks a supported operation and a target from the current page snapshot. It never sees selectors, coordinates, or JavaScript.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phd-peter/ego-jev"
+  }
+}

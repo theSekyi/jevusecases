@@ -1,0 +1,22 @@
+{
+  "id": "shibadogcap-kyotsu-ai-bench",
+  "project": "kyotsu-ai-bench",
+  "description": "A static dashboard that compares Jev with luna-none and luna-low on Japan's 2026 Common Test.",
+  "github": "https://github.com/shibadogcap/kyotsu-ai-bench",
+  "website": null,
+  "how_used_jev": "Sends each exam question to Jev as text and asks it to pick the answer as a Choice.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shibadogcap/kyotsu-ai-bench"
+  }
+}

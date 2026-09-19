@@ -1,0 +1,22 @@
+{
+  "id": "kentaro-jevex",
+  "project": "Jevex",
+  "description": "An Elixir library that makes Jev calls into ordinary Elixir expressions with two operators.",
+  "github": "https://github.com/kentaro/jevex",
+  "website": null,
+  "how_used_jev": "The operators send Noul, Choice, and Score questions to Jev inside pipelines, streams, and pattern matches. They return a decision value or a tagged result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kentaro/jevex"
+  }
+}

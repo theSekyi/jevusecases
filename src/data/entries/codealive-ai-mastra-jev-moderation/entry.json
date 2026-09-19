@@ -1,0 +1,22 @@
+{
+  "id": "codealive-ai-mastra-jev-moderation",
+  "project": "mastra-jev-moderation",
+  "description": "Adds input moderation to Mastra agents in one file, with one request per turn.",
+  "github": "https://github.com/CodeAlive-AI/mastra-jev-moderation",
+  "website": null,
+  "how_used_jev": "Jev judges each user input against a moderation policy with typed noul and choice questions. The code gets a verdict with no text to parse.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CodeAlive-AI/mastra-jev-moderation"
+  }
+}

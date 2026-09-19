@@ -1,0 +1,22 @@
+{
+  "id": "halleck45-blog-lepine-pro",
+  "project": "blog.lepine.pro",
+  "description": "Explains Jev in a French tutorial post: the Choice, Noul, and Score question types, calibrated confidence, and grouped questions.",
+  "github": "https://github.com/Halleck45/blog.lepine.pro",
+  "website": null,
+  "how_used_jev": "The post calls Jev from the Python SDK. It ends with a complete semantic grep script that finds the passages that answer a question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Halleck45/blog.lepine.pro"
+  }
+}

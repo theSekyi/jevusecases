@@ -1,0 +1,22 @@
+{
+  "id": "cole-gillespie-typesafe-go",
+  "project": "typesafe-go",
+  "description": "Gives Go programs an unofficial SDK for the TypeSafe AI API, with typed answers, retries, and context support.",
+  "github": "https://github.com/cole-gillespie/typesafe-go",
+  "website": null,
+  "how_used_jev": "Sends typed questions to Jev and returns typed answers. It has no third-party dependencies.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cole-gillespie/typesafe-go"
+  }
+}

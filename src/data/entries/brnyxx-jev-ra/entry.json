@@ -1,0 +1,22 @@
+{
+  "id": "brnyxx-jev-ra",
+  "project": "jev-ra",
+  "description": "Gives CLI coding agents a browser-use layer through an MCP server and a CLI.",
+  "github": "https://github.com/brnyxx/jev-ra",
+  "website": "https://brnyxx.github.io/jev-ra/",
+  "how_used_jev": "Jev picks the operation and target element for each step. The author reports 2,714 ms versus 23,058 ms for browser-use on a Wikipedia task.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/brnyxx/jev-ra"
+  }
+}

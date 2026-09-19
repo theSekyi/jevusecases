@@ -1,0 +1,22 @@
+{
+  "id": "tsagaanbayr1-jev-tetris",
+  "project": "Jev Tetris",
+  "description": "Lets you play real-time versus Tetris in the browser against Jev, with garbage, spins, and back-to-back chains.",
+  "github": "https://github.com/Tsagaanbayr1/jev-tetris",
+  "website": null,
+  "how_used_jev": "For each piece, the server finds reachable placements and asks Jev one typed question to pick one. Decisions are prefetched one piece ahead.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Tsagaanbayr1/jev-tetris"
+  }
+}

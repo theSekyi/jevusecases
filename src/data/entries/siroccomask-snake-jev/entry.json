@@ -1,0 +1,22 @@
+{
+  "id": "siroccomask-snake-jev",
+  "project": "Snake Jev",
+  "description": "Plays a desktop Snake game with moves built from Jev assessments. The author reports one run that reached 29 foods in 461 ticks.",
+  "github": "https://github.com/siroccomask/snake-jev",
+  "website": null,
+  "how_used_jev": "One call asks nine questions: wall collision, body collision, and food progress for each of three moves. Python combines the answers into a move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/siroccomask/snake-jev"
+  }
+}

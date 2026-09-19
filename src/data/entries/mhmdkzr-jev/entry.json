@@ -1,0 +1,22 @@
+{
+  "id": "mhmdkzr-jev",
+  "project": "Jev",
+  "description": "Provides an unofficial Go client for Jev, now in alpha. It has no dependencies outside the standard library.",
+  "github": "https://github.com/mhmdkzr/jev",
+  "website": null,
+  "how_used_jev": "The client sends a state and typed questions to Jev. You read each typed answer back from the result without string keys.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mhmdkzr/jev"
+  }
+}

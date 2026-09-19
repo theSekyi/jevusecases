@@ -1,0 +1,22 @@
+{
+  "id": "iamadi11-mcp-ui-poc",
+  "project": "MCP UI studio",
+  "description": "Turns a chat message into a versioned UI widget that you can publish as a public iframe.",
+  "github": "https://github.com/iamadi11/mcp-ui-poc",
+  "website": "https://mcp-ui-poc.vercel.app/",
+  "how_used_jev": "Jev makes one parallel call per turn to decide the widget plan. Claude Haiku writes only when confidence is low or the catalog cannot express the request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/iamadi11/mcp-ui-poc"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "4esv-jev-mario",
+  "project": "jev-mario",
+  "description": "Makes Jev play Super Mario Bros from a text description of the emulator RAM. Each of three harnesses has a deterministic control.",
+  "github": "https://github.com/4esv/jev-mario",
+  "website": null,
+  "how_used_jev": "In the branching harness, each option plays out in the emulator first and Jev picks among the results. The author reports Jev reached the flag on 1-1.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/4esv/jev-mario"
+  }
+}

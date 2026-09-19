@@ -1,0 +1,22 @@
+{
+  "id": "fabricio852-jevshift",
+  "project": "JevShift",
+  "description": "Moves routine judgment work in OpenAI Codex from the main coding model to Jev through four lifecycle hooks.",
+  "github": "https://github.com/fabricio852/jevshift",
+  "website": null,
+  "how_used_jev": "Jev rates prompt complexity, blocks unsafe tool calls, and allows safe permissions. It also decides if a large tool result can leave the context.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fabricio852/jevshift"
+  }
+}

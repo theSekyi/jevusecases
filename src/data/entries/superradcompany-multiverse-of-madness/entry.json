@@ -1,0 +1,22 @@
+{
+  "id": "superradcompany-multiverse-of-madness",
+  "project": "multiverse-of-madness",
+  "description": "A TypeScript harness that tries alternate game futures in Microsandbox and continues from the best result. It has Doom and chess examples.",
+  "github": "https://github.com/superradcompany/multiverse-of-madness",
+  "website": null,
+  "how_used_jev": "Jev makes the gameplay decisions. An optional supervisor improves strategies in the background.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/superradcompany/multiverse-of-madness"
+  }
+}

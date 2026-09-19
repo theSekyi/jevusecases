@@ -1,0 +1,22 @@
+{
+  "id": "aaazzam-jev",
+  "project": "jev",
+  "description": "Turns a Python function definition into a Jev query with the @jev.fn decorator.",
+  "github": "https://github.com/aaazzam/jev",
+  "website": null,
+  "how_used_jev": "The decorator builds state and typed questions from the parameters, docstring, and Pydantic return type. A call returns a validated model instance.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aaazzam/jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "infrawrench-jeeves",
+  "project": "Jeeves",
+  "description": "Moderates Discord and Twitch chat with rules written in plain English.",
+  "github": "https://github.com/Infrawrench/Jeeves",
+  "website": "https://jeeves.infrawrench.com/",
+  "how_used_jev": "Jev classifies each rule and then judges messages, images, and strike history against it. Gemini writes code for rules that need counts or time windows.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Infrawrench/Jeeves"
+  }
+}

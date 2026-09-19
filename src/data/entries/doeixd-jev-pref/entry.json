@@ -1,0 +1,22 @@
+{
+  "id": "doeixd-jev-pref",
+  "project": "jev-pref",
+  "description": "Turns project preferences from AGENTS.md into semantic lint rules for code changes. It feeds the results back to your coding agent.",
+  "github": "https://github.com/doeixd/jev-pref",
+  "website": null,
+  "how_used_jev": "Jev classifies the evidence in each change against your rules, such as the API impact of a diff. The tool maps each result to an outcome for the agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/doeixd/jev-pref"
+  }
+}

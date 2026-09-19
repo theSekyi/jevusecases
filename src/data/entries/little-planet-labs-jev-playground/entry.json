@@ -1,0 +1,22 @@
+{
+  "id": "little-planet-labs-jev-playground",
+  "project": "Jev Playground",
+  "description": "Small Next.js app for experimenting with Jev.",
+  "github": "https://github.com/Little-Planet-Labs/jev-playground",
+  "website": "https://jev-playground-zeta.vercel.app",
+  "how_used_jev": "Users paste a state and build noul, choice, and score questions. Jev answers all of them in one request, and the app shows answers and confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Little-Planet-Labs/jev-playground"
+  }
+}

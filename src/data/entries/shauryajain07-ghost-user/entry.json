@@ -1,0 +1,22 @@
+{
+  "id": "shauryajain07-ghost-user",
+  "project": "Ghost User",
+  "description": "Tests website UX with simulated users. Personas with different behavior profiles try a task in isolated Playwright browser sessions.",
+  "github": "https://github.com/shauryajain07/ghost-user",
+  "website": null,
+  "how_used_jev": "Jev gets a compact view of the current page and returns one typed next action. The app validates the action and records confidence, timing, and screenshots.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shauryajain07/ghost-user"
+  }
+}

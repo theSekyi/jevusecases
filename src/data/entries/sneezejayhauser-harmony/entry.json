@@ -1,0 +1,22 @@
+{
+  "id": "sneezejayhauser-harmony",
+  "project": "harmony",
+  "description": "A terminal coding-agent harness that uses a catalog of free providers and free models.",
+  "github": "https://github.com/sneezejayhauser/harmony",
+  "website": null,
+  "how_used_jev": "Jev classifies each task before routing, with typed answers such as task kind and whether it needs tools. Without a key, older heuristics decide.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sneezejayhauser/harmony"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "denikuchero-jev-chess-lab",
+  "project": "Jev Chess Lab",
+  "description": "Records six chess experiments with Jev through OpenRouter, with full traces and video replays. It compares Jev alone with tactical and Stockfish help.",
+  "github": "https://github.com/denikuchero/jev-chess-lab",
+  "website": "https://denikuchero.github.io/jev-chess-lab/",
+  "how_used_jev": "Jev chooses chess moves, alone or with a tactical filter or Stockfish. The author reports that the Stockfish-assisted system won and Jev alone still blunders pieces.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/denikuchero/jev-chess-lab"
+  }
+}

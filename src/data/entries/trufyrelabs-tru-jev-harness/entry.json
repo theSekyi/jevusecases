@@ -1,0 +1,22 @@
+{
+  "id": "trufyrelabs-tru-jev-harness",
+  "project": "tru-jev-harness",
+  "description": "Puts Jev in front of two agent steps: RAG passage filtering and tool risk checks. A mock mode runs the demos without an API key.",
+  "github": "https://github.com/trufyrelabs/tru-jev-harness",
+  "website": null,
+  "how_used_jev": "Jev Noul scores passage relevance before LLM generation. For tool proposals, Choice, Score, and Noul answers let code allow, escalate, or block.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/trufyrelabs/tru-jev-harness"
+  }
+}

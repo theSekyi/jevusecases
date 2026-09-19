@@ -1,0 +1,22 @@
+{
+  "id": "bahramzada-jev-taxi-dispatch",
+  "project": "JEV Dispatch",
+  "description": "A real-time taxi dispatch simulation on a real map of Baku.",
+  "github": "https://github.com/bahramzada/jev-taxi-dispatch",
+  "website": null,
+  "how_used_jev": "For each order, Jev answers four questions in one call, such as which of the 4 nearest drivers to assign. Orders with a fake score of 0.7 or more are blocked.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bahramzada/jev-taxi-dispatch"
+  }
+}

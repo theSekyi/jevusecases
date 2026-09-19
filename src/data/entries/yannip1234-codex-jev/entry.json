@@ -1,0 +1,22 @@
+{
+  "id": "yannip1234-codex-jev",
+  "project": "Codex-Jev",
+  "description": "Adds experimental compression to the Codex desktop app on macOS. It has a menu bar launcher, a bridge, and a custom engine.",
+  "github": "https://github.com/yannip1234/codex-jev",
+  "website": null,
+  "how_used_jev": "The bridge checks eligible outgoing messages with Jev before it sends them to the engine. The engine compresses tool output.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yannip1234/codex-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "theonlyartz-jevisraelielections",
+  "project": "JevIsraeliElections",
+  "description": "A Hebrew app that ranks the Knesset-26 party lists against an ideology that you describe in free text.",
+  "github": "https://github.com/theonlyartz/jevisraelielections",
+  "website": "https://theonlyartz.github.io/",
+  "how_used_jev": "A Supabase Edge Function sends your ideology to Jev with each list's full manifesto as a choice option. The app ranks the lists from the answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/theonlyartz/jevisraelielections"
+  }
+}

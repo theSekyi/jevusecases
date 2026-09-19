@@ -1,0 +1,22 @@
+{
+  "id": "xucian-fbyte-jev-vs-claude",
+  "project": "fbyte-jev-vs-claude",
+  "description": "Benchmarks Jev against Claude Opus 4.6 and Sonnet 4.6 on 5 structured classification tasks with 20 cases each.",
+  "github": "https://github.com/xucian/fbyte-jev-vs-claude",
+  "website": null,
+  "how_used_jev": "Jev runs through OpenRouter on tasks such as intent routing, fake review detection, and bug triage.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/xucian/fbyte-jev-vs-claude"
+  }
+}

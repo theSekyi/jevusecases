@@ -1,0 +1,22 @@
+{
+  "id": "jms-dcksn-uipath-jev-guardrail-connector",
+  "project": "TypeSafe Jev Guardrail Connector",
+  "description": "Connects UiPath AI Trust Layer guardrails to Jev, as an unofficial demo connector.",
+  "github": "https://github.com/jms-dcksn/uipath-jev-guardrail-connector",
+  "website": null,
+  "how_used_jev": "Jev judges each agent prompt, tool call, and LLM response against a plain-language policy. The guardrail compares the probability with a threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jms-dcksn/uipath-jev-guardrail-connector"
+  }
+}

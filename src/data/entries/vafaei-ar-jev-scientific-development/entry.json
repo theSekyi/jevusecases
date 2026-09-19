@@ -1,0 +1,22 @@
+{
+  "id": "vafaei-ar-jev-scientific-development",
+  "project": "JEV Scientific Development",
+  "description": "Connects ChatGPT to Jev through an MCP server and a ChatGPT Skill for scientific research work.",
+  "github": "https://github.com/vafaei-ar/jev-scientific-development",
+  "website": null,
+  "how_used_jev": "Tools such as evaluate_paper and challenge_claim send scientific text to Jev for fixed judgment questions. ChatGPT does the reasoning and the writing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vafaei-ar/jev-scientific-development"
+  }
+}

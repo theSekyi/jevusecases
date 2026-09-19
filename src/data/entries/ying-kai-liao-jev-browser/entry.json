@@ -1,0 +1,22 @@
+{
+  "id": "ying-kai-liao-jev-browser",
+  "project": "jev-browser",
+  "description": "Browser automation where an LLM plans each step and Playwright does the action. It is a library, CLI, and MCP server.",
+  "github": "https://github.com/Ying-Kai-Liao/jev-browser",
+  "website": null,
+  "how_used_jev": "For each step, Jev picks the element, action, and value. It also judges if the step is done, blocked, or irreversible.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ying-Kai-Liao/jev-browser"
+  }
+}

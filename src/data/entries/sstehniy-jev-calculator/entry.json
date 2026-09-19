@@ -1,0 +1,22 @@
+{
+  "id": "sstehniy-jev-calculator",
+  "project": "Jev Calculator",
+  "description": "Runs an iOS 6-inspired calculator demo with a lifetime API budget. Bun serves the UI and streams evaluation steps from the server.",
+  "github": "https://github.com/sstehniy/jev-calculator",
+  "website": null,
+  "how_used_jev": "Jev picks the magnitude, sign, and each decimal digit in one parallel request. Code builds up to 48 candidate numbers, and Jev picks one.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sstehniy/jev-calculator"
+  }
+}

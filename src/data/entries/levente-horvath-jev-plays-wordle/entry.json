@@ -1,0 +1,22 @@
+{
+  "id": "levente-horvath-jev-plays-wordle",
+  "project": "jev-wordle",
+  "description": "Plays Wordle in a browser page, against the daily puzzle, or in simulated games.",
+  "github": "https://github.com/levente-horvath/jev-plays-wordle",
+  "website": null,
+  "how_used_jev": "Code keeps the words that fit the clues and ranks them. Jev picks the next guess from the top dozen as a Choice question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/levente-horvath/jev-plays-wordle"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "joewis-apinav",
+  "project": "apinav",
+  "description": "Keeps a local SQLite catalog of public APIs. It exposes keyword and semantic search to AI agents as an MCP server.",
+  "github": "https://github.com/joewis/apinav",
+  "website": null,
+  "how_used_jev": "Its config sends search results to Jev in batches of 8. A Noul threshold of 0.3 judges relevance to the query.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/joewis/apinav"
+  }
+}

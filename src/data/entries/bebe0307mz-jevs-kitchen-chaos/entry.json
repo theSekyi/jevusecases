@@ -1,0 +1,22 @@
+{
+  "id": "bebe0307mz-jevs-kitchen-chaos",
+  "project": "Jev's Kitchen Chaos",
+  "description": "Shows an Overcooked-style 3D kitchen run by four Jev chef agents. A broadcast HUD shows each chef's plan, confidence, and latency.",
+  "github": "https://github.com/bebe0307mz/jevs-kitchen-chaos",
+  "website": "https://jevs-kitchen-chaos.vercel.app",
+  "how_used_jev": "When a chef runs out of steps, the sim sends game state and action options to Jev. Jev returns the chosen action and a policy distribution.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/bebe0307mz/jevs-kitchen-chaos"
+  }
+}

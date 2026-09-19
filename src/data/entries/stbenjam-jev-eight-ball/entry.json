@@ -1,0 +1,22 @@
+{
+  "id": "stbenjam-jev-eight-ball",
+  "project": "Jev Eight Ball",
+  "description": "Answers yes or no questions like an eight ball toy, with the answer rising from blue liquid. It is a toy, not a prediction system.",
+  "github": "https://github.com/stbenjam/jev-eight-ball",
+  "website": null,
+  "how_used_jev": "Jev picks one of the classic eight ball answers through OpenRouter. There is no random fallback.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stbenjam/jev-eight-ball"
+  }
+}

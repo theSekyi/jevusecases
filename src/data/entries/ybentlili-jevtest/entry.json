@@ -1,0 +1,22 @@
+{
+  "id": "ybentlili-jevtest",
+  "project": "mailbot",
+  "description": "Demonstrates a customer-mail bot where Jev sorts and checks, code acts, and an LLM writes the reply. It compares versions with and without Jev.",
+  "github": "https://github.com/ybentlili/JevTest",
+  "website": null,
+  "how_used_jev": "Jev classifies each mail by category, anger, and refund request. It then checks that a refund is justified and under the limit before code decides.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ybentlili/JevTest"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "thevibeworks-jevgate",
+  "project": "jevgate",
+  "description": "Decides which shell commands a coding agent can run without asking. It is a Claude Code hook and a CLI in one Go binary.",
+  "github": "https://github.com/thevibeworks/jevgate",
+  "website": null,
+  "how_used_jev": "An allowlist approves known read-only commands first. For unlisted commands, Jev judges the risk, and a low score allows the command.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thevibeworks/jevgate"
+  }
+}

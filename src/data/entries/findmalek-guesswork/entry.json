@@ -1,0 +1,22 @@
+{
+  "id": "findmalek-guesswork",
+  "project": "guesswork",
+  "description": "Gives zsh fish-style history autosuggestions that match abbreviations and fuzzy input, not only prefixes.",
+  "github": "https://github.com/FindMalek/guesswork",
+  "website": null,
+  "how_used_jev": "As you type, it asks Jev which recent command you are most likely retyping. It shows the best guess inline in grey text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/FindMalek/guesswork"
+  }
+}

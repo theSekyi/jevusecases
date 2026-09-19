@@ -1,0 +1,22 @@
+{
+  "id": "dbreunig-building-with-jev-skill",
+  "project": "Building with Jev",
+  "description": "An agent skill for writing and improving programs that call Jev. It targets jev-1.13.",
+  "github": "https://github.com/dbreunig/building-with-jev-skill",
+  "website": null,
+  "how_used_jev": "The skill guides agents on Jev question design, state structure, answer composition in code, and confidence thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dbreunig/building-with-jev-skill"
+  }
+}

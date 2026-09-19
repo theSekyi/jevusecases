@@ -1,0 +1,22 @@
+{
+  "id": "matthewp-flue-jev-demo",
+  "project": "flue-jev-demo",
+  "description": "A Flue agent example for Cloudflare. All AI requests go through the Worker's Cloudflare AI Gateway binding.",
+  "github": "https://github.com/matthewp/flue-jev-demo",
+  "website": null,
+  "how_used_jev": "useJevRouter turns a typed question map into a Flue tool. The agent calls Jev to pick, for example, which support team should handle a request.",
+  "source_tweet": "https://x.com/matthewcp/status/2101057280653574300",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/matthewp/flue-jev-demo"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "zephel01-jev-sample",
+  "project": "Jev-sample",
+  "description": "Compares one four-way Choice with four Noul questions combined in code, for routing coding-agent tasks. The author reports 48.3% versus 98.3% accuracy.",
+  "github": "https://github.com/zephel01/Jev-sample",
+  "website": null,
+  "how_used_jev": "Jev reads a task request and picks one of four targets. Options include a small inline model, an external harness, or asking the user.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zephel01/Jev-sample"
+  }
+}

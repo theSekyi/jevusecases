@@ -1,0 +1,22 @@
+{
+  "id": "brainwires-jevwire",
+  "project": "jevwire",
+  "description": "Connects Jev to agent harnesses through an MCP server, an embeddable library, and a Claude Code plugin.",
+  "github": "https://github.com/Brainwires/jevwire",
+  "website": null,
+  "how_used_jev": "Six MCP tools ask Jev to rank, verify, evaluate, gate an action, or pick a next step. The Claude Code plugin only escalates and does not grant permissions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Brainwires/jevwire"
+  }
+}

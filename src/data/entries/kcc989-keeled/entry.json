@@ -1,0 +1,22 @@
+{
+  "id": "kcc989-keeled",
+  "project": "Keeled",
+  "description": "Gives agents a harness that keeps action selection apart from generation and execution.",
+  "github": "https://github.com/kcc989/keeled",
+  "website": null,
+  "how_used_jev": "Jev selects actions and assesses progress. LLMs write plans, tool input, and replies.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kcc989/keeled"
+  }
+}

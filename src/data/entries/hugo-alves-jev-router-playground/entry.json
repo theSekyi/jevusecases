@@ -1,0 +1,22 @@
+{
+  "id": "hugo-alves-jev-router-playground",
+  "project": "Jev Router Playground",
+  "description": "Tests model routing with a pool of OpenRouter models. You compare Jev's pick with the answer you judge best.",
+  "github": "https://github.com/hugo-alves/jev-router-playground",
+  "website": "https://kvhx37ziab90c.space.minimax.io",
+  "how_used_jev": "Jev reads the task and the candidate profiles and selects a model. It shows the probability for each candidate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hugo-alves/jev-router-playground"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "n-yokomachi-jev-dev",
+  "project": "jev-dev",
+  "description": "Demo that shows how Jev and an LLM judge the same user message, side by side with response times. It uses affectus and Vercel AI Gateway.",
+  "github": "https://github.com/n-yokomachi/jev-dev",
+  "website": null,
+  "how_used_jev": "Jev and the LLM each judge how the message moves eight emotion axes. Each side keeps its own emotion state, and a reply is generated from each state.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/n-yokomachi/jev-dev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hamakyo-jev-mahjong-bench",
+  "project": "jev-mahjong-bench",
+  "description": "Compares Jev and GPT on riichi mahjong discard decisions. It measures latency, legality, agreement, and calibration.",
+  "github": "https://github.com/hamakyo/jev-mahjong-bench",
+  "website": null,
+  "how_used_jev": "Jev gets a mahjong state and its legal discards as a Choice question. It returns one discard with probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hamakyo/jev-mahjong-bench"
+  }
+}

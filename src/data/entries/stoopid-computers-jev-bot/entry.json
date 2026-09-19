@@ -1,0 +1,22 @@
+{
+  "id": "stoopid-computers-jev-bot",
+  "project": "jev-bot",
+  "description": "Controls native Mac apps from Codex or ChatGPT desktop through an MCP tool that runs JavaScript. It reads accessibility state, clicks, and types.",
+  "github": "https://github.com/stoopid-computers/jev-bot",
+  "website": null,
+  "how_used_jev": "You can act on element numbers, or give a description and let Jev choose the control. Jev is used only for these description-based actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stoopid-computers/jev-bot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "aaravriyer193-opensmoke",
+  "project": "OpenSmoke",
+  "description": "Finds AI agent runs that broke because of their environment, such as missing keys, tools, files, permissions, or network.",
+  "github": "https://github.com/aaravriyer193/OpenSmoke",
+  "website": null,
+  "how_used_jev": "Jev answers three questions about every step of every run. Flagged runs go to a strong LLM for a root cause and are grouped into incidents.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aaravriyer193/OpenSmoke"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ianmove-jev-game-agent",
+  "project": "Jev Game Agent",
+  "description": "Plays Super Mario Bros (PAL, NES) in BizHawk from RAM observations. Python executes moves, records runs, and backtracks to checkpoints.",
+  "github": "https://github.com/IAnMove/jev-game-agent",
+  "website": null,
+  "how_used_jev": "A shadow emulator tries controller macros first. Jev gets the structured state and predicted outcomes and chooses an eligible move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/IAnMove/jev-game-agent"
+  }
+}

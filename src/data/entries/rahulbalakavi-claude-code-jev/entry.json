@@ -1,0 +1,22 @@
+{
+  "id": "rahulbalakavi-claude-code-jev",
+  "project": "claude-code-jev",
+  "description": "An experimental permission gate for Claude Code, installed as a PreToolUse hook. It includes latency and cost benchmarks.",
+  "github": "https://github.com/RahulBalakavi/claude-code-jev",
+  "website": null,
+  "how_used_jev": "Jev returns allow, block, or ask with a confidence for each guarded tool call. The author reports 264 ms mean latency over an 18-case synthetic fixture.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RahulBalakavi/claude-code-jev"
+  }
+}

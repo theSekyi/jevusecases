@@ -1,0 +1,22 @@
+{
+  "id": "kunalkushwaha-jevkart",
+  "project": "jevkart",
+  "description": "Terminal car game driven by an LLM, built to make API latency visible. A manual mode lets you drive with Jev as an advisor.",
+  "github": "https://github.com/kunalkushwaha/jevkart",
+  "website": null,
+  "how_used_jev": "Each time an obstacle comes near, the game describes the road and asks Jev how to steer. The author reports one run with 91 decisions, 14 dodged, and 1 crashed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kunalkushwaha/jevkart"
+  }
+}

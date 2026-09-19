@@ -1,0 +1,22 @@
+{
+  "id": "jamesward-zio-typesafe-ai",
+  "project": "zio-typesafe-ai",
+  "description": "A Scala 3 and ZIO client library for the TypeSafe System One API.",
+  "github": "https://github.com/jamesward/zio-typesafe-ai",
+  "website": null,
+  "how_used_jev": "Code asks Jev several typed questions in one round trip through a NamedTuple. The answers come back keyed and typed like the questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jamesward/zio-typesafe-ai"
+  }
+}

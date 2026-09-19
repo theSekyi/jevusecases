@@ -1,0 +1,22 @@
+{
+  "id": "dogmatiic-hermes-jev",
+  "project": "hermes-jev",
+  "description": "Adds Jev decision plugins to Hermes Agent. They use only the Python standard library.",
+  "github": "https://github.com/DoGMaTiiC/hermes-jev",
+  "website": null,
+  "how_used_jev": "One plugin names the one skill to load before the model call. Another gates destructive tool calls before they run.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/DoGMaTiiC/hermes-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lamplighterpaul-forma-system1-experiment",
+  "project": "Forma",
+  "description": "Generates a page, screen, form, or diagram design from a description. It is an experiment.",
+  "github": "https://github.com/LamplighterPaul/forma-system1-experiment",
+  "website": "https://forma-experiment.zammitpaul.com",
+  "how_used_jev": "Jev picks the layout, blocks, colors, and typeface and reviews the result. An optional LLM writes only the text.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LamplighterPaul/forma-system1-experiment"
+  }
+}

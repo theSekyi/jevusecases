@@ -1,0 +1,22 @@
+{
+  "id": "sashaskind-beyondgreen",
+  "project": "Beyond Green",
+  "description": "After an end-to-end test passes, runs typed agents over the evidence to decide if the system behaved correctly.",
+  "github": "https://github.com/SashaSkind/beyondgreen",
+  "website": "https://sashaskind.github.io/beyondgreen/",
+  "how_used_jev": "Each agent answer is a choice with a probability. The author reports 4/6 correct verdicts in both runs with jev-1.13.0, and no wrong verdicts.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SashaSkind/beyondgreen"
+  }
+}

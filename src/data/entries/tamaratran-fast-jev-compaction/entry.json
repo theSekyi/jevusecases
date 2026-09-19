@@ -1,0 +1,22 @@
+{
+  "id": "tamaratran-fast-jev-compaction",
+  "project": "fast-jev-compaction",
+  "description": "A Claude Code plugin and npm library that compacts context without a summary. Kept text stays verbatim.",
+  "github": "https://github.com/tamaratran/fast-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev sees the whole conversation and scores every tool call and result in one request. The plugin drops or truncates the stale ones.",
+  "source_tweet": "https://x.com/Elizaium/status/2101081763812360471",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tamaratran/fast-jev-compaction"
+  }
+}

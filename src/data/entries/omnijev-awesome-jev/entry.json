@@ -1,0 +1,22 @@
+{
+  "id": "omnijev-awesome-jev",
+  "project": "Awesome JEV",
+  "description": "A curated list of papers, open reproductions, independent evaluations, and commentary about System One models and Jev.",
+  "github": "https://github.com/OmniJev/awesome-jev",
+  "website": "https://omnijev.github.io/awesome-jev/",
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/OmniJev/awesome-jev"
+  }
+}

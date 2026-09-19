@@ -1,0 +1,22 @@
+{
+  "id": "mttcnnng-jev-tsla-demo",
+  "project": "jev-tsla-demo",
+  "description": "An educational JavaScript demo that puts Jev between a TSLA moving-average rule and a trading policy. It is not a strategy for real money.",
+  "github": "https://github.com/mttcnnng/jev-tsla-demo",
+  "website": null,
+  "how_used_jev": "The facts go to Jev as a JSON request. Your code turns the typed answers into a target position.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mttcnnng/jev-tsla-demo"
+  }
+}

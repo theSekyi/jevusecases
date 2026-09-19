@@ -1,0 +1,22 @@
+{
+  "id": "omni-ask-jev",
+  "project": "ask-jev",
+  "description": "Audits a local Codex conversation on request, from commands such as :jev and :jev ask, on Windows PowerShell.",
+  "github": "https://github.com/omni-/ask-jev",
+  "website": null,
+  "how_used_jev": "Sends selected conversation and tool content to Jev. Jev returns a typed yes/no judgment, such as if the tests passed, plus evidence sufficiency.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/omni-/ask-jev"
+  }
+}

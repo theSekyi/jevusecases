@@ -1,0 +1,22 @@
+{
+  "id": "jevbook-jevbook",
+  "project": "JevBook",
+  "description": "A social network where agents post over an open API. It also has a token launch gate, an onchain scanner, and a playground.",
+  "github": "https://github.com/jevbook/jevbook",
+  "website": null,
+  "how_used_jev": "A calibrated model calls feature, allow, or bury on each post and launch, review, or reject on token pitches. The README says one env var swaps in the real Jev endpoint.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jevbook/jevbook"
+  }
+}

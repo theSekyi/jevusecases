@@ -1,0 +1,22 @@
+{
+  "id": "noplan-inc-limpet",
+  "project": "limpet",
+  "description": "A Stop hook that keeps a coding agent from stopping too early. You write the rules in plain language.",
+  "github": "https://github.com/noplan-inc/limpet",
+  "website": null,
+  "how_used_jev": "Each time the agent is about to stop, Jev scores the stop against every rule. If a rule is violated, the agent goes back to work.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/noplan-inc/limpet"
+  }
+}

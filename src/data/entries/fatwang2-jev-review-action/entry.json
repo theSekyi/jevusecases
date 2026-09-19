@@ -1,0 +1,22 @@
+{
+  "id": "fatwang2-jev-review-action",
+  "project": "Jev Review Action",
+  "description": "Reviews submissions and classifies pull requests in a GitHub Action, with no text-generation model.",
+  "github": "https://github.com/fatwang2/jev-review-action",
+  "website": null,
+  "how_used_jev": "Jev judges each item against your criteria and categories. Code applies the policy and updates one PR comment from a fixed template.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fatwang2/jev-review-action"
+  }
+}

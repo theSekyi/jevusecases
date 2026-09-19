@@ -1,0 +1,22 @@
+{
+  "id": "soderlind-jev-comment-triage",
+  "project": "Jev Comment Triage",
+  "description": "Moderates WordPress comments in the background so that comment submission stays fast. It needs the AI Provider for Jev plugin.",
+  "github": "https://github.com/soderlind/jev-comment-triage",
+  "website": null,
+  "how_used_jev": "Jev scores each comment for spam, scam or phishing, and toxicity. The plugin then marks it as spam, holds it for review, or approves it.",
+  "source_tweet": "https://x.com/soderlind/status/2101075432741417158",
+  "author": "@soderlind",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/soderlind/jev-comment-triage"
+  }
+}

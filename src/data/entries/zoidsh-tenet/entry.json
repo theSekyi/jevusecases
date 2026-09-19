@@ -1,0 +1,22 @@
+{
+  "id": "zoidsh-tenet",
+  "project": "tenet",
+  "description": "Judges every commit against plain-language rules, so coding agents fix their own findings before you see the diff.",
+  "github": "https://github.com/zoidsh/tenet",
+  "website": null,
+  "how_used_jev": "Jev answers each rule with a probability, so each rule is a pass or fail cutoff. The author reports 1.1 s and $0.0022 for a staged change on the repository.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zoidsh/tenet"
+  }
+}

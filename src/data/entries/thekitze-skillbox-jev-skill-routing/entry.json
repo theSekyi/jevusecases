@@ -1,0 +1,19 @@
+{
+  "id": "thekitze-skillbox-jev-skill-routing",
+  "project": "Skillbox + Jev skill routing",
+  "description": "Routes agent requests to skills through an MCP skill router.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev picks the relevant skills, so the agent does not need a long skill search.",
+  "source_tweet": "https://x.com/thekitze/status/2100556122570792999",
+  "author": "@thekitze",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

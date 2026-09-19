@@ -1,0 +1,22 @@
+{
+  "id": "nainish-rai-jev-frontend-qa",
+  "project": "Jev Frontend QA",
+  "description": "Runs frontend QA in real Chrome against authored contracts, built on Jev Ultrafast and Browser Harness. It includes a synthetic todo demo.",
+  "github": "https://github.com/Nainish-Rai/jev-frontend-qa",
+  "website": null,
+  "how_used_jev": "Jev picks the operation and target from the observed controls at each step. Code keeps exact values and correctness checks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Nainish-Rai/jev-frontend-qa"
+  }
+}

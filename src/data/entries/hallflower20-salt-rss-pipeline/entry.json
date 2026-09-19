@@ -1,0 +1,22 @@
+{
+  "id": "hallflower20-salt-rss-pipeline",
+  "project": "saltrss",
+  "description": "Turns SALT RSS longslit data products into calibrated 1D spectra. It writes wavelength, flux, and flux error to a CSV file.",
+  "github": "https://github.com/Hallflower20/salt-rss-pipeline",
+  "website": null,
+  "how_used_jev": "An optional flag asks Jev for an experimental quality check verdict on the result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Hallflower20/salt-rss-pipeline"
+  }
+}

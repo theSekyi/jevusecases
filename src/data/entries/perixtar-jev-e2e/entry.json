@@ -1,0 +1,22 @@
+{
+  "id": "perixtar-jev-e2e",
+  "project": "jev-e2e",
+  "description": "Runs end-to-end web tests written in plain English, with Playwright and an HTML report.",
+  "github": "https://github.com/perixtar/jev-e2e",
+  "website": null,
+  "how_used_jev": "Jev selects the controls on the page for each step. Playwright runs the actions and checks the expected outcome.",
+  "source_tweet": "https://x.com/jasonlu_ai/status/2101071647730205135",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/perixtar/jev-e2e"
+  }
+}

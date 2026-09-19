@@ -1,0 +1,22 @@
+{
+  "id": "pearlfranz20-lowlightlowresocr",
+  "project": "Dual-Pathway Visual Classifier",
+  "description": "Improves sign and text recognition in low light or low resolution. It uses a fast coarse pathway and a slow detailed pathway.",
+  "github": "https://github.com/pearlfranz20/lowlightlowresocr",
+  "website": null,
+  "how_used_jev": "An optional layer sends the class, gate weights, and OCR text to Jev. Jev decides if the class and OCR reading are trustworthy and what automation must do.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pearlfranz20/lowlightlowresocr"
+  }
+}

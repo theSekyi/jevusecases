@@ -1,0 +1,22 @@
+{
+  "id": "wbarakat-jev-snake",
+  "project": "jev-snake",
+  "description": "Lets Jev play Snake in real time. A panel shows move probabilities, confidence, danger, and latency.",
+  "github": "https://github.com/wbarakat/jev-snake",
+  "website": null,
+  "how_used_jev": "Each tick, Jev gives probabilities over turn left, go straight, or turn right, plus a danger score. Code handles movement, collisions, and food.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wbarakat/jev-snake"
+  }
+}

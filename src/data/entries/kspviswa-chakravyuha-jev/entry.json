@@ -1,0 +1,22 @@
+{
+  "id": "kspviswa-chakravyuha-jev",
+  "project": "Chakravyuha",
+  "description": "A browser ring-maze game where Abhimanyu must reach the centre past warriors. A history page asks if Jev's confidence score can be trusted.",
+  "github": "https://github.com/kspviswa/chakravyuha-jev",
+  "website": null,
+  "how_used_jev": "The maze goes to Jev as typed questions, and the move Jev picks is played. Unsure or unplayable answers are marked red and replaced with the correct move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kspviswa/chakravyuha-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "notque-jevs-sprint-planning",
+  "project": "Jev's Sprint Planning",
+  "description": "A 3D office simulation in which four AI developers work a software sprint. It shows live probability bars, latency, and cost for each decision.",
+  "github": "https://github.com/notque/jevs-sprint-planning",
+  "website": "https://jevs-sprint-planning.vercel.app",
+  "how_used_jev": "Jev makes each developer choice: which ticket to claim, when to ask for review, and when to deploy. A local heuristic answers if a call fails.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/notque/jevs-sprint-planning"
+  }
+}

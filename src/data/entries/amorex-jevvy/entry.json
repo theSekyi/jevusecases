@@ -1,0 +1,22 @@
+{
+  "id": "amorex-jevvy",
+  "project": "Jevvy",
+  "description": "Has AI models play White against Stockfish 19 on a chess site, with run history and cost tracking.",
+  "github": "https://github.com/amoreX/jevvy",
+  "website": null,
+  "how_used_jev": "Jev 1.13 picks moves through the OpenRouter Choice API. The site compares it with GPT-6 Astra and GLM.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/amoreX/jevvy"
+  }
+}

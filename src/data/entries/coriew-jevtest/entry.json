@@ -1,0 +1,22 @@
+{
+  "id": "coriew-jevtest",
+  "project": "JevTest",
+  "description": "Runs exploratory browser tests from a goal, fixture data, allowed actions, and exact success assertions.",
+  "github": "https://github.com/CorieW/JevTest",
+  "website": "https://jevtest.dev",
+  "how_used_jev": "Jev chooses the actions and judges the observed results. Playwright runs the actions and saves replayable evidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CorieW/JevTest"
+  }
+}

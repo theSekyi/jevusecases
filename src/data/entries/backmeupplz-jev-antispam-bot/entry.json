@@ -1,0 +1,22 @@
+{
+  "id": "backmeupplz-jev-antispam-bot",
+  "project": "Jev Anti-Spam Bot",
+  "description": "Removes spam in Telegram groups as a grammY bot. Admins are exempt.",
+  "github": "https://github.com/backmeupplz/jev_antispam_bot",
+  "website": null,
+  "how_used_jev": "Jev judges if each group message is spam. The bot deletes only high-confidence matches.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/backmeupplz/jev_antispam_bot"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "danielhirt-jev-lab",
+  "project": "jev-lab",
+  "description": "Tests the determinism and calibration claims in the TypeSafe docs with a small CLI through OpenRouter.",
+  "github": "https://github.com/danielhirt/jev-lab",
+  "website": null,
+  "how_used_jev": "It sends Jev states and typed questions, then checks repeatability, perturbation, and results against an LLM baseline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/danielhirt/jev-lab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "toby-faucher-oarfish",
+  "project": "oarfish",
+  "description": "Raises alarms from homelab logs. It is pre-alpha, and almost nothing works yet.",
+  "github": "https://github.com/Toby-Faucher/oarfish",
+  "website": null,
+  "how_used_jev": "Jev gives each new log template a kind, severity, and actionable verdict, cached per template. It also judges whether a flagged window matters now.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Toby-Faucher/oarfish"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jacoblincool-weave-in",
+  "project": "Weave In",
+  "description": "A browser meeting app for up to eight people with video, captions, chat, a whiteboard, and AI assistants.",
+  "github": "https://github.com/JacobLinCool/Weave-In",
+  "website": "https://weave.nycu.ai",
+  "how_used_jev": "The shared Omni assistant uses Jev for automatic public meeting detection. OpenAI then drafts and speaks the questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JacobLinCool/Weave-In"
+  }
+}

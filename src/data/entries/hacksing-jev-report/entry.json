@@ -1,0 +1,22 @@
+{
+  "id": "hacksing-jev-report",
+  "project": "jev-report",
+  "description": "Independent 52-page research report on Jev in Chinese. It checks who measured the published claims and how.",
+  "github": "https://github.com/HackSing/jev-report",
+  "website": null,
+  "how_used_jev": "The author tests Jev on 50 Chinese-language samples and publishes the scripts and raw responses for replication.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/HackSing/jev-report"
+  }
+}

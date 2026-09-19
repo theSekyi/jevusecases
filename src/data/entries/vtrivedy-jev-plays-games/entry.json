@@ -1,0 +1,22 @@
+{
+  "id": "vtrivedy-jev-plays-games",
+  "project": "jev-plays-games",
+  "description": "Lets you play chess or Connect Four against Jev, or watch Jev play itself.",
+  "github": "https://github.com/vtrivedy/jev-plays-games",
+  "website": null,
+  "how_used_jev": "Jev picks each move through OpenRouter. The page also shows what Jev thought about the possible moves.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vtrivedy/jev-plays-games"
+  }
+}

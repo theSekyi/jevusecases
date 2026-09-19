@@ -1,0 +1,22 @@
+{
+  "id": "thruwire-foreman",
+  "project": "Foreman",
+  "description": "Supervises Codex workers on a software job, as an architectural experiment.",
+  "github": "https://github.com/thruwire/foreman",
+  "website": "https://thruwire.ai",
+  "how_used_jev": "Jev reads the work evidence and judges if the work is complete or the worker is stuck. Foreman then continues, steers, retries, or stops.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thruwire/foreman"
+  }
+}

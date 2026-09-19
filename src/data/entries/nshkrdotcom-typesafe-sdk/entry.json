@@ -1,0 +1,22 @@
+{
+  "id": "nshkrdotcom-typesafe-sdk",
+  "project": "TypeSafeSDK (Elixir)",
+  "description": "Gives Elixir programs an SDK for TypeSafe AI and its Jev model.",
+  "github": "https://github.com/nshkrdotcom/typesafe_sdk",
+  "website": null,
+  "how_used_jev": "Sends structured state and typed questions to Jev. It returns Choice, Score, and Noul answers as typed structs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nshkrdotcom/typesafe_sdk"
+  }
+}

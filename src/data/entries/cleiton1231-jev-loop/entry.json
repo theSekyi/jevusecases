@@ -1,0 +1,22 @@
+{
+  "id": "cleiton1231-jev-loop",
+  "project": "jev-loop",
+  "description": "A small coding-agent loop in which code owns the loop. An LLM only writes patches.",
+  "github": "https://github.com/cleiton1231/jev-loop",
+  "website": null,
+  "how_used_jev": "Each step, one Jev request picks the next tool, stop or continue, and which text model to call. The write LLM runs only when Jev chooses edit.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cleiton1231/jev-loop"
+  }
+}

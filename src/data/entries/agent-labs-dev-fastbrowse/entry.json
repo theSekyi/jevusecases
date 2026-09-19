@@ -1,0 +1,22 @@
+{
+  "id": "agent-labs-dev-fastbrowse",
+  "project": "fastbrowse",
+  "description": "Runs browser tasks and returns answers where each claim cites a quote from the page.",
+  "github": "https://github.com/agent-labs-dev/fastbrowse",
+  "website": null,
+  "how_used_jev": "The page is indexed into candidate controls, and Jev picks one action from them. An LLM plans and reads, and code handles verification and secrets.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/agent-labs-dev/fastbrowse"
+  }
+}

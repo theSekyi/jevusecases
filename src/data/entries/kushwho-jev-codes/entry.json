@@ -1,0 +1,22 @@
+{
+  "id": "kushwho-jev-codes",
+  "project": "jev-codes",
+  "description": "A CLI and agent commands that audit a git diff against editable standards packs. Your agent then fixes only the flagged hunks.",
+  "github": "https://github.com/Kushwho/jev-codes",
+  "website": null,
+  "how_used_jev": "Jev scores the diff hunk by hunk, with one parallel call per hunk. It answers yes/no, score, and choice questions, each with a probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Kushwho/jev-codes"
+  }
+}

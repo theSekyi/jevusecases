@@ -1,0 +1,22 @@
+{
+  "id": "adhyaay-karnwal-jev-chat",
+  "project": "jev-chat",
+  "description": "Builds a research chatbot decoder that treats Jev as a language model, with a paper that measures the method.",
+  "github": "https://github.com/adhyaay-karnwal/jev-chat",
+  "website": null,
+  "how_used_jev": "Jev picks the next phrase, word, or character from a hierarchical codebook through Choice questions. The paper also measures one-shot selection of a complete reply.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adhyaay-karnwal/jev-chat"
+  }
+}

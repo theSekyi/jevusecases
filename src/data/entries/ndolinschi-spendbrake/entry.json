@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-spendbrake",
+  "project": "SpendBrake",
+  "description": "Decides if an agent continues, moves to a cheaper model, or stops, from its budget and plan. It shows a cost and value dashboard.",
+  "github": "https://github.com/ndolinschi/spendbrake",
+  "website": "https://spendbrake.vercel.app",
+  "how_used_jev": "Jev reads the budget and plan and returns continue, downgrade_model, or stop.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/spendbrake"
+  }
+}

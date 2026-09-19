@@ -1,0 +1,22 @@
+{
+  "id": "carson-sweet-jev-plays-brogue",
+  "project": "Jev Plays Brogue",
+  "description": "Shows Jev playing the roguelike BrogueCE live in a web app, with its decisions, confidence, and running cost.",
+  "github": "https://github.com/carson-sweet/jev-plays-brogue",
+  "website": null,
+  "how_used_jev": "Each turn, code narrows the situation to real options, and Jev picks one as a typed choice. A parallel question picks which item to use.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/carson-sweet/jev-plays-brogue"
+  }
+}

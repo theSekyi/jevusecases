@@ -1,0 +1,22 @@
+{
+  "id": "webgrga-jev-board-lab",
+  "project": "Jev CSV Workbench",
+  "description": "A browser tool that turns rows from a CSV file into structured Jev judgments. The file stays in the browser.",
+  "github": "https://github.com/WebGrga/jev-board-lab",
+  "website": null,
+  "how_used_jev": "Sends each selected row as state with up to 20 user-defined Noul, Choice, and Score questions to Jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/WebGrga/jev-board-lab"
+  }
+}

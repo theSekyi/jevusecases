@@ -1,0 +1,22 @@
+{
+  "id": "integrate-your-mind-jev-nethack",
+  "project": "Jev × NetHack",
+  "description": "Plays NetHack with a Jev-controlled policy and publishes gameplay recordings, a live viewer, and research notes.",
+  "github": "https://github.com/integrate-your-mind/jev-nethack",
+  "website": null,
+  "how_used_jev": "Jev acts as the direct policy of the NetHack player. The author reports the research pilots as negative or inconclusive.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/integrate-your-mind/jev-nethack"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jellydn-signal-gate",
+  "project": "One-Bench",
+  "description": "Tests Jev for behavioral anomaly detection on 100 synthetic financial scenarios against rules and a general LLM.",
+  "github": "https://github.com/jellydn/signal-gate",
+  "website": null,
+  "how_used_jev": "Jev judges amount anomaly, counterparty risk, and behavior change, and recommends an action. Code composes the answers, and a model-only HOLD needs human approval.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jellydn/signal-gate"
+  }
+}

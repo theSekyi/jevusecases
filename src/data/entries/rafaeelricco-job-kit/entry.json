@@ -1,0 +1,22 @@
+{
+  "id": "rafaeelricco-job-kit",
+  "project": "job-kit",
+  "description": "Agent skills that find job openings, rank them against your profile, tailor your resume, apply, and track replies in Gmail.",
+  "github": "https://github.com/rafaeelricco/job-kit",
+  "website": "https://r1cco.com/jobs/",
+  "how_used_jev": "The /job-match typesafe option fills fit scores with Jev in place of the LLM match worker. A validate worker still rechecks high and low confidence rows.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rafaeelricco/job-kit"
+  }
+}

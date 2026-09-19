@@ -1,0 +1,22 @@
+{
+  "id": "alexsatch-omp-auto-mode",
+  "project": "omp-auto-mode",
+  "description": "Adds a plugin to oh-my-pi that checks each tool call before it runs.",
+  "github": "https://github.com/alexsatch/omp-auto-mode",
+  "website": null,
+  "how_used_jev": "Jev classifies each tool call as safe, unsafe, or ask.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/alexsatch/omp-auto-mode"
+  }
+}

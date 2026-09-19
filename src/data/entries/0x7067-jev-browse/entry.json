@@ -1,0 +1,22 @@
+{
+  "id": "0x7067-jev-browse",
+  "project": "jev-browse",
+  "description": "Runs a browser agent in TypeScript from one goal. It installs on Pi, Claude Code, Codex, and other MCP harnesses.",
+  "github": "https://github.com/0x7067/jev-browse",
+  "website": null,
+  "how_used_jev": "For each page, Jev picks an operation and a target element from an indexed element table. A small LLM writes text only for the TYPE_TEXT operation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0x7067/jev-browse"
+  }
+}

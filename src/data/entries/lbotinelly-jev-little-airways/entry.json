@@ -1,0 +1,22 @@
+{
+  "id": "lbotinelly-jev-little-airways",
+  "project": "Little Airways",
+  "description": "Toy archipelago simulation with planes, made as a capability study for Jev.",
+  "github": "https://github.com/lbotinelly/jev-little-airways",
+  "website": null,
+  "how_used_jev": "Jev makes each plane's in-flight decisions, such as divert or continue, hold, give way, or who lands first. Each plane knows only itself and nearby traffic.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lbotinelly/jev-little-airways"
+  }
+}

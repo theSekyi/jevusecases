@@ -1,0 +1,22 @@
+{
+  "id": "recodelabs-duckdb-jev",
+  "project": "duckdb-jev",
+  "description": "Adds natural-language WHERE clauses to DuckDB as an extension.",
+  "github": "https://github.com/recodelabs/duckdb-jev",
+  "website": null,
+  "how_used_jev": "Jev judges each row with a calibrated probability. The jev() function composes with AND, joins, GROUP BY, and ORDER BY.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/recodelabs/duckdb-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "0xarx-jevegis",
+  "project": "Jevegis",
+  "description": "Gives guardrails for LLM apps in one API call. It checks for prompt injection, jailbreaks, leaks, and unsafe content.",
+  "github": "https://github.com/0xArx/jevegis",
+  "website": "https://jevegis.vercel.app",
+  "how_used_jev": "One Jev request runs all checks for the target and returns probabilities. Code applies thresholds to reach a verdict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xArx/jevegis"
+  }
+}

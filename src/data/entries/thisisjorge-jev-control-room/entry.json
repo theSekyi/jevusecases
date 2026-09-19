@@ -1,0 +1,22 @@
+{
+  "id": "thisisjorge-jev-control-room",
+  "project": "Jev Control Room",
+  "description": "Shows a visual control room for typed decisions such as routing, gating, and scoring. It is a Next.js app with a demo mode.",
+  "github": "https://github.com/thisisjorge/jev-control-room",
+  "website": null,
+  "how_used_jev": "It sends state to Jev through Vercel AI Gateway and gets a choice, score, or boolean. A confidence policy then decides to act, review, or stay manual.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thisisjorge/jev-control-room"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "oso95-x-scanner",
+  "project": "x-scanner",
+  "description": "Labels posts on X as you scroll, through a Chrome extension with a live cost counter.",
+  "github": "https://github.com/oso95/x-scanner",
+  "website": null,
+  "how_used_jev": "Each post goes to Jev with six typed questions in one request. The answers show in a chip under the post, and some posts get an orange flag.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/oso95/x-scanner"
+  }
+}

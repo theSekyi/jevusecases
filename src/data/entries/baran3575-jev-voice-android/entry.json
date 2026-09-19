@@ -1,0 +1,22 @@
+{
+  "id": "baran3575-jev-voice-android",
+  "project": "Jev Voice Android",
+  "description": "An Android app that turns Turkish voice commands into device actions, such as notes, reminders, calls, and text messages.",
+  "github": "https://github.com/Baran3575/jev-voice-android",
+  "website": null,
+  "how_used_jev": "One Jev call asks the command type, urgency, and mood in parallel. Code maps the typed answers to a device action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Baran3575/jev-voice-android"
+  }
+}

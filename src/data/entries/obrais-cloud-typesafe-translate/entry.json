@@ -1,0 +1,22 @@
+{
+  "id": "obrais-cloud-typesafe-translate",
+  "project": "typesafe-translate",
+  "description": "Turns a plain-language request into a valid TypeSafe request with a local Ollama LLM, then runs it.",
+  "github": "https://github.com/Obrais-cloud/typesafe-translate",
+  "website": null,
+  "how_used_jev": "The local LLM compiles the sentence into state plus score, choice, or noul questions. The tool then sends that request to Jev and returns the answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Obrais-cloud/typesafe-translate"
+  }
+}

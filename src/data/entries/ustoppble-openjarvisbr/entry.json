@@ -1,0 +1,22 @@
+{
+  "id": "ustoppble-openjarvisbr",
+  "project": "OpenJarvisBR",
+  "description": "A voice assistant in Rust that talks with you in real time through Gemini Live.",
+  "github": "https://github.com/ustoppble/openjarvisbr",
+  "website": null,
+  "how_used_jev": "For each piece of speech, Jev decides if it is a safe, closed action. If so, the assistant runs it before Gemini answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ustoppble/openjarvisbr"
+  }
+}

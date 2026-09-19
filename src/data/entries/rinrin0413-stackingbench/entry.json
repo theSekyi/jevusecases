@@ -1,0 +1,22 @@
+{
+  "id": "rinrin0413-stackingbench",
+  "project": "StackingBench",
+  "description": "Runs local matches to compare how LLMs read the board, look ahead, and judge attack and defense.",
+  "github": "https://github.com/Rinrin0413/StackingBench",
+  "website": null,
+  "how_used_jev": "A player can use the Jev Choice primitive to pick one move from the list of legal moves.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Rinrin0413/StackingBench"
+  }
+}

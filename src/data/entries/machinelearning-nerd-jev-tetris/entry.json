@@ -1,0 +1,22 @@
+{
+  "id": "machinelearning-nerd-jev-tetris",
+  "project": "jev-tetris",
+  "description": "A small Tetris game where Jev chooses where each piece goes and Python owns the physics.",
+  "github": "https://github.com/MachineLearning-Nerd/jev-tetris",
+  "website": null,
+  "how_used_jev": "The engine lists the legal placements, and Jev selects one placement ID. The engine checks the ID and its cells before it locks the piece.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MachineLearning-Nerd/jev-tetris"
+  }
+}

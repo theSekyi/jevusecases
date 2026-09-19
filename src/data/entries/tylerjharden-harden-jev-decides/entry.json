@@ -1,0 +1,22 @@
+{
+  "id": "tylerjharden-harden-jev-decides",
+  "project": "harden-jev-decides",
+  "description": "A decision board that picks which of eleven stream ideas to build as a live MVP.",
+  "github": "https://github.com/tylerjharden/harden-jev-decides",
+  "website": null,
+  "how_used_jev": "Jev answers typed questions about each idea in one request. Code blocks some ideas, weights the scores, and prints a winner.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tylerjharden/harden-jev-decides"
+  }
+}

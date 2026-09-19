@@ -1,0 +1,22 @@
+{
+  "id": "henstarr-jbrancher",
+  "project": "JBrancher",
+  "description": "Adds a decision point to existing agent loops so they choose the next action from known candidates.",
+  "github": "https://github.com/henstarr/JBrancher",
+  "website": null,
+  "how_used_jev": "A deterministic rule runs first, then Jev chooses from the candidates. If needed, the existing actor is the fallback.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/henstarr/JBrancher"
+  }
+}

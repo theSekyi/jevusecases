@@ -1,0 +1,22 @@
+{
+  "id": "byk-jev-mcp",
+  "project": "jev-eval-mcp",
+  "description": "Gives agents an MCP server to test Jev questions and pick thresholds. It can prototype questions, run them over many items, and measure them.",
+  "github": "https://github.com/byk/jev-mcp",
+  "website": null,
+  "how_used_jev": "The tools send noul, choice, and score questions to Jev. The jev_eval tool checks question variants against labeled examples for accuracy and calibration.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/byk/jev-mcp"
+  }
+}

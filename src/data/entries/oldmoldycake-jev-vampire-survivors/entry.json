@@ -1,0 +1,22 @@
+{
+  "id": "oldmoldycake-jev-vampire-survivors",
+  "project": "Jev plays Vampire Survivors",
+  "description": "Plays the Steam game Vampire Survivors on native Linux through a BepInEx plugin. A browser dashboard shows each decision live.",
+  "github": "https://github.com/oldmoldycake/jev_vampire_survivors",
+  "website": null,
+  "how_used_jev": "A Python process turns game state into plain-English questions for Jev. Jev picks the character, stage, level-ups, and walking direction four times a second.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/oldmoldycake/jev_vampire_survivors"
+  }
+}

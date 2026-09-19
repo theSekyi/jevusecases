@@ -1,0 +1,22 @@
+{
+  "id": "joacomarc-jev-harness-router",
+  "project": "jev-harness-router",
+  "description": "Decides how an agent turn runs before the harness starts the work. It has a hard latency deadline.",
+  "github": "https://github.com/JoacoMarc/jev-harness-router",
+  "website": null,
+  "how_used_jev": "One batched Jev call picks the tools and skill for the turn. Code gets the model tier and effort budget from a Jev Score.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JoacoMarc/jev-harness-router"
+  }
+}

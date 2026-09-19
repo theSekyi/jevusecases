@@ -1,0 +1,22 @@
+{
+  "id": "nibir1-typesafe-go",
+  "project": "typesafe-go",
+  "description": "Provides a community Go SDK for the TypeSafe System One API. It is pre-release and not yet published.",
+  "github": "https://github.com/Nibir1/typesafe-go",
+  "website": null,
+  "how_used_jev": "Code sends one state and a map of typed questions to Jev. It gets one typed answer per question, with probabilities to branch on.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Nibir1/typesafe-go"
+  }
+}

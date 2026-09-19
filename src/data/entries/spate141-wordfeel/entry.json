@@ -1,0 +1,22 @@
+{
+  "id": "spate141-wordfeel",
+  "project": "wordfeel",
+  "description": "Turns a word or short phrase into taste, material, scent, and shape profiles. It has a reusable library and a CLI.",
+  "github": "https://github.com/spate141/wordfeel",
+  "website": "https://wordfeel.snehal.ai/",
+  "how_used_jev": "Jev returns a probability distribution over a fixed palette for each of the four sensory questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/spate141/wordfeel"
+  }
+}

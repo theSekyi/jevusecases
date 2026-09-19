@@ -1,0 +1,22 @@
+{
+  "id": "pumpkinredbean-bside",
+  "project": "bside",
+  "description": "Drives the Aside browser toward a goal with Jev decisions instead of a chat LLM.",
+  "github": "https://github.com/pumpkinredbean/bside",
+  "website": null,
+  "how_used_jev": "Each tick, Jev picks the action and the element and decides if the goal is met. The author reports 52.8s for one Wikipedia task, against 72.9s for gpt-6-astra.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pumpkinredbean/bside"
+  }
+}

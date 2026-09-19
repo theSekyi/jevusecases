@@ -1,0 +1,22 @@
+{
+  "id": "choxos-jev-reviewer",
+  "project": "Jev Reviewer",
+  "description": "Helps with data extraction for systematic reviews from trial reports and supplements. Files stay in your browser.",
+  "github": "https://github.com/choxos/jev-reviewer",
+  "website": "https://jevreviewer.xera.ac",
+  "how_used_jev": "Jev points at the lines that answer each extraction question. Every answer is a verbatim quote with its page, which you check before export.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/choxos/jev-reviewer"
+  }
+}

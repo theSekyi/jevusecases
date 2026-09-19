@@ -1,0 +1,22 @@
+{
+  "id": "felixfisher-pi-jev-compaction",
+  "project": "pi-jev-compaction",
+  "description": "Compacts old tool history in the Pi Coding Agent and stores an auditable replay. User text and assistant prose stay verbatim.",
+  "github": "https://github.com/felixfisher/pi-jev-compaction",
+  "website": null,
+  "how_used_jev": "The extension pairs tool calls with results and asks Jev two questions per pair. It then keeps, truncates, or drops each pair.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/felixfisher/pi-jev-compaction"
+  }
+}

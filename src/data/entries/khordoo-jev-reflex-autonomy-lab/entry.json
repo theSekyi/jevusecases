@@ -1,0 +1,22 @@
+{
+  "id": "khordoo-jev-reflex-autonomy-lab",
+  "project": "Jev Reflex Autonomy Lab",
+  "description": "An interactive simulation of one to twenty drones that navigate an asteroid field.",
+  "github": "https://github.com/khordoo/jev-reflex-autonomy-lab",
+  "website": null,
+  "how_used_jev": "Jev steers each drone as its System 1 reflex layer. When confidence falls below a threshold, an optional System 2 planner gives advice.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/khordoo/jev-reflex-autonomy-lab"
+  }
+}

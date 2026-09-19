@@ -1,0 +1,22 @@
+{
+  "id": "songmarco-jev-jstris",
+  "project": "Jev × Jstris",
+  "description": "Plays the Jstris browser game through keyboard input, with a board check after every lock.",
+  "github": "https://github.com/SongMarco/jev-jstris",
+  "website": null,
+  "how_used_jev": "Jev picks a reachable Tetris placement, and a local controller executes it. The author reports one 40-line sprint run with 105 decisions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SongMarco/jev-jstris"
+  }
+}

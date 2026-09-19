@@ -1,0 +1,22 @@
+{
+  "id": "jkudish-jev-mcp",
+  "project": "Jev MCP",
+  "description": "Gives agents eight MCP judgment tools, such as verify, screen, rerank, classify, and extract.",
+  "github": "https://github.com/jkudish/jev-mcp",
+  "website": null,
+  "how_used_jev": "Each tool asks Jev a typed question and returns probabilities, and a confidence score for most tools. Examples are checking claims against evidence and screening content.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jkudish/jev-mcp"
+  }
+}

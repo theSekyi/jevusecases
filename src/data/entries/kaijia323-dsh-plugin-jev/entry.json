@@ -1,0 +1,22 @@
+{
+  "id": "kaijia323-dsh-plugin-jev",
+  "project": "dsh-plugin-jev",
+  "description": "A plugin that adds Jev to DeepSeek Harness as a native tool named jev_decide. It has no dependencies.",
+  "github": "https://github.com/kaijia323/dsh-plugin-jev",
+  "website": null,
+  "how_used_jev": "The agent calls jev_decide with a state and typed questions, through the TypeSafe API or Vercel AI Gateway. It gets typed answers with confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kaijia323/dsh-plugin-jev"
+  }
+}

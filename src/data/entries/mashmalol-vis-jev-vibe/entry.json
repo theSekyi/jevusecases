@@ -1,0 +1,22 @@
+{
+  "id": "mashmalol-vis-jev-vibe",
+  "project": "Vis-Jev-vibe",
+  "description": "Follows the TypeSafe quickstart to evaluate support tickets, with a CLI, a local HTML UI, and a vision prototype.",
+  "github": "https://github.com/mashmalol/Vis-Jev-vibe",
+  "website": null,
+  "how_used_jev": "Jev rates each ticket for department, frustration, and urgency. A prototype endpoint also sends an image plus optional text for a typed decision.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mashmalol/Vis-Jev-vibe"
+  }
+}

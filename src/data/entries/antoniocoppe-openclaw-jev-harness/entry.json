@@ -1,0 +1,22 @@
+{
+  "id": "antoniocoppe-openclaw-jev-harness",
+  "project": "openclaw-jev-harness",
+  "description": "Adds a decision layer to OpenClaw through a plugin based on jev-harness. Generative work stays with other models.",
+  "github": "https://github.com/AntonioCoppe/openclaw-jev-harness",
+  "website": null,
+  "how_used_jev": "Jev gates decisions such as shell and tool allow or deny, model-cost routing, inbox triage, and browser next action. The plugin uses confidence gates and tool-call hooks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AntonioCoppe/openclaw-jev-harness"
+  }
+}

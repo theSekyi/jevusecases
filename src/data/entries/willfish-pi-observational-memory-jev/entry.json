@@ -1,0 +1,22 @@
+{
+  "id": "willfish-pi-observational-memory-jev",
+  "project": "pi-observational-memory-jev",
+  "description": "Gives pi tiered observational memory. Compaction then renders a ledger of observations without a model.",
+  "github": "https://github.com/willfish/pi-observational-memory-jev",
+  "website": null,
+  "how_used_jev": "Jev is the observer. It distills the session into atomic observations on a branch-local ledger.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/willfish/pi-observational-memory-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "picaye-jev-compaction",
+  "project": "jev-compaction",
+  "description": "Compacts context in Hermes agent sessions without summarizing. User and assistant text is never removed, and kept content stays verbatim.",
+  "github": "https://github.com/picaye/jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev scores every tool call with the whole conversation as context. The tool removes or truncates the calls and results that Jev judges stale.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/picaye/jev-compaction"
+  }
+}

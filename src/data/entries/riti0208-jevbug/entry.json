@@ -1,0 +1,22 @@
+{
+  "id": "riti0208-jevbug",
+  "project": "JevBug",
+  "description": "Runs an artificial-life experiment with simple 2D creatures to see if meaningless signals become informative.",
+  "github": "https://github.com/Riti0208/jevbug",
+  "website": "https://jevbug.vercel.app",
+  "how_used_jev": "Jev is the decision maker for each creature. It gets only the creature's own state, perception, and memory, through Vercel AI Gateway.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Riti0208/jevbug"
+  }
+}

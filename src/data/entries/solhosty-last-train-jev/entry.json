@@ -1,0 +1,22 @@
+{
+  "id": "solhosty-last-train-jev",
+  "project": "The Last Train",
+  "description": "Runs a small detective escape room game. You investigate three passengers and connect their claims to evidence.",
+  "github": "https://github.com/solhosty/last-train-jev",
+  "website": null,
+  "how_used_jev": "The player writes deductions, and one Jev request asks three questions about each action. The game then decides what changes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/solhosty/last-train-jev"
+  }
+}

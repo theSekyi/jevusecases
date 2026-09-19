@@ -1,0 +1,22 @@
+{
+  "id": "wrongstack-wrongstack",
+  "project": "WrongStack",
+  "description": "Adds optional Jev decisions to an open-source AI coding agent with a terminal, TUI, and browser UI.",
+  "github": "https://github.com/WrongStack/WrongStack",
+  "website": "https://wrongstack.com/",
+  "how_used_jev": "Jev suggests a relevant skill before a turn and classifies unclear fleet dispatches. Each feature is opt-in.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/WrongStack/WrongStack"
+  }
+}

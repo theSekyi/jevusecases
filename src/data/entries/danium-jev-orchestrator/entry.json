@@ -1,0 +1,22 @@
+{
+  "id": "danium-jev-orchestrator",
+  "project": "Jev Orchestrator",
+  "description": "Plans and runs bounded development tasks as a local, Windows-first Codex plugin. The author says it has passed only offline tests.",
+  "github": "https://github.com/danium/jev-orchestrator",
+  "website": null,
+  "how_used_jev": "In basic mode, Jev selects the current Codex default route or abstains. A missing or failed Jev key blocks the route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/danium/jev-orchestrator"
+  }
+}

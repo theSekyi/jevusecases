@@ -1,0 +1,22 @@
+{
+  "id": "ponyo877-jev-realtime-brain-scanner",
+  "project": "jev-realtime-brain-scanner",
+  "description": "Updates a brain-maker style picture live as you speak Japanese into the microphone. Apple SpeechAnalyzer transcribes the speech on the Mac.",
+  "github": "https://github.com/ponyo877/jev-realtime-brain-scanner",
+  "website": null,
+  "how_used_jev": "Jev, through OpenRouter, sets the brain's mix of 53 characters from recent speech. The page draws the result with p5.js.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ponyo877/jev-realtime-brain-scanner"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "justinhe16-trade-jev",
+  "project": "trade-jev",
+  "description": "Backtest harness that tests Jev as a trader on NQ L10 order-book data from Databento over 15 trading days.",
+  "github": "https://github.com/justinhe16/trade-jev",
+  "website": null,
+  "how_used_jev": "Jev answers BUY, SELL, or HOLD, and the harness stores its answers and trades. Stored answers can be replayed under new settings without API calls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/justinhe16/trade-jev"
+  }
+}

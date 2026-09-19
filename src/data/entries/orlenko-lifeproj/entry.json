@@ -1,0 +1,22 @@
+{
+  "id": "orlenko-lifeproj",
+  "project": "lifeproj",
+  "description": "Scaffolds, backs up, archives, and lists local, agent-maintained life-admin folders called tekas for Codex and Claude Code.",
+  "github": "https://github.com/orlenko/lifeproj",
+  "website": null,
+  "how_used_jev": "Teka scripts send task descriptions and content to Jev for typed judgments. These cover model routing through lifeproj route, filing, priority, and duplicate checks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/orlenko/lifeproj"
+  }
+}

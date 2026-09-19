@@ -1,0 +1,22 @@
+{
+  "id": "adamtopaz-jevpilot",
+  "project": "JevPilot",
+  "description": "A standalone Lean 4 client for Jev and the TypeSafe System One API.",
+  "github": "https://github.com/adamtopaz/jevpilot",
+  "website": null,
+  "how_used_jev": "It sends a shared state with a batch of Noul, Choice, and Score questions to Jev. It returns typed answers with distributions and confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adamtopaz/jevpilot"
+  }
+}

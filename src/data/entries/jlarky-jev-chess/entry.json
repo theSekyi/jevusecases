@@ -1,0 +1,22 @@
+{
+  "id": "jlarky-jev-chess",
+  "project": "Jev Chess",
+  "description": "Lets you play a full chess game against Jev in the browser. Chess.js handles legal moves, check, and draws.",
+  "github": "https://github.com/JLarky/jev-chess",
+  "website": "https://jev-chess-one.vercel.app",
+  "how_used_jev": "Jev gets the position and one choice question with the legal moves as options. The app plays the chosen move only if it is legal.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JLarky/jev-chess"
+  }
+}

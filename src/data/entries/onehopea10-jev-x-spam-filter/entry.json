@@ -1,0 +1,22 @@
+{
+  "id": "onehopea10-jev-x-spam-filter",
+  "project": "JEV X spam filter",
+  "description": "Hides spam replies under X posts, such as crypto pump replies and adult spam. It is a Chrome extension.",
+  "github": "https://github.com/onehopeA10/jev-x-spam-filter",
+  "website": null,
+  "how_used_jev": "Local rules catch known templates. For suspicious replies, Jev decides if the reply should be hidden and which spam type it is.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/onehopeA10/jev-x-spam-filter"
+  }
+}

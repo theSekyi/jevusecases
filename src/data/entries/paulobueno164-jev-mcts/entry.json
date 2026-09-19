@@ -1,0 +1,22 @@
+{
+  "id": "paulobueno164-jev-mcts",
+  "project": "jev-mcts",
+  "description": "Runs a tree search (MCTS/PUCT) for agent tasks and requires a human gate before steps that cannot be undone. It reworks lhemerly/mcts-agent.",
+  "github": "https://github.com/paulobueno164/jev-mcts",
+  "website": null,
+  "how_used_jev": "Jev gives screening, priors, and value estimates to the tree search. Only a measured probe result, not Jev, marks a step as done.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/paulobueno164/jev-mcts"
+  }
+}

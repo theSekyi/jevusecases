@@ -1,0 +1,22 @@
+{
+  "id": "rashedint32-jev-gates",
+  "project": "jev-gates",
+  "description": "Adds six gates to Claude Code that check rules, scope, intent, completion, claims, and commit honesty.",
+  "github": "https://github.com/rashedInt32/jev-gates",
+  "website": null,
+  "how_used_jev": "Jev returns a probability for each check on every edit or stop. The gates only escalate and never approve.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rashedInt32/jev-gates"
+  }
+}

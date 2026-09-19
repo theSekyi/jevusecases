@@ -1,0 +1,22 @@
+{
+  "id": "yyk2007-jev-flappy",
+  "project": "Jev Flight School",
+  "description": "Lets Jev play a live Flappy Bird game. It shows probabilities, latency, tokens, and cost.",
+  "github": "https://github.com/YYK2007/jev-flappy",
+  "website": "https://jev-flight-school.yusufkusibati.chatgpt.site",
+  "how_used_jev": "Jev answers a Choice question over and over and picks flap or coast. The game uses the answer directly.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/YYK2007/jev-flappy"
+  }
+}

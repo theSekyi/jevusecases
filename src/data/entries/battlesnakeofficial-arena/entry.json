@@ -1,0 +1,22 @@
+{
+  "id": "battlesnakeofficial-arena",
+  "project": "Battlesnake Arena",
+  "description": "Moderates user text on arena.battlesnake.com, a game platform where web servers play Battlesnake matches.",
+  "github": "https://github.com/BattlesnakeOfficial/arena",
+  "website": null,
+  "how_used_jev": "Jev judges snake names, tournament text, saved-game titles, and post-game shouts. Flagged or blocked items go to an admin review table.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BattlesnakeOfficial/arena"
+  }
+}

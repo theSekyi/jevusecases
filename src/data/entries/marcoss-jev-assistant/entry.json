@@ -1,0 +1,22 @@
+{
+  "id": "marcoss-jev-assistant",
+  "project": "jev-assistant",
+  "description": "A minimal Next.js proof of concept for a typed generative UI. Each query renders a card, such as weather, time, or news.",
+  "github": "https://github.com/marcoss/jev-assistant",
+  "website": "https://jev-beta.vercel.app",
+  "how_used_jev": "The assistant route asks Jev to select the card type for each query. Without a key, it uses a local mock classifier.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcoss/jev-assistant"
+  }
+}

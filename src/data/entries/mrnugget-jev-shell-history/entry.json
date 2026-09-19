@@ -1,0 +1,22 @@
+{
+  "id": "mrnugget-jev-shell-history",
+  "project": "jev-shell-history",
+  "description": "Shows fish-style autosuggestions from your zsh history.",
+  "github": "https://github.com/mrnugget/jev-shell-history",
+  "website": null,
+  "how_used_jev": "Jev ranks your last 100 distinct history entries by how likely you are completing each one. The best match shows in grey.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mrnugget/jev-shell-history"
+  }
+}

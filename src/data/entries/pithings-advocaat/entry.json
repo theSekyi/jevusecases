@@ -1,0 +1,22 @@
+{
+  "id": "pithings-advocaat",
+  "project": "Advocaat",
+  "description": "A small TypeScript client that asks Jev questions about your data in one request.",
+  "github": "https://github.com/pithings/advocaat",
+  "website": null,
+  "how_used_jev": "Sends your data and questions to Jev and returns probabilities, choices, and scores under the same keys.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pithings/advocaat"
+  }
+}

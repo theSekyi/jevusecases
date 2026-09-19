@@ -1,0 +1,22 @@
+{
+  "id": "alurith-jeff",
+  "project": "jeff",
+  "description": "A read-only Go CLI that checks your files against your rules, locally or in CI. Rules include unclear responsibility and misleading names.",
+  "github": "https://github.com/Alurith/jeff",
+  "website": null,
+  "how_used_jev": "Jev checks each file semantically against each rule. jeff turns the answers into pass, violation, or inconclusive exit codes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Alurith/jeff"
+  }
+}

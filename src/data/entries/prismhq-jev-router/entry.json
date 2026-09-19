@@ -1,0 +1,22 @@
+{
+  "id": "prismhq-jev-router",
+  "project": "jev-router",
+  "description": "Routes OpenAI-compatible requests to a model on top of LiteLLM, across OpenRouter or other providers.",
+  "github": "https://github.com/prismhq/jev-router",
+  "website": null,
+  "how_used_jev": "With a TypeSafe key, Jev picks the model for each request after capability filters. Without a key, a cheapest-eligible baseline runs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/prismhq/jev-router"
+  }
+}

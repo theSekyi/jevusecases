@@ -1,0 +1,22 @@
+{
+  "id": "ketankhunti-typesafe-sdk-rust",
+  "project": "typesafe-sdk-rust",
+  "description": "Gives Rust programs an SDK for TypeSafe System One models such as Jev.",
+  "github": "https://github.com/Ketankhunti/typesafe-sdk-rust",
+  "website": null,
+  "how_used_jev": "Programs send state and several typed questions in one request. Jev returns probabilities, choices, and scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ketankhunti/typesafe-sdk-rust"
+  }
+}

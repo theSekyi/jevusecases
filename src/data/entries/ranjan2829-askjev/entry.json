@@ -1,0 +1,22 @@
+{
+  "id": "ranjan2829-askjev",
+  "project": "AskJev",
+  "description": "Drives Brave or Chrome from plain-English chat in Claude Desktop. A guard stops irreversible clicks.",
+  "github": "https://github.com/ranjan2829/AskJev",
+  "website": null,
+  "how_used_jev": "Jev makes the on-page decisions with Noul, Choice, and Score questions, in place of Claude as the planner.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ranjan2829/AskJev"
+  }
+}

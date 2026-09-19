@@ -1,0 +1,22 @@
+{
+  "id": "wany-i-jev-decision-layer",
+  "project": "jev-decision-layer",
+  "description": "Wraps Jev as registry-driven business decision tools with confidence gates and hard constraints. It has a CLI and an MCP server.",
+  "github": "https://github.com/Wany-i/jev-decision-layer",
+  "website": null,
+  "how_used_jev": "Callers name a registered decision and give its fields. The layer calls typesafe/jev-1.13 through the OpenRouter decisions endpoint and returns the typed answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Wany-i/jev-decision-layer"
+  }
+}

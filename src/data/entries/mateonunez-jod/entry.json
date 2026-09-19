@@ -1,0 +1,22 @@
+{
+  "id": "mateonunez-jod",
+  "project": "jod",
+  "description": "Binds a state schema and a set of questions into one object in TypeScript, and returns typed answers.",
+  "github": "https://github.com/mateonunez/jod",
+  "website": "https://npmjs.com/package/@mateonunez/jod",
+  "how_used_jev": "The state is validated locally, then all questions go to Jev in one parallel request. Answers come back as domain values, such as a department or a refund flag.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mateonunez/jod"
+  }
+}

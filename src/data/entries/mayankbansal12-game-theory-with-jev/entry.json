@@ -1,0 +1,22 @@
+{
+  "id": "mayankbansal12-game-theory-with-jev",
+  "project": "Jev plays game theory",
+  "description": "Tests how Jev plays the Prisoner's Dilemma in 40 matches against 8 opponents.",
+  "github": "https://github.com/MayankBansal12/game-theory-with-jev",
+  "website": "https://game-theory-with-jev.vercel.app",
+  "how_used_jev": "Each round, Jev gets the rules, scores, and match history, and picks cooperate or defect.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MayankBansal12/game-theory-with-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jexp-neo4jev",
+  "project": "neo4jev",
+  "description": "Navigates a Neo4j graph one hop at a time, as a demo with notebooks and a Streamlit app.",
+  "github": "https://github.com/jexp/neo4jev",
+  "website": null,
+  "how_used_jev": "At each node, Jev picks which outgoing relationship to follow as a Choice. A Noul question in the same call asks if the goal is reached.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jexp/neo4jev"
+  }
+}

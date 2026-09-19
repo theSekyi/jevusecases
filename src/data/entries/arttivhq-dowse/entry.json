@@ -1,0 +1,22 @@
+{
+  "id": "arttivhq-dowse",
+  "project": "dowse",
+  "description": "Browses the web from the terminal, with search, a reader view, and AI answers.",
+  "github": "https://github.com/arttivhq/dowse",
+  "website": null,
+  "how_used_jev": "When you enable it, Jev reranks the search sources and keeps the top ones for the AI answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/arttivhq/dowse"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jabbslad-pi-jev-tools",
+  "project": "pi-jev-tools",
+  "description": "Adds ranking, classification, search, and structured-decision tools to the Pi coding agent. It does not replace the main model.",
+  "github": "https://github.com/Jabbslad/pi-jev-tools",
+  "website": null,
+  "how_used_jev": "The jev_rank, jev_classify, jev_search, and typesafe_evaluate tools ask Jev for narrow judgments. The coding model uses the results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Jabbslad/pi-jev-tools"
+  }
+}

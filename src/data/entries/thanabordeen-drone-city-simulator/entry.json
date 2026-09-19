@@ -1,0 +1,22 @@
+{
+  "id": "thanabordeen-drone-city-simulator",
+  "project": "Drone City Simulator",
+  "description": "Simulates a drone in a 3D procedural city in the browser. An automation API lets AI agents and Playwright fly it.",
+  "github": "https://github.com/ThanabordeeN/drone-city-simulator",
+  "website": null,
+  "how_used_jev": "Jev is the default AI controller. Each cycle, it scores pitch, strafe, yaw, and vertical movement from the drone state.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ThanabordeeN/drone-city-simulator"
+  }
+}

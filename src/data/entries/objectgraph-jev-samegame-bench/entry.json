@@ -1,0 +1,22 @@
+{
+  "id": "objectgraph-jev-samegame-bench",
+  "project": "jev-samegame-bench",
+  "description": "A benchmark that tests 21 ways to show a SameGame board to Jev. It keeps all 76,795 logged requests and responses.",
+  "github": "https://github.com/objectgraph/jev-samegame-bench",
+  "website": "https://objectgraph.com/blog/jev-plays-samegame/",
+  "how_used_jev": "Each strategy puts the board in front of Jev, and Jev picks the moves. Each strategy plays 20 tuned boards and 20 held-out boards three times.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/objectgraph/jev-samegame-bench"
+  }
+}

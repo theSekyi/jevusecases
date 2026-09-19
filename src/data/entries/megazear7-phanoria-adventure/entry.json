@@ -1,0 +1,22 @@
+{
+  "id": "megazear7-phanoria-adventure",
+  "project": "Phanoria Adventure",
+  "description": "Runs a site at adventure.alexlockhart.me with Auth0 login and a server endpoint for user questions.",
+  "github": "https://github.com/megazear7/phanoria-adventure",
+  "website": null,
+  "how_used_jev": "The endpoint splits a stored content file into chunks and asks Jev each question as a Noul. It stops at the first probability over a threshold, or returns the highest one.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/megazear7/phanoria-adventure"
+  }
+}

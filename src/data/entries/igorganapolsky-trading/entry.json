@@ -1,0 +1,22 @@
+{
+  "id": "igorganapolsky-trading",
+  "project": "trading",
+  "description": "Runs a paper-only lab that tests SPY put-credit trades with broker-backed ledgers and risk gates.",
+  "github": "https://github.com/IgorGanapolsky/trading",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/IgorGanapolsky/trading"
+  }
+}

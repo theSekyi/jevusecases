@@ -1,0 +1,22 @@
+{
+  "id": "twilwa-pi-typesafe",
+  "project": "pi-typesafe",
+  "description": "Adds hazard checks and diff-quality checks to the Pi coding agent around bash, write, and edit.",
+  "github": "https://github.com/twilwa/pi-typesafe",
+  "website": null,
+  "how_used_jev": "Jev answers four checks before each bash, write, or edit call and four after each write or edit. The extension applies thresholds and gives advisory feedback by default.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/twilwa/pi-typesafe"
+  }
+}

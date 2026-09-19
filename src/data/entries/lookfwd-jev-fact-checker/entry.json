@@ -1,0 +1,22 @@
+{
+  "id": "lookfwd-jev-fact-checker",
+  "project": "jev-fact-checker",
+  "description": "Fact-checks a tweet against evidence from Wikipedia. It runs as a CLI or a local web page.",
+  "github": "https://github.com/lookfwd/jev-fact-checker",
+  "website": null,
+  "how_used_jev": "Jev decides which sentences are check-worthy claims. It then judges if each Wikipedia passage supports or contradicts a claim, with a confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lookfwd/jev-fact-checker"
+  }
+}

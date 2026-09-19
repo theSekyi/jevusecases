@@ -1,0 +1,22 @@
+{
+  "id": "gamesonrblx-jevbridge",
+  "project": "Jevbridge",
+  "description": "Connects Jev to editors and LLMs through ACP and MCP adapters, next to Codex, Claude, Grok, or OpenCode.",
+  "github": "https://github.com/gamesonrblx/Jevbridge",
+  "website": null,
+  "how_used_jev": "It uses Jev for typed decisions such as routing, gating, scoring, and computer-use action choice. Without a key, another LLM stands in.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gamesonrblx/Jevbridge"
+  }
+}

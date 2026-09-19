@@ -1,0 +1,22 @@
+{
+  "id": "ode98-guessing-game-v2",
+  "project": "Guess the Word",
+  "description": "A yes or no guessing game. Players ask questions to find a secret word.",
+  "github": "https://github.com/Ode98/guessing-game-v2",
+  "website": null,
+  "how_used_jev": "Jev judges each question and answers yes, no, too ambiguous, or exploit attempt when a question tries to cheat.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ode98/guessing-game-v2"
+  }
+}

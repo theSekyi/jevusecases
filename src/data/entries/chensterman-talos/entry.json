@@ -1,0 +1,22 @@
+{
+  "id": "chensterman-talos",
+  "project": "Talos",
+  "description": "Plays survival Minecraft from commands sent over HTTP, with no LLM in the loop. Code owns the plan and the actions.",
+  "github": "https://github.com/chensterman/talos",
+  "website": null,
+  "how_used_jev": "About every 1.5 seconds, Talos sends the game state to Jev in one batched call. Jev answers typed questions at each branch point.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/chensterman/talos"
+  }
+}

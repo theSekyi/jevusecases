@@ -1,0 +1,22 @@
+{
+  "id": "frostney-clean-code-review",
+  "project": "Clean Code Review",
+  "description": "Reviews a GitHub pull request, diff, or codebase file by file against the book Clean Code.",
+  "github": "https://github.com/frostney/clean-code-review",
+  "website": "https://clean-code-review.vercel.app",
+  "how_used_jev": "Jev answers Clean Code questions about each file with calibrated probabilities. Luna then writes a short review from those findings.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/frostney/clean-code-review"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "socai-io-jev-social",
+  "project": "jev-social",
+  "description": "Runs social media research from a goal, with the socai CLI for browser work and a local results page.",
+  "github": "https://github.com/socai-io/jev-social",
+  "website": "https://socai.io/",
+  "how_used_jev": "Jev makes one typed choice: Instagram, TikTok, or unsupported. The socai CLI then searches the chosen site.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/socai-io/jev-social"
+  }
+}

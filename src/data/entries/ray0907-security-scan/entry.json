@@ -1,0 +1,22 @@
+{
+  "id": "ray0907-security-scan",
+  "project": "Security Scan",
+  "description": "Adds optional Jev verdict suggestions to an agent skill that runs security scans and writes one report.",
+  "github": "https://github.com/Ray0907/security-scan",
+  "website": null,
+  "how_used_jev": "Jev suggests confirmed, needs_validation, or rejected for unreviewed Semgrep findings, using the redacted snippet.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ray0907/security-scan"
+  }
+}

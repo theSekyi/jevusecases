@@ -1,0 +1,22 @@
+{
+  "id": "0xsarnavo-potpie-doc-parser",
+  "project": "Potpie Docs Parser",
+  "description": "Answers questions about the Potpie docs with the exact paragraph that answers them. It says so when the docs do not cover the question.",
+  "github": "https://github.com/0xSarnavo/potpie-doc-parser",
+  "website": null,
+  "how_used_jev": "A BM25 search makes a shortlist of docs blocks. Jev ranks and judges them, and the app returns the best block verbatim.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xSarnavo/potpie-doc-parser"
+  }
+}

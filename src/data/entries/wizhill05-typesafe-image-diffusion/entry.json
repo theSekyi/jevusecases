@@ -1,0 +1,22 @@
+{
+  "id": "wizhill05-typesafe-image-diffusion",
+  "project": "typesafe-image-diffusion",
+  "description": "Makes 16x16 pixel art from a text prompt without an image model. Refinement passes clean up holes and edges.",
+  "github": "https://github.com/Wizhill05/typesafe-image-diffusion",
+  "website": null,
+  "how_used_jev": "Jev answers 256 parallel Choice questions, one per pixel, and picks one of 16 palette colors. Refinement passes ask each pixel again with its neighbors.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Wizhill05/typesafe-image-diffusion"
+  }
+}

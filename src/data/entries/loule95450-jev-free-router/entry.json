@@ -1,0 +1,22 @@
+{
+  "id": "loule95450-jev-free-router",
+  "project": "jev-free-router",
+  "description": "Routes each OpenCode message to a model from the free OpenCode Zen and Go catalogues. It is a fork of jev-router.",
+  "github": "https://github.com/Loule95450/jev-free-router",
+  "website": null,
+  "how_used_jev": "On each new message, Jev estimates which model in the catalogue is best for the request. OpenAI and Anthropic models are excluded.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Loule95450/jev-free-router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ably-labs-jev-pong",
+  "project": "Jev Pong",
+  "description": "A Pong game where the ball moves one step per model decision, with Jev playing against LLMs. Every player and agent is on an Ably channel.",
+  "github": "https://github.com/ably-labs/jev-pong",
+  "website": "https://jev-pong.ably.dev",
+  "how_used_jev": "Each model gets the same state and question through Vercel AI Gateway. Jev answers with a typed choice, and the author reports 4.4 decisions per second for Jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ably-labs/jev-pong"
+  }
+}

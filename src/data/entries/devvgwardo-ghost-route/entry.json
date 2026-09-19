@@ -1,0 +1,22 @@
+{
+  "id": "devvgwardo-ghost-route",
+  "project": "Ghost Route",
+  "description": "Shows ALPR cameras on a map and ranks driving routes by camera exposure. The goal is a route that passes the fewest cameras.",
+  "github": "https://github.com/DevvGwardo/ghost-route",
+  "website": null,
+  "how_used_jev": "Jev picks the best route from the candidate routes. Below a confidence threshold, the app uses its heuristic best route.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/DevvGwardo/ghost-route"
+  }
+}

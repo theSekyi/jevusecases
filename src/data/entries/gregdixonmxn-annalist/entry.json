@@ -1,0 +1,22 @@
+{
+  "id": "gregdixonmxn-annalist",
+  "project": "Annalist",
+  "description": "Records what a coding agent changed and gates the pull request against a path policy. For example, it blocks writes to .env.",
+  "github": "https://github.com/GregDixonMXN/annalist",
+  "website": null,
+  "how_used_jev": "The opt-in score command sends one Jev judgment over what ran, what it touched, and how it ended. It stores a 0 to 100 risk score with a confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/GregDixonMXN/annalist"
+  }
+}

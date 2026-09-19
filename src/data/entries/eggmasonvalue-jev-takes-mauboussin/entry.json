@@ -1,0 +1,22 @@
+{
+  "id": "eggmasonvalue-jev-takes-mauboussin",
+  "project": "jev-takes-mauboussin",
+  "description": "Tests Jev on Michael Mauboussin's 50-question confidence calibration quiz and compares it with the human crowd.",
+  "github": "https://github.com/eggmasonvalue/jev-takes-mauboussin",
+  "website": null,
+  "how_used_jev": "Jev answers each true or false question with a confidence. The author reports 45 of 50 correct (90.0%) with a mean confidence of 91.4%.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/eggmasonvalue/jev-takes-mauboussin"
+  }
+}

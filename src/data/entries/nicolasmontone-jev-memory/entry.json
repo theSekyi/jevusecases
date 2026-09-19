@@ -1,0 +1,22 @@
+{
+  "id": "nicolasmontone-jev-memory",
+  "project": "jev-memory",
+  "description": "Adds a long-term memory layer for agents on the Vercel AI SDK. It stores exact strings and never rewrites them.",
+  "github": "https://github.com/NicolasMontone/jev-memory",
+  "website": null,
+  "how_used_jev": "Jev runs three gates. It decides if a fact is worth storing, which facts to retrieve, and which stale facts to evict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NicolasMontone/jev-memory"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "imserhatdemir-jevspace",
+  "project": "JevSpace",
+  "description": "Runs a DarkOrbit-style Three.js space game where an AI pilot mines asteroids, hunts bots, and follows a mission you define.",
+  "github": "https://github.com/imserhatdemir/jevspace",
+  "website": null,
+  "how_used_jev": "Jev picks which target to pursue from a list the engine computes and rates how dangerous the situation is. Deterministic code runs all game rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/imserhatdemir/jevspace"
+  }
+}

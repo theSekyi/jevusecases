@@ -1,0 +1,22 @@
+{
+  "id": "cktang88-jev-playground",
+  "project": "Jev Playground",
+  "description": "A small, dependency-free web playground for Jev. It has an offline mock mode that needs no API key.",
+  "github": "https://github.com/cktang88/jev-playground",
+  "website": null,
+  "how_used_jev": "You give Jev some state and typed noul, choice, or score questions. The page shows the answers with calibrated probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cktang88/jev-playground"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "sayertindall-intent-index",
+  "project": "intent-index",
+  "description": "Finds where a decision was made in a long design conversation, why, and what replaced it. It exposes five tools over MCP.",
+  "github": "https://github.com/sayertindall/intent-index",
+  "website": null,
+  "how_used_jev": "After hybrid retrieval, Jev reranks the results with typed judgments. Each answer points to a turn and line range.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sayertindall/intent-index"
+  }
+}

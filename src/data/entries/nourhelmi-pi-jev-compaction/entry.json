@@ -1,0 +1,22 @@
+{
+  "id": "nourhelmi-pi-jev-compaction",
+  "project": "pi-jev-compaction",
+  "description": "Clears stale tool output from Pi requests automatically. Original messages stay, and you can get outputs back without a rerun.",
+  "github": "https://github.com/nourhelmi/pi-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev scores older tool outputs. Pi stops sending the outputs that are no longer needed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nourhelmi/pi-jev-compaction"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jtsang4-jev-cli",
+  "project": "jev-cli",
+  "description": "Command-line interface for Jev. It takes a state and typed questions and prints structured JSON.",
+  "github": "https://github.com/jtsang4/jev-cli",
+  "website": null,
+  "how_used_jev": "Sends the state and typed questions to Jev. It returns Jev's choices, scores, and probabilities as JSON that code can branch on.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jtsang4/jev-cli"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "vacekvvita-jev-gomoku-harness",
+  "project": "Jev Gomoku harness",
+  "description": "Plays Gomoku with a harness that narrows the move options first.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Local tactics cut 225 moves to about 40 candidates. Jev then picks among tiered options.",
+  "source_tweet": "https://x.com/VacekvVita/status/2100609341145465325",
+  "author": "@VacekvVita",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

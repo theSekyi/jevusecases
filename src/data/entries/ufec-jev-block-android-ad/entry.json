@@ -1,0 +1,22 @@
+{
+  "id": "ufec-jev-block-android-ad",
+  "project": "JevNoiseGate",
+  "description": "Filters unwanted notifications and SMS on Android. Verification codes are matched on the device and never uploaded.",
+  "github": "https://github.com/ufec/jev-block-android-ad",
+  "website": null,
+  "how_used_jev": "Jev decides if each message is noise. The app blocks only what Jev flags, and each uncertain case passes through.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ufec/jev-block-android-ad"
+  }
+}

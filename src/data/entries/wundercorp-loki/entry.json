@@ -1,0 +1,22 @@
+{
+  "id": "wundercorp-loki",
+  "project": "Loki",
+  "description": "Adds an optional Jev companion to Loki, a self-improving agent with a terminal interface and many model providers.",
+  "github": "https://github.com/wundercorp/loki",
+  "website": "https://loki.computer",
+  "how_used_jev": "A typesafe_ask tool asks Jev typed Choice, Score, and Noul questions. An optional Loki Autorouter uses Jev to route between models.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wundercorp/loki"
+  }
+}

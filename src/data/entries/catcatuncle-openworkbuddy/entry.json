@@ -1,0 +1,22 @@
+{
+  "id": "catcatuncle-openworkbuddy",
+  "project": "OpenWorkBuddy",
+  "description": "Adds Jev to OpenWorkBuddy, a local AI office agent that makes PPT, Word, Excel, and web files.",
+  "github": "https://github.com/CatCatUncle/openworkbuddy",
+  "website": null,
+  "how_used_jev": "In goal mode, each acceptance criterion becomes a yes or no question for Jev. A low probability marks the item as uncertain, not as done.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CatCatUncle/openworkbuddy"
+  }
+}

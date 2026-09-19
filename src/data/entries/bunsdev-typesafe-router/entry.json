@@ -1,0 +1,22 @@
+{
+  "id": "bunsdev-typesafe-router",
+  "project": "Jev Tool & Model Router",
+  "description": "Gives a TypeScript routing library and a Next.js demo that select from a fixed set of tools or models.",
+  "github": "https://github.com/BunsDev/typesafe-router",
+  "website": "https://typesafe-router.vercel.app",
+  "how_used_jev": "Each call asks Jev one Choice question over the allowed options. Code then applies confidence and fallback rules, and the app authorizes and executes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BunsDev/typesafe-router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "prasanth263-maza",
+  "project": "Maza",
+  "description": "Runs a local MCP gateway that connects your MCP servers once. It includes a CLI and a dashboard.",
+  "github": "https://github.com/prasanth263/maza",
+  "website": null,
+  "how_used_jev": "Agents see a find_tool tool that uses a Jev Choice to find a capability. Planning and arguments stay with the calling agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/prasanth263/maza"
+  }
+}

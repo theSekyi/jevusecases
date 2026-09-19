@@ -1,0 +1,22 @@
+{
+  "id": "3clyp50-a0-typesafe-ai",
+  "project": "a0-typesafe-ai",
+  "description": "Adds typed Jev tools and probability cards to the Agent Zero chat as a community plugin.",
+  "github": "https://github.com/3clyp50/a0-typesafe-ai",
+  "website": null,
+  "how_used_jev": "One typesafe_query call combines Choice, Noul, and Score questions over the same evidence. Agent Zero shows the answers as probability cards.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/3clyp50/a0-typesafe-ai"
+  }
+}

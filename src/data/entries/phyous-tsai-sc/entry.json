@@ -1,0 +1,22 @@
+{
+  "id": "phyous-tsai-sc",
+  "project": "tsai-sc",
+  "description": "Plays Strongarm, the first combat mission of the original StarCraft shareware, through keyboard and mouse input.",
+  "github": "https://github.com/phyous/tsai-sc",
+  "website": null,
+  "how_used_jev": "Jev reads structured game state and chooses each command. The author reports that Jev completed the Strongarm mission.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phyous/tsai-sc"
+  }
+}

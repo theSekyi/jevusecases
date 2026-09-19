@@ -1,0 +1,22 @@
+{
+  "id": "trietphan-jev-claw",
+  "project": "jev-claw",
+  "description": "Adds a jev_route tool to OpenClaw agents that picks which model should do each task.",
+  "github": "https://github.com/trietphan/jev-claw",
+  "website": null,
+  "how_used_jev": "Jev classifies the task. Your routing policy, written as ordinary code, then picks the model.",
+  "source_tweet": "https://x.com/TrietP/status/2101025469336330424",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/trietphan/jev-claw"
+  }
+}

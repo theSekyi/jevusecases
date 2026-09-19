@@ -1,0 +1,22 @@
+{
+  "id": "iefnaf-pi-jev",
+  "project": "pi-jev",
+  "description": "Adds selective context compaction and per-turn model routing to the pi coding agent. Each extension can be turned on or off.",
+  "github": "https://github.com/iefnaf/pi-jev",
+  "website": null,
+  "how_used_jev": "Jev decides which tool outputs still matter and how demanding each request is. The extensions then drop old outputs and route easy requests to a cheaper model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/iefnaf/pi-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hardel-dw-jev-mods",
+  "project": "jev.mods",
+  "description": "Plans a Minecraft bot that tries to finish the game without a fixed route. It is an early experiment to learn how Jev works.",
+  "github": "https://github.com/Hardel-DW/jev.mods",
+  "website": null,
+  "how_used_jev": "At each tick, Jev picks one primitive action from the current intent. An LLM strategist gets a game summary and is called rarely.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Hardel-DW/jev.mods"
+  }
+}

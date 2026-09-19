@@ -1,0 +1,22 @@
+{
+  "id": "danielkillenberger-jev-predict-skill",
+  "project": "jev-predict-skill",
+  "description": "An agent skill that predicts the outcome another skill would pick, without running that skill.",
+  "github": "https://github.com/DanielKillenberger/jev-predict-skill",
+  "website": null,
+  "how_used_jev": "Gives Jev the target skill's own outcome set as a closed Choice. It reports the pick with a probability per outcome.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/DanielKillenberger/jev-predict-skill"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "superagents-lab-jev-search",
+  "project": "Jev Search",
+  "description": "Searches the web in plain language and returns links and snippets with visible relevance scores. It gives no generated answers.",
+  "github": "https://github.com/superagents-lab/jev-search",
+  "website": "https://jev.s1.dev",
+  "how_used_jev": "Jev answers typed questions about the request to choose sources, a time range, and search terms. Jev then ranks the results that come back through Search1API.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/superagents-lab/jev-search"
+  }
+}

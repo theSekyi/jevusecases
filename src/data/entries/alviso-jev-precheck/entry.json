@@ -1,0 +1,22 @@
+{
+  "id": "alviso-jev-precheck",
+  "project": "jev-precheck",
+  "description": "Checks each write that an AI agent makes into a system of record. It is an MCP proxy.",
+  "github": "https://github.com/alviso/jev-precheck",
+  "website": null,
+  "how_used_jev": "Before each write, Jev judges if a person must look, from comparisons that code calculates. The author reports 98.6% recall and 0 false holds on 288 cases.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/alviso/jev-precheck"
+  }
+}

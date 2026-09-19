@@ -1,0 +1,22 @@
+{
+  "id": "stbenjam-jevagotchi",
+  "project": "Jevagotchi",
+  "description": "Runs a local virtual pet in a browser habitat, with manual care or an autopilot.",
+  "github": "https://github.com/stbenjam/jevagotchi",
+  "website": null,
+  "how_used_jev": "On each turn, Jev picks one care action through OpenRouter, such as clean, heal, or wait. The app checks it against an allowlist and applies it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stbenjam/jevagotchi"
+  }
+}

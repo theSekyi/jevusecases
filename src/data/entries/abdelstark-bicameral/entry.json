@@ -1,0 +1,22 @@
+{
+  "id": "abdelstark-bicameral",
+  "project": "Bicameral",
+  "description": "A coding harness for Pi where any LLM writes the code and policy code controls the agent. It is not a sandbox.",
+  "github": "https://github.com/AbdelStark/bicameral",
+  "website": null,
+  "how_used_jev": "Jev scores tool call safety, weakened tests, and loops. Policy code turns the scores into allow, confirm, block, warn, or steer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AbdelStark/bicameral"
+  }
+}

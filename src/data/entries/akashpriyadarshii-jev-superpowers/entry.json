@@ -1,0 +1,22 @@
+{
+  "id": "akashpriyadarshii-jev-superpowers",
+  "project": "jev-superpowers",
+  "description": "Extends the obra/superpowers development method for AI coding agents with typed decision gates.",
+  "github": "https://github.com/AkashPriyadarshii/jev-superpowers",
+  "website": null,
+  "how_used_jev": "Jev gates architectural forks, dependency choices, shell commands, and completion checks before the agent continues.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AkashPriyadarshii/jev-superpowers"
+  }
+}

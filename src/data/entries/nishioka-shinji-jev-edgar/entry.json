@@ -1,0 +1,22 @@
+{
+  "id": "nishioka-shinji-jev-edgar",
+  "project": "jev-edgar",
+  "description": "Measures whether Jev can predict stock moves from S&P 500 earnings 8-K filings. It places no trades.",
+  "github": "https://github.com/nishioka-shinji/jev-edgar",
+  "website": null,
+  "how_used_jev": "Jev reads each Item 2.02 8-K and predicts direction, surprise, and size of the move. Over 1,054 filings, the author reports no skill on direction.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nishioka-shinji/jev-edgar"
+  }
+}

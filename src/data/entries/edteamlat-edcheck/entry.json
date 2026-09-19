@@ -1,0 +1,22 @@
+{
+  "id": "edteamlat-edcheck",
+  "project": "EDcheck",
+  "description": "Adds server-side semantic validation to Zod schemas. It checks meaning, such as whether a value is a real name.",
+  "github": "https://github.com/edteamlat/EDcheck",
+  "website": null,
+  "how_used_jev": "Semantic rules become atomic Jev yes/no questions, batched into one request per object. The results map to pass, warning, or fail.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/edteamlat/EDcheck"
+  }
+}

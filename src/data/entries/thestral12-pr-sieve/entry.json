@@ -1,0 +1,22 @@
+{
+  "id": "thestral12-pr-sieve",
+  "project": "pr-sieve",
+  "description": "Checks pull requests against rules in a .jev.yml file. It is a GitHub Action.",
+  "github": "https://github.com/Thestral12/pr-sieve",
+  "website": null,
+  "how_used_jev": "Each rule is a typed Jev question. From the answers, the check fails, comments, or passes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Thestral12/pr-sieve"
+  }
+}

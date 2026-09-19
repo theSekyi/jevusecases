@@ -1,0 +1,22 @@
+{
+  "id": "caizongyuan-mobile-agent",
+  "project": "mobile-agent",
+  "description": "Explores an agent that controls a real Android phone over USB, fully local. Mobilerun Portal reads the screen and adb performs the actions.",
+  "github": "https://github.com/CaiZongyuan/mobile-agent",
+  "website": null,
+  "how_used_jev": "Jev chooses the next action from a candidate set, with a full probability distribution. The author reports a 3-action shopping task finished in 14.7 seconds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CaiZongyuan/mobile-agent"
+  }
+}

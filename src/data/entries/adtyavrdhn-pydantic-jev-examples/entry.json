@@ -1,0 +1,22 @@
+{
+  "id": "adtyavrdhn-pydantic-jev-examples",
+  "project": "pydantic-jev-examples",
+  "description": "Gives small runnable Pydantic AI agent demos, one file each, where Jev makes quick calls.",
+  "github": "https://github.com/adtyavrdhn/pydantic-jev-examples",
+  "website": null,
+  "how_used_jev": "Jev checks if a prompt is harmful, if a shell command should run, and when a game bird should flap. The demos add these checks as Pydantic AI capabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adtyavrdhn/pydantic-jev-examples"
+  }
+}

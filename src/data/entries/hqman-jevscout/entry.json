@@ -1,0 +1,22 @@
+{
+  "id": "hqman-jevscout",
+  "project": "JevScout",
+  "description": "A coding-agent skill that hunts AI and software jobs on real company sites. It drives a visible Chrome over CDP.",
+  "github": "https://github.com/hqman/jevscout",
+  "website": null,
+  "how_used_jev": "Jev scores every link and job on the page, so the host LLM never picks what to click.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hqman/jevscout"
+  }
+}

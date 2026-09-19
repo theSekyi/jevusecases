@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-mcpmatch",
+  "project": "McpMatch",
+  "description": "Matches a user goal to the best MCP server or capability in a catalog.",
+  "github": "https://github.com/ndolinschi/mcpmatch",
+  "website": "https://mcpmatch.vercel.app",
+  "how_used_jev": "Jev picks the match from the catalog, in two stages when the catalog is large.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/mcpmatch"
+  }
+}

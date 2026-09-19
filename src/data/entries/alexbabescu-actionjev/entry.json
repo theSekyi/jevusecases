@@ -1,0 +1,22 @@
+{
+  "id": "alexbabescu-actionjev",
+  "project": "ActionJev",
+  "description": "Code review for GitHub Actions and Gitea Actions, written in Rust. It posts a PR summary and writes JSON and Markdown reports.",
+  "github": "https://github.com/AlexBabescu/ActionJev",
+  "website": null,
+  "how_used_jev": "Asks Jev structured review questions about committed code. Jev returns typed judgments that become code locations, suspected defect mechanisms, and scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AlexBabescu/ActionJev"
+  }
+}

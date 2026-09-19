@@ -1,0 +1,22 @@
+{
+  "id": "integrate-your-mind-jev-codex-plugin",
+  "project": "Jev Workflows for Codex",
+  "description": "Adds a Codex plugin with an MCP server, lifecycle adapters, and three skills. It also diagnoses failed commands and checks completion claims.",
+  "github": "https://github.com/integrate-your-mind/jev-codex-plugin",
+  "website": null,
+  "how_used_jev": "Codex consults Jev about tools, models, tasks, skills, context, and strategies. The plugin also uses Jev to check completion claims against evidence.",
+  "source_tweet": "https://x.com/0xBunny/status/2101046612755636370",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/integrate-your-mind/jev-codex-plugin"
+  }
+}

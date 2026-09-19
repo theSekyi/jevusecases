@@ -1,0 +1,22 @@
+{
+  "id": "lukascaha-jev-theme",
+  "project": "jev-theme",
+  "description": "Turns a typed phrase into a color theme from a 42-color palette. It recreates a demo by mattdesl.",
+  "github": "https://github.com/LukasCaha/jev-theme",
+  "website": null,
+  "how_used_jev": "A Jev Choice maps the phrase onto the palette. The page sizes each color band by its probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LukasCaha/jev-theme"
+  }
+}

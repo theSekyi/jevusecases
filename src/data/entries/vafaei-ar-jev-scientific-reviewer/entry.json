@@ -1,0 +1,22 @@
+{
+  "id": "vafaei-ar-jev-scientific-reviewer",
+  "project": "JEV Scientific Reviewer",
+  "description": "Evaluates scientific papers and research proposals through a Telegram bot.",
+  "github": "https://github.com/vafaei-ar/jev-scientific-reviewer",
+  "website": null,
+  "how_used_jev": "Jev answers narrow rubric questions on scientific quality and formulaic writing, with probabilities. An optional reasoning LLM answers free-form questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vafaei-ar/jev-scientific-reviewer"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "vinilana-jev-browser",
+  "project": "Jev Browser",
+  "description": "A TypeScript browser harness. An OpenRouter LLM splits goals into subgoals, and Playwright runs the actions.",
+  "github": "https://github.com/vinilana/jev-browser",
+  "website": null,
+  "how_used_jev": "Jev chooses each browser action and the DOM field to act on. An OpenRouter model writes text only when a field needs it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vinilana/jev-browser"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tpiros-escape-from-mos-eisley",
+  "project": "Escape from Mos Eisley",
+  "description": "A text gamebook where you type what you do instead of picking from a list. Gemini writes the books.",
+  "github": "https://github.com/tpiros/escape-from-mos-eisley",
+  "website": null,
+  "how_used_jev": "Each turn, Jev answers a batch of atomic questions about your action in one call. The engine turns the answers into game rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tpiros/escape-from-mos-eisley"
+  }
+}

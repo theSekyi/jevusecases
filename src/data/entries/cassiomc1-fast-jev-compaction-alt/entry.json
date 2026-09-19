@@ -1,0 +1,22 @@
+{
+  "id": "cassiomc1-fast-jev-compaction-alt",
+  "project": "fast-jev-compaction-alt",
+  "description": "Replaces the Claude Code compaction summary with Jev decisions. It is a Claude Code plugin and an npm library.",
+  "github": "https://github.com/cassiomc1/fast-jev-compaction-alt",
+  "website": null,
+  "how_used_jev": "Jev sees the whole conversation and scores each tool call and result in one request. Stale ones are dropped or truncated, and the rest stays verbatim.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cassiomc1/fast-jev-compaction-alt"
+  }
+}

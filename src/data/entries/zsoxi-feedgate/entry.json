@@ -1,0 +1,22 @@
+{
+  "id": "zsoxi-feedgate",
+  "project": "FeedGate",
+  "description": "Filters noise from social feeds such as X in a Chrome extension, without hiding ordinary organic posts.",
+  "github": "https://github.com/zsoxi/feedgate",
+  "website": null,
+  "how_used_jev": "Jev answers eight independent noul questions per post. A precision-first policy then hides the post in a way you can undo.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zsoxi/feedgate"
+  }
+}

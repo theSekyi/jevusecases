@@ -1,0 +1,22 @@
+{
+  "id": "luxus-ha-conversation-jev",
+  "project": "Jev Assist",
+  "description": "A Home Assistant conversation agent. Simple light commands run directly, and other requests go to Grok.",
+  "github": "https://github.com/luxus/ha-conversation-jev",
+  "website": null,
+  "how_used_jev": "Jev classifies each utterance. It then calls a light service or hands off to the Grok conversation agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/luxus/ha-conversation-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jdhornsby-typesafe-jev",
+  "project": "typesafe-jev",
+  "description": "Tests Jev on chess games against Stockfish and on the MMLU world knowledge dataset.",
+  "github": "https://github.com/jdhornsby/typesafe-jev",
+  "website": null,
+  "how_used_jev": "Jev picks each chess move from different board formats, such as SAN, FEN, and PGN. The author records Jev's per-move confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jdhornsby/typesafe-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "inteligenciamilgrau-jevstudio",
+  "project": "Jev Studio",
+  "description": "Lets you draw decision funnels by drag and drop and watch them play a game in real time.",
+  "github": "https://github.com/inteligenciamilgrau/jevstudio",
+  "website": null,
+  "how_used_jev": "Each node asks Jev questions, and each answer links to another node or a game action. While it runs, the wires show the probability of each answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/inteligenciamilgrau/jevstudio"
+  }
+}

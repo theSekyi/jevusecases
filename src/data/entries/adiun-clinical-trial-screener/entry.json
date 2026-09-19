@@ -1,0 +1,22 @@
+{
+  "id": "adiun-clinical-trial-screener",
+  "project": "Clinical Trial Eligibility Screener",
+  "description": "Screens synthetic clinical notes against a trial's eligibility criteria in a local web app. Results stream into a table.",
+  "github": "https://github.com/adiun/clinical-trial-screener",
+  "website": null,
+  "how_used_jev": "Jev evaluates each note against the criteria in one call per note. The table shows each condition as present, absent, or uncertain.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adiun/clinical-trial-screener"
+  }
+}

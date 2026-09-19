@@ -1,0 +1,19 @@
+{
+  "id": "jevboardgames-everpaper-app-jev-board-games",
+  "project": "Jev board games",
+  "description": "Offers playable board games in a web app.",
+  "github": null,
+  "website": "https://jevboardgames.everpaper.app/",
+  "how_used_jev": "Jev makes the decisions that drive the games.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

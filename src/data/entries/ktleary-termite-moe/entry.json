@@ -1,0 +1,22 @@
+{
+  "id": "ktleary-termite-moe",
+  "project": "termite",
+  "description": "Breaks an article from a URL into vitals, quotes, numbers, and sentiment for journalists.",
+  "github": "https://github.com/ktleary/termite.moe",
+  "website": null,
+  "how_used_jev": "Jev screens the article text for instructions addressed to an AI. The result shows a warning, but the breakdown still runs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ktleary/termite.moe"
+  }
+}

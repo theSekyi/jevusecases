@@ -1,0 +1,22 @@
+{
+  "id": "xpressabhi-jev-browser",
+  "project": "jev-browser",
+  "description": "Connects Jev to any browser harness, with a thin OpenCode adapter.",
+  "github": "https://github.com/xpressabhi/jev-browser",
+  "website": null,
+  "how_used_jev": "Jev picks one operation and one observed target per cycle. A small model writes text only for TYPE_TEXT.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/xpressabhi/jev-browser"
+  }
+}

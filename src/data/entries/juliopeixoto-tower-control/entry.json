@@ -1,0 +1,22 @@
+{
+  "id": "juliopeixoto-tower-control",
+  "project": "Decision Arena",
+  "description": "Runs five games where AI models make the same decisions side by side from the same seed. Each run saves latency, cost, tokens, and answers.",
+  "github": "https://github.com/JulioPeixoto/tower-control",
+  "website": null,
+  "how_used_jev": "Jev answers the same typed questions as small LLMs and rule-based bots, for example aircraft headings in Tower Control.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JulioPeixoto/tower-control"
+  }
+}

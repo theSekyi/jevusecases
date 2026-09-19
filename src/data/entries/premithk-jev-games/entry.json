@@ -1,0 +1,22 @@
+{
+  "id": "premithk-jev-games",
+  "project": "Jev Games",
+  "description": "Classic grid-world games, FrozenLake and MiniGrid DoorKey, played from text descriptions of the game state.",
+  "github": "https://github.com/premithk/jev-games",
+  "website": null,
+  "how_used_jev": "Jev reads a plain-language state description and picks the next move, such as up, down, forward, pickup, or toggle.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/premithk/jev-games"
+  }
+}

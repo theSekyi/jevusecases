@@ -1,0 +1,22 @@
+{
+  "id": "hexdigest123-typesafe-comment",
+  "project": "typesafe-comment",
+  "description": "Lints code comments in several languages and fails the pipeline when comments score below thresholds.",
+  "github": "https://github.com/Hexdigest123/typesafe-comment",
+  "website": null,
+  "how_used_jev": "Jev scores each comment on usefulness, readability, accuracy, redundancy, and coverage. Low scores give linter warnings and a non-zero exit.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Hexdigest123/typesafe-comment"
+  }
+}

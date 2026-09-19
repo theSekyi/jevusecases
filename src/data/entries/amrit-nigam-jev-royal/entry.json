@@ -1,0 +1,22 @@
+{
+  "id": "amrit-nigam-jev-royal",
+  "project": "Jev Plays Clash Royale",
+  "description": "An agent that plays Clash Royale on macOS through the iPhone Mirroring app. Perception runs locally on screen pixels.",
+  "github": "https://github.com/Amrit-Nigam/jev-royal",
+  "website": null,
+  "how_used_jev": "Code builds and validates tactical options for each moment. Jev picks between these candidates, except in urgent cases that local tactics play at once.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Amrit-Nigam/jev-royal"
+  }
+}

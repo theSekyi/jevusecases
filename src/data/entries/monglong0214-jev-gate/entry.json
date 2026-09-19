@@ -1,0 +1,22 @@
+{
+  "id": "monglong0214-jev-gate",
+  "project": "jev-gate",
+  "description": "An experimental model router for Claude Code. The author states that no cost or time benefit is established yet.",
+  "github": "https://github.com/MongLong0214/jev-gate",
+  "website": null,
+  "how_used_jev": "Jev decides the shape of the workflow for a request. It also picks a model tier for every planner and worker dispatch.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MongLong0214/jev-gate"
+  }
+}

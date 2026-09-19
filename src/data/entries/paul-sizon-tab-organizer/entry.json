@@ -1,0 +1,22 @@
+{
+  "id": "paul-sizon-tab-organizer",
+  "project": "Tab Organizer",
+  "description": "Groups your open Chrome tabs into named categories, on demand or on a timer.",
+  "github": "https://github.com/Paul-Sizon/tab-organizer",
+  "website": null,
+  "how_used_jev": "One Jev request asks a Choice question for each tab to put it in one of your categories. DeepSeek can suggest the categories.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Paul-Sizon/tab-organizer"
+  }
+}

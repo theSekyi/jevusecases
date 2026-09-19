@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-cartshield",
+  "project": "CartShield",
+  "description": "Checkout fraud disposition for small and medium businesses.",
+  "github": "https://github.com/ndolinschi/cartshield",
+  "website": "https://cartshield.vercel.app",
+  "how_used_jev": "Jev gives the fraud disposition for a checkout.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/cartshield"
+  }
+}

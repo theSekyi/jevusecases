@@ -1,0 +1,22 @@
+{
+  "id": "jangya-jev-in-action",
+  "project": "Jev in Action",
+  "description": "Shows four interactive Jev demos: expense categories, flight choice, appointment search, and routing an MCP tool call.",
+  "github": "https://github.com/jangya/jev-in-action",
+  "website": "https://jev-in-action-psi.vercel.app",
+  "how_used_jev": "Each demo sends a prompt to Jev. The page shows what the model received and returned.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jangya/jev-in-action"
+  }
+}

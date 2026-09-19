@@ -1,0 +1,22 @@
+{
+  "id": "spykoninho-trading-bot-jev",
+  "project": "trading-bot-jev",
+  "description": "A crypto trading bot that follows Binance prices and trades a 1,000 USDT paper portfolio by default. A web interface shows its activity live.",
+  "github": "https://github.com/Spykoninho/trading-bot-jev",
+  "website": null,
+  "how_used_jev": "Jev reads news text and answers typed questions, for example whether a post supports crypto. A trend-following algorithm then decides to buy, sell, or wait.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Spykoninho/trading-bot-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "muratmirgun-compact-engine",
+  "project": "Compact Engine",
+  "description": "Context compaction for coding agents, written in Go. It runs as an HTTP service, a CLI, or a library.",
+  "github": "https://github.com/muratmirgun/compact-engine",
+  "website": null,
+  "how_used_jev": "Jev is one scorer option. It scores smaller representations of the history, such as excerpts, brief records, or archive references.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/muratmirgun/compact-engine"
+  }
+}

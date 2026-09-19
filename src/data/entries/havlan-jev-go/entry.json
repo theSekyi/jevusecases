@@ -1,0 +1,22 @@
+{
+  "id": "havlan-jev-go",
+  "project": "jev-go",
+  "description": "Provides a small Go SDK for the Jev API with no dependencies. It retries 429 and 529 responses.",
+  "github": "https://github.com/havlan/jev-go",
+  "website": null,
+  "how_used_jev": "Code sends a state with Noul, Choice, and Score questions to Jev and reads the typed answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/havlan/jev-go"
+  }
+}

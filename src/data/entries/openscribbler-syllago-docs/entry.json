@@ -1,0 +1,22 @@
+{
+  "id": "openscribbler-syllago-docs",
+  "project": "syllago-docs",
+  "description": "Adds an experimental Jev style check to the documentation site for Syllago, a package manager for AI coding tool content.",
+  "github": "https://github.com/OpenScribbler/syllago-docs",
+  "website": "https://syllago.dev",
+  "how_used_jev": "Jev runs five semantic checks, such as actor clarity and descriptive headings. It checks up to 12 paragraphs of one file in one request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/OpenScribbler/syllago-docs"
+  }
+}

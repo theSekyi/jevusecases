@@ -1,0 +1,22 @@
+{
+  "id": "affirmitv-bitrate-advisor",
+  "project": "bitrate-advisor",
+  "description": "Selects encoder settings for a live stream from telemetry and history. It runs on Deno, Node, and edge runtimes.",
+  "github": "https://github.com/affirmitv/bitrate-advisor",
+  "website": null,
+  "how_used_jev": "Jev picks the starting bitrate, ceiling, resolution, and next step from the current measurements. A deterministic policy then limits its choices.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/affirmitv/bitrate-advisor"
+  }
+}

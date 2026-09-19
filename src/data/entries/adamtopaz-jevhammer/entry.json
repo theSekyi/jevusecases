@@ -1,0 +1,22 @@
+{
+  "id": "adamtopaz-jevhammer",
+  "project": "JevHammer",
+  "description": "Adds a Lean finishing tactic with pluggable premise selection and proof-state search.",
+  "github": "https://github.com/adamtopaz/jevhammer",
+  "website": null,
+  "how_used_jev": "Jev ranks the Lean-checked proof steps and chooses promising continuations. The Lean kernel checks the final proof.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adamtopaz/jevhammer"
+  }
+}

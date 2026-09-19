@@ -1,0 +1,22 @@
+{
+  "id": "aoprisan-jev-ts-repl",
+  "project": "jev-repl",
+  "description": "Gives a terminal REPL to shape System One requests before you write code. It also has lessons and a typed client.",
+  "github": "https://github.com/aoprisan/jev-ts-repl",
+  "website": null,
+  "how_used_jev": "You send a state and typed questions to Jev and read the typed answers. Without a key, answers are simulated.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aoprisan/jev-ts-repl"
+  }
+}

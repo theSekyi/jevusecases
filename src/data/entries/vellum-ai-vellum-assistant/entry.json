@@ -1,0 +1,22 @@
+{
+  "id": "vellum-ai-vellum-assistant",
+  "project": "vellum-assistant",
+  "description": "Adds a Jev client to Vellum, a personal AI assistant with eight types of memory that acts across your apps.",
+  "github": "https://github.com/vellum-ai/vellum-assistant",
+  "website": "https://vellum.ai",
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vellum-ai/vellum-assistant"
+  }
+}

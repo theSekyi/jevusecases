@@ -1,0 +1,22 @@
+{
+  "id": "dharundp6-jev-carryforward",
+  "project": "carryforward",
+  "description": "Keeps a per-project ledger of facts across sessions as an MCP server. The record tool saves facts and recall returns them.",
+  "github": "https://github.com/Dharundp6/jev-carryforward",
+  "website": "https://www.npmjs.com/package/carryforward",
+  "how_used_jev": "When a task starts, Jev scores the saved facts against the task through Vercel AI Gateway. Recall keeps only the facts that matter now.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Dharundp6/jev-carryforward"
+  }
+}

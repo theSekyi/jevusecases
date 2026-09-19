@@ -1,0 +1,22 @@
+{
+  "id": "lingxuanyin-jev-chat",
+  "project": "Lexicon Lab",
+  "description": "A chat experiment that builds each reply by choosing words one at a time from a dictionary. It is not affiliated with TypeSafe AI.",
+  "github": "https://github.com/LingXuanYin/jev-chat",
+  "website": "https://cohub.live/ncyg191125/jev-chat/w/jev-chat",
+  "how_used_jev": "Jev, called through AI SDK 7 and the gateway, chooses each next word from indexed dictionary options.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LingXuanYin/jev-chat"
+  }
+}

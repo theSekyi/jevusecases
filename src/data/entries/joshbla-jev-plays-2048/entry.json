@@ -1,0 +1,22 @@
+{
+  "id": "joshbla-jev-plays-2048",
+  "project": "Jev plays 2048",
+  "description": "A local 2048 experiment where Jev plays Gabriele Cirulli's original game. It exports runs, requests, and timings as JSON.",
+  "github": "https://github.com/joshbla/jev-plays-2048",
+  "website": null,
+  "how_used_jev": "One Choice question asks which legal move best keeps 2048 reachable. The input has the board and the result of each legal move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/joshbla/jev-plays-2048"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "thenewpotato-privacy-facts",
+  "project": "Privacy Facts",
+  "description": "Shows a privacy policy as a nutrition label with plain answers and source excerpts. You paste a policy URL or its text.",
+  "github": "https://github.com/thenewpotato/privacy-facts",
+  "website": "https://tigrw.com/privacy-facts/",
+  "how_used_jev": "Jev classifies the answer to each privacy question from the policy sections. The label shows the Jev confidence next to each answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thenewpotato/privacy-facts"
+  }
+}

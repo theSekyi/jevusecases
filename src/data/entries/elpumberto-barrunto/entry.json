@@ -1,0 +1,22 @@
+{
+  "id": "elpumberto-barrunto",
+  "project": "Barrunto",
+  "description": "Labels posts on X and comments on Hacker News as you browse, as a Chrome extension.",
+  "github": "https://github.com/elpumberto/barrunto",
+  "website": null,
+  "how_used_jev": "Barrunto asks Jev a set of yes or no questions about each post in one call. Code combines the answers into labels and shows nothing when unsure.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/elpumberto/barrunto"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "appsprout-dev-unsga3",
+  "project": "Unsga3",
+  "description": "A .NET port of the U-NSGA-III multi-objective evolutionary optimization algorithm, checked against pymoo.",
+  "github": "https://github.com/AppSprout-dev/Unsga3",
+  "website": null,
+  "how_used_jev": "An optional Jev pass scores a small sample of Pareto front candidates. It asks for score answers and a keep, drop, or review choice for each candidate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AppSprout-dev/Unsga3"
+  }
+}

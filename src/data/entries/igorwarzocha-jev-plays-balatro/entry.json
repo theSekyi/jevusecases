@@ -1,0 +1,22 @@
+{
+  "id": "igorwarzocha-jev-plays-balatro",
+  "project": "Jev plays Balatro",
+  "description": "Lets Jev play Balatro through a mod and a server-side controller that read structured game state. The experiment is complete, and no run won.",
+  "github": "https://github.com/IgorWarzocha/jev-plays-balatro",
+  "website": null,
+  "how_used_jev": "A run planner asks Jev for a hand focus and spending posture. A tactical player asks Jev to choose cards, discards, and purchases for every move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/IgorWarzocha/jev-plays-balatro"
+  }
+}

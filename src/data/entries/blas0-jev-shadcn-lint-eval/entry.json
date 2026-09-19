@@ -1,0 +1,22 @@
+{
+  "id": "blas0-jev-shadcn-lint-eval",
+  "project": "jev-shadcn-lint-eval",
+  "description": "A small second eval for the shadcn-ui/lint linter, run on 131 rule test cases.",
+  "github": "https://github.com/blas0/jev-shadcn-lint-eval",
+  "website": null,
+  "how_used_jev": "Jev judges if each lint result is right and if its message tells you what to change. The scripts save every answer and the scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/blas0/jev-shadcn-lint-eval"
+  }
+}

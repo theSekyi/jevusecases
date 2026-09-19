@@ -1,0 +1,22 @@
+{
+  "id": "sidmanale643-atlas-jev",
+  "project": "atlas-jev",
+  "description": "Stores memories from text in a local LanceDB store. An OpenRouter chat model extracts the memories.",
+  "github": "https://github.com/sidmanale643/atlas-jev",
+  "website": null,
+  "how_used_jev": "On write, Jev scores if a memory is worth keeping and picks add, extra detail, or skip. On read, Jev scores each hit and drops unhelpful ones.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sidmanale643/atlas-jev"
+  }
+}

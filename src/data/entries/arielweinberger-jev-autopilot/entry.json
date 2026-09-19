@@ -1,0 +1,22 @@
+{
+  "id": "arielweinberger-jev-autopilot",
+  "project": "Drone Sim · Jev Autopilot",
+  "description": "A 3D drone simulator where Jev flies a drone across a random city from pad A to pad B.",
+  "github": "https://github.com/arielweinberger/jev-autopilot",
+  "website": null,
+  "how_used_jev": "Code turns flight data into a short situation report. Jev answers six questions per request: one Choice per stick axis, and whether to land or cut the motors.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/arielweinberger/jev-autopilot"
+  }
+}

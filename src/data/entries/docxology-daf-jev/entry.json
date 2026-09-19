@@ -1,0 +1,22 @@
+{
+  "id": "docxology-daf-jev",
+  "project": "daf-jev",
+  "description": "A Python toolkit for the Jev API with question builders, confidence gates, calibration, a CLI, and an MCP server.",
+  "github": "https://github.com/docxology/daf-jev",
+  "website": null,
+  "how_used_jev": "It builds Noul, Choice, and Score questions and batches them into one Jev call. Composition patterns act on the answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/docxology/daf-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "manifoldor-xtags",
+  "project": "Xtags",
+  "description": "Labels each post on the X timeline with what it wants you to do. It runs as a Chrome extension or a userscript.",
+  "github": "https://github.com/manifoldor/xtags",
+  "website": null,
+  "how_used_jev": "Jev returns named judgments with probabilities, such as inform, provoke, or undisclosed promotion. Each label shows one word and a number.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/manifoldor/xtags"
+  }
+}

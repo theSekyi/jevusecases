@@ -1,0 +1,22 @@
+{
+  "id": "rajivkuriakose-typesafe-jev-examples",
+  "project": "typesafe-jev-examples",
+  "description": "Gives worked examples for Jev that run through OpenRouter, without an early-access key.",
+  "github": "https://github.com/rajivkuriakose/typesafe-jev-examples",
+  "website": null,
+  "how_used_jev": "Each example sends state and named questions to Jev and uses the typed answers in ordinary code. The same client also works with the TypeSafe direct API.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rajivkuriakose/typesafe-jev-examples"
+  }
+}

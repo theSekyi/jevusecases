@@ -1,0 +1,22 @@
+{
+  "id": "binnash-typesafe-sdk",
+  "project": "TypeSafe PHP SDK",
+  "description": "Gives a PHP and Laravel SDK for TypeSafe AI's System One models, including Jev.",
+  "github": "https://github.com/binnash/typesafe-sdk",
+  "website": null,
+  "how_used_jev": "The SDK sends typed questions about application state to Jev and returns judgments and probabilities. Your code owns routing, thresholds, and side effects.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/binnash/typesafe-sdk"
+  }
+}

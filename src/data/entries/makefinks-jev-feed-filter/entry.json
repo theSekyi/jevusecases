@@ -1,0 +1,22 @@
+{
+  "id": "makefinks-jev-feed-filter",
+  "project": "Jev Feed Filter",
+  "description": "A Chrome extension that hides X and YouTube posts you are not interested in, based on guidance you write.",
+  "github": "https://github.com/makefinks/jev-feed-filter",
+  "website": null,
+  "how_used_jev": "Jev gives each post a filter probability against your guidance. Posts above your threshold, 60% by default, are blurred or collapsed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/makefinks/jev-feed-filter"
+  }
+}

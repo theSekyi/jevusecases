@@ -1,0 +1,22 @@
+{
+  "id": "mewtyunjay-bev",
+  "project": "bev",
+  "description": "Lets you type a shell command or a natural-language request at your zsh prompt. Requests run headlessly with codex exec.",
+  "github": "https://github.com/mewtyunjay/bev",
+  "website": null,
+  "how_used_jev": "Jev classifies each line as a command or a request. Commands run in the shell, requests go to Codex, and uncertain results stay editable.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mewtyunjay/bev"
+  }
+}

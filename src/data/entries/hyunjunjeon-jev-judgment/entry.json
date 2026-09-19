@@ -1,0 +1,22 @@
+{
+  "id": "hyunjunjeon-jev-judgment",
+  "project": "jev-judgment",
+  "description": "Gives coding agents an Agent Skill that sends closed judgments to Jev.",
+  "github": "https://github.com/HyunjunJeon/jev-judgment",
+  "website": null,
+  "how_used_jev": "Jev answers yes/no, choice, and score questions. The agent acts on the probabilities and asks the user only when a person must decide.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/HyunjunJeon/jev-judgment"
+  }
+}

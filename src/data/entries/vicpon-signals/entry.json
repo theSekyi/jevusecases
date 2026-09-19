@@ -1,0 +1,22 @@
+{
+  "id": "vicpon-signals",
+  "project": "Signals",
+  "description": "A dashboard that gives a bullish, bearish, or neutral signal for about 110 stocks and crypto names. It shows the source articles.",
+  "github": "https://github.com/vicpon/signals",
+  "website": null,
+  "how_used_jev": "For each article, Jev answers typed questions on sentiment, conviction, and regulatory action. The app combines the answers per ticker.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vicpon/signals"
+  }
+}

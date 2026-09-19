@@ -1,0 +1,22 @@
+{
+  "id": "zhuyansen-jev-news-cold-start",
+  "project": "jev-news-cold-start",
+  "description": "Tests whether Jev can predict the click-through rate of a new news article from its headline, on Microsoft's MIND data.",
+  "github": "https://github.com/zhuyansen/jev-news-cold-start",
+  "website": null,
+  "how_used_jev": "Jev reads each headline and gives a zero-shot prior. The author reports that this prior lifts a Thompson-sampling cold start by 25%.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zhuyansen/jev-news-cold-start"
+  }
+}

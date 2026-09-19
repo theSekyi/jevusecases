@@ -1,0 +1,23 @@
+{
+  "id": "npm-pi-typesafe-router",
+  "project": "pi-typesafe-router",
+  "description": "Adds opt-in task routing to Pi, with ordered preflight model fallbacks.",
+  "github": null,
+  "website": "https://www.npmjs.com/package/pi-typesafe-router",
+  "how_used_jev": "Jev routes Pi tasks. The package can reach Jev through TypeSafe, Cloudflare, or Vercel.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/pi-typesafe-router",
+    "install": "npm install pi-typesafe-router"
+  }
+}

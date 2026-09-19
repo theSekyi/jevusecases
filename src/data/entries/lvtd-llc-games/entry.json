@@ -1,0 +1,22 @@
+{
+  "id": "lvtd-llc-games",
+  "project": "LVTD Games",
+  "description": "Adds Jess, a game against Jev, to a set of small browser games.",
+  "github": "https://github.com/LVTD-LLC/games",
+  "website": "https://games.lvtd.dev",
+  "how_used_jev": "In Jess, you try to beat Jev in the fewest moves and can see Jev's move probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LVTD-LLC/games"
+  }
+}

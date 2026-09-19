@@ -1,0 +1,22 @@
+{
+  "id": "kylekreuter-jev2048",
+  "project": "Jev2048",
+  "description": "Plays many 2048 games in parallel in the browser, and lets you edit the state format that Jev sees.",
+  "github": "https://github.com/KyleKreuter/jev2048",
+  "website": null,
+  "how_used_jev": "Jev picks the next move with one choice decision per turn. You can change the instructions, board encoding, and features without code changes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KyleKreuter/jev2048"
+  }
+}

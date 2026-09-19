@@ -1,0 +1,22 @@
+{
+  "id": "jomatsu-pi-jev-auto-mode",
+  "project": "pi-jev-auto-mode",
+  "description": "Adds an auto mode to the Pi coding agent that approves or blocks bash, write, and edit tool calls.",
+  "github": "https://github.com/jomatsu/pi-jev-auto-mode",
+  "website": null,
+  "how_used_jev": "After a deterministic policy layer, Jev judges each tool call. The gate fails closed when it cannot make a decision.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jomatsu/pi-jev-auto-mode"
+  }
+}

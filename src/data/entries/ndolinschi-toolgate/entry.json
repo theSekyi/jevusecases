@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-toolgate",
+  "project": "ToolGate",
+  "description": "Checks a planned agent tool or MCP call and its context before the call runs.",
+  "github": "https://github.com/ndolinschi/toolgate",
+  "website": "https://toolgate.vercel.app",
+  "how_used_jev": "Jev returns allow, ask_human, or deny for the planned call, with risk scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/toolgate"
+  }
+}

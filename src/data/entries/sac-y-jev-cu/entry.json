@@ -1,0 +1,22 @@
+{
+  "id": "sac-y-jev-cu",
+  "project": "Jev-cu",
+  "description": "Adds a Codex skill for computer use that sends only interface text, not screenshots, to choose the next step.",
+  "github": "https://github.com/Sac-Y/Jev-cu",
+  "website": null,
+  "how_used_jev": "Jev picks the element, action, completion state, and risk from text candidates. Codex Computer Use acts, and a local policy gate stops sensitive actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Sac-Y/Jev-cu"
+  }
+}

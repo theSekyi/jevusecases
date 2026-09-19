@@ -1,0 +1,22 @@
+{
+  "id": "thevibeworks-pagepilot",
+  "project": "PagePilot",
+  "description": "Runs browser extensions that read articles aloud and turn pages into rows. A spec written once replays on later pages of the same site.",
+  "github": "https://github.com/thevibeworks/pagepilot",
+  "website": null,
+  "how_used_jev": "Jev writes the reading spec first, before any LLM runs. An LLM is used only on escalation, and the spec then replays with no model calls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thevibeworks/pagepilot"
+  }
+}

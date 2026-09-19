@@ -1,0 +1,22 @@
+{
+  "id": "zavocc-ground-zero",
+  "project": "Ground Zero",
+  "description": "Checks model responses for hallucinations and instruction following, against user prompts and source material.",
+  "github": "https://github.com/zavocc/ground-zero",
+  "website": null,
+  "how_used_jev": "Jev scores each response on a severity scale. The score is the probability-weighted average of the levels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zavocc/ground-zero"
+  }
+}

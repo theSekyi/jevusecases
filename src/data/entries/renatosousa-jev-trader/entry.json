@@ -1,0 +1,22 @@
+{
+  "id": "renatosousa-jev-trader",
+  "project": "jev-trader",
+  "description": "Analyzes markets in real time with a news sentiment module, buy and sell signals, and a local dashboard.",
+  "github": "https://github.com/renatosousa/jev-trader",
+  "website": null,
+  "how_used_jev": "Jev classifies headlines by relevance and sentiment. It also gives buy, sell, or hold bias for FX, metals, energy, rates, and crypto from MetaTrader5 data.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/renatosousa/jev-trader"
+  }
+}

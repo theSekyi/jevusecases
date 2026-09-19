@@ -6,6 +6,8 @@ export const CATEGORIES = [
   "security / supply chain",
   "dev tooling / CLI",
   "dev tooling / IDE",
+  "dev tooling / library",
+  "apps / personal tools",
   "browser agents / automation",
   "robotics / simulation",
   "exploration / benchmarking",

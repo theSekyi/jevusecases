@@ -1,0 +1,22 @@
+{
+  "id": "danvega-hello-jev-java",
+  "project": "hello-jev-java",
+  "description": "Shows how to call Jev from plain Java 25 with one HTTP call and no dependencies.",
+  "github": "https://github.com/danvega/hello-jev-java",
+  "website": null,
+  "how_used_jev": "It sends a support message to Jev with three questions, such as a severity score, and prints the JSON response.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/danvega/hello-jev-java"
+  }
+}

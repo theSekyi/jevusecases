@@ -1,0 +1,22 @@
+{
+  "id": "digitalnivuk97-ctrl-safenet",
+  "project": "SafeNet",
+  "description": "A terminal monitor for your own LAN. It finds devices and scores their risk.",
+  "github": "https://github.com/digitalnivuk97-ctrl/safenet",
+  "website": null,
+  "how_used_jev": "Jev judges threat score, category, and two risk dimensions per device. Code blends this with local rules by confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/digitalnivuk97-ctrl/safenet"
+  }
+}

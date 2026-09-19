@@ -1,0 +1,22 @@
+{
+  "id": "flitsinc-go-llms",
+  "project": "go-llms",
+  "description": "Adds a TypeSafe provider to a Go library that calls Anthropic, Google, and OpenAI models.",
+  "github": "https://github.com/flitsinc/go-llms",
+  "website": null,
+  "how_used_jev": "The provider turns the system prompt and messages into the Jev state. Jev returns typed judgments with probabilities, driven by a JSON output schema.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/flitsinc/go-llms"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "patricktrainer-duckdb-semantic-profile",
+  "project": "duckdb-semantic-profile",
+  "description": "A DuckDB extension that profiles what the values in a table mean, not only their types, ranges, and counts.",
+  "github": "https://github.com/patricktrainer/duckdb-semantic-profile",
+  "website": null,
+  "how_used_jev": "Jev judges the values and returns typed answers with probabilities. The extension reports findings that a statistical profile does not show.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/patricktrainer/duckdb-semantic-profile"
+  }
+}

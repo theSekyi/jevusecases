@@ -1,0 +1,22 @@
+{
+  "id": "ij03l-jear",
+  "project": "jear",
+  "description": "A Rust client for NEAR AI Cloud inference and IronClaw agents. Users never pick a model or agent.",
+  "github": "https://github.com/iJ03l/jear",
+  "website": null,
+  "how_used_jev": "Jev picks the agent and scores complexity and sensitivity. It also flags if a private TEE is needed, and jear routes on these answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/iJ03l/jear"
+  }
+}

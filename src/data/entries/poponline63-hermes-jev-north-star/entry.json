@@ -1,0 +1,22 @@
+{
+  "id": "poponline63-hermes-jev-north-star",
+  "project": "hermes-jev-north-star",
+  "description": "Turns an intention into a checkable finish line for a Hermes Agent run and writes the run prompt. It is a Hermes Agent skill.",
+  "github": "https://github.com/poponline63/hermes-jev-north-star",
+  "website": null,
+  "how_used_jev": "Shell commands check the machine-checkable parts of the gate. Jev judges the fuzzy requirements with a probability and ranks what is still unproven.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/poponline63/hermes-jev-north-star"
+  }
+}

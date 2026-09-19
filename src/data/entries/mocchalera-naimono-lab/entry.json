@@ -1,0 +1,22 @@
+{
+  "id": "mocchalera-naimono-lab",
+  "project": "ナイモノ研究所",
+  "description": "Runs a family word game in which players take turns saying words that do not exist.",
+  "github": "https://github.com/mocchalera/naimono-lab",
+  "website": null,
+  "how_used_jev": "Jev judges if a word exists and picks its category. Only borderline words go to a second model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mocchalera/naimono-lab"
+  }
+}

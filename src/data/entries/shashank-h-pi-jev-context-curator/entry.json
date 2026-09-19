@@ -1,0 +1,22 @@
+{
+  "id": "shashank-h-pi-jev-context-curator",
+  "project": "pi-jev-context-curator",
+  "description": "Removes unneeded context before each LLM call in pi.",
+  "github": "https://github.com/Shashank-H/pi-jev-context-curator",
+  "website": null,
+  "how_used_jev": "Jev gets one yes or no question per new message unit: is it essential for a future response. Units that Jev rejects are removed.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Shashank-H/pi-jev-context-curator"
+  }
+}

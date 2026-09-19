@@ -1,0 +1,22 @@
+{
+  "id": "mayankbansal12-jev-plays-pinball",
+  "project": "jev-plays-pinball",
+  "description": "A browser pinball game that Jev plays in real time. The physics never waits for a model response.",
+  "github": "https://github.com/MayankBansal12/jev-plays-pinball",
+  "website": "https://jev-pinball.vercel.app",
+  "how_used_jev": "Jev decides which flippers to use from the game context. The page shows each decision's input, response, and whether it was applied or discarded.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MayankBansal12/jev-plays-pinball"
+  }
+}

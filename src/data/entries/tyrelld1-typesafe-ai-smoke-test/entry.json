@@ -1,0 +1,22 @@
+{
+  "id": "tyrelld1-typesafe-ai-smoke-test",
+  "project": "Work/Life Router",
+  "description": "Routes each prompt to a work database, a life database, or both, and tests the router on 30 hand-written prompts.",
+  "github": "https://github.com/TyrellD1/typesafe-ai_smoke-test",
+  "website": null,
+  "how_used_jev": "Jev answers two yes or no questions per prompt: can the work store help, and can the life store help. The author reports that all 30 prompts went to the right place.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TyrellD1/typesafe-ai_smoke-test"
+  }
+}

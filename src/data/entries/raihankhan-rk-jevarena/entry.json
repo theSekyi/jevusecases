@@ -1,0 +1,22 @@
+{
+  "id": "raihankhan-rk-jevarena",
+  "project": "JevArena",
+  "description": "Shows two Jev agents that play Snake side by side in separate browser views.",
+  "github": "https://github.com/raihankhan-rk/jevarena",
+  "website": null,
+  "how_used_jev": "Each agent sends its game state to Jev and clicks the direction button that Jev picks. The page shows the direction probabilities live.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/raihankhan-rk/jevarena"
+  }
+}

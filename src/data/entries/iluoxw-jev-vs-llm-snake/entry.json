@@ -1,0 +1,22 @@
+{
+  "id": "iluoxw-jev-vs-llm-snake",
+  "project": "jev-vs-llm-snake",
+  "description": "Runs two Snake games side by side with the same seed and timing. Jev drives one, and an OpenAI-compatible LLM drives the other.",
+  "github": "https://github.com/iluoxw/jev-vs-llm-snake",
+  "website": null,
+  "how_used_jev": "Code finds the legal directions and facts, and Jev picks one direction per tick. The page compares score, timeouts, latency, and cost.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/iluoxw/jev-vs-llm-snake"
+  }
+}

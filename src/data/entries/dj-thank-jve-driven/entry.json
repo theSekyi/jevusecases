@@ -1,0 +1,22 @@
+{
+  "id": "dj-thank-jve-driven",
+  "project": "Jev Drive Lab",
+  "description": "Rebuilds city scenes from public data to test Jev driving decisions in simulation. It does not claim that self-driving in Tokyo works.",
+  "github": "https://github.com/dj-thank/jve-driven",
+  "website": null,
+  "how_used_jev": "Jev picks a driving action, judges whether to yield to a pedestrian, and scores visibility risk. Separate code keeps control of stops and the vehicle.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dj-thank/jve-driven"
+  }
+}

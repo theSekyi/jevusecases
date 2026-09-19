@@ -1,0 +1,22 @@
+{
+  "id": "moontory-pi-jev-harness",
+  "project": "pi-jev-harness",
+  "description": "Makes the decisions around tool calls in Pi. The main model then spends its tokens on generation only.",
+  "github": "https://github.com/MoonTory/pi-jev-harness",
+  "website": null,
+  "how_used_jev": "Jev routes turns, picks which files to pre-fetch, trims tool results, catches loops, and guards tool calls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MoonTory/pi-jev-harness"
+  }
+}

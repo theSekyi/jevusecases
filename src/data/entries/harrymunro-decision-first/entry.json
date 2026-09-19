@@ -1,0 +1,22 @@
+{
+  "id": "harrymunro-decision-first",
+  "project": "decision-first",
+  "description": "An agent skill that spots bounded-judgment steps in coding work, such as classify, triage, or rank.",
+  "github": "https://github.com/harrymunro/decision-first",
+  "website": null,
+  "how_used_jev": "The agent tries Jev first on these steps, before a prompt or a heuristic. It records each attempt, adopted or not, in a lab directory.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/harrymunro/decision-first"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "kantahayashiai-jev-does-not-play-dice",
+  "project": "Jev Does Not Play Dice",
+  "description": "Tests if Jev's probabilities reflect known uncertainty on fair random draws, yes/no questions, and forecast documents.",
+  "github": "https://github.com/KantaHayashiAI/jev-does-not-play-dice",
+  "website": null,
+  "how_used_jev": "Jev answers Choice and Noul questions where the true probability is known. The author reports that Choice often gave high probability to its pick on fair random tasks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KantaHayashiAI/jev-does-not-play-dice"
+  }
+}

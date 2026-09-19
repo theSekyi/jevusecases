@@ -1,0 +1,22 @@
+{
+  "id": "ingebyd-fast-jev-compaction-openrouter",
+  "project": "fast-jev-compaction-openrouter",
+  "description": "Forks fast-jev-compaction to send its compaction requests to Jev through OpenRouter with zero data retention.",
+  "github": "https://github.com/ingebyd/fast-jev-compaction-openrouter",
+  "website": null,
+  "how_used_jev": "The compaction logic is unchanged. Each request sends the conversation state to Jev through OpenRouter's Decisions endpoint with zdr set and data collection denied.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ingebyd/fast-jev-compaction-openrouter"
+  }
+}

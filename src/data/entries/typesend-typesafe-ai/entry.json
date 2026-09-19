@@ -1,0 +1,22 @@
+{
+  "id": "typesend-typesafe-ai",
+  "project": "typesafe_api",
+  "description": "An unofficial Elixir client for the TypeSafe API, with offline test stubs and concurrent requests.",
+  "github": "https://github.com/typesend/typesafe_ai",
+  "website": "https://typesafe-api.hexdocs.pm/readme.html",
+  "how_used_jev": "Sends typed questions about a state to Jev and returns atom-keyed answers to Elixir code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/typesend/typesafe_ai"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "kt3k-jevchat",
+  "project": "jevchat",
+  "description": "Gives Jev a ChatGPT-style chat UI, although Jev only decides and never writes text.",
+  "github": "https://github.com/kt3k/jevchat",
+  "website": "https://jevchat.kt3k.deno.net",
+  "how_used_jev": "Jev answers Yes or No by default, or picks from other answer sets such as Mom or Pirate. It also picks chat titles from your question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kt3k/jevchat"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "akashpriyadarshii-cdpx",
+  "project": "cdpx",
+  "description": "A Chrome DevTools Protocol browser controller and stdio MCP server in one Rust binary for AI agents.",
+  "github": "https://github.com/AkashPriyadarshii/cdpx",
+  "website": "https://akashpriyadarshii.github.io/cdpx/",
+  "how_used_jev": "A jev.rs module connects to Jev for Choice, Noul, and Score questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AkashPriyadarshii/cdpx"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rhc98-awesome-jev",
+  "project": "Awesome Jev",
+  "description": "A list of projects built on Jev, sorted into categories.",
+  "github": "https://github.com/rhc98/awesome-jev",
+  "website": "https://awesome-jev.xyz",
+  "how_used_jev": "Jev judges each collected repo in one call: is it about Jev, which category, and how substantial it is. Code applies the policy.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rhc98/awesome-jev"
+  }
+}

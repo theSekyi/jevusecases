@@ -1,0 +1,22 @@
+{
+  "id": "cympfh-jev-trial",
+  "project": "jev-trial",
+  "description": "Collects small Jev experiments, such as a logic puzzle and a Doom-like situation described in text.",
+  "github": "https://github.com/cympfh/jev-trial",
+  "website": null,
+  "how_used_jev": "The author asks Jev typed questions on each scenario and records the answers, latency, and token counts.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cympfh/jev-trial"
+  }
+}

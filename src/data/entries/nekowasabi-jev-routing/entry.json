@@ -1,0 +1,22 @@
+{
+  "id": "nekowasabi-jev-routing",
+  "project": "jev-routing",
+  "description": "Runs a Go harness in front of Claude Code, Codex, and Grok Build. It trims tool results and tool schemas before each request.",
+  "github": "https://github.com/nekowasabi/jev-routing",
+  "website": null,
+  "how_used_jev": "Jev picks the next tool and says if the task is done. The harness then sends only that one tool schema.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nekowasabi/jev-routing"
+  }
+}

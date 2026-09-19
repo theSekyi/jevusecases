@@ -1,0 +1,22 @@
+{
+  "id": "kaushikkc-jevscope",
+  "project": "JevScope",
+  "description": "Evaluates AI agent traces step by step. It also tests if the judgments stay stable when the input changes.",
+  "github": "https://github.com/KaushikKC/JevScope",
+  "website": null,
+  "how_used_jev": "For each step, Jev answers eight independent questions in one request, such as task alignment, progress, and repetition.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KaushikKC/JevScope"
+  }
+}

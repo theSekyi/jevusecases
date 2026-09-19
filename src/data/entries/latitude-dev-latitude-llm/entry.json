@@ -1,0 +1,22 @@
+{
+  "id": "latitude-dev-latitude-llm",
+  "project": "Latitude",
+  "description": "Adds an optional Jev session pre-classifier to the flaggers of an observability platform for AI agents.",
+  "github": "https://github.com/latitude-dev/latitude-llm",
+  "website": "https://latitude.so",
+  "how_used_jev": "Jev classifies agent sessions before the flaggers run. It is off by default and needs an API key and an organization feature flag.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/latitude-dev/latitude-llm"
+  }
+}

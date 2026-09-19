@@ -1,0 +1,22 @@
+{
+  "id": "pangpond-herdr-theme-cobalt2",
+  "project": "Cobalt2 theme for Herdr",
+  "description": "Applies the Cobalt2 colors to the Herdr UI and adds a harness mark to each agent row.",
+  "github": "https://github.com/pangpond/herdr-theme-cobalt2",
+  "website": null,
+  "how_used_jev": "A resolve-unknown option asks Jev which existing mark an unknown harness id should use.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pangpond/herdr-theme-cobalt2"
+  }
+}

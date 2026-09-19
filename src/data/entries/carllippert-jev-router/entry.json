@@ -1,0 +1,22 @@
+{
+  "id": "carllippert-jev-router",
+  "project": "jev-router",
+  "description": "Runs an Express app with no routes. Each request goes to a handler that you describe in plain English.",
+  "github": "https://github.com/carllippert/jev-router",
+  "website": null,
+  "how_used_jev": "Jev reads the method, path, and body and picks one handler by name. It can also pick none_of_the_above.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/carllippert/jev-router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "clenfest-jev-compile",
+  "project": "jev-compile",
+  "description": "A retired, archived experiment in compiler-error prediction from a diff. The author reports it did not beat incremental compilation.",
+  "github": "https://github.com/clenfest/jev-compile",
+  "website": null,
+  "how_used_jev": "The CLI sends a diff and local source context to Jev, within a set call limit. Jev screens for likely errors and narrows candidate locations.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/clenfest/jev-compile"
+  }
+}

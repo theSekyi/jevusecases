@@ -1,0 +1,22 @@
+{
+  "id": "nedcut-gm-bench",
+  "project": "GM-Bench",
+  "description": "A deterministic sports general-manager benchmark that tests long-horizon LLM planning, tool use, and decisions over multiple seasons.",
+  "github": "https://github.com/nedcut/gm-bench",
+  "website": "https://nedcut.github.io/gm-bench/",
+  "how_used_jev": "A separate decision-model lane runs Jev through typed questions on the same contract. The author reports a score of 229.0, 18.1 points behind the pick-trader baseline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nedcut/gm-bench"
+  }
+}

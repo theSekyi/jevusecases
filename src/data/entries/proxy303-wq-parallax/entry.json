@@ -1,0 +1,22 @@
+{
+  "id": "proxy303-wq-parallax",
+  "project": "PARALLAX",
+  "description": "Adds TypeSafe System One as a typed judgment validator to a trading system for Indian index markets and crypto perpetuals.",
+  "github": "https://github.com/proxy303-wq/Parallax",
+  "website": null,
+  "how_used_jev": "The system sends a structured state with noul, choice, and score questions. The answers are a second opinion next to a DeepSeek validator.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/proxy303-wq/Parallax"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "30signals-typesafe-bench",
+  "project": "typesafe-bench",
+  "description": "Compares Jev with models on Azure AI Foundry for cost and latency on the same structured-decision task.",
+  "github": "https://github.com/30Signals/typesafe-bench",
+  "website": null,
+  "how_used_jev": "Each model gets the same questions over the same ticket text, such as BANKING77 intent classification. The tool records the cost and latency of each request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/30Signals/typesafe-bench"
+  }
+}

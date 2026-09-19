@@ -1,0 +1,22 @@
+{
+  "id": "ddfeyes-jev-mode",
+  "project": "jev-mode",
+  "description": "Moves bulk semantic judgments, such as ticket triage and file tagging, out of a coding agent's context. It is Python with no dependencies.",
+  "github": "https://github.com/ddfeyes/jev-mode",
+  "website": null,
+  "how_used_jev": "The agent sends each item and typed questions to Jev. The author reports 78% fewer tokens and 96.1% vs 93.7% accuracy against an in-context control.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ddfeyes/jev-mode"
+  }
+}

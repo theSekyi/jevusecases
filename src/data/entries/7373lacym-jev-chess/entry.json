@@ -1,0 +1,22 @@
+{
+  "id": "7373lacym-jev-chess",
+  "project": "jev-chess",
+  "description": "A chess loop where Jev plays against an engine.",
+  "github": "https://github.com/7373Lacym/jev-chess",
+  "website": null,
+  "how_used_jev": "Jev plays White and chooses from moves that js-chess-engine generates.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/7373Lacym/jev-chess"
+  }
+}
