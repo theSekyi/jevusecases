@@ -1,5 +1,5 @@
-import { formatShare, TRAFFIC_WINDOW_DAYS, type TrafficRow, type TrafficSummary } from "@/lib/trafficStats";
-import { countryCodeToFlag, countryName } from "@/lib/visitorEvents";
+import { countryCodeToFlag, countryName, formatShare, TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
+import type { TrafficRow, TrafficSummary } from "@/lib/trafficStats";
 
 function labelFor(row: TrafficRow): { flag: string; name: string } {
   if (row.kind === "country") return { flag: countryCodeToFlag(row.country) ?? "🌐", name: countryName(row.country) };

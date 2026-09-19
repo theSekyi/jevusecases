@@ -17,7 +17,7 @@ import {
 import { beginTurn, createMotion, dragBy, endDrag, startDrag, stepMotion, type MotionState } from "@/lib/globeMotion";
 import { COUNTRY_SHAPES, GRATICULE, SHAPE_BY_CODE } from "@/lib/globeShapes";
 import type { TrafficRow } from "@/lib/trafficStats";
-import { countryCodeToFlag, countryName } from "@/lib/visitorEvents";
+import { countryCodeToFlag, countryName } from "@/lib/visitorFormat";
 
 const MARGIN = 6;
 const MAX_STEP_MS = 64;
