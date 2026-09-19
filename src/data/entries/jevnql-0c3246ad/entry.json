@@ -1,0 +1,31 @@
+{
+  "id": "jevnql-0c3246ad",
+  "project": "JevNQL",
+  "description": "A query language and engine that mixes arithmetic and judgment in one query, such as the biggest spenders who seem increasingly unhappy about pricing. The arithmetic runs in Apache DataFusion and only the judgments go to Jev. Plain-English questions are turned into queries first.",
+  "github": "https://github.com/Adityakhalkar/JevNQL",
+  "website": null,
+  "how_used_jev": "Jev does two jobs. It picks between readings of an ambiguous plain-English question, and it filters, scores or classifies rows on meaning (yes/no, pick-one, rated levels). An optimizer runs filters and top-k first so only the surviving rows reach Jev, identical states are judged once, and answers are cached for the session. Without a TypeSafe key it uses a keyword simulator that its output labels as such.",
+  "source_tweet": null,
+  "author": "@adityakhalkar_",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": {
+    "baseline_model": "the same query without the optimizer",
+    "est_savings_pct": 59,
+    "basis": "Estimated Jev cost fell from $0.077 to $0.031 on one benchmark question, from the repo's own report on synthetic data"
+  },
+  "benchmark": {
+    "comparison": "4.6x fewer rows sent to Jev than the same query unoptimized (730 instead of 3,345), 91 s down to 21 s",
+    "task": "customers with 8 or more reviews who seem unhappy about pricing; 5,000 customers, 200,000 orders",
+    "notes": "Measured with live Jev on synthetic data with planted answers, against the same query run in reading order. It is not a comparison with an LLM, and accuracy on real data is not evaluated."
+  },
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "source code (no license file yet)",
+    "link": "https://github.com/Adityakhalkar/JevNQL",
+    "install": "cargo install --git https://github.com/Adityakhalkar/JevNQL jevnql-cli"
+  }
+}
