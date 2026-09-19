@@ -1,0 +1,19 @@
+{
+  "id": "polar-llama-58c24ce9",
+  "project": "Polar Llama",
+  "description": "Integrates Jev into polars dataframes to allow for integration into System One Intelligence into data pipelines.",
+  "github": "https://github.com/pnthn-ai/polar_llama",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": "@DavidDrummondAI",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
