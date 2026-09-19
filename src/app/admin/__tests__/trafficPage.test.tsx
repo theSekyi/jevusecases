@@ -10,12 +10,17 @@ vi.mock("@/lib/trafficStats", async () => {
   return { ...actual, getTrafficSummary: () => getTrafficSummary() };
 });
 
+const getTrafficSources = vi.fn();
+vi.mock("@/lib/trafficSources", () => ({ getTrafficSources: () => getTrafficSources() }));
+
 const { default: TrafficPage } = await import("../traffic/page");
 
 describe("traffic page", () => {
   beforeEach(() => {
     requireAdmin.mockReset();
     getTrafficSummary.mockReset();
+    getTrafficSources.mockReset();
+    getTrafficSources.mockResolvedValue({ visitors: 0, rows: [], partialSince: null, collecting: false });
   });
 
   test("redirects a signed-out visitor before reading any traffic data", async () => {
@@ -23,6 +28,7 @@ describe("traffic page", () => {
 
     await expect(TrafficPage()).rejects.toThrow("NEXT_REDIRECT:/admin/login");
     expect(getTrafficSummary).not.toHaveBeenCalled();
+    expect(getTrafficSources).not.toHaveBeenCalled();
   });
 
   test("renders the summary for a signed-in admin", async () => {
