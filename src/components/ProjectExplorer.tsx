@@ -19,8 +19,13 @@ import {
   type SortKey,
 } from "@/lib/projectSearch";
 import type { Project } from "@/lib/projects";
-import { PAGE_SIZE, usePages } from "@/lib/usePages";
+import { usePages } from "@/lib/usePages";
 import { closeProject, useProjectHash } from "@/lib/useProjectHash";
+
+/** Moves focus to a project's card, once the next frame has drawn it. */
+function focusCard(id: string) {
+  requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${id}"]`)?.focus());
+}
 
 /** Pressing "/" anywhere on the page jumps to search, unless you are already typing somewhere. */
 function useSearchShortcut(input: React.RefObject<HTMLInputElement | null>) {
@@ -50,18 +55,15 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
   const strongest = useMemo(() => featuredProject(projects), [projects]);
   const featured = isDefaultView(filters, sort) ? strongest : null;
   const rest = featured ? visible.filter((project) => project.id !== featured.id) : visible;
-  const { page, remaining, showMore } = usePages(rest, JSON.stringify([filters, sort]));
   const openProject = projects.find((project) => project.id === openId) ?? null;
+  const { page, more, showMore } = usePages(rest, JSON.stringify([filters, sort]), openProject);
 
   // Whichever way the panel closes (Esc, Close, the backdrop, the browser's Back button), the card that
   // opened it gets focus back so keyboard users don't lose their place.
   const lastOpenId = useRef<string | null>(null);
   useEffect(() => {
     const id = openProject?.id ?? null;
-    if (!id && lastOpenId.current) {
-      const previous = lastOpenId.current;
-      requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${previous}"]`)?.focus());
-    }
+    if (!id && lastOpenId.current) focusCard(lastOpenId.current);
     lastOpenId.current = id;
   }, [openProject]);
 
@@ -111,18 +113,17 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
                   <ProjectCard key={project.id} project={project} index={index} />
                 ))}
               </div>
-              {remaining > 0 && (
+              {more > 0 && (
                 <button
                   type="button"
                   onClick={() => {
                     // Keyboard users continue from the first new card, not from a button that moved down the page.
-                    const firstNew = rest[page.length].id;
+                    focusCard(rest[page.length].id);
                     showMore();
-                    requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${firstNew}"]`)?.focus());
                   }}
                   className="self-center rounded-md border border-bp-muted px-4 py-2 text-sm font-semibold transition-colors hover:border-bp-accent hover:text-bp-accent"
                 >
-                  Show {Math.min(remaining, PAGE_SIZE)} more
+                  Show {more} more
                 </button>
               )}
             </>

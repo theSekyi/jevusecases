@@ -46,7 +46,8 @@ describe("ProjectExplorer", () => {
     const real = getProjects();
     render(<ProjectExplorer projects={real} />);
 
-    expect(cardTitles().length).toBeLessThanOrEqual(PAGE_SIZE);
+    // The featured card, then one page.
+    expect(cardTitles()).toHaveLength(Math.min(real.length, PAGE_SIZE + 1));
     for (const project of real) {
       goToHash(project.id);
       expect(screen.getByRole("dialog", { name: project.project })).toBeInTheDocument();
@@ -78,29 +79,32 @@ describe("ProjectExplorer", () => {
 
     test("moves focus to the first new card", async () => {
       render(<ProjectExplorer projects={many} />);
-      fireEvent.change(screen.getByLabelText("Sort"), { target: { value: "az" } });
 
       fireEvent.click(showMore());
 
-      await waitFor(() => expect(screen.getByRole("link", { name: new RegExp(`Project ${String(PAGE_SIZE).padStart(3, "0")}`) })).toHaveFocus());
+      await waitFor(() => expect(screen.getByRole("link", { name: new RegExp(many[PAGE_SIZE].project) })).toHaveFocus());
     });
 
-    test("a new search starts again at one page", () => {
+    test("a new search starts again at one page, and so does going back", () => {
       render(<ProjectExplorer projects={many} />);
       fireEvent.click(showMore());
 
       fireEvent.change(search(), { target: { value: "project" } });
+      expect(cardTitles()).toHaveLength(PAGE_SIZE);
 
+      fireEvent.change(search(), { target: { value: "" } });
       expect(cardTitles()).toHaveLength(PAGE_SIZE);
     });
 
-    test("a link to a project past the first page still opens its panel", () => {
+    test("a link to a project past the first page opens it, and closing returns focus to its card", async () => {
       render(<ProjectExplorer projects={many} />);
       const last = many.at(-1)!;
 
       goToHash(last.id);
-
       expect(screen.getByRole("dialog", { name: last.project })).toBeInTheDocument();
+
+      fireEvent.click(within(screen.getByRole("dialog")).getByRole("button", { name: /Close/ }));
+      await waitFor(() => expect(screen.getByRole("link", { name: new RegExp(last.project) })).toHaveFocus());
     });
   });
 
