@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { requireAdmin } from "@/lib/auth";
 import { ACCOUNT_PATH, TRAFFIC_PATH } from "@/lib/authConstants";
-import { TRAFFIC_WINDOW_DAYS } from "@/lib/trafficStats";
+import { TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
 import { logout } from "./actions";
 
 export const metadata: Metadata = {

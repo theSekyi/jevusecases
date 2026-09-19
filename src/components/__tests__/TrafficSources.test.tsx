@@ -3,7 +3,7 @@ import { render, screen, within } from "@testing-library/react";
 import { TrafficSources } from "../admin/TrafficSources";
 import { MIN_SOURCE_VISITORS } from "@/lib/sourceRules";
 import type { SourcesSummary } from "@/lib/trafficSources";
-import { TRAFFIC_WINDOW_DAYS } from "@/lib/trafficStats";
+import { TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
 
 const summary: SourcesSummary = {
   visitors: 40,

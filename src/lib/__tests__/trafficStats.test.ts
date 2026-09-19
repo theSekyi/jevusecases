@@ -1,14 +1,13 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
 import {
-  formatShare,
   getTrafficSummary,
   MIN_COUNTRY_VIEWS,
   MIN_COUNTRY_VISITORS,
   summarizeCountries,
-  TRAFFIC_WINDOW_DAYS,
   type CountryCounts,
   type TrafficRow,
 } from "../trafficStats";
+import { TRAFFIC_WINDOW_DAYS } from "../visitorFormat";
 
 const sqlMock = vi.fn();
 vi.mock("@/lib/db", () => ({ db: () => sqlMock }));
@@ -141,26 +140,6 @@ describe("summarizeCountries", () => {
 
   test("omits the 'other' and 'unknown' rows when they have nothing in them", () => {
     expect(label(summarizeCountries([counts("US", 5)]).rows)).toEqual(["US"]);
-  });
-});
-
-describe("formatShare", () => {
-  test("uses one decimal below 10% and whole numbers from there", () => {
-    expect(formatShare(75, 100)).toBe("75%");
-    expect(formatShare(93, 1000)).toBe("9.3%");
-    expect(formatShare(1, 3)).toBe("33%");
-  });
-
-  test("never rounds up into an inconsistent '10.0%'", () => {
-    expect(formatShare(996, 10000)).toBe("10%");
-  });
-
-  test("labels slivers instead of showing 0.0%", () => {
-    expect(formatShare(1, 5000)).toBe("<0.1%");
-  });
-
-  test("an empty total is 0%, not a division by zero", () => {
-    expect(formatShare(0, 0)).toBe("0%");
   });
 });
 

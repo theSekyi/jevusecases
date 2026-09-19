@@ -21,6 +21,10 @@ npm run lint        # lint
 npx tsc --noEmit    # typecheck
 ```
 
+## Sharing links
+
+Add `?ref=` to a link you share (for example `https://www.jevusecases.com/?ref=newsletter`) and the admin traffic page can tell that source apart from others on the same site. Tags use letters, numbers, `-` and `_`, up to 40 characters.
+
 ## Contributing
 
 Want to add a project to the site? See [CONTRIBUTING.md](CONTRIBUTING.md).

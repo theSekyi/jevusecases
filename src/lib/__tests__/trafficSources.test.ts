@@ -7,7 +7,7 @@ import {
   summarizeSources,
   type SourceCounts,
 } from "../trafficSources";
-import { TRAFFIC_WINDOW_DAYS } from "../trafficStats";
+import { TRAFFIC_WINDOW_DAYS } from "../visitorFormat";
 import { DIRECT_SOURCE, INTERNAL_SOURCE } from "../visitorEvents";
 
 const sqlMock = vi.fn();
