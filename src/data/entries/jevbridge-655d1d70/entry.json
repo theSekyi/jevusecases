@@ -1,19 +1,23 @@
 {
   "id": "jevbridge-655d1d70",
   "project": "jevbridge",
-  "description": "One OSS ACP/MCP bridge across Codex, Claude, Grok and OpenCode without replacing those hosts.",
+  "description": "An adapter that puts Jev next to the model you already run, over MCP and the Agent Client Protocol. Codex, Claude, Grok or OpenCode can call it for typed decisions and computer-use actions. Without a TypeSafe key it falls back to your own LLM or a local heuristic.",
   "github": "https://github.com/tacticocc/jevbridge",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "Exposes Jev as MCP tools (jev_decide, jev_gate, jev_computer_use, jev_recipe) and as an ACP adapter for editors such as Zed. The host model writes the plan, and Jev answers yes/no, pick-one and score questions about the current state. A confidence gate then decides whether to execute, confirm, escalate or abort, so a destructive click or command is not run unsupervised.",
   "source_tweet": null,
   "author": "@gamesonrb",
   "date_found": "2026-09-19",
   "is_build": true,
-  "category": "routing / model selection",
+  "category": "agent tooling / skills",
   "replaces": null,
   "cost_signal": null,
   "benchmark": null,
   "jaggedness_reports": [],
   "security_status": null,
-  "recipe": null
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tacticocc/jevbridge",
+    "install": "git clone https://github.com/tacticocc/jevbridge && cd jevbridge && npm install"
+  }
 }
