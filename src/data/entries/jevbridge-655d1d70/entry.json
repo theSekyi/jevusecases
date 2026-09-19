@@ -1,0 +1,19 @@
+{
+  "id": "jevbridge-655d1d70",
+  "project": "jevbridge",
+  "description": "One OSS ACP/MCP bridge across Codex, Claude, Grok and OpenCode without replacing those hosts.",
+  "github": "https://github.com/tacticocc/jevbridge",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": "@gamesonrb",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
