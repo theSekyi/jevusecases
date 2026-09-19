@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { AdminPageHeader } from "@/components/admin/AdminPageHeader";
-import { TrafficBreakdown } from "@/components/admin/TrafficBreakdown";
+import { TrafficDashboard } from "@/components/admin/TrafficDashboard";
 import { requireAdmin } from "@/lib/auth";
 import { getTrafficSummary } from "@/lib/trafficStats";
 
@@ -14,9 +14,9 @@ export default async function TrafficPage() {
 
   return (
     <main className="flex flex-1 justify-center bg-bp-bg px-6 py-16 font-bp-sans text-bp-ink">
-      <div className="flex w-full max-w-xl flex-col gap-10">
+      <div className="flex w-full max-w-6xl flex-col gap-10">
         <AdminPageHeader title="Traffic" />
-        <TrafficBreakdown summary={summary} />
+        <TrafficDashboard summary={summary} />
       </div>
     </main>
   );

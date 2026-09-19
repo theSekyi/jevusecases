@@ -1,5 +1,5 @@
-import { describe, expect, test } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { describe, expect, test, vi } from "vitest";
+import { fireEvent, render, screen } from "@testing-library/react";
 import { TrafficBreakdown } from "../admin/TrafficBreakdown";
 import type { TrafficSummary } from "@/lib/trafficStats";
 
@@ -87,5 +87,62 @@ describe("TrafficBreakdown", () => {
     expect(screen.getByText("PAGE VIEWS").nextSibling).toHaveTextContent("0");
     expect(screen.getByText("No page views recorded in this window.")).toBeInTheDocument();
     expect(screen.queryByRole("list")).not.toBeInTheDocument();
+  });
+});
+
+describe("TrafficBreakdown with a globe", () => {
+  const withRows = summary({
+    views: 40,
+    visitors: 12,
+    rows: [
+      { kind: "country", country: "GB", views: 30, visitors: 8 },
+      { kind: "unknown", views: 6, visitors: 2 },
+      { kind: "other", views: 4, visitors: 2 },
+    ],
+  });
+  const links = () => ({ highlighted: null as string | null, onHighlight: vi.fn(), onSelect: vi.fn() });
+
+  test("country rows become buttons that highlight on hover and focus, and turn the globe on click", () => {
+    const globe = links();
+    render(<TrafficBreakdown summary={withRows} globe={globe} />);
+    const row = screen.getByRole("button", { name: /United Kingdom/ });
+
+    fireEvent.mouseEnter(row);
+    expect(globe.onHighlight).toHaveBeenLastCalledWith("GB");
+    fireEvent.mouseLeave(row);
+    expect(globe.onHighlight).toHaveBeenLastCalledWith(null);
+    fireEvent.focus(row);
+    expect(globe.onHighlight).toHaveBeenLastCalledWith("GB");
+    fireEvent.blur(row);
+    expect(globe.onHighlight).toHaveBeenLastCalledWith(null);
+    fireEvent.click(row);
+    expect(globe.onSelect).toHaveBeenCalledWith("GB");
+  });
+
+  test("says what the button does, to a screen reader", () => {
+    render(<TrafficBreakdown summary={withRows} globe={links()} />);
+
+    expect(screen.getByRole("button", { name: /United Kingdom.*Show on the globe/ })).toBeInTheDocument();
+  });
+
+  test("unknown and folded rows are not interactive, since the globe shows nothing for them", () => {
+    render(<TrafficBreakdown summary={withRows} globe={links()} />);
+
+    expect(screen.getAllByRole("button")).toHaveLength(1);
+    expect(screen.getByText("Unknown")).toBeInTheDocument();
+    expect(screen.getByText("Other")).toBeInTheDocument();
+  });
+
+  test("marks the row for the highlighted country", () => {
+    render(<TrafficBreakdown summary={withRows} globe={{ ...links(), highlighted: "GB" }} />);
+
+    expect(screen.getByRole("button", { name: /United Kingdom/ })).toHaveClass("bg-bp-raised");
+  });
+
+  test("without a globe the rows are plain, as before", () => {
+    render(<TrafficBreakdown summary={withRows} />);
+
+    expect(screen.queryByRole("button")).not.toBeInTheDocument();
+    expect(screen.getAllByRole("listitem")).toHaveLength(3);
   });
 });
