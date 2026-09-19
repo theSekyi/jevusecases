@@ -1,7 +1,7 @@
 {
   "id": "fast-facts-jev-mcp",
   "project": "jev-mcp",
-  "description": "Runs a Go MCP server that gives MCP clients access to typed questions for TypeSafe Jev.",
+  "description": "Runs a Go MCP server that gives MCP clients access to typed questions for Jev.",
   "github": "https://github.com/fast-facts/jev-mcp",
   "website": null,
   "how_used_jev": "Tools such as jev_verify send claims and evidence to Jev as Choice, Score, and Noul questions. The server applies policy to the returned probabilities.",

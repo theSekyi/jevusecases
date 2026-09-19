@@ -3,7 +3,7 @@
   "project": "JevTest",
   "description": "Runs exploratory browser tests from a goal, fixture data, allowed actions, and exact success assertions.",
   "github": "https://github.com/CorieW/JevTest",
-  "website": "https://jevtest.dev",
+  "website": null,
   "how_used_jev": "Jev chooses the actions and judges the observed results. Playwright runs the actions and saves replayable evidence.",
   "source_tweet": null,
   "author": null,

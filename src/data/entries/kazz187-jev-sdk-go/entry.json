@@ -1,7 +1,7 @@
 {
   "id": "kazz187-jev-sdk-go",
   "project": "jev-sdk-go",
-  "description": "An unofficial Go client for the TypeSafe System One API. It needs Go 1.27.",
+  "description": "An unofficial Go client for the TypeSafe API. It needs Go 1.27.",
   "github": "https://github.com/kazz187/jev-sdk-go",
   "website": null,
   "how_used_jev": "It sends state and typed questions to Jev. A choice over your enum returns that enum type, so the compiler checks your switch.",

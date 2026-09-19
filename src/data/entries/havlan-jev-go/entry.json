@@ -1,7 +1,7 @@
 {
   "id": "havlan-jev-go",
   "project": "jev-go",
-  "description": "Provides a small Go SDK for the Jev API with no dependencies. It retries 429 and 529 responses.",
+  "description": "Provides a small Go SDK for the TypeSafe API with no dependencies. It retries 429 and 529 responses.",
   "github": "https://github.com/havlan/jev-go",
   "website": null,
   "how_used_jev": "Code sends a state with Noul, Choice, and Score questions to Jev and reads the typed answers.",

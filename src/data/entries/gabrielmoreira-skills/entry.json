@@ -4,7 +4,7 @@
   "description": "Collects personal coding-agent skills taken from several skill collections, with a check suite for each edit.",
   "github": "https://github.com/gabrielmoreira/skills",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "An ask function sends state and typed questions to Jev. It tries each request up to three times.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

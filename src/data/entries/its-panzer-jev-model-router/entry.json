@@ -4,7 +4,7 @@
   "description": "A policy router that picks the cheapest Claude model that can finish a request. It returns a decision and does not make the downstream call.",
   "github": "https://github.com/its-panzer/jev-model-router",
   "website": null,
-  "how_used_jev": "Jev sizes the work before any expensive model runs. The author reports 97 of 100 labelled cases inside the acceptable band.",
+  "how_used_jev": "Jev sizes the work before any expensive model runs. The author reports 97 of 100 labeled cases inside the acceptable band.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

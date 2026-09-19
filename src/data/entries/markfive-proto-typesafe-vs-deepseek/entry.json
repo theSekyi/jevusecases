@@ -1,7 +1,7 @@
 {
   "id": "markfive-proto-typesafe-vs-deepseek",
   "project": "typesafe-vs-deepseek",
-  "description": "Compares TypeSafe Jev with DeepSeek-flash on speed, tokens, cost, and accuracy.",
+  "description": "Compares Jev with DeepSeek-flash on speed, tokens, cost, and accuracy.",
   "github": "https://github.com/markfive-proto/typesafe-vs-deepseek",
   "website": "https://typesafe-vs-deepseek.vercel.app",
   "how_used_jev": "It runs Jev and DeepSeek-flash side by side on invoice extraction, email classification, and reranking.",

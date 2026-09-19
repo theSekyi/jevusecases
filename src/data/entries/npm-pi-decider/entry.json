@@ -4,7 +4,7 @@
   "description": "Exposes decision backends for pi and omp as one typed tool with noul, choice, and score questions.",
   "github": null,
   "website": "https://www.npmjs.com/package/pi-decider",
-  "how_used_jev": "The tool sends typed questions to TypeSafe Jev, OpenRouter's Decisions API, or an OpenAI-compatible chat proxy.",
+  "how_used_jev": "The tool sends typed questions to Jev, OpenRouter's Decisions API, or an OpenAI-compatible chat proxy.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

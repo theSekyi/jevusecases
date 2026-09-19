@@ -1,10 +1,10 @@
 {
   "id": "distributedlabs-magic-8-ball",
   "project": "The Jev Oracle",
-  "description": "A browser 8 Ball toy that answers your question with one of the twenty classic responses.",
+  "description": "An 8 Ball toy in the browser. It answers your question with one of the twenty classic responses.",
   "github": "https://github.com/distributedlabs/magic-8-ball",
   "website": null,
-  "how_used_jev": "Jev gets each question as one Choice over the twenty responses. The app shows the highest-probability response and shows its probability as signal strength.",
+  "how_used_jev": "Jev gets each question as one Choice question over the twenty responses. The app shows the top response and shows its probability as signal strength.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

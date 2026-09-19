@@ -4,7 +4,7 @@
   "description": "Gives Claude Code, Codex, and OpenCode a risk-scaled delivery workflow with team skills and safety gates.",
   "github": "https://github.com/davekim917/bootstrap",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "Its code calls a pinned Jev version, jev-1.13.0. The code says its thresholds only have meaning for the version they were set on.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

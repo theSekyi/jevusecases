@@ -1,7 +1,7 @@
 {
   "id": "lhotwll217-jev-cli",
   "project": "jev-cli",
-  "description": "Sends JSON state and questions to the TypeSafe System One API from the command line. It is for experiments, eval loops, and agent harnesses.",
+  "description": "Sends JSON state and questions to the TypeSafe API from the command line. It is for experiments, eval loops, and agent harnesses.",
   "github": "https://github.com/lhotwll217/jev-cli",
   "website": null,
   "how_used_jev": "Jev answers the typed questions in a questions file about a given state. The CLI prints the typed answers as JSON.",

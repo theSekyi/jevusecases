@@ -1,7 +1,7 @@
 {
   "id": "wiktorb2004-llama-index-jev",
   "project": "llama-index-jev",
-  "description": "Gives LlamaIndex a reranker and a router backed by TypeSafe Jev. It is an independent community project.",
+  "description": "Gives LlamaIndex a reranker and a router backed by Jev. It is an independent community project.",
   "github": "https://github.com/WiktorB2004/llama-index-jev",
   "website": null,
   "how_used_jev": "JevRerank asks Jev to score each retrieved passage and keeps the top results. The selectors ask Jev to pick the query engine or tool for a query.",

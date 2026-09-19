@@ -8,6 +8,7 @@ export const CATEGORIES = [
   "dev tooling / IDE",
   "dev tooling / library",
   "apps / personal tools",
+  "games / interactive",
   "browser agents / automation",
   "robotics / simulation",
   "exploration / benchmarking",

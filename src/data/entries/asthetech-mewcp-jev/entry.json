@@ -3,7 +3,7 @@
   "project": "mewcp-jev",
   "description": "Gives an MCP server that exposes the Jev evaluation API to agents.",
   "github": "https://github.com/AStheTECH/mewcp-jev",
-  "website": "https://mewcp-jev.vercel.app",
+  "website": null,
   "how_used_jev": "Agents send text or structured state with yes/no, single-choice, and rubric questions. Jev answers each question, and a tool lists the available model versions.",
   "source_tweet": null,
   "author": null,

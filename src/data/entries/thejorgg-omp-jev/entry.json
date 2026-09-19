@@ -1,7 +1,7 @@
 {
   "id": "thejorgg-omp-jev",
   "project": "omp-jev",
-  "description": "A plugin that adds TypeSafe Jev routing to Oh My Pi, with an opt-in checkpoint orchestrator.",
+  "description": "A plugin that adds Jev routing to Oh My Pi, with an opt-in checkpoint orchestrator.",
   "github": "https://github.com/thejorgg/omp-jev",
   "website": null,
   "how_used_jev": "Jev makes routing judgments inside Oh My Pi under custom rules and thresholds. The judgments stay off until you enable them.",

@@ -1,7 +1,7 @@
 {
   "id": "gaurav-gosain-jev-go",
   "project": "jev-go",
-  "description": "A Go client for the TypeSafe System One API.",
+  "description": "A Go client for the TypeSafe API.",
   "github": "https://github.com/Gaurav-Gosain/jev-go",
   "website": null,
   "how_used_jev": "Sends state and Noul, Choice, and Score questions to Jev and returns typed answers with probabilities to Go code.",

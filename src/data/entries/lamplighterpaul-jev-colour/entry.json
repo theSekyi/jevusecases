@@ -1,10 +1,10 @@
 {
   "id": "lamplighterpaul-jev-colour",
   "project": "jev-colour",
-  "description": "Weighs a typed word against sixteen fixed colours from the Bitframes palette. It recreates an idea by Matt DesLauriers.",
+  "description": "Weighs a typed word against sixteen fixed colors from the Bitframes palette. It recreates an idea by Matt DesLauriers.",
   "github": "https://github.com/LamplighterPaul/jev-colour",
   "website": "https://jev-colour.zammitpaul.com",
-  "how_used_jev": "Jev gives a probability for each of the sixteen colours. The page draws these weights to scale as a bar.",
+  "how_used_jev": "Jev gives a probability for each of the sixteen colors. The page draws these weights to scale as a bar.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

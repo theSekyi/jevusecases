@@ -4,7 +4,7 @@
   "description": "Classifies text, analyzes sentiment, and scores rows in pandas and Polars DataFrames with natural-language questions.",
   "github": "https://github.com/ktaletsk/jevframe",
   "website": "https://pypi.org/project/jevframe/",
-  "how_used_jev": "Each row goes to TypeSafe Jev with one or more questions. Results come back as Series and DataFrames with full probability distributions.",
+  "how_used_jev": "Each row goes to Jev with one or more questions. Results come back as Series and DataFrames with full probability distributions.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

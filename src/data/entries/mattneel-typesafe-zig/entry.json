@@ -1,7 +1,7 @@
 {
   "id": "mattneel-typesafe-zig",
   "project": "typesafe.zig",
-  "description": "Gives Zig programs an unofficial client for the TypeSafe System One API and its Jev model.",
+  "description": "Gives Zig programs an unofficial client for the TypeSafe API and its Jev model.",
   "github": "https://github.com/mattneel/typesafe.zig",
   "website": null,
   "how_used_jev": "Sends typed Noul, Choice, and Score questions in one request. The answer types come from your questions at compile time.",

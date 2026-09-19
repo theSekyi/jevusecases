@@ -1,7 +1,7 @@
 {
   "id": "sava-software-typesafe-client",
   "project": "TypeSafe Client",
-  "description": "A Java client for the TypeSafe System One API, with a recording and replay decorator.",
+  "description": "A Java client for the TypeSafe API, with a recording and replay decorator.",
   "github": "https://github.com/sava-software/typesafe-client",
   "website": null,
   "how_used_jev": "It sends state and typed Choice, Score, or Noul questions to Jev and returns calibrated probabilities.",

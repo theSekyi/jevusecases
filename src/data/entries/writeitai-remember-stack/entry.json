@@ -4,7 +4,7 @@
   "description": "Memory infrastructure for AI agents. It keeps source claims separate from what the system holds true, with an audit trail to the source.",
   "github": "https://github.com/writeitai/remember-stack",
   "website": "https://remember.dev/docs",
-  "how_used_jev": null,
+  "how_used_jev": "Its config uses the jev-latest model with a 30-second timeout. Fallback to a prompt is off by default.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

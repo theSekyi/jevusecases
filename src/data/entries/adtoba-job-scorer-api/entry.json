@@ -3,7 +3,7 @@
   "project": "job_scorer",
   "description": "Scores a CV against a job description through an HTTP API.",
   "github": "https://github.com/adtoba/job-scorer-api",
-  "website": "https://job-scorer-api.vercel.app",
+  "website": null,
   "how_used_jev": "Jev rates interview chance, seniority, skills match, requirements met, and other factors. Go code blends these into one overall fit score.",
   "source_tweet": null,
   "author": null,

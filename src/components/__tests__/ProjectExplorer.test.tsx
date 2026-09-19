@@ -42,14 +42,15 @@ describe("ProjectExplorer", () => {
     expect(cardTitles()).toHaveLength(FIXTURE_PROJECTS.length);
   });
 
-  test("renders the real projects, and opens some of their panels without throwing", () => {
+  test("renders the real projects, and opens the panels with the most to show without throwing", () => {
     const real = getProjects();
     render(<ProjectExplorer projects={real} />);
 
-    // The featured card, then one page. Opening every panel of ~1,400 projects takes about a minute,
-    // and projectSchema already checks every field of every entry when projects.json is generated.
+    // The featured card, then one page. Opening all ~1,400 panels takes about a minute, so this opens every
+    // project with evidence fields, which exercise the most panel code, and a few without.
     expect(cardTitles()).toHaveLength(Math.min(real.length, PAGE_SIZE + 1));
-    for (const project of real.slice(0, 12)) {
+    const withEvidence = real.filter((p) => p.replaces || p.benchmark || p.cost_signal || p.security_status);
+    for (const project of [...withEvidence, ...real.slice(0, 4)]) {
       goToHash(project.id);
       expect(screen.getByRole("dialog", { name: project.project })).toBeInTheDocument();
     }

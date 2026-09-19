@@ -1,7 +1,7 @@
 {
   "id": "2389-research-typesafe-go",
   "project": "typesafe-go",
-  "description": "A Go client for the TypeSafe System One API, with no dependencies outside the standard library.",
+  "description": "A Go client for the TypeSafe API, with no dependencies outside the standard library.",
   "github": "https://github.com/2389-research/typesafe-go",
   "website": null,
   "how_used_jev": "Go code asks Jev typed Noul, Choice, and Score questions. It reads each answer through the typed question handle that asked it.",

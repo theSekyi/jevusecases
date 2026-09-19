@@ -1,7 +1,7 @@
 {
   "id": "vinnie357-typesafe-sdk-ex",
   "project": "typesafe_sdk_ex",
-  "description": "Elixir client for the TypeSafe AI API, built on Req and based on the typesafe-sdk-js JavaScript SDK.",
+  "description": "Elixir client for the TypeSafe API, built on Req and based on the typesafe-sdk-js JavaScript SDK.",
   "github": "https://github.com/vinnie357/typesafe_sdk_ex",
   "website": null,
   "how_used_jev": "Helpers build Noul, Choice, and Score questions that the client sends with system_one. The README example asks Jev to classify a support ticket.",

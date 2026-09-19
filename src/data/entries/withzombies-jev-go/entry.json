@@ -1,7 +1,7 @@
 {
   "id": "withzombies-jev-go",
   "project": "jev-go",
-  "description": "An unofficial Go client for the TypeSafe System One API that uses only the standard library.",
+  "description": "An unofficial Go client for the TypeSafe API that uses only the standard library.",
   "github": "https://github.com/withzombies/jev-go",
   "website": null,
   "how_used_jev": "It sends questions to Jev and returns probabilities, categories, and scores as Go types.",

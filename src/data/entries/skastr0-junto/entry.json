@@ -4,7 +4,7 @@
   "description": "A local desktop canvas for coding agents, terminals, and browser pages. You draw the structure, and the agents work together inside it.",
   "github": "https://github.com/skastr0/junto",
   "website": "https://juntoagents.com",
-  "how_used_jev": null,
+  "how_used_jev": "It uses the TypeSafe SDK to ask Jev an awareness question.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

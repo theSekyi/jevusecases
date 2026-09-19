@@ -1,7 +1,7 @@
 {
   "id": "ppweni-typesafe-rs",
   "project": "typesafe_rs",
-  "description": "Async Rust client for the TypeSafe AI API, based on the Python SDK 0.6.0.",
+  "description": "Async Rust client for the TypeSafe API, based on the Python SDK 0.6.0.",
   "github": "https://github.com/ppweni/typesafe_rs",
   "website": null,
   "how_used_jev": "Sends Choice, Noul, and Score questions to the TypeSafe API and returns the typed answers. It can also list models.",

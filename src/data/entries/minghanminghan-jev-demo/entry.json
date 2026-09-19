@@ -3,7 +3,7 @@
   "project": "jev demo",
   "description": "Demonstrates a customer-service chatbot that routes each conversation turn through a decision tree.",
   "github": "https://github.com/minghanminghan/jev-demo",
-  "website": "https://jev-demo-mu.vercel.app",
+  "website": null,
   "how_used_jev": "Jev answers every tree level in one call per turn. The same call asks if the user wants a human and scores frustration for handoff.",
   "source_tweet": null,
   "author": null,

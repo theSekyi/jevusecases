@@ -1,7 +1,7 @@
 {
   "id": "adamtopaz-jevpilot",
   "project": "JevPilot",
-  "description": "A standalone Lean 4 client for Jev and the TypeSafe System One API.",
+  "description": "A standalone Lean 4 client for Jev and the TypeSafe API.",
   "github": "https://github.com/adamtopaz/jevpilot",
   "website": null,
   "how_used_jev": "It sends a shared state with a batch of Noul, Choice, and Score questions to Jev. It returns typed answers with distributions and confidence.",

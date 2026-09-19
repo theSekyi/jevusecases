@@ -1,7 +1,7 @@
 {
   "id": "n3ndor-n8n-nodes-typesafe-jev",
   "project": "n8n-nodes-typesafe-jev",
-  "description": "Adds a community node that calls TypeSafe Jev from n8n workflows.",
+  "description": "Adds a community node that calls Jev from n8n workflows.",
   "github": "https://github.com/n3ndor/n8n-nodes-typesafe-jev",
   "website": null,
   "how_used_jev": "The node asks several typed questions about the same workflow state in one run. It returns calibrated probabilities for classification, routing, verification, and scoring.",

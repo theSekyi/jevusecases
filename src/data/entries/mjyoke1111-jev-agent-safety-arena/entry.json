@@ -2,7 +2,7 @@
   "id": "mjyoke1111-jev-agent-safety-arena",
   "project": "Jev Agent Safety Arena",
   "description": "Tests browser-agent safety on fixed benign and prompt-injected pages in Playwright. A dashboard shows only completed runs.",
-  "github": "https://github.com/mjyoke1111/jev-agent-safety-arena",
+  "github": "https://github.com/mjyoke1111/jev-lab",
   "website": "https://jev-agent-safety-arena.vercel.app",
   "how_used_jev": "A generative model proposes actions. Jev selects the next action and makes a separate typed safety judgment, and the results are compared with a baseline.",
   "source_tweet": null,
@@ -17,6 +17,6 @@
   "security_status": null,
   "recipe": {
     "type": "open-source implementation",
-    "link": "https://github.com/mjyoke1111/jev-agent-safety-arena"
+    "link": "https://github.com/mjyoke1111/jev-lab"
   }
 }

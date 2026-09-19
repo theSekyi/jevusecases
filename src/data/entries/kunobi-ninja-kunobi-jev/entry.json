@@ -1,7 +1,7 @@
 {
   "id": "kunobi-ninja-kunobi-jev",
   "project": "kunobi-jev",
-  "description": "An unofficial Rust client for the TypeSafe System One API.",
+  "description": "An unofficial Rust client for the TypeSafe API.",
   "github": "https://github.com/kunobi-ninja/kunobi-jev",
   "website": null,
   "how_used_jev": "Code sends state and typed noul, choice, or score questions to Jev. The client returns each answer with its probabilities.",

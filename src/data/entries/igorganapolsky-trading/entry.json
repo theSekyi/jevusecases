@@ -4,7 +4,7 @@
   "description": "Runs a paper-only lab that tests SPY put-credit trades with broker-backed ledgers and risk gates.",
   "github": "https://github.com/IgorGanapolsky/trading",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "A Python client calls Jev at the TypeSafe System One endpoint with the jev-latest model. It reads the API key from the keychain.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

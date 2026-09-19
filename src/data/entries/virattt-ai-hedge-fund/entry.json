@@ -1,7 +1,7 @@
 {
   "id": "virattt-ai-hedge-fund",
   "project": "ai-hedge-fund",
-  "description": "Adds TypeSafe Jev as a model provider in an educational AI hedge fund proof of concept. The project makes no real trades.",
+  "description": "Adds Jev as a model provider in an educational AI hedge fund proof of concept. The project makes no real trades.",
   "github": "https://github.com/virattt/ai-hedge-fund",
   "website": null,
   "how_used_jev": "Users run a fund mandate or a backtest with a Jev model, and Jev then powers the investor agents.",

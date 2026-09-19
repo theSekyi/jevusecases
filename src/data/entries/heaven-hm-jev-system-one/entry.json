@@ -1,10 +1,10 @@
 {
   "id": "heaven-hm-jev-system-one",
   "project": "jev-system-one",
-  "description": "Gives a terminal interface that combines OpenAI and Jev for answers with decision reports.",
+  "description": "Gives a terminal interface for answers with transparent decision reports.",
   "github": "https://github.com/heaven-hm/jev-system-one",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "It combines OpenAI and Jev and shows a decision report with each answer.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

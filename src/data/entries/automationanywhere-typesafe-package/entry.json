@@ -1,7 +1,7 @@
 {
   "id": "automationanywhere-typesafe-package",
   "project": "TypeSafe Package",
-  "description": "An Automation Anywhere custom package that wraps the Jev API. Bots use it to ask typed questions about text.",
+  "description": "An Automation Anywhere custom package that wraps the TypeSafe API. Bots use it to ask typed questions about text.",
   "github": "https://github.com/AutomationAnywhere/typesafe-package",
   "website": null,
   "how_used_jev": "A bot sends text and a yes/no, choice, or score question to Jev. It gets back a probability, a category, or a score.",

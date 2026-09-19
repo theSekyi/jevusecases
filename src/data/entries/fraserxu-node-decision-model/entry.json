@@ -1,10 +1,10 @@
 {
   "id": "fraserxu-node-decision-model",
   "project": "node-decision-model",
-  "description": "Gives Node.js one client and a CLI for decision models, with OpenRouter or the TypeSafe API as providers.",
+  "description": "A Node.js client and CLI for decision models such as Jev. It supports OpenRouter and the TypeSafe API as providers.",
   "github": "https://github.com/fraserxu/node-decision-model",
   "website": null,
-  "how_used_jev": "It sends state and typed questions to Jev. It returns typed answers, such as a choice, a probability, or a score.",
+  "how_used_jev": "With the TypeSafe provider, it sends a state and typed questions to Jev. It returns typed answers, such as a choice, a probability, or a score.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

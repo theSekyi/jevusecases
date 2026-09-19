@@ -4,7 +4,7 @@
   "description": "A local-first personal finance agent with an Interactive Brokers Flex Web Service client.",
   "github": "https://github.com/Elmata2/LaVega",
   "website": "https://lavega-sage.vercel.app",
-  "how_used_jev": null,
+  "how_used_jev": "It asks Jev score questions through the TypeSafe SDK, with jev-1.13.0 as the default model. It checks a usage budget and records usage for these calls.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

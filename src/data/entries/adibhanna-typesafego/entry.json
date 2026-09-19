@@ -1,7 +1,7 @@
 {
   "id": "adibhanna-typesafego",
   "project": "typesafego",
-  "description": "Provides a Go client for the TypeSafe AI API. It depends only on the Go standard library.",
+  "description": "Provides a Go client for the TypeSafe API. It depends only on the Go standard library.",
   "github": "https://github.com/adibhanna/typesafego",
   "website": null,
   "how_used_jev": "The client sends Noul, Choice, and Score questions to Jev against one state. It returns the typed, probabilistic answers.",

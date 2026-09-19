@@ -1,7 +1,7 @@
 {
   "id": "zhuyansen-jev-support-pulse",
   "project": "jev-support-pulse",
-  "description": "Tests if a Jev-labelled stream of support tweets spikes before a brand admits an outage. It uses 170,400 tweets to seven brands.",
+  "description": "Tests if a Jev-labeled stream of support tweets spikes before a brand admits an outage. It uses 170,400 tweets to seven brands.",
   "github": "https://github.com/zhuyansen/jev-support-pulse",
   "website": null,
   "how_used_jev": "Jev labels each tweet with two typed questions. The author reports 17 vs 10 incidents caught at equal false alarms, against tweet volume.",

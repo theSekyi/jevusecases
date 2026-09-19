@@ -4,7 +4,7 @@
   "description": "Gives Swift apps a way to handle uncertain judgments, with confidence thresholds and replayable runs.",
   "github": "https://github.com/dejager/maybe",
   "website": null,
-  "how_used_jev": "A model such as JEV judges text or picks a route. The app sends cases below the confidence threshold down their own branch.",
+  "how_used_jev": "A model such as Jev judges text or picks a route. The app sends cases below the confidence threshold down their own branch.",
   "source_tweet": "https://x.com/dejager/status/2101020602115228123",
   "author": "@dejager",
   "date_found": "2026-09-19",

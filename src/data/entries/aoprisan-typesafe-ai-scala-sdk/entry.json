@@ -1,7 +1,7 @@
 {
   "id": "aoprisan-typesafe-ai-scala-sdk",
   "project": "typesafe-sdk-scala",
-  "description": "Unofficial Scala 3 client for the TypeSafe AI System One API, with no runtime dependencies.",
+  "description": "Unofficial Scala 3 client for the TypeSafe API, with no runtime dependencies.",
   "github": "https://github.com/aoprisan/typesafe-ai-scala-sdk",
   "website": null,
   "how_used_jev": "Sends a state with Noul, Choice, and Score questions to the jev-latest model. It returns typed answers.",

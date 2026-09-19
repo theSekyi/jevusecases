@@ -1,10 +1,10 @@
 {
   "id": "isaac-flath-agentkb",
   "project": "AgentKB",
-  "description": "Uses Jev to triage demand signals in a local-first personal memory system for coding agents.",
+  "description": "A personal, local-first memory system for coding agents. It uses Jev to triage demand signals.",
   "github": "https://github.com/Isaac-Flath/agentkb",
   "website": null,
-  "how_used_jev": "Jev applies conservative and strict brand rubrics to demand signals. Failed batches stay unreviewed, with no fallback model.",
+  "how_used_jev": "Jev triages demand signals with the conservative and strict brand rubrics. Failed batches stay unreviewed, and no other model takes over.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

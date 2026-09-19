@@ -4,7 +4,7 @@
   "description": "Gives agents Noul, Choice, and Score decisions through an SDK, an OpenAI-compatible proxy, and an MCP server.",
   "github": "https://github.com/bhavikprit/reflex-ai",
   "website": null,
-  "how_used_jev": "TypeSafe Jev is one of its routing backends, next to local models, OpenRouter, and a fallback.",
+  "how_used_jev": "Jev is one of its routing backends, next to local models, OpenRouter, and a fallback.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

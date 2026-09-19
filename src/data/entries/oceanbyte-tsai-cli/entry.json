@@ -1,7 +1,7 @@
 {
   "id": "oceanbyte-tsai-cli",
   "project": "tsai",
-  "description": "Wraps the TypeSafe System One API in an unofficial command-line tool for shells, CI, and coding agents.",
+  "description": "Wraps the TypeSafe API in an unofficial command-line tool for shells, CI, and coding agents.",
   "github": "https://github.com/oceanByte/tsai-cli",
   "website": null,
   "how_used_jev": "The CLI sends state and typed noul, choice, and score questions to Jev and returns the structured numbers.",

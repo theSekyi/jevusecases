@@ -4,7 +4,7 @@
   "description": "Shows what Jev can do with six small demo apps inside ordinary software. A Workbench lets you build your own.",
   "github": "https://github.com/BrendanH18/jev-lab",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "Each app sends state and typed questions to Jev and branches on the returned choice, score, or probability. The app shows the latency and cost of every call.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

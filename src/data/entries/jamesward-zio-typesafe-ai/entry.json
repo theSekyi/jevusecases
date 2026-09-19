@@ -1,7 +1,7 @@
 {
   "id": "jamesward-zio-typesafe-ai",
   "project": "zio-typesafe-ai",
-  "description": "A Scala 3 and ZIO client library for the TypeSafe System One API.",
+  "description": "A Scala 3 and ZIO client library for the TypeSafe API.",
   "github": "https://github.com/jamesward/zio-typesafe-ai",
   "website": null,
   "how_used_jev": "Code asks Jev several typed questions in one round trip through a NamedTuple. The answers come back keyed and typed like the questions.",

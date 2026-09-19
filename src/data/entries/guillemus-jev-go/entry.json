@@ -1,7 +1,7 @@
 {
   "id": "guillemus-jev-go",
   "project": "jev-go",
-  "description": "Gives an unofficial Go SDK for the TypeSafe AI Jev API.",
+  "description": "Gives an unofficial Go SDK for the TypeSafe API.",
   "github": "https://github.com/guillemus/jev-go",
   "website": null,
   "how_used_jev": "Go code sends a state and Noul, Choice, or Score questions to Jev and reads the typed answers.",

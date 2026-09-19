@@ -1,7 +1,7 @@
 {
   "id": "sylwenn-sift",
   "project": "Sift",
-  "description": "Analyzes application audit events and prepares behavior measurements for human review, without labelling users as malicious.",
+  "description": "Analyzes application audit events and prepares behavior measurements for human review, without labeling users as malicious.",
   "github": "https://github.com/Sylwenn/Sift",
   "website": null,
   "how_used_jev": "An experimental Jev mode sends the measurements to Jev. Jev returns one typed choice that characterizes them, not a finding or severity.",

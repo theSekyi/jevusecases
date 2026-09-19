@@ -3,7 +3,7 @@
   "project": "Jev Playground",
   "description": "Turns messy input into typed judgments for use cases such as support routing and content triage.",
   "github": "https://github.com/haibt163/jev",
-  "website": "https://jev-eosin.vercel.app",
+  "website": null,
   "how_used_jev": "Jev judges intent, urgency, escalation, and similar points. The application decides the action from those answers.",
   "source_tweet": null,
   "author": null,

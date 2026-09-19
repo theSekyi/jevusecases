@@ -1,7 +1,7 @@
 {
   "id": "butochnikov-typesafe-sdk-php",
   "project": "TypeSafe AI SDK for PHP",
-  "description": "Gives PHP applications an unofficial client for the TypeSafe AI System One API.",
+  "description": "Gives PHP applications an unofficial client for the TypeSafe API.",
   "github": "https://github.com/Butochnikov/typesafe-sdk-php",
   "website": null,
   "how_used_jev": "Sends Noul, Choice, and Score questions to Jev and returns typed answers with probabilities, in sync or async calls.",

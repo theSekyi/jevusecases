@@ -3,7 +3,7 @@
   "project": "Yggdrasight",
   "description": "Runs a crypto research terminal where AI agents analyze why a market moves and who moves it.",
   "github": "https://github.com/0xtrou/yggdrasight",
-  "website": "https://yggdrasight.com/",
+  "website": null,
   "how_used_jev": "All judgment layers run on Jev. Six named analysts each give one long, short, or neutral Choice judgment.",
   "source_tweet": null,
   "author": null,

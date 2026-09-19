@@ -1,10 +1,10 @@
 {
   "id": "tvdavies-jev-review-lab",
   "project": "jev-review-lab",
-  "description": "Runs a read-only experiment that records risk hints about a git diff. It never approves, comments, or runs PR code.",
+  "description": "A read-only experiment that records risk hints about a git diff. It never approves PRs, posts comments, or runs PR code.",
   "github": "https://github.com/tvdavies/jev-review-lab",
   "website": null,
-  "how_used_jev": "Jev answers yes/no risk questions about the diff. The tool records the answers as uncalibrated hints, and the full review stays required.",
+  "how_used_jev": "It asks a pinned Jev version yes/no risk questions about the diff. It records the answers as uncalibrated hints and never replaces the full review.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",

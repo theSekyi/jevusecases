@@ -1,7 +1,7 @@
 {
   "id": "nibir1-typesafe-go",
   "project": "typesafe-go",
-  "description": "Provides a community Go SDK for the TypeSafe System One API. It is pre-release and not yet published.",
+  "description": "Provides a community Go SDK for the TypeSafe API. It is pre-release and not yet published.",
   "github": "https://github.com/Nibir1/typesafe-go",
   "website": null,
   "how_used_jev": "Code sends one state and a map of typed questions to Jev. It gets one typed answer per question, with probabilities to branch on.",

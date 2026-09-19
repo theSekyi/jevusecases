@@ -3,7 +3,7 @@
   "project": "jev-benchmark",
   "description": "A reproducible benchmark of Jev on classifying agent tool calls as readonly, destructive, privileged, or exfiltration.",
   "github": "https://github.com/themsquared/jev-benchmark",
-  "website": "https://webofmike.com/jev-benchmark/",
+  "website": null,
   "how_used_jev": "Jev classifies each tool call, and the harness checks accuracy, latency, and calibration. The author reports 91.7% accuracy for both jev-latest and jev-preview.",
   "source_tweet": null,
   "author": null,

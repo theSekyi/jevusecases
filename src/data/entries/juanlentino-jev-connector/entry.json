@@ -1,7 +1,7 @@
 {
   "id": "juanlentino-jev-connector",
   "project": "Connector for TypeSafe Jev",
-  "description": "A WordPress connector for the TypeSafe System One API. Themes and plugins use it to ask typed questions about content.",
+  "description": "A WordPress connector for the TypeSafe API. Themes and plugins use it to ask typed questions about content.",
   "github": "https://github.com/juanlentino/jev-connector",
   "website": null,
   "how_used_jev": "It asks Jev questions and returns a probability, a named choice, or a score, each with a confidence value.",

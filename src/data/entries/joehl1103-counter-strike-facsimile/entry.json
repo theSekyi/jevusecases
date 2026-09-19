@@ -3,7 +3,7 @@
   "project": "counter-strike-facsimile",
   "description": "Holds the pull request check and merge workflow for a local Counter-Strike 1.6 style game project.",
   "github": "https://github.com/Joehl1103/counter-strike-facsimile",
-  "website": "https://linear.app/jkhl1103-personal/project/counter-strike-16-7c7dc1369cb9",
+  "website": null,
   "how_used_jev": "A triage step sends a CI snapshot to Jev and gets a route, such as retry_ci.",
   "source_tweet": null,
   "author": null,

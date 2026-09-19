@@ -1,7 +1,7 @@
 {
   "id": "cablehead-jev-nu",
   "project": "jev.nu",
-  "description": "A Nushell module for the TypeSafe System One API, for code that needs to branch on a judgement.",
+  "description": "A Nushell module for the TypeSafe API, for code that needs to branch on a judgment.",
   "github": "https://github.com/cablehead/jev.nu",
   "website": null,
   "how_used_jev": "The commands jev noul, jev choice, and jev score ask Jev yes/no, pick-one, and scale questions. They return calibrated probabilities.",

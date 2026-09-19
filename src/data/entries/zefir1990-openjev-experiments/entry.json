@@ -3,7 +3,7 @@
   "project": "openjev-experiments",
   "description": "Classifies premise and hypothesis pairs as contradiction, entailment, or neutral with openjev, a local Qwen3.5-4B cross-encoder.",
   "github": "https://github.com/zefir1990/openjev-experiments",
-  "website": "https://demensdeum.com",
+  "website": null,
   "how_used_jev": "Uses openjev, an open Jev-style option-logit runner, on local models.",
   "source_tweet": null,
   "author": null,

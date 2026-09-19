@@ -1,7 +1,7 @@
 {
   "id": "joshmn-typesafe-sdk",
   "project": "typesafe-sdk",
-  "description": "A Ruby client for the TypeSafe System One API.",
+  "description": "A Ruby client for the TypeSafe API.",
   "github": "https://github.com/joshmn/typesafe-sdk",
   "website": null,
   "how_used_jev": "Sends state and Noul, Choice, and Score questions to Jev and returns the answers to Ruby code.",
