@@ -18,7 +18,10 @@ export const COUNTRY_SHAPES: CountryShape[] = (
   feature(topology, topology.objects.countries as GeometryCollection<{ name?: string }>) as unknown as {
     features: Feature<Geometry, { name?: string }>[];
   }
-).features.map((shape) => ({ code: codeForShape(shape.id, shape.properties?.name), feature: shape }));
+).features.map((shape) => ({ code: codeForShape(shape.id as string | undefined, shape.properties?.name), feature: shape }));
+
+/** The shape for a country code, for looking one up without searching every frame. */
+export const SHAPE_BY_CODE = new Map(COUNTRY_SHAPES.flatMap((shape) => (shape.code ? [[shape.code, shape] as const] : [])));
 
 /** Faint latitude and longitude lines every ten degrees. */
 export const GRATICULE: GeoPermissibleObjects = geoGraticule10();

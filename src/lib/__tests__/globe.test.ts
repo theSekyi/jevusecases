@@ -1,6 +1,9 @@
 import { describe, expect, test } from "vitest";
 import {
+  GLOBE_COLORS,
+  HEAT_FLOOR,
   MAX_TILT,
+  busiestCountry,
   centreOf,
   clampTilt,
   codeForShape,
@@ -9,8 +12,11 @@ import {
   heatColor,
   heatFraction,
   heatGradient,
+  markerCountries,
+  markerRadius,
   rotationFor,
   shortestTurn,
+  tooltipPosition,
 } from "../globe";
 import type { TrafficRow } from "../trafficStats";
 
@@ -26,7 +32,7 @@ describe("codeForShape", () => {
   test("maps the map's numeric ids to two-letter codes", () => {
     expect(codeForShape("826", "United Kingdom")).toBe("GB");
     expect(codeForShape("250", "France")).toBe("FR");
-    expect(codeForShape(578, "Norway")).toBe("NO");
+    expect(codeForShape("578", "Norway")).toBe("NO");
   });
 
   test("knows Kosovo, which the map draws without an ISO number", () => {
@@ -50,6 +56,7 @@ describe("centreOf / hasShape", () => {
   test("tells big countries, which have a shape, from small states, which only have a centre", () => {
     expect(hasShape("US")).toBe(true);
     expect(hasShape("gb")).toBe(true);
+    expect(hasShape("XK")).toBe(true);
     expect(hasShape("SG")).toBe(false);
     expect(hasShape("MT")).toBe(false);
     expect(hasShape("ZZ")).toBe(false);
@@ -59,14 +66,12 @@ describe("centreOf / hasShape", () => {
 describe("heatFraction", () => {
   test("is 1 for the busiest country and never below the floor for one with data", () => {
     expect(heatFraction(100, 100)).toBe(1);
-    expect(heatFraction(1, 10_000)).toBeGreaterThan(0.18);
-    expect(heatFraction(1, 10_000)).toBeLessThan(0.3);
+    expect(heatFraction(1, 10_000)).toBeGreaterThan(HEAT_FLOOR);
+    expect(heatFraction(1, 10_000)).toBeLessThan(HEAT_FLOOR + 0.1);
   });
 
   test("uses a square-root scale, so a quarter of the views is half the way up", () => {
-    const quarter = heatFraction(25, 100);
-    const halfWay = 0.18 + (1 - 0.18) * 0.5;
-    expect(quarter).toBeCloseTo(halfWay);
+    expect(heatFraction(25, 100)).toBeCloseTo(HEAT_FLOOR + (1 - HEAT_FLOOR) * 0.5);
   });
 
   test("is 0 for no views or no maximum, and caps at 1 for more than the maximum", () => {
@@ -94,8 +99,16 @@ describe("heatByCountry", () => {
   });
 
   test("leaves out unknown and folded rows, so nothing about them can reach the globe", () => {
-    expect(JSON.stringify([...heat.values()])).not.toContain("other");
-    expect(heat.size).toBe(3);
+    const withFolded = heatByCountry([
+      ...rows,
+      { kind: "other", views: 5000, visitors: 900 },
+      { kind: "unknown", views: 6000, visitors: 800 },
+    ]);
+
+    expect(withFolded.size).toBe(3);
+    expect([...withFolded.values()].map((country) => country.views).sort((a, b) => a - b)).toEqual([4, 25, 100]);
+    // A huge folded row must not change the scale either: the busiest named country is still the top of it.
+    expect(withFolded.get("GB")!.heat).toBe(1);
   });
 
   test("scales against the busiest named country", () => {
@@ -107,6 +120,66 @@ describe("heatByCountry", () => {
   test("is empty for an empty summary", () => {
     expect(heatByCountry([]).size).toBe(0);
     expect(heatByCountry([{ kind: "other", views: 9, visitors: 2 }]).size).toBe(0);
+  });
+});
+
+describe("busiestCountry", () => {
+  test("is the named country with the most views", () => {
+    expect(busiestCountry(heatByCountry(rows))?.code).toBe("GB");
+  });
+
+  test("breaks a tie by code, so the choice is the same every time", () => {
+    const tied = heatByCountry([
+      { kind: "country", country: "US", views: 50, visitors: 9 },
+      { kind: "country", country: "GB", views: 50, visitors: 9 },
+      { kind: "country", country: "FR", views: 50, visitors: 9 },
+    ]);
+
+    expect(busiestCountry(tied)?.code).toBe("FR");
+  });
+
+  test("is null when there is nothing to show", () => {
+    expect(busiestCountry(new Map())).toBeNull();
+  });
+});
+
+describe("markerCountries / markerRadius", () => {
+  test("lists only named countries too small for a shape, with their centres", () => {
+    const markers = markerCountries(heatByCountry(rows));
+
+    expect(markers.map((marker) => marker.country.code)).toEqual(["SG"]);
+    expect(markers[0].centre).toEqual([1.4, 103.8]);
+  });
+
+  test("skips a code the table has no centre for", () => {
+    const heat = heatByCountry([{ kind: "country", country: "ZZ", views: 5, visitors: 2 }]);
+
+    expect(markerCountries(heat)).toEqual([]);
+  });
+
+  test("is bigger for a hotter country", () => {
+    expect(markerRadius(1)).toBeGreaterThan(markerRadius(0.5));
+    expect(markerRadius(0.5)).toBeGreaterThan(markerRadius(0));
+    expect(markerRadius(0)).toBeGreaterThan(0);
+  });
+});
+
+describe("tooltipPosition", () => {
+  test("goes beside the pointer", () => {
+    const { left, top } = tooltipPosition(100, 100, 400, 176, 56);
+
+    expect(left).toBeGreaterThan(100);
+    expect(top).toBeLessThan(100);
+  });
+
+  test("stays inside the canvas on every side", () => {
+    for (const [x, y] of [[0, 0], [400, 0], [0, 400], [400, 400], [200, 399]]) {
+      const { left, top } = tooltipPosition(x, y, 400, 176, 56);
+      expect(left).toBeGreaterThanOrEqual(0);
+      expect(top).toBeGreaterThanOrEqual(0);
+      expect(left + 176).toBeLessThanOrEqual(400);
+      expect(top + 56).toBeLessThanOrEqual(400);
+    }
   });
 });
 
@@ -143,6 +216,12 @@ describe("heatColor", () => {
     expect(gradient).toContain(heatColor(0));
     expect(gradient).toContain(heatColor(1));
     expect(gradient.startsWith("linear-gradient(to right")).toBe(true);
+  });
+
+  test("no country colour can be mistaken for the plain land", () => {
+    for (let heat = 0.1; heat <= 1; heat += 0.05) {
+      expect(heatColor(heat)).not.toBe(GLOBE_COLORS.land);
+    }
   });
 });
 

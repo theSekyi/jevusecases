@@ -2,13 +2,24 @@ import data from "@/data/globe-countries.json";
 import type { TrafficRow } from "@/lib/trafficStats";
 
 const SHAPE_CODES = data.numeric as Record<string, string>;
+const SHAPE_NAMES = data.names as Record<string, string>;
 const CENTRES = data.centres as unknown as Record<string, [number, number]>;
-const CODES_WITH_SHAPES = new Set(Object.values(SHAPE_CODES));
+const CODES_WITH_SHAPES = new Set([...Object.values(SHAPE_CODES), ...Object.values(SHAPE_NAMES)]);
+
+/** The colours the globe is drawn in. Mid-dark tones picked for the canvas; only the ink matches a site token. */
+export const GLOBE_COLORS = {
+  sphere: "#0f1319",
+  land: "#1c222a",
+  border: "#2b323a",
+  grid: "#1a2027",
+  rim: "#48505a",
+  ink: "#eff2f5",
+} as const;
 
 /** The two-letter code for a country shape on the map, or null for a shape with no country behind it. */
-export function codeForShape(id: string | number | undefined, name: string | undefined): string | null {
-  if (id !== undefined && SHAPE_CODES[String(id)]) return SHAPE_CODES[String(id)];
-  return (name && SHAPE_CODES[`name:${name}`]) || null;
+export function codeForShape(id: string | undefined, name: string | undefined): string | null {
+  if (id !== undefined && SHAPE_CODES[id]) return SHAPE_CODES[id];
+  return (name && SHAPE_NAMES[name]) || null;
 }
 
 /** [latitude, longitude] of a country's centre, or null when the code is unknown. */
@@ -30,7 +41,7 @@ export interface HeatCountry {
 }
 
 /** The dimmest colour any country with data gets, so a small country is still visible next to a busy one. */
-const HEAT_FLOOR = 0.18;
+export const HEAT_FLOOR = 0.18;
 
 /** Square-root scale from views to 0..1, lifted off zero. Square root keeps a huge country from washing out the rest. */
 export function heatFraction(views: number, maxViews: number): number {
@@ -92,4 +103,44 @@ export function shortestTurn(from: number, to: number): number {
 export const MAX_TILT = 75;
 export function clampTilt(latitude: number): number {
   return Math.max(-MAX_TILT, Math.min(MAX_TILT, latitude));
+}
+
+/** The named country with the most views. Ties go to the code that sorts first, so the choice never flickers. */
+export function busiestCountry(heat: Map<string, HeatCountry>): HeatCountry | null {
+  let best: HeatCountry | null = null;
+  for (const country of heat.values()) {
+    if (!best || country.views > best.views || (country.views === best.views && country.code < best.code)) best = country;
+  }
+  return best;
+}
+
+export interface MarkerCountry {
+  country: HeatCountry;
+  /** [latitude, longitude] */
+  centre: [number, number];
+}
+
+/** Named countries too small for a shape, which the globe marks with a dot at their centre instead. */
+export function markerCountries(heat: Map<string, HeatCountry>): MarkerCountry[] {
+  return [...heat.values()].flatMap((country) => {
+    const centre = hasShape(country.code) ? null : centreOf(country.code);
+    return centre ? [{ country, centre }] : [];
+  });
+}
+
+const MARKER_BASE_RADIUS = 3.5;
+const MARKER_HEAT_RADIUS = 3;
+
+/** A marker's radius in pixels: bigger for a busier country. */
+export function markerRadius(heat: number): number {
+  return MARKER_BASE_RADIUS + heat * MARKER_HEAT_RADIUS;
+}
+
+/** Where the tooltip goes for a pointer at (x, y) on a square canvas: beside the pointer, kept inside the canvas. */
+export function tooltipPosition(x: number, y: number, size: number, width: number, height: number): { left: number; top: number } {
+  const edge = 4;
+  return {
+    left: Math.max(edge, Math.min(x + 14, size - width - edge)),
+    top: Math.max(edge, Math.min(y - 8, size - height - edge)),
+  };
 }

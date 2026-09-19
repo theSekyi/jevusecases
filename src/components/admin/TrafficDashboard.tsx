@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useState } from "react";
 import type { TrafficSummary } from "@/lib/trafficStats";
 import { TrafficBreakdown } from "./TrafficBreakdown";
 import { TrafficGlobe, type GlobeFocus } from "./TrafficGlobe";
@@ -9,7 +9,6 @@ import { TrafficGlobe, type GlobeFocus } from "./TrafficGlobe";
 export function TrafficDashboard({ summary }: { summary: TrafficSummary }) {
   const [highlighted, setHighlighted] = useState<string | null>(null);
   const [focus, setFocus] = useState<GlobeFocus | null>(null);
-  const requests = useRef(0);
 
   return (
     <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,27rem)] lg:items-start lg:gap-16">
@@ -21,7 +20,7 @@ export function TrafficDashboard({ summary }: { summary: TrafficSummary }) {
         globe={{
           highlighted,
           onHighlight: setHighlighted,
-          onSelect: (code) => setFocus({ code, nonce: ++requests.current }),
+          onSelect: (code) => setFocus({ code }),
         }}
       />
     </div>

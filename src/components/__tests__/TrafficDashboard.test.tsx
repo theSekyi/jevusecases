@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, test, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
 import type { TrafficSummary } from "@/lib/trafficStats";
+import { TrafficDashboard } from "../admin/TrafficDashboard";
 
 // The real globe needs a canvas; what matters here is what the dashboard hands it.
 const globeProps = vi.fn();
@@ -11,7 +12,6 @@ vi.mock("../admin/TrafficGlobe", () => ({
   },
 }));
 
-const { TrafficDashboard } = await import("../admin/TrafficDashboard");
 
 const summary: TrafficSummary = {
   views: 40,
@@ -25,7 +25,7 @@ const summary: TrafficSummary = {
 const lastProps = () => globeProps.mock.calls.at(-1)![0] as {
   rows: unknown;
   highlighted: string | null;
-  focus: { code: string; nonce: number } | null;
+  focus: { code: string } | null;
   onHighlight: (code: string | null) => void;
 };
 
@@ -60,7 +60,7 @@ describe("TrafficDashboard", () => {
     expect(screen.getByRole("button", { name: /United Kingdom/ })).toHaveClass("bg-bp-raised");
   });
 
-  test("clicking a row asks the globe to turn to it, and asking again for the same country is a new request", () => {
+  test("clicking a row asks the globe to turn to it, and clicking it again is a new request", () => {
     render(<TrafficDashboard summary={summary} />);
     const row = screen.getByRole("button", { name: /United Kingdom/ });
 
@@ -69,8 +69,9 @@ describe("TrafficDashboard", () => {
     fireEvent.click(row);
     const second = lastProps().focus;
 
-    expect(first).toMatchObject({ code: "GB" });
-    expect(second).toMatchObject({ code: "GB" });
-    expect(second!.nonce).toBeGreaterThan(first!.nonce);
+    expect(first).toEqual({ code: "GB" });
+    expect(second).toEqual({ code: "GB" });
+    // A different object each time: that is what tells the globe to turn again.
+    expect(second).not.toBe(first);
   });
 });
