@@ -87,6 +87,35 @@ describe("proxy", () => {
     expect(recordVisitorEvent).not.toHaveBeenCalled();
   });
 
+  test("bots don't use up a visitor's rate-limit budget, since they are dropped before it", async () => {
+    vi.resetModules();
+    const { proxy } = await import("../proxy");
+    const ip = "203.0.113.90";
+    const visit = async (userAgent: string) => {
+      const { event, waited } = fakeEvent();
+      proxy(new NextRequest("https://jevusecases.com/", { headers: { "x-forwarded-for": ip, "user-agent": userAgent } }), event as never);
+      await Promise.all(waited);
+    };
+
+    for (let i = 0; i < 80; i++) await visit("Mozilla/5.0 (compatible; Googlebot/2.1)");
+    await visit("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36");
+
+    expect(recordVisitorEvent).toHaveBeenCalledTimes(1);
+  });
+
+  test("doesn't count a browser prefetch that says so with the newer Sec-Purpose header", async () => {
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases.com/submit", {
+      headers: { "x-forwarded-for": "203.0.113.91", "sec-purpose": "prefetch;anonymous-client-ip" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
+  });
+
   test("doesn't count a link-preview crawler building a card as a view", async () => {
     const { proxy } = await import("../proxy");
     const request = new NextRequest("https://jevusecases.com/p/jev-guard", {

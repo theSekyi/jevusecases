@@ -23,7 +23,12 @@ const summary: TrafficSummary = {
     { kind: "country", country: "US", views: 10, visitors: 4 },
   ],
 };
-const sources: SourcesSummary = { landings: 12, rows: [{ kind: "site", label: "X", landings: 12 }] };
+const sources: SourcesSummary = {
+  visitors: 12,
+  rows: [{ kind: "site", label: "X", visitors: 12 }],
+  partialSince: null,
+  collecting: false,
+};
 const lastProps = () => globeProps.mock.calls.at(-1)![0] as {
   rows: unknown;
   highlighted: string | null;

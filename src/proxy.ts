@@ -16,6 +16,7 @@ async function recordVisit(request: NextRequest) {
     if (request.method !== "GET") return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
+    if (request.headers.get("sec-purpose")?.includes("prefetch")) return;
     // Crawlers and link-preview builders fetch pages too. Counting them would credit every post, and every
     // search engine visit, with a view nobody read.
     if (isAutomatedClient(request.headers.get("user-agent"))) return;

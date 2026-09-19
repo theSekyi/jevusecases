@@ -20,7 +20,7 @@ describe("traffic page", () => {
     requireAdmin.mockReset();
     getTrafficSummary.mockReset();
     getTrafficSources.mockReset();
-    getTrafficSources.mockResolvedValue({ landings: 0, rows: [] });
+    getTrafficSources.mockResolvedValue({ visitors: 0, rows: [], partialSince: null, collecting: false });
   });
 
   test("redirects a signed-out visitor before reading any traffic data", async () => {

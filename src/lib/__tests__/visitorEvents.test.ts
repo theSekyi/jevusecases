@@ -82,7 +82,7 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     sqlMock.mockReturnValue("query");
     transaction.mockResolvedValueOnce([]);
 
-    await recordVisitorEvent("US", "/submit", "abc123");
+    await recordVisitorEvent("US", "/submit", "abc123", { ref: "x-post", referrerHost: "t.co" });
 
     expect(transaction).toHaveBeenCalledTimes(1);
     expect(transaction).toHaveBeenCalledWith(["query", "query", "query"]);
@@ -91,14 +91,14 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     expect(lock[0].join("?")).toContain("pg_advisory_xact_lock");
     expect(insert[0].join("?")).toContain("INSERT INTO visitor_events (country, path, visitor_hash, ref, referrer_host)");
     expect(insert[0].join("?")).toContain("WHERE NOT EXISTS");
-    expect(insert.slice(1)).toEqual(["US", "/submit", "abc123", null, null, DUPLICATE_WINDOW_MS, "abc123", "abc123", "abc123", "US"]);
+    expect(insert.slice(1)).toEqual(["US", "/submit", "abc123", "x-post", "t.co", DUPLICATE_WINDOW_MS, "abc123", "abc123", "abc123", "US"]);
   });
 
   test("with a visitor hash, repeats are matched on the hash, so two visitors from one country both count", async () => {
     sqlMock.mockReturnValue("query");
     transaction.mockResolvedValueOnce([]);
 
-    await recordVisitorEvent("US", "/", "abc123");
+    await recordVisitorEvent("US", "/", "abc123", { ref: null, referrerHost: "(direct)" });
 
     const statement = sqlMock.mock.calls[2][0].join("?");
     expect(statement).toContain("visitor_hash = ");
@@ -108,11 +108,11 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     sqlMock.mockReturnValue("query");
     transaction.mockResolvedValueOnce([]);
 
-    await recordVisitorEvent(null, "/");
+    await recordVisitorEvent(null, "/", null, { ref: null, referrerHost: "(direct)" });
 
     const insert = sqlMock.mock.calls[2];
     expect(insert[0].join("?")).toContain("visitor_hash IS NULL AND country IS NOT DISTINCT FROM");
-    expect(insert.slice(1)).toEqual([null, "/", null, null, null, DUPLICATE_WINDOW_MS, null, null, null, null]);
+    expect(insert.slice(1)).toEqual([null, "/", null, null, "(direct)", DUPLICATE_WINDOW_MS, null, null, null, null]);
   });
 
   test("getRecentVisitorEvents maps snake_case rows into the VisitorEvent shape", async () => {
@@ -177,6 +177,30 @@ describe("visitSource", () => {
     expect(visitSource(url(), "https://xn--bcher-kva.example/").referrerHost).toBe("xn--bcher-kva.example");
   });
 
+  test("a trailing dot on a host is the same host: our own is internal, another site keeps its name", () => {
+    expect(visitSource(url(), "https://www.jevusecases.com./").referrerHost).toBe(INTERNAL_SOURCE);
+    expect(visitSource(url(), "https://t.co./x").referrerHost).toBe("t.co");
+  });
+
+  test("accepts a hostname with an underscore, which real hosts have", () => {
+    expect(visitSource(url(), "https://my_app.example.com/").referrerHost).toBe("my_app.example.com");
+  });
+
+  test("a click from the host this request was served on is internal, whatever that host is", () => {
+    const preview = new URL("https://jevusecases-git-feature-team.vercel.app/p/x");
+
+    expect(visitSource(preview, "https://jevusecases-git-feature-team.vercel.app/").referrerHost).toBe(INTERNAL_SOURCE);
+    expect(visitSource(new URL("http://192.168.1.20:3000/"), "http://192.168.1.20:3000/submit").referrerHost).toBe(INTERNAL_SOURCE);
+    expect(visitSource(preview, "https://other-preview.vercel.app/").referrerHost).toBe("other-preview.vercel.app");
+  });
+
+  test("names an Android app by its package, and treats other schemes as no referrer", () => {
+    expect(visitSource(url(), "android-app://com.google.android.gm/").referrerHost).toBe("com.google.android.gm");
+    expect(visitSource(url(), "ftp://files.example.com/").referrerHost).toBe(DIRECT_SOURCE);
+    expect(visitSource(url(), "file:///Users/someone/page.html").referrerHost).toBe(DIRECT_SOURCE);
+    expect(visitSource(url(), "javascript:alert(1)").referrerHost).toBe(DIRECT_SOURCE);
+  });
+
   test("a lookalike of our own domain is a real external site, not internal", () => {
     expect(visitSource(url(), "https://jevusecases.com.evil.example/").referrerHost).toBe("jevusecases.com.evil.example");
     expect(visitSource(url(), "https://notjevusecases.com/").referrerHost).toBe("notjevusecases.com");
@@ -206,6 +230,12 @@ describe("isAutomatedClient", () => {
       "curl/8.4.0",
       "python-requests/2.31.0",
       "Go-http-client/2.0",
+      "Mozilla/5.0 (compatible; ChatGPT-User/1.0; +https://openai.com/bot)",
+      "Mozilla/5.0 (compatible; Perplexity-User/1.0; +https://perplexity.ai/perplexity-user)",
+      "Bluesky Cardyb/1.1",
+      "Iframely/1.3.1 (+https://iframely.com/docs/about)",
+      "http.rb/5.1.1 (Mastodon/4.2.1; +https://mastodon.example/)",
+      "TelegramBot (like TwitterBot)",
     ]) {
       expect(isAutomatedClient(agent), agent).toBe(true);
     }
@@ -217,8 +247,14 @@ describe("isAutomatedClient", () => {
       "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1",
       "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
       "Mozilla/5.0 (Linux; Android 13; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 9; CUBOT X19) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
       "Mozilla/5.0 (Linux; Android 10; CUBOT_X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
       "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 300.0",
+      "Mozilla/5.0 (Linux; Android 13; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36 Telegram-Android/10.3.2",
+      "Mozilla/5.0 (Linux; Android 13; SM-G991B; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.0.0 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/440.0.0.0;]",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Line/13.19.0",
+      "Mozilla/5.0 (Linux; Android 12; Redmi Note 11) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/120.0.0.0 Mobile Safari/537.36 MicroMessenger/8.0.44",
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15 Abbott-Labs-Portal",
     ]) {
       expect(isAutomatedClient(agent), agent).toBe(false);
     }
