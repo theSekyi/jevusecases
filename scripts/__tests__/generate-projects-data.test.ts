@@ -2,14 +2,16 @@ import { afterEach, beforeEach, describe, expect, test } from "vitest";
 import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
-import { listEntryDirs, readEntry, sortEntries, type RawEntry } from "../generate-projects-data";
+import { makeProject } from "../../src/lib/__tests__/fixtures";
+import { listEntryDirs, readEntry, sortEntries } from "../generate-projects-data";
 
 let dir: string;
 
-function writeEntry(id: string, fields: Record<string, unknown> = {}) {
-  const entryDir = join(dir, id);
+/** Writes a valid entry into a folder named after its id, with `fields` changed or (when undefined) removed. */
+function writeEntry(id: string, fields: Record<string, unknown> = {}, folder = id) {
+  const entryDir = join(dir, folder);
   mkdirSync(entryDir, { recursive: true });
-  writeFileSync(join(entryDir, "entry.json"), JSON.stringify({ id, date_found: "2026-09-17", ...fields }));
+  writeFileSync(join(entryDir, "entry.json"), JSON.stringify({ ...makeProject({ id }), ...fields }));
 }
 
 beforeEach(() => {
@@ -23,7 +25,22 @@ afterEach(() => {
 describe("readEntry", () => {
   test("reads a valid entry.json", () => {
     writeEntry("acme-widget", { project: "Widget" });
-    expect(readEntry(dir, "acme-widget")).toEqual({ id: "acme-widget", date_found: "2026-09-17", project: "Widget" });
+    expect(readEntry(dir, "acme-widget")).toEqual(makeProject({ id: "acme-widget", project: "Widget" }));
+  });
+
+  test("names the folder and the field when an entry breaks the schema", () => {
+    const broken: [string, Record<string, unknown>][] = [
+      ["description", { description: undefined }],
+      ["is_build", { is_build: "yes" }],
+      ["category", { category: "not a real category" }],
+      ["author", { author: "Jane Doe" }],
+      ["github", { github: "https://gitlab.com/acme/widget" }],
+      ["stars", { stars: 12 }],
+    ];
+    for (const [field, fields] of broken) {
+      writeEntry("acme-widget", fields);
+      expect(() => readEntry(dir, "acme-widget"), field).toThrow(new RegExp(`acme-widget[\\s\\S]*${field}`));
+    }
   });
 
   test("rejects a date_found that isn't a real YYYY-MM-DD date, so a bad entry can't reach the site", () => {
@@ -49,13 +66,11 @@ describe("readEntry", () => {
   test("throws when entry.json is an array instead of an object", () => {
     mkdirSync(join(dir, "an-array"));
     writeFileSync(join(dir, "an-array", "entry.json"), "[]");
-    expect(() => readEntry(dir, "an-array")).toThrow(/must contain a single JSON object/);
+    expect(() => readEntry(dir, "an-array")).toThrow(/an-array[\s\S]*expected object/);
   });
 
   test("throws when the entry's id doesn't match its folder name", () => {
-    writeEntry("real-name", {});
-    mkdirSync(join(dir, "wrong-folder"));
-    writeFileSync(join(dir, "wrong-folder", "entry.json"), JSON.stringify({ id: "real-name" }));
+    writeEntry("real-name", {}, "wrong-folder");
     expect(() => readEntry(dir, "wrong-folder")).toThrow(/doesn't match its folder name/);
   });
 });
@@ -76,26 +91,26 @@ describe("listEntryDirs", () => {
 
 describe("sortEntries", () => {
   test("sorts by date_found, newest first", () => {
-    const entries: RawEntry[] = [
-      { id: "old", date_found: "2026-01-01" },
-      { id: "new", date_found: "2026-06-01" },
-      { id: "mid", date_found: "2026-03-01" },
+    const entries = [
+      makeProject({ id: "old", date_found: "2026-01-01" }),
+      makeProject({ id: "new", date_found: "2026-06-01" }),
+      makeProject({ id: "mid", date_found: "2026-03-01" }),
     ];
     expect(sortEntries(entries).map((e) => e.id)).toEqual(["new", "mid", "old"]);
   });
 
   test("breaks a same-day tie by id, deterministically", () => {
-    const entries: RawEntry[] = [
-      { id: "zzz", date_found: "2026-01-01" },
-      { id: "aaa", date_found: "2026-01-01" },
+    const entries = [
+      makeProject({ id: "zzz", date_found: "2026-01-01" }),
+      makeProject({ id: "aaa", date_found: "2026-01-01" }),
     ];
     expect(sortEntries(entries).map((e) => e.id)).toEqual(["aaa", "zzz"]);
   });
 
   test("doesn't mutate the input array", () => {
-    const entries: RawEntry[] = [
-      { id: "b", date_found: "2026-01-01" },
-      { id: "a", date_found: "2026-02-01" },
+    const entries = [
+      makeProject({ id: "b", date_found: "2026-01-01" }),
+      makeProject({ id: "a", date_found: "2026-02-01" }),
     ];
     sortEntries(entries);
     expect(entries.map((e) => e.id)).toEqual(["b", "a"]);

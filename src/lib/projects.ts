@@ -1,43 +1,12 @@
 import rawProjects from "@/data/projects.json";
+import type { Project } from "@/lib/projectSchema";
 
-export interface Replaces {
-  tool: string | null;
-  verdict: "YES" | "KINDA" | "NOT REALLY" | null;
-  notes: string | null;
-}
+export type { Project, Replaces } from "@/lib/projectSchema";
 
-export interface SecurityStatus {
-  red_teamed: boolean;
-  notes: string | null;
-}
-
-export interface Recipe {
-  type: string;
-  link?: string;
-  install?: string;
-}
-
-export interface Project {
-  id: string;
-  project: string;
-  description: string;
-  github: string | null;
-  website: string | null;
-  how_used_jev: string | null;
-  source_tweet: string | null;
-  author: string | null;
-  date_found: string;
-  is_build: boolean;
-  category: string;
-  replaces: Replaces | null;
-  cost_signal: Record<string, unknown> | null;
-  benchmark: Record<string, unknown> | null;
-  jaggedness_reports: unknown[];
-  security_status: SecurityStatus | null;
-  recipe: Recipe | null;
-}
-
-/** Real, shipped projects only — excludes curation/explainer entries that aren't builds. */
+/**
+ * Real, shipped projects only — excludes curation/explainer entries that aren't builds. The cast is safe:
+ * every entry passed projectSchema when projects.json was generated.
+ */
 export function getProjects(): Project[] {
   return (rawProjects as Project[]).filter((project) => project.is_build);
 }

@@ -254,27 +254,15 @@ describe("ProjectExplorer", () => {
       expect(document.body.style.overflow).toBe("hidden");
     });
 
-    test("links an author's X handle only when it is a real handle", () => {
-      render(<ProjectExplorer projects={[makeProject({ id: "a", author: "@ok_name" }), makeProject({ id: "b", author: "not a handle" })]} />);
+    test("links the author's X handle", () => {
+      render(<ProjectExplorer projects={[makeProject({ id: "a", author: "@ok_name" })]} />);
 
       goToHash("a");
+
       expect(within(screen.getByRole("dialog")).getByRole("link", { name: "@ok_name" })).toHaveAttribute(
         "href",
         "https://x.com/ok_name",
       );
-
-      goToHash("b");
-      expect(within(screen.getByRole("dialog")).queryByRole("link", { name: "not a handle" })).not.toBeInTheDocument();
-    });
-
-    test("a malformed date can't break the page: the panel opens and just leaves the date out", () => {
-      render(<ProjectExplorer projects={[makeProject({ id: "odd", project: "Odd", date_found: "2026-9-7", author: "@odd" })]} />);
-
-      goToHash("odd");
-
-      const panel = screen.getByRole("dialog", { name: "Odd" });
-      expect(within(panel).queryByText(/added/)).not.toBeInTheDocument();
-      expect(within(panel).getByText("@odd")).toBeInTheDocument();
     });
 
     test("opens straight from a shared link and ignores a hash that is not a project", () => {

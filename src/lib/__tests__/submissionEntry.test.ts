@@ -1,6 +1,7 @@
 import { describe, expect, test } from "vitest";
 import { buildSubmissionEntry } from "../submissionEntry";
-import type { SubmissionInput } from "../submission";
+import { projectSchema } from "../projectSchema";
+import { validateSubmission, type SubmissionInput } from "../submission";
 
 const baseSubmission: SubmissionInput = {
   name: "jev-guard",
@@ -10,6 +11,27 @@ const baseSubmission: SubmissionInput = {
 };
 
 describe("buildSubmissionEntry", () => {
+  test("builds an entry the schema accepts, for every kind of link and handle the form allows", () => {
+    const links = [
+      "https://github.com/leepokai/jev-guard",
+      "https://www.github.com/leepokai/jev-guard",
+      "http://github.com/leepokai/jev-guard",
+      "https://gist.github.com/leepokai/1",
+      "https://www.npmjs.com/package/pkg-gate",
+    ];
+    for (const sourceLink of links) {
+      for (const xHandle of ["", "@leepokai", "lbki34064963", "@abcdefghijklmno"]) {
+        const input = validateSubmission({ ...baseSubmission, sourceLink, xHandle });
+        if (!input.success) throw new Error(`form rejected ${sourceLink}`);
+        expect(projectSchema.safeParse(buildSubmissionEntry(input.data)).success, `${sourceLink} ${xHandle}`).toBe(true);
+      }
+    }
+  });
+
+  test("the form rejects a handle the schema would reject", () => {
+    expect(validateSubmission({ ...baseSubmission, xHandle: "@" }).success).toBe(false);
+  });
+
   test("fills in only the fields the submitter provided, leaving the rest null", () => {
     const entry = buildSubmissionEntry(baseSubmission);
 

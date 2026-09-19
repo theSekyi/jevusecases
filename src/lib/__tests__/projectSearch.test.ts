@@ -129,12 +129,6 @@ describe("categoryOptions", () => {
     expect(options.reduce((sum, option) => sum + option.count, 0)).toBe(FIXTURE_PROJECTS.length);
     expect(new Set(options.map((option) => option.value)).size).toBe(options.length);
   });
-
-  test("keeps the case an author wrote, so 'AI' isn't shown as 'Ai'", () => {
-    const options = categoryOptions([makeProject({ category: "AI / agents" })]);
-
-    expect(options).toEqual([{ value: "ai", label: "AI", count: 1 }]);
-  });
 });
 
 describe("featuredProject / isDefaultView", () => {

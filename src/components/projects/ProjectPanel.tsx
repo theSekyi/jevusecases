@@ -7,15 +7,9 @@ import { CopyButton } from "./CopyButton";
 import { FactList } from "./FactList";
 import { VerdictBadge } from "./VerdictBadge";
 
-function authorLink(author: string | null): string | null {
-  return author && /^@\w{1,15}$/.test(author) ? `https://x.com/${author.slice(1)}` : null;
-}
-
-/** "17 September 2026", or null for a date that can't be read, so one bad entry can't break the page. */
-function addedOn(date: string): string | null {
-  const parsed = new Date(`${date}T00:00:00Z`);
-  if (Number.isNaN(parsed.getTime())) return null;
-  return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "UTC" }).format(parsed);
+/** "17 September 2026". */
+function addedOn(date: string): string {
+  return new Intl.DateTimeFormat("en-GB", { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${date}T00:00:00Z`));
 }
 
 const linkClass = "text-bp-ink underline decoration-bp-muted underline-offset-4 transition-colors hover:text-bp-accent";
@@ -38,9 +32,7 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
   const facts = projectFacts(project);
   const install = installCommand(project);
   const source = sourceLink(project);
-  const author = authorLink(project.author);
   const verdict = project.replaces?.verdict;
-  const added = addedOn(project.date_found);
 
   return (
     <dialog
@@ -76,15 +68,15 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
           </h2>
           <p className="text-base leading-relaxed text-bp-secondary">{project.description}</p>
           <p className="font-bp-mono text-xs text-bp-muted">
-            {author ? (
-              <a href={author} target="_blank" rel="noopener noreferrer" className={linkClass}>
-                {project.author}
-              </a>
-            ) : (
-              project.author
+            {project.author && (
+              <>
+                <a href={`https://x.com/${project.author.slice(1)}`} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  {project.author}
+                </a>
+                {" · "}
+              </>
             )}
-            {project.author && added ? " · " : ""}
-            {added && `added ${added}`}
+            added {addedOn(project.date_found)}
           </p>
         </div>
 

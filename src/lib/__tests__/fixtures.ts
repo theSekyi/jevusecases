@@ -13,7 +13,7 @@ export function makeProject(overrides: Partial<Project> = {}): Project {
     author: null,
     date_found: "2026-09-17",
     is_build: true,
-    category: "misc / thing",
+    category: "novelty / joke",
     replaces: null,
     cost_signal: null,
     benchmark: null,

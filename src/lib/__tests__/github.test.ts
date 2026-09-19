@@ -26,7 +26,7 @@ const entry: Project = {
 const submission: SubmissionInput = {
   name: "jev-guard",
   description: entry.description,
-  category: entry.category as SubmissionInput["category"],
+  category: entry.category,
   sourceLink: entry.github!,
 };
 
