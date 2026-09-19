@@ -4,7 +4,7 @@
   "description": "A Polars plugin for running LLM calls in parallel over dataframe rows. Its typesafe_eval expression sends each row to Jev and returns the answers as ordinary typed columns. Jev is one part of a library that also covers OpenAI, Anthropic, Gemini, Groq and Bedrock.",
   "github": "https://github.com/pnthn-ai/polar_llama",
   "website": "https://pnthn.ai/polar-llama/",
-  "how_used_jev": "typesafe_eval sends one Jev request per row, carrying every yes/no, pick-one and score question for that row, so the row's text is paid for once. Probabilities, picks and confidences come back as columns to filter and threshold, and one Pydantic contract can be applied to every line of a document in a single request.",
+  "how_used_jev": "typesafe_eval sends one Jev request per row, carrying every yes/no, pick-one and score question for that row, so the row's text is paid for once. Probabilities, picks and confidences come back as columns to filter and threshold, and one Pydantic contract can be applied to every line of a document in one request (long documents are split into chunks).",
   "source_tweet": null,
   "author": "@DavidDrummondAI",
   "date_found": "2026-09-19",
