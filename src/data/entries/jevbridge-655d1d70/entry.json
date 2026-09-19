@@ -1,10 +1,10 @@
 {
   "id": "jevbridge-655d1d70",
   "project": "jevbridge",
-  "description": "An adapter that puts Jev next to the model you already run, over MCP and the Agent Client Protocol. Codex, Claude, Grok or OpenCode can call it for typed decisions and computer-use actions. Without a TypeSafe key it falls back to your own LLM or a local heuristic.",
+  "description": "An adapter that puts Jev next to the model you already run, over MCP and the Agent Client Protocol. Codex, Claude Code or OpenCode can call it over MCP for typed decisions and computer-use actions. Without a TypeSafe key it falls back to your own LLM or a local heuristic.",
   "github": "https://github.com/tacticocc/jevbridge",
   "website": null,
-  "how_used_jev": "Exposes Jev as MCP tools (jev_decide, jev_gate, jev_computer_use, jev_recipe) and as an ACP adapter for editors such as Zed. The host model writes the plan, and Jev answers yes/no, pick-one and score questions about the current state. A confidence gate then decides whether to execute, confirm, escalate or abort, so a destructive click or command is not run unsupervised.",
+  "how_used_jev": "Exposes Jev as MCP tools (jev_decide, jev_gate, jev_computer_use, jev_recipe) and as an ACP adapter for editors such as Zed. The host model writes the plan, and Jev answers yes/no, pick-one and score questions about the current state. A confidence gate then decides whether to execute, confirm, escalate or abort, so a host that calls jev_gate can hold a destructive click or command for confirmation.",
   "source_tweet": null,
   "author": "@gamesonrb",
   "date_found": "2026-09-19",
