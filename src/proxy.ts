@@ -1,13 +1,9 @@
 import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
 import { geolocation } from "@vercel/functions";
-import { isValidCountryCode, recordVisitorEvent, visitSource } from "@/lib/visitorEvents";
+import { isAutomatedClient, isValidCountryCode, recordVisitorEvent, visitSource } from "@/lib/visitorEvents";
 import { SESSION_COOKIE } from "@/lib/authConstants";
 import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 import { hashVisitor } from "@/lib/visitorHash";
-
-// Link-preview crawlers fetch a page to build its card when someone posts the link. That is not a person
-// reading it, and counting it would credit every post with a view it didn't earn.
-const PREVIEW_BOT = /twitterbot|facebookexternalhit|slackbot|discordbot|linkedinbot|telegrambot|whatsapp|redditbot/i;
 
 // A generous per-IP cap, just to blunt a scripted flood rather than to limit real traffic.
 const checkRateLimit = createRateLimiter(60, 60 * 1000);
@@ -20,7 +16,9 @@ async function recordVisit(request: NextRequest) {
     if (request.method !== "GET") return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
-    if (PREVIEW_BOT.test(request.headers.get("user-agent") ?? "")) return;
+    // Crawlers and link-preview builders fetch pages too. Counting them would credit every post, and every
+    // search engine visit, with a view nobody read.
+    if (isAutomatedClient(request.headers.get("user-agent"))) return;
     // The admin's own browsing would otherwise dominate the feed. Presence of the cookie is
     // enough here; nothing is being authorized.
     if (request.cookies.has(SESSION_COOKIE)) return;

@@ -9,6 +9,9 @@ import {
   relativeTime,
   VISIBLE_EVENT_COUNT,
   visitSource,
+  DIRECT_SOURCE,
+  INTERNAL_SOURCE,
+  isAutomatedClient,
 } from "../visitorEvents";
 
 const transaction = vi.fn();
@@ -140,7 +143,7 @@ describe("visitSource", () => {
   const url = (query = "") => new URL(`https://www.jevusecases.com/p/jev-guard${query}`);
 
   test("keeps a short ref tag, lowercased", () => {
-    expect(visitSource(url("?ref=X-Post-1"), null)).toEqual({ ref: "x-post-1", referrerHost: null });
+    expect(visitSource(url("?ref=X-Post-1"), null)).toEqual({ ref: "x-post-1", referrerHost: DIRECT_SOURCE });
   });
 
   test("drops a ref tag that is too long or has other characters", () => {
@@ -151,10 +154,79 @@ describe("visitSource", () => {
 
   test("keeps only the host of the referrer, never its path or query", () => {
     expect(visitSource(url(), "https://t.co/AbC123?amp=1").referrerHost).toBe("t.co");
+    expect(visitSource(url(), "https://Mail.Example.com:8443/inbox/secret-id?token=abc#frag").referrerHost).toBe("mail.example.com");
   });
 
-  test("ignores our own site and malformed referrers", () => {
-    expect(visitSource(url(), "https://www.jevusecases.com/").referrerHost).toBeNull();
-    expect(visitSource(url(), "not a url").referrerHost).toBeNull();
+  test("marks a click from our own site as internal, so it can't be mistaken for an arrival", () => {
+    expect(visitSource(url(), "https://www.jevusecases.com/").referrerHost).toBe(INTERNAL_SOURCE);
+    expect(visitSource(url(), "https://jevusecases.com/p/x").referrerHost).toBe(INTERNAL_SOURCE);
+    expect(visitSource(url(), "http://localhost:3000/").referrerHost).toBe(INTERNAL_SOURCE);
+  });
+
+  test("marks no referrer, and a malformed one, as direct", () => {
+    expect(visitSource(url(), null).referrerHost).toBe(DIRECT_SOURCE);
+    expect(visitSource(url(), "").referrerHost).toBe(DIRECT_SOURCE);
+    expect(visitSource(url(), "not a url").referrerHost).toBe(DIRECT_SOURCE);
+  });
+
+  test("a crafted Referer can't pose as one of the markers, or as anything that isn't a hostname", () => {
+    for (const referer of ["https://(internal)/", "https://(direct)/", "https://[::1]/", "https://exa$mple.com/", "https://-bad.com/"]) {
+      expect(visitSource(url(), referer).referrerHost, referer).toBe(DIRECT_SOURCE);
+    }
+    expect(visitSource(url(), "https://1.2.3.4/x").referrerHost).toBe("1.2.3.4");
+    expect(visitSource(url(), "https://xn--bcher-kva.example/").referrerHost).toBe("xn--bcher-kva.example");
+  });
+
+  test("a lookalike of our own domain is a real external site, not internal", () => {
+    expect(visitSource(url(), "https://jevusecases.com.evil.example/").referrerHost).toBe("jevusecases.com.evil.example");
+    expect(visitSource(url(), "https://notjevusecases.com/").referrerHost).toBe("notjevusecases.com");
+  });
+
+  test("drops an absurdly long hostname instead of storing it", () => {
+    expect(visitSource(url(), `https://${"a".repeat(300)}.com/`).referrerHost).toBe(DIRECT_SOURCE);
+  });
+});
+
+describe("isAutomatedClient", () => {
+  test("recognises link-preview builders, search-engine crawlers, SEO and AI crawlers, and scripts", () => {
+    for (const agent of [
+      "Twitterbot/1.0",
+      "Slackbot-LinkExpanding 1.0 (+https://api.slack.com/robots)",
+      "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)",
+      "WhatsApp/2.23.20.0 A",
+      "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)",
+      "Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)",
+      "Mozilla/5.0 (compatible; AhrefsBot/7.0; +http://ahrefs.com/robot/)",
+      "Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)",
+      "Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; GPTBot/1.1; +https://openai.com/gptbot)",
+      "Mozilla/5.0 (compatible; ClaudeBot/1.0; +claudebot@anthropic.com)",
+      "Mozilla/5.0 (compatible; Yahoo! Slurp; http://help.yahoo.com/help/us/ysearch/slurp)",
+      "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)",
+      "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 HeadlessChrome/120.0.0.0 Safari/537.36",
+      "curl/8.4.0",
+      "python-requests/2.31.0",
+      "Go-http-client/2.0",
+    ]) {
+      expect(isAutomatedClient(agent), agent).toBe(true);
+    }
+  });
+
+  test("leaves real browsers alone, on every platform", () => {
+    for (const agent of [
+      "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1",
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0",
+      "Mozilla/5.0 (Linux; Android 13; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "Mozilla/5.0 (Linux; Android 10; CUBOT_X30) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
+      "Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Instagram 300.0",
+    ]) {
+      expect(isAutomatedClient(agent), agent).toBe(false);
+    }
+  });
+
+  test("treats a missing user agent as a person, since real requests can lack one", () => {
+    expect(isAutomatedClient(null)).toBe(false);
+    expect(isAutomatedClient(undefined)).toBe(false);
+    expect(isAutomatedClient("")).toBe(false);
   });
 });

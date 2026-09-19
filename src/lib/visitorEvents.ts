@@ -64,27 +64,44 @@ export interface VisitSource {
   referrerHost: string | null;
 }
 
+/** Nothing known about the source, as when a caller doesn't say. Not the same as (direct), which is a known lack of one. */
 export const NO_SOURCE: VisitSource = { ref: null, referrerHost: null };
 
+/** Stored as the referrer host when the view came from a click inside the site. Not a valid hostname, so it can't clash with one. */
+export const INTERNAL_SOURCE = "(internal)";
+/** Stored when the view had no referrer at all: a typed address, a bookmark, or an app that hides where a link came from. */
+export const DIRECT_SOURCE = "(direct)";
+
 const REF_PATTERN = /^[a-z0-9_-]{1,40}$/;
+/** Letters, digits, dots and hyphens only. A URL parser accepts more (even "(direct)"), so a client couldn't otherwise be kept from spoofing a marker. */
+const HOSTNAME_PATTERN = /^[a-z0-9]([a-z0-9.-]{0,251}[a-z0-9])?$/;
 const OWN_HOSTS = new Set(["jevusecases.com", "www.jevusecases.com", "localhost"]);
 
 /**
  * Reads the source of a view from the URL and the Referer header. Both come from the client, so only a
  * short ref tag and a bare hostname are kept: never the full referring URL, which can carry personal data.
+ * The host is always set, so a click inside the site (internal) can be told from a real arrival (direct).
  */
 export function visitSource(url: URL, referer: string | null): VisitSource {
   const rawRef = url.searchParams.get("ref")?.toLowerCase() ?? "";
-  let referrerHost: string | null = null;
+  let referrerHost = DIRECT_SOURCE;
   if (referer) {
     try {
       const host = new URL(referer).hostname.toLowerCase();
-      if (host && host.length <= 253 && !OWN_HOSTS.has(host)) referrerHost = host;
+      if (HOSTNAME_PATTERN.test(host)) referrerHost = OWN_HOSTS.has(host) ? INTERNAL_SOURCE : host;
     } catch {
-      referrerHost = null;
+      referrerHost = DIRECT_SOURCE;
     }
   }
   return { ref: REF_PATTERN.test(rawRef) ? rawRef : null, referrerHost };
+}
+
+/** Automated clients: link-preview builders, search-engine and SEO crawlers, AI crawlers and scripted fetchers. Not people reading. */
+const AUTOMATED_CLIENT =
+  /bot\b|bot\/|spider|crawl|slurp|facebookexternalhit|whatsapp|telegram|embedly|quora link preview|headlesschrome|lighthouse|pingdom|uptimerobot|curl\/|wget\/|python-requests|go-http-client|node-fetch|axios\/|okhttp\/|java\/|google-inspectiontool|apis-google|feedfetcher/i;
+
+export function isAutomatedClient(userAgent: string | null | undefined): boolean {
+  return AUTOMATED_CLIENT.test(userAgent ?? "");
 }
 
 /**
