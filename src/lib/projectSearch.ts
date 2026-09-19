@@ -83,18 +83,15 @@ export interface CategoryOption {
   count: number;
 }
 
-/** Categories present in the data, most projects first. Labels keep the case they were written in. */
+/** Categories present in the data, most projects first. */
 export function categoryOptions(projects: Project[]): CategoryOption[] {
-  const found = new Map<string, { label: string; count: number }>();
+  const counts = new Map<string, number>();
   for (const project of projects) {
     const value = categoryGroup(project);
-    const written = project.category.split("/")[0].trim();
-    const entry = found.get(value) ?? { label: written.charAt(0).toUpperCase() + written.slice(1), count: 0 };
-    entry.count += 1;
-    found.set(value, entry);
+    counts.set(value, (counts.get(value) ?? 0) + 1);
   }
-  return [...found]
-    .map(([value, { label, count }]) => ({ value, label, count }))
+  return [...counts]
+    .map(([value, count]) => ({ value, label: value.charAt(0).toUpperCase() + value.slice(1), count }))
     .sort((a, b) => b.count - a.count || a.label.localeCompare(b.label));
 }
 

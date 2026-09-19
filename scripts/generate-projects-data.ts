@@ -24,9 +24,6 @@ export function readEntry(entriesDir: string, dirName: string): Project {
     throw new Error(`Invalid JSON in src/data/entries/${dirName}/entry.json: ${(error as Error).message}`);
   }
 
-  if (typeof parsed !== "object" || parsed === null || Array.isArray(parsed)) {
-    throw new Error(`src/data/entries/${dirName}/entry.json must contain a single JSON object`);
-  }
   const result = projectSchema.safeParse(parsed);
   if (!result.success) {
     throw new Error(`src/data/entries/${dirName}/entry.json is not a valid entry:\n${z.prettifyError(result.error)}`);

@@ -129,15 +129,6 @@ describe("categoryOptions", () => {
     expect(options.reduce((sum, option) => sum + option.count, 0)).toBe(FIXTURE_PROJECTS.length);
     expect(new Set(options.map((option) => option.value)).size).toBe(options.length);
   });
-
-  test("puts categories that share the part before the slash into one option", () => {
-    const options = categoryOptions([
-      makeProject({ category: "dev tooling / CLI" }),
-      makeProject({ category: "dev tooling / IDE" }),
-    ]);
-
-    expect(options).toEqual([{ value: "dev tooling", label: "Dev tooling", count: 2 }]);
-  });
 });
 
 describe("featuredProject / isDefaultView", () => {

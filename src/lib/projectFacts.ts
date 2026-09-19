@@ -89,5 +89,5 @@ export function installCommand(project: Project): string | null {
 
 /** The part of the category before the slash: "dev tooling / CLI" becomes "dev tooling". */
 export function categoryGroup(project: Project): string {
-  return project.category.split("/")[0].trim().toLowerCase();
+  return project.category.split(" / ")[0];
 }

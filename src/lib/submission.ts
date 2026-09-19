@@ -1,9 +1,8 @@
 import { z } from "zod";
-import { CATEGORIES } from "@/lib/projectSchema";
+import { CATEGORIES, projectSchema } from "@/lib/projectSchema";
 
 const ALLOWED_SOURCE_HOSTS = ["github.com", "npmjs.com"];
 const ALLOWED_SOURCE_HOST_PATTERN = /^([a-z0-9-]+\.)*(github|npmjs)\.com$/i;
-const GITHUB_HOST_PATTERN = /^([a-z0-9-]+\.)*github\.com$/i;
 
 function hasAllowedSourceHost(value: string): boolean {
   try {
@@ -13,13 +12,9 @@ function hasAllowedSourceHost(value: string): boolean {
   }
 }
 
-/** True when a URL already known to pass the source-link allowlist is a github.com link rather than npmjs.com. */
+/** True when the entry schema accepts the link as `github`. Any other allowed link (npm, a gist) becomes `website`. */
 export function isGithubSourceLink(value: string): boolean {
-  try {
-    return GITHUB_HOST_PATTERN.test(new URL(value).hostname);
-  } catch {
-    return false;
-  }
+  return projectSchema.shape.github.safeParse(value).success;
 }
 
 export const submissionSchema = z.object({
@@ -39,7 +34,7 @@ export const submissionSchema = z.object({
     .string()
     .trim()
     .max(15, "X handles are at most 15 characters")
-    .regex(/^@?[A-Za-z0-9_]*$/, "Use only letters, numbers, and underscores")
+    .regex(/^(@?[A-Za-z0-9_]{1,15})?$/, "Use only letters, numbers, and underscores")
     .optional(),
 });
 

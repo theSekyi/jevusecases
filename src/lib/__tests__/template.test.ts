@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, test } from "vitest";
 import { projectFacts } from "../projectFacts";
-import { sourceLink, type Project } from "../projects";
+import { sourceLink } from "../projects";
 import { matchesLens } from "../lenses";
 import { projectSchema } from "../projectSchema";
 
@@ -17,16 +17,12 @@ function parseTemplate(): unknown {
 }
 
 describe("TEMPLATE.jsonc", () => {
-  test("is valid JSON once comments are stripped", () => {
-    expect(() => parseTemplate()).not.toThrow();
-  });
-
-  test("is a valid entry, field for field", () => {
+  test("is a valid entry", () => {
     expect(() => projectSchema.parse(parseTemplate())).not.toThrow();
   });
 
   test("a filled-in copy of the template runs through the real card-rendering functions without throwing", () => {
-    const template = parseTemplate() as Project;
+    const template = projectSchema.parse(parseTemplate());
 
     expect(() => sourceLink(template)).not.toThrow();
     expect(() => projectFacts(template)).not.toThrow();

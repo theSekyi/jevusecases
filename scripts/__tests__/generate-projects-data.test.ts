@@ -66,7 +66,7 @@ describe("readEntry", () => {
   test("throws when entry.json is an array instead of an object", () => {
     mkdirSync(join(dir, "an-array"));
     writeFileSync(join(dir, "an-array", "entry.json"), "[]");
-    expect(() => readEntry(dir, "an-array")).toThrow(/must contain a single JSON object/);
+    expect(() => readEntry(dir, "an-array")).toThrow(/an-array[\s\S]*expected object/);
   });
 
   test("throws when the entry's id doesn't match its folder name", () => {

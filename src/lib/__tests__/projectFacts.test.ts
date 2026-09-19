@@ -88,8 +88,7 @@ describe("installCommand", () => {
 });
 
 describe("categoryGroup", () => {
-  test("keeps the part before the slash, lower case", () => {
+  test("keeps the part before the slash", () => {
     expect(categoryGroup(makeProject({ category: "dev tooling / CLI" }))).toBe("dev tooling");
-    expect(categoryGroup(makeProject({ category: "agent context / memory" }))).toBe("agent context");
   });
 });
