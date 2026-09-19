@@ -1,0 +1,22 @@
+{
+  "id": "gaurav-gosain-jev-headline-bench",
+  "project": "jev-headline-bench",
+  "description": "Tests if Jev can pick the winner of real Upworthy headline A/B tests from the two headlines alone.",
+  "github": "https://github.com/Gaurav-Gosain/jev-headline-bench",
+  "website": null,
+  "how_used_jev": "Jev sees two headlines and picks the likely winner. The author reports 64.5% correct on 10,984 experiments.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Gaurav-Gosain/jev-headline-bench"
+  }
+}

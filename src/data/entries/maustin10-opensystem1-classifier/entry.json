@@ -1,0 +1,22 @@
+{
+  "id": "maustin10-opensystem1-classifier",
+  "project": "OpenSystem1 Classifier",
+  "description": "Compares Jev with a local ModernBERT zero-shot classifier on simple multiple-choice classification and tool routing tasks.",
+  "github": "https://github.com/maustin10/OpenSystem1-classifier",
+  "website": null,
+  "how_used_jev": "Jev 1.13.0 gets the same state, question, and choices as ModernBERT. Both return a selected option and a probability distribution.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maustin10/OpenSystem1-classifier"
+  }
+}

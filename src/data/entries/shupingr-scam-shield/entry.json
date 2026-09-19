@@ -1,0 +1,22 @@
+{
+  "id": "shupingr-scam-shield",
+  "project": "Scam Shield",
+  "description": "Checks a text message for scam signals and turns them into an explainable verdict with rules you control.",
+  "github": "https://github.com/ShupingR/scam-shield",
+  "website": "https://scam-shield-seven-ecru.vercel.app",
+  "how_used_jev": "Jev answers narrow questions in one call, such as credential requests, a pressure score, and the scam pattern. Policy code combines them into a risk score.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ShupingR/scam-shield"
+  }
+}

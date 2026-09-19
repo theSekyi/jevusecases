@@ -1,0 +1,22 @@
+{
+  "id": "fernandoviac-judged",
+  "project": "judged",
+  "description": "A terminal interface for TypeSafe System One. You enter a context and a question, pick an answer type, and get the answer.",
+  "github": "https://github.com/fernandoviac/judged",
+  "website": null,
+  "how_used_jev": "It sends yes/no, choice, or score questions to Jev. It shows the probability of each option and the confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fernandoviac/judged"
+  }
+}

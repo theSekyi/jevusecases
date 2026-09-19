@@ -1,0 +1,22 @@
+{
+  "id": "reachjalil-jev-tree",
+  "project": "jev-tree",
+  "description": "Selects from more than 255 options by walking a JSON taxonomy, because one Jev choice question holds at most 255.",
+  "github": "https://github.com/reachjalil/jev-tree",
+  "website": "https://reachjalil.github.io/jev-tree/",
+  "how_used_jev": "It calls Jev once per level or partition of the tree. This lets it select among thousands of leaves.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/reachjalil/jev-tree"
+  }
+}

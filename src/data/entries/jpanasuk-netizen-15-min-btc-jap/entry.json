@@ -1,0 +1,22 @@
+{
+  "id": "jpanasuk-netizen-15-min-btc-jap",
+  "project": "15-min BTC JAP",
+  "description": "Trades Kalshi's 15-minute BTC YES/NO market from live Coinbase data, with at most one $2 order per window.",
+  "github": "https://github.com/jpanasuk-netizen/15-min-BTC-JAP",
+  "website": null,
+  "how_used_jev": "Jev judges each window and returns a side or lean. A separate executor places the YES or NO order when confidence is at least 0.55.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jpanasuk-netizen/15-min-BTC-JAP"
+  }
+}

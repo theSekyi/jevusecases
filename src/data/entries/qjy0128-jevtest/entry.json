@@ -1,0 +1,22 @@
+{
+  "id": "qjy0128-jevtest",
+  "project": "Jev sensitive info test bench",
+  "description": "Tests how well Jev judges sensitive information in text, in a local web page. It is an evaluation tool, not a production data loss prevention part.",
+  "github": "https://github.com/qjy0128/Jevtest",
+  "website": null,
+  "how_used_jev": "Jev answers yes or no, choice, and score questions on whether text has sensitive data, its type, and its level. The page checks the answers for consistency.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/qjy0128/Jevtest"
+  }
+}

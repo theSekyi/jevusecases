@@ -1,0 +1,22 @@
+{
+  "id": "reycn-smart-switch",
+  "project": "SmartSwitch",
+  "description": "Switches to the macOS app that you most likely want next.",
+  "github": "https://github.com/reycn/smart-switch",
+  "website": null,
+  "how_used_jev": "The 10 most recent running apps become options in one Jev Choice question with your switch history. The most probable app opens.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/reycn/smart-switch"
+  }
+}

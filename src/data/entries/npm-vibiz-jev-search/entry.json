@@ -1,0 +1,23 @@
+{
+  "id": "npm-vibiz-jev-search",
+  "project": "vibiz-jev-search",
+  "description": "Finds the right tools and skills for an AI agent. It also compacts conversations to fit Jev's context window.",
+  "github": null,
+  "website": "https://www.npmjs.com/package/vibiz-jev-search",
+  "how_used_jev": "The package asks Jev through Vercel AI Gateway to find the tools and skills that fit the agent's task.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/vibiz-jev-search",
+    "install": "npm install vibiz-jev-search"
+  }
+}

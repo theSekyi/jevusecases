@@ -1,0 +1,22 @@
+{
+  "id": "giesn-typesafe-jev-workflow",
+  "project": "typesafe-jev-workflow",
+  "description": "A small LangGraph demo that routes mocked emails to a handler by intent.",
+  "github": "https://github.com/GiesN/typesafe-jev-workflow",
+  "website": null,
+  "how_used_jev": "Jev classifies each email as invoice or general with a Choice. The graph then routes it to the matching handler.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/GiesN/typesafe-jev-workflow"
+  }
+}

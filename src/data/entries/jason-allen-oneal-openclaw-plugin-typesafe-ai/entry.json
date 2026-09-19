@@ -1,0 +1,22 @@
+{
+  "id": "jason-allen-oneal-openclaw-plugin-typesafe-ai",
+  "project": "OpenClaw TypeSafe AI Plugin",
+  "description": "Adds Jev decisions to OpenClaw agents through a plugin. It covers group chat triage, tool safety checks, compaction audits, and model routing.",
+  "github": "https://github.com/jason-allen-oneal/openclaw-plugin-typesafe-ai",
+  "website": null,
+  "how_used_jev": "Jev decides which group messages need a reply and whether a tool call is safe. It also audits compacted summaries for lost tasks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jason-allen-oneal/openclaw-plugin-typesafe-ai"
+  }
+}

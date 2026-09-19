@@ -1,0 +1,22 @@
+{
+  "id": "runta-dev-jot",
+  "project": "Jot",
+  "description": "Runs a general-purpose agent loop for Jev in a local web app. You see every tool call, and chats stay in the browser.",
+  "github": "https://github.com/runta-dev/jot",
+  "website": null,
+  "how_used_jev": "Jev chooses each tool and its arguments. Jot runs the tool, puts the result back into context, and asks Jev again until it can reply.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/runta-dev/jot"
+  }
+}

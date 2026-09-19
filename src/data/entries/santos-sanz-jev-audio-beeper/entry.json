@@ -1,0 +1,22 @@
+{
+  "id": "santos-sanz-jev-audio-beeper",
+  "project": "jev-audio-beeper",
+  "description": "Finds Spanish profanity in audio and replaces those words with a beep without changing the audio length. It is a TypeScript proof of concept.",
+  "github": "https://github.com/santos-sanz/jev-audio-beeper",
+  "website": null,
+  "how_used_jev": "Jev gives each transcribed word a profanity probability and a severity score. Words above a threshold get a beep through ffmpeg.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/santos-sanz/jev-audio-beeper"
+  }
+}

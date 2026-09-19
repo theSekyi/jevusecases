@@ -1,0 +1,22 @@
+{
+  "id": "dizk-pi-jev-lens",
+  "project": "pi-jev-lens",
+  "description": "Shrinks large tool results in the pi coding agent before they reach the model. The full text stays recallable.",
+  "github": "https://github.com/dizk/pi-jev-lens",
+  "website": null,
+  "how_used_jev": "Code builds candidate views of the output. Jev picks the smallest view that still lets the agent do its next step.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dizk/pi-jev-lens"
+  }
+}

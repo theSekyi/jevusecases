@@ -1,0 +1,22 @@
+{
+  "id": "agentik-os-jev-radar",
+  "project": "Jev Radar",
+  "description": "Tracks posts about Jev on X and shows them on a static site that updates every hour.",
+  "github": "https://github.com/agentik-os/jev-radar",
+  "website": "https://jev-radar-fawn.vercel.app",
+  "how_used_jev": "Jev classifies the collected posts. A Vercel function also rates submitted ideas with Jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/agentik-os/jev-radar"
+  }
+}

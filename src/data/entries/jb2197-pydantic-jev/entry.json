@@ -1,0 +1,22 @@
+{
+  "id": "jb2197-pydantic-jev",
+  "project": "pydantic-jev",
+  "description": "Compiles Pydantic decision fields into Jev questions. It is a thin shim between Pydantic and Jev.",
+  "github": "https://github.com/jb2197/pydantic-jev",
+  "website": null,
+  "how_used_jev": "Literal and Enum fields become Choice questions, float scores become Score, and booleans become Noul. It then parses the Jev response.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jb2197/pydantic-jev"
+  }
+}

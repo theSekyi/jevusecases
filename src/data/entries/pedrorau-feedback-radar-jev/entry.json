@@ -1,0 +1,22 @@
+{
+  "id": "pedrorau-feedback-radar-jev",
+  "project": "Feedback Radar",
+  "description": "Analyzes a user comment in a web demo. It acts alone or escalates to a person based on a confidence threshold.",
+  "github": "https://github.com/pedrorau/feedback-radar-jev",
+  "website": null,
+  "how_used_jev": "Jev returns sentiment, category, urgency, and severity with confidence in one request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pedrorau/feedback-radar-jev"
+  }
+}

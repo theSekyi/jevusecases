@@ -1,0 +1,22 @@
+{
+  "id": "wesecureyou-jev-test",
+  "project": "Job Risk Analyzer",
+  "description": "Evaluates an occupation from a CLI or REST API for exposure to AI-driven layoffs and for resilience.",
+  "github": "https://github.com/WeSecureYou/Jev-test",
+  "website": "https://jev-test.vercel.app",
+  "how_used_jev": "Jev judges layoff exposure, the likely future path of the job, the need for human accountability, and overall resilience.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/WeSecureYou/Jev-test"
+  }
+}

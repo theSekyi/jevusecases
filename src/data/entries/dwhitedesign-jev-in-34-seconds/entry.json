@@ -1,0 +1,19 @@
+{
+  "id": "dwhitedesign-jev-in-34-seconds",
+  "project": "Jev in 34 seconds",
+  "description": "Explains in a short video how the typed-decision loop of Jev works.",
+  "github": null,
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": "https://x.com/dwhitedesign/status/2100368024649769384",
+  "author": "@dwhitedesign",
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

@@ -1,0 +1,22 @@
+{
+  "id": "henteko-jev-dev-cloudflare",
+  "project": "jev-dev-cloudflare",
+  "description": "Measures the latency and cost of calls to Jev from a browser through a Hono API. It compares Cloudflare Workers with a Node server.",
+  "github": "https://github.com/henteko/jev-dev-cloudflare",
+  "website": null,
+  "how_used_jev": "The same Hono app calls Jev directly or through AI Gateway. The author reports earlier direct Node values of warm 226ms and cold 514ms (p50).",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/henteko/jev-dev-cloudflare"
+  }
+}

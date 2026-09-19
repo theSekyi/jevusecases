@@ -1,0 +1,19 @@
+{
+  "id": "theneuron-ai-jev-system-one-models-explained",
+  "project": "Jev: System One models explained",
+  "description": "Explains in an article by The Neuron how Jev makes AI decisions without a chatbot.",
+  "github": null,
+  "website": "https://www.theneuron.ai/explainer-articles/typesafe-jev-system-one-models-explained/",
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

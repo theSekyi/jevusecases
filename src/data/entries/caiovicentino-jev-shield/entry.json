@@ -1,0 +1,22 @@
+{
+  "id": "caiovicentino-jev-shield",
+  "project": "jev-shield",
+  "description": "Sits between an MCP client and an MCP server and screens every tool call, tool result, and tool description.",
+  "github": "https://github.com/caiovicentino/jev-shield",
+  "website": null,
+  "how_used_jev": "Jev returns a probability that a payload is an attack, so your policy decides what happens. The author reports 94% block recall and 0 false positives.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/caiovicentino/jev-shield"
+  }
+}

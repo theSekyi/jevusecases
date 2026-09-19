@@ -1,0 +1,22 @@
+{
+  "id": "nican2018-shade-arena-jev-monitor",
+  "project": "SHADE-Arena Jev monitor",
+  "description": "Tests Jev as a monitor and action gate for covert agent sabotage in SHADE-Arena, against Gemini 2.5 Flash and Pro.",
+  "github": "https://github.com/nican2018/shade-arena-jev-monitor",
+  "website": null,
+  "how_used_jev": "Jev scores each tool call before it runs, or whole transcripts in chunks. The author reports a per-action AUC of 0.97 on 353 tool calls, as preliminary results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nican2018/shade-arena-jev-monitor"
+  }
+}

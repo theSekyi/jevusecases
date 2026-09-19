@@ -1,0 +1,22 @@
+{
+  "id": "si618-explore-typesafe-ai",
+  "project": "explore-typesafe-ai",
+  "description": "Evaluates Jev on three hospital decisions over 100 synthetic FHIR patients. Claude models review escalations.",
+  "github": "https://github.com/si618/explore-typesafe-ai",
+  "website": "https://si618.github.io/explore-typesafe-ai",
+  "how_used_jev": "Jev reads nursing notes and medications and answers Noul, Score, and Choice questions. Examples are ward deterioration and patient inbox routing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/si618/explore-typesafe-ai"
+  }
+}

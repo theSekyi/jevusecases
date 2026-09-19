@@ -1,0 +1,22 @@
+{
+  "id": "shitianfang-wakegate",
+  "project": "wakegate",
+  "description": "Gates wakeups of long-running agents on Workers, Durable Objects, and Node. It prevents unnecessary full LLM turns.",
+  "github": "https://github.com/shitianfang/wakegate",
+  "website": null,
+  "how_used_jev": "Jev judges if a timer or event matches what the agent waits for. Code skips the wake only when Jev is confident and always wakes on user messages and errors.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shitianfang/wakegate"
+  }
+}

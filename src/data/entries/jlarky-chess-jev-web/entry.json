@@ -1,0 +1,22 @@
+{
+  "id": "jlarky-chess-jev-web",
+  "project": "chess-jev-web",
+  "description": "Lets you play chess against Jev in the browser. A Chaos mode lets Jev pick any square, and illegal moves lose the turn.",
+  "github": "https://github.com/JLarky/chess-jev-web",
+  "website": "https://chess-jev-web.vercel.app",
+  "how_used_jev": "The server lists the candidate moves, and Jev answers one choice question per move. In Chaos mode, Jev picks a piece and then a square.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JLarky/chess-jev-web"
+  }
+}

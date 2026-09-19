@@ -1,0 +1,22 @@
+{
+  "id": "fgn-jevgo",
+  "project": "jevgo",
+  "description": "Community Go client for TypeSafe AI's System One API, with optional Langfuse instrumentation.",
+  "github": "https://github.com/fgn/jevgo",
+  "website": null,
+  "how_used_jev": "Sends a state and typed questions to Jev and returns typed answers and probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fgn/jevgo"
+  }
+}

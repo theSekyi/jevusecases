@@ -1,0 +1,22 @@
+{
+  "id": "danfry1-jev-triage",
+  "project": "jev-triage",
+  "description": "Triages new GitHub issues as a GitHub Action. It labels them, finds duplicates, and checks for spam, with optional auto-close.",
+  "github": "https://github.com/danfry1/jev-triage",
+  "website": null,
+  "how_used_jev": "Jev picks labels from the repository's own labels and checks recent open issues for duplicates. Each decision has a probability that you set a threshold for.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/danfry1/jev-triage"
+  }
+}

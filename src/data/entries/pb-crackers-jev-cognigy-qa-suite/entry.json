@@ -1,0 +1,22 @@
+{
+  "id": "pb-crackers-jev-cognigy-qa-suite",
+  "project": "Jev Cognigy QA",
+  "description": "Scores every Cognigy conversation against rubrics you write. It has a CLI, a local web UI, and an agent skill.",
+  "github": "https://github.com/pb-crackers/Jev-Cognigy-QA-Suite",
+  "website": null,
+  "how_used_jev": "Jev reads each transcript once and answers all rubric questions in parallel. The author reports 57 sessions, 9 rubrics, $0.0025, 314ms per session.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pb-crackers/Jev-Cognigy-QA-Suite"
+  }
+}

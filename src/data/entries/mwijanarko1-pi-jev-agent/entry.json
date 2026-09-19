@@ -1,0 +1,22 @@
+{
+  "id": "mwijanarko1-pi-jev-agent",
+  "project": "pi-jev-agent",
+  "description": "Experimental extension for the Pi coding agent that picks the next tool before each language-model step.",
+  "github": "https://github.com/mwijanarko1/pi-jev-agent",
+  "website": null,
+  "how_used_jev": "Jev decides which tool the main model gets next, or no tool. The main model then sees only that tool's schema instead of the full catalog.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mwijanarko1/pi-jev-agent"
+  }
+}

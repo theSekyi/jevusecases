@@ -1,0 +1,22 @@
+{
+  "id": "nicolasmontone-jev-evals",
+  "project": "jev-evals",
+  "description": "Runs rubric-based evals on LLM and agent outputs, with the goal of running them on every pull request.",
+  "github": "https://github.com/NicolasMontone/jev-evals",
+  "website": null,
+  "how_used_jev": "The input, output, and expected answer go to Jev as one state. Jev answers every rubric question for that case in one call.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NicolasMontone/jev-evals"
+  }
+}

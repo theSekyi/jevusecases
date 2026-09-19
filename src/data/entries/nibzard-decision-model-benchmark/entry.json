@@ -1,0 +1,22 @@
+{
+  "id": "nibzard-decision-model-benchmark",
+  "project": "DMB: decision-model benchmark",
+  "description": "Compares Jev, eight constrained LLMs, and deterministic baselines on typed decisions. It measures accuracy, calibration, latency, cost, and failures.",
+  "github": "https://github.com/nibzard/decision-model-benchmark",
+  "website": null,
+  "how_used_jev": "Jev answers pick-one-of-N questions with a confidence. The author reports 76.3% on the 77-way banking suite, mid-pack against the LLMs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nibzard/decision-model-benchmark"
+  }
+}

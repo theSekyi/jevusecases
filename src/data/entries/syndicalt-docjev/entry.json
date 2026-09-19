@@ -1,0 +1,22 @@
+{
+  "id": "syndicalt-docjev",
+  "project": "Docjev",
+  "description": "Adds natural-language queries to document collections of nested JSON, with no index or embeddings.",
+  "github": "https://github.com/syndicalt/docjev",
+  "website": null,
+  "how_used_jev": "Jev judges each document to filter, rank, classify, or score it. Results are cached, so a changed threshold needs no new call.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/syndicalt/docjev"
+  }
+}

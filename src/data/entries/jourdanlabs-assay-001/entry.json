@@ -1,0 +1,22 @@
+{
+  "id": "jourdanlabs-assay-001",
+  "project": "ASSAY-001",
+  "description": "Tests Jev's calibration and type-safety claims with a pre-registered protocol, and publishes every request and response.",
+  "github": "https://github.com/jourdanlabs/assay-001",
+  "website": null,
+  "how_used_jev": "Jev answers intent questions from Banking77 and CLINC150. The author reports calibration on CLINC150 (ECE 0.0204) but overconfidence on Banking77 (ECE 0.0936).",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jourdanlabs/assay-001"
+  }
+}

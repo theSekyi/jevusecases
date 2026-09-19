@@ -1,0 +1,22 @@
+{
+  "id": "kevin9327-jev-bot",
+  "project": "JevBot",
+  "description": "Handles support and moderation messages with fixed replies instead of a chatbot. Code chooses to reply, escalate, or block.",
+  "github": "https://github.com/kevin9327/jev-bot",
+  "website": null,
+  "how_used_jev": "One Jev call answers Choice, Score, and Noul questions about the user text. Python then picks a canned reply from a template set.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kevin9327/jev-bot"
+  }
+}

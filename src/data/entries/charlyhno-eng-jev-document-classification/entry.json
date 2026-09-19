@@ -1,0 +1,22 @@
+{
+  "id": "charlyhno-eng-jev-document-classification",
+  "project": "JEV Document Classification",
+  "description": "Sorts documents from a folder into category subfolders that the user sets.",
+  "github": "https://github.com/Charlyhno-eng/jev-document-classification",
+  "website": null,
+  "how_used_jev": "Jev classifies the extracted text of each document through Vercel AI Gateway. Documents with low confidence go to a Need review folder.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Charlyhno-eng/jev-document-classification"
+  }
+}

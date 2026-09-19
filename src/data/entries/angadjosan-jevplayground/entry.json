@@ -1,0 +1,22 @@
+{
+  "id": "angadjosan-jevplayground",
+  "project": "Jev playground",
+  "description": "Sends prompts to typesafe/jev-1.13 through OpenRouter from a Python CLI with no dependencies. It can check if the model is live.",
+  "github": "https://github.com/angadjosan/Jevplayground",
+  "website": null,
+  "how_used_jev": "It sends your prompt and options such as system prompt and temperature to Jev and prints the reply.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/angadjosan/Jevplayground"
+  }
+}

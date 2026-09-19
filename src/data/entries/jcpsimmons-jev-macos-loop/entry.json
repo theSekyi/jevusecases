@@ -1,0 +1,22 @@
+{
+  "id": "jcpsimmons-jev-macos-loop",
+  "project": "Jev macOS Loop",
+  "description": "Automates native macOS apps on Apple silicon as an open-source computer use agent. It finds controls locally with OmniParser, Apple Vision OCR, and accessibility data.",
+  "github": "https://github.com/jcpsimmons/jev-macos-loop",
+  "website": null,
+  "how_used_jev": "Jev selects the next GUI action from the controls found on screen. The author reports a Finder demo of 9 files and 3 group moves in 7.39 seconds.",
+  "source_tweet": "https://x.com/drjoshcsimmons/status/2101052051702816809",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jcpsimmons/jev-macos-loop"
+  }
+}

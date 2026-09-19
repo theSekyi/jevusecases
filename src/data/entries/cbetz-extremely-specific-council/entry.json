@@ -1,0 +1,22 @@
+{
+  "id": "cbetz-extremely-specific-council",
+  "project": "Council of Extremely Specific Opinions",
+  "description": "Lets you submit an idea to a joke council of twelve members, such as a pirate and a houseplant. They vote on it.",
+  "github": "https://github.com/cbetz/extremely-specific-council",
+  "website": "https://extremely-specific-council-five.vercel.app",
+  "how_used_jev": "In live mode, Jev decides the council votes. The app shows animated votes and a result card that you can share.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cbetz/extremely-specific-council"
+  }
+}

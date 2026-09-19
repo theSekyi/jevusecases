@@ -1,0 +1,22 @@
+{
+  "id": "robbyczgw-cla-hermes-plugin-jev",
+  "project": "Jev for Hermes",
+  "description": "Adds Jev decision signals to Hermes Agent for each turn. Hermes keeps its own planning, tools, and guardrails.",
+  "github": "https://github.com/robbyczgw-cla/hermes-plugin-jev",
+  "website": null,
+  "how_used_jev": "Jev classifies each user turn and rates tool calls for risk to request human approval. It also flags completion claims that conflict with test output.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/robbyczgw-cla/hermes-plugin-jev"
+  }
+}

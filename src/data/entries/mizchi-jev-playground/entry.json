@@ -1,0 +1,22 @@
+{
+  "id": "mizchi-jev-playground",
+  "project": "jev-playground",
+  "description": "A MoonBit playground for Jev, with a client, a CLI, and many experiments.",
+  "github": "https://github.com/mizchi/jev-playground",
+  "website": null,
+  "how_used_jev": "Experiments ask Jev to pick Gomoku moves, gate shell commands by risk, and play a 3v3 MOBA. An ESLint plugin lets Jev judge code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mizchi/jev-playground"
+  }
+}

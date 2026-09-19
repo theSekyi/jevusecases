@@ -1,0 +1,22 @@
+{
+  "id": "mcgalleg-grokbot-jev-jobs",
+  "project": "grokbot-jev-jobs",
+  "description": "Scores public job postings against a resume each day. An Apply button sends a webhook to a bot that fills ATS forms.",
+  "github": "https://github.com/mcgalleg/grokbot-jev-jobs",
+  "website": "https://jev-job-search.vercel.app",
+  "how_used_jev": "Jev triages each posting and then scores it against the resume, through the Vercel AI Gateway.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mcgalleg/grokbot-jev-jobs"
+  }
+}

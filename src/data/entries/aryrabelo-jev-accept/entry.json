@@ -1,0 +1,22 @@
+{
+  "id": "aryrabelo-jev-accept",
+  "project": "jev-accept",
+  "description": "Checks whether a GitHub pull request delivers what its issue and root epic ask for. It runs as a local CLI and a GitHub Action.",
+  "github": "https://github.com/aryrabelo/jev-accept",
+  "website": null,
+  "how_used_jev": "It sends the PR and its issue chain to Jev as typed questions in one request. The author reports a cost of about US$0.0001 per PR.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aryrabelo/jev-accept"
+  }
+}

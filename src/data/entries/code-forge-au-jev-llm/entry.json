@@ -1,0 +1,22 @@
+{
+  "id": "code-forge-au-jev-llm",
+  "project": "jev-llm",
+  "description": "Turns Jev into a text generator that writes one word per API round trip, with a command-line and web chat.",
+  "github": "https://github.com/Code-Forge-AU/jev-llm",
+  "website": null,
+  "how_used_jev": "Jev chooses the next word at each step, with beams and speculative fan-outs. It uses only a word-frequency list and no other model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Code-Forge-AU/jev-llm"
+  }
+}

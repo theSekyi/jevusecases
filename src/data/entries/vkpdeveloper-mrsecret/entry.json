@@ -1,0 +1,22 @@
+{
+  "id": "vkpdeveloper-mrsecret",
+  "project": "Mr. Secret",
+  "description": "A Chrome extension that blurs secrets and personal data on web pages, for screen sharing and demos.",
+  "github": "https://github.com/vkpdeveloper/mrsecret",
+  "website": null,
+  "how_used_jev": "Regex handles known patterns. Jev gives a probability that other short snippets are private, and snippets above a threshold get blurred.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vkpdeveloper/mrsecret"
+  }
+}

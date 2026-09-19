@@ -1,0 +1,22 @@
+{
+  "id": "nmokaria27-job-scraper-bot",
+  "project": "Job Scraper Discord Bot",
+  "description": "Scrapes job postings from many sources and posts new entry-level matches to Discord channels.",
+  "github": "https://github.com/nmokaria27/job-scraper-bot",
+  "website": null,
+  "how_used_jev": "An optional Jev judge scores the jobs that pass the filters. The best matches then fill the 25-slot cap.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nmokaria27/job-scraper-bot"
+  }
+}

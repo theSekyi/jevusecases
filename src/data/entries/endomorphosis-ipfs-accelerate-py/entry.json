@@ -1,0 +1,22 @@
+{
+  "id": "endomorphosis-ipfs-accelerate-py",
+  "project": "IPFS Accelerate Python",
+  "description": "Adds a system_one helper to a Python framework for model inference and provider routing.",
+  "github": "https://github.com/endomorphosis/ipfs_accelerate_py",
+  "website": null,
+  "how_used_jev": "The helper posts a state and typed questions to Jev. A test uses a support message about a double charge as the state.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "infra / open reimplementation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/endomorphosis/ipfs_accelerate_py"
+  }
+}

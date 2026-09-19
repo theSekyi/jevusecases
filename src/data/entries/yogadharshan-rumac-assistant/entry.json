@@ -1,0 +1,22 @@
+{
+  "id": "yogadharshan-rumac-assistant",
+  "project": "RUMAC",
+  "description": "Runs a local-first personal AI assistant for one user on one Fedora machine. It is a hackathon build.",
+  "github": "https://github.com/Yogadharshan/rumac-assistant",
+  "website": null,
+  "how_used_jev": "An optional Jev decision layer picks a model profile for each turn, such as local or cloud. If Jev is uncertain, RUMAC asks before it uses the cloud model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Yogadharshan/rumac-assistant"
+  }
+}

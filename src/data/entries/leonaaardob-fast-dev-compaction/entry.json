@@ -1,0 +1,22 @@
+{
+  "id": "leonaaardob-fast-dev-compaction",
+  "project": "fast-dev-compaction",
+  "description": "Wraps Codex session compaction so that needed history stays verbatim. It ports tamaratran/fast-jev-compaction to Codex hooks.",
+  "github": "https://github.com/leonaaardob/fast-dev-compaction",
+  "website": null,
+  "how_used_jev": "Before compaction, Jev scores every tool call and result. After compaction, the plugin puts back the verbatim history that Jev kept.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/leonaaardob/fast-dev-compaction"
+  }
+}

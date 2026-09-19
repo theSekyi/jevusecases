@@ -1,0 +1,22 @@
+{
+  "id": "j-asefa-jfind",
+  "project": "jfind",
+  "description": "Finds files by their content in Unix pipelines and prints the matching paths. It is one Python file.",
+  "github": "https://github.com/j-asefa/jfind",
+  "website": null,
+  "how_used_jev": "It sends eligible file text to Jev with your query. Jev decides which files match.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/j-asefa/jfind"
+  }
+}

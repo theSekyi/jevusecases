@@ -1,0 +1,22 @@
+{
+  "id": "geilt-typesafe-cli",
+  "project": "TypeSafe CLI",
+  "description": "A small Python CLI and agent skill for TypeSafe System One. It uses only the standard library.",
+  "github": "https://github.com/geilt/typesafe-cli",
+  "website": null,
+  "how_used_jev": "The CLI sends a state and typed Choice, Score, or Noul questions to Jev. It prints the structured answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/geilt/typesafe-cli"
+  }
+}

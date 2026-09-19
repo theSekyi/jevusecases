@@ -1,0 +1,22 @@
+{
+  "id": "siddicky-omp-typesafe",
+  "project": "omp-typesafe",
+  "description": "Adds an adversarial reviewer and a typesafe_ask tool to the omp coding agent.",
+  "github": "https://github.com/siddicky/omp-typesafe",
+  "website": null,
+  "how_used_jev": "After edits and commands, Jev judges if the last action breaks a contract, misses a requirement, or has weak verification. It rates severity for advisory notes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/siddicky/omp-typesafe"
+  }
+}

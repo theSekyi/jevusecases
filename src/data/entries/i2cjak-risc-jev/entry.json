@@ -1,0 +1,22 @@
+{
+  "id": "i2cjak-risc-jev",
+  "project": "RISC-jeV",
+  "description": "Runs C programs on a simulated SERV RISC-V CPU whose logic gates come from Jev answers.",
+  "github": "https://github.com/i2cjak/RISC-jeV",
+  "website": null,
+  "how_used_jev": "Jev answers 22 Boolean gate and input combinations. The answers become cached lookup tables for every simulated logic gate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/i2cjak/RISC-jeV"
+  }
+}

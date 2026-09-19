@@ -1,0 +1,22 @@
+{
+  "id": "sora-33-jev-mail-sorter",
+  "project": "jev-mail-sorter",
+  "description": "Sorts incoming Gmail into categories and adds Gmail labels. It is a self-hosted web app that runs in Docker.",
+  "github": "https://github.com/sora-33/jev-mail-sorter",
+  "website": null,
+  "how_used_jev": "The app sends each mail's sender, subject, body start, and the active categories to Jev. It labels mails at confidence 0.80 or higher and queues the rest for review.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sora-33/jev-mail-sorter"
+  }
+}

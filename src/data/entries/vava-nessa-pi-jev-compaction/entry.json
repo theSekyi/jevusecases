@@ -1,0 +1,22 @@
+{
+  "id": "vava-nessa-pi-jev-compaction",
+  "project": "pi-jev-compaction",
+  "description": "Compacts the context of Pi sessions without summaries. It deletes old tool calls that are no longer needed and keeps the rest byte for byte.",
+  "github": "https://github.com/vava-nessa/pi-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev decides for each tool call whether the call and its output must stay. The author reports 97% smaller context on one validation session.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vava-nessa/pi-jev-compaction"
+  }
+}

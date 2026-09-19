@@ -1,0 +1,22 @@
+{
+  "id": "emrickgarrett-onevonejev",
+  "project": "1v1 Jev",
+  "description": "Runs a browser FPS where players fight an AI opponent in 1v1 matches to 5 kills, while spectators watch.",
+  "github": "https://github.com/emrickgarrett/OneVOneJev",
+  "website": null,
+  "how_used_jev": "Jev controls the opponent in the arena, with a heuristic fallback.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/emrickgarrett/OneVOneJev"
+  }
+}

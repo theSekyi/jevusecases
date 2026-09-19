@@ -1,0 +1,22 @@
+{
+  "id": "markmdev-hundred-faces",
+  "project": "A hundred faces",
+  "description": "Shows a wall of one hundred invented people who react to a message while you type it.",
+  "github": "https://github.com/markmdev/hundred-faces",
+  "website": null,
+  "how_used_jev": "For each person, Jev picks one of seven reactions. It also answers if the person understands, trusts, and would share the message.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/markmdev/hundred-faces"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "0xaniol-talkr",
+  "project": "talkr",
+  "description": "Gives you a topic to talk about and then scores your speech. You get a score and feedback to improve.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev analyzes your speech for pauses, filler words, repetitions, confidence, and clarity.",
+  "source_tweet": "https://x.com/0xaniol/status/2101076982373191927",
+  "author": "@0xaniol",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

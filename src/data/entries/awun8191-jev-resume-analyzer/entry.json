@@ -1,0 +1,22 @@
+{
+  "id": "awun8191-jev-resume-analyzer",
+  "project": "JEV Resume Analyzer",
+  "description": "Reviews an uploaded CV, and can compare it with a job posting. Built with React and FastAPI.",
+  "github": "https://github.com/awun8191/jev-resume-analyzer",
+  "website": null,
+  "how_used_jev": "Jev makes typed judgments on the whole CV, such as work clarity and scope. The report shows each question, answer, and probability distribution.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/awun8191/jev-resume-analyzer"
+  }
+}

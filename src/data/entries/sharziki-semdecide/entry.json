@@ -1,0 +1,22 @@
+{
+  "id": "sharziki-semdecide",
+  "project": "SemDecide",
+  "description": "A command-line tool for typed semantic decisions in Unix pipelines and CI.",
+  "github": "https://github.com/sharziki/semdecide",
+  "website": null,
+  "how_used_jev": "Pipes text or JSONL to Jev and returns a verdict, route, or score with a stable exit code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sharziki/semdecide"
+  }
+}

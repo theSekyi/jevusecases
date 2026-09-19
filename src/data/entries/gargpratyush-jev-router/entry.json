@@ -1,0 +1,22 @@
+{
+  "id": "gargpratyush-jev-router",
+  "project": "jev-router",
+  "description": "Routes each new turn in Claude Code or OpenAI Codex to a fast or strong model, in the normal CLI.",
+  "github": "https://github.com/gargpratyush/jev-router",
+  "website": null,
+  "how_used_jev": "Jev judges each fresh user turn and chooses the model. Simple work goes to the fast tier and hard work to the strong tier.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/gargpratyush/jev-router"
+  }
+}

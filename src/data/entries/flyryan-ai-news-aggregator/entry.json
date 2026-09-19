@@ -1,0 +1,22 @@
+{
+  "id": "flyryan-ai-news-aggregator",
+  "project": "AI News Aggregator",
+  "description": "Adds a Jev adapter to the relevance step of a multi-agent pipeline that publishes daily AI news briefings.",
+  "github": "https://github.com/flyryan/ai-news-aggregator",
+  "website": "https://news.aatf.ai",
+  "how_used_jev": "A design note adds a TypeSafe adapter next to the current relevance code. It runs as an experiment with an explicit shared retry budget.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/flyryan/ai-news-aggregator"
+  }
+}

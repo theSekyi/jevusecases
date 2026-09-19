@@ -1,0 +1,22 @@
+{
+  "id": "jokull-ensk",
+  "project": "ensk",
+  "description": "Gives a fast English-Icelandic dictionary on Cloudflare Workers with full-text and semantic search.",
+  "github": "https://github.com/jokull/ensk",
+  "website": null,
+  "how_used_jev": "Jev re-ranks the search results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jokull/ensk"
+  }
+}

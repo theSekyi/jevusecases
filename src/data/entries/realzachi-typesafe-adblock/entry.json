@@ -1,0 +1,22 @@
+{
+  "id": "realzachi-typesafe-adblock",
+  "project": "TypeSafe Fun AdBlocker",
+  "description": "A Chrome extension that removes ads from web pages. The author calls it a fun project, not a real ad blocker.",
+  "github": "https://github.com/realZachi/typesafe-adblock",
+  "website": null,
+  "how_used_jev": "Jev answers 'is this DOM element an ad?' for page elements. Code removes the elements Jev marks as ads.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/realZachi/typesafe-adblock"
+  }
+}

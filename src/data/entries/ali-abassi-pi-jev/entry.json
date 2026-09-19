@@ -1,0 +1,22 @@
+{
+  "id": "ali-abassi-pi-jev",
+  "project": "pi-jev",
+  "description": "Watches each turn of the pi coding agent as an advisor. It detects loops, checks goal alignment, and audits risky tool calls.",
+  "github": "https://github.com/ali-abassi/pi-jev",
+  "website": null,
+  "how_used_jev": "Jev answers one set of questions for each judged turn, such as on_track. When a check fires, the advisor notifies and sends a steer message.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ali-abassi/pi-jev"
+  }
+}

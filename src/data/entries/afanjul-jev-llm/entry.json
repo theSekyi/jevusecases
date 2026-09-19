@@ -1,0 +1,22 @@
+{
+  "id": "afanjul-jev-llm",
+  "project": "jev-llm",
+  "description": "Makes Jev act as a fake autoregressive language model. It builds text one token at a time from a closed inventory.",
+  "github": "https://github.com/afanjul/jev-llm",
+  "website": null,
+  "how_used_jev": "Each step asks Jev a Choice question over up to 255 candidate tokens. The loop samples or picks the token and repeats until Jev chooses eos.",
+  "source_tweet": "https://x.com/alejandrofanjul/status/2101032677503603169",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/afanjul/jev-llm"
+  }
+}

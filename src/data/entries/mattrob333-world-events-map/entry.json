@@ -1,0 +1,22 @@
+{
+  "id": "mattrob333-world-events-map",
+  "project": "MERIDIAN",
+  "description": "A social travel platform with event demand, traveler matching, and a day-of engine that suggests where to go next.",
+  "github": "https://github.com/mattrob333/World-Events-Map",
+  "website": null,
+  "how_used_jev": "The day-of engine sends venue candidates to Jev for contextual judgment. If Jev is absent or fails, a deterministic ranking model takes over.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mattrob333/World-Events-Map"
+  }
+}

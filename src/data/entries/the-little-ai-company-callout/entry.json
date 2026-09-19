@@ -1,0 +1,22 @@
+{
+  "id": "the-little-ai-company-callout",
+  "project": "Callout",
+  "description": "A Windows tray app. Press a hotkey over text to see if it tries to manipulate you and if its claims match fetched sources.",
+  "github": "https://github.com/The-Little-AI-Company/callout",
+  "website": "https://the-little-ai-company.github.io/callout/",
+  "how_used_jev": "Jev judges content kind, manipulation signals, passage relevance, and claim support, and returns probabilities. An LLM helper only extracts claims and drafts summaries.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/The-Little-AI-Company/callout"
+  }
+}

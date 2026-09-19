@@ -1,0 +1,22 @@
+{
+  "id": "droid-q-jev-skill-router",
+  "project": "Jev Skill Router for Codex",
+  "description": "Adds a Codex CLI plugin hook that runs on each prompt you submit. It picks installed skills for the prompt.",
+  "github": "https://github.com/droid-Q/jev-skill-router",
+  "website": null,
+  "how_used_jev": "The hook sends the prompt and candidate skill names and descriptions to Jev. It uses a threshold and a maximum skill count to choose skills.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/droid-Q/jev-skill-router"
+  }
+}

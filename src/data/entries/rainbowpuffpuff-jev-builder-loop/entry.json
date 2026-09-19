@@ -1,0 +1,22 @@
+{
+  "id": "rainbowpuffpuff-jev-builder-loop",
+  "project": "jev-builder-loop",
+  "description": "A Grok skill that uses Jev in a builder-agent loop to decide the next act.",
+  "github": "https://github.com/rainbowpuffpuff/jev-builder-loop",
+  "website": null,
+  "how_used_jev": "You write the questions and state, and Jev returns typed probabilities. The skill mixes them with priors and picks the next act.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rainbowpuffpuff/jev-builder-loop"
+  }
+}

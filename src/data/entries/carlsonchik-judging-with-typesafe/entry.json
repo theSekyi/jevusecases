@@ -1,0 +1,22 @@
+{
+  "id": "carlsonchik-judging-with-typesafe",
+  "project": "judging-with-typesafe",
+  "description": "Adds a skill for Letta agents that judges texts and decisions against criteria.",
+  "github": "https://github.com/carlsonchik/judging-with-typesafe",
+  "website": null,
+  "how_used_jev": "The skill sends noul, choice, and score questions to Jev and gets numbers and distributions back. A script also scans documents paragraph by paragraph.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/carlsonchik/judging-with-typesafe"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "goprogabriel-viralocity",
+  "project": "Viralocity",
+  "description": "Predicts how likely a LinkedIn post is to go viral. You paste in the post and get a prediction.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev makes the viral prediction for each pasted post. The author calls the tool early and experimental.",
+  "source_tweet": "https://x.com/Goprogabriel/status/2101063750560227832",
+  "author": "@Goprogabriel",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

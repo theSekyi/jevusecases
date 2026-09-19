@@ -1,0 +1,22 @@
+{
+  "id": "thiago-ss-jev-review",
+  "project": "Jev Review",
+  "description": "A pull request review bot that sends uncertain or risky reviews to trusted owners. It never edits or merges code.",
+  "github": "https://github.com/thiago-ss/jev-review",
+  "website": null,
+  "how_used_jev": "Asks Jev fixed typed questions about PR metadata and patches. Code then applies approval gates to the answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thiago-ss/jev-review"
+  }
+}

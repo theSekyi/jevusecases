@@ -1,0 +1,22 @@
+{
+  "id": "aidil2105-jev-browser-pilot",
+  "project": "jev-browser-pilot",
+  "description": "Adds a bounded decision layer to browser and desktop automation. Code observes the surface, builds candidate actions, executes them, and checks the result.",
+  "github": "https://github.com/aidil2105/jev-browser-pilot",
+  "website": null,
+  "how_used_jev": "Jev picks the next candidate from a list of ids that the code built. The code routes on the confidence that Jev returns.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aidil2105/jev-browser-pilot"
+  }
+}

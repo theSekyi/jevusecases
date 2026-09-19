@@ -1,0 +1,19 @@
+{
+  "id": "marcelpociot-hide-posts-on-x",
+  "project": "Hide posts on X",
+  "description": "Adds a browser extension that hides posts on X from rules written in natural language.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev judges each post against the rule. The extension collapses the posts that match.",
+  "source_tweet": "https://x.com/marcelpociot/status/2100520134481735729",
+  "author": "@marcelpociot",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

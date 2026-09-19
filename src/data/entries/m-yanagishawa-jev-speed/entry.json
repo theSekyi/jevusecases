@@ -1,0 +1,22 @@
+{
+  "id": "m-yanagishawa-jev-speed",
+  "project": "Jev Speed Arena",
+  "description": "Shows Jev playing the card game Speed in real time, with voiced characters. You can watch Jev vs Jev or play against it.",
+  "github": "https://github.com/M-Yanagishawa/jev-speed",
+  "website": null,
+  "how_used_jev": "Jev picks each card play from the candidate moves. Logs show the number of candidates, probabilities, latency, and cost.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/M-Yanagishawa/jev-speed"
+  }
+}

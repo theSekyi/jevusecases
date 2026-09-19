@@ -1,0 +1,22 @@
+{
+  "id": "ashutoshvjti-progressgate",
+  "project": "ProgressGate",
+  "description": "Detects when an AI agent keeps acting on the same failed assumption without progress.",
+  "github": "https://github.com/ashutoshvjti/progressgate",
+  "website": null,
+  "how_used_jev": "Jev reads the recent agent trajectory and judges if the steps still make progress. Deterministic code decides what to do next.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ashutoshvjti/progressgate"
+  }
+}

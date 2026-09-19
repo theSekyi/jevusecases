@@ -1,0 +1,22 @@
+{
+  "id": "erhanmeydan-jev2048",
+  "project": "jev2048",
+  "description": "Plays 2048 on a real online 2048 site through a Playwright browser. The terminal shows the probability of each direction.",
+  "github": "https://github.com/erhanmeydan/jev2048",
+  "website": null,
+  "how_used_jev": "Each turn, the agent reads the board and asks Jev to pick one of four directions. It presses the chosen key, with one API call per move.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/erhanmeydan/jev2048"
+  }
+}

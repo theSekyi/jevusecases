@@ -1,0 +1,22 @@
+{
+  "id": "dsfaccini-jevantic",
+  "project": "Jevantic",
+  "description": "Gives Python programs typed, probabilistic decisions from Jev. It is an experimental alpha with optional Pydantic AI support.",
+  "github": "https://github.com/dsfaccini/jevantic",
+  "website": null,
+  "how_used_jev": "Programs define a question and send application state. Jev returns a probability, a typed label, an original local object, or a scored rubric.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dsfaccini/jevantic"
+  }
+}

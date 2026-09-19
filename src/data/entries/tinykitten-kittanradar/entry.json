@@ -1,0 +1,22 @@
+{
+  "id": "tinykitten-kittanradar",
+  "project": "kittanradar",
+  "description": "Shows a like score out of 100 for the current web page in Chrome and Safari. It can score only selected text.",
+  "github": "https://github.com/TinyKitten/KittanRadar",
+  "website": null,
+  "how_used_jev": "Jev gets a few-shot profile in the state and a five-level Score rubric. The extension converts the 0 to 4 score to 0 to 100.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TinyKitten/KittanRadar"
+  }
+}

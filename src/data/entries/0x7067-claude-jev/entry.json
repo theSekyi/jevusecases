@@ -1,0 +1,22 @@
+{
+  "id": "0x7067-claude-jev",
+  "project": "claude-jev",
+  "description": "Adds a Claude Code plugin that classifies each prompt and adds a one-line routing hint to the context.",
+  "github": "https://github.com/0x7067/claude-jev",
+  "website": null,
+  "how_used_jev": "A hook asks Jev about intent, scope, and tool needs in one call. Below 0.75 confidence, the plugin gives no hint.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0x7067/claude-jev"
+  }
+}

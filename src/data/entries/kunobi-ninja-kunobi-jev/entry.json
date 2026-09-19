@@ -1,0 +1,22 @@
+{
+  "id": "kunobi-ninja-kunobi-jev",
+  "project": "kunobi-jev",
+  "description": "An unofficial Rust client for the TypeSafe API.",
+  "github": "https://github.com/kunobi-ninja/kunobi-jev",
+  "website": null,
+  "how_used_jev": "Code sends state and typed noul, choice, or score questions to Jev. The client returns each answer with its probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kunobi-ninja/kunobi-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "altqx-honya",
+  "project": "honya",
+  "description": "A terminal app that translates Japanese light novels into Thai or English. It takes EPUB, PDF, DOCX, HTML, or text files.",
+  "github": "https://github.com/altqx/honya",
+  "website": null,
+  "how_used_jev": "An optional review gate asks Jev to screen each translated chunk. In gate mode a confident pass skips the LLM Reviewer, and in standalone mode Jev is the Reviewer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/altqx/honya"
+  }
+}

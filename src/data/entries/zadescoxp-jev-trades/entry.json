@@ -1,0 +1,22 @@
+{
+  "id": "zadescoxp-jev-trades",
+  "project": "Jev Trades",
+  "description": "A Next.js dashboard for live crypto market data and paper trading on a simulated portfolio. No broker or live order API is connected.",
+  "github": "https://github.com/zadescoxp/Jev-Trades",
+  "website": "https://jevtrades.zadescoxp.com",
+  "how_used_jev": "The system sends enabled trading states, built from one-minute candles and technical indicators, to Jev. It applies the returned decisions to the simulated portfolio.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zadescoxp/Jev-Trades"
+  }
+}

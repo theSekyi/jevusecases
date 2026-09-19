@@ -1,0 +1,22 @@
+{
+  "id": "jcressler-fast-jev-compaction-codex",
+  "project": "Fast Jev Compaction for Codex",
+  "description": "An experimental tool that saves earlier tool evidence around native Codex compaction so you can find it again.",
+  "github": "https://github.com/jcressler/fast-jev-compaction-codex",
+  "website": null,
+  "how_used_jev": "Jev selects the evidence that matters for the current task. The author says added value is not yet established.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jcressler/fast-jev-compaction-codex"
+  }
+}

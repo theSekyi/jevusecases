@@ -1,0 +1,22 @@
+{
+  "id": "ermagent-star-jev-model-router",
+  "project": "jev-model-router",
+  "description": "Routes Opencode tasks to the cheapest capable model. Free Zen models come first, and paid models are used only on escalation.",
+  "github": "https://github.com/ermagent-star/jev-model-router",
+  "website": null,
+  "how_used_jev": "Jev reads the project overview and the task and classifies the task. A policy file maps that class to an Opencode model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ermagent-star/jev-model-router"
+  }
+}

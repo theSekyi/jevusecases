@@ -1,0 +1,22 @@
+{
+  "id": "chrisxchen-typesafe-cookie-consent",
+  "project": "TypeSafe Cookie Consent",
+  "description": "Reads cookie banners and popups in Chrome and clicks the button that declines. It uses no filter lists or vendor rules.",
+  "github": "https://github.com/chrisXchen/typesafe-cookie-consent",
+  "website": null,
+  "how_used_jev": "Jev reads the overlay text and button labels and answers four typed questions. Plain code then clicks the chosen button.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/chrisXchen/typesafe-cookie-consent"
+  }
+}

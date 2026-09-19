@@ -1,0 +1,22 @@
+{
+  "id": "cephalization-phoenix-jev-example",
+  "project": "phoenix-jev-example",
+  "description": "A minimal TypeScript example that runs Jev evaluations through Vercel's AI SDK and traces each one into Arize Phoenix.",
+  "github": "https://github.com/cephalization/phoenix-jev-example",
+  "website": null,
+  "how_used_jev": "Jev answers typed choice, score, and boolean questions against shared state. Phoenix records the input, rubric, probabilities, latency, and token usage.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cephalization/phoenix-jev-example"
+  }
+}

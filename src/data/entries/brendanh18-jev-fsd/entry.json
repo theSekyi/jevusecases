@@ -1,0 +1,22 @@
+{
+  "id": "brendanh18-jev-fsd",
+  "project": "Jev FSD",
+  "description": "A driving simulator on real city streets from OpenStreetMap. You click a destination on the minimap and watch the car drive there.",
+  "github": "https://github.com/BrendanH18/jev_fsd",
+  "website": null,
+  "how_used_jev": "Jev drives the car through traffic, stop signs, and lights. A panel shows each question Jev got and how sure it was.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/BrendanH18/jev_fsd"
+  }
+}

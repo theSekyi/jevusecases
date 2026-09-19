@@ -1,0 +1,22 @@
+{
+  "id": "jonesmelton-verdict",
+  "project": "verdict",
+  "description": "Gives OCaml 5.2 developers a typed client for the Jev evaluation API. It handles bounded requests, TLS, and retries.",
+  "github": "https://github.com/jonesmelton/verdict",
+  "website": null,
+  "how_used_jev": "The client sends typed questions to Jev. Each question handle carries its answer type, so code cannot read an answer as the wrong kind.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jonesmelton/verdict"
+  }
+}

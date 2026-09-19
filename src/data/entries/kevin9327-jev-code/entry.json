@@ -1,0 +1,22 @@
+{
+  "id": "kevin9327-jev-code",
+  "project": "JevCode",
+  "description": "Gates merges by checking a unified diff and deciding to merge, comment, or block in Python.",
+  "github": "https://github.com/kevin9327/jev-code",
+  "website": null,
+  "how_used_jev": "One Jev call picks a review verdict, rates risk on 4 levels, and gives the probability that tests are missing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kevin9327/jev-code"
+  }
+}

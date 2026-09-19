@@ -1,0 +1,22 @@
+{
+  "id": "rubichandrap-hermes-jev-guard",
+  "project": "hermes-jev-guard",
+  "description": "Adds guard steps to each turn of a Hermes Agent. It gates risky tools, plans, and task completion.",
+  "github": "https://github.com/rubichandrap/hermes-jev-guard",
+  "website": null,
+  "how_used_jev": "Jev plans each turn: route, complexity, execution lane, and model tier. It also scores each tool call as destructive or not before it runs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rubichandrap/hermes-jev-guard"
+  }
+}

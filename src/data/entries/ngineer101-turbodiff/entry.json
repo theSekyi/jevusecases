@@ -1,0 +1,22 @@
+{
+  "id": "ngineer101-turbodiff",
+  "project": "Turbodiff",
+  "description": "Adds a Jev complexity check to Turbodiff, an open-source software factory that plans, codes, opens, and reviews pull requests.",
+  "github": "https://github.com/Ngineer101/turbodiff",
+  "website": "https://turbodiff.dev",
+  "how_used_jev": "A Jev task-complexity classifier sets the planning tier for each task. It is off when no TypeSafe API key is set.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Ngineer101/turbodiff"
+  }
+}

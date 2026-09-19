@@ -1,0 +1,22 @@
+{
+  "id": "marcelomar21-demo-tetris-jev",
+  "project": "Tetris × Jev",
+  "description": "Shows a Tetris arcade demo in Canvas 2D. The screen shows the JSON decision, confidence, latency, and estimated game cost.",
+  "github": "https://github.com/marcelomar21/demo-tetris-jev",
+  "website": null,
+  "how_used_jev": "Jev picks the rotation and position of each piece. The game turns this structured decision into real moves.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/marcelomar21/demo-tetris-jev"
+  }
+}

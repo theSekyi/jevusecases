@@ -1,0 +1,22 @@
+{
+  "id": "mattneel-typesafe",
+  "project": "typesafe (Elixir)",
+  "description": "Gives Elixir applications a community client for the TypeSafe API and its Jev model.",
+  "github": "https://github.com/mattneel/typesafe",
+  "website": null,
+  "how_used_jev": "Sends typed Choice, Noul, and Score questions about application state in one request. It returns structs with probabilities, and your code applies the policy.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mattneel/typesafe"
+  }
+}

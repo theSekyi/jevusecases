@@ -1,0 +1,22 @@
+{
+  "id": "kesavanking-jev-browser",
+  "project": "Jev Browser",
+  "description": "A local browser automation UI that turns a URL and a plain-language goal into bounded browser actions.",
+  "github": "https://github.com/KesavanKing/jev-browser",
+  "website": null,
+  "how_used_jev": "Jev chooses the next operation and target from observed options, such as click, type, or done. A separate text model writes field values only.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KesavanKing/jev-browser"
+  }
+}

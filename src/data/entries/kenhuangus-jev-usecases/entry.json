@@ -1,0 +1,22 @@
+{
+  "id": "kenhuangus-jev-usecases",
+  "project": "jev-usecases",
+  "description": "Implements most of the decisions TypeSafe lists for Jev as use-case harnesses with confidence-gated logic.",
+  "github": "https://github.com/kenhuangus/jev-usecases",
+  "website": null,
+  "how_used_jev": "Each harness sends state and typed Choice, Score, and Noul questions to Jev. Code thresholds the returned probabilities to act.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kenhuangus/jev-usecases"
+  }
+}

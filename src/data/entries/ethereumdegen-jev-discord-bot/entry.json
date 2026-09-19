@@ -1,0 +1,22 @@
+{
+  "id": "ethereumdegen-jev-discord-bot",
+  "project": "Degen Guard",
+  "description": "A Discord bot that acts on spam, scams, and off-topic self-promotion. Server managers can read and undo actions in an audit log.",
+  "github": "https://github.com/ethereumdegen/jev-discord-bot",
+  "website": null,
+  "how_used_jev": "Jev reads each message. Confirmed spam gets the next step on the server's ladder, by default warn, kick, then ban.",
+  "source_tweet": "https://x.com/ethereumdegen/status/2101068441478422703",
+  "author": "@ethereumdegen",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ethereumdegen/jev-discord-bot"
+  }
+}

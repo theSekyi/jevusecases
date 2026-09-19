@@ -1,0 +1,22 @@
+{
+  "id": "maker-kk-todo-jev",
+  "project": "todo-jev",
+  "description": "Classifies an agent request and recommends a handling path: a local rule, a specialist skill, or a foundation model. It is a task-routing experiment.",
+  "github": "https://github.com/maker-KK/todo-jev",
+  "website": null,
+  "how_used_jev": "Jev gets structured skill profiles that say when each skill applies and when to exclude it. It helps pick the route and the skill, with local environment checks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maker-KK/todo-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mizchi-jev-gomoku",
+  "project": "jev-gomoku",
+  "description": "Gives a MoonBit client and CLI for Jev, plus a gomoku game where Jev plays against itself.",
+  "github": "https://github.com/mizchi/jev-gomoku",
+  "website": null,
+  "how_used_jev": "For each move, Jev gets the board and the candidate moves and picks one. A tool turns the game log into a GIF that plays in real time.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mizchi/jev-gomoku"
+  }
+}

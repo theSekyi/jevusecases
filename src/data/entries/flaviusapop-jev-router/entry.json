@@ -1,0 +1,22 @@
+{
+  "id": "flaviusapop-jev-router",
+  "project": "jev-router",
+  "description": "Routes each turn in Claude Code, Codex, the Grok CLI, and opencode to a model and reasoning depth. The real CLI still runs.",
+  "github": "https://github.com/flaviusapop/jev-router",
+  "website": null,
+  "how_used_jev": "Jev picks the cheapest model and reasoning depth that can finish each turn. The router rewrites only the model field.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/flaviusapop/jev-router"
+  }
+}

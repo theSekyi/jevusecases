@@ -1,0 +1,22 @@
+{
+  "id": "arkadyburyakov-jev-preview",
+  "project": "jev-preview",
+  "description": "Gives a full-screen terminal app to write System One requests, send them, and read answers as probability bars.",
+  "github": "https://github.com/ArkadyBuryakov/jev-preview",
+  "website": null,
+  "how_used_jev": "You write a context and build questions in a form. The app sends them to Jev and saves each request as JSON.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ArkadyBuryakov/jev-preview"
+  }
+}

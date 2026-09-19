@@ -1,0 +1,22 @@
+{
+  "id": "tky-27-jevslop",
+  "project": "JevSlop",
+  "description": "Rates the writing quality of a public note.com article and shows an AI Slop Score. It is not an authorship detector.",
+  "github": "https://github.com/TKY-27/JevSlop",
+  "website": "https://jevslop.pages.dev/",
+  "how_used_jev": "One request asks Jev eight detail Score questions plus an overall score and a Slop or Not Slop choice. The site shows these results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TKY-27/JevSlop"
+  }
+}

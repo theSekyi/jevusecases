@@ -1,0 +1,22 @@
+{
+  "id": "adarshmishra07-jcm-router",
+  "project": "jcm-router",
+  "description": "A local proxy between Claude Code and the Anthropic API that picks the Claude model and effort level per message.",
+  "github": "https://github.com/adarshmishra07/jcm-router",
+  "website": null,
+  "how_used_jev": "Jev classifies each message and picks Haiku, Sonnet, Opus, or Fable plus an effort level. The author found that routing subagents saves money but routing the main chat loses it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adarshmishra07/jcm-router"
+  }
+}

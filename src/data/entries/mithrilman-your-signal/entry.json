@@ -1,0 +1,22 @@
+{
+  "id": "mithrilman-your-signal",
+  "project": "Your Signal",
+  "description": "An open-source Chrome extension that applies personal, reversible filters to the X timeline. You bring your own key.",
+  "github": "https://github.com/mithrilman/your-signal",
+  "website": null,
+  "how_used_jev": "Jev scores visible posts for relevance, substance, practical value, promotion, and engagement bait. The extension decides the display on your device.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mithrilman/your-signal"
+  }
+}

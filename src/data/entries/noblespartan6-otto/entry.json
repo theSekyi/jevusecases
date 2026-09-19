@@ -1,0 +1,22 @@
+{
+  "id": "noblespartan6-otto",
+  "project": "Otto",
+  "description": "An early alpha desktop computer-use agent for macOS and Windows. It works through native accessibility controls and local OCR.",
+  "github": "https://github.com/NobleSpartan6/otto",
+  "website": null,
+  "how_used_jev": "Jev chooses the concrete actions between planning calls. An optional GPT-6 Astra planner gives the plan and any text to type.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NobleSpartan6/otto"
+  }
+}

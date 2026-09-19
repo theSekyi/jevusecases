@@ -1,0 +1,22 @@
+{
+  "id": "axiomarchitecture-axiom-agent-runtime",
+  "project": "Axiom Agent Runtime",
+  "description": "A reference prototype for agent commerce on Kaspa. A policy layer authorizes each agent decision before execution.",
+  "github": "https://github.com/axiomarchitecture/axiom-agent-runtime",
+  "website": null,
+  "how_used_jev": "Jev interprets the intent and returns structured variables, such as action, asset, and amount. Axiom approves or blocks the result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/axiomarchitecture/axiom-agent-runtime"
+  }
+}

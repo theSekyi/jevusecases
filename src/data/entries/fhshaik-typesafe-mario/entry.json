@@ -1,0 +1,22 @@
+{
+  "id": "fhshaik-typesafe-mario",
+  "project": "TypeSafe Mario",
+  "description": "Plays the original Super Mario Bros. from structured emulator state, with no screenshots given to the model.",
+  "github": "https://github.com/fhshaik/typesafe-mario",
+  "website": null,
+  "how_used_jev": "Jev receives compact JSON of the game state and picks one legal controller action as a Choice every few frames.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fhshaik/typesafe-mario"
+  }
+}

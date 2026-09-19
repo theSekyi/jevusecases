@@ -1,0 +1,22 @@
+{
+  "id": "phuthuycoding-jev-audit",
+  "project": "guardrail",
+  "description": "Audits code changes before a commit and blocks secrets, vulnerabilities, and low-quality code.",
+  "github": "https://github.com/phuthuycoding/jev-audit",
+  "website": null,
+  "how_used_jev": "In one call, Jev checks the diff for secret leaks and vulnerabilities, scores quality, and classifies scope. The author reports 100% strict accuracy on a 79-case corpus.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/phuthuycoding/jev-audit"
+  }
+}

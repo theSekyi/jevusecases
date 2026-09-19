@@ -1,0 +1,22 @@
+{
+  "id": "agentjido-req-llm",
+  "project": "ReqLLM",
+  "description": "Adds a TypeSafe provider to an Elixir library that gives one interface to many LLM APIs.",
+  "github": "https://github.com/agentjido/req_llm",
+  "website": "https://jido.run/ecosystem/req_llm",
+  "how_used_jev": "ReqLLM.evaluate sends a text or JSON state with named questions to Jev. It returns a choice or probability for each question.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/agentjido/req_llm"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jammaru-jev-lab",
+  "project": "Jev Lab",
+  "description": "Shows Jev use cases: a town of 100 NPCs and a shogi game where Jev plays Gote.",
+  "github": "https://github.com/jammaru/jev-lab",
+  "website": null,
+  "how_used_jev": "Jev answers only the next choice, such as what each NPC does next. The game engines keep the rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jammaru/jev-lab"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "lab-dados-jev-anotacao-sentencas",
+  "project": "jev-anotacao-sentencas",
+  "description": "Compares Jev, Gemini 3.8 Flash, and GPT-5.6 Luna on annotating 12 variables in 120 civil court rulings from TJSP.",
+  "github": "https://github.com/lab-dados/jev-anotacao-sentencas",
+  "website": "https://lab-dados.github.io/jev-anotacao-sentencas/",
+  "how_used_jev": "Jev answers typed questions to annotate each ruling. The authors report 96.6% accuracy for Jev and 98.8% for Gemini 3.8 Flash.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lab-dados/jev-anotacao-sentencas"
+  }
+}

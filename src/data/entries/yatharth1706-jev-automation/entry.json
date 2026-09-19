@@ -1,0 +1,22 @@
+{
+  "id": "yatharth1706-jev-automation",
+  "project": "Jev Voice Browser",
+  "description": "Lets you control a browser by voice. A Playwright Chromium does the action and streams back to the web app.",
+  "github": "https://github.com/yatharth1706/jev-automation",
+  "website": null,
+  "how_used_jev": "Jev gets the transcript and a snapshot of page elements in one call and decides what you meant. Confidence gates then confirm or ask to clarify.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yatharth1706/jev-automation"
+  }
+}

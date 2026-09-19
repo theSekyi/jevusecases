@@ -1,0 +1,22 @@
+{
+  "id": "clduab11-the-array",
+  "project": "the-array",
+  "description": "A reference build of a self-hosted LLM gateway with per-key budgets, cost metering, and local-model fallback.",
+  "github": "https://github.com/clduab11/the-array",
+  "website": null,
+  "how_used_jev": "Jev reads the request and the reply and returns answered, refused, or non-answer. A confident decline sends the request to the next model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/clduab11/the-array"
+  }
+}

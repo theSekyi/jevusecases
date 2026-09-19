@@ -1,0 +1,22 @@
+{
+  "id": "butochnikov-typesafe-sdk-php",
+  "project": "TypeSafe AI SDK for PHP",
+  "description": "Gives PHP applications an unofficial client for the TypeSafe API.",
+  "github": "https://github.com/Butochnikov/typesafe-sdk-php",
+  "website": null,
+  "how_used_jev": "Sends Noul, Choice, and Score questions to Jev and returns typed answers with probabilities, in sync or async calls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Butochnikov/typesafe-sdk-php"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "mahynotch-newsscore",
+  "project": "newsscore",
+  "description": "Scores the week's news for each stock ticker and returns one number per symbol. It is an async Python library and CLI.",
+  "github": "https://github.com/mahynotch/newsscore",
+  "website": null,
+  "how_used_jev": "Jev is the default scorer and scores each fetched article. The library then combines the scores into one number for each symbol.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mahynotch/newsscore"
+  }
+}

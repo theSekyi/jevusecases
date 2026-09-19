@@ -1,0 +1,22 @@
+{
+  "id": "nicolasmontone-jev-tool-permissions",
+  "project": "jev-tool-permissions",
+  "description": "Adds a tool approval gate and tool-list pruning to agents built on the Vercel AI SDK.",
+  "github": "https://github.com/nicolasmontone/jev-tool-permissions",
+  "website": null,
+  "how_used_jev": "Before a tool call, Jev decides auto-approve, ask-human, or block. Before a turn, it drops tools that do not fit the task, and errors fall back to ask-human.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nicolasmontone/jev-tool-permissions"
+  }
+}

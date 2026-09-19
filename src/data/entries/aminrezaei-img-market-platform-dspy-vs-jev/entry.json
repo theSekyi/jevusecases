@@ -1,0 +1,22 @@
+{
+  "id": "aminrezaei-img-market-platform-dspy-vs-jev",
+  "project": "Market-Platform-DSPy-vs-Jev",
+  "description": "Tests reliability of financial agent workflows with an evaluation harness and release gates. It uses synthetic and public benchmark data.",
+  "github": "https://github.com/aminrezaei-img/Market-Platform-DSPy-vs-Jev",
+  "website": "https://aminrezaei-img.github.io/Market-Platform-DSPy-vs-Jev/",
+  "how_used_jev": "A Streamlit demo has Jev tool-use tabs next to DSPy tabs. This compares DSPy programs with typed tool-use through Jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aminrezaei-img/Market-Platform-DSPy-vs-Jev"
+  }
+}

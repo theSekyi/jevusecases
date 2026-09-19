@@ -1,0 +1,19 @@
+{
+  "id": "hamiltonulmer-duckdb-jev-classifier",
+  "project": "DuckDB Jev classifier",
+  "description": "Adds a DuckDB extension that classifies rows in CSV, Parquet, or DuckDB tables.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev classifies each row of the table.",
+  "source_tweet": "https://x.com/hamiltonulmer/status/2100370557405667768",
+  "author": "@hamiltonulmer",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

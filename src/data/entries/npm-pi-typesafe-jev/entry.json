@@ -1,0 +1,23 @@
+{
+  "id": "npm-pi-typesafe-jev",
+  "project": "pi-typesafe-jev (npm)",
+  "description": "Gives pi typed tools for Jev judgments, including questions pinned in files.",
+  "github": null,
+  "website": "https://www.npmjs.com/package/pi-typesafe-jev",
+  "how_used_jev": "The agent asks Jev typed System One questions through the tools. The extension keeps a private API key.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/pi-typesafe-jev",
+    "install": "npm install pi-typesafe-jev"
+  }
+}

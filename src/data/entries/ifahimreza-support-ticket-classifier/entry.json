@@ -1,0 +1,19 @@
+{
+  "id": "ifahimreza-support-ticket-classifier",
+  "project": "Support ticket classifier",
+  "description": "Shows how to label support tickets with Jev.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev labels the category, the urgency, and if a human or automation must handle each ticket.",
+  "source_tweet": "https://x.com/ifahimreza/status/2100616988746023102",
+  "author": "@ifahimreza",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

@@ -1,0 +1,22 @@
+{
+  "id": "eriestra-almond-fastloop",
+  "project": "Almond-fastloop",
+  "description": "Browser computer-use loop from Almond, plus the Browser Use Olympics benchmark it is measured on.",
+  "github": "https://github.com/eriestra/almond-fastloop",
+  "website": null,
+  "how_used_jev": "The loop reads Chrome DevTools state, and Jev picks from a bounded choice for an executor. The author reports a planner-free run of 5/5 events in 12.6 s.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/eriestra/almond-fastloop"
+  }
+}

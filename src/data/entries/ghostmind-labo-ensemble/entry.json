@@ -1,0 +1,22 @@
+{
+  "id": "ghostmind-labo-ensemble",
+  "project": "ensemble",
+  "description": "A library that asks one calibrated question per decision and routes the request to a function you wrote. It records each decision.",
+  "github": "https://github.com/ghostmind-labo/ensemble",
+  "website": null,
+  "how_used_jev": "Jev answers each judgment call as yes/no, one of N, or a rubric position. Generative models run only in nodes that write, draw, or look.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ghostmind-labo/ensemble"
+  }
+}

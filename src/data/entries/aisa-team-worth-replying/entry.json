@@ -1,0 +1,22 @@
+{
+  "id": "aisa-team-worth-replying",
+  "project": "Worth Replying",
+  "description": "Finds conversations on X that are worth an answer for your site. You give a domain, and it builds a profile and searches X.",
+  "github": "https://github.com/aisa-team/worth-replying",
+  "website": "https://worth-replying.aisa.one/",
+  "how_used_jev": "Jev answers five typed questions per tweet in one request. The answers route each tweet to the queue, to a human, or to the archive.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/aisa-team/worth-replying"
+  }
+}

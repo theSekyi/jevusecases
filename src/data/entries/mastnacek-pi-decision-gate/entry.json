@@ -1,0 +1,22 @@
+{
+  "id": "mastnacek-pi-decision-gate",
+  "project": "pi-decision-gate",
+  "description": "Adds human approval for each tool action in the Pi coding agent. It shows which model proposed the action and tracks spend in Czech crowns.",
+  "github": "https://github.com/mastnacek/pi-decision-gate",
+  "website": null,
+  "how_used_jev": "Before a tool runs, the plugin asks Jev through OpenRouter to assess its risk. The user then approves, edits, switches model, or runs it isolated.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mastnacek/pi-decision-gate"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "reddit-com-jev-plays-minecraft",
+  "project": "jev plays minecraft",
+  "description": "Work-in-progress demo where Jev plays Minecraft.",
+  "github": null,
+  "website": "https://reddit.com/r/accelerate/comments/1whk9oy/new_typesafe_ai_jev_model_playing_minecraft_wip/",
+  "how_used_jev": "Jev drives the player, for example to flee from zombies at night.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

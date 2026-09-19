@@ -1,0 +1,22 @@
+{
+  "id": "imprfct-code-jevdokku",
+  "project": "jevdokku",
+  "description": "Shows Jev solving Sudoku puzzles from 2x2 to 64x64 in the browser. You can inspect choices, backtracking, and recorded runs.",
+  "github": "https://github.com/imprfct-code/jevdokku",
+  "website": "https://jevdokku.vercel.app",
+  "how_used_jev": "Each batch asks Jev for up to 128 cell choices, with probabilities for every possible value. The app shows accepted moves, rejected choices, and backtracking.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/imprfct-code/jevdokku"
+  }
+}

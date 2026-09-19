@@ -1,0 +1,22 @@
+{
+  "id": "miounet11-jevcode",
+  "project": "JevCode",
+  "description": "Collects Jev practices and documentation on jevcode.ai in 8 languages. It covers a quickstart, the question primitives, and architecture patterns.",
+  "github": "https://github.com/miounet11/jevcode",
+  "website": "https://www.jevcode.ai",
+  "how_used_jev": "Explains the Choice, Score, and Noul primitives, with typical uses such as intent routing, quality scoring, and agent guardrails.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/miounet11/jevcode"
+  }
+}

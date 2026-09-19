@@ -1,0 +1,22 @@
+{
+  "id": "season179-pi-ecosystem",
+  "project": "pi-ecosystem",
+  "description": "Adds a pi-compaction package to a workspace of packages for Pi.",
+  "github": "https://github.com/season179/pi-ecosystem",
+  "website": null,
+  "how_used_jev": "Jev scores stale tool results so they can be pruned. Pi's summary waits when pruning is enough.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/season179/pi-ecosystem"
+  }
+}

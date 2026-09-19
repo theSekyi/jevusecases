@@ -1,0 +1,22 @@
+{
+  "id": "xpressabhi-job-search-skills",
+  "project": "job-search-skills",
+  "description": "Two agent skills that find job postings that match your profile and fill in ATS applications in your own Chrome.",
+  "github": "https://github.com/xpressabhi/job-search-skills",
+  "website": "https://xpressabhi.github.io/job-search-skills/",
+  "how_used_jev": "Jev makes each judgment call with a confidence. Examples are posting liveness, eligibility, fit, and duplicates.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/xpressabhi/job-search-skills"
+  }
+}

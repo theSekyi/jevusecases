@@ -1,0 +1,22 @@
+{
+  "id": "artifex-org-hive-pi",
+  "project": "hive-pi",
+  "description": "A public harness for Pi with extensions, subagent roles, prompt templates, and themes that ships with Hive.",
+  "github": "https://github.com/Artifex-org/hive-pi",
+  "website": null,
+  "how_used_jev": "Its config uses the TypeSafe API and the jev-latest model by default.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Artifex-org/hive-pi"
+  }
+}

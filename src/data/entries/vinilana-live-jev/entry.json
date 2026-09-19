@@ -1,0 +1,22 @@
+{
+  "id": "vinilana-live-jev",
+  "project": "Jev Self-Driving Sim",
+  "description": "Runs a 2D top-down self-driving car simulation in the browser.",
+  "github": "https://github.com/vinilana/live-jev",
+  "website": null,
+  "how_used_jev": "About every 200 ms, the car sends its sensor state to Jev with four typed questions. Jev decides lane action, speed action, hazard level, and pedestrian yield.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vinilana/live-jev"
+  }
+}

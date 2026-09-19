@@ -1,0 +1,22 @@
+{
+  "id": "engodev-pi-switchyard",
+  "project": "Pi Switchyard",
+  "description": "Routes each request in a long Pi session to a model tier and moves side work into separate temp threads.",
+  "github": "https://github.com/EngoDev/pi-switchyard",
+  "website": null,
+  "how_used_jev": "Before each request, Jev decides which thread it belongs to and which tier it needs: cheap, handy, smart, or genius.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/EngoDev/pi-switchyard"
+  }
+}

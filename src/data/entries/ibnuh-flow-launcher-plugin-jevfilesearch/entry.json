@@ -1,0 +1,22 @@
+{
+  "id": "ibnuh-flow-launcher-plugin-jevfilesearch",
+  "project": "Jev File Search for Flow Launcher",
+  "description": "Searches files and apps in Flow Launcher on Windows from natural phrases like 'the pdf I just downloaded'. It ports the jev-launcher experiment.",
+  "github": "https://github.com/ibnuh/Flow.Launcher.Plugin.JevFileSearch",
+  "website": null,
+  "how_used_jev": "One Jev request per query asks for the intended target, the action kind, and readiness. The plugin mixes these probabilities with a fuzzy score to rank results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ibnuh/Flow.Launcher.Plugin.JevFileSearch"
+  }
+}

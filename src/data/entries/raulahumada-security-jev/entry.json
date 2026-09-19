@@ -1,0 +1,22 @@
+{
+  "id": "raulahumada-security-jev",
+  "project": "security-jev",
+  "description": "Runs a security gate on pull requests with Gitleaks, npm audit, and a typed review. It can block the merge to main.",
+  "github": "https://github.com/raulahumada/security-jev",
+  "website": null,
+  "how_used_jev": "Jev reviews the pull request for security and quality issues with noul, choice, and score questions. The gate uses the result to pass or fail.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/raulahumada/security-jev"
+  }
+}

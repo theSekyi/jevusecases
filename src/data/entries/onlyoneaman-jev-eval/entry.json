@@ -1,0 +1,22 @@
+{
+  "id": "onlyoneaman-jev-eval",
+  "project": "jev-eval",
+  "description": "Compares Jev with gpt-5.4-mini and gpt-5.6-luna on four public classification sets. It includes cases, answers, scoring, and charts.",
+  "github": "https://github.com/onlyoneaman/jev-eval",
+  "website": null,
+  "how_used_jev": "The author asks Jev classification questions with fixed answers and scores the results against the other models.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/onlyoneaman/jev-eval"
+  }
+}

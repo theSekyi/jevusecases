@@ -1,0 +1,22 @@
+{
+  "id": "msalvalaggio-jev-reflex",
+  "project": "jev-reflex",
+  "description": "Gives Claude an MCP server that hands whole browser tasks to Jev. Claude plans the task and checks the result.",
+  "github": "https://github.com/MSalvalaggio/jev-reflex",
+  "website": null,
+  "how_used_jev": "In a loop, Jev reads the page and picks each click, type, or select action. The server returns the steps with their probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MSalvalaggio/jev-reflex"
+  }
+}

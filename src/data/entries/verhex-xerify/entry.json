@@ -1,0 +1,22 @@
+{
+  "id": "verhex-xerify",
+  "project": "Xerify",
+  "description": "A verification layer that checks claims against bounded evidence through a different provider, as a CLI, library, and MCP server.",
+  "github": "https://github.com/Verhex/xerify",
+  "website": "https://verhex.github.io/xerify/",
+  "how_used_jev": "A Jev adapter asks a choice question: confirmed, refuted, or unclear. Below the probability and confidence thresholds, Xerify returns unclear.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Verhex/xerify"
+  }
+}

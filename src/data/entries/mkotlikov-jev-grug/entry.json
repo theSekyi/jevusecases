@@ -1,0 +1,22 @@
+{
+  "id": "mkotlikov-jev-grug",
+  "project": "grug.chat",
+  "description": "Makes Jev hold a cave-style chat, with a live demo. Without an API key it falls back to a deterministic mock.",
+  "github": "https://github.com/mkotlikov/jev-grug",
+  "website": null,
+  "how_used_jev": "Jev picks each next word from a small vocabulary with the choice primitive, one word at a time.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mkotlikov/jev-grug"
+  }
+}

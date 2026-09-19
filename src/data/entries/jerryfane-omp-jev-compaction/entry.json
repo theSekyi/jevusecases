@@ -1,0 +1,22 @@
+{
+  "id": "jerryfane-omp-jev-compaction",
+  "project": "omp-jev-compaction",
+  "description": "Reduces the context of omp without rewriting it, over TypeSafe or OpenRouter.",
+  "github": "https://github.com/jerryfane/omp-jev-compaction",
+  "website": null,
+  "how_used_jev": "Jev scores every tool call and result. The ones that are no longer needed are cut to a short head and a note.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jerryfane/omp-jev-compaction"
+  }
+}

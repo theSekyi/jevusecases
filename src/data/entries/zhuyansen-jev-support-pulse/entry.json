@@ -1,0 +1,22 @@
+{
+  "id": "zhuyansen-jev-support-pulse",
+  "project": "jev-support-pulse",
+  "description": "Tests if a Jev-labeled stream of support tweets spikes before a brand admits an outage. It uses 170,400 tweets to seven brands.",
+  "github": "https://github.com/zhuyansen/jev-support-pulse",
+  "website": null,
+  "how_used_jev": "Jev labels each tweet with two typed questions. The author reports 17 vs 10 incidents caught at equal false alarms, against tweet volume.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zhuyansen/jev-support-pulse"
+  }
+}

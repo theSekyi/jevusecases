@@ -1,0 +1,22 @@
+{
+  "id": "nekuda-ai-windtunnel",
+  "project": "WindTunnel",
+  "description": "Benchmarks WebMCP against other interfaces that browser agents use, and measures success rate, time, tokens, and cost.",
+  "github": "https://github.com/nekuda-ai/WindTunnel",
+  "website": null,
+  "how_used_jev": "One tested configuration pairs Jev with Mercury 2.5. The authors report 49/49 tasks solved with WebMCP and 25/49 with ultrafast DOM controls.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nekuda-ai/WindTunnel"
+  }
+}

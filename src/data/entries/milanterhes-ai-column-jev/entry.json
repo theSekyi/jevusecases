@@ -1,0 +1,22 @@
+{
+  "id": "milanterhes-ai-column-jev",
+  "project": "AI Column",
+  "description": "Adds AI columns that need human judgment to an uploaded CSV. You review unsure rows and export the result.",
+  "github": "https://github.com/milanterhes/ai-column-jev",
+  "website": null,
+  "how_used_jev": "Jev judges each row and returns a category, a score, or a yes/no with a confidence. It can also return unable-to-determine.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/milanterhes/ai-column-jev"
+  }
+}

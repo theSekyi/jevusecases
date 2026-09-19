@@ -1,0 +1,22 @@
+{
+  "id": "ratacat-ratacats-skills",
+  "project": "Ratacat's Skills",
+  "description": "Shares agent skills for coding agents, including a jev skill.",
+  "github": "https://github.com/ratacat/ratacats-skills",
+  "website": null,
+  "how_used_jev": "The jev skill helps an agent build features on Jev's typed Choice, Score, and Noul judgments. Code branches on those judgments.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ratacat/ratacats-skills"
+  }
+}

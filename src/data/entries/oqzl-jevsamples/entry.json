@@ -1,0 +1,22 @@
+{
+  "id": "oqzl-jevsamples",
+  "project": "JevSamples",
+  "description": "Collects experiments with Jev: a backtest on the Kaggle JRA historical dataset and Jev World, a small agent simulation.",
+  "github": "https://github.com/oqzl/JevSamples",
+  "website": null,
+  "how_used_jev": "Each turn, Jev World asks Jev five typed questions per agent, such as next action and goal urgency. Code applies the world changes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/oqzl/JevSamples"
+  }
+}

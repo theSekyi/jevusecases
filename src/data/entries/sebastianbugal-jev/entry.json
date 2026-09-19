@@ -1,0 +1,22 @@
+{
+  "id": "sebastianbugal-jev",
+  "project": "jev",
+  "description": "Adds Jev to Claude Code as a plugin. You ask in plain language and get a typed answer with a probability.",
+  "github": "https://github.com/sebastianbugal/jev",
+  "website": null,
+  "how_used_jev": "Claude turns your question into typed questions for Jev through OpenRouter. The plugin shows each answer and labels low-confidence results.",
+  "source_tweet": "https://x.com/nullnameguy/status/2101071858951172120",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sebastianbugal/jev"
+  }
+}

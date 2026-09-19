@@ -1,0 +1,22 @@
+{
+  "id": "austinaway-working-memory-jev",
+  "project": "Working Memory Jev",
+  "description": "Helps educators find where instructional text asks a learner to hold too many ideas at once. It is an experimental teaching aid.",
+  "github": "https://github.com/AustinAWay/Working-Memory-Jev",
+  "website": null,
+  "how_used_jev": "A local parser proposes reading steps. Jev makes bounded choices about familiarity, active or background status, grouping, and relationships.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AustinAWay/Working-Memory-Jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "rolottr-x-jev-classifier",
+  "project": "X Jev Classifier",
+  "description": "A Chrome extension that marks each X post with a type badge, such as alpha, shitpost, AI slop, or bait. It hides nothing.",
+  "github": "https://github.com/rolottr/x-jev-classifier",
+  "website": null,
+  "how_used_jev": "The extension sends each post and a question set to Jev in one request. Jev's answers set the type badge and a verdict pill.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rolottr/x-jev-classifier"
+  }
+}

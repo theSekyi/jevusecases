@@ -1,0 +1,22 @@
+{
+  "id": "nitoba-questions",
+  "project": "Questions",
+  "description": "Gives a TypeScript library to ask typed questions about your data and decide what happens next.",
+  "github": "https://github.com/nitoba/questions",
+  "website": null,
+  "how_used_jev": "Questions go to Jev through TypeSafe AI or Vercel. The library adds confidence gates, deadlines, retries, and replay around the answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nitoba/questions"
+  }
+}

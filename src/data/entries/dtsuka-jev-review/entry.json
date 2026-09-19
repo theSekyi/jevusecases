@@ -1,0 +1,22 @@
+{
+  "id": "dtsuka-jev-review",
+  "project": "jev-review",
+  "description": "Screens source files in a project to find which files need a deeper code review.",
+  "github": "https://github.com/dtsuka/jev-review",
+  "website": null,
+  "how_used_jev": "Jev gives a probability for each file on bug, security, refactor, performance, error handling, and type safety checks.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dtsuka/jev-review"
+  }
+}

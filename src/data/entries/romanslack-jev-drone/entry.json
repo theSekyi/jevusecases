@@ -1,0 +1,22 @@
+{
+  "id": "romanslack-jev-drone",
+  "project": "jev-drone",
+  "description": "Flies a simulated quadrotor through a five-station obstacle course in MuJoCo with only its onboard camera.",
+  "github": "https://github.com/RomanSlack/jev-drone",
+  "website": null,
+  "how_used_jev": "Jev reads a compact scene at about 2.5 Hz and makes tactical judgments. Ordinary code controls flight and keeps the safety veto.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/RomanSlack/jev-drone"
+  }
+}

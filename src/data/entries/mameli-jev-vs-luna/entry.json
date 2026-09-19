@@ -1,0 +1,22 @@
+{
+  "id": "mameli-jev-vs-luna",
+  "project": "jev-vs-luna",
+  "description": "Compares Jev with GPT-5.6 Luna on review classification in a small, reproducible benchmark. It measures accuracy, latency, and cost.",
+  "github": "https://github.com/mameli/jev-vs-luna",
+  "website": null,
+  "how_used_jev": "Jev classifies each review by topic, sentiment, stars, reply need, and defect. The author reports 96.13% field accuracy for Jev and 97.13% for Luna.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mameli/jev-vs-luna"
+  }
+}

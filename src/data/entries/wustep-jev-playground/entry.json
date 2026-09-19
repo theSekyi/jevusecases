@@ -1,0 +1,22 @@
+{
+  "id": "wustep-jev-playground",
+  "project": "Jev Playground",
+  "description": "Tests if a decision model can steer music composition across styles. It also has a demo of absurd trolley problems.",
+  "github": "https://github.com/wustep/jev-playground",
+  "website": "https://jev-playground.vercel.app",
+  "how_used_jev": "Jev picks only labels such as key, meter, tempo, instrument, and harmony phrases. App code turns the plan into notes, sheet music, audio, and MIDI.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wustep/jev-playground"
+  }
+}

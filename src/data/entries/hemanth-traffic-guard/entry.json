@@ -1,0 +1,22 @@
+{
+  "id": "hemanth-traffic-guard",
+  "project": "traffic-guard",
+  "description": "Classifies incoming web traffic and blocks bots in a reverse proxy. It comes as a Node.js module and a Python package.",
+  "github": "https://github.com/hemanth/traffic-guard",
+  "website": null,
+  "how_used_jev": "With an API key, the gate adds Jev for semantic checks with five parallel typed questions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hemanth/traffic-guard"
+  }
+}

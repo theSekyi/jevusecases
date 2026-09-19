@@ -1,0 +1,22 @@
+{
+  "id": "andrelandgraf-rate-my-pricing",
+  "project": "Rate My Pricing",
+  "description": "Scores pricing pages for how confusing they are, with an AI agent on Neon Functions and a leaderboard on Vercel.",
+  "github": "https://github.com/andrelandgraf/rate-my-pricing",
+  "website": null,
+  "how_used_jev": "A Jev QA gate checks each rating before it is listed. If Jev is missing or fails, the rating still publishes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/andrelandgraf/rate-my-pricing"
+  }
+}

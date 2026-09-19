@@ -1,0 +1,22 @@
+{
+  "id": "eggdev-basketball",
+  "project": "basketball",
+  "description": "A Fantrax fantasy basketball draft and trade assistant for one league.",
+  "github": "https://github.com/eggdev/basketball",
+  "website": "https://basketball.eggers.dev",
+  "how_used_jev": "The live draft evaluator asks Jev only for qualitative roster and plan fit. If Jev fails, the UI falls back to the deterministic valuation.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/eggdev/basketball"
+  }
+}

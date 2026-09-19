@@ -1,0 +1,22 @@
+{
+  "id": "braindeadpt-trading-bot-hyperliquid-v1",
+  "project": "trading-bot-hyperliquid_v1",
+  "description": "Runs an async Python trading bot for Hyperliquid perpetuals, with paper, testnet, and mainnet modes.",
+  "github": "https://github.com/braindeadpt/Trading-bot-hyperliquid_V1",
+  "website": null,
+  "how_used_jev": "A paper-only JevJudge experiment lets Jev make directional calls. The engine runs them as paper trades through the normal risk path.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/braindeadpt/Trading-bot-hyperliquid_V1"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "orlenko-skills",
+  "project": "Orlenko Skills",
+  "description": "A library of skills and plugins for Codex and Claude Code, with tools that watch, message, and nudge agent sessions.",
+  "github": "https://github.com/orlenko/skills",
+  "website": null,
+  "how_used_jev": "Jev flags messages that ask for a reply and checks if an idle agent screen has no open question. The author reports 7 of 8 labeled warnings correct on 1,221 real messages.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/orlenko/skills"
+  }
+}

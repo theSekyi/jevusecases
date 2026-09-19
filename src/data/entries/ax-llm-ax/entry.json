@@ -1,0 +1,22 @@
+{
+  "id": "ax-llm-ax",
+  "project": "ax",
+  "description": "Adds a TypeSafe deployment to Ax, a DSPy framework for TypeScript and other languages. Jev is the default model for it.",
+  "github": "https://github.com/ax-llm/ax",
+  "website": null,
+  "how_used_jev": "Ax boolean and class signatures run on Jev, with a threshold that turns probabilities into booleans. A separate native client returns probabilities and scores.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ax-llm/ax"
+  }
+}

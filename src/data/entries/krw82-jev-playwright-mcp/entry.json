@@ -1,0 +1,22 @@
+{
+  "id": "krw82-jev-playwright-mcp",
+  "project": "jev-playwright-mcp",
+  "description": "Wraps the Playwright MCP server as a proxy for coding agents. Agents get the same tools plus a judgment layer.",
+  "github": "https://github.com/krw82/jev-playwright-mcp",
+  "website": null,
+  "how_used_jev": "Jev classifies page states such as login walls and finds prompt injection in page text. It also prunes snapshots and checks risky actions first.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/krw82/jev-playwright-mcp"
+  }
+}

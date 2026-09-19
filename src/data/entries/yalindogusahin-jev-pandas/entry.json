@@ -1,0 +1,22 @@
+{
+  "id": "yalindogusahin-jev-pandas",
+  "project": "jev-pandas",
+  "description": "Filters, classifies, and scores pandas DataFrame rows by meaning, from a notebook or a script.",
+  "github": "https://github.com/yalindogusahin/jev-pandas",
+  "website": null,
+  "how_used_jev": "Rows go to a Jev-compatible endpoint as natural-language questions. Results come back as judgment columns next to the original rows.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yalindogusahin/jev-pandas"
+  }
+}

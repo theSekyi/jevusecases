@@ -1,0 +1,22 @@
+{
+  "id": "olti1947-jev-java",
+  "project": "jev-java",
+  "description": "Provides a Java 17+ client library for Jev, available through Maven and Gradle.",
+  "github": "https://github.com/Olti1947/jev-java",
+  "website": null,
+  "how_used_jev": "Code sends text with typed Choice and Noul questions to Jev and reads back typed answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Olti1947/jev-java"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "david1gp-jev",
+  "project": "@adaptive-ds/jev",
+  "description": "Gives TypeScript developers a client library and a jev command-line tool for TypeSafe System One. Calls return Results instead of throwing errors.",
+  "github": "https://github.com/david1gp/jev",
+  "website": null,
+  "how_used_jev": "It sends text or structured state with named choice, score, and noul questions to Jev. It returns validated typed answers and token usage.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/david1gp/jev"
+  }
+}

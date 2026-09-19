@@ -1,0 +1,22 @@
+{
+  "id": "jyeswak-jev-playground",
+  "project": "jev_playground",
+  "description": "Tests project ideas for Jev with measurements before anyone builds them. It lists recipes that won and the evidence against the rest.",
+  "github": "https://github.com/JYeswak/jev_playground",
+  "website": null,
+  "how_used_jev": "It makes live calls to the TypeSafe API to measure each idea. The author reports seventeen ideas were checked and zero were promoted to a project.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/JYeswak/jev_playground"
+  }
+}

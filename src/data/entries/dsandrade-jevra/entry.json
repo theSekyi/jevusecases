@@ -1,0 +1,22 @@
+{
+  "id": "dsandrade-jevra",
+  "project": "Jevra",
+  "description": "A development plugin for Codex and Claude Code, in alpha. An opt-in hook redirects large file reads to a helper.",
+  "github": "https://github.com/dsandrade/jevra",
+  "website": null,
+  "how_used_jev": "Jev selects source excerpts for the helper. The main LLM reads them and writes code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dsandrade/jevra"
+  }
+}

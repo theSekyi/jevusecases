@@ -1,0 +1,22 @@
+{
+  "id": "le0c-jev-mechanic",
+  "project": "Jev mechanic demo",
+  "description": "Triages a customer's car problem report in a workshop demo. It follows a diagnostic flowchart and gives a fix checklist.",
+  "github": "https://github.com/Le0C/jev-mechanic",
+  "website": null,
+  "how_used_jev": "Jev reads the report and each free-text answer, and code scores the diagnoses. A second lane asks Jev for the diagnosis from the whole case.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Le0C/jev-mechanic"
+  }
+}

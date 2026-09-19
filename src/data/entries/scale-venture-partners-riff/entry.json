@@ -1,0 +1,22 @@
+{
+  "id": "scale-venture-partners-riff",
+  "project": "riff",
+  "description": "Lints prose and reports writing tells and clarity problems with ruff-style rule codes. Static rules run in pure Python.",
+  "github": "https://github.com/scale-venture-partners/riff",
+  "website": null,
+  "how_used_jev": "Each semantic rule is one call to Jev, which returns a calibrated probability for that judgment.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/scale-venture-partners/riff"
+  }
+}

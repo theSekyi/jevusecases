@@ -1,0 +1,22 @@
+{
+  "id": "tatuck-jev-boe-demo",
+  "project": "BOE para ciudadanos",
+  "description": "Reads the Spanish official gazette (BOE) each day and shows the items that matter to ordinary people.",
+  "github": "https://github.com/Tatuck/jev-boe-demo",
+  "website": "https://tatuck.github.io/jev-boe-demo/",
+  "how_used_jev": "Jev scores how much each item changes things for people and tags it by topic. It also picks the paragraph that best explains the change.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Tatuck/jev-boe-demo"
+  }
+}

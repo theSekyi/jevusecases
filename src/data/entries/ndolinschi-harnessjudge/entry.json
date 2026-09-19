@@ -1,0 +1,22 @@
+{
+  "id": "ndolinschi-harnessjudge",
+  "project": "HarnessJudge",
+  "description": "Judges a pasted agent step trace, for agent builders.",
+  "github": "https://github.com/ndolinschi/harnessjudge",
+  "website": "https://harnessjudge.vercel.app",
+  "how_used_jev": "Jev decides if the step is ok, or if the agent should retry, escalate, or stop.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ndolinschi/harnessjudge"
+  }
+}

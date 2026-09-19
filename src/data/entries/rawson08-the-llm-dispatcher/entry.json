@@ -1,0 +1,22 @@
+{
+  "id": "rawson08-the-llm-dispatcher",
+  "project": "the-llm-dispatcher",
+  "description": "Routes each LLM request to the cheapest model and lowest reasoning effort that can do the job. It has an OpenAI-compatible proxy and CLI wrappers.",
+  "github": "https://github.com/Rawson08/the-llm-dispatcher",
+  "website": null,
+  "how_used_jev": "Jev judges each request and picks the model and reasoning effort. The proxy and the Claude Code and Codex wrappers then dispatch it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Rawson08/the-llm-dispatcher"
+  }
+}

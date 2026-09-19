@@ -1,0 +1,22 @@
+{
+  "id": "lildojd-jevons",
+  "project": "Jevons",
+  "description": "Supervises Pi coding-agent runs with bounded decisions, failure recovery, review, and verification. Ordinary code controls limits and permitted responses.",
+  "github": "https://github.com/LilDojd/jevons",
+  "website": null,
+  "how_used_jev": "Jev interprets evidence, for example ignored causes, diagnostic category, and user-only blockers after tool failures. Code decides what to do.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/LilDojd/jevons"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "sadiqongithub-jev-lab",
+  "project": "jev-lab",
+  "description": "Tests Jev live through OpenRouter's Decisions API. An interactive mode lets you ask many questions about one state.",
+  "github": "https://github.com/SadiqOnGithub/jev-lab",
+  "website": null,
+  "how_used_jev": "You set a state once and ask noul, choice, or score questions. Jev answers each question with a number.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SadiqOnGithub/jev-lab"
+  }
+}

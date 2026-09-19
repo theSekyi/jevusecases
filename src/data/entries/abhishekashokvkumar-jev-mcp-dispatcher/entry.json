@@ -1,0 +1,22 @@
+{
+  "id": "abhishekashokvkumar-jev-mcp-dispatcher",
+  "project": "jev-mcp-dispatcher",
+  "description": "Dispatches plain-language commands to the tools of a simple MCP server. It is a proof of concept with no general-purpose LLM.",
+  "github": "https://github.com/abhishekashokvkumar/jev-mcp-dispatcher",
+  "website": null,
+  "how_used_jev": "It discovers the tool signatures at runtime. Jev uses Choice and Noul questions to pick the tool and extract its arguments from the sentence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/abhishekashokvkumar/jev-mcp-dispatcher"
+  }
+}

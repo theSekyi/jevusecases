@@ -1,0 +1,22 @@
+{
+  "id": "glubiz-zirv-cli",
+  "project": "Zirv CLI",
+  "description": "Adds a Jev decider to the request proxy of an AI meta harness.",
+  "github": "https://github.com/Glubiz/zirv-cli",
+  "website": "https://cli.zirv.io",
+  "how_used_jev": "Jev answers five typed questions: intent, complexity, risk, workflow, and needs_clarification. On errors or no key, it falls back to a helper model or a fixed baseline.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Glubiz/zirv-cli"
+  }
+}

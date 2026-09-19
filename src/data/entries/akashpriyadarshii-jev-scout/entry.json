@@ -1,0 +1,22 @@
+{
+  "id": "akashpriyadarshii-jev-scout",
+  "project": "jev-scout",
+  "description": "Finds open-source repos and Rust crates from live GitHub and crates.io metadata. It runs as a CLI or an MCP server for coding agents.",
+  "github": "https://github.com/AkashPriyadarshii/jev-scout",
+  "website": null,
+  "how_used_jev": "Jev scores each result for architectural fit, license suitability, and maintenance freshness in one call.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AkashPriyadarshii/jev-scout"
+  }
+}

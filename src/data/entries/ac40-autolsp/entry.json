@@ -1,0 +1,22 @@
+{
+  "id": "ac40-autolsp",
+  "project": "AutoLSP",
+  "description": "Ranks the completions from your installed language extensions in VS Code. It shows them as ghost text or inserts them after a pause.",
+  "github": "https://github.com/AC40/autolsp",
+  "website": null,
+  "how_used_jev": "Jev ranks the completion candidates, using the file around the cursor, recent edits, and excerpts from open files.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AC40/autolsp"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "tirukovelamanoj-jev-plays-doom",
+  "project": "jev-plays-doom",
+  "description": "Plays Doom in ViZDoom with a model that never sees the screen. The model gets structured game state, not pixels.",
+  "github": "https://github.com/tirukovelamanoj/jev-plays-doom",
+  "website": null,
+  "how_used_jev": "Jev gets monster positions, health, and ammo and returns one button, such as ATTACK. Its decision and confidence show on every frame.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tirukovelamanoj/jev-plays-doom"
+  }
+}

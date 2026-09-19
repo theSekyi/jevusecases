@@ -1,0 +1,22 @@
+{
+  "id": "tonyp-mr-jev-curation-engine",
+  "project": "jev-curation-engine",
+  "description": "Tests in read-only mode if Jev can match the Curation Engine's existing LLM classification results for articles.",
+  "github": "https://github.com/TonyP-MR/jev-curation-engine",
+  "website": null,
+  "how_used_jev": "Jev decides subject validation, prominence, sentiment, and tags. The rig records its results side by side with the LLM audit results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TonyP-MR/jev-curation-engine"
+  }
+}

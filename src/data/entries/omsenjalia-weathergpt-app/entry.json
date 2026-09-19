@@ -1,0 +1,22 @@
+{
+  "id": "omsenjalia-weathergpt-app",
+  "project": "WeatherGPT",
+  "description": "A multilingual, voice-first weather app for SIH 2026 under the Disaster Management theme.",
+  "github": "https://github.com/omsenjalia/weathergpt-app",
+  "website": null,
+  "how_used_jev": "Jev answers typed questions over weather state for farm action windows and chat routing. The app shows a confidence badge and falls back to fixed thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/omsenjalia/weathergpt-app"
+  }
+}

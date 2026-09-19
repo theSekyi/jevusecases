@@ -1,0 +1,22 @@
+{
+  "id": "huntedman-jevlint",
+  "project": "JevLint",
+  "description": "Semantic linter that checks code against coding conventions written in plain English. It runs from a terminal, an agent's verification step, or CI.",
+  "github": "https://github.com/huntedman/JevLint",
+  "website": null,
+  "how_used_jev": "Sends selected source files and plugin instructions to Jev. Jev returns file-level NOUL judgments, and a coding agent uses the findings to fix the code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/huntedman/JevLint"
+  }
+}

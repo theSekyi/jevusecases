@@ -1,0 +1,22 @@
+{
+  "id": "kesku-jev-freeform",
+  "project": "jev-freeform",
+  "description": "An experiment that makes Jev write chat replies one character at a time.",
+  "github": "https://github.com/kesku/jev-freeform",
+  "website": null,
+  "how_used_jev": "Each step gives Jev 98 options: the reply so far plus one more character, or an end mark. Jev picks, and a few branches stay open.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kesku/jev-freeform"
+  }
+}

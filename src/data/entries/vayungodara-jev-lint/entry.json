@@ -1,0 +1,22 @@
+{
+  "id": "vayungodara-jev-lint",
+  "project": "jev-lint",
+  "description": "Lints a Markdown knowledge base, such as an Obsidian vault, for contradictions, stale claims, markers, and dangling links.",
+  "github": "https://github.com/vayungodara/jev-lint",
+  "website": "https://jevlint.vayun.net",
+  "how_used_jev": "Local checks run first. Selected claim text goes to Jev for semantic scoring, and the results go into an HTML report with evidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vayungodara/jev-lint"
+  }
+}

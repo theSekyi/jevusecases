@@ -1,0 +1,22 @@
+{
+  "id": "wescld-jevif",
+  "project": "jevIf",
+  "description": "Replaces the JavaScript if statement with a question to Jev. It is one file with no dependencies, for Node, Bun, and Deno.",
+  "github": "https://github.com/wescld/jevIf",
+  "website": null,
+  "how_used_jev": "Jev answers a yes/no question about the given values, and the code branches on it. jevSwitch picks among several branches.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wescld/jevIf"
+  }
+}

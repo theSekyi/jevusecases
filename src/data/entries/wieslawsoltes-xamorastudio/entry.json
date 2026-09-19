@@ -1,0 +1,22 @@
+{
+  "id": "wieslawsoltes-xamorastudio",
+  "project": "Xamora Studio",
+  "description": "A browser application to design user interfaces, with a XAML editor, layer tree, property inspector, and design canvas.",
+  "github": "https://github.com/wieslawsoltes/XamoraStudio",
+  "website": null,
+  "how_used_jev": "Ask Jev turns typed decisions into reviewed edits, control inserts, and allowed app commands. Jev also checks drafts from a separate text model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/wieslawsoltes/XamoraStudio"
+  }
+}

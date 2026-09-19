@@ -1,0 +1,22 @@
+{
+  "id": "adebmbng-jev-trade-prediction",
+  "project": "Jev Trade",
+  "description": "Shows a live crypto dashboard for BTCUSDT and ETHUSDT with charts and indicators. It never places orders.",
+  "github": "https://github.com/adebmbng/jev-trade-prediction",
+  "website": null,
+  "how_used_jev": "Jev gives a typed long, short, or wait entry judgment for the next 60 to 120 seconds. After entry, it judges exit or wait.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/adebmbng/jev-trade-prediction"
+  }
+}

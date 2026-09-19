@@ -1,0 +1,22 @@
+{
+  "id": "foadsf-jev-for-engineers",
+  "project": "jev-for-engineers",
+  "description": "Gives eight minimal examples of Jev in mechanical and electrical engineering, with no dependencies.",
+  "github": "https://github.com/Foadsf/jev-for-engineers",
+  "website": null,
+  "how_used_jev": "The examples use Jev for CAD/CAE/CAM routing, FEM result triage, DFM screening, BOM alignment, and extraction.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Foadsf/jev-for-engineers"
+  }
+}

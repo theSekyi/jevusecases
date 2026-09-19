@@ -1,0 +1,22 @@
+{
+  "id": "casereed-latch",
+  "project": "Latch",
+  "description": "Reads a finished red CI run and returns Gate: PASS for infrastructure noise or Gate: BLOCK for a real failure. It supports Playwright, Jest, and pytest.",
+  "github": "https://github.com/CaseReed/latch",
+  "website": null,
+  "how_used_jev": "Code clusters the failures, and Jev labels the cause of each cluster, with up to 8 calls. Code makes the final gate decision.",
+  "source_tweet": "https://x.com/JulienTavernie7/status/2101081395544109227",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CaseReed/latch"
+  }
+}

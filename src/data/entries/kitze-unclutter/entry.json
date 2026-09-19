@@ -1,0 +1,22 @@
+{
+  "id": "kitze-unclutter",
+  "project": "unclutter",
+  "description": "Browser extension for Chrome, Chromium, and Firefox that removes clutter from web pages.",
+  "github": "https://github.com/kitze/unclutter",
+  "website": null,
+  "how_used_jev": "Jev classifies nonessential page elements through Vercel AI Gateway or TypeSafe AI directly. The extension stores and reapplies local hiding rules by page template.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kitze/unclutter"
+  }
+}

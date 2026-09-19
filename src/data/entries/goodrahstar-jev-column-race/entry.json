@@ -1,0 +1,22 @@
+{
+  "id": "goodrahstar-jev-column-race",
+  "project": "Jev Column Race",
+  "description": "Races Jev against Gemini 3.8 Flash to label 1,000 app reviews into four columns, live in the browser.",
+  "github": "https://github.com/goodrahstar/jev-column-race",
+  "website": "https://jev-column-race.vercel.app",
+  "how_used_jev": "Jev answers 80 typed questions per request, such as sentiment scores and topic choices. The author reports 4.6 seconds and $0.023 for all 1,000 reviews in one run.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/goodrahstar/jev-column-race"
+  }
+}

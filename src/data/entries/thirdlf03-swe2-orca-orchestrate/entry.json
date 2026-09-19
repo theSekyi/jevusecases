@@ -1,0 +1,22 @@
+{
+  "id": "thirdlf03-swe2-orca-orchestrate",
+  "project": "swe2-orca-orchestrate",
+  "description": "A multi-agent orchestration harness for Orca and Devin CLI (SWE-2).",
+  "github": "https://github.com/thirdlf03/swe2-orca-orchestrate",
+  "website": null,
+  "how_used_jev": "Jev gives the probability that a task spec is ambiguous. At 0.4 it warns, and at 0.7 it stops the run for swe-2-medium.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thirdlf03/swe2-orca-orchestrate"
+  }
+}

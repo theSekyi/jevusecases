@@ -1,0 +1,22 @@
+{
+  "id": "tivojn-gpt-live-avatar",
+  "project": "GPT-Live Avatar",
+  "description": "Full-duplex desk and phone avatars on OpenAI GPT-Live-1 for Mac and iOS.",
+  "github": "https://github.com/tivojn/gpt-live-avatar",
+  "website": null,
+  "how_used_jev": "Jev decides whether the avatar just committed to a motion and which installed clip fits. Built-in rules decide when there is no key or Jev is unsure.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tivojn/gpt-live-avatar"
+  }
+}

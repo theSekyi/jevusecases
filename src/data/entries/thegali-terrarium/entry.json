@@ -1,0 +1,22 @@
+{
+  "id": "thegali-terrarium",
+  "project": "Terrarium",
+  "description": "Sandbox where code runs a small world and a model presses a creature's controls. Every decision is logged in full.",
+  "github": "https://github.com/TheGali/terrarium",
+  "website": null,
+  "how_used_jev": "Jev only picks which button the creature presses. The log keeps the state, each question, each probability, and the rule that fired.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TheGali/terrarium"
+  }
+}

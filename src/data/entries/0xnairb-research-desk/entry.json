@@ -1,0 +1,22 @@
+{
+  "id": "0xnairb-research-desk",
+  "project": "Research Desk",
+  "description": "Turns live company profiles and headlines from yfinance into ranked trade ideas as a demo. It is not investment advice.",
+  "github": "https://github.com/0xnairb/research_desk",
+  "website": null,
+  "how_used_jev": "Each number in the UI is a typed Jev answer from one request. A Requests tab shows the state and questions behind each answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xnairb/research_desk"
+  }
+}

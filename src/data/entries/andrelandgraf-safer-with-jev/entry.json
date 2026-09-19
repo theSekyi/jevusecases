@@ -1,0 +1,22 @@
+{
+  "id": "andrelandgraf-safer-with-jev",
+  "project": "Safer with Jev",
+  "description": "Inspects request bodies through a Neon Function API and forwards them to an HTTPS URL that the caller chooses.",
+  "github": "https://github.com/andrelandgraf/safer-with-jev",
+  "website": null,
+  "how_used_jev": "Jev judges the request body. The proxy then returns the judgment or forwards the same bytes to the target URL after a pass.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/andrelandgraf/safer-with-jev"
+  }
+}

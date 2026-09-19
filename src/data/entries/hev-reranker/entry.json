@@ -1,0 +1,22 @@
+{
+  "id": "hev-reranker",
+  "project": "hev reranker",
+  "description": "Recipe that uses Jev as a reranker, with a Python wrapper and benchmark results on BEIR shortlists.",
+  "github": "https://github.com/hev/reranker",
+  "website": null,
+  "how_used_jev": "One call sends a query and up to 30 documents. Jev returns a relevance probability per document, which sorts the list and prunes weak results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hev/reranker"
+  }
+}

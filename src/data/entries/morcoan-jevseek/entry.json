@@ -1,0 +1,22 @@
+{
+  "id": "morcoan-jevseek",
+  "project": "JevSeek",
+  "description": "Runs a desktop coding agent that separates choosing an action from writing its arguments. It has a React desktop workspace and a CLI.",
+  "github": "https://github.com/morcoan/JevSeek",
+  "website": null,
+  "how_used_jev": "Jev selects the next tool from what actually happened. DeepSeek or a local Bonsai model writes the arguments, and OpenHands runs the tool.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / IDE",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/morcoan/JevSeek"
+  }
+}

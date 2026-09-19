@@ -1,0 +1,22 @@
+{
+  "id": "spivi-cloudforge-jev",
+  "project": "cloudforge-jev",
+  "description": "A sidecar that grades the written paragraph in a cloudforge student lab. It stays outside the cloudforge product.",
+  "github": "https://github.com/spivi/cloudforge-jev",
+  "website": null,
+  "how_used_jev": "Jev judges if the paragraph names the same entry, identity hop, and sink as the answer key. The sidecar code owns the thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/spivi/cloudforge-jev"
+  }
+}

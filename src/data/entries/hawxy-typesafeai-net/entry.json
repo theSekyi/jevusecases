@@ -1,0 +1,22 @@
+{
+  "id": "hawxy-typesafeai-net",
+  "project": "TypeSafeAI for .NET",
+  "description": "Community .NET SDK for the TypeSafe API, with Microsoft.Extensions.AI integration.",
+  "github": "https://github.com/Hawxy/TypeSafeAI.Net",
+  "website": null,
+  "how_used_jev": "Apps ask Jev Noul, Choice, and Score questions about text or state and get calibrated probabilities. Middleware uses them for chat-client guardrails and routing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Hawxy/TypeSafeAI.Net"
+  }
+}

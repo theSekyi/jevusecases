@@ -1,0 +1,22 @@
+{
+  "id": "pimmetjeoss-tribe-crm-jev",
+  "project": "Tribe CRM × Jev",
+  "description": "A lead-intake pilot for Tribe CRM that reads unstructured lead messages. Dry-run is the default, and writes need two opt-ins.",
+  "github": "https://github.com/Pimmetjeoss/tribe-crm-jev",
+  "website": null,
+  "how_used_jev": "Jev makes narrow typed judgments about each lead message. Code applies thresholds to the answers and builds a write plan.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Pimmetjeoss/tribe-crm-jev"
+  }
+}

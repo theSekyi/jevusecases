@@ -1,0 +1,22 @@
+{
+  "id": "millionsend-millionsend",
+  "project": "MillionSend",
+  "description": "Adds a Jev content monitor to MillionSend, an open-source email platform on AWS SES with a Resend-compatible API.",
+  "github": "https://github.com/MillionSend/millionsend",
+  "website": "https://millionsend.com",
+  "how_used_jev": "After SES accepts a message, a sample is scored by Jev in the background. Sending never waits on this outbound judge.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/MillionSend/millionsend"
+  }
+}

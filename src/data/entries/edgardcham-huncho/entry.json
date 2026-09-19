@@ -1,0 +1,22 @@
+{
+  "id": "edgardcham-huncho",
+  "project": "huncho",
+  "description": "Gives a TypeScript library for decisions as code. It is pre-alpha.",
+  "github": "https://github.com/edgardcham/huncho",
+  "website": null,
+  "how_used_jev": "It asks Jev typed questions directly or through OpenRouter or Vercel AI Gateway. It applies thresholds, nests decisions, journals them, and calibrates against outcomes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/edgardcham/huncho"
+  }
+}

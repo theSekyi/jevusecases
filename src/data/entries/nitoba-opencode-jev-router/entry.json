@@ -1,0 +1,22 @@
+{
+  "id": "nitoba-opencode-jev-router",
+  "project": "opencode-jev-router",
+  "description": "OpenCode 2 plugin that picks which tool the agent should use next. It does not replace the model's reasoning.",
+  "github": "https://github.com/nitoba/opencode-jev-router",
+  "website": null,
+  "how_used_jev": "Before each model call, Jev chooses the next tool and says if the work is done. The model sees one tool, a shortlist, or all tools, based on Jev's confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nitoba/opencode-jev-router"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "nternet-company-hater",
+  "project": "hater",
+  "description": "A browser extension where a cat meme judges your post on X while you type it.",
+  "github": "https://github.com/nternet-company/hater",
+  "website": null,
+  "how_used_jev": "On each keystroke, Jev picks the cat reaction that fits the draft from the options in memes.json. The description line of each option tells Jev when it applies.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/nternet-company/hater"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "snakajima-bus20",
+  "project": "Bus 2.0",
+  "description": "Benchmarks online decision-makers that dispatch shared shuttle riders on a fixed road network. It also holds the original Swift prototype.",
+  "github": "https://github.com/snakajima/bus20",
+  "website": null,
+  "how_used_jev": "Jev is one of the online dispatch policies, chosen with the jev policy flag. A compare step tabulates pain, success, latency, tokens, and cost across runs.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/snakajima/bus20"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "haydarsahin0-jev",
+  "project": "arXiv Radar",
+  "description": "Scans new AI papers on arXiv twice a day for one user. It publishes a ranked list on GitHub Pages.",
+  "github": "https://github.com/haydarsahin0/Jev",
+  "website": null,
+  "how_used_jev": "Jev gives each paper novelty and evidence scores, a topic, and probabilities for applicability, relevance, code, and hype. The site combines these signals with your weights to rank the papers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/haydarsahin0/Jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "raj8525-universal-jev",
+  "project": "universal-jev",
+  "description": "Adds a Jev runtime plugin and MCP server to coding agents such as Codex, Pi, and OpenCode.",
+  "github": "https://github.com/raj8525/universal-jev",
+  "website": null,
+  "how_used_jev": "Jev prunes stale tool outputs while messages stay verbatim. It also gives choice, noul, and score tools and command guardrails.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/raj8525/universal-jev"
+  }
+}

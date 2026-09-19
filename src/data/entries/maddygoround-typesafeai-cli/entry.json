@@ -1,0 +1,22 @@
+{
+  "id": "maddygoround-typesafeai-cli",
+  "project": "typesafeai-cli",
+  "description": "Gives shells and agents a CLI for Jev. It sends a state file and a questions file.",
+  "github": "https://github.com/maddygoround/typesafeai-cli",
+  "website": null,
+  "how_used_jev": "The ask command sends noul, choice, and score questions over JSON state. It includes an agent skill.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maddygoround/typesafeai-cli"
+  }
+}

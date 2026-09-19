@@ -1,0 +1,22 @@
+{
+  "id": "monotykamary-pi-fabric",
+  "project": "pi-fabric",
+  "description": "Adds Jev System One programs to pi-fabric, a programmable tool and agent runtime for Pi.",
+  "github": "https://github.com/monotykamary/pi-fabric",
+  "website": "https://www.npmjs.com/package/pi-fabric",
+  "how_used_jev": "A fabric-jev skill builds typed judgments and bounded reactive loops, such as ticket triage, with an evaluation budget. Users sign in with /login jev.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/monotykamary/pi-fabric"
+  }
+}

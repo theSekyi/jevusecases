@@ -1,0 +1,22 @@
+{
+  "id": "de-niji-jev-hermes",
+  "project": "jev-hermes",
+  "description": "A Hermes skill that gates expensive agent turns and compacts stale tool output. It does not replace the memory system.",
+  "github": "https://github.com/de-niji/jev-hermes",
+  "website": null,
+  "how_used_jev": "It asks typesafe/jev-1.13 typed questions through OpenRouter's Decisions API. Jev gates a turn before it runs and marks stale tool output to drop or truncate.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/de-niji/jev-hermes"
+  }
+}

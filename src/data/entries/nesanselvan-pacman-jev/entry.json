@@ -1,0 +1,22 @@
+{
+  "id": "nesanselvan-pacman-jev",
+  "project": "Pacman / Jev",
+  "description": "Plays a 1980 arcade Pacman board with a live panel of the model's answers.",
+  "github": "https://github.com/NesanSelvan/pacman-jev",
+  "website": null,
+  "how_used_jev": "Jev picks the direction for each tile move from eight questions on the board state. Code runs the ghosts, scoring, and levels.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/NesanSelvan/pacman-jev"
+  }
+}

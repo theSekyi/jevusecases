@@ -1,0 +1,22 @@
+{
+  "id": "vvedantb-vmem",
+  "project": "vmem",
+  "description": "Gives AI tools a shared memory layer through a web app, a Chrome extension, and API connectors.",
+  "github": "https://github.com/vvedantb/vmem",
+  "website": "https://vmem.vedantb.com",
+  "how_used_jev": "When a TypeSafe key is set, Jev reranks the top 20 retrieval hits. Without a key, the hybrid ranking stays as it is.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/vvedantb/vmem"
+  }
+}

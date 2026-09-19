@@ -1,0 +1,22 @@
+{
+  "id": "sethsaler-jevgram",
+  "project": "jevgram",
+  "description": "Detects AI-generated text sentence by sentence with checks from published research. It reports an AI percentage and a Human, Mixed, or AI verdict.",
+  "github": "https://github.com/sethsaler/jevgram",
+  "website": null,
+  "how_used_jev": "Jev runs a set of evaluations on each segment of the document. The report shows which giveaways fired for each segment.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/sethsaler/jevgram"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "fiale-plus-jev-cli",
+  "project": "jev-cli",
+  "description": "An unofficial CLI for the TypeSafe API, for AI agents and anything that can run a process. It adds JSONL batch input, machine-readable output, and exit codes.",
+  "github": "https://github.com/fiale-plus/jev-cli",
+  "website": null,
+  "how_used_jev": "The CLI sends state and typed noul, choice, or score questions to Jev. A gate command applies accept, review, deny, or abstain policy offline to saved answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/fiale-plus/jev-cli"
+  }
+}

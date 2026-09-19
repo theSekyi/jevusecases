@@ -1,0 +1,22 @@
+{
+  "id": "lmvdz-rpg-jev",
+  "project": "rpg-jev",
+  "description": "A planned persistent multiplayer RPG where Claude authors the world. The repo is a scaffold with early spikes.",
+  "github": "https://github.com/lmvdz/rpg-jev",
+  "website": null,
+  "how_used_jev": "Jev makes every in-world decision, and code owns rules, numbers, and state. A spike tests whether Jev judges social fiction the way people do.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lmvdz/rpg-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "benomahony-nouls",
+  "project": "nouls",
+  "description": "A semantic linter and language server. It splits each file into functions with tree-sitter.",
+  "github": "https://github.com/benomahony/nouls",
+  "website": "https://benomahony.github.io/nouls/",
+  "how_used_jev": "Jev answers a batch of yes/no questions about each function, such as docstring drift. A rule fires when the probability of yes reaches its threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/benomahony/nouls"
+  }
+}

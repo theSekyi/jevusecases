@@ -1,0 +1,22 @@
+{
+  "id": "pvgomes-ispolandsafenow",
+  "project": "Is Poland Safe Now?",
+  "description": "Tracks publicly reported security-alert exposure across Poland's 16 voivodeships on a map. It is not an official warning system.",
+  "github": "https://github.com/pvgomes/ispolandsafenow",
+  "website": null,
+  "how_used_jev": "Jev classifies the alert level on the homepage live. There is no news pipeline yet, so results come from the model's own knowledge.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/pvgomes/ispolandsafenow"
+  }
+}

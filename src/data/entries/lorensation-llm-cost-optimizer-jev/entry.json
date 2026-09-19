@@ -1,0 +1,22 @@
+{
+  "id": "lorensation-llm-cost-optimizer-jev",
+  "project": "llm-cost-optimizer-jev",
+  "description": "Routes each request across several LLM providers to the cheapest model that can handle it.",
+  "github": "https://github.com/lorensation/llm-cost-optimizer-jev",
+  "website": null,
+  "how_used_jev": "Jev analyzes the complexity of each incoming request. The layer also checks that its routing decisions are correct.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lorensation/llm-cost-optimizer-jev"
+  }
+}

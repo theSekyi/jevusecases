@@ -1,0 +1,22 @@
+{
+  "id": "tyleree-jevbot",
+  "project": "jevbot",
+  "description": "Trades options in backtests and Alpaca paper trading only. The author says it is under construction.",
+  "github": "https://github.com/tyleree/jevbot",
+  "website": null,
+  "how_used_jev": "Jev picks from closed lists about the market state and supplies probabilities. Code does all the math, sizing, and risk.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tyleree/jevbot"
+  }
+}

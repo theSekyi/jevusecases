@@ -1,0 +1,22 @@
+{
+  "id": "juanegido-jev-pr-judge",
+  "project": "PR Judge",
+  "description": "Judges whether a GitHub pull request does what it claims. It runs as a GitHub Action or a CLI.",
+  "github": "https://github.com/juanegido/jev-pr-judge",
+  "website": "https://jev-pr-judge.vercel.app",
+  "how_used_jev": "Jev answers score, yes/no, and choice questions about the PR in one parallel call. Code applies the policy and posts a verdict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/juanegido/jev-pr-judge"
+  }
+}

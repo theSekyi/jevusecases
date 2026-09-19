@@ -1,0 +1,22 @@
+{
+  "id": "yonidavidson-qa-duel",
+  "project": "qa-duel",
+  "description": "Compares three ways to QA a demo shop website: Jev, GPT-5.6 with screenshots, and a hybrid.",
+  "github": "https://github.com/yonidavidson/qa-duel",
+  "website": null,
+  "how_used_jev": "Jev judges each captured page state with a six-check rubric and a verdict. The hybrid sends a state to the LLM when Jev's verdict confidence is below 0.6.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yonidavidson/qa-duel"
+  }
+}

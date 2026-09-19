@@ -1,0 +1,22 @@
+{
+  "id": "4anti-jev-broadcast-lab",
+  "project": "Jev Broadcast Lab",
+  "description": "An operator lab for Jev with a chess match page. Stockfish runs in the browser for review only.",
+  "github": "https://github.com/4anti/jev-broadcast-lab",
+  "website": null,
+  "how_used_jev": "Jev picks from a closed list of legal moves and returns Choice, Score, and Noul answers. chess.js owns legality.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/4anti/jev-broadcast-lab"
+  }
+}

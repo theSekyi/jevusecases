@@ -1,0 +1,22 @@
+{
+  "id": "abdelstark-heist-one",
+  "project": "HEIST//ONE",
+  "description": "A browser stealth game. You can inspect the evidence and probabilities behind each guard's decision.",
+  "github": "https://github.com/AbdelStark/heist-one",
+  "website": null,
+  "how_used_jev": "Jev makes typed judgments for the guards and proposes their intent. Deterministic code owns the world and validates every proposal.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AbdelStark/heist-one"
+  }
+}

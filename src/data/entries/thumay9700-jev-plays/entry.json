@@ -1,0 +1,22 @@
+{
+  "id": "thumay9700-jev-plays",
+  "project": "jev-plays",
+  "description": "An autonomous game agent framework for retro games in emulators. It starts with Pokémon Red on PyBoy.",
+  "github": "https://github.com/thumay9700/jev-plays",
+  "website": null,
+  "how_used_jev": "The agent reads game memory into structured state and asks Jev typed questions to choose its actions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/thumay9700/jev-plays"
+  }
+}

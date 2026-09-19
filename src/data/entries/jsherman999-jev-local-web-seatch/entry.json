@@ -1,0 +1,22 @@
+{
+  "id": "jsherman999-jev-local-web-seatch",
+  "project": "Jev Browser Service",
+  "description": "Runs a browser automation service for apps on a Mac and its local network. A demo compares it with an LLM agent.",
+  "github": "https://github.com/jsherman999/jev_local_web_seatch-",
+  "website": null,
+  "how_used_jev": "The Jev lane uses TypeSafe decisions plus a text helper to choose browser actions. The demo compares its time and cost with a JSON action agent.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jsherman999/jev_local_web_seatch-"
+  }
+}

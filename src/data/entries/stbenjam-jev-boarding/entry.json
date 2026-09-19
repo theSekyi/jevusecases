@@ -1,0 +1,22 @@
+{
+  "id": "stbenjam-jev-boarding",
+  "project": "Jev Boarding",
+  "description": "Simulates airplane boarding and compares fixed boarding orders with a Jev controller.",
+  "github": "https://github.com/stbenjam/jev-boarding",
+  "website": null,
+  "how_used_jev": "Jev picks the next passenger for each free row, from boarding-pass scans and seat occupancy.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/stbenjam/jev-boarding"
+  }
+}

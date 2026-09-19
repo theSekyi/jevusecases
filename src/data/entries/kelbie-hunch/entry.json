@@ -1,0 +1,22 @@
+{
+  "id": "kelbie-hunch",
+  "project": "Hunch",
+  "description": "Reviews code against rules that you write in plain English. It runs locally or on each pull request.",
+  "github": "https://github.com/Kelbie/hunch",
+  "website": null,
+  "how_used_jev": "Jev checks each code change against each rule. It returns a score or picks a label, and Hunch flags the change above a threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Kelbie/hunch"
+  }
+}

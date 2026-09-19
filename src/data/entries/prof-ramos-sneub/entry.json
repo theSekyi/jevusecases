@@ -1,0 +1,22 @@
+{
+  "id": "prof-ramos-sneub",
+  "project": "SNEUB",
+  "description": "Runs a standalone relationship questionnaire in Portuguese with no sign-up and no database. Local rules turn closed answers into good, warn, and bad signals.",
+  "github": "https://github.com/prof-ramos/sneub",
+  "website": "https://sneub.vercel.app",
+  "how_used_jev": "With explicit consent, the server sends free-text \"other\" answers to Jev. If Jev fails, the quiz uses the local result.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/prof-ramos/sneub"
+  }
+}

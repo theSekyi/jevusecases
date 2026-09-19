@@ -1,0 +1,22 @@
+{
+  "id": "drevantonder-jevlint",
+  "project": "jevlint",
+  "description": "Lints JavaScript and TypeScript code with probabilities. The report never passes or fails, and it is an early proof of concept.",
+  "github": "https://github.com/drevantonder/jevlint",
+  "website": null,
+  "how_used_jev": "Oxc finds candidates and builds evidence for each rule. Jev scores one proposition per judgment as a probability from 0 to 1.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/drevantonder/jevlint"
+  }
+}

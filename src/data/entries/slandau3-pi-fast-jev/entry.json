@@ -1,0 +1,22 @@
+{
+  "id": "slandau3-pi-fast-jev",
+  "project": "pi-fast-jev",
+  "description": "Prunes old context in Pi before each LLM call, without summaries. It ports fast-jev-compaction to Pi.",
+  "github": "https://github.com/slandau3/pi-fast-jev",
+  "website": null,
+  "how_used_jev": "Jev scores whether each old tool call and its result must stay. The extension keeps, truncates, or drops them and caches each verdict.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/slandau3/pi-fast-jev"
+  }
+}

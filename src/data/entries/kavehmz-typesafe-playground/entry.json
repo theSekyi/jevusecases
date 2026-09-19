@@ -1,0 +1,22 @@
+{
+  "id": "kavehmz-typesafe-playground",
+  "project": "typesafe-playground",
+  "description": "Runs small interactive experiments with Jev. They range from support message routing to a 3D driving simulation.",
+  "github": "https://github.com/kavehmz/typesafe-playground",
+  "website": null,
+  "how_used_jev": "In one demo, Jev makes six judgments about a support message, such as owning team and urgency. In the driving demos, Jev chooses lane and target speed from simulated sensor data.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kavehmz/typesafe-playground"
+  }
+}

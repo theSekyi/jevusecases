@@ -1,0 +1,22 @@
+{
+  "id": "all-light-reflex-arc",
+  "project": "reflexarc",
+  "description": "A library for real-time events. It splits fast judgments from slow reasoning.",
+  "github": "https://github.com/All-Light/reflex-arc",
+  "website": null,
+  "how_used_jev": "Jev triages each event with typed judgments. A reasoning LLM writes workflows for events that Jev cannot yet handle.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/All-Light/reflex-arc"
+  }
+}

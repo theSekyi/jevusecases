@@ -1,0 +1,22 @@
+{
+  "id": "enderzcx-dsh-spire-jev",
+  "project": "DSH Spire Jev",
+  "description": "Adds native Slay the Spire 2 tools to DeepSeek Harness. It is a plugin for the Spire Jev core.",
+  "github": "https://github.com/enderzcx/dsh-spire-jev",
+  "website": null,
+  "how_used_jev": "The main model plans and Jev makes the fast combat decisions. Code checks and runs the card plays.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/enderzcx/dsh-spire-jev"
+  }
+}

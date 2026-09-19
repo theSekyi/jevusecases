@@ -1,0 +1,22 @@
+{
+  "id": "ibrahemid-jevprune",
+  "project": "jevprune",
+  "description": "Filters long command output for coding agents based on a task description. Kept lines keep their text and order.",
+  "github": "https://github.com/ibrahemid/jevprune",
+  "website": null,
+  "how_used_jev": "Jev decides per line if it is relevant to the task. Without a key, fixed rules keep the first and last 40 lines and error lines.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/ibrahemid/jevprune"
+  }
+}

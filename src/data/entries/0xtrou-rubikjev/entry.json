@@ -1,0 +1,22 @@
+{
+  "id": "0xtrou-rubikjev",
+  "project": "rubikjev",
+  "description": "One-page Rubik's cube game with XP, ranks, and a slot machine. You scramble the cube and watch Jev solve it.",
+  "github": "https://github.com/0xtrou/rubikjev",
+  "website": "https://rubikjev.solo.engineer",
+  "how_used_jev": "Jev rates each scramble with a meme tier, a 1 to 5 star difficulty, and one roast. To solve, Jev reads the cube state and picks its next job step by step.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0xtrou/rubikjev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "av-naiou",
+  "project": "naiou",
+  "description": "Answers every question with Yes or No in a terminal UI with a 3D hyperspace view.",
+  "github": "https://github.com/av/naiou",
+  "website": null,
+  "how_used_jev": "Jev gets the input as state with one noul question. A probability of 0.5 or higher becomes Yes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/av/naiou"
+  }
+}

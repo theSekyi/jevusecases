@@ -1,0 +1,22 @@
+{
+  "id": "drillan-jevapan",
+  "project": "jevapan",
+  "description": "Lints Japanese documents by meaning against rule categories defined in YAML. It flags violations per sentence and does not suggest fixes.",
+  "github": "https://github.com/drillan/jevapan",
+  "website": null,
+  "how_used_jev": "Jev scores the document against each rule category. The CLI reports flagged sentences with a severity and a probability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/drillan/jevapan"
+  }
+}

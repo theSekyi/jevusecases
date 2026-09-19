@@ -1,0 +1,22 @@
+{
+  "id": "tryaksh-jev-pick-and-place-study",
+  "project": "jev-pick-and-place-study",
+  "description": "A small MuJoCo pilot that compares Jev, Claude Haiku, and reactive rules on a pick-and-place task.",
+  "github": "https://github.com/tryaksh/jev-pick-and-place-study",
+  "website": null,
+  "how_used_jev": "Jev chooses the actions for the pick-and-place task. The author reports 10/10 successes in both test conditions for Jev and for the rules.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tryaksh/jev-pick-and-place-study"
+  }
+}

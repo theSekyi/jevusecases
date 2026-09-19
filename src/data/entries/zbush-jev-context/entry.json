@@ -1,0 +1,22 @@
+{
+  "id": "zbush-jev-context",
+  "project": "Jev Context",
+  "description": "A local Codex plugin that searches a codebase with ripgrep. It records token metrics for filtered and unfiltered results.",
+  "github": "https://github.com/zbush/jev-context",
+  "website": null,
+  "how_used_jev": "Jev judges which candidate passages are relevant to the task. Only 'Yes' passages go back to Codex.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/zbush/jev-context"
+  }
+}

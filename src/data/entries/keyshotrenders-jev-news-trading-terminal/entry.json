@@ -1,0 +1,22 @@
+{
+  "id": "keyshotrenders-jev-news-trading-terminal",
+  "project": "JEV TERMINAL",
+  "description": "Monitors financial news feeds in a local web app and trades equities, options, and futures on a paper trading engine.",
+  "github": "https://github.com/keyshotrenders/jev-news-trading-terminal",
+  "website": null,
+  "how_used_jev": "Jev reads each news item and returns a calibrated probability over five directions, from strongly bullish to strongly bearish.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "trading / on-chain agents",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/keyshotrenders/jev-news-trading-terminal"
+  }
+}

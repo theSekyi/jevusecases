@@ -1,0 +1,22 @@
+{
+  "id": "edytakucharska-ticket-quest",
+  "project": "Ticket Quest",
+  "description": "A ticket triage demo that shows product managers how Jev compares with prompting an LLM.",
+  "github": "https://github.com/EdytaKucharska/ticket-quest",
+  "website": "https://ticket-quest-three.vercel.app",
+  "how_used_jev": "Jev answers six narrow questions per ticket in one call. Code combines three scores into a Cost of Delay rank and uses Jev's certainty to route tickets.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/EdytaKucharska/ticket-quest"
+  }
+}

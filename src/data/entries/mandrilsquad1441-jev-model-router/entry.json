@@ -1,0 +1,22 @@
+{
+  "id": "mandrilsquad1441-jev-model-router",
+  "project": "Jev Model Router",
+  "description": "Picks an AI model and reasoning effort for a task. It is a plugin for Claude Code, the Claude desktop app, and Codex.",
+  "github": "https://github.com/Mandrilsquad1441/jev-model-router",
+  "website": null,
+  "how_used_jev": "Jev reads the task and returns its type, difficulty, reasoning need, and needs such as tools or vision. The plugin ranks live models against these needs with OpenRouter pricing.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Mandrilsquad1441/jev-model-router"
+  }
+}

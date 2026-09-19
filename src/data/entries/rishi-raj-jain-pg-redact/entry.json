@@ -1,0 +1,22 @@
+{
+  "id": "rishi-raj-jain-pg-redact",
+  "project": "pg_redact()",
+  "description": "Demo that redacts personal data in a support inbox in Neon Postgres. A redact() SQL function seals or reveals each field by the viewer's role.",
+  "github": "https://github.com/rishi-raj-jain/pg-redact",
+  "website": "https://pg-redact.vercel.app",
+  "how_used_jev": "Jev gets one choice question per candidate text span. It returns a personal data label such as name, email, or phone, with a calibrated confidence.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rishi-raj-jain/pg-redact"
+  }
+}

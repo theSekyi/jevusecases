@@ -1,0 +1,22 @@
+{
+  "id": "moto-taka-jev-orchestrator",
+  "project": "Jev Orchestrator",
+  "description": "A local orchestrator that connects Codex, Claude Code, Pi, and OpenCode. A TUI shows progress, diffs, and decisions.",
+  "github": "https://github.com/moto-taka/jev-orchestrator",
+  "website": null,
+  "how_used_jev": "Jev picks difficulty, model, role, and effort, and gives the final review verdict as typed choices. The existing CLIs do the work.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/moto-taka/jev-orchestrator"
+  }
+}

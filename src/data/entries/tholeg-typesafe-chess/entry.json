@@ -1,0 +1,22 @@
+{
+  "id": "tholeg-typesafe-chess",
+  "project": "typesafe-chess",
+  "description": "A chess game where both players are Jev. Ordinary code keeps the rules and state.",
+  "github": "https://github.com/TholeG/typesafe-chess",
+  "website": null,
+  "how_used_jev": "Jev picks each move as a typed choice with a full probability distribution. An optional tree search uses those distributions as policy and value.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/TholeG/typesafe-chess"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "edsonayllon-jev-prototype",
+  "project": "Tideline",
+  "description": "Tags posts from RSS feeds, news sites, X posts, or pasted text. It shows them as a ranked, filterable feed.",
+  "github": "https://github.com/edsonayllon/jev-prototype",
+  "website": null,
+  "how_used_jev": "Jev answers six questions per item, on type, sentiment, and whether it is worth attention. Code ranks the feed from the probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/edsonayllon/jev-prototype"
+  }
+}

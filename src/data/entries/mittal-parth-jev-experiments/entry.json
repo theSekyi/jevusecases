@@ -1,0 +1,22 @@
+{
+  "id": "mittal-parth-jev-experiments",
+  "project": "jev-experiments",
+  "description": "Runs decision loops that play Chrome's offline dinosaur game and a local Krunker-style arena.",
+  "github": "https://github.com/mittal-parth/jev-experiments",
+  "website": null,
+  "how_used_jev": "Each tick, Jev gets the game state and returns the action, a jump or duck, and an urgency score. Python code then runs the action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mittal-parth/jev-experiments"
+  }
+}

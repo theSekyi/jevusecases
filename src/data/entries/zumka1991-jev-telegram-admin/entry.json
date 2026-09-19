@@ -1,0 +1,22 @@
+{
+  "id": "zumka1991-jev-telegram-admin",
+  "project": "Jev Telegram Guard",
+  "description": "A moderator bot for Telegram groups. It detects abuse such as insults, fraud, spam, and flood, and acts on per-chat settings.",
+  "github": "https://github.com/Zumka1991/jev-telegram-admin",
+  "website": null,
+  "how_used_jev": "For each message, Jev gives a probability per category, the spam type, and the severity. It also recommends a punishment, such as delete, mute, or ban.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Zumka1991/jev-telegram-admin"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "dannote-jev",
+  "project": "jev",
+  "description": "An Elixir client that treats Jev as a peer process in OTP. You ask from a GenServer and pattern match on the answer.",
+  "github": "https://github.com/dannote/jev",
+  "website": null,
+  "how_used_jev": "A GenServer sends typed questions to Jev without blocking. Each answer arrives as a message that handle_answer/3 processes.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/dannote/jev"
+  }
+}

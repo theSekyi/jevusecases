@@ -1,0 +1,22 @@
+{
+  "id": "webgrga-btc-jev-signal",
+  "project": "BTC-Jev Signal",
+  "description": "A public experiment that forecasts BTC price direction over several horizons and scores each forecast later. It never trades.",
+  "github": "https://github.com/WebGrga/btc-jev-signal",
+  "website": null,
+  "how_used_jev": "At fixed times, Jev answers higher-or-lower questions about BTC market state. Code then checks each forecast against the real price.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/WebGrga/btc-jev-signal"
+  }
+}

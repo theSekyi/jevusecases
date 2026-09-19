@@ -1,0 +1,22 @@
+{
+  "id": "amal-david-awesome-jev",
+  "project": "Awesome Jev",
+  "description": "Lists Jev demos, repositories, skills, integrations, and independent reproductions in a catalog with machine-readable data.",
+  "github": "https://github.com/Amal-David/awesome-jev",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": false,
+  "category": "explainer / curation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Amal-David/awesome-jev"
+  }
+}

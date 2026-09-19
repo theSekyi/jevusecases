@@ -1,0 +1,22 @@
+{
+  "id": "maskjelly-tivm",
+  "project": "TiVM",
+  "description": "A computer-use test agent for a disposable Linux desktop. It reads the screen through the accessibility tree and exports verdicts and screenshots per run.",
+  "github": "https://github.com/maskjelly/TiVM",
+  "website": null,
+  "how_used_jev": "Jev is an optional planner that answers typed questions to pick the next action. The actions then run through accessibility invoke or xdotool.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/maskjelly/TiVM"
+  }
+}

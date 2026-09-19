@@ -1,0 +1,22 @@
+{
+  "id": "vladyslavhontar-clear-head",
+  "project": "clear-head",
+  "description": "Adds a Claude Code Stop hook that checks the claims in an answer against what the assistant read that session.",
+  "github": "https://github.com/VladyslavHontar/clear-head",
+  "website": null,
+  "how_used_jev": "Jev judges each claim against the evidence. If a claim is contradicted or unsupported, the hook blocks the turn and lists the claims.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/VladyslavHontar/clear-head"
+  }
+}

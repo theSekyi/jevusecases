@@ -1,0 +1,22 @@
+{
+  "id": "omnifroodle-couchbase-notebooks",
+  "project": "couchbase_notebooks",
+  "description": "Runnable notebooks that test retrieval and AI patterns on Couchbase Capella and measure each claim against human labels.",
+  "github": "https://github.com/omnifroodle/couchbase_notebooks",
+  "website": null,
+  "how_used_jev": "One notebook tries Jev through OpenRouter with yes/no, choice, and scale questions. It ends by reading intent from real WANDS search queries.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/omnifroodle/couchbase_notebooks"
+  }
+}

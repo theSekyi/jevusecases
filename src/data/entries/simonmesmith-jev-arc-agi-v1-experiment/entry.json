@@ -1,0 +1,22 @@
+{
+  "id": "simonmesmith-jev-arc-agi-v1-experiment",
+  "project": "jev-arc-agi-v1-experiment",
+  "description": "Tests one direct Jev method on 400 public ARC-AGI-1 evaluation tasks, with cost, latency, and reproducible evidence.",
+  "github": "https://github.com/simonmesmith/jev-arc-agi-v1-experiment",
+  "website": null,
+  "how_used_jev": "Software joins many small Jev decisions into an answer grid. The author reports 4 of 400 tasks fully solved, a 1.125% score, for about US$2.32.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/simonmesmith/jev-arc-agi-v1-experiment"
+  }
+}

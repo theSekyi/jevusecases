@@ -1,0 +1,22 @@
+{
+  "id": "sudhansuuranjan-typesafe-xlabeller",
+  "project": "X Post Labeler",
+  "description": "Labels each post in your X timeline, for example as Ragebait, Spam / scam, Hidden ad, or Genuine.",
+  "github": "https://github.com/SudhansuuRanjan/typesafe_xlabeller",
+  "website": null,
+  "how_used_jev": "One Jev call asks 8 atomic questions for each of up to 20 posts. Code computes exact facts and composes the labels from Jev's probabilities.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SudhansuuRanjan/typesafe_xlabeller"
+  }
+}

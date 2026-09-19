@@ -1,0 +1,19 @@
+{
+  "id": "pallavmac-tweet-classifier-extension",
+  "project": "Tweet classifier extension",
+  "description": "Classifies each tweet as you scroll in a Chrome extension. You can hide categories such as \"vaguepost\" or show only one category.",
+  "github": null,
+  "website": null,
+  "how_used_jev": "Jev classifies each tweet into a category. The extension filters the feed with this category.",
+  "source_tweet": "https://x.com/pallavmac/status/2101068150091485574",
+  "author": "@pallavmac",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}

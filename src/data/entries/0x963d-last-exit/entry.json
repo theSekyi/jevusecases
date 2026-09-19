@@ -1,0 +1,22 @@
+{
+  "id": "0x963d-last-exit",
+  "project": "Last Exit",
+  "description": "Browser game set at a cyberpunk border gate. You give a cover story, a manifest, or a bribe to hide live cargo from an inspector.",
+  "github": "https://github.com/0x963D/last-exit",
+  "website": "https://gate.fade.tools",
+  "how_used_jev": "Jev drives the inspector's decision on each crossing. The author reports that smugglers escaped 29/90 times in a batch of 100 scripted crossings.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/0x963D/last-exit"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "redrossa-pi-model-router",
+  "project": "pi-model-router",
+  "description": "A Pi extension that sends each prompt to the logged-in model that best fits the task. Examples are planning and coding.",
+  "github": "https://github.com/redrossa/pi-model-router",
+  "website": null,
+  "how_used_jev": "Jev classifies the prompt and recent turns with a Choice over your categories. Low-confidence answers fall back to a configured category.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/redrossa/pi-model-router"
+  }
+}

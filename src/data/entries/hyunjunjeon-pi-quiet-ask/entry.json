@@ -1,0 +1,22 @@
+{
+  "id": "hyunjunjeon-pi-quiet-ask",
+  "project": "pi-quiet-ask",
+  "description": "Adds a rule engine to the pi coding agent that answers closed questions during a session.",
+  "github": "https://github.com/HyunjunJeon/pi-quiet-ask",
+  "website": null,
+  "how_used_jev": "Jev judges if a command is destructive, if output leaked a key, and if the agent verified its claims. Rules then decide the action.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/HyunjunJeon/pi-quiet-ask"
+  }
+}

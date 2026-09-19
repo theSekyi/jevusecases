@@ -1,0 +1,22 @@
+{
+  "id": "amberwhitehead-jevscript",
+  "project": "Jevscript",
+  "description": "A programming language where the running program asks Jev narrow, typed questions, like an operator for meaning.",
+  "github": "https://github.com/amberwhitehead/jevscript",
+  "website": null,
+  "how_used_jev": "The program asks Jev noul, choice, and score questions. The engine groups questions on the same state into one request.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/amberwhitehead/jevscript"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "jujumilk3-jev-calibration-audit",
+  "project": "jev-calibration-audit",
+  "description": "Audits how well Jev's probabilities match reality, using only the public API and public datasets. It is not affiliated with TypeSafe AI.",
+  "github": "https://github.com/jujumilk3/jev-calibration-audit",
+  "website": null,
+  "how_used_jev": "The audit asks Jev Noul, Choice, and Score questions across domains. It measures the sign of the calibration error and a state-blind control.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jujumilk3/jev-calibration-audit"
+  }
+}

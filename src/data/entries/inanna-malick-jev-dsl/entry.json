@@ -1,0 +1,22 @@
+{
+  "id": "inanna-malick-jev-dsl",
+  "project": "jev-dsl",
+  "description": "A Haskell DSL for agents, in early alpha. Question packets are typed expressions, and answers come back under the same labels.",
+  "github": "https://github.com/inanna-malick/jev-dsl",
+  "website": null,
+  "how_used_jev": "It renders a packet to the exact request JSON for Jev and decodes the answers into records. The caller handles HTTP.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/inanna-malick/jev-dsl"
+  }
+}

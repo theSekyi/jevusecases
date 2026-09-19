@@ -1,0 +1,22 @@
+{
+  "id": "hemanth-tool-prune",
+  "project": "tool-prune",
+  "description": "Tool selection and schema pruning for AI agents, with an offline TurboQuant engine or TypeSafe System One.",
+  "github": "https://github.com/hemanth/tool-prune",
+  "website": null,
+  "how_used_jev": "With a TypeSafe API key, System One picks the tools that fit the query. Only those tool schemas go into the LLM prompt.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hemanth/tool-prune"
+  }
+}

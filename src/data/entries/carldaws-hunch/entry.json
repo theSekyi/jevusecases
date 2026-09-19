@@ -1,0 +1,22 @@
+{
+  "id": "carldaws-hunch",
+  "project": "Hunch",
+  "description": "Adds probabilistic control flow to Ruby with chance, pick, and rate primitives for judgment calls.",
+  "github": "https://github.com/carldaws/hunch",
+  "website": null,
+  "how_used_jev": "Each call sends a plain-English question and its context to Jev. Jev returns a probability, a choice, or a rating that code branches on.",
+  "source_tweet": "https://x.com/carldaws/status/2101089701533004144",
+  "author": "@carldaws",
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/carldaws/hunch"
+  }
+}

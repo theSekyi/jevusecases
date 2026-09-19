@@ -1,0 +1,22 @@
+{
+  "id": "salvaivars-routerjev",
+  "project": "RouterJev",
+  "description": "Runs a local proxy that routes coding-agent requests to OpenCode Go models. It accepts OpenAI-compatible requests.",
+  "github": "https://github.com/SalvaIvars/routerjev",
+  "website": null,
+  "how_used_jev": "Jev picks a tier (flash, standard, power, or elite) for each prompt with a confidence. A policy engine applies overrides and limits, then picks a model in the tier.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/SalvaIvars/routerjev"
+  }
+}

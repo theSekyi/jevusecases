@@ -1,0 +1,22 @@
+{
+  "id": "mayonaka-ratori-oto-game-incam",
+  "project": "oto-game-incam",
+  "description": "A browser lab app for the first phase of Oto Motion. It covers camera access, two-hand tracking, audio timing, and gesture measurement.",
+  "github": "https://github.com/mayonaka-ratori/oto-game-incam",
+  "website": null,
+  "how_used_jev": "A spec plans direct HTTP calls to Jev to classify text. The output keeps the model version, the question text, and the confidence of each answer.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "robotics / simulation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mayonaka-ratori/oto-game-incam"
+  }
+}

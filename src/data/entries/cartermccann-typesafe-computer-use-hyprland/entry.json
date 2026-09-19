@@ -1,0 +1,22 @@
+{
+  "id": "cartermccann-typesafe-computer-use-hyprland",
+  "project": "typesafe-computer-use (Hyprland fork)",
+  "description": "A fork of typesafe-computer-use that adds a Hyprland adapter for Linux and NixOS desktops.",
+  "github": "https://github.com/cartermccann/typesafe-computer-use-hyprland",
+  "website": null,
+  "how_used_jev": "The loop captures the screen, runs OCR, and builds a compact state. Jev picks the next action, and hyprctl or ydotool runs it.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/cartermccann/typesafe-computer-use-hyprland"
+  }
+}

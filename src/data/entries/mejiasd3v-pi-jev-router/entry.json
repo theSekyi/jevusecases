@@ -1,0 +1,22 @@
+{
+  "id": "mejiasd3v-pi-jev-router",
+  "project": "Jev Router",
+  "description": "Picks a model and a reasoning effort for a Pi session, then keeps both fixed for that session.",
+  "github": "https://github.com/mejiasd3v/pi-jev-router",
+  "website": null,
+  "how_used_jev": "Jev chooses a model such as Luna or Astra and the lowest effort it judges sufficient. The calls go through Vercel AI Gateway.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/mejiasd3v/pi-jev-router"
+  }
+}

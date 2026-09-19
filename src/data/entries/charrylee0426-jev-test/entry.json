@@ -1,0 +1,22 @@
+{
+  "id": "charrylee0426-jev-test",
+  "project": "jev-test",
+  "description": "Tests how well Jev plays real-time browser games, starting with flappybird.io and play.tetris.com.",
+  "github": "https://github.com/CharryLee0426/jev-test",
+  "website": null,
+  "how_used_jev": "Jev picks every maneuver in Flappy Bird and every piece placement in Tetris.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/CharryLee0426/jev-test"
+  }
+}

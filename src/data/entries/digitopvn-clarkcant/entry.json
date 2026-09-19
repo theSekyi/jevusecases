@@ -1,0 +1,22 @@
+{
+  "id": "digitopvn-clarkcant",
+  "project": "clarkcant",
+  "description": "A conversation-first agent platform with a portable runtime, paired execution nodes, and capability packs that install through chat.",
+  "github": "https://github.com/digitopvn/clarkcant",
+  "website": null,
+  "how_used_jev": "Has an optional Jev client with its own endpoint, model, and timeout settings, documented next to its semantic search setup.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/digitopvn/clarkcant"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hellogumbo-should-ai-kill-us-all",
+  "project": "Should AI Kill Us All?",
+  "description": "Posts a live verdict on whether AI should kill all humans. The verdict uses the day's odd news and world headlines.",
+  "github": "https://github.com/hellogumbo/should-ai-kill-us-all",
+  "website": "https://shouldaikillusall.com",
+  "how_used_jev": "Every ten minutes the site sends the headlines to Jev with three questions in one call. The yes/no choice is the ruling.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/hellogumbo/should-ai-kill-us-all"
+  }
+}

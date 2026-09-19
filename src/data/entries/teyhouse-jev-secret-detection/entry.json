@@ -1,0 +1,22 @@
+{
+  "id": "teyhouse-jev-secret-detection",
+  "project": "jev-secret-detection",
+  "description": "Measures how well Jev finds real secret credentials in file snippets, with no regex matching.",
+  "github": "https://github.com/teyhouse/jev-secret-detection",
+  "website": null,
+  "how_used_jev": "Each test case goes to Jev as one Noul question. The report compares each probability with the expected label and shows accuracy, AUC, and latency.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/teyhouse/jev-secret-detection"
+  }
+}

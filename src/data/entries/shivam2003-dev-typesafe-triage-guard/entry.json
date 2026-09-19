@@ -1,0 +1,22 @@
+{
+  "id": "shivam2003-dev-typesafe-triage-guard",
+  "project": "triage-guard",
+  "description": "Worked example with three pipelines: support-ticket triage, observability alert triage, and a deploy-risk gate for PRs.",
+  "github": "https://github.com/shivam2003-dev/typesafe-triage-guard",
+  "website": null,
+  "how_used_jev": "Each pipeline asks Jev batched Noul, Choice, and Score questions over one state. Code turns the answers into routing, paging, or gate decisions.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shivam2003-dev/typesafe-triage-guard"
+  }
+}

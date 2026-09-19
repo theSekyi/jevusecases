@@ -1,0 +1,22 @@
+{
+  "id": "yairshy-decido",
+  "project": "Decido",
+  "description": "Python library for probabilistic decisions about evidence, with batching, request budgets, and decision records. It also has Playwright crawling and MCP tools.",
+  "github": "https://github.com/yairshy/decido",
+  "website": null,
+  "how_used_jev": "Jev is the default decision provider. It answers typed questions, and Decido keeps every probability for use in Python code.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/yairshy/decido"
+  }
+}

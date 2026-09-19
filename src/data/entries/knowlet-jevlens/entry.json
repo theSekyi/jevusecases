@@ -1,0 +1,22 @@
+{
+  "id": "knowlet-jevlens",
+  "project": "JevLens",
+  "description": "Annotates articles, X/Twitter posts, and Threads posts in Chrome. It shows badges and can dim or collapse posts.",
+  "github": "https://github.com/knowlet/jevlens",
+  "website": null,
+  "how_used_jev": "The extension sends post text and local image evidence to Jev. Jev returns typed decisions, such as adult, spam, or political signals.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/knowlet/jevlens"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "giuliosmall-pg-typesafe",
+  "project": "pg_typesafe",
+  "description": "Pre-alpha PostgreSQL extension that calls TypeSafe AI from SQL for categorical work.",
+  "github": "https://github.com/giuliosmall/pg_typesafe",
+  "website": null,
+  "how_used_jev": "SQL functions send Choice, Noul, and Score questions to Jev and return the answers inside queries.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/giuliosmall/pg_typesafe"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "getexcited-stepwarden",
+  "project": "stepwarden",
+  "description": "Checks each Claude Code tool call before it runs. It is a proof-of-concept plugin that starts in audit mode.",
+  "github": "https://github.com/getexcited/stepwarden",
+  "website": null,
+  "how_used_jev": "Jev checks each pending tool call against the session plan. The plugin then allows the call, asks you, or blocks it, based on thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/getexcited/stepwarden"
+  }
+}

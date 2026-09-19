@@ -1,0 +1,22 @@
+{
+  "id": "laurentfabre-databricks-jev-pdf-lab",
+  "project": "Databricks + Jev PDF Lab",
+  "description": "Tests ways to lower PDF extraction cost and latency on Databricks. It publishes code, synthetic tests, and negative results.",
+  "github": "https://github.com/laurentfabre/databricks-jev-pdf-lab",
+  "website": null,
+  "how_used_jev": "Jev does metadata-only routing of PDF extraction. The author reports no quality-equivalent, end-to-end Jev payoff.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/laurentfabre/databricks-jev-pdf-lab"
+  }
+}

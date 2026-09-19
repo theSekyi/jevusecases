@@ -1,0 +1,22 @@
+{
+  "id": "prajwal-svm-jev-decision-gate",
+  "project": "jev-decision-gate",
+  "description": "A GitHub Action that judges each pull request with typed decisions. It labels the PR and posts the decision as a comment.",
+  "github": "https://github.com/prajwal-svm/jev-decision-gate",
+  "website": null,
+  "how_used_jev": "One batched Jev call picks the change kind and checks three risk flags. It also picks a verdict: ship, needs_review, or risky.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/prajwal-svm/jev-decision-gate"
+  }
+}

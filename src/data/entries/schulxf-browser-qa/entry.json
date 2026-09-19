@@ -1,0 +1,22 @@
+{
+  "id": "schulxf-browser-qa",
+  "project": "Browser QA",
+  "description": "An agent skill for visual and functional QA of web apps. It records evidence and uses an independent review gate.",
+  "github": "https://github.com/schulxf/browser-qa",
+  "website": null,
+  "how_used_jev": "Jev makes bounded textual choices and evidence assessments. agent-browser drives the browser, and a vision model inspects screenshots.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent tooling / skills",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/schulxf/browser-qa"
+  }
+}

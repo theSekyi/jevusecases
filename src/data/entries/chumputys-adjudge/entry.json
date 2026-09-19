@@ -1,0 +1,22 @@
+{
+  "id": "chumputys-adjudge",
+  "project": "adjudge",
+  "description": "Blocks ads without a filter list. It is a Chrome extension.",
+  "github": "https://github.com/chumputys/adjudge",
+  "website": null,
+  "how_used_jev": "Jev judges unknown third-party hosts, sponsored feed blocks, and popups. For hosts, it picks ad, tracker, or functional and scores breakage risk.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/chumputys/adjudge"
+  }
+}

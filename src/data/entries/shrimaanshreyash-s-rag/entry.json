@@ -1,0 +1,22 @@
+{
+  "id": "shrimaanshreyash-s-rag",
+  "project": "HandoffProof / S_RAG",
+  "description": "Runs a local RAG pipeline for operational documents, with an optional Jev check on retrieved passages.",
+  "github": "https://github.com/shrimaanshreyash/S_RAG",
+  "website": null,
+  "how_used_jev": "When enabled, Jev judges each query and passage pair on four dimensions, such as topical relevance and answer evidence. Application code owns the thresholds.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "agent context / memory",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/shrimaanshreyash/S_RAG"
+  }
+}

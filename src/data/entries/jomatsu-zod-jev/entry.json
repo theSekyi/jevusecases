@@ -1,0 +1,22 @@
+{
+  "id": "jomatsu-zod-jev",
+  "project": "zod-jev",
+  "description": "Adds semantic checks from Jev to Zod 4 schemas. Zod checks the shape of data, and Jev checks the meaning.",
+  "github": "https://github.com/jomatsu/zod-jev",
+  "website": null,
+  "how_used_jev": "One parse sends all rules of a schema to Jev in one request. Code sets thresholds on the probabilities, and failures become Zod issues.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / library",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/jomatsu/zod-jev"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "716-ventures-agentos",
+  "project": "agentOS",
+  "description": "Runs an agent-first Linux operating system as a Debian ARM64 virtual machine with a tiling terminal.",
+  "github": "https://github.com/716-ventures/agentos",
+  "website": null,
+  "how_used_jev": "Jev supplies typed action assessments to the execution broker. The broker validates and applies them.",
+  "source_tweet": "https://x.com/chrisjdavis/status/2101060810315354143",
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/716-ventures/agentos"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "onecuriousmindset-sweep",
+  "project": "Sweep",
+  "description": "Hides AI replies, engagement bait, and other posts on X, Reddit, LinkedIn, and Hacker News with rules in plain words.",
+  "github": "https://github.com/onecuriousmindset/sweep",
+  "website": null,
+  "how_used_jev": "Jev reads each post against your Hide and Show only rules, and the extension blurs the posts that fail. Jev also picks the scope of each new rule.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/onecuriousmindset/sweep"
+  }
+}

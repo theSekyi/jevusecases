@@ -1,0 +1,22 @@
+{
+  "id": "rchovatiya88-cyber-breach-jev",
+  "project": "Cyber-Breach: The Jev Protocol",
+  "description": "A 3D cyberpunk arena shooter built with Three.js.",
+  "github": "https://github.com/rchovatiya88/cyber-breach-jev",
+  "website": null,
+  "how_used_jev": "Jev picks tactical maneuvers, scores threat levels, and gives probabilities for states such as player vulnerability.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "games / interactive",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/rchovatiya88/cyber-breach-jev"
+  }
+}

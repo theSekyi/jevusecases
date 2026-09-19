@@ -1,0 +1,22 @@
+{
+  "id": "firassx914-janus",
+  "project": "Janus",
+  "description": "Measures how confident a small model must be on your data. It then routes each decision to a small or larger model.",
+  "github": "https://github.com/FirasSX914/Janus",
+  "website": null,
+  "how_used_jev": "Uses Jev as one of the models it measures and routes between, through a TypeSafe backend.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/FirasSX914/Janus"
+  }
+}

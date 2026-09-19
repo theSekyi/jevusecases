@@ -1,0 +1,22 @@
+{
+  "id": "rhyn0w0-flashbang",
+  "project": "Flashbang",
+  "description": "Dating app for iOS, Android, and web. Users write private comments on profiles instead of swiping, and the app suggests better picks.",
+  "github": "https://github.com/Rhyn0w0/Flashbang",
+  "website": null,
+  "how_used_jev": "Jev rates the sentiment of each private comment through the Vercel AI SDK and Vercel AI Gateway. The matching uses these answers.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Rhyn0w0/Flashbang"
+  }
+}

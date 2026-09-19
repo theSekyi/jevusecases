@@ -1,0 +1,22 @@
+{
+  "id": "kiishiad-jev-loan-identity-benchmark",
+  "project": "Jev temporal loan identity benchmark",
+  "description": "Benchmarks matching of noisy loan observations to a synthetic bitemporal loan store.",
+  "github": "https://github.com/KiishiAD/jev-loan-identity-benchmark",
+  "website": null,
+  "how_used_jev": "Jev chooses the best of four candidates or none and judges each one. Code applies a policy to decide match, review, or no match.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/KiishiAD/jev-loan-identity-benchmark"
+  }
+}

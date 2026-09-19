@@ -1,0 +1,22 @@
+{
+  "id": "komikat-psearch",
+  "project": "psearch",
+  "description": "Web search for terminals and agents, with readable results, JSON output, and an MCP server.",
+  "github": "https://github.com/komikat/psearch",
+  "website": null,
+  "how_used_jev": "Local Chromium fetches pages in parallel. Jev scores the evidence and selects links for a breadth-first queue.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/komikat/psearch"
+  }
+}

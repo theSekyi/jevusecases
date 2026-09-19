@@ -1,0 +1,22 @@
+{
+  "id": "lukebward-typesafe-aws-policies",
+  "project": "TypeSafe AWS policies",
+  "description": "Pulumi CrossGuard proof of concept with policies for EC2 instances, security-group ingress, and IAM permissions.",
+  "github": "https://github.com/lukebward/typesafe-aws-policies",
+  "website": null,
+  "how_used_jev": "Code extracts facts from the config, and Jev judges if the access exceeds the stated purpose. At a probability of 0.8 or more, Python reports a finding.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "security / guardrails",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/lukebward/typesafe-aws-policies"
+  }
+}

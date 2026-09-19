@@ -1,0 +1,22 @@
+{
+  "id": "bewinxed-jevgpt",
+  "project": "JevGPT",
+  "description": "Builds a chatbot on Jev, a model that cannot generate text, by picking the reply one word at a time.",
+  "github": "https://github.com/Bewinxed/jevgpt",
+  "website": null,
+  "how_used_jev": "Each step asks Jev \"Next word?\" with the conversation as state and dictionary words as the choices. The chosen word joins the transcript for the next step.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "novelty / joke",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Bewinxed/jevgpt"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "youyo-decio",
+  "project": "Decio",
+  "description": "Turns context into typed decisions from the command line, for hooks, CI/CD, and agents. It can run actions that you declare in trusted configuration.",
+  "github": "https://github.com/youyo/decio",
+  "website": null,
+  "how_used_jev": "Jev is the decision provider. Decio maps the Jev answer to a declared action and never runs model output as a shell command.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/youyo/decio"
+  }
+}

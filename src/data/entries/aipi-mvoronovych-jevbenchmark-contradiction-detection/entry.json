@@ -1,0 +1,22 @@
+{
+  "id": "aipi-mvoronovych-jevbenchmark-contradiction-detection",
+  "project": "CLASH benchmark for Jev",
+  "description": "Runs the CLASH cross-modal contradiction detection benchmark against Jev, with a text caption in place of each image.",
+  "github": "https://github.com/AIPI-mvoronovych/JEVBenchmark-Contradiction-Detection",
+  "website": null,
+  "how_used_jev": "Jev gets the image caption, the contradicting caption, and a question. It picks one of four CLASH options, one of which says the information conflicts.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/AIPI-mvoronovych/JEVBenchmark-Contradiction-Detection"
+  }
+}

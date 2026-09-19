@@ -1,0 +1,22 @@
+{
+  "id": "kamesan1577-re-heitan",
+  "project": "re:heitan",
+  "description": "Hides abusive posts from your X timeline in a Chrome extension. It moves the older heitan filter from GPT-3.5 to Jev.",
+  "github": "https://github.com/kamesan1577/re-heitan",
+  "website": null,
+  "how_used_jev": "Jev scores severity and answers yes or no questions on attack, slur, threat, sexual content, and banter. Code combines them and hides posts above a threshold.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "content moderation / classification",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/kamesan1577/re-heitan"
+  }
+}

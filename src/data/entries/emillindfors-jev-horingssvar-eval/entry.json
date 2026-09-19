@@ -1,0 +1,22 @@
+{
+  "id": "emillindfors-jev-horingssvar-eval",
+  "project": "jev-horingssvar-eval",
+  "description": "Tests Jev on 24 Norwegian responses to a 2022 hearing on salmon farming tax. It compares Jev with DeepSeek V4.1 Flash.",
+  "github": "https://github.com/EmilLindfors/jev-horingssvar-eval",
+  "website": null,
+  "how_used_jev": "One Jev request per document answers eleven questions. The answers are scored against reference labels, next to the DeepSeek results.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/EmilLindfors/jev-horingssvar-eval"
+  }
+}

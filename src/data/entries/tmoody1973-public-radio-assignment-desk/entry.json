@@ -1,0 +1,22 @@
+{
+  "id": "tmoody1973-public-radio-assignment-desk",
+  "project": "Public Radio Assignment Desk",
+  "description": "An editorial workbench for public-radio producers. It shows NPR CDS stories, transcripts, and audio, and suggests editorial next steps.",
+  "github": "https://github.com/tmoody1973/public-radio-assignment-desk",
+  "website": null,
+  "how_used_jev": "Jev assesses each story on the wire. It suggests topics, format fit, a next reporting action, and local follow-up potential.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "apps / personal tools",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/tmoody1973/public-radio-assignment-desk"
+  }
+}

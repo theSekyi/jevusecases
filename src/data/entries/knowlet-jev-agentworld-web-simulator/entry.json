@@ -1,0 +1,22 @@
+{
+  "id": "knowlet-jev-agentworld-web-simulator",
+  "project": "Jev AgentWorld Web Simulator",
+  "description": "Simulates a fictional internet of search results, pages, and links. It remembers explored pages, so you can revisit the same world.",
+  "github": "https://github.com/knowlet/jev-agentworld-web-simulator",
+  "website": null,
+  "how_used_jev": "Jev makes bounded decisions on search intent, page policy, and UI composition. A separate OpenAI-compatible model generates the page content.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "browser agents / automation",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/knowlet/jev-agentworld-web-simulator"
+  }
+}

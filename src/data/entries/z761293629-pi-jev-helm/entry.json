@@ -1,0 +1,22 @@
+{
+  "id": "z761293629-pi-jev-helm",
+  "project": "Pi Jev Helm",
+  "description": "Selects a Pi model for each new unit of work. If classification or model switching fails, Pi keeps the user's baseline model.",
+  "github": "https://github.com/Z761293629/pi-jev-helm",
+  "website": null,
+  "how_used_jev": "Jev, through OpenRouter, classifies the user message. A deterministic policy then picks the model.",
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-19",
+  "is_build": true,
+  "category": "routing / model selection",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/Z761293629/pi-jev-helm"
+  }
+}
