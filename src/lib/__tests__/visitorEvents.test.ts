@@ -8,6 +8,7 @@ import {
   recordVisitorEvent,
   relativeTime,
   VISIBLE_EVENT_COUNT,
+  visitSource,
 } from "../visitorEvents";
 
 const transaction = vi.fn();
@@ -85,9 +86,9 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
     const [timeout, lock, insert] = sqlMock.mock.calls;
     expect(timeout[0].join("?")).toContain("SET LOCAL lock_timeout");
     expect(lock[0].join("?")).toContain("pg_advisory_xact_lock");
-    expect(insert[0].join("?")).toContain("INSERT INTO visitor_events (country, path, visitor_hash)");
+    expect(insert[0].join("?")).toContain("INSERT INTO visitor_events (country, path, visitor_hash, ref, referrer_host)");
     expect(insert[0].join("?")).toContain("WHERE NOT EXISTS");
-    expect(insert.slice(1)).toEqual(["US", "/submit", "abc123", DUPLICATE_WINDOW_MS, "abc123", "abc123", "abc123", "US"]);
+    expect(insert.slice(1)).toEqual(["US", "/submit", "abc123", null, null, DUPLICATE_WINDOW_MS, "abc123", "abc123", "abc123", "US"]);
   });
 
   test("with a visitor hash, repeats are matched on the hash, so two visitors from one country both count", async () => {
@@ -108,7 +109,7 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
 
     const insert = sqlMock.mock.calls[2];
     expect(insert[0].join("?")).toContain("visitor_hash IS NULL AND country IS NOT DISTINCT FROM");
-    expect(insert.slice(1)).toEqual([null, "/", null, DUPLICATE_WINDOW_MS, null, null, null, null]);
+    expect(insert.slice(1)).toEqual([null, "/", null, null, null, DUPLICATE_WINDOW_MS, null, null, null, null]);
   });
 
   test("getRecentVisitorEvents maps snake_case rows into the VisitorEvent shape", async () => {
@@ -132,5 +133,28 @@ describe("recordVisitorEvent / getRecentVisitorEvents", () => {
 
     const values = sqlMock.mock.calls[0].slice(1);
     expect(values).toContain(VISIBLE_EVENT_COUNT);
+  });
+});
+
+describe("visitSource", () => {
+  const url = (query = "") => new URL(`https://www.jevusecases.com/p/jev-guard${query}`);
+
+  test("keeps a short ref tag, lowercased", () => {
+    expect(visitSource(url("?ref=X-Post-1"), null)).toEqual({ ref: "x-post-1", referrerHost: null });
+  });
+
+  test("drops a ref tag that is too long or has other characters", () => {
+    expect(visitSource(url(`?ref=${"a".repeat(41)}`), null).ref).toBeNull();
+    expect(visitSource(url("?ref=<script>"), null).ref).toBeNull();
+    expect(visitSource(url("?ref=a%20b"), null).ref).toBeNull();
+  });
+
+  test("keeps only the host of the referrer, never its path or query", () => {
+    expect(visitSource(url(), "https://t.co/AbC123?amp=1").referrerHost).toBe("t.co");
+  });
+
+  test("ignores our own site and malformed referrers", () => {
+    expect(visitSource(url(), "https://www.jevusecases.com/").referrerHost).toBeNull();
+    expect(visitSource(url(), "not a url").referrerHost).toBeNull();
   });
 });

@@ -358,6 +358,23 @@ describe("ProjectExplorer", () => {
       expect(within(panel).queryByText("Links")).not.toBeInTheDocument();
     });
 
+    test("offers a Post on X link and a copy button for the project's own page", async () => {
+      const writeText = vi.fn().mockResolvedValue(undefined);
+      Object.defineProperty(navigator, "clipboard", { value: { writeText }, configurable: true });
+      render(<ProjectExplorer projects={FIXTURE_PROJECTS} />);
+      goToHash(guard.id);
+
+      const post = new URL(screen.getByRole("link", { name: "Post on X" }).getAttribute("href")!);
+      expect(post.origin + post.pathname).toBe("https://x.com/intent/post");
+      expect(post.searchParams.get("url")).toBe(`https://www.jevusecases.com/p/${guard.id}?ref=x-share`);
+      expect(post.searchParams.get("text")).toContain(guard.project);
+
+      await act(async () => {
+        fireEvent.click(screen.getByRole("button", { name: "Copy link" }));
+      });
+      expect(writeText).toHaveBeenCalledWith(`https://www.jevusecases.com/p/${guard.id}`);
+    });
+
     test("offers a copy button for the install command and confirms the copy", async () => {
       const writeText = vi.fn().mockResolvedValue(undefined);
       Object.defineProperty(navigator, "clipboard", { value: { writeText }, configurable: true });
