@@ -19,7 +19,13 @@ import {
   type SortKey,
 } from "@/lib/projectSearch";
 import type { Project } from "@/lib/projects";
+import { usePages } from "@/lib/usePages";
 import { closeProject, useProjectHash } from "@/lib/useProjectHash";
+
+/** Moves focus to a project's card, once the next frame has drawn it. */
+function focusCard(id: string) {
+  requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${id}"]`)?.focus());
+}
 
 /** Pressing "/" anywhere on the page jumps to search, unless you are already typing somewhere. */
 function useSearchShortcut(input: React.RefObject<HTMLInputElement | null>) {
@@ -50,16 +56,14 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
   const featured = isDefaultView(filters, sort) ? strongest : null;
   const rest = featured ? visible.filter((project) => project.id !== featured.id) : visible;
   const openProject = projects.find((project) => project.id === openId) ?? null;
+  const { page, more, showMore } = usePages(rest, JSON.stringify([filters, sort]), openProject);
 
   // Whichever way the panel closes (Esc, Close, the backdrop, the browser's Back button), the card that
   // opened it gets focus back so keyboard users don't lose their place.
   const lastOpenId = useRef<string | null>(null);
   useEffect(() => {
     const id = openProject?.id ?? null;
-    if (!id && lastOpenId.current) {
-      const previous = lastOpenId.current;
-      requestAnimationFrame(() => document.querySelector<HTMLElement>(`a[href="#${previous}"]`)?.focus());
-    }
+    if (!id && lastOpenId.current) focusCard(lastOpenId.current);
     lastOpenId.current = id;
   }, [openProject]);
 
@@ -103,11 +107,26 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
           {featured && <FeaturedProject project={featured} />}
 
           {visible.length > 0 ? (
-            <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,19rem),1fr))] gap-4">
-              {rest.map((project, index) => (
-                <ProjectCard key={project.id} project={project} index={index} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,19rem),1fr))] gap-4">
+                {page.map((project, index) => (
+                  <ProjectCard key={project.id} project={project} index={index} />
+                ))}
+              </div>
+              {more > 0 && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    // Keyboard users continue from the first new card, not from a button that moved down the page.
+                    focusCard(rest[page.length].id);
+                    showMore();
+                  }}
+                  className="self-center rounded-md border border-bp-muted px-4 py-2 text-sm font-semibold transition-colors hover:border-bp-accent hover:text-bp-accent"
+                >
+                  Show {more} more
+                </button>
+              )}
+            </>
           ) : (
             <div className="flex flex-col items-start gap-4 rounded-xl border border-dashed border-bp-muted p-8 sm:p-12">
               <p className="text-lg font-semibold [overflow-wrap:anywhere]">

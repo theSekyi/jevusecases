@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import { act, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { ProjectExplorer } from "../ProjectExplorer";
 import { getProjects } from "@/lib/projects";
+import { PAGE_SIZE } from "@/lib/usePages";
 import { FIXTURE_PROJECTS, fsd, guard, makeProject, trader } from "@/lib/__tests__/fixtures";
 
 const cardTitles = () => screen.getAllByRole("heading", { level: 3 }).map((heading) => heading.textContent);
@@ -41,15 +42,70 @@ describe("ProjectExplorer", () => {
     expect(cardTitles()).toHaveLength(FIXTURE_PROJECTS.length);
   });
 
-  test("renders every real project, and opens each one's panel without throwing", () => {
+  test("renders the real projects, and opens each one's panel without throwing", () => {
     const real = getProjects();
     render(<ProjectExplorer projects={real} />);
 
-    expect(cardTitles()).toHaveLength(real.length);
+    // The featured card, then one page.
+    expect(cardTitles()).toHaveLength(Math.min(real.length, PAGE_SIZE + 1));
     for (const project of real) {
       goToHash(project.id);
       expect(screen.getByRole("dialog", { name: project.project })).toBeInTheDocument();
     }
+  });
+
+  describe("with more projects than fit on one page", () => {
+    // Named so A to Z order matches creation order; none has evidence, so nothing is featured.
+    const many = Array.from({ length: PAGE_SIZE * 2 + 3 }, (_, i) => {
+      const n = String(i).padStart(3, "0");
+      return makeProject({ id: `p${n}`, project: `Project ${n}` });
+    });
+    const showMore = () => screen.getByRole("button", { name: /^Show \d+ more$/ });
+
+    test("shows one page, counts every project, and adds a page per click", () => {
+      render(<ProjectExplorer projects={many} />);
+
+      expect(cardTitles()).toHaveLength(PAGE_SIZE);
+      expect(screen.getByText(`${many.length} projects`)).toBeInTheDocument();
+
+      fireEvent.click(showMore());
+      expect(cardTitles()).toHaveLength(PAGE_SIZE * 2);
+      expect(showMore()).toHaveTextContent("Show 3 more");
+
+      fireEvent.click(showMore());
+      expect(cardTitles()).toHaveLength(many.length);
+      expect(screen.queryByRole("button", { name: /^Show \d+ more$/ })).not.toBeInTheDocument();
+    });
+
+    test("moves focus to the first new card", async () => {
+      render(<ProjectExplorer projects={many} />);
+
+      fireEvent.click(showMore());
+
+      await waitFor(() => expect(screen.getByRole("link", { name: new RegExp(many[PAGE_SIZE].project) })).toHaveFocus());
+    });
+
+    test("a new search starts again at one page, and so does going back", () => {
+      render(<ProjectExplorer projects={many} />);
+      fireEvent.click(showMore());
+
+      fireEvent.change(search(), { target: { value: "project" } });
+      expect(cardTitles()).toHaveLength(PAGE_SIZE);
+
+      fireEvent.change(search(), { target: { value: "" } });
+      expect(cardTitles()).toHaveLength(PAGE_SIZE);
+    });
+
+    test("a link to a project past the first page opens it, and closing returns focus to its card", async () => {
+      render(<ProjectExplorer projects={many} />);
+      const last = many.at(-1)!;
+
+      goToHash(last.id);
+      expect(screen.getByRole("dialog", { name: last.project })).toBeInTheDocument();
+
+      fireEvent.click(within(screen.getByRole("dialog")).getByRole("button", { name: /Close/ }));
+      await waitFor(() => expect(screen.getByRole("link", { name: new RegExp(last.project) })).toHaveFocus());
+    });
   });
 
   test("typing filters as you go, and says how many are showing", () => {
