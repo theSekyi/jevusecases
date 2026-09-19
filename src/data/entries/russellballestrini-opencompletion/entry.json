@@ -3,7 +3,7 @@
   "project": "Open Completion",
   "description": "Adds an optional Jev classifier to a multi-user chatroom app where people talk with language models.",
   "github": "https://github.com/russellballestrini/opencompletion",
-  "website": "https://demo.opencompletion.com",
+  "website": null,
   "how_used_jev": "The categorize_response step asks Jev first when a classifier is configured. If the call fails, the message goes on to the chat model.",
   "source_tweet": null,
   "author": null,
