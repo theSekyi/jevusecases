@@ -1,10 +1,10 @@
 {
   "id": "real-time-discord-chat-moderator-290c67dc",
-  "project": "Real-time Discord Chat Moderator",
-  "description": "A real-time chat moderator for Discord servers powered by a System One AI model, featuring automated progressive discipline, spam defense, and member profiling.",
+  "project": "Jev Moderation Bot",
+  "description": "A Discord moderation bot. Jev classifies each incoming message as legitimate, spam or a scam link, and the bot deletes flagged messages and escalates from warnings to timeouts. A /profile command scores a member's recent messages for scam risk, spam, toxicity and helpfulness.",
   "github": "https://github.com/brainstormity/Jev-Moderation-Bot",
   "website": null,
-  "how_used_jev": null,
+  "how_used_jev": "Each message goes to Jev with the sender's account age, whether it has a link, and messages admins have pardoned before. One pick-one question sorts it into legitimate, spam or scam link, and a yes/no question asks whether it needs an immediate ban. Confidence thresholds split flags into a high and a medium tier. A pardoned false flag is saved and passed to Jev as a known-safe example on that server's later checks, so it adapts without retraining.",
   "source_tweet": null,
   "author": "@brainstormity",
   "date_found": "2026-09-19",
@@ -15,5 +15,9 @@
   "benchmark": null,
   "jaggedness_reports": [],
   "security_status": null,
-  "recipe": null
+  "recipe": {
+    "type": "open-source implementation",
+    "link": "https://github.com/brainstormity/Jev-Moderation-Bot",
+    "install": "git clone https://github.com/brainstormity/Jev-Moderation-Bot && cd Jev-Moderation-Bot && pip install -r requirements.txt"
+  }
 }
