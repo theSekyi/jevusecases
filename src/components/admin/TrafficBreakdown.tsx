@@ -15,7 +15,44 @@ function Stat({ label, value }: { label: string; value: number }) {
   );
 }
 
-export function TrafficBreakdown({ summary }: { summary: TrafficSummary }) {
+/** Optional links between the list and the globe: hovering or focusing a country row highlights it there. */
+export interface GlobeLinks {
+  highlighted: string | null;
+  onHighlight: (code: string | null) => void;
+  onSelect: (code: string) => void;
+}
+
+function RowBody({ row, views }: { row: TrafficRow; views: number }) {
+  const { flag, name } = labelFor(row);
+  const share = (row.views / views) * 100;
+
+  return (
+    <>
+      <div className="flex items-baseline gap-3 font-bp-mono text-[13px]">
+        <span aria-hidden="true" className="w-6">
+          {flag}
+        </span>
+        <span className="min-w-0 flex-1 text-bp-ink">{name}</span>
+        <span className="w-10 text-right text-bp-secondary">{formatShare(row.views, views)}</span>
+        <span className="w-20 text-right text-bp-secondary">
+          {row.visitors.toLocaleString("en-US")}
+          <span className="sr-only"> visitors</span>
+        </span>
+        <span className="w-14 text-right text-bp-ink">
+          {row.views.toLocaleString("en-US")}
+          <span className="sr-only"> page views</span>
+        </span>
+      </div>
+      <div aria-hidden="true" className="h-1 bg-bp-hairline/60">
+        <div className="h-full bg-bp-ink" style={{ width: `${share}%` }} />
+      </div>
+    </>
+  );
+}
+
+const rowClass = "-mx-2 flex w-[calc(100%+1rem)] flex-col gap-1.5 rounded-md px-2 py-1.5 text-left";
+
+export function TrafficBreakdown({ summary, globe }: { summary: TrafficSummary; globe?: GlobeLinks }) {
   const { views, visitors, returning, rows } = summary;
 
   return (
@@ -45,33 +82,29 @@ export function TrafficBreakdown({ summary }: { summary: TrafficSummary }) {
             <span className="w-20 text-right">VISITORS</span>
             <span className="w-14 text-right">VIEWS</span>
           </div>
-          <ol className="flex flex-col gap-3">
-            {rows.map((row) => {
-              const { flag, name } = labelFor(row);
-              const share = (row.views / views) * 100;
-              return (
-                <li key={row.kind === "country" ? row.country : row.kind} className="flex flex-col gap-1.5">
-                  <div className="flex items-baseline gap-3 font-bp-mono text-[13px]">
-                    <span aria-hidden="true" className="w-6">
-                      {flag}
-                    </span>
-                    <span className="min-w-0 flex-1 text-bp-ink">{name}</span>
-                    <span className="w-10 text-right text-bp-secondary">{formatShare(row.views, views)}</span>
-                    <span className="w-20 text-right text-bp-secondary">
-                      {row.visitors.toLocaleString("en-US")}
-                      <span className="sr-only"> visitors</span>
-                    </span>
-                    <span className="w-14 text-right text-bp-ink">
-                      {row.views.toLocaleString("en-US")}
-                      <span className="sr-only"> page views</span>
-                    </span>
+          <ol className="flex flex-col gap-1">
+            {rows.map((row) => (
+              <li key={row.kind === "country" ? row.country : row.kind}>
+                {row.kind === "country" && globe ? (
+                  <button
+                    type="button"
+                    onClick={() => globe.onSelect(row.country)}
+                    onMouseEnter={() => globe.onHighlight(row.country)}
+                    onMouseLeave={() => globe.onHighlight(null)}
+                    onFocus={() => globe.onHighlight(row.country)}
+                    onBlur={() => globe.onHighlight(null)}
+                    className={`${rowClass} transition-colors hover:bg-bp-raised ${globe.highlighted === row.country ? "bg-bp-raised" : ""}`}
+                  >
+                    <RowBody row={row} views={views} />
+                    <span className="sr-only">Show on the globe</span>
+                  </button>
+                ) : (
+                  <div className={rowClass}>
+                    <RowBody row={row} views={views} />
                   </div>
-                  <div aria-hidden="true" className="h-1 bg-bp-hairline/60">
-                    <div className="h-full bg-bp-ink" style={{ width: `${share}%` }} />
-                  </div>
-                </li>
-              );
-            })}
+                )}
+              </li>
+            ))}
           </ol>
         </div>
       )}
