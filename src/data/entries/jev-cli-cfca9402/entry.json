@@ -1,10 +1,10 @@
 {
   "id": "jev-cli-cfca9402",
   "project": "jev-cli",
-  "description": "A cli tool for Jev client that provides all of jev capabilities in a single place.",
+  "description": "A command-line tool for Jev. It turns Jev's typed questions into commands you can pipe into and gate CI on: verify claims against evidence, screen text for prompt injection, classify, extract, rerank, match, route and compact agent transcripts.",
   "github": "https://github.com/Nasrallah-AL/jev-cli",
-  "website": null,
-  "how_used_jev": null,
+  "website": "https://jevcli.vectorz.app/",
+  "how_used_jev": "Each command sends content and a closed set of questions to Jev and prints a probability for every answer. Exit code 2 means a chosen condition matched, so a claim check or an injection screen can block a CI job or a hook. A Claude Code plugin in the repo uses jev compact in place of Claude Code's compaction summary.",
   "source_tweet": null,
   "author": null,
   "date_found": "2026-09-19",
@@ -15,5 +15,9 @@
   "benchmark": null,
   "jaggedness_reports": [],
   "security_status": null,
-  "recipe": null
+  "recipe": {
+    "type": "npm package",
+    "link": "https://www.npmjs.com/package/jevctl",
+    "install": "npm install -g jevctl"
+  }
 }
