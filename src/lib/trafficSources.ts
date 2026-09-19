@@ -1,6 +1,6 @@
 import { db } from "@/lib/db";
 import { MAX_NAMED_ROWS, MIN_SOURCE_VISITORS } from "@/lib/sourceRules";
-import { TRAFFIC_WINDOW_DAYS } from "@/lib/trafficStats";
+import { TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
 import { DIRECT_SOURCE, INTERNAL_SOURCE } from "@/lib/visitorEvents";
 
 export interface SourceCounts {

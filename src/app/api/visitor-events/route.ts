@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { countryCodeToFlag, getRecentVisitorEvents } from "@/lib/visitorEvents";
+import { getRecentVisitorEvents } from "@/lib/visitorEvents";
+import { countryCodeToFlag } from "@/lib/visitorFormat";
 import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 
 // Well above the strip's own 7s poll cadence — this only needs to blunt a scripted flood.

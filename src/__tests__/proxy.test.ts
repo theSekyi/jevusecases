@@ -43,6 +43,34 @@ describe("proxy", () => {
     expect(recordVisitorEvent).toHaveBeenCalledWith("US", "/submit", null, { ref: null, referrerHost: "(direct)" });
   });
 
+  test("doesn't record views on a preview deployment, which shares the production database", async () => {
+    vi.stubEnv("VERCEL_ENV", "preview");
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://jevusecases-git-x.vercel.app/", {
+      headers: { "x-forwarded-for": "203.0.113.6" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).not.toHaveBeenCalled();
+  });
+
+  test("still records on production", async () => {
+    vi.stubEnv("VERCEL_ENV", "production");
+    const { proxy } = await import("../proxy");
+    const request = new NextRequest("https://www.jevusecases.com/", {
+      headers: { "x-forwarded-for": "203.0.113.6" },
+    });
+    const { event, waited } = fakeEvent();
+
+    proxy(request, event as never);
+    await Promise.all(waited);
+
+    expect(recordVisitorEvent).toHaveBeenCalledTimes(1);
+  });
+
   test("records the ref tag and the referring host with the view", async () => {
     const { proxy } = await import("../proxy");
     const request = new NextRequest("https://jevusecases.com/p/jev-guard?ref=x-post", {

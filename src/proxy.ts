@@ -1,6 +1,7 @@
 import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
 import { geolocation } from "@vercel/functions";
-import { isAutomatedClient, isValidCountryCode, recordVisitorEvent, visitSource } from "@/lib/visitorEvents";
+import { isAutomatedClient, recordVisitorEvent, visitSource } from "@/lib/visitorEvents";
+import { isValidCountryCode } from "@/lib/visitorFormat";
 import { SESSION_COOKIE } from "@/lib/authConstants";
 import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 import { hashVisitor } from "@/lib/visitorHash";
@@ -14,6 +15,9 @@ async function recordVisit(request: NextRequest) {
     // the App Router speculatively prefetches every link that scrolls into view, which would
     // otherwise inflate the feed with pages nobody actually read.
     if (request.method !== "GET") return;
+    // Preview deployments share the production database, so their traffic (mine, testers', bots')
+    // would land in the real numbers.
+    if (process.env.VERCEL_ENV === "preview") return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
     if (request.headers.get("sec-purpose")?.includes("prefetch")) return;

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "@/lib/useMediaQuery";
-import { countryName, relativeTime, VISIBLE_EVENT_COUNT } from "@/lib/visitorEvents";
+import { countryName, relativeTime, VISIBLE_EVENT_COUNT } from "@/lib/visitorFormat";
 
 interface FeedEvent {
   id: number;

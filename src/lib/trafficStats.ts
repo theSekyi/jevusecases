@@ -1,8 +1,5 @@
 import { db } from "@/lib/db";
-import { isValidCountryCode } from "@/lib/visitorEvents";
-
-/** The one window this page reports, fixed on purpose. */
-export const TRAFFIC_WINDOW_DAYS = 7;
+import { isValidCountryCode, TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
 
 /** Fewer page views than this is too few to show on its own row. */
 export const MIN_COUNTRY_VIEWS = 3;
@@ -88,15 +85,6 @@ export function summarizeCountries(counts: CountryCounts[]): { views: number; ro
   if (unknown.views > 0) rows.push({ kind: "unknown", ...unknown });
   if (other.views > 0) rows.push({ kind: "other", ...other });
   return { views: rows.reduce((sum, row) => sum + row.views, 0), rows };
-}
-
-/** A row's share of the total as a short label: one decimal below 10%, whole numbers above, "<0.1%" for slivers. */
-export function formatShare(part: number, total: number): string {
-  if (total <= 0) return "0%";
-  const share = (part / total) * 100;
-  if (share < 0.1) return "<0.1%";
-  const oneDecimal = Number(share.toFixed(1));
-  return oneDecimal < 10 ? `${oneDecimal.toFixed(1)}%` : `${Math.round(share)}%`;
 }
 
 /** Page views, unique visitors and returning visitors over the trailing window. Takes no input, so nothing a caller passes can change what it returns. */

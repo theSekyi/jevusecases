@@ -1,4 +1,4 @@
-import { formatShare, TRAFFIC_WINDOW_DAYS } from "@/lib/trafficStats";
+import { formatShare, TRAFFIC_WINDOW_DAYS } from "@/lib/visitorFormat";
 import { MIN_SOURCE_VISITORS } from "@/lib/sourceRules";
 import type { SourceRow, SourcesSummary } from "@/lib/trafficSources";
 
