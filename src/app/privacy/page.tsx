@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <span className="font-bp-mono text-[11px] tracking-widest text-bp-accent">PRIVACY</span>
           <h1 className="text-3xl font-bold">What this site records about you</h1>
           <p className="text-sm text-bp-secondary">
-            Short version: it counts visits. It does not keep your IP address in its database, and it does not track you
+            Short version: it counts visits and which links people click. It does not keep your IP address in its database, and it does not track you
             on other sites.
           </p>
         </div>
@@ -41,6 +41,15 @@ export default function PrivacyPage() {
             </li>
             <li>a one-way hash of your IP address, when one can be made</li>
           </ul>
+          <p>
+            The site also counts clicks on some links and buttons: opening a project, following a project&apos;s source,
+            announcement or author link, Post on X, Copy link, Copy install command, the Submit a project buttons, and
+            the site&apos;s repository link in the footer. For each click it records which of those it was, the time, the
+            page you were on (only if it is one of the site&apos;s own pages), the same one-way hash of your IP address,
+            and where the link leads, as a hostname only, for example github.com. For a project&apos;s own links it also
+            records which project. It does not record what you typed or the full address you went to. A click is not
+            recorded at all when no hash can be made.
+          </p>
           <p>
             The home page shows the country and page of recent visits to everyone for about three minutes. It never
             shows a hash.
@@ -71,7 +80,7 @@ export default function PrivacyPage() {
 
         <Section title="WHY">
           <p>
-            To count unique and returning visitors, and to show country totals to the site owner. The legal basis is the
+            To count unique and returning visitors, to show country totals, and to see which links are followed, all to the site owner. The legal basis is the
             owner&apos;s legitimate interest in knowing how the site is used.
           </p>
         </Section>
@@ -90,7 +99,7 @@ export default function PrivacyPage() {
 
         <Section title="WHO HANDLES THE DATA">
           <p>
-            Vercel hosts the site and works out your country. Neon stores the visit records. GitHub holds submissions.
+            Vercel hosts the site and works out your country. Neon stores the visit and click records. GitHub holds submissions.
             Emails to the address below pass through the domain registrar&apos;s forwarding and the owner&apos;s email provider. Vercel, Neon and GitHub are based in the United States. Visit records are kept until they are deleted. There is no
             automatic deletion yet.
           </p>

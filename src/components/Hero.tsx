@@ -17,6 +17,7 @@ export function Hero({ search, live }: { search: ReactNode; live?: ReactNode }) 
             Built something with Jev?{" "}
             <a
               href="/submit"
+              data-track="submit"
               className="font-semibold text-bp-accent underline decoration-bp-accent/40 underline-offset-4 transition-colors hover:decoration-bp-accent"
             >
               Submit your project

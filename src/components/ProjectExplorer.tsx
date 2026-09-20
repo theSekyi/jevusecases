@@ -146,7 +146,7 @@ export function ProjectExplorer({ projects, live }: { projects: Project[]; live?
                 >
                   Clear search and filters
                 </button>
-                <a href="/submit" className="text-sm font-semibold text-bp-accent underline underline-offset-4">
+                <a href="/submit" data-track="submit" className="text-sm font-semibold text-bp-accent underline underline-offset-4">
                   Submit a project
                 </a>
               </div>

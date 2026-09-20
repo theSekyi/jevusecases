@@ -13,6 +13,7 @@ export function Header() {
         </Link>
         <Link
           href="/submit"
+          data-track="submit"
           className="rounded-md border border-bp-muted px-4 py-2 text-sm font-semibold text-bp-ink transition-colors hover:border-bp-accent hover:text-bp-accent"
         >
           Submit a project

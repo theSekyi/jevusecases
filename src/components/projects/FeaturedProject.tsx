@@ -11,6 +11,8 @@ export function FeaturedProject({ project }: { project: Project }) {
   return (
     <a
       href={`#${project.id}`}
+      data-track="project_open"
+      data-track-project={project.id}
       onClick={(event) => openProjectOnClick(event, project.id)}
       aria-haspopup="dialog"
       className="group grid min-w-0 animate-[bp-card-in_500ms_var(--ease-out-expo)_backwards] gap-8 rounded-2xl border border-bp-muted bg-bp-surface p-6 transition-colors duration-200 hover:border-bp-accent sm:p-8 lg:grid-cols-[1.15fr_1fr] lg:gap-12"

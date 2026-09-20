@@ -8,7 +8,7 @@ export function Footer() {
           JEVUSECASES — WHAT PEOPLE ARE SHIPPING WITH JEV
         </span>
         <div className="flex gap-6 font-bp-mono text-[10px] tracking-widest">
-          <Link href="/submit" className="text-bp-secondary hover:text-bp-accent">
+          <Link href="/submit" data-track="submit" className="text-bp-secondary hover:text-bp-accent">
             SUBMIT A PROJECT
           </Link>
           <Link href="/privacy" className="text-bp-secondary hover:text-bp-accent">
@@ -18,6 +18,7 @@ export function Footer() {
             href="https://github.com/theSekyi/jevusecases"
             target="_blank"
             rel="noopener noreferrer"
+            data-track="footer_repo"
             className="text-bp-secondary hover:text-bp-accent"
           >
             SOURCE

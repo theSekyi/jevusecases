@@ -27,11 +27,11 @@ async function main() {
   }
 
   const records = await lookupVisitorRecords(sql, hash);
-  if (records.views === 0) {
+  if (records.views === 0 && records.clicks === 0) {
     console.log("No records for that address.");
     return;
   }
-  console.log(`${records.views} record(s), first ${new Date(records.firstSeen!).toISOString()}, last ${new Date(records.lastSeen!).toISOString()}, countries: ${records.countries.join(", ") || "none"}.`);
+  console.log(`${records.views} page view(s) and ${records.clicks} click(s), first ${new Date(records.firstSeen!).toISOString()}, last ${new Date(records.lastSeen!).toISOString()}, countries: ${records.countries.join(", ") || "none"}.`);
 }
 
 main().catch((error) => {

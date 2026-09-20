@@ -38,7 +38,19 @@ async function main() {
   await sql`
     CREATE INDEX IF NOT EXISTS admin_sessions_user_id_idx ON admin_sessions (user_id)
   `;
-  console.log("visitor_events, admin_users, and admin_sessions tables ready.");
+  await sql`
+    CREATE TABLE IF NOT EXISTS link_clicks (
+      id BIGSERIAL PRIMARY KEY,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
+      visitor_hash TEXT,
+      kind TEXT NOT NULL,
+      project_id TEXT,
+      host TEXT,
+      path TEXT
+    )
+  `;
+  await sql`CREATE INDEX IF NOT EXISTS link_clicks_created_at_idx ON link_clicks (created_at DESC)`;
+  console.log("visitor_events, link_clicks, admin_users, and admin_sessions tables ready.");
 }
 
 main().catch((error) => {

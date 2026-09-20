@@ -78,7 +78,14 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
           <p className="font-bp-mono text-xs text-bp-muted">
             {project.author && (
               <>
-                <a href={`https://x.com/${project.author.slice(1)}`} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                <a
+                  href={`https://x.com/${project.author.slice(1)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-track="author"
+                  data-track-project={project.id}
+                  className={linkClass}
+                >
                   {project.author}
                 </a>
                 {" · "}
@@ -115,7 +122,7 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
             {install && (
               <div className="flex items-center justify-between gap-3 rounded-lg border border-bp-hairline bg-bp-bg p-3">
                 <code className="min-w-0 overflow-x-auto whitespace-nowrap font-bp-mono text-sm">{install}</code>
-                <CopyButton text={install} label="install command" />
+                <CopyButton text={install} label="install command" track={{ kind: "copy_install", project: project.id }} />
               </div>
             )}
           </section>
@@ -129,14 +136,28 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
             <ul className="flex flex-col gap-2 text-sm">
               {source && (
                 <li>
-                  <a href={source.href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  <a
+                    href={source.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-track="source"
+                    data-track-project={project.id}
+                    className={linkClass}
+                  >
                     {source.label}
                   </a>
                 </li>
               )}
               {project.source_tweet && (
                 <li>
-                  <a href={project.source_tweet} target="_blank" rel="noopener noreferrer" className={linkClass}>
+                  <a
+                    href={project.source_tweet}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-track="tweet"
+                    data-track-project={project.id}
+                    className={linkClass}
+                  >
                     Where it was announced
                   </a>
                 </li>
@@ -154,11 +175,13 @@ export function ProjectPanel({ project, onClose }: { project: Project; onClose: 
               href={postOnXHref(project)}
               target="_blank"
               rel="noopener noreferrer"
+              data-track="share_x"
+              data-track-project={project.id}
               className="rounded-md border border-bp-accent px-3 py-1.5 font-bp-mono text-xs text-bp-accent transition-colors hover:bg-bp-accent hover:text-bp-bg"
             >
               Post on X
             </a>
-            <CopyButton text={projectUrl(project.id)} label="link" />
+            <CopyButton text={projectUrl(project.id)} label="link" track={{ kind: "copy_link", project: project.id }} />
           </div>
         </section>
       </div>
