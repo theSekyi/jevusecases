@@ -10,6 +10,8 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
   return (
     <a
       href={`#${project.id}`}
+      data-track="project_open"
+      data-track-project={project.id}
       onClick={(event) => openProjectOnClick(event, project.id)}
       aria-haspopup="dialog"
       style={{ animationDelay: `${Math.min(index, 8) * 45}ms` }}

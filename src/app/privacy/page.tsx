@@ -42,6 +42,12 @@ export default function PrivacyPage() {
             <li>a one-way hash of your IP address, when one can be made</li>
           </ul>
           <p>
+            When you click a link or button that the site counts, it also records which kind it was, such as opening a
+            project, following a source link, or pressing Submit. For a project&apos;s own links it records which
+            project and the address&apos;s hostname, for example github.com. It does not record what you typed or the full
+            address you went to. The click is stored with the same one-way hash and the page you were on.
+          </p>
+          <p>
             The home page shows the country and page of recent visits to everyone for about three minutes. It never
             shows a hash.
           </p>

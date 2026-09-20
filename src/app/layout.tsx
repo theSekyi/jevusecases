@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist_Mono, Onest } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { LinkClickTracker } from "@/components/LinkClickTracker";
 import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -33,6 +34,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         {children}
         <Footer />
+        <LinkClickTracker />
       </body>
     </html>
   );

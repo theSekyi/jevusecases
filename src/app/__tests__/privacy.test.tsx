@@ -27,6 +27,13 @@ describe("privacy page", () => {
     expect(screen.getByText(/\?ref=newsletter/)).toBeInTheDocument();
   });
 
+  test("says clicks on counted links are recorded by kind and project, without what was typed or the full address", () => {
+    render(<PrivacyPage />);
+
+    expect(screen.getByText(/it also records which kind it was/)).toBeInTheDocument();
+    expect(screen.getByText(/does not record what you typed or the full/)).toBeInTheDocument();
+  });
+
   test("doesn't claim the hash is anonymous: it is reversible with the key and is still personal data", () => {
     render(<PrivacyPage />);
 

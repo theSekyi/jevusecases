@@ -13,6 +13,9 @@ vi.mock("@/lib/trafficStats", async () => {
 const getTrafficSources = vi.fn();
 vi.mock("@/lib/trafficSources", () => ({ getTrafficSources: () => getTrafficSources() }));
 
+const getLinkClickSummary = vi.fn();
+vi.mock("@/lib/linkClicks", () => ({ getLinkClickSummary: (...args: unknown[]) => getLinkClickSummary(...args) }));
+
 const { default: TrafficPage } = await import("../traffic/page");
 
 describe("traffic page", () => {
@@ -20,6 +23,8 @@ describe("traffic page", () => {
     requireAdmin.mockReset();
     getTrafficSummary.mockReset();
     getTrafficSources.mockReset();
+    getLinkClickSummary.mockReset();
+    getLinkClickSummary.mockResolvedValue({ clicks: 0, clickers: 0, kinds: [], projects: [], hosts: [] });
     getTrafficSources.mockResolvedValue({ visitors: 0, rows: [], partialSince: null, collecting: false });
   });
 
@@ -29,6 +34,7 @@ describe("traffic page", () => {
     await expect(TrafficPage()).rejects.toThrow("NEXT_REDIRECT:/admin/login");
     expect(getTrafficSummary).not.toHaveBeenCalled();
     expect(getTrafficSources).not.toHaveBeenCalled();
+    expect(getLinkClickSummary).not.toHaveBeenCalled();
   });
 
   test("renders the summary for a signed-in admin", async () => {
@@ -39,6 +45,7 @@ describe("traffic page", () => {
 
     expect(screen.getByRole("heading", { name: "Traffic" })).toBeInTheDocument();
     expect(screen.getByText("United Kingdom")).toBeInTheDocument();
+    expect(screen.getByRole("region", { name: /WHAT VISITORS CLICK/ })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Back to ADMIN" })).toHaveAttribute("href", "/admin");
   });
 });

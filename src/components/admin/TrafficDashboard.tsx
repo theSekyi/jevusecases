@@ -1,14 +1,24 @@
 "use client";
 
 import { useState } from "react";
+import type { LinkClickSummary } from "@/lib/linkClicks";
 import type { SourcesSummary } from "@/lib/trafficSources";
 import type { TrafficSummary } from "@/lib/trafficStats";
+import { LinkClicks } from "./LinkClicks";
 import { TrafficBreakdown } from "./TrafficBreakdown";
 import { TrafficGlobe, type GlobeFocus } from "./TrafficGlobe";
 import { TrafficSources } from "./TrafficSources";
 
 /** The globe and the list side by side, linked: hover a row to light up its country, click one to turn the globe to it. */
-export function TrafficDashboard({ summary, sources }: { summary: TrafficSummary; sources: SourcesSummary }) {
+export function TrafficDashboard({
+  summary,
+  sources,
+  clicks,
+}: {
+  summary: TrafficSummary;
+  sources: SourcesSummary;
+  clicks: LinkClickSummary;
+}) {
   const [highlighted, setHighlighted] = useState<string | null>(null);
   const [focus, setFocus] = useState<GlobeFocus | null>(null);
 
@@ -27,6 +37,7 @@ export function TrafficDashboard({ summary, sources }: { summary: TrafficSummary
           }}
         />
         <TrafficSources summary={sources} />
+        <LinkClicks summary={clicks} />
       </div>
     </div>
   );

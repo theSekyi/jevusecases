@@ -1,5 +1,6 @@
 import { beforeEach, describe, expect, test, vi } from "vitest";
 import { act, fireEvent, render, screen } from "@testing-library/react";
+import type { LinkClickSummary } from "@/lib/linkClicks";
 import type { SourcesSummary } from "@/lib/trafficSources";
 import type { TrafficSummary } from "@/lib/trafficStats";
 import { TrafficDashboard } from "../admin/TrafficDashboard";
@@ -29,6 +30,7 @@ const sources: SourcesSummary = {
   partialSince: null,
   collecting: false,
 };
+const clicks: LinkClickSummary = { clicks: 0, clickers: 0, kinds: [], projects: [], hosts: [] };
 const lastProps = () => globeProps.mock.calls.at(-1)![0] as {
   rows: unknown;
   highlighted: string | null;
@@ -42,7 +44,7 @@ describe("TrafficDashboard", () => {
   });
 
   test("shows the globe next to the list, both from the same summary", () => {
-    render(<TrafficDashboard summary={summary} sources={sources} />);
+    render(<TrafficDashboard summary={summary} sources={sources} clicks={clicks} />);
 
     expect(screen.getByTestId("globe")).toBeInTheDocument();
     expect(lastProps().rows).toBe(summary.rows);
@@ -50,14 +52,14 @@ describe("TrafficDashboard", () => {
   });
 
   test("shows where visitors land from, under the country list", () => {
-    render(<TrafficDashboard summary={summary} sources={sources} />);
+    render(<TrafficDashboard summary={summary} sources={sources} clicks={clicks} />);
 
     expect(screen.getByRole("heading", { name: /WHERE VISITORS LAND FROM/ })).toBeInTheDocument();
     expect(screen.getByText("X")).toBeInTheDocument();
   });
 
   test("hovering a row highlights that country on the globe, and leaving clears it", () => {
-    render(<TrafficDashboard summary={summary} sources={sources} />);
+    render(<TrafficDashboard summary={summary} sources={sources} clicks={clicks} />);
     const row = screen.getByRole("button", { name: /United States/ });
 
     fireEvent.mouseEnter(row);
@@ -67,7 +69,7 @@ describe("TrafficDashboard", () => {
   });
 
   test("hovering the globe highlights the matching row", () => {
-    render(<TrafficDashboard summary={summary} sources={sources} />);
+    render(<TrafficDashboard summary={summary} sources={sources} clicks={clicks} />);
 
     act(() => lastProps().onHighlight("GB"));
 
@@ -75,7 +77,7 @@ describe("TrafficDashboard", () => {
   });
 
   test("clicking a row asks the globe to turn to it, and clicking it again is a new request", () => {
-    render(<TrafficDashboard summary={summary} sources={sources} />);
+    render(<TrafficDashboard summary={summary} sources={sources} clicks={clicks} />);
     const row = screen.getByRole("button", { name: /United Kingdom/ });
 
     fireEvent.click(row);
