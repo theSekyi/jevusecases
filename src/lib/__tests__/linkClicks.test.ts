@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, test, vi } from "vitest";
-import { OUTGOING_KINDS } from "../linkKinds";
+import { MAX_LINK_ROWS, MIN_LINK_CLICKERS, OUTGOING_KINDS } from "../linkKinds";
 import { makeProject } from "./fixtures";
 
 const transaction = vi.fn();
@@ -17,7 +17,7 @@ const { TRAFFIC_WINDOW_DAYS } = await import("../visitorFormat");
 
 /** The text of each statement in a transaction, with the values shown as ? and whitespace collapsed. */
 const statementsOf = (calls: unknown[]) => calls.map((call) => (call as [string[]])[0].join("?").replace(/\s+/g, " ").trim());
-const valuesOf = (calls: unknown[]) => calls.flatMap((call) => (call as unknown[]).slice(1));
+const valuesOf = (call: unknown) => (call as unknown[]).slice(1);
 
 describe("clickHost", () => {
   const project = makeProject({
@@ -65,121 +65,185 @@ describe("recordLinkClick", () => {
 
   const click = { kind: "source" as const, projectId: "guard", host: "github.com", path: "/", visitorHash: "abc" };
 
-  test("takes the lock and inserts in one transaction, with every value as a parameter", async () => {
+  async function queriesFor(input: Parameters<typeof recordLinkClick>[0]) {
     sqlMock.mockImplementation((...args: unknown[]) => args);
-    await recordLinkClick(click);
+    await recordLinkClick(input);
+    return (transaction.mock.calls[0] as [unknown[]])[0];
+  }
 
-    const [queries] = transaction.mock.calls[0] as [unknown[]];
-    const statements = statementsOf(queries);
-    expect(statements[0]).toContain("lock_timeout");
-    expect(statements[1]).toContain("pg_advisory_xact_lock");
-    expect(statements[2]).toContain("INSERT INTO link_clicks (visitor_hash, kind, project_id, host, path)");
-    const values = valuesOf(queries.slice(2));
-    expect(values).toEqual(expect.arrayContaining(["abc", "source", "guard", "github.com", "/", DUPLICATE_CLICK_WINDOW_MS]));
-    // Nothing the caller passed is spliced into the statement text.
-    for (const statement of statements) expect(statement).not.toMatch(/guard|github\.com/);
+  test("repeats within three seconds are dropped", () => {
+    expect(DUPLICATE_CLICK_WINDOW_MS).toBe(3000);
   });
 
-  test("drops a repeat of the same click by the same visitor, matching a missing project or visitor null-safely", async () => {
-    sqlMock.mockImplementation((...args: unknown[]) => args);
-    await recordLinkClick({ ...click, projectId: null, visitorHash: null });
+  test("takes the lock and inserts in one transaction, with every value as a parameter, in the column order", async () => {
+    const queries = await queriesFor(click);
 
-    const [queries] = transaction.mock.calls[0] as [unknown[]];
-    const insert = statementsOf(queries)[2];
-    expect(insert).toContain("WHERE NOT EXISTS");
-    expect(insert).toContain("kind = ?::text");
-    expect(insert).toContain("project_id IS NOT DISTINCT FROM ?::text");
-    expect(insert).toContain("visitor_hash IS NOT DISTINCT FROM ?::text");
-    expect(insert).toMatch(/created_at > now\(\) - \(\?::text \|\| ' milliseconds'\)::interval/);
+    const [timeout, lock, insert] = statementsOf(queries);
+    expect(timeout).toBe("SET LOCAL lock_timeout = '2s'");
+    expect(lock).toBe("SELECT pg_advisory_xact_lock(?)");
+    expect(insert).toBe(
+      "INSERT INTO link_clicks (visitor_hash, kind, project_id, host, path) " +
+        "SELECT ?::text, ?::text, ?::text, ?::text, ?::text " +
+        "WHERE NOT EXISTS ( SELECT 1 FROM link_clicks " +
+        "WHERE created_at > now() - (?::text || ' milliseconds')::interval " +
+        "AND visitor_hash = ?::text AND kind = ?::text AND project_id IS NOT DISTINCT FROM ?::text )",
+    );
+    expect(valuesOf(queries[1])).toEqual([41_002]);
+    // The values go in the order of the columns, then the same visitor, kind and project again for the check.
+    expect(valuesOf(queries[2])).toEqual(["abc", "source", "guard", "github.com", "/", 3000, "abc", "source", "guard"]);
+  });
+
+  test("a click with no project is matched on having none, not skipped", async () => {
+    const queries = await queriesFor({ ...click, kind: "submit", projectId: null, host: null, path: null });
+
+    expect(statementsOf(queries)[2]).toContain("project_id IS NOT DISTINCT FROM ?::text");
+    expect(valuesOf(queries[2])).toEqual(["abc", "submit", null, null, null, 3000, "abc", "submit", null]);
+  });
+
+  test("uses a lock key of its own, not the page views'", async () => {
+    const queries = await queriesFor(click);
+    expect(valuesOf(queries[1])).not.toEqual([41_001]);
   });
 });
 
 describe("summarizeLinkClicks", () => {
   const names = (id: string) => ({ a: "Alpha", b: "Beta", c: "Gamma" })[id] ?? null;
-  const empty = { total: { clicks: 0, clickers: 0 }, kinds: [], projects: [], hosts: [] };
-
-  test("names a kind only once enough people did it, and folds the rest into Other", () => {
-    const summary = summarizeLinkClicks(
-      {
-        ...empty,
-        total: { clicks: 15, clickers: 9 },
-        kinds: [
-          { kind: "project_open", clicks: 8, clickers: 5 },
-          { kind: "submit", clicks: 3, clickers: 3 },
-          { kind: "copy_link", clicks: 2, clickers: 2 },
-          { kind: "footer_repo", clicks: 2, clickers: 1 },
-        ],
-      },
-      names,
-    );
-
-    expect(summary.kinds.map((row) => [row.kind, row.clickers])).toEqual([
-      ["project_open", 5],
-      ["submit", 3],
-      ["other", 3],
-    ]);
-    expect(JSON.stringify(summary)).not.toContain("Copied a project link");
-    expect(JSON.stringify(summary)).not.toContain("Site repository");
-    expect(summary.clicks).toBe(15);
-    expect(summary.clickers).toBe(9);
+  const counts = (overrides: Partial<Parameters<typeof summarizeLinkClicks>[0]> = {}) => ({
+    total: { clicks: 40, clickers: 12 },
+    kinds: [],
+    projects: [],
+    hosts: [],
+    ...overrides,
   });
 
-  test("shows no Other row when nothing was folded, and ignores a kind it does not know", () => {
+  test("says only that there are too few people when the total is under the floor, and sends nothing else", () => {
     const summary = summarizeLinkClicks(
-      { ...empty, kinds: [{ kind: "submit", clicks: 4, clickers: 4 }, { kind: "made_up", clicks: 9, clickers: 9 }] },
+      counts({
+        total: { clicks: 4, clickers: MIN_LINK_CLICKERS - 1 },
+        kinds: [{ kind: "submit", clicks: 4, clickers: 2 }],
+        projects: [{ projectId: "a", opened: 2, followed: 1 }],
+        hosts: [{ host: "github.com", clickers: 2 }],
+      }),
       names,
     );
+
+    expect(summary).toEqual({ clicks: 0, clickers: 0, tooFew: true, kinds: [], projects: [], hosts: [] });
+  });
+
+  test("says nothing is too few when there are no clicks at all", () => {
+    expect(summarizeLinkClicks(counts({ total: { clicks: 0, clickers: 0 } }), names)).toMatchObject({ tooFew: false, clicks: 0 });
+  });
+
+  test("shows the totals once enough people have clicked", () => {
+    const summary = summarizeLinkClicks(counts({ total: { clicks: 9, clickers: MIN_LINK_CLICKERS } }), names);
+    expect(summary).toMatchObject({ clicks: 9, clickers: MIN_LINK_CLICKERS, tooFew: false });
+  });
+
+  test("names a kind at exactly the floor, and folds one under it", () => {
+    const summary = summarizeLinkClicks(
+      counts({
+        kinds: [
+          { kind: "submit", clicks: 3, clickers: MIN_LINK_CLICKERS },
+          { kind: "copy_link", clicks: 9, clickers: MIN_LINK_CLICKERS - 1 },
+          { kind: "footer_repo", clicks: 1, clickers: 1 },
+        ],
+      }),
+      names,
+    );
+
+    expect(summary.kinds.map((row) => row.kind)).toEqual(["submit", "other"]);
+    expect(summary.kinds[1]).toMatchObject({ clickers: 3, clicks: 10 });
+    expect(JSON.stringify(summary)).not.toContain("Pressed Copy link");
+  });
+
+  test("shows no Other row while the small kinds together are still under the floor", () => {
+    const summary = summarizeLinkClicks(
+      counts({ kinds: [{ kind: "submit", clicks: 5, clickers: 5 }, { kind: "copy_link", clicks: 1, clickers: 1 }, { kind: "footer_repo", clicks: 1, clickers: 1 }] }),
+      names,
+    );
+
     expect(summary.kinds.map((row) => row.kind)).toEqual(["submit"]);
   });
 
-  test("orders equal counts by label, so the list does not shuffle between loads", () => {
+  test("ignores a kind it does not know, and orders equal counts by label", () => {
     const summary = summarizeLinkClicks(
-      { ...empty, kinds: [{ kind: "submit", clicks: 3, clickers: 3 }, { kind: "source", clicks: 3, clickers: 3 }] },
+      counts({
+        kinds: [
+          { kind: "made_up", clicks: 9, clickers: 9 },
+          { kind: "submit", clicks: 3, clickers: 3 },
+          { kind: "source", clicks: 3, clickers: 3 },
+        ],
+      }),
       names,
     );
-    expect(summary.kinds.map((row) => row.label)).toEqual(["Followed a source link", "Submit a project"]);
+    expect(summary.kinds.map((row) => row.label)).toEqual(["Followed a source link", "Pressed Submit a project"]);
   });
 
-  test("lists a project only when enough people opened it, with how many went on to follow a link", () => {
+  test("lists a project at exactly the floor and drops the count of followers when it is under it", () => {
     const summary = summarizeLinkClicks(
-      {
-        ...empty,
+      counts({
         projects: [
-          { projectId: "a", bucket: "open", clickers: 6 },
-          { projectId: "a", bucket: "out", clickers: 2 },
-          { projectId: "b", bucket: "open", clickers: 2 },
-          { projectId: "b", bucket: "out", clickers: 2 },
-          { projectId: "c", bucket: "out", clickers: 9 },
+          { projectId: "a", opened: 6, followed: 3 },
+          { projectId: "b", opened: MIN_LINK_CLICKERS, followed: 2 },
         ],
-      },
+      }),
       names,
     );
 
-    expect(summary.projects).toEqual([{ id: "a", name: "Alpha", opened: 6, followed: 2 }]);
+    expect(summary.projects).toEqual([
+      { id: "a", name: "Alpha", opened: 6, followed: 3 },
+      { id: "b", name: "Beta", opened: MIN_LINK_CLICKERS, followed: null },
+    ]);
+    expect(JSON.stringify(summary.projects)).not.toContain('"followed":2');
+  });
+
+  test("gathers projects that are too small into one row that appears only once they add up", () => {
+    const small = (id: string, opened: number, followed: number) => ({ projectId: id, opened, followed });
+
+    const shown = summarizeLinkClicks(counts({ projects: [small("a", 5, 0), small("b", 2, 1), small("c", 1, 1)] }), names);
+    expect(shown.projects.map((row) => row.name)).toEqual(["Alpha", "Other projects"]);
+    expect(shown.projects[1]).toMatchObject({ id: null, opened: 3, followed: null });
+
+    const hidden = summarizeLinkClicks(counts({ projects: [small("a", 5, 0), small("b", 2, 1)] }), names);
+    expect(hidden.projects.map((row) => row.name)).toEqual(["Alpha"]);
   });
 
   test("falls back to the id for a project that has since been removed, and orders by opens then name", () => {
     const summary = summarizeLinkClicks(
-      {
-        ...empty,
+      counts({
         projects: [
-          { projectId: "gone", bucket: "open", clickers: 4 },
-          { projectId: "b", bucket: "open", clickers: 4 },
-          { projectId: "a", bucket: "open", clickers: 7 },
+          { projectId: "gone", opened: 4, followed: 0 },
+          { projectId: "b", opened: 4, followed: 0 },
+          { projectId: "a", opened: 7, followed: 0 },
         ],
-      },
+      }),
       names,
     );
     expect(summary.projects.map((row) => row.name)).toEqual(["Alpha", "Beta", "gone"]);
   });
 
-  test("lists a host only when enough people went there, and caps the list", () => {
-    const hosts = Array.from({ length: 12 }, (_, index) => ({ host: `site${String(index).padStart(2, "0")}.example`, clickers: 3 + index }));
-    const summary = summarizeLinkClicks({ ...empty, hosts: [...hosts, { host: "tiny.example", clickers: 2 }] }, names);
+  test("caps the named projects and hosts, folding the rest into Other", () => {
+    const projects = Array.from({ length: MAX_LINK_ROWS + 2 }, (_, index) => ({ projectId: `p${String(index).padStart(2, "0")}`, opened: 20 - index, followed: 0 }));
+    const hosts = Array.from({ length: MAX_LINK_ROWS + 2 }, (_, index) => ({ host: `site${String(index).padStart(2, "0")}.example`, clickers: 20 - index }));
 
-    expect(summary.hosts).toHaveLength(8);
-    expect(summary.hosts[0]).toEqual({ host: "site11.example", clickers: 14 });
-    expect(summary.hosts.map((row) => row.host)).not.toContain("tiny.example");
+    const summary = summarizeLinkClicks(counts({ projects, hosts }), names);
+
+    expect(summary.projects).toHaveLength(MAX_LINK_ROWS + 1);
+    expect(summary.projects.at(-1)).toMatchObject({ name: "Other projects", opened: 12 + 11 });
+    expect(summary.hosts).toHaveLength(MAX_LINK_ROWS + 1);
+    expect(summary.hosts.at(-1)).toEqual({ label: "Other sites", clickers: 12 + 11, other: true });
+    expect(summary.hosts[0]).toEqual({ label: "site00.example", clickers: 20, other: false });
+  });
+
+  test("lists a host at exactly the floor, and folds one under it", () => {
+    const summary = summarizeLinkClicks(
+      counts({ hosts: [{ host: "a.example", clickers: MIN_LINK_CLICKERS }, { host: "b.example", clickers: 2 }, { host: "c.example", clickers: 1 }] }),
+      names,
+    );
+
+    expect(summary.hosts.map((row) => row.label)).toEqual(["a.example", "Other sites"]);
+    expect(JSON.stringify(summary)).not.toContain("b.example");
+    expect(JSON.stringify(summary)).not.toContain("c.example");
   });
 });
 
@@ -194,34 +258,46 @@ describe("getLinkClickSummary", () => {
     transaction.mockResolvedValueOnce([
       [{ clicks: 10, clickers: 6 }],
       [{ kind: "submit", clicks: 10, clickers: 6 }],
-      [{ project_id: "a", bucket: "open", clickers: 5 }],
+      [{ project_id: "a", opened: 5, followed: 3 }],
       [{ host: "github.com", clickers: 4 }],
     ]);
 
     const summary = await getLinkClickSummary((id) => (id === "a" ? "Alpha" : null));
 
-    expect(summary).toMatchObject({
+    expect(summary).toEqual({
       clicks: 10,
       clickers: 6,
-      kinds: [{ kind: "submit", clickers: 6 }],
-      projects: [{ id: "a", name: "Alpha", opened: 5, followed: 0 }],
-      hosts: [{ host: "github.com", clickers: 4 }],
+      tooFew: false,
+      kinds: [{ kind: "submit", label: "Pressed Submit a project", clickers: 6, clicks: 10 }],
+      projects: [{ id: "a", name: "Alpha", opened: 5, followed: 3 }],
+      hosts: [{ label: "github.com", clickers: 4, other: false }],
     });
     const [queries] = transaction.mock.calls[0] as [unknown[]];
     expect(queries).toHaveLength(4);
     expect(statementsOf(queries).every((statement) => statement.includes("now() - (?::text || ' days')::interval"))).toBe(true);
-    expect(valuesOf(queries)).toEqual(Array(4).fill(TRAFFIC_WINDOW_DAYS));
+    expect(queries.map(valuesOf)).toEqual(Array(4).fill([TRAFFIC_WINDOW_DAYS]));
   });
 
-  test("counts each visitor once, and every click without a visitor hash once", async () => {
+  test("counts each visitor once", async () => {
     sqlMock.mockImplementation((...args: unknown[]) => args);
     transaction.mockResolvedValueOnce([[], [], [], []]);
     await getLinkClickSummary(() => null);
 
     const [queries] = transaction.mock.calls[0] as [unknown[]];
-    for (const statement of statementsOf(queries)) {
-      expect(statement).toContain("count(DISTINCT visitor_hash) + count(*) FILTER (WHERE visitor_hash IS NULL)");
-    }
+    const [total, kinds, , hosts] = statementsOf(queries);
+    for (const statement of [total, kinds, hosts]) expect(statement).toContain("count(DISTINCT visitor_hash)");
+  });
+
+  test("counts followers only among the people who opened the project, one person once", async () => {
+    sqlMock.mockImplementation((...args: unknown[]) => args);
+    transaction.mockResolvedValueOnce([[], [], [], []]);
+    await getLinkClickSummary(() => null);
+
+    const [queries] = transaction.mock.calls[0] as [unknown[]];
+    const projectQuery = statementsOf(queries)[2];
+    expect(projectQuery).toContain("bool_or(kind = 'project_open') AS opened");
+    expect(projectQuery).toContain("GROUP BY project_id, visitor_hash");
+    expect(projectQuery).toContain("count(*) FILTER (WHERE opened AND followed)");
   });
 
   test("the outgoing kinds written into the statements are the ones in the list", async () => {
@@ -239,6 +315,6 @@ describe("getLinkClickSummary", () => {
   test("reports nothing, without failing, when there are no clicks yet", async () => {
     sqlMock.mockImplementation((...args: unknown[]) => args);
     transaction.mockResolvedValueOnce([[], [], [], []]);
-    expect(await getLinkClickSummary(() => null)).toEqual({ clicks: 0, clickers: 0, kinds: [], projects: [], hosts: [] });
+    expect(await getLinkClickSummary(() => null)).toEqual({ clicks: 0, clickers: 0, tooFew: false, kinds: [], projects: [], hosts: [] });
   });
 });

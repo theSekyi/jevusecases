@@ -18,7 +18,8 @@ const bodySchema = z.strictObject({
 });
 
 const MAX_BODY_BYTES = 512;
-const MAX_PATH_LENGTH = 200;
+/** The site's own pages a click can be on, besides a project's page. A path outside these is stored as nothing. */
+const KNOWN_PATHS = new Set(["/", "/submit", "/privacy"]);
 
 let projectsById: Map<string, ReturnType<typeof getProjects>[number]> | null = null;
 function findProject(id: string) {
@@ -26,16 +27,43 @@ function findProject(id: string) {
   return projectsById.get(id) ?? null;
 }
 
-/** The page the click happened on: the path of the Referer, and only if it is one of our own pages. */
+/**
+ * The page the click happened on: the path of the Referer, kept only if it is one of our own pages. Anything
+ * else would let a client choose what gets stored.
+ */
 function pathOf(request: NextRequest): string | null {
   const referer = request.headers.get("referer");
   if (!referer) return null;
   try {
     const url = new URL(referer);
     if (url.host !== request.nextUrl.host) return null;
-    return url.pathname.length <= MAX_PATH_LENGTH ? url.pathname : null;
+    const projectPage = url.pathname.match(/^\/p\/([^/]+)$/);
+    if (projectPage) {
+      const id = decodeURIComponent(projectPage[1]);
+      return findProject(id) ? `/p/${id}` : null;
+    }
+    return KNOWN_PATHS.has(url.pathname) ? url.pathname : null;
   } catch {
     return null;
+  }
+}
+
+/** Reads at most MAX_BODY_BYTES of the body, stopping as soon as it is over, so a body with no declared length can't be buffered whole. */
+async function readSmallBody(request: NextRequest): Promise<string | null> {
+  const reader = request.body?.getReader();
+  if (!reader) return "";
+  const decoder = new TextDecoder();
+  let bytes = 0;
+  let text = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) return text + decoder.decode();
+    bytes += value.byteLength;
+    if (bytes > MAX_BODY_BYTES) {
+      await reader.cancel();
+      return null;
+    }
+    text += decoder.decode(value, { stream: true });
   }
 }
 
@@ -44,13 +72,11 @@ export async function POST(request: NextRequest) {
   const site = request.headers.get("sec-fetch-site");
   if (site && site !== "same-origin") return new NextResponse(null, { status: 403 });
 
-  const declared = Number(request.headers.get("content-length") ?? 0);
-  if (declared > MAX_BODY_BYTES) return new NextResponse(null, { status: 413 });
+  const text = await readSmallBody(request);
+  if (text === null) return new NextResponse(null, { status: 413 });
 
   let parsed;
   try {
-    const text = await request.text();
-    if (text.length > MAX_BODY_BYTES) return new NextResponse(null, { status: 413 });
     parsed = bodySchema.safeParse(JSON.parse(text));
   } catch {
     return new NextResponse(null, { status: 400 });
@@ -69,13 +95,17 @@ export async function POST(request: NextRequest) {
   const ip = clientIp(request);
   if (!checkRateLimit(ip)) return new NextResponse(null, { status: 429 });
 
+  // Without a visitor hash there is no telling people apart, so the click is not kept.
+  const visitorHash = hashVisitor(ip);
+  if (!visitorHash) return new NextResponse(null, { status: 204 });
+
   try {
     await recordLinkClick({
       kind,
       projectId: project?.id ?? null,
       host: clickHost(kind, project),
       path: pathOf(request),
-      visitorHash: hashVisitor(ip),
+      visitorHash,
     });
   } catch (error) {
     console.error("Failed to record link click:", error);

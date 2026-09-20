@@ -40,17 +40,17 @@ export const OUTGOING_KINDS = ["source", "tweet", "author"] as const satisfies r
 export const LINK_KIND_LABELS: Record<LinkKind, string> = {
   project_open: "Opened a project",
   source: "Followed a source link",
-  tweet: "Followed the announcement",
-  author: "Followed an author",
-  share_x: "Post on X",
-  copy_link: "Copied a project link",
-  copy_install: "Copied an install command",
-  submit: "Submit a project",
-  footer_repo: "Site repository",
+  tweet: "Followed an announcement link",
+  author: "Followed an author link",
+  share_x: "Pressed Post on X",
+  copy_link: "Pressed Copy link",
+  copy_install: "Pressed Copy install command",
+  submit: "Pressed Submit a project",
+  footer_repo: "Followed the site's repository link",
 };
 
 /** A group with fewer clickers than this is not named, so no row can be one person. */
 export const MIN_LINK_CLICKERS = 3;
 
-/** Named project and host rows shown in each list. */
+/** Named project and host rows shown in each list; anything past this folds into Other. */
 export const MAX_LINK_ROWS = 8;

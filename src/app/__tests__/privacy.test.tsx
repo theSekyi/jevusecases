@@ -30,8 +30,12 @@ describe("privacy page", () => {
   test("says clicks on counted links are recorded by kind and project, without what was typed or the full address", () => {
     render(<PrivacyPage />);
 
-    expect(screen.getByText(/it also records which kind it was/)).toBeInTheDocument();
+    expect(screen.getByText(/counts clicks on some links and buttons/)).toBeInTheDocument();
+    expect(screen.getByText(/Post on X, Copy link, Copy install command/)).toBeInTheDocument();
     expect(screen.getByText(/does not record what you typed or the full/)).toBeInTheDocument();
+    expect(screen.getByText(/The site also counts clicks/).textContent).toMatch(/the time[\s\S]*page you were on[\s\S]*hash[\s\S]*hostname only/);
+    expect(screen.getByText(/which links are followed/)).toBeInTheDocument();
+    expect(screen.getByText(/stores the visit and click records/)).toBeInTheDocument();
   });
 
   test("doesn't claim the hash is anonymous: it is reversible with the key and is still personal data", () => {

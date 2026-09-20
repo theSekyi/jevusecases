@@ -62,25 +62,60 @@ describe("POST /api/link-click", () => {
     expect(recordLinkClick.mock.calls[0][0]).toMatchObject({ kind: "submit", projectId: null, host: null, path: "/" });
   });
 
-  test("records without an identity when there is no hash secret", async () => {
+  test("keeps nothing when no visitor hash can be made, since every click would count as its own person", async () => {
     vi.stubEnv("VISITOR_HASH_SECRET", "");
     const { POST } = await import("../route");
 
-    await POST(post({ kind: "submit" }));
-
-    expect(recordLinkClick.mock.calls[0][0].visitorHash).toBeNull();
+    expect((await POST(post({ kind: "submit" }))).status).toBe(204);
+    expect((await POST(post({ kind: "submit" }, { "x-forwarded-for": "" }))).status).toBe(204);
+    expect(recordLinkClick).not.toHaveBeenCalled();
   });
 
-  test("keeps a referer from another site out of the stored path", async () => {
+  test("a request with no sec-fetch-site header (an older browser) is still counted", async () => {
     const { POST } = await import("../route");
+    const request = new NextRequest("https://www.jevusecases.com/api/link-click", {
+      method: "POST",
+      body: '{"kind":"submit"}',
+      headers: { "x-forwarded-for": "203.0.113.30" },
+    });
 
-    await POST(post({ kind: "submit" }, { referer: "https://evil.example/page" }));
-    await POST(post({ kind: "submit" }, { referer: "not a url" }));
-    await POST(post({ kind: "submit" }, { referer: `https://www.jevusecases.com/${"a".repeat(300)}` }));
-    const noReferer = { "sec-fetch-site": "same-origin", "x-forwarded-for": "203.0.113.9" };
-    await POST(new NextRequest("https://www.jevusecases.com/api/link-click", { method: "POST", body: '{"kind":"submit"}', headers: noReferer }));
+    expect((await POST(request)).status).toBe(204);
+    expect(recordLinkClick).toHaveBeenCalledTimes(1);
+  });
 
-    expect(recordLinkClick.mock.calls.map((call) => call[0].path)).toEqual([null, null, null, null]);
+  test("stores the path only when it is one of the site's own pages", async () => {
+    const { POST } = await import("../route");
+    const from = (referer: string) => POST(post({ kind: "submit" }, { referer }));
+
+    await from("https://www.jevusecases.com/");
+    await from("https://www.jevusecases.com/submit?x=1");
+    await from("https://www.jevusecases.com/privacy#top");
+    await from("https://www.jevusecases.com/p/guard");
+    await from("https://www.jevusecases.com/p/plain?ref=x-share");
+
+    expect(recordLinkClick.mock.calls.map((call) => call[0].path)).toEqual(["/", "/submit", "/privacy", "/p/guard", "/p/plain"]);
+  });
+
+  test("keeps anything else out of the stored path: another site, an unknown page, a project that does not exist, junk", async () => {
+    const { POST } = await import("../route");
+    const from = (referer: string | null) =>
+      POST(post({ kind: "submit" }, referer === null ? {} : { referer }, `203.0.113.${recordLinkClick.mock.calls.length + 40}`));
+
+    await from("https://evil.example/");
+    await from("https://www.jevusecases.com/some/made/up/page");
+    await from("https://www.jevusecases.com/p/no-such-project");
+    await from("https://www.jevusecases.com/p/%E0%A4%A");
+    await from(`https://www.jevusecases.com/${"a".repeat(300)}`);
+    await from("https://www.jevusecases.com/admin/traffic");
+    await from("not a url");
+    const bare = new NextRequest("https://www.jevusecases.com/api/link-click", {
+      method: "POST",
+      body: '{"kind":"submit"}',
+      headers: { "sec-fetch-site": "same-origin", "x-forwarded-for": "203.0.113.99" },
+    });
+    await POST(bare);
+
+    expect(recordLinkClick.mock.calls.map((call) => call[0].path)).toEqual(Array(8).fill(null));
   });
 
   test.each([
@@ -111,6 +146,34 @@ describe("POST /api/link-click", () => {
     expect((await POST(post(""))).status).toBe(400);
     expect((await POST(post(JSON.stringify({ kind: "submit", project: "x".repeat(2000) })))).status).toBe(413);
     expect(recordLinkClick).not.toHaveBeenCalled();
+  });
+
+  test("stops reading a large body that has no declared length, instead of buffering it", async () => {
+    const { POST } = await import("../route");
+    let pulled = 0;
+    const stream = new ReadableStream<Uint8Array>({
+      pull(controller) {
+        pulled += 1;
+        if (pulled > 1000) controller.close();
+        else controller.enqueue(new Uint8Array(100).fill(97));
+      },
+    });
+    const request = new NextRequest("https://www.jevusecases.com/api/link-click", {
+      method: "POST",
+      body: stream,
+      duplex: "half",
+      headers: { "sec-fetch-site": "same-origin", "x-forwarded-for": "203.0.113.50" },
+    } as never);
+
+    expect((await POST(request)).status).toBe(413);
+    expect(pulled).toBeLessThan(20);
+    expect(recordLinkClick).not.toHaveBeenCalled();
+  });
+
+  test("counts bytes, not characters, so a body of multi-byte characters is not let through", async () => {
+    const { POST } = await import("../route");
+
+    expect((await POST(post(JSON.stringify({ kind: "submit", project: "é".repeat(300) })))).status).toBe(413);
   });
 
   test("refuses a request that a browser says came from another site", async () => {

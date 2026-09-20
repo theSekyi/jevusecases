@@ -24,7 +24,7 @@ describe("traffic page", () => {
     getTrafficSummary.mockReset();
     getTrafficSources.mockReset();
     getLinkClickSummary.mockReset();
-    getLinkClickSummary.mockResolvedValue({ clicks: 0, clickers: 0, kinds: [], projects: [], hosts: [] });
+    getLinkClickSummary.mockResolvedValue({ clicks: 0, clickers: 0, tooFew: false, kinds: [], projects: [], hosts: [] });
     getTrafficSources.mockResolvedValue({ visitors: 0, rows: [], partialSince: null, collecting: false });
   });
 

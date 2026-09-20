@@ -58,22 +58,27 @@ describe("lookupVisitorRecords / deleteVisitorRecords", () => {
 
   test("lookup reads only that hash and returns counts and dates, never the hash", async () => {
     sqlMock.mockResolvedValueOnce([{ views: 3, first_seen: "2026-09-18T10:00:00Z", last_seen: "2026-09-19T10:00:00Z", countries: ["GB"] }]);
+    sqlMock.mockResolvedValueOnce([{ clicks: 2 }]);
 
     const records = await lookupVisitorRecords(sql, "abc123");
 
-    expect(records).toEqual({ views: 3, firstSeen: "2026-09-18T10:00:00Z", lastSeen: "2026-09-19T10:00:00Z", countries: ["GB"] });
-    const [strings, ...values] = sqlMock.mock.calls[0];
-    expect(strings.join("?")).toContain("WHERE visitor_hash = ");
-    expect(values).toEqual(["abc123"]);
+    expect(records).toEqual({ views: 3, clicks: 2, firstSeen: "2026-09-18T10:00:00Z", lastSeen: "2026-09-19T10:00:00Z", countries: ["GB"] });
+    for (const [strings, ...values] of sqlMock.mock.calls) {
+      expect(strings.join("?")).toContain("WHERE visitor_hash = ");
+      expect(values).toEqual(["abc123"]);
+    }
+    expect(sqlMock.mock.calls.map(([strings]) => strings.join("?")).join(" ")).toContain("FROM link_clicks");
     expect(JSON.stringify(records)).not.toContain("abc123");
   });
 
-  test("delete removes only rows for that hash and returns how many", async () => {
+  test("delete removes only rows for that hash, from page views and from clicks, and returns how many", async () => {
     sqlMock.mockResolvedValueOnce([{ id: 1 }, { id: 2 }]);
+    sqlMock.mockResolvedValueOnce([{ id: 7 }]);
 
-    expect(await deleteVisitorRecords(sql, "abc123")).toBe(2);
-    const [strings, ...values] = sqlMock.mock.calls[0];
-    expect(strings.join("?")).toContain("DELETE FROM visitor_events WHERE visitor_hash = ");
-    expect(values).toEqual(["abc123"]);
+    expect(await deleteVisitorRecords(sql, "abc123")).toBe(3);
+    const statements = sqlMock.mock.calls.map(([strings]) => strings.join("?"));
+    expect(statements[0]).toContain("DELETE FROM visitor_events WHERE visitor_hash = ");
+    expect(statements[1]).toContain("DELETE FROM link_clicks WHERE visitor_hash = ");
+    for (const [, ...values] of sqlMock.mock.calls) expect(values).toEqual(["abc123"]);
   });
 });

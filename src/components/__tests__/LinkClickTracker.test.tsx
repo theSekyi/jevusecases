@@ -128,13 +128,62 @@ describe("LinkClickTracker", () => {
     vi.unstubAllGlobals();
   });
 
-  test("never breaks the click when reporting throws or fails", () => {
+  test("never breaks the click when reporting throws", () => {
     sendBeacon.mockImplementation(() => {
       throw new Error("blocked");
     });
+    const uncaught = vi.fn();
+    window.addEventListener("error", uncaught);
     page();
 
-    expect(() => fireEvent.click(screen.getByRole("link", { name: "Source" }))).not.toThrow();
+    fireEvent.click(screen.getByRole("link", { name: "Source" }));
+
+    window.removeEventListener("error", uncaught);
+    expect(sendBeacon).toHaveBeenCalled();
+    expect(uncaught).not.toHaveBeenCalled();
+  });
+
+  test("never breaks the click when the fetch fallback is refused", async () => {
+    sendBeacon.mockReturnValue(false);
+    vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("offline")));
+    const unhandled = vi.fn();
+    window.addEventListener("unhandledrejection", unhandled);
+    page();
+
+    fireEvent.click(screen.getByRole("link", { name: "Source" }));
+    await new Promise((resolve) => setTimeout(resolve, 10));
+
+    window.removeEventListener("unhandledrejection", unhandled);
+    expect(unhandled).not.toHaveBeenCalled();
+    vi.unstubAllGlobals();
+  });
+
+  test("uses fetch when the browser has no sendBeacon at all", () => {
+    Object.defineProperty(navigator, "sendBeacon", { value: undefined, configurable: true, writable: true });
+    const fetchMock = vi.fn().mockResolvedValue(new Response(null, { status: 204 }));
+    vi.stubGlobal("fetch", fetchMock);
+    page();
+
+    fireEvent.click(screen.getByRole("link", { name: "Source" }));
+
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    vi.unstubAllGlobals();
+  });
+
+  test("leaves the click alone: it does not stop a link from being followed or a click from reaching other handlers", () => {
+    const elsewhere = vi.fn();
+    render(
+      <div onClick={elsewhere}>
+        <LinkClickTracker />
+        <a href="#somewhere" data-track="submit">Go</a>
+      </div>,
+    );
+
+    const notPrevented = fireEvent.click(screen.getByRole("link", { name: "Go" }));
+
+    expect(notPrevented).toBe(true);
+    expect(elsewhere).toHaveBeenCalledTimes(1);
+    expect(sendBeacon).toHaveBeenCalledTimes(1);
   });
 
   test("does not report the same click twice after it is unmounted and mounted again", () => {

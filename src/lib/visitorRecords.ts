@@ -10,6 +10,8 @@ const IP_SHAPE = /^[0-9a-fA-F:.]+(%[\w.-]+)?$/;
 
 export interface VisitorRecords {
   views: number;
+  /** Clicks on links and buttons, kept in their own table with the same hash. */
+  clicks: number;
   firstSeen: string | null;
   lastSeen: string | null;
   countries: string[];
@@ -33,11 +35,13 @@ export async function lookupVisitorRecords(sql: Sql, hash: string): Promise<Visi
     FROM visitor_events
     WHERE visitor_hash = ${hash}
   `) as { views: number; first_seen: string | null; last_seen: string | null; countries: string[] }[];
-  return { views: row.views, firstSeen: row.first_seen, lastSeen: row.last_seen, countries: row.countries };
+  const [{ clicks }] = (await sql`SELECT count(*)::int AS clicks FROM link_clicks WHERE visitor_hash = ${hash}`) as { clicks: number }[];
+  return { views: row.views, clicks, firstSeen: row.first_seen, lastSeen: row.last_seen, countries: row.countries };
 }
 
 /** Deletes every record for this hash and returns how many there were. */
 export async function deleteVisitorRecords(sql: Sql, hash: string): Promise<number> {
-  const deleted = (await sql`DELETE FROM visitor_events WHERE visitor_hash = ${hash} RETURNING id`) as unknown[];
-  return deleted.length;
+  const views = (await sql`DELETE FROM visitor_events WHERE visitor_hash = ${hash} RETURNING id`) as unknown[];
+  const clicks = (await sql`DELETE FROM link_clicks WHERE visitor_hash = ${hash} RETURNING id`) as unknown[];
+  return views.length + clicks.length;
 }

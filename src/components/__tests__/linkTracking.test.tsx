@@ -76,37 +76,62 @@ function anchorTags(source: string): string[] {
   return [...source.matchAll(/<(?:a|Link)(?=[\s>])(?:[^>]|=>)*>/g)].map((match) => match[0]);
 }
 
+/** A link that leaves the site (an address with a host, or one that opens a new tab) or goes to the submit page. */
+function needsLabel(tag: string): boolean {
+  return /target=/.test(tag) || /href=(?:"|'|\{["'`])https?:\/\//.test(tag) || /href=(?:"|'|\{["'`])\/submit["'`]/.test(tag);
+}
+
 describe("a new link cannot skip counting by accident", () => {
   const files = [...visitorSourceFiles("src/components"), ...visitorSourceFiles("src/app")];
+  const tagsByFile = files.map((file) => [file, anchorTags(readFileSync(file, "utf8"))] as const);
 
   test("finds the files and the links it is meant to check", () => {
     expect(files.length).toBeGreaterThan(8);
-    const tags = files.flatMap((file) => anchorTags(readFileSync(file, "utf8")));
-    expect(tags.length).toBeGreaterThan(10);
+    const labelled = tagsByFile.flatMap(([, tags]) => tags.filter(needsLabel));
+    // The tracked links on the site today: author, source, tweet, Post on X, footer repo, and the four submit links.
+    expect(labelled.length).toBeGreaterThanOrEqual(9);
   });
 
-  test("every link that opens in a new tab has a data-track", () => {
-    for (const file of files) {
-      for (const tag of anchorTags(readFileSync(file, "utf8"))) {
-        if (/target="_blank"/.test(tag)) expect(tag, `${file}: ${tag}`).toContain("data-track=");
+  test("every link that leaves the site, opens in a new tab, or goes to the submit page has a data-track", () => {
+    for (const [file, tags] of tagsByFile) {
+      for (const tag of tags.filter(needsLabel)) expect(tag, `${file}: ${tag}`).toContain("data-track=");
+    }
+  });
+
+  test("a link to the submit page is labelled as submit", () => {
+    for (const [file, tags] of tagsByFile) {
+      for (const tag of tags.filter((candidate) => /href=(?:"|'|\{["'`])\/submit["'`]/.test(candidate))) {
+        expect(tag, `${file}: ${tag}`).toContain('data-track="submit"');
       }
     }
   });
 
-  test("every link to the submit page has a data-track", () => {
-    for (const file of files) {
-      for (const tag of anchorTags(readFileSync(file, "utf8"))) {
-        if (/href="\/submit"/.test(tag)) expect(tag, `${file}: ${tag}`).toContain('data-track="submit"');
+  test("every data-track names a real kind, and a project's own kinds say which project", async () => {
+    const { isLinkKind, takesProject } = await import("@/lib/linkKinds");
+    for (const [file, tags] of tagsByFile) {
+      for (const tag of tags) {
+        const kind = tag.match(/data-track="([^"]+)"/)?.[1];
+        if (!kind) continue;
+        expect(isLinkKind(kind), `${file}: ${kind}`).toBe(true);
+        if (isLinkKind(kind) && takesProject(kind)) expect(tag, `${file}: ${tag}`).toContain("data-track-project=");
       }
     }
   });
 
-  test("every data-track names a real kind", async () => {
-    const { isLinkKind } = await import("@/lib/linkKinds");
-    for (const file of files) {
-      for (const match of readFileSync(file, "utf8").matchAll(/data-track="([^"]+)"/g)) {
-        expect(isLinkKind(match[1]), `${file}: ${match[1]}`).toBe(true);
-      }
+  test("the guard itself catches a link written the ways a label could be skipped", () => {
+    for (const unlabelled of [
+      '<a href="https://example.com/x">x</a>',
+      "<a href='https://example.com/x'>x</a>",
+      '<a href={"https://example.com/x"}>x</a>',
+      '<a href={url} target="_blank">x</a>',
+      '<a {...props} target={target}>x</a>',
+      '<Link href="/submit">x</Link>',
+      "<Link\n  href='/submit'\n  className={a > b ? 'x' : 'y'}\n>x</Link>",
+    ]) {
+      const [tag] = anchorTags(unlabelled);
+      expect(needsLabel(tag), unlabelled).toBe(true);
+      expect(tag).not.toContain("data-track=");
     }
+    expect(needsLabel(anchorTags('<a href="/privacy">x</a>')[0])).toBe(false);
   });
 });

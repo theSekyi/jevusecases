@@ -30,7 +30,7 @@ const sources: SourcesSummary = {
   partialSince: null,
   collecting: false,
 };
-const clicks: LinkClickSummary = { clicks: 0, clickers: 0, kinds: [], projects: [], hosts: [] };
+const clicks: LinkClickSummary = { clicks: 0, clickers: 0, tooFew: false, kinds: [], projects: [], hosts: [] };
 const lastProps = () => globeProps.mock.calls.at(-1)![0] as {
   rows: unknown;
   highlighted: string | null;
