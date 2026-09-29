@@ -6,8 +6,9 @@ export const alt = "A project built with Jev, on jevusecases";
 export const size = SHARE_CARD_SIZE;
 export const contentType = "image/png";
 
+// Rendered on first request and then cached, like the page itself.
 export function generateStaticParams() {
-  return getProjects().map((project) => ({ id: project.id }));
+  return [];
 }
 
 /** Leads with the project's strongest number, because a number is what makes a card worth opening. */

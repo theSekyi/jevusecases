@@ -7,11 +7,10 @@ import { VisitorFeed } from "@/components/VisitorFeed";
 import { getProjects } from "@/lib/projects";
 import { projectUrl } from "@/lib/site";
 
-// Only real entries get a page; anything else is a 404 instead of an empty gallery.
-export const dynamicParams = false;
-
+// Each page renders on its first visit and is then cached. Prerendering all of them made every build
+// write ~1,400 copies of the whole gallery. An id that is not an entry gets a 404 from notFound() below.
 export function generateStaticParams() {
-  return getProjects().map((project) => ({ id: project.id }));
+  return [];
 }
 
 function findProject(id: string) {
