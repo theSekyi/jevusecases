@@ -1,0 +1,19 @@
+{
+  "id": "jev-on-mentalbench-882a8356",
+  "project": "Jev on MentalBench",
+  "description": "MentalBench is a public benchmark of 24,750 synthetic psychiatric case descriptions spanning 23 DSM-5 diagnoses and four case types. I tested Jev with all 23 diagnoses and, separately, with each case’s four supplied options. In the held-out four-option condition, top-diagnosis accuracy was 94.6% for Type 1 and 88.9% for Type 2. Exact-set accuracy at a 0.50 inclusion threshold was 32.4% for Type 3 and 66.9% for Type 4. The paper-weighted overall score was 62.8% (95% family-bootstrap interval: 61.4%–64.2%). The GitHub repo includes the protocol, code, reports, and complete results.",
+  "github": "https://github.com/jcbritton23/jev-mentalbench-study",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-09-29",
+  "is_build": true,
+  "category": "exploration / benchmarking",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
