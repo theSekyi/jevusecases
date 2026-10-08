@@ -1,0 +1,19 @@
+{
+  "id": "cloudflare-migration-verification-temporary-a181a486",
+  "project": "Cloudflare migration verification temporary",
+  "description": "Temporary end-to-end migration verification. Do not merge or publish this entry.",
+  "github": "https://github.com/theSekyi/jevusecases",
+  "website": null,
+  "how_used_jev": null,
+  "source_tweet": null,
+  "author": null,
+  "date_found": "2026-10-08",
+  "is_build": true,
+  "category": "dev tooling / CLI",
+  "replaces": null,
+  "cost_signal": null,
+  "benchmark": null,
+  "jaggedness_reports": [],
+  "security_status": null,
+  "recipe": null
+}
