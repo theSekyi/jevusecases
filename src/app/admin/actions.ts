@@ -8,11 +8,14 @@ import { ADMIN_PATH, LOGIN_PATH, PASSWORD_CHANGED_PARAM, PASSWORD_CHANGED_VALUE 
 import { allowLoginAttempt, allowPasswordChangeAttempt } from "@/lib/authRateLimit";
 import { changePasswordSchema, firstFieldErrors, loginSchema, type AuthFormState } from "@/lib/authSchema";
 import { clientIp } from "@/lib/rateLimit";
+import { usesAccess } from "@/lib/cloudflare";
 
 const TOO_MANY = "Too many attempts. Try again in a few minutes.";
 const GENERIC_FAILURE = "Something went wrong. Try again.";
 
 export async function login(_previous: AuthFormState | undefined, formData: FormData): Promise<AuthFormState> {
+  if (usesAccess()) return { error: "Use your email code to sign in." };
+  if (process.env.WRITE_MODE === "maintenance") return { error: "Admin access is temporarily paused." };
   const rawEmail = formData.get("email");
   const parsed = loginSchema.safeParse({ email: rawEmail, password: formData.get("password") });
   if (!parsed.success) {
@@ -40,6 +43,7 @@ export async function login(_previous: AuthFormState | undefined, formData: Form
 
 export async function logout(): Promise<void> {
   await endSession();
+  if (usesAccess()) redirect("/cdn-cgi/access/logout");
   redirect(LOGIN_PATH);
 }
 
@@ -48,6 +52,7 @@ export async function changePassword(
   formData: FormData,
 ): Promise<AuthFormState> {
   const admin = await requireAdmin();
+  if (usesAccess()) return { error: "This account uses email codes. No website password is required." };
 
   const parsed = changePasswordSchema.safeParse({
     currentPassword: formData.get("currentPassword"),

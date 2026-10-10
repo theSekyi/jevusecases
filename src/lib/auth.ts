@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import {
   createSessionRecord,
@@ -8,6 +8,9 @@ import {
   isSessionToken,
 } from "@/lib/adminSessions";
 import type { AdminUser } from "@/lib/adminUsers";
+import { usesAccess } from "@/lib/cloudflare";
+import { verifyAccessIdentity } from "@/lib/accessIdentity";
+import { d1Store } from "@/lib/d1Runtime";
 
 import { LOGIN_PATH, SESSION_COOKIE } from "@/lib/authConstants";
 
@@ -18,6 +21,7 @@ export { ADMIN_PATH, LOGIN_PATH, SESSION_COOKIE } from "@/lib/authConstants";
  * Returns false when the account's credentials changed since they were verified (nothing is created).
  */
 export async function startSession(userId: string, credentialVersion: string): Promise<boolean> {
+  if (usesAccess()) throw new Error("Password sessions are disabled for Cloudflare Access");
   const cookieStore = await cookies();
 
   // A session already sitting behind this browser's cookie is replaced, not left valid for a week.
@@ -44,6 +48,7 @@ export async function endSession(): Promise<void> {
   const cookieStore = await cookies();
   const token = cookieStore.get(SESSION_COOKIE)?.value;
   cookieStore.delete(SESSION_COOKIE);
+  if (usesAccess() || process.env.WRITE_MODE === "maintenance") return;
 
   if (token && isSessionToken(token)) {
     try {
@@ -56,6 +61,12 @@ export async function endSession(): Promise<void> {
 
 /** The signed-in admin for this request, or null. One database lookup per request. */
 export const getCurrentAdmin = cache(async (): Promise<AdminUser | null> => {
+  if (usesAccess()) {
+    const token = (await headers()).get("cf-access-jwt-assertion");
+    if (!token) return null;
+    const email = await verifyAccessIdentity(token);
+    return email ? d1Store().adminByEmail(email) : null;
+  }
   const token = (await cookies()).get(SESSION_COOKIE)?.value;
   if (!token || !isSessionToken(token)) return null;
   return findSessionUser(token);
@@ -63,6 +74,7 @@ export const getCurrentAdmin = cache(async (): Promise<AdminUser | null> => {
 
 /** Call at the top of every admin page and every admin Server Action — layouts don't re-run on navigation. */
 export async function requireAdmin(): Promise<AdminUser> {
+  if (process.env.WRITE_MODE === "maintenance") redirect("/admin/login?maintenance=1");
   const admin = await getCurrentAdmin();
   if (!admin) redirect(LOGIN_PATH);
   return admin;

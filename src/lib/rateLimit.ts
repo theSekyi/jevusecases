@@ -26,6 +26,10 @@ export function normalizeIp(ip: string): string {
  * the one worth rate-limiting on. IPv6 addresses collapse to their /64.
  */
 export function clientIp(source: { headers: { get(name: string): string | null } }): string {
+  if (process.env.DATABASE_PROVIDER === "d1") {
+    const ip = source.headers.get("cf-connecting-ip")?.trim();
+    return ip ? normalizeIp(ip) : "unknown";
+  }
   const chain = source.headers.get("x-forwarded-for")?.split(",");
   const ip = chain?.[chain.length - 1]?.trim();
   return ip ? normalizeIp(ip) : "unknown";

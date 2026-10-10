@@ -1,0 +1,13 @@
+.cloudflare-build/
+.open-next/
+.wrangler/
+.next/
+out/
+docs/
+.dev.vars*
+*.tsbuildinfo
+node_modules/
+.git/
+.vercel/
+.env*
+coverage/

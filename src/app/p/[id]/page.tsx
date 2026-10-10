@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GeometricField } from "@/components/GeometricField";
-import { ProjectExplorer } from "@/components/ProjectExplorer";
+import { ProjectCatalogue } from "@/components/ProjectCatalogue";
 import { OpenProjectOnLoad } from "@/components/projects/OpenProjectOnLoad";
 import { VisitorFeed } from "@/components/VisitorFeed";
 import { getProjects } from "@/lib/projects";
@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: PageProps<"/p/[id]">) {
   return (
     <main className="flex flex-1 flex-col">
       <GeometricField />
-      <ProjectExplorer projects={getProjects()} live={<VisitorFeed />} />
+      <ProjectCatalogue live={<VisitorFeed />} />
       <OpenProjectOnLoad id={project.id} />
     </main>
   );

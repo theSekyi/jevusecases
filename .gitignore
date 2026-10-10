@@ -50,3 +50,11 @@ CLAUDE.md
 # generated from src/data/entries/*/entry.json — see scripts/generate-projects-data.ts
 /src/data/projects.json
 .env*.local
+
+# Cloudflare build output, local state, and secrets
+/.open-next/
+/.wrangler/
+.dev.vars*
+
+.cloudflare-build/
+src/data/worker-projects.json

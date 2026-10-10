@@ -12,7 +12,7 @@ interface FeedEvent {
   createdAt: string;
 }
 
-const POLL_INTERVAL_MS = 7000;
+const POLL_INTERVAL_MS = 30_000;
 
 export function VisitorFeed() {
   const [events, setEvents] = useState<FeedEvent[]>([]);
@@ -24,32 +24,42 @@ export function VisitorFeed() {
   useEffect(() => {
     if (!shown) return;
     let cancelled = false;
+    let failures = 0;
+    let retryAt = 0;
 
     async function poll() {
+      if (document.hidden || Date.now() < retryAt) return;
       const requestId = ++latestRequestId.current;
       try {
         const response = await fetch("/api/visitor-events");
-        if (!response.ok) return;
+        if (!response.ok) throw new Error("Visitor feed unavailable");
         const data = (await response.json()) as { events: FeedEvent[] };
         // A slower earlier request resolving after a faster later one would otherwise
         // overwrite fresh data with stale data — only the most recently *sent* request wins.
         if (!cancelled && requestId === latestRequestId.current) setEvents(data.events);
+        failures = 0;
+        retryAt = 0;
       } catch {
+        failures = Math.min(failures + 1, 4);
+        retryAt = Date.now() + POLL_INTERVAL_MS * 2 ** failures;
         // A failed poll just means the strip doesn't update this round — nothing to show the visitor.
       }
     }
 
     poll();
     const pollId = setInterval(poll, POLL_INTERVAL_MS);
+    const resume = () => { if (!document.hidden) void poll(); };
+    document.addEventListener("visibilitychange", resume);
     return () => {
       cancelled = true;
       clearInterval(pollId);
+      document.removeEventListener("visibilitychange", resume);
     };
   }, [shown]);
 
   useEffect(() => {
     if (!shown) return;
-    const tickId = setInterval(() => setNow(Date.now()), 1000);
+    const tickId = setInterval(() => { if (!document.hidden) setNow(Date.now()); }, 1000);
     return () => clearInterval(tickId);
   }, [shown]);
 

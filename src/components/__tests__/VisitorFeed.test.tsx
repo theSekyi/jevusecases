@@ -111,7 +111,7 @@ describe("VisitorFeed", () => {
     expect(fetch).toHaveBeenCalledTimes(1);
 
     await act(async () => {
-      await vi.advanceTimersByTimeAsync(7000);
+      await vi.advanceTimersByTimeAsync(30_000);
     });
     expect(fetch).toHaveBeenCalledTimes(2);
 
