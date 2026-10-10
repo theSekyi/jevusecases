@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import { LoginForm } from "@/components/admin/LoginForm";
 import { getCurrentAdmin } from "@/lib/auth";
+import { usesAccess } from "@/lib/cloudflare";
 import { ADMIN_PATH, PASSWORD_CHANGED_PARAM, PASSWORD_CHANGED_VALUE } from "@/lib/authConstants";
 
 export const metadata: Metadata = {
@@ -24,7 +25,12 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
             Password changed. Sign in with your new password.
           </p>
         )}
-        <LoginForm />
+        {usesAccess() ? (
+          <p role="alert" className="text-sm text-bp-secondary">
+            This email does not have admin access. Contact the site owner, or{" "}
+            <a href="/cdn-cgi/access/logout" className="underline">sign out and use another email</a>.
+          </p>
+        ) : <LoginForm />}
       </div>
     </main>
   );

@@ -7,6 +7,9 @@ import { clientIp, createRateLimiter } from "@/lib/rateLimit";
 const checkRateLimit = createRateLimiter(5, 60 * 60 * 1000);
 
 export async function POST(request: NextRequest) {
+  if (process.env.WRITE_MODE === "maintenance" || process.env.SUBMISSIONS_ENABLED === "false") {
+    return NextResponse.json({ error: "maintenance" }, { status: 503, headers: { "Retry-After": "300" } });
+  }
   if (!checkRateLimit(clientIp(request))) {
     return NextResponse.json({ error: "rate_limited" }, { status: 429 });
   }

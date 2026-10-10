@@ -21,9 +21,8 @@ function readSecret(): string | null {
  * copy of the database can turn a hash back into an IP by hashing guesses. Returns null when there is
  * no usable secret or no usable IP, so recording still works, just without an identity.
  */
-export function hashVisitor(ip: string): string | null {
+export function hashVisitor(ip: string, secret = readSecret()): string | null {
   if (ip === "unknown") return null;
-  const secret = readSecret();
-  if (!secret) return null;
+  if (!secret || secret.length < MIN_SECRET_LENGTH) return null;
   return createHmac("sha256", secret).update(ip).digest("hex").slice(0, 32);
 }

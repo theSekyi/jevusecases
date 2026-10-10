@@ -22,6 +22,7 @@ function githubHeaders(token: string): HeadersInit {
     Authorization: `Bearer ${token}`,
     Accept: "application/vnd.github+json",
     "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "jevusecases",
   };
 }
 
@@ -72,8 +73,8 @@ async function deleteBranch(branch: string, headers: HeadersInit): Promise<void>
 export async function createSubmissionPr(
   entry: Project,
   submission: SubmissionInput,
+  token = process.env.GITHUB_SUBMIT_TOKEN,
 ): Promise<CreateSubmissionPrResult> {
-  const token = process.env.GITHUB_SUBMIT_TOKEN;
   if (!token) {
     return { success: false, reason: "missing_token" };
   }

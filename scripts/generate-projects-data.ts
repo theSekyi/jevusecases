@@ -69,6 +69,8 @@ export function main() {
   const entries = sortEntries(dirNames.map((dirName) => readEntry(ENTRIES_DIR, dirName)));
 
   writeFileSync(OUTPUT_PATH, `${JSON.stringify(entries, null, 2)}\n`);
+  writeFileSync(new URL("../src/data/worker-projects.json", import.meta.url), JSON.stringify(entries.filter(entry => entry.is_build)
+    .map(({ id, project, github, website, author, source_tweet }) => ({ id, project, github, website, author, source_tweet }))));
   console.log(`Generated src/data/projects.json from ${entries.length} entries.`);
 }
 

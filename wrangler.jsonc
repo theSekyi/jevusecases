@@ -1,0 +1,36 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jevusecases-preview",
+  "account_id": "9a94309ba5571598286d49132de402db",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-07",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".cloudflare-build/out",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jevusecases-preview",
+      "database_id": "d851debb-7d17-4a55-9567-e51fc3fb9bd0",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_ENV": "preview",
+    "DATABASE_PROVIDER": "d1",
+    "AUTH_PROVIDER": "cloudflare-access",
+    "WRITE_MODE": "normal",
+    "SUBMISSIONS_ENABLED": "false",
+    "ACCESS_ISSUER": "https://yellow-rain-d3b4.cloudflareaccess.com",
+    "ACCESS_AUD": "ac52824b96acc3b7b2e0f21df77d54cd97a5d8200b73597139c0b56187d304d2"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

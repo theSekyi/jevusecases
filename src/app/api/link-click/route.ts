@@ -88,9 +88,10 @@ export async function POST(request: NextRequest) {
   if (takesProject(kind) ? !project : projectId !== undefined) return new NextResponse(null, { status: 400 });
 
   // Answered the same way as a recorded click, so nothing tells a client which clicks count.
-  if (process.env.VERCEL_ENV === "preview") return new NextResponse(null, { status: 204 });
+  if (process.env.WRITE_MODE === "maintenance") return new NextResponse(null, { status: 503 });
+  if (process.env.APP_ENV === "preview" || (process.env.DATABASE_PROVIDER !== "d1" && process.env.VERCEL_ENV === "preview")) return new NextResponse(null, { status: 204 });
   if (isAutomatedClient(request.headers.get("user-agent"))) return new NextResponse(null, { status: 204 });
-  if (request.cookies.has(SESSION_COOKIE)) return new NextResponse(null, { status: 204 });
+  if (request.cookies.has(SESSION_COOKIE) || request.cookies.has("CF_Authorization")) return new NextResponse(null, { status: 204 });
 
   const ip = clientIp(request);
   if (!checkRateLimit(ip)) return new NextResponse(null, { status: 429 });

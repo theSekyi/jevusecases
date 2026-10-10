@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jevusecases-compatibility",
+  "account_id": "9a94309ba5571598286d49132de402db",
+  "main": "scripts/cloudflare-compatibility.ts",
+  "compatibility_date": "2026-10-07",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true
+}

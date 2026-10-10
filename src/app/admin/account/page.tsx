@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { AdminPageHeader } from "@/components/admin/AdminPageHeader";
 import { ChangePasswordForm } from "@/components/admin/ChangePasswordForm";
 import { requireAdmin } from "@/lib/auth";
+import { usesAccess } from "@/lib/cloudflare";
 
 export const metadata: Metadata = {
   title: "Account — jevusecases",
@@ -16,7 +17,7 @@ export default async function AccountPage() {
         <AdminPageHeader title="Account" />
         <p className="font-bp-mono text-[13px] text-bp-secondary">{admin.email}</p>
 
-        <section className="flex flex-col gap-4">
+        {usesAccess() ? <p className="text-sm text-bp-secondary">You sign in with an email code. No website password is required.</p> : <section className="flex flex-col gap-4">
           <h2 className="font-bp-mono text-[11px] tracking-widest text-bp-secondary">CHANGE PASSWORD</h2>
           {admin.usingTempPassword && (
             <p className="text-sm text-bp-secondary">You&apos;re using a temporary password. Changing it is optional.</p>
@@ -25,7 +26,7 @@ export default async function AccountPage() {
             Changing your password signs you out everywhere. You then sign in again with the new one.
           </p>
           <ChangePasswordForm />
-        </section>
+        </section>}
       </div>
     </main>
   );

@@ -1,5 +1,6 @@
 import { NextResponse, type NextFetchEvent, type NextRequest } from "next/server";
 import { geolocation } from "@vercel/functions";
+import { cloudflareCountry, usesD1 } from "@/lib/cloudflare";
 import { isAutomatedClient, recordVisitorEvent, visitSource } from "@/lib/visitorEvents";
 import { isValidCountryCode } from "@/lib/visitorFormat";
 import { SESSION_COOKIE } from "@/lib/authConstants";
@@ -17,7 +18,8 @@ async function recordVisit(request: NextRequest) {
     if (request.method !== "GET") return;
     // Preview deployments share the production database, so their traffic (mine, testers', bots')
     // would land in the real numbers.
-    if (process.env.VERCEL_ENV === "preview") return;
+    if (process.env.WRITE_MODE === "maintenance") return;
+    if (process.env.APP_ENV === "preview" || (!usesD1() && process.env.VERCEL_ENV === "preview")) return;
     if (request.headers.get("next-router-prefetch")) return;
     if (request.headers.get("purpose") === "prefetch") return;
     if (request.headers.get("sec-purpose")?.includes("prefetch")) return;
@@ -26,11 +28,11 @@ async function recordVisit(request: NextRequest) {
     if (isAutomatedClient(request.headers.get("user-agent"))) return;
     // The admin's own browsing would otherwise dominate the feed. Presence of the cookie is
     // enough here; nothing is being authorized.
-    if (request.cookies.has(SESSION_COOKIE)) return;
+    if (request.cookies.has(SESSION_COOKIE) || request.cookies.has("CF_Authorization")) return;
     const ip = clientIp(request);
     if (!checkRateLimit(ip)) return;
 
-    const { country } = geolocation(request);
+    const country = usesD1() ? cloudflareCountry() : geolocation(request).country;
     await recordVisitorEvent(
       isValidCountryCode(country) ? country : null,
       request.nextUrl.pathname,

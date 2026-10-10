@@ -1,0 +1,41 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jevusecases-production",
+  "account_id": "9a94309ba5571598286d49132de402db",
+  "main": "src/worker.ts",
+  "compatibility_date": "2026-10-07",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+  "assets": {
+    "directory": ".cloudflare-build/out",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jevusecases-production",
+      "database_id": "8e892537-2bbc-437a-b99f-73187048e5d1",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "DATABASE_PROVIDER": "d1",
+    "AUTH_PROVIDER": "cloudflare-access",
+    "WRITE_MODE": "normal",
+    "SUBMISSIONS_ENABLED": "true",
+    "ACCESS_ISSUER": "https://yellow-rain-d3b4.cloudflareaccess.com",
+    "ACCESS_AUD": "b7eab4d756aa1ba05402ccdb4d7e08207d2dfd10c7a3bb4e2361a9cec36c34a5"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "jevusecases.com/*", "zone_id": "1443f7aefc82c74ce44dad15f074d2ed" },
+    { "pattern": "www.jevusecases.com/*", "zone_id": "1443f7aefc82c74ce44dad15f074d2ed" }
+  ]
+}
