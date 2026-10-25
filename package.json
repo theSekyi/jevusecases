@@ -50,7 +50,7 @@
     "tailwindcss": "^4",
     "typescript": "^5",
     "vite-tsconfig-paths": "^6.1.1",
-    "vitest": "^5.0.1",
+    "vitest": "^5.0.5",
     "world-countries": "^5.1.0"
   }
 }
